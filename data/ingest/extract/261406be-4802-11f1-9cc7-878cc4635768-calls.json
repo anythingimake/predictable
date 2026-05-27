@@ -1,0 +1,56 @@
+{
+  "calls": [
+    {
+      "market_source": "unknown",
+      "market_hint": "Ghislaine Maxwell released from government custody this year (Stu: NO)",
+      "side": "no",
+      "conviction": "solid",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 2483,
+          "event_type": "entry",
+          "price_pct": 13.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "Will gelane maxwell be released from government custody Now donald trump does a lot of unpredictable things... But walk me through the thought process where he releases gelane maxwell from prison I can't even imagine a scenario where this would occur and you know, the thing is the reason it's right now at, uh, As a 13 or 13 percent Will he release This year my position on this would be no by the way. He's not going to release gelane maxwell of all things... It's one I kind of like will gelane maxwell be released from government custody. I'm going to take the position of No, and if it happens my producer will make sure he pulls this video up to remind you That's the side I was on",
+          "cleaned_quote": "Will Ghislaine Maxwell be released from government custody? It's at 13 percent. My position is no. Trump's not going to release Ghislaine Maxwell of all things — he's already had to deal with the Epstein file nightmare. Doing so would make him look more guilty. 13 percent in seven months — not a bad take. It's one I kind of like — I'm taking the no side."
+        }
+      ]
+    },
+    {
+      "market_source": "unknown",
+      "market_hint": "Mandalorian & Grogu Rotten Tomatoes score under 65% (Adam's pick)",
+      "side": "under",
+      "conviction": "opinion",
+      "speaker": "guest:Adam",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 2381,
+          "event_type": "entry",
+          "price_pct": null,
+          "size_pct_of_pos": null,
+          "raw_quote": "as we were talking about that you should know that my producer adam Wound up going under 65% on the mandalorian rotten tomato score. He said the movie's going to suck",
+          "cleaned_quote": "My producer Adam wound up going under 65 percent on the Mandalorian & Grogu Rotten Tomatoes score. He said the movie is going to suck."
+        }
+      ]
+    }
+  ],
+  "mentions": [
+    {
+      "market_source": "kalshi",
+      "market_hint": "Mandalorian & Grogu Rotten Tomatoes score (~74.3% projected)",
+      "directional": "neutral",
+      "timestamp_sec": 1952,
+      "cleaned_quote": "Mandalorian & Grogu projected Rotten Tomatoes score is 74.3 percent. That's ahead of Solo (70%), Attack of the Clones (65%) and Phantom Menace (52%), just below Revenge of the Sith (79%) and Return of the Jedi (83%). Dan: that feels pretty close — Star Wars fans complain about everything, so if anything it might even be a little bullish."
+    },
+    {
+      "market_source": "unknown",
+      "market_hint": "Sixers beat Celtics — Game 7 hedge (historical)",
+      "directional": "explainer",
+      "timestamp_sec": 2305,
+      "cleaned_quote": "The Sixers were at 30 percent even after they won two in a row — and stayed there. Celtics clearly hadn't figured things out, Embiid was back, Sixers were rolling. We called it before Game 6 — predicted around 30 percent for Game 7. An emotional hedge — or as I prefer, hedging your life."
+    }
+  ]
+}

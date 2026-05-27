@@ -6,11 +6,13 @@ interface UIState {
   setAdminToken: (t: string) => void;
   clearAdminToken: () => void;
   callsFilter: {
-    conviction?: string;
-    status?: string;
+    // Multi-select arrays. Undefined = no filter on that dimension.
+    conviction?: string[];
+    status?: string[];
+    market_source?: string[];
+    side?: string[];
+    // Single-value, range-style.
     category?: string;
-    market_source?: string;
-    side?: string;
     date_from?: string;
     date_to?: string;
   };

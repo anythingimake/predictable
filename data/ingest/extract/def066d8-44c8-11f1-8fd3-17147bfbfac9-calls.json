@@ -1,0 +1,208 @@
+{
+  "calls": [
+    {
+      "market_source": "unknown",
+      "market_hint": "Republicans win Senate 2026 (Stu: underpriced)",
+      "side": "yes",
+      "conviction": "opinion",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 1240,
+          "event_type": "entry",
+          "price_pct": 50.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "I think the democrats are a little Optimistic the markets are a little bit optimistic for the democrats when it comes to the senate at about a 5050 pitch I think that's true. I think that it's probably more like 60 40 Maybe even 65 35 for republicans to hold but first of all that's a big risk right like 35 40 percent",
+          "cleaned_quote": "The markets are a little optimistic for the Democrats on the Senate at about 50/50. It's probably more like 60/40, maybe even 65/35, for Republicans to hold. But that's still a big risk — 35-40 percent is a big risk for Republicans in a year they should definitely win."
+        }
+      ]
+    },
+    {
+      "market_source": "unknown",
+      "market_hint": "Virginia redistricts before midterms (Stu: bearish, courts may block)",
+      "side": "no",
+      "conviction": "flyer",
+      "speaker": "stu",
+      "size_disclosed": "few dollars",
+      "events": [
+        {
+          "timestamp_sec": 2348,
+          "event_type": "entry",
+          "price_pct": 32.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "To me there's some opportunity in going no on virginia despite the fact they actually passed this In the in their election recently... The way they went about it. I think there's a good chance the courts overrule it Which would be interesting and right now if you go no on that You are basically investing 32 cents to win 68 cents Okay, so basically you're talking about 200 type profits here. It's more of a long shot Uh, but that's a really fun one if you hit it So be going no on virginia is something. I don't know. I might put a few dollars into",
+          "cleaned_quote": "There's some opportunity going no on Virginia redistricting despite the fact they passed it recently. I think there's a good chance the courts overrule it. Right now if you go no, you're investing 32 cents to win 68 cents — about 200 percent profit. It's a long shot but a fun one. I might put a few dollars into it."
+        }
+      ]
+    },
+    {
+      "market_source": "unknown",
+      "market_hint": "Illinois redistricts before midterms (long-shot flyer)",
+      "side": "yes",
+      "conviction": "flyer",
+      "speaker": "stu",
+      "size_disclosed": "small",
+      "events": [
+        {
+          "timestamp_sec": 2476,
+          "event_type": "entry",
+          "price_pct": 7.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "I think there's a little more value in illinois honestly because uh, illinois You know, I think I think republicans go far on this The state of illinois, which is very liberal very blue We'll say wait a minute. We're not going to let them do this. We need to fight back We're going to redistrict now even though we considered it earlier and said no We're going to rethink that so those are two if you want to get playful. I would go there",
+          "cleaned_quote": "There's a little more value in Illinois. If Republicans go far on this, Illinois — very liberal, very blue — will say we're not going to let them do this. We need to fight back. We're going to redistrict now even though we said no earlier. At 7 percent, you're getting 13-14 times your money. A long shot, but if you want to get playful, I'd go there."
+        }
+      ]
+    },
+    {
+      "market_source": "unknown",
+      "market_hint": "Indiana redistricts before midterms (long-shot flyer)",
+      "side": "yes",
+      "conviction": "flyer",
+      "speaker": "stu",
+      "size_disclosed": "small",
+      "events": [
+        {
+          "timestamp_sec": 2453,
+          "event_type": "entry",
+          "price_pct": 7.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "if you're danny longshots dan andros who comes on the show We call him danny longshots because he likes to find these Uh, a couple that would fall into this category for me are india india and illinois illinois maybe even a little bit more Those are both at seven percent to redistrict... There's going to be new pressures coming on these states and if democrats go far enough I think there's a real chance that, uh, uh, indiana says wait a minute We're going to reconsider and we're going to redistrict again. You're at seven percent So you're talking for every seven cents you invest you get a 93 cent return Big time stuff, right? You're what for 13 14 times your money That's a big time return. It's a long shot. You'll probably lose it But is there value there? I think there's a little bit of value there",
+          "cleaned_quote": "A Danny-Longshots-style pick: Indiana to redistrict at 7 percent. New pressures will come on these states; if Democrats go far enough, Indiana may reconsider and redistrict. For every 7 cents you invest you get 93 cents back — 13-14x your money. It's a long shot, you'll probably lose it, but there's a little value there."
+        }
+      ]
+    },
+    {
+      "market_source": "unknown",
+      "market_hint": "Eric Swalwell wins CA Senate jungle primary (historical, resolved)",
+      "side": "no",
+      "conviction": "solid",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 2712,
+          "event_type": "resolve",
+          "price_pct": 0.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "We said hey Eric swallows at 60 to win this election in california. He might win it, but man 60% seems aggressive with like with adult like eric swalwell who is having sex with chinese spies It just seems like something could a bubble might burst there We went in on that market and we're able to uh get some gains there as well",
+          "cleaned_quote": "We called this on the live streams: Eric Swalwell was at 60 to win the California election. 60 percent seemed aggressive. We went in on that market and got some gains there."
+        }
+      ]
+    }
+  ],
+  "mentions": [
+    {
+      "market_source": "kalshi",
+      "market_hint": "WTI oil over $115/barrel by end of year",
+      "directional": "explainer",
+      "timestamp_sec": 794,
+      "cleaned_quote": "Will WTI oil get over $115 a barrel by the end of the year? That's a 71 percent chance on Kalshi."
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "WTI oil over $150/barrel by end of year",
+      "directional": "explainer",
+      "timestamp_sec": 798,
+      "cleaned_quote": "Will WTI oil get over $150 a barrel? Catastrophic, really high prices for gas. There's a 35 percent chance."
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "WTI oil over $200/barrel by end of year (catastrophic hedge)",
+      "directional": "explainer",
+      "timestamp_sec": 814,
+      "cleaned_quote": "Will it get over $200 a barrel? 16 percent. I don't even know what the world looks like if we're over $200 a barrel. This is real panic time. For 16 cents on the dollar you can hedge a catastrophic outcome and get four or five times your money."
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "Average US gas price hits $5.40/gallon this year",
+      "directional": "explainer",
+      "timestamp_sec": 1021,
+      "cleaned_quote": "There's a 59 percent chance average gas prices get to $5.40 a gallon. Think about that world."
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "Average US gas price hits $5.60/gallon this year",
+      "directional": "explainer",
+      "timestamp_sec": 1031,
+      "cleaned_quote": "There's a 41 percent chance we hit $5.60 a gallon."
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "Average US gas price hits $5.80/gallon this year",
+      "directional": "explainer",
+      "timestamp_sec": 1039,
+      "cleaned_quote": "36 percent chance we hit $5.80 a gallon."
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "Average US gas price hits $6.00/gallon this year",
+      "directional": "explainer",
+      "timestamp_sec": 1044,
+      "cleaned_quote": "$6 a gallon is at 34 percent."
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "Average US gas price hits $7.00/gallon this year (catastrophic hedge)",
+      "directional": "explainer",
+      "timestamp_sec": 1047,
+      "cleaned_quote": "The catastrophic scenario: $7 a gallon or more. There's a 12 percent chance. If it hits, you're talking 8-10x your money — a personal insurance contract that can offset all your gas prices."
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "Synthetic Kalshi expected average gas price this year (~$5.50)",
+      "directional": "bullish",
+      "timestamp_sec": 1187,
+      "cleaned_quote": "Kalshi's synthesized prediction is gas prices get to $5.50 a gallon this year. Not the highest prediction — that was around $6 when the war started — but inching up. People do not see the end of this war."
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "WTI synthesized end-of-year oil price prediction (~$132.17)",
+      "directional": "neutral",
+      "timestamp_sec": 898,
+      "cleaned_quote": "The synthesized prediction for how high oil will get by year-end is $132.17. Markets are giving a bit of a shoulder shrug — going higher than now, but not that much higher by year end."
+    },
+    {
+      "market_source": "unknown",
+      "market_hint": "Janet Mills drops out of Maine Senate Democratic primary this month",
+      "directional": "explainer",
+      "timestamp_sec": 1849,
+      "cleaned_quote": "Will Janet Mills drop out of the Maine Senate Democratic primary this month? It was only at about 10 percent a few days ago — not something people saw coming. It's now at 95.8 percent. If you called that, you 10x'd your money in a couple of days. I didn't have money in it."
+    },
+    {
+      "market_source": "unknown",
+      "market_hint": "Democrats win the House in 2026 midterms (post-SCOTUS VRA ruling update)",
+      "directional": "bullish",
+      "timestamp_sec": 2240,
+      "cleaned_quote": "Democrats are about an 83 percent chance to lose the House right now, down from 85 percent. A little degradation, but not much."
+    },
+    {
+      "market_source": "unknown",
+      "market_hint": "Alabama redistricts before midterms",
+      "directional": "explainer",
+      "timestamp_sec": 2269,
+      "cleaned_quote": "The most interesting part of this chart is the orange line for Alabama — basically zeroed the entire time, no plans of doing this. Now spiked to about 30 percent because of the Supreme Court ruling."
+    },
+    {
+      "market_source": "unknown",
+      "market_hint": "Louisiana redistricts before midterms",
+      "directional": "bullish",
+      "timestamp_sec": 2299,
+      "cleaned_quote": "Louisiana at 80 percent — very likely to redistrict. The courts just told them they kind of have to do this. Will likely be a one-seat pickup for Republicans, going from 4-2 to 5-1 in the state."
+    },
+    {
+      "market_source": "unknown",
+      "market_hint": "Florida redistricts before midterms",
+      "directional": "bullish",
+      "timestamp_sec": 2303,
+      "cleaned_quote": "Florida at 81 percent. Already going for it — basically saying they're going to do it. The risk there is the courts may block it."
+    },
+    {
+      "market_source": "unknown",
+      "market_hint": "Virginia redistricts before midterms",
+      "directional": "neutral",
+      "timestamp_sec": 2330,
+      "cleaned_quote": "Virginia at 68 percent — lower than the other states. Their process was more questionable. The markets are pricing that in a little bit."
+    }
+  ]
+}
