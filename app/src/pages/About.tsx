@@ -71,41 +71,36 @@ export function About() {
 function ConservanerdsBanner() {
   return (
     <section
-      className="relative overflow-hidden rounded-2xl border text-center py-12 md:py-16 px-6"
+      className="relative overflow-hidden rounded-xl border text-center py-7 md:py-9 px-5 max-w-2xl mx-auto"
       style={{
         borderColor: "var(--color-mark)",
         background:
-          "radial-gradient(ellipse at 50% 50%, rgba(34,197,94,0.18), rgba(7,9,26,0.6) 70%), linear-gradient(180deg, #0a1a0e 0%, #0f2b1c 100%)",
-        boxShadow: "0 0 60px var(--color-mark-glow), inset 0 0 40px rgba(34,197,94,0.08)",
+          "radial-gradient(ellipse at 50% 50%, rgba(34,197,94,0.15), rgba(7,9,26,0.6) 70%), linear-gradient(180deg, #0a1a0e 0%, #0f2b1c 100%)",
+        boxShadow: "0 0 32px var(--color-mark-glow), inset 0 0 24px rgba(34,197,94,0.06)",
       }}
     >
       <h2
         className="font-black uppercase leading-none tracking-tight"
         style={{
           fontFamily: '"Space Grotesk", "Inter", system-ui, sans-serif',
-          fontSize: "clamp(2.5rem, 9vw, 5.5rem)",
+          fontSize: "clamp(1.5rem, 5vw, 2.5rem)",
           color: "#eef1ff",
-          textShadow:
-            "0 0 24px var(--color-mark-glow), 0 0 60px rgba(34,197,94,0.4), 0 4px 0 rgba(0,0,0,0.4)",
+          textShadow: "0 0 12px var(--color-mark-glow), 0 2px 0 rgba(0,0,0,0.4)",
         }}
       >
-        Conservanerds
-      </h2>
-      <h2
-        className="font-black uppercase leading-none tracking-tight mt-1"
-        style={{
-          fontFamily: '"Space Grotesk", "Inter", system-ui, sans-serif',
-          fontSize: "clamp(2.5rem, 9vw, 5.5rem)",
-          color: "var(--color-mark)",
-          textShadow:
-            "0 0 32px var(--color-mark), 0 0 80px var(--color-mark-glow), 0 4px 0 rgba(0,0,0,0.5)",
-        }}
-      >
-        Unite<span style={{ color: "#eef1ff" }}>!</span>
+        Conservanerds{" "}
+        <span
+          style={{
+            color: "var(--color-mark)",
+            textShadow: "0 0 18px var(--color-mark), 0 2px 0 rgba(0,0,0,0.5)",
+          }}
+        >
+          Unite!
+        </span>
       </h2>
       <p
-        className="mt-5 text-sm md:text-base uppercase tracking-[0.35em] font-medium"
-        style={{ color: "rgba(238,241,255,0.7)" }}
+        className="mt-3 text-[10px] md:text-xs uppercase tracking-[0.3em] font-medium"
+        style={{ color: "rgba(238,241,255,0.6)" }}
       >
         For nerds · for numbers · for the show
       </p>

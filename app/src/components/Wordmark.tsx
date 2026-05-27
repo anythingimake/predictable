@@ -17,16 +17,17 @@ export function Wordmark() {
 function UnofficialBadge() {
   return (
     <span
-      className="text-[10px] font-bold uppercase tracking-[0.18em] px-2 py-0.5 rounded leading-none"
+      className="inline-flex flex-col items-center text-[8px] sm:text-[9px] font-bold uppercase tracking-[0.14em] px-1.5 py-0.5 rounded leading-[1.1]"
       style={{
         color: "#fbbf24",
         background: "rgba(251, 191, 36, 0.10)",
         border: "1px solid rgba(251, 191, 36, 0.35)",
         boxShadow: "0 0 8px rgba(251, 191, 36, 0.12)",
       }}
-      title="Unofficial fan project — not affiliated with the show"
+      title="Completely unauthorized fan project — not affiliated with the show"
     >
-      Unofficial!
+      <span>Completely</span>
+      <span>Unauthorized!</span>
     </span>
   );
 }

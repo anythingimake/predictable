@@ -10,6 +10,9 @@ interface UIState {
     status?: string;
     category?: string;
     market_source?: string;
+    side?: string;
+    date_from?: string;
+    date_to?: string;
   };
   setCallsFilter: (f: UIState["callsFilter"]) => void;
 }
