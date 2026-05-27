@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  /* Background / surface (dark by default) */
+  --color-bg: #0a0d16;
+  --color-bg-elev: #0f1320;
+  --color-surface: #161a2a;
+  --color-border: #2a3142;
+  --color-border-strong: #3a4256;
+
+  /* Text */
+  --color-text: #e2e8f0;
+  --color-text-muted: #94a3b8;
+  --color-text-faint: #64748b;
+
+  /* Brand accent */
+  --color-accent: #60a5fa;
+  --color-accent-strong: #3b82f6;
+
+  /* Conviction tier colors (Stu's vocabulary) */
+  --color-tier-play: #22c55e;     /* in love */
+  --color-tier-solid: #84cc16;    /* I'm in */
+  --color-tier-flyer: #eab308;    /* few shares */
+  --color-tier-watch: #94a3b8;    /* might */
+  --color-tier-opinion: #64748b;  /* directional */
+  --color-tier-pass: #475569;     /* skip */
+
+  /* Status */
+  --color-status-open: #3b82f6;
+  --color-status-resolved-win: #22c55e;
+  --color-status-resolved-loss: #ef4444;
+}
+
+html, body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-feature-settings: "cv11", "ss01";
+}
+
+body { min-height: 100vh; margin: 0; }
+
+/* Subtle scrollbar in dark theme */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: var(--color-bg); }
+::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: 6px; }
+::-webkit-scrollbar-thumb:hover { background: var(--color-border-strong); }
+
+a { color: var(--color-accent); text-decoration: none; }
+a:hover { color: var(--color-accent-strong); }

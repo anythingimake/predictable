@@ -1,0 +1,176 @@
+// Mirrors api/src/schema.sql. Keep in sync.
+
+export type Conviction = "play" | "solid" | "flyer" | "watch" | "opinion" | "pass";
+export type CallStatus = "open" | "closed" | "resolved";
+export type Side = "yes" | "no" | "over" | "under";
+export type EventType = "entry" | "add" | "trim" | "exit" | "resolve" | "clarify";
+
+export interface Episode {
+  id: string;
+  publish_date: string;
+  type: "episode" | "livestream" | "short" | "guest";
+  title: string;
+  megaphone_title?: string | null;
+  youtube_title?: string | null;
+  substack_title?: string | null;
+  youtube_id?: string | null;
+  substack_slug?: string | null;
+  audio_url?: string | null;
+  duration_sec?: number | null;
+  view_count?: number | null;
+  like_count?: number | null;
+  comment_count?: number | null;
+  cover_image_url?: string | null;
+}
+
+export interface Call {
+  id: number;
+  market_id: string | null;
+  market_hint: string;
+  episode_id: string;
+  first_event_ts: number | null;
+  side: Side;
+  conviction: Conviction;
+  size_disclosed: string | null;
+  speaker: string;
+  status: CallStatus;
+  realized_pct: number | null;
+  stu_claimed_pct: number | null;
+  publish_date: string;
+  episode_title: string;
+  market_source?: string | null;
+  market_ticker?: string | null;
+  market_question?: string | null;
+}
+
+export interface CallEvent {
+  id: number;
+  timestamp_sec: number;
+  event_type: EventType;
+  price_pct: number | null;
+  size_pct_of_pos: number | null;
+  quote: string | null;
+  raw_quote: string | null;
+}
+
+export interface Mention {
+  id: number;
+  market_hint: string;
+  timestamp_sec: number;
+  directional: "bullish" | "bearish" | "neutral" | "explainer" | null;
+  quote: string | null;
+}
+
+export interface SourceMedia {
+  id: number;
+  url: string | null;
+  source_type: string | null;
+  outlet: string | null;
+  title: string | null;
+}
+
+export interface CallDetail extends Call {
+  events: CallEvent[];
+  media: SourceMedia[];
+  clarifications: Array<{
+    id: number;
+    clarification: string;
+    extracted_value: string | null;
+    author: string;
+    comment_body: string;
+    posted_at: string;
+  }>;
+  price_history: Array<{ snapshot_date: string; price: number; volume: number | null }>;
+  youtube_id?: string | null;
+  substack_slug?: string | null;
+  audio_url?: string | null;
+  duration_sec?: number | null;
+}
+
+export interface Market {
+  id: string;
+  source: string;
+  ticker: string;
+  question: string;
+  category: string | null;
+  resolution_date: string | null;
+  resolved: 0 | 1;
+  resolution: string | null;
+  current_price: number | null;
+}
+
+export interface Comment {
+  id: string;
+  author: string;
+  body: string;
+  posted_at: string;
+  is_stu: 0 | 1;
+  parent_id: string | null;
+}
+
+export interface EpisodeDetail extends Episode {
+  transcript_text?: string | null;
+  substack_body?: string | null;
+  chapter_json?: string | null;
+  calls: Array<Pick<Call, "id" | "market_hint" | "side" | "conviction" | "speaker" | "status" | "realized_pct" | "first_event_ts">>;
+  mentions: Mention[];
+  comments: Comment[];
+}
+
+export interface Scoreboard {
+  total_calls: number;
+  resolved_calls: number;
+  hit_count: number;
+  hit_rate: number;
+  by_tier: Array<{
+    conviction: Conviction;
+    n: number;
+    resolved: number;
+    hits: number;
+    avg_return_pct: number | null;
+  }>;
+  by_category: Array<{ category: string; n: number; resolved: number; hits: number }>;
+  recent_wins: Array<{
+    id: number;
+    market_hint: string;
+    realized_pct: number;
+    stu_claimed_pct: number | null;
+    conviction: Conviction;
+    publish_date: string;
+    episode_title: string;
+  }>;
+  recent_losses: Array<{
+    id: number;
+    market_hint: string;
+    realized_pct: number;
+    conviction: Conviction;
+    publish_date: string;
+    episode_title: string;
+  }>;
+}
+
+export interface Principle {
+  id: number;
+  rule: string;
+  rationale: string | null;
+  first_episode_id: string | null;
+  citation_count?: number;
+}
+
+export interface PrincipleDetail extends Principle {
+  citations: Array<{
+    episode_id: string;
+    timestamp_sec: number | null;
+    quote: string | null;
+    episode_title: string;
+    publish_date: string;
+  }>;
+}
+
+export interface CalendarEntry {
+  market_id: string;
+  question: string;
+  resolution_date: string;
+  source: string;
+  open_call_count: number;
+}
