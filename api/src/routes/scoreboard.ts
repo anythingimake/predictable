@@ -25,6 +25,14 @@ router.get("/", (_req, res) => {
            AVG(CASE WHEN ${SETTLED} THEN realized_pct END) AS avg_return_pct
     FROM calls
     GROUP BY conviction
+    ORDER BY CASE conviction
+      WHEN 'play' THEN 1
+      WHEN 'solid' THEN 2
+      WHEN 'flyer' THEN 3
+      WHEN 'watch' THEN 4
+      WHEN 'opinion' THEN 5
+      WHEN 'pass' THEN 6
+      ELSE 99 END
   `).all();
 
   const by_category = db().prepare(`
