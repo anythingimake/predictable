@@ -10,6 +10,7 @@ import { Calendar } from "./pages/Calendar";
 import { Calculator } from "./pages/Calculator";
 import { Guide } from "./pages/Guide";
 import { Admin } from "./pages/Admin";
+import { About } from "./pages/About";
 import { Wordmark } from "./components/Wordmark";
 
 const NAV = [
@@ -21,6 +22,7 @@ const NAV = [
   { to: "/calendar", label: "Calendar" },
   { to: "/calculator", label: "Calculator" },
   { to: "/guide", label: "Guide" },
+  { to: "/about", label: "About" },
 ];
 
 export default function App() {
@@ -109,6 +111,7 @@ export default function App() {
           <Route path="/calculator" element={<Calculator />} />
           <Route path="/guide" element={<Guide />} />
           <Route path="/admin" element={<Admin />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </main>
 
