@@ -63,7 +63,53 @@ export function About() {
       <WhereToFind />
       <NotSection />
       <ReachOut />
+      <ConservanerdsBanner />
     </div>
+  );
+}
+
+function ConservanerdsBanner() {
+  return (
+    <section
+      className="relative overflow-hidden rounded-2xl border text-center py-12 md:py-16 px-6"
+      style={{
+        borderColor: "var(--color-mark)",
+        background:
+          "radial-gradient(ellipse at 50% 50%, rgba(34,197,94,0.18), rgba(7,9,26,0.6) 70%), linear-gradient(180deg, #0a1a0e 0%, #0f2b1c 100%)",
+        boxShadow: "0 0 60px var(--color-mark-glow), inset 0 0 40px rgba(34,197,94,0.08)",
+      }}
+    >
+      <h2
+        className="font-black uppercase leading-none tracking-tight"
+        style={{
+          fontFamily: '"Space Grotesk", "Inter", system-ui, sans-serif',
+          fontSize: "clamp(2.5rem, 9vw, 5.5rem)",
+          color: "#eef1ff",
+          textShadow:
+            "0 0 24px var(--color-mark-glow), 0 0 60px rgba(34,197,94,0.4), 0 4px 0 rgba(0,0,0,0.4)",
+        }}
+      >
+        Conservanerds
+      </h2>
+      <h2
+        className="font-black uppercase leading-none tracking-tight mt-1"
+        style={{
+          fontFamily: '"Space Grotesk", "Inter", system-ui, sans-serif',
+          fontSize: "clamp(2.5rem, 9vw, 5.5rem)",
+          color: "var(--color-mark)",
+          textShadow:
+            "0 0 32px var(--color-mark), 0 0 80px var(--color-mark-glow), 0 4px 0 rgba(0,0,0,0.5)",
+        }}
+      >
+        Unite<span style={{ color: "#eef1ff" }}>!</span>
+      </h2>
+      <p
+        className="mt-5 text-sm md:text-base uppercase tracking-[0.35em] font-medium"
+        style={{ color: "rgba(238,241,255,0.7)" }}
+      >
+        For nerds · for numbers · for the show
+      </p>
+    </section>
   );
 }
 
@@ -86,15 +132,6 @@ function Hero() {
         Stu Burguiere calls positions on air every weekday — markets, sides, entry prices,
         and conviction tiers in his own vocabulary. Listeners have no good way to verify the
         results or browse the full track record. This site does exactly that, automatically.
-      </p>
-      <p
-        className="text-sm md:text-base font-semibold tracking-wide uppercase pt-1"
-        style={{
-          color: "var(--color-mark)",
-          textShadow: "0 0 12px var(--color-mark-glow)",
-        }}
-      >
-        Conservanerds Unite!
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 pt-2">
         <AudienceCard
