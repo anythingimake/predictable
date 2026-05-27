@@ -9,6 +9,7 @@ interface UIState {
     conviction?: string;
     status?: string;
     category?: string;
+    market_source?: string;
   };
   setCallsFilter: (f: UIState["callsFilter"]) => void;
 }

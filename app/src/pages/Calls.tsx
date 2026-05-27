@@ -17,6 +17,20 @@ const TIERS: Array<{ value: Conviction | ""; label: string }> = [
   { value: "pass", label: "— Pass" },
 ];
 
+const STATUSES: Array<{ value: string; label: string }> = [
+  { value: "", label: "All" },
+  { value: "open", label: "Open" },
+  { value: "resolved", label: "Resolved (hits/losses)" },
+  { value: "closed", label: "Closed (Stu exit)" },
+];
+
+const SOURCES: Array<{ value: string; label: string }> = [
+  { value: "", label: "All" },
+  { value: "kalshi", label: "Kalshi" },
+  { value: "polymarket", label: "Polymarket" },
+  { value: "predictit", label: "PredictIt" },
+];
+
 export function Calls() {
   const filter = useStore((s) => s.callsFilter);
   const setFilter = useStore((s) => s.setCallsFilter);
@@ -47,6 +61,9 @@ export function Calls() {
         <h1 className="text-xl md:text-2xl font-semibold mb-1">Calls</h1>
         <p className="text-sm text-[var(--color-text-muted)]">Every position Stu has taken on the show.</p>
       </div>
+
+      <FilterRow label="Status" options={STATUSES} value={filter.status ?? ""} onChange={(v) => setFilter({ ...filter, status: v || undefined })} />
+      <FilterRow label="Source" options={SOURCES} value={(filter as any).market_source ?? ""} onChange={(v) => setFilter({ ...filter, market_source: v || undefined } as any)} />
 
       <div className="flex flex-wrap gap-1.5 sm:gap-2">
         {TIERS.map((t) => (
@@ -114,6 +131,32 @@ export function Calls() {
             ))}
           </div>
         </section>
+      ))}
+    </div>
+  );
+}
+
+function FilterRow({ label, options, value, onChange }: {
+  label: string;
+  options: Array<{ value: string; label: string }>;
+  value: string;
+  onChange: (v: string) => void;
+}) {
+  return (
+    <div className="flex flex-wrap gap-2 items-center">
+      <span className="text-xs uppercase tracking-wide text-[var(--color-text-faint)] mr-1">{label}:</span>
+      {options.map((o) => (
+        <button
+          key={o.value || "_all"}
+          onClick={() => onChange(o.value)}
+          className={`tap inline-flex items-center px-3 py-1 rounded-full text-xs border transition-colors ${
+            value === o.value
+              ? "border-[var(--color-accent)] text-[var(--color-text)] bg-[var(--color-surface)]"
+              : "border-[var(--color-border)] text-[var(--color-text-muted)] hover:text-[var(--color-text)]"
+          }`}
+        >
+          {o.label}
+        </button>
       ))}
     </div>
   );

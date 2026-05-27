@@ -28,7 +28,7 @@ export const api = {
   episodes: () => get<Episode[]>("/episodes"),
   episode: (id: string) => get<EpisodeDetail>(`/episodes/${id}`),
 
-  calls: (filters?: { conviction?: string; status?: string; market?: string; category?: string }) =>
+  calls: (filters?: { conviction?: string; status?: string; market?: string; category?: string; market_source?: string }) =>
     get<Call[]>("/calls", filters),
   call: (id: number | string) => get<CallDetail>(`/calls/${id}`),
 

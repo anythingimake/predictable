@@ -1,0 +1,4338 @@
+{
+  "audio_file": "C:\\Users\\NoahYaffe\\Documents\\GitHub\\anythingimake\\predictable\\data\\audio\\261406be-4802-11f1-9cc7-878cc4635768.mp3",
+  "language": "en",
+  "duration": 2630.7135,
+  "pass1_model": "small",
+  "pass2_model": null,
+  "pass2_rescued_count": 0,
+  "pass1_segment_count": 618,
+  "segments": [
+    {
+      "start": 14.16,
+      "end": 19.44,
+      "text": "Welcome to Predictable with Stu show that attempts to make the world a little bit more predictable",
+      "source": "pass1",
+      "avg_logprob": -0.18021135807037353
+    },
+    {
+      "start": 19.44,
+      "end": 21.44,
+      "text": "we're here in the new set and",
+      "source": "pass1",
+      "avg_logprob": -0.18021135807037353
+    },
+    {
+      "start": 21.52,
+      "end": 23.52,
+      "text": "We are here and it's",
+      "source": "pass1",
+      "avg_logprob": -0.18021135807037353
+    },
+    {
+      "start": 24.16,
+      "end": 31.34,
+      "text": "Pretty cool. We're pretty excited about being on a new set for the first time still dealing with all a bunch of the graphics coming in",
+      "source": "pass1",
+      "avg_logprob": -0.18021135807037353
+    },
+    {
+      "start": 31.34,
+      "end": 31.94,
+      "text": "And all this stuff",
+      "source": "pass1",
+      "avg_logprob": -0.18021135807037353
+    },
+    {
+      "start": 31.94,
+      "end": 35.22,
+      "text": "We're still sort of in half launch mode here soft launch mode if you will",
+      "source": "pass1",
+      "avg_logprob": -0.18021135807037353
+    },
+    {
+      "start": 35.44,
+      "end": 40.24,
+      "text": "So thank you so much for joining us as we go through this and there's so much to talk about if you happen to be here and",
+      "source": "pass1",
+      "avg_logprob": -0.18021135807037353
+    },
+    {
+      "start": 40.24,
+      "end": 44.52,
+      "text": "A fan of a stew or excuse me stew does America the old show that used to be on this channel",
+      "source": "pass1",
+      "avg_logprob": -0.17315823407400222
+    },
+    {
+      "start": 44.52,
+      "end": 48.56,
+      "text": "I encourage you to of course stay and enjoy what we're gonna be doing here",
+      "source": "pass1",
+      "avg_logprob": -0.17315823407400222
+    },
+    {
+      "start": 48.56,
+      "end": 54.6,
+      "text": "It has to do with prediction markets and how to understand the news and the world as it relates to prediction markets",
+      "source": "pass1",
+      "avg_logprob": -0.17315823407400222
+    },
+    {
+      "start": 54.6,
+      "end": 59.88,
+      "text": "But if you're also looking for a little bit more on the funny news side as well",
+      "source": "pass1",
+      "avg_logprob": -0.17315823407400222
+    },
+    {
+      "start": 59.88,
+      "end": 64.0,
+      "text": "We have stew and Dave do america. It's a new show kind of an expansion of stew does America",
+      "source": "pass1",
+      "avg_logprob": -0.17315823407400222
+    },
+    {
+      "start": 64.0,
+      "end": 67.2,
+      "text": "And it's available if you search YouTube or on blaze TV",
+      "source": "pass1",
+      "avg_logprob": -0.17315823407400222
+    },
+    {
+      "start": 67.52,
+      "end": 70.76,
+      "text": "Stew and Dave do America. So make sure to go check that out",
+      "source": "pass1",
+      "avg_logprob": -0.19037334814667703
+    },
+    {
+      "start": 71.72,
+      "end": 73.72,
+      "text": "Let me talk to you a little bit",
+      "source": "pass1",
+      "avg_logprob": -0.19037334814667703
+    },
+    {
+      "start": 74.12,
+      "end": 75.64,
+      "text": "about",
+      "source": "pass1",
+      "avg_logprob": -0.19037334814667703
+    },
+    {
+      "start": 75.64,
+      "end": 81.6,
+      "text": "The world we're looking at right now because the prediction market world is one you might be new to you might not necessarily",
+      "source": "pass1",
+      "avg_logprob": -0.19037334814667703
+    },
+    {
+      "start": 82.44,
+      "end": 87.08,
+      "text": "Have a vibe on right now. There's a lot of kind of honestly BS",
+      "source": "pass1",
+      "avg_logprob": -0.19037334814667703
+    },
+    {
+      "start": 87.76,
+      "end": 93.56,
+      "text": "Being circulated about prediction markets stuff that doesn't really make any sense. We'll go through some of that today",
+      "source": "pass1",
+      "avg_logprob": -0.19037334814667703
+    },
+    {
+      "start": 94.56,
+      "end": 100.44,
+      "text": "You some where you would think they would have a better understanding of it and maybe a",
+      "source": "pass1",
+      "avg_logprob": -0.17837838290466201
+    },
+    {
+      "start": 101.52,
+      "end": 103.52,
+      "text": "Closer connection to the truth",
+      "source": "pass1",
+      "avg_logprob": -0.17837838290466201
+    },
+    {
+      "start": 103.52,
+      "end": 108.36,
+      "text": "And I find that at times that's a real weak point in the media right now",
+      "source": "pass1",
+      "avg_logprob": -0.17837838290466201
+    },
+    {
+      "start": 108.36,
+      "end": 112.76,
+      "text": "And I think we should make sure we understand that we're also going to give you some different markets",
+      "source": "pass1",
+      "avg_logprob": -0.17837838290466201
+    },
+    {
+      "start": 113.16,
+      "end": 116.44,
+      "text": "To look forward to there's some interesting stuff in sports and culture",
+      "source": "pass1",
+      "avg_logprob": -0.17837838290466201
+    },
+    {
+      "start": 116.44,
+      "end": 121.52,
+      "text": "We'll get into a little bit later, but I do want to start with this WSJ headline",
+      "source": "pass1",
+      "avg_logprob": -0.17837838290466201
+    },
+    {
+      "start": 121.84,
+      "end": 129.32,
+      "text": "Why almost everyone loses except a few sharks on prediction markets. Hmm. There you go",
+      "source": "pass1",
+      "avg_logprob": -0.17120896216671347
+    },
+    {
+      "start": 129.32,
+      "end": 133.32,
+      "text": "That's the big headline. That's kind of the spin honestly. We've been seeing constantly on prediction markets these days",
+      "source": "pass1",
+      "avg_logprob": -0.17120896216671347
+    },
+    {
+      "start": 133.32,
+      "end": 135.32,
+      "text": "It is",
+      "source": "pass1",
+      "avg_logprob": -0.17120896216671347
+    },
+    {
+      "start": 135.4,
+      "end": 137.8,
+      "text": "Sort of a way to scare you away from them",
+      "source": "pass1",
+      "avg_logprob": -0.17120896216671347
+    },
+    {
+      "start": 137.8,
+      "end": 141.84,
+      "text": "I would say that's kind of the thing that they're trying to do right now",
+      "source": "pass1",
+      "avg_logprob": -0.17120896216671347
+    },
+    {
+      "start": 143.12,
+      "end": 147.08,
+      "text": "They want you to know what they are just enough so that you're terrified of them",
+      "source": "pass1",
+      "avg_logprob": -0.17120896216671347
+    },
+    {
+      "start": 147.08,
+      "end": 149.48,
+      "text": "I will say what is it again? What's the word these sharks?",
+      "source": "pass1",
+      "avg_logprob": -0.17120896216671347
+    },
+    {
+      "start": 150.0,
+      "end": 155.08,
+      "text": "Almost a few sharks. Look, this is the I'll try not to admit this all that often",
+      "source": "pass1",
+      "avg_logprob": -0.18358209452678248
+    },
+    {
+      "start": 155.68,
+      "end": 160.48,
+      "text": "Okay, because it does not help me really on this program whatsoever to tell you this but like",
+      "source": "pass1",
+      "avg_logprob": -0.18358209452678248
+    },
+    {
+      "start": 160.88,
+      "end": 164.8,
+      "text": "Here's something that you may be very very aware of already",
+      "source": "pass1",
+      "avg_logprob": -0.18358209452678248
+    },
+    {
+      "start": 165.6,
+      "end": 167.86,
+      "text": "But here's the thing. I'm not a shark",
+      "source": "pass1",
+      "avg_logprob": -0.18358209452678248
+    },
+    {
+      "start": 168.48,
+      "end": 175.56,
+      "text": "Okay, I'm not a shark. I'm not special. I don't have some magical knowledge of prediction markets",
+      "source": "pass1",
+      "avg_logprob": -0.18358209452678248
+    },
+    {
+      "start": 175.76,
+      "end": 182.06,
+      "text": "I can't trade 50,000 times in three seconds. I have no AI doing it for me. That's not what we're doing here",
+      "source": "pass1",
+      "avg_logprob": -0.15389576266732133
+    },
+    {
+      "start": 182.88,
+      "end": 186.52,
+      "text": "They want to terrify you to think that it's all gosh. It's only a few sharks",
+      "source": "pass1",
+      "avg_logprob": -0.15389576266732133
+    },
+    {
+      "start": 186.52,
+      "end": 191.92,
+      "text": "Well, I've done very well on prediction markets for a decade. I'm far from a shark",
+      "source": "pass1",
+      "avg_logprob": -0.15389576266732133
+    },
+    {
+      "start": 192.36,
+      "end": 196.12,
+      "text": "I'm far from some mastermind that can",
+      "source": "pass1",
+      "avg_logprob": -0.15389576266732133
+    },
+    {
+      "start": 197.04,
+      "end": 203.56,
+      "text": "somehow dig into the markets and unleash some secret code what I'm trying to do is take information that I care about that",
+      "source": "pass1",
+      "avg_logprob": -0.15389576266732133
+    },
+    {
+      "start": 203.56,
+      "end": 209.0,
+      "text": "I that I'm interested in and synthesize it into something where we can maybe make a little bit of a profit",
+      "source": "pass1",
+      "avg_logprob": -0.15644816859015104
+    },
+    {
+      "start": 209.4,
+      "end": 214.16,
+      "text": "Inside of prediction markets, maybe we can do that together. Maybe you guys can tell me the markets that you like",
+      "source": "pass1",
+      "avg_logprob": -0.15644816859015104
+    },
+    {
+      "start": 214.24,
+      "end": 217.92,
+      "text": "I'll tell you some that I like and we'll look at this and make some decisions",
+      "source": "pass1",
+      "avg_logprob": -0.15644816859015104
+    },
+    {
+      "start": 218.44,
+      "end": 223.32,
+      "text": "On our own merit like sometimes we'll win sometimes we'll lose but we'll do I think pretty well",
+      "source": "pass1",
+      "avg_logprob": -0.15644816859015104
+    },
+    {
+      "start": 223.32,
+      "end": 226.52,
+      "text": "I have been doing very well for a long time on these things",
+      "source": "pass1",
+      "avg_logprob": -0.15644816859015104
+    },
+    {
+      "start": 226.52,
+      "end": 229.36,
+      "text": "That's not to say that I won't screw up that I won't get some wrong",
+      "source": "pass1",
+      "avg_logprob": -0.15644816859015104
+    },
+    {
+      "start": 229.52,
+      "end": 233.4,
+      "text": "But they want you to believe that apparently people like me are sharks",
+      "source": "pass1",
+      "avg_logprob": -0.15644816859015104
+    },
+    {
+      "start": 233.84,
+      "end": 239.22,
+      "text": "Look, I'm not a shark. I'm not a you know some",
+      "source": "pass1",
+      "avg_logprob": -0.22103443073335094
+    },
+    {
+      "start": 240.0,
+      "end": 244.24,
+      "text": "Complete, you know flash trading nerd. I'm a nerd",
+      "source": "pass1",
+      "avg_logprob": -0.22103443073335094
+    },
+    {
+      "start": 245.36,
+      "end": 249.32,
+      "text": "But I do as little flashing as possible and that's to your benefit, okay",
+      "source": "pass1",
+      "avg_logprob": -0.22103443073335094
+    },
+    {
+      "start": 249.32,
+      "end": 252.36,
+      "text": "Because there's a visual element to the show so that's important by the way",
+      "source": "pass1",
+      "avg_logprob": -0.22103443073335094
+    },
+    {
+      "start": 252.36,
+      "end": 256.72,
+      "text": "You can listen to this on podcast or on YouTube if you are on one or the other just search for",
+      "source": "pass1",
+      "avg_logprob": -0.22103443073335094
+    },
+    {
+      "start": 257.28,
+      "end": 260.26,
+      "text": "Predictable with stew on either platform, whether it's podcast",
+      "source": "pass1",
+      "avg_logprob": -0.22103443073335094
+    },
+    {
+      "start": 260.42,
+      "end": 262.18,
+      "text": "You know",
+      "source": "pass1",
+      "avg_logprob": -0.15603761586050194
+    },
+    {
+      "start": 262.18,
+      "end": 267.66,
+      "text": "YouTube all the all the places you can go and find this let me give you a little bit of this because this is what they're doing in the",
+      "source": "pass1",
+      "avg_logprob": -0.15603761586050194
+    },
+    {
+      "start": 267.66,
+      "end": 269.94,
+      "text": "Media right now, and I don't think it's right",
+      "source": "pass1",
+      "avg_logprob": -0.15603761586050194
+    },
+    {
+      "start": 270.26,
+      "end": 275.82,
+      "text": "And this is one of the reasons I went to Washington DC a couple weeks ago to try to help people understand",
+      "source": "pass1",
+      "avg_logprob": -0.15603761586050194
+    },
+    {
+      "start": 276.62,
+      "end": 277.94,
+      "text": "these",
+      "source": "pass1",
+      "avg_logprob": -0.15603761586050194
+    },
+    {
+      "start": 277.94,
+      "end": 279.1,
+      "text": "Topics a little bit better",
+      "source": "pass1",
+      "avg_logprob": -0.15603761586050194
+    },
+    {
+      "start": 279.1,
+      "end": 284.98,
+      "text": "This is this is the story that give you to warn you about how some people aren't making money in prediction markets",
+      "source": "pass1",
+      "avg_logprob": -0.15603761586050194
+    },
+    {
+      "start": 284.98,
+      "end": 286.54,
+      "text": "Are you ready for it?",
+      "source": "pass1",
+      "avg_logprob": -0.15603761586050194
+    },
+    {
+      "start": 286.54,
+      "end": 291.1,
+      "text": "Because if this is you we're gonna have some we need to have a conversation, okay?",
+      "source": "pass1",
+      "avg_logprob": -0.19236589011393096
+    },
+    {
+      "start": 291.86,
+      "end": 298.42,
+      "text": "John Peterson 33 years old couldn't work the former outback steakhouse line cook was",
+      "source": "pass1",
+      "avg_logprob": -0.19236589011393096
+    },
+    {
+      "start": 298.78,
+      "end": 302.62,
+      "text": "Recovering from a car crash and running out of money. This is not a good start",
+      "source": "pass1",
+      "avg_logprob": -0.19236589011393096
+    },
+    {
+      "start": 303.34,
+      "end": 307.02,
+      "text": "Kalshi the prediction market promised a quick way to fix that",
+      "source": "pass1",
+      "avg_logprob": -0.19236589011393096
+    },
+    {
+      "start": 307.54,
+      "end": 313.34,
+      "text": "He took out a variable interest loan and started betting now stop for one second",
+      "source": "pass1",
+      "avg_logprob": -0.19236589011393096
+    },
+    {
+      "start": 314.34,
+      "end": 317.3,
+      "text": "Right off the bat Kalshi Polymarket",
+      "source": "pass1",
+      "avg_logprob": -0.22233601659536362
+    },
+    {
+      "start": 318.26,
+      "end": 326.06,
+      "text": "PredictIt any prediction market you're considering joining none of them promise you a quick quick way to",
+      "source": "pass1",
+      "avg_logprob": -0.22233601659536362
+    },
+    {
+      "start": 327.1,
+      "end": 331.38,
+      "text": "To fix your financial future. Is it a possibility?",
+      "source": "pass1",
+      "avg_logprob": -0.22233601659536362
+    },
+    {
+      "start": 332.1,
+      "end": 335.58,
+      "text": "Yes, it's a possibility if you do it well, and you do it smart",
+      "source": "pass1",
+      "avg_logprob": -0.22233601659536362
+    },
+    {
+      "start": 336.1,
+      "end": 341.18,
+      "text": "the first thing you should do when you think about going into a prediction market like this is to",
+      "source": "pass1",
+      "avg_logprob": -0.22233601659536362
+    },
+    {
+      "start": 341.98,
+      "end": 344.18,
+      "text": "Exize the word betting from your life",
+      "source": "pass1",
+      "avg_logprob": -0.189008064226273
+    },
+    {
+      "start": 344.78,
+      "end": 352.66,
+      "text": "Because if you're doing in a way that you consider to be betting you'll likely lose because as you know gambling isn't normally all",
+      "source": "pass1",
+      "avg_logprob": -0.189008064226273
+    },
+    {
+      "start": 352.66,
+      "end": 354.98,
+      "text": "That profitable there are some people who do very well with it",
+      "source": "pass1",
+      "avg_logprob": -0.189008064226273
+    },
+    {
+      "start": 355.06,
+      "end": 359.54,
+      "text": "It's possible to do very very well with it, but honestly if that's the way you're thinking about this",
+      "source": "pass1",
+      "avg_logprob": -0.189008064226273
+    },
+    {
+      "start": 359.54,
+      "end": 363.42,
+      "text": "You're gonna probably put yourself in trouble. Let me layer something on top of that",
+      "source": "pass1",
+      "avg_logprob": -0.189008064226273
+    },
+    {
+      "start": 364.42,
+      "end": 368.06,
+      "text": "This man took out a variable interest loan",
+      "source": "pass1",
+      "avg_logprob": -0.189008064226273
+    },
+    {
+      "start": 369.06,
+      "end": 371.54,
+      "text": "To then go on Kalshi and bet",
+      "source": "pass1",
+      "avg_logprob": -0.21225594854974128
+    },
+    {
+      "start": 372.66,
+      "end": 377.98,
+      "text": "He didn't even get a fixed rate loan boys and girls. Hey, I mean I",
+      "source": "pass1",
+      "avg_logprob": -0.21225594854974128
+    },
+    {
+      "start": 379.3,
+      "end": 383.3,
+      "text": "Would argue perhaps use money you have okay?",
+      "source": "pass1",
+      "avg_logprob": -0.21225594854974128
+    },
+    {
+      "start": 383.3,
+      "end": 385.54,
+      "text": "That would be maybe place number one",
+      "source": "pass1",
+      "avg_logprob": -0.21225594854974128
+    },
+    {
+      "start": 385.54,
+      "end": 388.22,
+      "text": "I would start is try to use money",
+      "source": "pass1",
+      "avg_logprob": -0.21225594854974128
+    },
+    {
+      "start": 388.22,
+      "end": 392.06,
+      "text": "That's actually your money if you're taking out giant loans",
+      "source": "pass1",
+      "avg_logprob": -0.21225594854974128
+    },
+    {
+      "start": 392.74,
+      "end": 400.54,
+      "text": "To use to even invest but bet as the heat the term he used on on Polymarket or Kalshi",
+      "source": "pass1",
+      "avg_logprob": -0.18694465896030804
+    },
+    {
+      "start": 400.54,
+      "end": 405.18,
+      "text": "I would advise you at least get a fixed rate loan so that you're",
+      "source": "pass1",
+      "avg_logprob": -0.18694465896030804
+    },
+    {
+      "start": 405.82,
+      "end": 409.54,
+      "text": "Halfway through there's like, oh, sorry. We're gonna jack up your loan rate",
+      "source": "pass1",
+      "avg_logprob": -0.18694465896030804
+    },
+    {
+      "start": 409.54,
+      "end": 416.02,
+      "text": "So variable rate loan that's that's problem number two because betting would be problem number one think about this differently",
+      "source": "pass1",
+      "avg_logprob": -0.18694465896030804
+    },
+    {
+      "start": 416.02,
+      "end": 420.74,
+      "text": "Okay, so this is what he did okay now again. You might say this is obviously a disaster story",
+      "source": "pass1",
+      "avg_logprob": -0.18694465896030804
+    },
+    {
+      "start": 420.74,
+      "end": 426.5,
+      "text": "This is gonna be a catastrophe from minute one. It wasn't he actually did really well listen to this at first",
+      "source": "pass1",
+      "avg_logprob": -0.23376838937401773
+    },
+    {
+      "start": 426.5,
+      "end": 432.14,
+      "text": "It worked Peterson turned about $2,000 into close to 8,000 by betting on daily",
+      "source": "pass1",
+      "avg_logprob": -0.23376838937401773
+    },
+    {
+      "start": 432.54,
+      "end": 436.42,
+      "text": "Snowfall totals in Detroit where he lives now look",
+      "source": "pass1",
+      "avg_logprob": -0.23376838937401773
+    },
+    {
+      "start": 439.22,
+      "end": 441.46,
+      "text": "There are real experts out there on the weather",
+      "source": "pass1",
+      "avg_logprob": -0.23376838937401773
+    },
+    {
+      "start": 441.58,
+      "end": 447.38,
+      "text": "Okay, there are people who are on Kalshi who are on Polymarket who are on predicted or all these markets and they",
+      "source": "pass1",
+      "avg_logprob": -0.23376838937401773
+    },
+    {
+      "start": 447.38,
+      "end": 449.38,
+      "text": "Are making money predicting",
+      "source": "pass1",
+      "avg_logprob": -0.23284527505266256
+    },
+    {
+      "start": 449.74,
+      "end": 455.46,
+      "text": "What will happen with snowfall in various cities? There are as you know, there's meteorologists out there who are studying this stuff",
+      "source": "pass1",
+      "avg_logprob": -0.23284527505266256
+    },
+    {
+      "start": 455.46,
+      "end": 459.62,
+      "text": "There's really smart people if you are a line cook from out back steakhouse",
+      "source": "pass1",
+      "avg_logprob": -0.23284527505266256
+    },
+    {
+      "start": 459.62,
+      "end": 463.26,
+      "text": "You're probably not the guy that is gonna go into daily",
+      "source": "pass1",
+      "avg_logprob": -0.23284527505266256
+    },
+    {
+      "start": 464.02,
+      "end": 470.46,
+      "text": "Snowfall markets in Detroit and win long-term. That's probably not you you might make a mean",
+      "source": "pass1",
+      "avg_logprob": -0.23284527505266256
+    },
+    {
+      "start": 470.94,
+      "end": 472.5,
+      "text": "bloom an onion",
+      "source": "pass1",
+      "avg_logprob": -0.23284527505266256
+    },
+    {
+      "start": 472.5,
+      "end": 477.18,
+      "text": "But my guess is probably not the guy who's gonna know to the tenth of an inch",
+      "source": "pass1",
+      "avg_logprob": -0.23284527505266256
+    },
+    {
+      "start": 477.58,
+      "end": 483.82,
+      "text": "Snowfall total in advance. That's just me. You can get lucky as he seemingly did he went from 2,000 to 8,000",
+      "source": "pass1",
+      "avg_logprob": -0.18419302214275707
+    },
+    {
+      "start": 483.98,
+      "end": 485.98,
+      "text": "He parlayed that into",
+      "source": "pass1",
+      "avg_logprob": -0.18419302214275707
+    },
+    {
+      "start": 486.58,
+      "end": 490.58,
+      "text": "$41,000 by trading on sports using a strategy",
+      "source": "pass1",
+      "avg_logprob": -0.18419302214275707
+    },
+    {
+      "start": 490.58,
+      "end": 494.76,
+      "text": "He developed with the help of AI according to a WSJ review of his account records now",
+      "source": "pass1",
+      "avg_logprob": -0.18419302214275707
+    },
+    {
+      "start": 497.46,
+      "end": 502.62,
+      "text": "Betting on sports is something that you know people do you can there's a lot of different approaches on that",
+      "source": "pass1",
+      "avg_logprob": -0.18419302214275707
+    },
+    {
+      "start": 502.62,
+      "end": 504.62,
+      "text": "We will give you some approaches that will seem",
+      "source": "pass1",
+      "avg_logprob": -0.18419302214275707
+    },
+    {
+      "start": 505.14,
+      "end": 512.78,
+      "text": "Considerably separate from the betting that you may have used or heard of before there's nothing wrong with sports gambling in my mind",
+      "source": "pass1",
+      "avg_logprob": -0.14887878218212644
+    },
+    {
+      "start": 512.78,
+      "end": 517.1,
+      "text": "I'm not a not a puritan on that. I know some people really don't like it. That's fine",
+      "source": "pass1",
+      "avg_logprob": -0.14887878218212644
+    },
+    {
+      "start": 517.1,
+      "end": 522.06,
+      "text": "I don't have any problem with sports gambling and I will say this though",
+      "source": "pass1",
+      "avg_logprob": -0.14887878218212644
+    },
+    {
+      "start": 522.06,
+      "end": 527.38,
+      "text": "And it's it's important to understand on prediction markets prediction markets are gonna give you I think a better experience",
+      "source": "pass1",
+      "avg_logprob": -0.14887878218212644
+    },
+    {
+      "start": 528.78,
+      "end": 531.94,
+      "text": "Wagering on sports if that's what you want to do",
+      "source": "pass1",
+      "avg_logprob": -0.14887878218212644
+    },
+    {
+      "start": 531.94,
+      "end": 534.3,
+      "text": "I mean, I think it's better than having a house edge",
+      "source": "pass1",
+      "avg_logprob": -0.20169502320614727
+    },
+    {
+      "start": 534.82,
+      "end": 540.3,
+      "text": "You're trading with other people. You just have to outsmart other people that being said these are really sharp markets",
+      "source": "pass1",
+      "avg_logprob": -0.20169502320614727
+    },
+    {
+      "start": 540.38,
+      "end": 545.4,
+      "text": "There are millions and millions and millions and millions of dollars going into sports like typical sports",
+      "source": "pass1",
+      "avg_logprob": -0.20169502320614727
+    },
+    {
+      "start": 546.18,
+      "end": 553.06,
+      "text": "Gaming type of vibes, right? If you know who's gonna win is it gonna be the you know the the Patriots of the Seahawks",
+      "source": "pass1",
+      "avg_logprob": -0.20169502320614727
+    },
+    {
+      "start": 553.42,
+      "end": 556.5,
+      "text": "there's a lot of money going in those markets, okay and",
+      "source": "pass1",
+      "avg_logprob": -0.20169502320614727
+    },
+    {
+      "start": 557.5,
+      "end": 564.78,
+      "text": "You to win in a market like that is really really difficult because they're so smart one of the one of the largest",
+      "source": "pass1",
+      "avg_logprob": -0.17814053580598924
+    },
+    {
+      "start": 565.1,
+      "end": 569.6,
+      "text": "Participants in these markets. At least this is the reporting and we don't know this for sure, of course",
+      "source": "pass1",
+      "avg_logprob": -0.17814053580598924
+    },
+    {
+      "start": 569.94,
+      "end": 575.94,
+      "text": "But the actual sports books the people at the sports books who have",
+      "source": "pass1",
+      "avg_logprob": -0.17814053580598924
+    },
+    {
+      "start": 576.34,
+      "end": 580.1,
+      "text": "imbalances on their books can go on these and offset their balances",
+      "source": "pass1",
+      "avg_logprob": -0.17814053580598924
+    },
+    {
+      "start": 580.1,
+      "end": 582.86,
+      "text": "That's the type of money you're talking about millions of dollars are going into these",
+      "source": "pass1",
+      "avg_logprob": -0.17814053580598924
+    },
+    {
+      "start": 583.78,
+      "end": 587.7,
+      "text": "Yes, you can get lucky. You can turn eight thousand dollars into forty one thousand dollars",
+      "source": "pass1",
+      "avg_logprob": -0.14667086052683603
+    },
+    {
+      "start": 588.02,
+      "end": 592.66,
+      "text": "Just like you could do at any casino, right? If that's how you decide to use it and to be clear",
+      "source": "pass1",
+      "avg_logprob": -0.14667086052683603
+    },
+    {
+      "start": 593.1,
+      "end": 595.1,
+      "text": "You can do this anywhere",
+      "source": "pass1",
+      "avg_logprob": -0.14667086052683603
+    },
+    {
+      "start": 595.1,
+      "end": 600.58,
+      "text": "You can gamble you can turn anything into gambling if you want to you can do meme stocks",
+      "source": "pass1",
+      "avg_logprob": -0.14667086052683603
+    },
+    {
+      "start": 600.58,
+      "end": 605.54,
+      "text": "You can do penny stocks or you can go in and buy a really boring index fund, right?",
+      "source": "pass1",
+      "avg_logprob": -0.14667086052683603
+    },
+    {
+      "start": 605.74,
+      "end": 609.78,
+      "text": "That is what is out there and available to you if you want it",
+      "source": "pass1",
+      "avg_logprob": -0.14667086052683603
+    },
+    {
+      "start": 610.78,
+      "end": 614.3,
+      "text": "So this guy turns eight thousand into forty one thousand",
+      "source": "pass1",
+      "avg_logprob": -0.27627559900283816
+    },
+    {
+      "start": 614.3,
+      "end": 620.14,
+      "text": "He should have probably stopped but this is where he went next then he placed his mod most audacious bet yet all",
+      "source": "pass1",
+      "avg_logprob": -0.27627559900283816
+    },
+    {
+      "start": 620.86,
+      "end": 625.86,
+      "text": "41,000 dollars that a celebrity would say a particular word on TV",
+      "source": "pass1",
+      "avg_logprob": -0.27627559900283816
+    },
+    {
+      "start": 626.38,
+      "end": 628.38,
+      "text": "He lost it all",
+      "source": "pass1",
+      "avg_logprob": -0.27627559900283816
+    },
+    {
+      "start": 628.66,
+      "end": 630.54,
+      "text": "now is",
+      "source": "pass1",
+      "avg_logprob": -0.27627559900283816
+    },
+    {
+      "start": 630.54,
+      "end": 635.94,
+      "text": "That I'm not saying that there aren't any stories like that",
+      "source": "pass1",
+      "avg_logprob": -0.27627559900283816
+    },
+    {
+      "start": 635.94,
+      "end": 644.48,
+      "text": "But is that a typical experience a line cook that takes it turns gets forty one thousand dollars between betting on snow and",
+      "source": "pass1",
+      "avg_logprob": -0.23307589449380572
+    },
+    {
+      "start": 644.78,
+      "end": 651.82,
+      "text": "betting on the sports gambling and then throws all of it one hundred percent of his of his pocketbook on",
+      "source": "pass1",
+      "avg_logprob": -0.23307589449380572
+    },
+    {
+      "start": 652.38,
+      "end": 653.62,
+      "text": "a",
+      "source": "pass1",
+      "avg_logprob": -0.23307589449380572
+    },
+    {
+      "start": 653.62,
+      "end": 657.94,
+      "text": "Mention market and loses is it possible to do that?",
+      "source": "pass1",
+      "avg_logprob": -0.23307589449380572
+    },
+    {
+      "start": 657.94,
+      "end": 664.3,
+      "text": "Of course, it's possible to do that question is whether it's a good idea or if that's how normal people use this",
+      "source": "pass1",
+      "avg_logprob": -0.23307589449380572
+    },
+    {
+      "start": 664.3,
+      "end": 669.1,
+      "text": "And of course, it's a total outlier. Let me give you the second example of why these are a problem. Are you ready for it?",
+      "source": "pass1",
+      "avg_logprob": -0.21954935470610173
+    },
+    {
+      "start": 669.1,
+      "end": 674.84,
+      "text": "It's detailed a cell. This is how it starts a self-described problem gambler. I",
+      "source": "pass1",
+      "avg_logprob": -0.21954935470610173
+    },
+    {
+      "start": 676.58,
+      "end": 682.3,
+      "text": "Mean in Connecticut lost two thousand dollars in a day betting on the Super Bowl on Cal-Chi during the fourth quarter",
+      "source": "pass1",
+      "avg_logprob": -0.21954935470610173
+    },
+    {
+      "start": 682.3,
+      "end": 684.78,
+      "text": "A tense fourth quarter really wasn't that tense",
+      "source": "pass1",
+      "avg_logprob": -0.21954935470610173
+    },
+    {
+      "start": 684.78,
+      "end": 685.86,
+      "text": "I don't know if anyone watched that game",
+      "source": "pass1",
+      "avg_logprob": -0.21954935470610173
+    },
+    {
+      "start": 685.86,
+      "end": 690.66,
+      "text": "But wasn't that tense a 31 year old in Indiana who called the trading like a drug lost about five thousand dollars",
+      "source": "pass1",
+      "avg_logprob": -0.21954935470610173
+    },
+    {
+      "start": 691.06,
+      "end": 695.26,
+      "text": "Betting nearly daily on sports and Cal-Chi until the first month of the year again",
+      "source": "pass1",
+      "avg_logprob": -0.17322878351917972
+    },
+    {
+      "start": 695.26,
+      "end": 697.86,
+      "text": "You can use these things for all sorts of extreme betting",
+      "source": "pass1",
+      "avg_logprob": -0.17322878351917972
+    },
+    {
+      "start": 697.86,
+      "end": 703.52,
+      "text": "You can go on your e-trade account too and buy stocks that are worth a penny and hope they go up",
+      "source": "pass1",
+      "avg_logprob": -0.17322878351917972
+    },
+    {
+      "start": 703.82,
+      "end": 707.86,
+      "text": "Okay, that's all available to you. You could do that with crypto. You can do that with investment",
+      "source": "pass1",
+      "avg_logprob": -0.17322878351917972
+    },
+    {
+      "start": 707.86,
+      "end": 712.28,
+      "text": "You can do that with options. You can do that with derivatives. You can do this with a million different topics",
+      "source": "pass1",
+      "avg_logprob": -0.17322878351917972
+    },
+    {
+      "start": 713.78,
+      "end": 718.46,
+      "text": "Or you can do things a little bit more sanely and of course, that's what we're trying to",
+      "source": "pass1",
+      "avg_logprob": -0.17322878351917972
+    },
+    {
+      "start": 719.06,
+      "end": 721.86,
+      "text": "Get through and help you with here unpredictable",
+      "source": "pass1",
+      "avg_logprob": -0.16999126404754875
+    },
+    {
+      "start": 722.02,
+      "end": 723.38,
+      "text": "But also",
+      "source": "pass1",
+      "avg_logprob": -0.16999126404754875
+    },
+    {
+      "start": 723.38,
+      "end": 726.26,
+      "text": "This is how you should be thinking about this on in your data daily life",
+      "source": "pass1",
+      "avg_logprob": -0.16999126404754875
+    },
+    {
+      "start": 726.26,
+      "end": 731.7,
+      "text": "If you're thinking about I'm gonna turn $2,000 into 41,000 and then bet it all on 40 41,000 on a word",
+      "source": "pass1",
+      "avg_logprob": -0.16999126404754875
+    },
+    {
+      "start": 732.22,
+      "end": 734.22,
+      "text": "You're probably gonna wind up losing in fact",
+      "source": "pass1",
+      "avg_logprob": -0.16999126404754875
+    },
+    {
+      "start": 734.22,
+      "end": 740.94,
+      "text": "You're definitely gonna wind up losing eventually because when you're betting quote-unquote betting your entire wallet on one",
+      "source": "pass1",
+      "avg_logprob": -0.16999126404754875
+    },
+    {
+      "start": 741.58,
+      "end": 747.78,
+      "text": "Particular wager eventually you're going to lose once and then it all is gone. That's just a certainty. It's math",
+      "source": "pass1",
+      "avg_logprob": -0.16999126404754875
+    },
+    {
+      "start": 748.66,
+      "end": 750.02,
+      "text": "Don't do that",
+      "source": "pass1",
+      "avg_logprob": -0.12368169243137042
+    },
+    {
+      "start": 750.02,
+      "end": 756.64,
+      "text": "But the whole article is more and there's a bunch of outliers of crazy people who do crazy things in here",
+      "source": "pass1",
+      "avg_logprob": -0.12368169243137042
+    },
+    {
+      "start": 756.64,
+      "end": 758.88,
+      "text": "but it is it also has a",
+      "source": "pass1",
+      "avg_logprob": -0.12368169243137042
+    },
+    {
+      "start": 760.24,
+      "end": 765.12,
+      "text": "It's trying to talk you out of getting into prediction markets and look, you know, if you don't like them",
+      "source": "pass1",
+      "avg_logprob": -0.12368169243137042
+    },
+    {
+      "start": 765.12,
+      "end": 765.6,
+      "text": "That's fine",
+      "source": "pass1",
+      "avg_logprob": -0.12368169243137042
+    },
+    {
+      "start": 765.6,
+      "end": 770.08,
+      "text": "One thing about this show is we're gonna use prediction markets largely to inform our view of the world",
+      "source": "pass1",
+      "avg_logprob": -0.12368169243137042
+    },
+    {
+      "start": 770.08,
+      "end": 772.32,
+      "text": "So if you don't care about prediction markets, if you don't want to get into them",
+      "source": "pass1",
+      "avg_logprob": -0.12368169243137042
+    },
+    {
+      "start": 772.92,
+      "end": 774.48,
+      "text": "We're just gonna take the value out of them",
+      "source": "pass1",
+      "avg_logprob": -0.12368169243137042
+    },
+    {
+      "start": 774.48,
+      "end": 778.84,
+      "text": "We're gonna let all those people go do all those things in all those markets and take the information",
+      "source": "pass1",
+      "avg_logprob": -0.12368169243137042
+    },
+    {
+      "start": 778.84,
+      "end": 781.72,
+      "text": "It's suck that information out for you and be able to say, okay",
+      "source": "pass1",
+      "avg_logprob": -0.2197686671984918
+    },
+    {
+      "start": 781.72,
+      "end": 784.76,
+      "text": "This is what these things are. This is another tool to help us understand the world",
+      "source": "pass1",
+      "avg_logprob": -0.2197686671984918
+    },
+    {
+      "start": 784.76,
+      "end": 787.84,
+      "text": "So whether you like prediction markets or not, I think you're gonna like this show",
+      "source": "pass1",
+      "avg_logprob": -0.2197686671984918
+    },
+    {
+      "start": 788.2,
+      "end": 791.72,
+      "text": "But let me give you a little bit more of this plate piece from the WSJ on Kalshi",
+      "source": "pass1",
+      "avg_logprob": -0.2197686671984918
+    },
+    {
+      "start": 792.2,
+      "end": 800.84,
+      "text": "This observer talked about in this particular article a large number of casual traders jut just bet yes on what they hope will happen",
+      "source": "pass1",
+      "avg_logprob": -0.2197686671984918
+    },
+    {
+      "start": 801.04,
+      "end": 806.28,
+      "text": "That's not what you see in crypto or stock exchange where people are trading securities. I got news for you",
+      "source": "pass1",
+      "avg_logprob": -0.2197686671984918
+    },
+    {
+      "start": 806.36,
+      "end": 808.6,
+      "text": "That's a lot of people are doing on a lot of these markets",
+      "source": "pass1",
+      "avg_logprob": -0.1185167237044939
+    },
+    {
+      "start": 808.6,
+      "end": 812.12,
+      "text": "You're telling me that people don't go in there and throw money at bitcoin with the hope that it goes up",
+      "source": "pass1",
+      "avg_logprob": -0.1185167237044939
+    },
+    {
+      "start": 812.36,
+      "end": 815.8,
+      "text": "And that's really their only piece of knowledge on them on the market. Of course that happens",
+      "source": "pass1",
+      "avg_logprob": -0.1185167237044939
+    },
+    {
+      "start": 815.96,
+      "end": 818.92,
+      "text": "You think that happens with nvidia? Of course it happens",
+      "source": "pass1",
+      "avg_logprob": -0.1185167237044939
+    },
+    {
+      "start": 819.32,
+      "end": 821.72,
+      "text": "There are a lot of people who go in and do all sorts of things",
+      "source": "pass1",
+      "avg_logprob": -0.1185167237044939
+    },
+    {
+      "start": 821.72,
+      "end": 827.16,
+      "text": "But the the point is not to scare everybody away from what could be a good investment and something that could improve their future",
+      "source": "pass1",
+      "avg_logprob": -0.1185167237044939
+    },
+    {
+      "start": 827.56,
+      "end": 829.56,
+      "text": "Instead, let's talk about doing it the right way",
+      "source": "pass1",
+      "avg_logprob": -0.1185167237044939
+    },
+    {
+      "start": 830.28,
+      "end": 835.72,
+      "text": "They say more than 70 percent of Polymarket users lose money says the WSJ",
+      "source": "pass1",
+      "avg_logprob": -0.1185167237044939
+    },
+    {
+      "start": 835.88,
+      "end": 839.8,
+      "text": "A working paper last month from researchers in france and canada had similar findings",
+      "source": "pass1",
+      "avg_logprob": -0.11200713571803324
+    },
+    {
+      "start": 839.8,
+      "end": 844.28,
+      "text": "They found that the gains on prediction markets go almost entirely to sophisticated traders",
+      "source": "pass1",
+      "avg_logprob": -0.11200713571803324
+    },
+    {
+      "start": 844.6,
+      "end": 851.48,
+      "text": "While the long shot bets and unsophisticated traders take losses you will usually lose when you take long shot bets",
+      "source": "pass1",
+      "avg_logprob": -0.11200713571803324
+    },
+    {
+      "start": 851.64,
+      "end": 854.68,
+      "text": "That is true. That's uh, how long shots actually work",
+      "source": "pass1",
+      "avg_logprob": -0.11200713571803324
+    },
+    {
+      "start": 855.08,
+      "end": 859.32,
+      "text": "In fact, they inform you that they are a long shot by telling you they are a long shot and giving you like",
+      "source": "pass1",
+      "avg_logprob": -0.11200713571803324
+    },
+    {
+      "start": 859.4,
+      "end": 861.4,
+      "text": "One percent and they're giving you a hundred times your money",
+      "source": "pass1",
+      "avg_logprob": -0.11200713571803324
+    },
+    {
+      "start": 861.48,
+      "end": 865.08,
+      "text": "You should expect to lose almost all the time when you're betting at something",
+      "source": "pass1",
+      "avg_logprob": -0.08132688484408639
+    },
+    {
+      "start": 865.64,
+      "end": 868.52,
+      "text": "Or investing on something that has a one percent chance of success",
+      "source": "pass1",
+      "avg_logprob": -0.08132688484408639
+    },
+    {
+      "start": 868.92,
+      "end": 872.36,
+      "text": "It indicates the possibility of a 99 chance of loss",
+      "source": "pass1",
+      "avg_logprob": -0.08132688484408639
+    },
+    {
+      "start": 873.0,
+      "end": 875.0,
+      "text": "That's how percentages work",
+      "source": "pass1",
+      "avg_logprob": -0.08132688484408639
+    },
+    {
+      "start": 875.8,
+      "end": 881.0,
+      "text": "The journal's analysis of Polymarket trading data indicates a typical user is down between one and a hundred dollars",
+      "source": "pass1",
+      "avg_logprob": -0.08132688484408639
+    },
+    {
+      "start": 881.08,
+      "end": 885.32,
+      "text": "While the least successful of Polymarket traders have lost an average of four thousand dollars each",
+      "source": "pass1",
+      "avg_logprob": -0.08132688484408639
+    },
+    {
+      "start": 885.32,
+      "end": 888.28,
+      "text": "And this is one of the things these numbers get skewed very easily",
+      "source": "pass1",
+      "avg_logprob": -0.08132688484408639
+    },
+    {
+      "start": 888.84,
+      "end": 894.12,
+      "text": "A lot of people hear about an app like calci or Polymarket. They hop on they throw a few bucks at something",
+      "source": "pass1",
+      "avg_logprob": -0.09505299973661882
+    },
+    {
+      "start": 894.52,
+      "end": 897.0,
+      "text": "They might win once maybe they win twice",
+      "source": "pass1",
+      "avg_logprob": -0.09505299973661882
+    },
+    {
+      "start": 897.08,
+      "end": 900.36,
+      "text": "Then they lose because they put all their money on something and they wind up losing",
+      "source": "pass1",
+      "avg_logprob": -0.09505299973661882
+    },
+    {
+      "start": 900.6,
+      "end": 902.6,
+      "text": "And that's the end of it and they never really go back",
+      "source": "pass1",
+      "avg_logprob": -0.09505299973661882
+    },
+    {
+      "start": 903.0,
+      "end": 907.56,
+      "text": "That's where you're getting why they look at raw numbers of accounts the people who win don't leave",
+      "source": "pass1",
+      "avg_logprob": -0.09505299973661882
+    },
+    {
+      "start": 908.12,
+      "end": 911.8,
+      "text": "The people who lose could they come in and they filter in and they take a couple shots",
+      "source": "pass1",
+      "avg_logprob": -0.09505299973661882
+    },
+    {
+      "start": 911.8,
+      "end": 915.72,
+      "text": "And then they bail and never think about this again because those people aren't necessarily trying to do this",
+      "source": "pass1",
+      "avg_logprob": -0.09505299973661882
+    },
+    {
+      "start": 916.12,
+      "end": 920.6,
+      "text": "In the type of ways that we're talking about here and the the idea that",
+      "source": "pass1",
+      "avg_logprob": -0.14497968436856018
+    },
+    {
+      "start": 921.64,
+      "end": 925.8,
+      "text": "sophisticated large traders make a large portion of the profits",
+      "source": "pass1",
+      "avg_logprob": -0.14497968436856018
+    },
+    {
+      "start": 926.52,
+      "end": 930.68,
+      "text": "Makes a lot of sense because they're the ones putting all the money at risk",
+      "source": "pass1",
+      "avg_logprob": -0.14497968436856018
+    },
+    {
+      "start": 931.64,
+      "end": 935.96,
+      "text": "Right when you go in there with four dollars, my wife has 20 dollars. She put into calci",
+      "source": "pass1",
+      "avg_logprob": -0.14497968436856018
+    },
+    {
+      "start": 936.12,
+      "end": 940.52,
+      "text": "She's now up to 27 by the way. She's up 35 percent. Okay. How's that for an investment?",
+      "source": "pass1",
+      "avg_logprob": -0.14497968436856018
+    },
+    {
+      "start": 940.52,
+      "end": 942.76,
+      "text": "I will tell you it's more profitable than a vacuum habit",
+      "source": "pass1",
+      "avg_logprob": -0.14497968436856018
+    },
+    {
+      "start": 943.0,
+      "end": 945.4,
+      "text": "Which is going the opposite direction for our financial future",
+      "source": "pass1",
+      "avg_logprob": -0.17178002902127187
+    },
+    {
+      "start": 946.04,
+      "end": 947.08,
+      "text": "but",
+      "source": "pass1",
+      "avg_logprob": -0.17178002902127187
+    },
+    {
+      "start": 947.08,
+      "end": 950.76,
+      "text": "It is a situation where her money is not going to",
+      "source": "pass1",
+      "avg_logprob": -0.17178002902127187
+    },
+    {
+      "start": 951.56,
+      "end": 953.16,
+      "text": "move",
+      "source": "pass1",
+      "avg_logprob": -0.17178002902127187
+    },
+    {
+      "start": 953.16,
+      "end": 955.08,
+      "text": "the",
+      "source": "pass1",
+      "avg_logprob": -0.17178002902127187
+    },
+    {
+      "start": 955.08,
+      "end": 958.76,
+      "text": "These overall numbers on a huge exchange like Polymarket or calci",
+      "source": "pass1",
+      "avg_logprob": -0.17178002902127187
+    },
+    {
+      "start": 958.76,
+      "end": 962.36,
+      "text": "There's millions and billions of dollars are going into these markets, right?",
+      "source": "pass1",
+      "avg_logprob": -0.17178002902127187
+    },
+    {
+      "start": 963.24,
+      "end": 968.28,
+      "text": "They're worth they I mean both Cali Calci and Polymarket are worth around 20 billion dollars each",
+      "source": "pass1",
+      "avg_logprob": -0.17178002902127187
+    },
+    {
+      "start": 968.36,
+      "end": 970.76,
+      "text": "And that's the last time they value them. It goes up every single time",
+      "source": "pass1",
+      "avg_logprob": -0.17178002902127187
+    },
+    {
+      "start": 971.08,
+      "end": 973.56,
+      "text": "They provide this healthy healthy chart",
+      "source": "pass1",
+      "avg_logprob": -0.12483544038689655
+    },
+    {
+      "start": 974.84,
+      "end": 981.96,
+      "text": "Just 0.1 of accounts on Polymarket take home 67 of the profits. Okay, that sounds like a really scary number",
+      "source": "pass1",
+      "avg_logprob": -0.12483544038689655
+    },
+    {
+      "start": 982.12,
+      "end": 985.4,
+      "text": "Okay, and you see that there's more accounts that do lose than than win",
+      "source": "pass1",
+      "avg_logprob": -0.12483544038689655
+    },
+    {
+      "start": 985.72,
+      "end": 990.36,
+      "text": "Of course, again, the people who lose are a lot of people who just jumping in trying something new",
+      "source": "pass1",
+      "avg_logprob": -0.12483544038689655
+    },
+    {
+      "start": 990.44,
+      "end": 992.76,
+      "text": "Throwing a few bucks at it for entertainment and then never coming back",
+      "source": "pass1",
+      "avg_logprob": -0.12483544038689655
+    },
+    {
+      "start": 992.84,
+      "end": 996.52,
+      "text": "That's a lot of the people that you see in that lower red area when it comes to",
+      "source": "pass1",
+      "avg_logprob": -0.12483544038689655
+    },
+    {
+      "start": 997.24,
+      "end": 1003.0,
+      "text": "Profitable you see 33 of the profits come from the top accounts, you know, you kind of have to make a decision, right?",
+      "source": "pass1",
+      "avg_logprob": -0.12124071437031475
+    },
+    {
+      "start": 1003.88,
+      "end": 1005.88,
+      "text": "If you were just just random distribution",
+      "source": "pass1",
+      "avg_logprob": -0.12124071437031475
+    },
+    {
+      "start": 1006.76,
+      "end": 1007.72,
+      "text": "You're",
+      "source": "pass1",
+      "avg_logprob": -0.12124071437031475
+    },
+    {
+      "start": 1007.72,
+      "end": 1008.76,
+      "text": "There's a 50-50 chance",
+      "source": "pass1",
+      "avg_logprob": -0.12124071437031475
+    },
+    {
+      "start": 1008.76,
+      "end": 1011.72,
+      "text": "You're in the top or the bottom if you have no knowledge of who you are or what you think",
+      "source": "pass1",
+      "avg_logprob": -0.12124071437031475
+    },
+    {
+      "start": 1012.04,
+      "end": 1015.56,
+      "text": "If you don't think you can be in the top 30 percent of traders",
+      "source": "pass1",
+      "avg_logprob": -0.12124071437031475
+    },
+    {
+      "start": 1017.24,
+      "end": 1020.12,
+      "text": "Frankly, you know, I might not be the thing for you and that's fine",
+      "source": "pass1",
+      "avg_logprob": -0.12124071437031475
+    },
+    {
+      "start": 1020.28,
+      "end": 1024.44,
+      "text": "You know, we'll still suck out all the information for free from from these these incredible tools",
+      "source": "pass1",
+      "avg_logprob": -0.12124071437031475
+    },
+    {
+      "start": 1024.76,
+      "end": 1026.76,
+      "text": "And we'll learn a lot about the world together. That's fine",
+      "source": "pass1",
+      "avg_logprob": -0.11997166152536516
+    },
+    {
+      "start": 1027.08,
+      "end": 1031.48,
+      "text": "If you don't think you that you're like, hey, I know politics better than most people I know",
+      "source": "pass1",
+      "avg_logprob": -0.11997166152536516
+    },
+    {
+      "start": 1032.36,
+      "end": 1034.76,
+      "text": "You probably don't want to go huge in these markets",
+      "source": "pass1",
+      "avg_logprob": -0.11997166152536516
+    },
+    {
+      "start": 1034.84,
+      "end": 1037.56,
+      "text": "I mean, maybe you want to play a little bit have some fun, you know, again",
+      "source": "pass1",
+      "avg_logprob": -0.11997166152536516
+    },
+    {
+      "start": 1037.56,
+      "end": 1041.4,
+      "text": "I keep bringing this up to people. They're like, oh gosh. Well, uh, you know, some people lose money",
+      "source": "pass1",
+      "avg_logprob": -0.11997166152536516
+    },
+    {
+      "start": 1041.48,
+      "end": 1044.76,
+      "text": "Yeah, some people do lose money. I know that everything else I do in my life",
+      "source": "pass1",
+      "avg_logprob": -0.11997166152536516
+    },
+    {
+      "start": 1044.76,
+      "end": 1049.32,
+      "text": "I always lose money when I go to you know, a restaurant. They take it every time",
+      "source": "pass1",
+      "avg_logprob": -0.11997166152536516
+    },
+    {
+      "start": 1049.56,
+      "end": 1053.32,
+      "text": "They never say it's not like every eighth meal. They're like, hey, you won a hundred dollars",
+      "source": "pass1",
+      "avg_logprob": -0.11997166152536516
+    },
+    {
+      "start": 1053.32,
+      "end": 1055.72,
+      "text": "That never happens when I go out to a movie",
+      "source": "pass1",
+      "avg_logprob": -0.1757892473217319
+    },
+    {
+      "start": 1056.52,
+      "end": 1058.52,
+      "text": "The movie usually sucks",
+      "source": "pass1",
+      "avg_logprob": -0.1757892473217319
+    },
+    {
+      "start": 1058.68,
+      "end": 1061.8,
+      "text": "But I one thing that never happens is that at the end of it, they say, well, you know what?",
+      "source": "pass1",
+      "avg_logprob": -0.1757892473217319
+    },
+    {
+      "start": 1061.8,
+      "end": 1065.16,
+      "text": "I guess you guess what you got nine free movies because you were here today",
+      "source": "pass1",
+      "avg_logprob": -0.1757892473217319
+    },
+    {
+      "start": 1065.48,
+      "end": 1068.6,
+      "text": "Like, you know, calcium your Polymarket provides a little entertainment for some people",
+      "source": "pass1",
+      "avg_logprob": -0.1757892473217319
+    },
+    {
+      "start": 1068.76,
+      "end": 1071.48,
+      "text": "They sometimes win. They sometimes lose. That's not the people I'm talking about",
+      "source": "pass1",
+      "avg_logprob": -0.1757892473217319
+    },
+    {
+      "start": 1071.48,
+      "end": 1075.8,
+      "text": "Let me show you why it's important to understand that these numbers like, oh gosh",
+      "source": "pass1",
+      "avg_logprob": -0.1757892473217319
+    },
+    {
+      "start": 1076.2,
+      "end": 1080.28,
+      "text": "Point one percent of the traders get 67 percent of the profits on the platform",
+      "source": "pass1",
+      "avg_logprob": -0.1757892473217319
+    },
+    {
+      "start": 1080.52,
+      "end": 1085.56,
+      "text": "Let me give you the top. What is this eight traders on Polymarket right now?",
+      "source": "pass1",
+      "avg_logprob": -0.11552861458017626
+    },
+    {
+      "start": 1085.64,
+      "end": 1089.32,
+      "text": "This is from a site Polymarket analytics that that breaks this stuff down",
+      "source": "pass1",
+      "avg_logprob": -0.11552861458017626
+    },
+    {
+      "start": 1089.8,
+      "end": 1092.84,
+      "text": "And it's a little might be a little difficult to see but let me break this down for you",
+      "source": "pass1",
+      "avg_logprob": -0.11552861458017626
+    },
+    {
+      "start": 1093.4,
+      "end": 1098.52,
+      "text": "All of them like for example, uh, the the guy here. I can't even read these graphics. I'm sorry on here",
+      "source": "pass1",
+      "avg_logprob": -0.11552861458017626
+    },
+    {
+      "start": 1098.52,
+      "end": 1100.52,
+      "text": "But it's millions and millions of dollars",
+      "source": "pass1",
+      "avg_logprob": -0.11552861458017626
+    },
+    {
+      "start": 1101.4,
+      "end": 1103.4,
+      "text": "That are being traded by these guys",
+      "source": "pass1",
+      "avg_logprob": -0.11552861458017626
+    },
+    {
+      "start": 1103.4,
+      "end": 1108.68,
+      "text": "And if you see the the sort of red and green breakdown in the middle, those are their wins and losses",
+      "source": "pass1",
+      "avg_logprob": -0.11552861458017626
+    },
+    {
+      "start": 1110.44,
+      "end": 1113.64,
+      "text": "Two of the top eight traders on Polymarket two of the top eight",
+      "source": "pass1",
+      "avg_logprob": -0.08978874813400063
+    },
+    {
+      "start": 1114.52,
+      "end": 1118.92,
+      "text": "In this time period have below 50 success rates",
+      "source": "pass1",
+      "avg_logprob": -0.08978874813400063
+    },
+    {
+      "start": 1119.96,
+      "end": 1124.52,
+      "text": "They are losing a lot. They're just winning the right positions when they win",
+      "source": "pass1",
+      "avg_logprob": -0.08978874813400063
+    },
+    {
+      "start": 1125.16,
+      "end": 1130.2,
+      "text": "They are putting millions and millions and millions of dollars on both sides of these transactions",
+      "source": "pass1",
+      "avg_logprob": -0.08978874813400063
+    },
+    {
+      "start": 1130.2,
+      "end": 1137.4,
+      "text": "Some of them are like, hey, they won. They're up four million dollars. They won 36 million and lost 32 million",
+      "source": "pass1",
+      "avg_logprob": -0.08978874813400063
+    },
+    {
+      "start": 1137.72,
+      "end": 1139.72,
+      "text": "Well, when you have people like that",
+      "source": "pass1",
+      "avg_logprob": -0.08978874813400063
+    },
+    {
+      "start": 1140.28,
+      "end": 1143.48,
+      "text": "That are skewing these are just whales in there doing their thing",
+      "source": "pass1",
+      "avg_logprob": -0.09510691281702878
+    },
+    {
+      "start": 1143.88,
+      "end": 1149.88,
+      "text": "Yes, they're going to have most of the profits because other people they're you're comparing them to put a hundred dollars on the platform",
+      "source": "pass1",
+      "avg_logprob": -0.09510691281702878
+    },
+    {
+      "start": 1150.12,
+      "end": 1152.28,
+      "text": "It's going to be really hard for them to win four million",
+      "source": "pass1",
+      "avg_logprob": -0.09510691281702878
+    },
+    {
+      "start": 1154.48,
+      "end": 1156.48,
+      "text": "This is what's going on right now",
+      "source": "pass1",
+      "avg_logprob": -0.09510691281702878
+    },
+    {
+      "start": 1156.96,
+      "end": 1158.08,
+      "text": "And over and over again",
+      "source": "pass1",
+      "avg_logprob": -0.09510691281702878
+    },
+    {
+      "start": 1158.08,
+      "end": 1162.64,
+      "text": "They keep trying to skew these things into uh to make them a scary foreign thing",
+      "source": "pass1",
+      "avg_logprob": -0.09510691281702878
+    },
+    {
+      "start": 1162.88,
+      "end": 1165.52,
+      "text": "One of the things we're going to do here is break them down so they're not that way",
+      "source": "pass1",
+      "avg_logprob": -0.09510691281702878
+    },
+    {
+      "start": 1165.84,
+      "end": 1168.4,
+      "text": "Right, they don't have to be scary. They don't have to be intimidating",
+      "source": "pass1",
+      "avg_logprob": -0.09510691281702878
+    },
+    {
+      "start": 1168.72,
+      "end": 1174.48,
+      "text": "What it has what's great about these markets is there's so much more accessible than traditional investments",
+      "source": "pass1",
+      "avg_logprob": -0.12429785850595255
+    },
+    {
+      "start": 1174.96,
+      "end": 1181.68,
+      "text": "You know think about trying to even understand how to trade options, right? It's very difficult think about going on and really understand",
+      "source": "pass1",
+      "avg_logprob": -0.12429785850595255
+    },
+    {
+      "start": 1181.68,
+      "end": 1184.88,
+      "text": "I mean, I know, you know ai is going to be big so in video, right",
+      "source": "pass1",
+      "avg_logprob": -0.12429785850595255
+    },
+    {
+      "start": 1185.68,
+      "end": 1188.0,
+      "text": "Hey, you know iphone sell a lot apple",
+      "source": "pass1",
+      "avg_logprob": -0.12429785850595255
+    },
+    {
+      "start": 1188.16,
+      "end": 1192.16,
+      "text": "That's about what people put in to the stock market when they're thinking about it",
+      "source": "pass1",
+      "avg_logprob": -0.12429785850595255
+    },
+    {
+      "start": 1192.56,
+      "end": 1196.48,
+      "text": "And they don't have a lot of information necessarily on those things other than the basics",
+      "source": "pass1",
+      "avg_logprob": -0.12429785850595255
+    },
+    {
+      "start": 1196.96,
+      "end": 1199.84,
+      "text": "When it comes to prediction markets, it's a simple yes or no",
+      "source": "pass1",
+      "avg_logprob": -0.12847397092948942
+    },
+    {
+      "start": 1200.48,
+      "end": 1202.48,
+      "text": "question and if you know something",
+      "source": "pass1",
+      "avg_logprob": -0.12847397092948942
+    },
+    {
+      "start": 1202.96,
+      "end": 1208.16,
+      "text": "About a particular topic if there's something you're really invested in something you're really interested in something you want to study",
+      "source": "pass1",
+      "avg_logprob": -0.12847397092948942
+    },
+    {
+      "start": 1208.4,
+      "end": 1214.56,
+      "text": "You want to read you want to think about a little bit more than uh, you know the the is iphone good or bad",
+      "source": "pass1",
+      "avg_logprob": -0.12847397092948942
+    },
+    {
+      "start": 1215.12,
+      "end": 1217.76,
+      "text": "If you have that inside of you it's something you want to do",
+      "source": "pass1",
+      "avg_logprob": -0.12847397092948942
+    },
+    {
+      "start": 1218.0,
+      "end": 1222.4,
+      "text": "These are great markets to get in because you're answering a very specific question calcy just added these things",
+      "source": "pass1",
+      "avg_logprob": -0.12847397092948942
+    },
+    {
+      "start": 1222.88,
+      "end": 1226.0,
+      "text": "Uh kpi is where you can go in there's just specific measures for companies",
+      "source": "pass1",
+      "avg_logprob": -0.12847397092948942
+    },
+    {
+      "start": 1226.72,
+      "end": 1228.72,
+      "text": "Do you think this product is going to sell well?",
+      "source": "pass1",
+      "avg_logprob": -0.12693689881468848
+    },
+    {
+      "start": 1228.88,
+      "end": 1234.08,
+      "text": "Um, is it going to sell over this many units? That's a question that you could ask and maybe you have an opinion on right?",
+      "source": "pass1",
+      "avg_logprob": -0.12693689881468848
+    },
+    {
+      "start": 1234.64,
+      "end": 1240.0,
+      "text": "Maybe you think a product's about to take off and you want you want to see if you can uh collect some on an investment on that",
+      "source": "pass1",
+      "avg_logprob": -0.12693689881468848
+    },
+    {
+      "start": 1240.4,
+      "end": 1243.52,
+      "text": "You can get a yes or a no where if you just invest in the stock",
+      "source": "pass1",
+      "avg_logprob": -0.12693689881468848
+    },
+    {
+      "start": 1244.08,
+      "end": 1247.36,
+      "text": "There's a lot of other variables. Maybe one of their other products fails",
+      "source": "pass1",
+      "avg_logprob": -0.12693689881468848
+    },
+    {
+      "start": 1248.08,
+      "end": 1255.6,
+      "text": "Maybe there's a supply chain issue somewhere. Maybe you know, they're, uh, their ceo is in the epstein files",
+      "source": "pass1",
+      "avg_logprob": -0.12693689881468848
+    },
+    {
+      "start": 1256.56,
+      "end": 1262.56,
+      "text": "And all of a sudden here you are your stocks down 40 percent even though you were right on how many they would sell",
+      "source": "pass1",
+      "avg_logprob": -0.10613812397305782
+    },
+    {
+      "start": 1262.72,
+      "end": 1266.4,
+      "text": "Bottom line is I think these are more accessible not less and and that seems to be",
+      "source": "pass1",
+      "avg_logprob": -0.10613812397305782
+    },
+    {
+      "start": 1267.04,
+      "end": 1270.4,
+      "text": "I don't know the intimidation level from the more professional class on this stuff",
+      "source": "pass1",
+      "avg_logprob": -0.10613812397305782
+    },
+    {
+      "start": 1270.64,
+      "end": 1273.68,
+      "text": "Uh, let me get a little bit more. Um, and just to give you a sense of this",
+      "source": "pass1",
+      "avg_logprob": -0.10613812397305782
+    },
+    {
+      "start": 1275.6,
+      "end": 1278.96,
+      "text": "You have to understand that there are real pros out there. It's not nothing",
+      "source": "pass1",
+      "avg_logprob": -0.10613812397305782
+    },
+    {
+      "start": 1279.52,
+      "end": 1283.92,
+      "text": "You're not going in here and just going against people who know nothing. This is not what these markets are",
+      "source": "pass1",
+      "avg_logprob": -0.10613812397305782
+    },
+    {
+      "start": 1284.0,
+      "end": 1286.72,
+      "text": "There was a time a glorious time in the past",
+      "source": "pass1",
+      "avg_logprob": -0.11288953953080898
+    },
+    {
+      "start": 1287.12,
+      "end": 1290.96,
+      "text": "Where that was sort of the case like you could really go in here and sometimes clean up",
+      "source": "pass1",
+      "avg_logprob": -0.11288953953080898
+    },
+    {
+      "start": 1291.52,
+      "end": 1295.2,
+      "text": "With people who didn't really know what they were talking about and it was kind of nice. Uh as a trader",
+      "source": "pass1",
+      "avg_logprob": -0.11288953953080898
+    },
+    {
+      "start": 1295.28,
+      "end": 1299.6,
+      "text": "You were like, oh gosh that that price is completely wrong. I'm gonna go the other way on it",
+      "source": "pass1",
+      "avg_logprob": -0.11288953953080898
+    },
+    {
+      "start": 1300.32,
+      "end": 1301.28,
+      "text": "There are a lot of people in here",
+      "source": "pass1",
+      "avg_logprob": -0.11288953953080898
+    },
+    {
+      "start": 1301.28,
+      "end": 1302.16,
+      "text": "Let me give you an example",
+      "source": "pass1",
+      "avg_logprob": -0.11288953953080898
+    },
+    {
+      "start": 1302.16,
+      "end": 1306.0,
+      "text": "Jonathan stall ryan a co-founder of another firm with about a dozen staff like him",
+      "source": "pass1",
+      "avg_logprob": -0.11288953953080898
+    },
+    {
+      "start": 1306.0,
+      "end": 1309.52,
+      "text": "I'll call the college students the firm is among the top five traders by volume",
+      "source": "pass1",
+      "avg_logprob": -0.11288953953080898
+    },
+    {
+      "start": 1309.76,
+      "end": 1316.16,
+      "text": "betting on crypto prices on Kalshi and stall ryan has turned a thousand dollars into seven figure profits",
+      "source": "pass1",
+      "avg_logprob": -0.13369802633921304
+    },
+    {
+      "start": 1317.12,
+      "end": 1321.36,
+      "text": "The company pays more than two hundred thousand dollars a year for live data feeds",
+      "source": "pass1",
+      "avg_logprob": -0.13369802633921304
+    },
+    {
+      "start": 1321.52,
+      "end": 1326.96,
+      "text": "AI coding agents and servers and uses algorithms to execute live trades tens of thousands a day",
+      "source": "pass1",
+      "avg_logprob": -0.13369802633921304
+    },
+    {
+      "start": 1327.44,
+      "end": 1334.0,
+      "text": "You should know people like that are out there and the way they make money is not necessarily knowing or predicting what the future is",
+      "source": "pass1",
+      "avg_logprob": -0.13369802633921304
+    },
+    {
+      "start": 1334.4,
+      "end": 1337.84,
+      "text": "They are helping with price discovery. Uh, and I think they're a positive",
+      "source": "pass1",
+      "avg_logprob": -0.13369802633921304
+    },
+    {
+      "start": 1337.92,
+      "end": 1343.52,
+      "text": "Um, uh influence on these markets when when they see a weakness in a market, they'll come in but",
+      "source": "pass1",
+      "avg_logprob": -0.1658715260129015
+    },
+    {
+      "start": 1344.08,
+      "end": 1348.0,
+      "text": "A lot of these guys are just coming in they're trading tens of thousands of times a day",
+      "source": "pass1",
+      "avg_logprob": -0.1658715260129015
+    },
+    {
+      "start": 1348.4,
+      "end": 1351.12,
+      "text": "And they're chipping away like uh, what was it superman?",
+      "source": "pass1",
+      "avg_logprob": -0.1658715260129015
+    },
+    {
+      "start": 1351.52,
+      "end": 1356.24,
+      "text": "Three was it three or four where they were taking the little shaves of penny office space",
+      "source": "pass1",
+      "avg_logprob": -0.1658715260129015
+    },
+    {
+      "start": 1356.48,
+      "end": 1362.96,
+      "text": "They would take the little shake the shavings of pennies and pocketing them because of millions of transactions a day or whatever",
+      "source": "pass1",
+      "avg_logprob": -0.1658715260129015
+    },
+    {
+      "start": 1362.96,
+      "end": 1364.96,
+      "text": "They're trying to do",
+      "source": "pass1",
+      "avg_logprob": -0.1658715260129015
+    },
+    {
+      "start": 1365.28,
+      "end": 1367.28,
+      "text": "That's not how I look at this stuff at all",
+      "source": "pass1",
+      "avg_logprob": -0.09779043923253598
+    },
+    {
+      "start": 1367.52,
+      "end": 1370.8,
+      "text": "I look at something that says hey in three months something's going to happen",
+      "source": "pass1",
+      "avg_logprob": -0.09779043923253598
+    },
+    {
+      "start": 1371.12,
+      "end": 1374.48,
+      "text": "And it says there's a 40 chance that I think it's an 80 chance",
+      "source": "pass1",
+      "avg_logprob": -0.09779043923253598
+    },
+    {
+      "start": 1374.72,
+      "end": 1380.0,
+      "text": "So i'm going to go in there if I get in one of these traders might get it at 40 and I might get it at 41",
+      "source": "pass1",
+      "avg_logprob": -0.09779043923253598
+    },
+    {
+      "start": 1380.24,
+      "end": 1382.0,
+      "text": "I'm not that worried about that",
+      "source": "pass1",
+      "avg_logprob": -0.09779043923253598
+    },
+    {
+      "start": 1382.0,
+      "end": 1384.88,
+      "text": "That's not the game i'm playing the game that they are playing",
+      "source": "pass1",
+      "avg_logprob": -0.09779043923253598
+    },
+    {
+      "start": 1385.52,
+      "end": 1390.4,
+      "text": "Flash trading very quick incredibly high technology levels",
+      "source": "pass1",
+      "avg_logprob": -0.09779043923253598
+    },
+    {
+      "start": 1390.96,
+      "end": 1396.08,
+      "text": "All sorts of advanced technology if you're trying to beat them at that game like this uh guy from",
+      "source": "pass1",
+      "avg_logprob": -0.1239758502278063
+    },
+    {
+      "start": 1396.64,
+      "end": 1403.52,
+      "text": "Uh, the steakhouse outback steakhouse was doing with his ai probably free chat gbt trying to get some model figured out",
+      "source": "pass1",
+      "avg_logprob": -0.1239758502278063
+    },
+    {
+      "start": 1403.68,
+      "end": 1405.68,
+      "text": "If that's what you're trying to do look",
+      "source": "pass1",
+      "avg_logprob": -0.1239758502278063
+    },
+    {
+      "start": 1406.24,
+      "end": 1407.68,
+      "text": "It's not impossible you'll succeed",
+      "source": "pass1",
+      "avg_logprob": -0.1239758502278063
+    },
+    {
+      "start": 1407.68,
+      "end": 1410.08,
+      "text": "But I would say it's pretty unlikely a lot of people have that idea",
+      "source": "pass1",
+      "avg_logprob": -0.1239758502278063
+    },
+    {
+      "start": 1410.48,
+      "end": 1414.0,
+      "text": "And a lot of people are putting incredible resources into trying to do that",
+      "source": "pass1",
+      "avg_logprob": -0.1239758502278063
+    },
+    {
+      "start": 1414.4,
+      "end": 1418.4,
+      "text": "They're trying to get the slightest trading advantages and they're trading in and out of positions",
+      "source": "pass1",
+      "avg_logprob": -0.1239758502278063
+    },
+    {
+      "start": 1418.64,
+      "end": 1420.88,
+      "text": "You know sometimes hundreds of times a minute",
+      "source": "pass1",
+      "avg_logprob": -0.12431223037814305
+    },
+    {
+      "start": 1421.52,
+      "end": 1423.84,
+      "text": "It you're not gonna that's if you're trying to play that game",
+      "source": "pass1",
+      "avg_logprob": -0.12431223037814305
+    },
+    {
+      "start": 1423.92,
+      "end": 1426.24,
+      "text": "It's going to be really difficult when you're looking long term",
+      "source": "pass1",
+      "avg_logprob": -0.12431223037814305
+    },
+    {
+      "start": 1426.56,
+      "end": 1432.4,
+      "text": "You're taking uh, you're taking investments and positions on on things that make sense over a long period of time",
+      "source": "pass1",
+      "avg_logprob": -0.12431223037814305
+    },
+    {
+      "start": 1432.72,
+      "end": 1435.6,
+      "text": "With deeper knowledge and you're not looking to try to",
+      "source": "pass1",
+      "avg_logprob": -0.12431223037814305
+    },
+    {
+      "start": 1436.16,
+      "end": 1441.52,
+      "text": "Do this at some crazy volume. There are real opportunities out there. Um, and by the way our friend",
+      "source": "pass1",
+      "avg_logprob": -0.12431223037814305
+    },
+    {
+      "start": 1442.72,
+      "end": 1445.2,
+      "text": "From outback steakhouse. Unfortunately, he did lose it all",
+      "source": "pass1",
+      "avg_logprob": -0.12431223037814305
+    },
+    {
+      "start": 1446.16,
+      "end": 1449.36,
+      "text": "He had few other sources resources to turn to it's a really a sad story",
+      "source": "pass1",
+      "avg_logprob": -0.11712065626119005
+    },
+    {
+      "start": 1449.36,
+      "end": 1452.0,
+      "text": "He's currently living in a homeless shelter in downtown Detroit",
+      "source": "pass1",
+      "avg_logprob": -0.11712065626119005
+    },
+    {
+      "start": 1452.16,
+      "end": 1455.2,
+      "text": "Which how could you even tell with Detroit if you're in a homeless shelter or not?",
+      "source": "pass1",
+      "avg_logprob": -0.11712065626119005
+    },
+    {
+      "start": 1455.68,
+      "end": 1460.64,
+      "text": "Uh, frankly, that's it's hard to know. But uh, anyway, uh, he this is the best part of the story",
+      "source": "pass1",
+      "avg_logprob": -0.11712065626119005
+    },
+    {
+      "start": 1461.12,
+      "end": 1464.48,
+      "text": "He recently got an offer to for a job selling mortgages",
+      "source": "pass1",
+      "avg_logprob": -0.11712065626119005
+    },
+    {
+      "start": 1464.96,
+      "end": 1470.8,
+      "text": "Of course, this is the guy right because there's never been any problem with mortgages ruining our economy",
+      "source": "pass1",
+      "avg_logprob": -0.11712065626119005
+    },
+    {
+      "start": 1471.12,
+      "end": 1478.24,
+      "text": "Let's bring the guy from outback steakhouse who blew his savings on bed after bed after bed after bed after bed",
+      "source": "pass1",
+      "avg_logprob": -0.09845950271723405
+    },
+    {
+      "start": 1478.8,
+      "end": 1485.6,
+      "text": "On whether by the way the the market he went into was whether a rapper would say the word rapper on television",
+      "source": "pass1",
+      "avg_logprob": -0.09845950271723405
+    },
+    {
+      "start": 1486.72,
+      "end": 1491.76,
+      "text": "By the way, I felt bad for him because the guy actually said rapper, but they cut it out of the interview",
+      "source": "pass1",
+      "avg_logprob": -0.09845950271723405
+    },
+    {
+      "start": 1492.32,
+      "end": 1495.6,
+      "text": "That sucks. I will say mention markets are very finicky creatures",
+      "source": "pass1",
+      "avg_logprob": -0.09845950271723405
+    },
+    {
+      "start": 1495.68,
+      "end": 1497.68,
+      "text": "I will say we like doing them. They're fun",
+      "source": "pass1",
+      "avg_logprob": -0.09845950271723405
+    },
+    {
+      "start": 1498.08,
+      "end": 1501.84,
+      "text": "But I wouldn't say that they're the peak of my uh, they're on on our degenometer",
+      "source": "pass1",
+      "avg_logprob": -0.12689769128958384
+    },
+    {
+      "start": 1501.92,
+      "end": 1506.48,
+      "text": "They're a little bit more towards the degen side than I like to be although they are a little fun",
+      "source": "pass1",
+      "avg_logprob": -0.12689769128958384
+    },
+    {
+      "start": 1506.48,
+      "end": 1511.04,
+      "text": "I will say that as well. Okay. I want to come back. Take a break and come back on the other side with uh",
+      "source": "pass1",
+      "avg_logprob": -0.12689769128958384
+    },
+    {
+      "start": 1511.92,
+      "end": 1513.92,
+      "text": "Dan andros and I want to talk to him",
+      "source": "pass1",
+      "avg_logprob": -0.12689769128958384
+    },
+    {
+      "start": 1514.24,
+      "end": 1519.52,
+      "text": "I've got a couple of things to take up with him a couple bones to pick with mr. Andros on some markets",
+      "source": "pass1",
+      "avg_logprob": -0.12689769128958384
+    },
+    {
+      "start": 1519.68,
+      "end": 1521.68,
+      "text": "So I want to get to that next",
+      "source": "pass1",
+      "avg_logprob": -0.12689769128958384
+    },
+    {
+      "start": 1521.76,
+      "end": 1526.96,
+      "text": "We are live from feddy's house guests are gathering around the tv even with a big storm outside",
+      "source": "pass1",
+      "avg_logprob": -0.12689769128958384
+    },
+    {
+      "start": 1527.04,
+      "end": 1533.84,
+      "text": "All we worried about the feet. No, they have xfinity wi-fi get reliable fiber powered gig wi-fi with peacock included to stream the beautiful game this summer",
+      "source": "pass1",
+      "avg_logprob": -0.171123977779418
+    },
+    {
+      "start": 1534.08,
+      "end": 1539.2,
+      "text": "Xfinity imagine that restrictions apply new gig internet customers only actual speeds vary offer for peacock premium with ads currently at",
+      "source": "pass1",
+      "avg_logprob": -0.171123977779418
+    },
+    {
+      "start": 1539.28,
+      "end": 1544.4,
+      "text": "1099 a month value and limited to xfinity internet members with newer upgraded gig speed or faster service activation required to access content",
+      "source": "pass1",
+      "avg_logprob": -0.171123977779418
+    },
+    {
+      "start": 1544.4,
+      "end": 1549.76,
+      "text": "Peacock must be activated within first 90 days management of existing subscriptions may be required to avoid multiple subscriptions and duplicate charges",
+      "source": "pass1",
+      "avg_logprob": -0.171123977779418
+    },
+    {
+      "start": 1549.76,
+      "end": 1551.76,
+      "text": "Third party bill subscriptions continue until cancelled",
+      "source": "pass1",
+      "avg_logprob": -0.171123977779418
+    },
+    {
+      "start": 1552.24,
+      "end": 1556.88,
+      "text": "Welcome back to predictable predictable show dot com by the way is uh the place to go to",
+      "source": "pass1",
+      "avg_logprob": -0.13184821128845214
+    },
+    {
+      "start": 1557.68,
+      "end": 1560.32,
+      "text": "Not only get the show and some of the behind the scenes stuff, but also",
+      "source": "pass1",
+      "avg_logprob": -0.13184821128845214
+    },
+    {
+      "start": 1560.88,
+      "end": 1564.8,
+      "text": "Uh some live streams and written pieces on particular markets",
+      "source": "pass1",
+      "avg_logprob": -0.13184821128845214
+    },
+    {
+      "start": 1564.8,
+      "end": 1569.2,
+      "text": "We're going to be building that out more as we get started here. This is again not even a full show",
+      "source": "pass1",
+      "avg_logprob": -0.13184821128845214
+    },
+    {
+      "start": 1569.36,
+      "end": 1573.2,
+      "text": "We don't have all of our graphics ready. We're just first day in the studio first day new dicks",
+      "source": "pass1",
+      "avg_logprob": -0.13184821128845214
+    },
+    {
+      "start": 1573.28,
+      "end": 1578.48,
+      "text": "So thanks for joining us here on predictable and make sure to go to predictable show dot com and join us",
+      "source": "pass1",
+      "avg_logprob": -0.13184821128845214
+    },
+    {
+      "start": 1578.88,
+      "end": 1582.24,
+      "text": "There as well. You can do it with just an email. I want to bring in dan andros",
+      "source": "pass1",
+      "avg_logprob": -0.15415145196020602
+    },
+    {
+      "start": 1583.12,
+      "end": 1585.12,
+      "text": "Welcome to the program dan",
+      "source": "pass1",
+      "avg_logprob": -0.15415145196020602
+    },
+    {
+      "start": 1585.84,
+      "end": 1588.64,
+      "text": "You know dan, of course over doing quick start with cbn",
+      "source": "pass1",
+      "avg_logprob": -0.15415145196020602
+    },
+    {
+      "start": 1589.2,
+      "end": 1592.56,
+      "text": "And has been on our programs over the years many many times andros",
+      "source": "pass1",
+      "avg_logprob": -0.15415145196020602
+    },
+    {
+      "start": 1593.36,
+      "end": 1596.08,
+      "text": "Of course here to bring the dany long shots advice",
+      "source": "pass1",
+      "avg_logprob": -0.15415145196020602
+    },
+    {
+      "start": 1597.52,
+      "end": 1601.44,
+      "text": "For all of our prediction market fund dan welcome to the program. All right, thanks",
+      "source": "pass1",
+      "avg_logprob": -0.15415145196020602
+    },
+    {
+      "start": 1602.16,
+      "end": 1606.4,
+      "text": "One of the things we were just talking about I would love to get your reaction on is the fact that the media",
+      "source": "pass1",
+      "avg_logprob": -0.15415145196020602
+    },
+    {
+      "start": 1606.8,
+      "end": 1608.8,
+      "text": "You realize how when it's",
+      "source": "pass1",
+      "avg_logprob": -0.08242613000747485
+    },
+    {
+      "start": 1609.12,
+      "end": 1612.16,
+      "text": "When it's about things that you understand you realize how bad they are",
+      "source": "pass1",
+      "avg_logprob": -0.08242613000747485
+    },
+    {
+      "start": 1612.72,
+      "end": 1618.08,
+      "text": "And I think this is another example of prediction markets because when you see how they handle prediction markets",
+      "source": "pass1",
+      "avg_logprob": -0.08242613000747485
+    },
+    {
+      "start": 1618.08,
+      "end": 1620.24,
+      "text": "You realize how bad they must be on everything else",
+      "source": "pass1",
+      "avg_logprob": -0.08242613000747485
+    },
+    {
+      "start": 1620.72,
+      "end": 1626.56,
+      "text": "Right when you take it if you've been following the news very closely over the years and you look at how they spin different things",
+      "source": "pass1",
+      "avg_logprob": -0.08242613000747485
+    },
+    {
+      "start": 1627.28,
+      "end": 1633.12,
+      "text": "Uh, you know, it kind of gets muddy and like they're like that's kind of when they're on like their a spin game",
+      "source": "pass1",
+      "avg_logprob": -0.08242613000747485
+    },
+    {
+      "start": 1633.2,
+      "end": 1637.36,
+      "text": "Is when it's in like politics and stuff like that, but then when you see them try to do it in their mind",
+      "source": "pass1",
+      "avg_logprob": -0.08634258676078413
+    },
+    {
+      "start": 1637.36,
+      "end": 1638.96,
+      "text": "They're just saying",
+      "source": "pass1",
+      "avg_logprob": -0.08634258676078413
+    },
+    {
+      "start": 1638.96,
+      "end": 1645.68,
+      "text": "Prediction market bad. We need to spin this bad. What do we do and they go and find they try to find the poster child",
+      "source": "pass1",
+      "avg_logprob": -0.08634258676078413
+    },
+    {
+      "start": 1645.68,
+      "end": 1649.36,
+      "text": "But they don't know how to do it like this is uncharted territory for them. So they grab",
+      "source": "pass1",
+      "avg_logprob": -0.08634258676078413
+    },
+    {
+      "start": 1650.08,
+      "end": 1653.04,
+      "text": "This guy and you have to realize that this is what they do",
+      "source": "pass1",
+      "avg_logprob": -0.08634258676078413
+    },
+    {
+      "start": 1654.08,
+      "end": 1658.24,
+      "text": "On all the other topics. They're just a little bit, you know, they're just a little bit more clever with it",
+      "source": "pass1",
+      "avg_logprob": -0.08634258676078413
+    },
+    {
+      "start": 1658.24,
+      "end": 1662.24,
+      "text": "Right, they've had more practice at it over the years. So when the border situation they want to",
+      "source": "pass1",
+      "avg_logprob": -0.08634258676078413
+    },
+    {
+      "start": 1663.04,
+      "end": 1668.56,
+      "text": "Say, you know, Trump's border crackdown is bad or whatever it is. They want to say they go and find",
+      "source": "pass1",
+      "avg_logprob": -0.10324515290558338
+    },
+    {
+      "start": 1669.2,
+      "end": 1670.48,
+      "text": "You know",
+      "source": "pass1",
+      "avg_logprob": -0.10324515290558338
+    },
+    {
+      "start": 1670.48,
+      "end": 1675.76,
+      "text": "The most sad story they can find out of the whole thing, which is not indicative generally of everything that's happening",
+      "source": "pass1",
+      "avg_logprob": -0.10324515290558338
+    },
+    {
+      "start": 1676.0,
+      "end": 1681.12,
+      "text": "Yeah, all the time. I mean this is what politicians have been doing forever, right? They'll take the one sad story",
+      "source": "pass1",
+      "avg_logprob": -0.10324515290558338
+    },
+    {
+      "start": 1681.12,
+      "end": 1684.32,
+      "text": "The one sob story the one really tragic thing and try to turn that",
+      "source": "pass1",
+      "avg_logprob": -0.10324515290558338
+    },
+    {
+      "start": 1684.72,
+      "end": 1688.56,
+      "text": "Into something and it's the opposite when they want the opposite result, right?",
+      "source": "pass1",
+      "avg_logprob": -0.10324515290558338
+    },
+    {
+      "start": 1688.56,
+      "end": 1693.28,
+      "text": "If like if they loved prediction markets, they would be featuring the guy who I mean, I met several of them",
+      "source": "pass1",
+      "avg_logprob": -0.12364380691594225
+    },
+    {
+      "start": 1694.16,
+      "end": 1696.88,
+      "text": "One of the prediction conferences I went to a couple weeks ago",
+      "source": "pass1",
+      "avg_logprob": -0.12364380691594225
+    },
+    {
+      "start": 1697.52,
+      "end": 1703.2,
+      "text": "In people who have took almost no money and turned it into hundreds of thousands and sometimes millions of dollars because they're really",
+      "source": "pass1",
+      "avg_logprob": -0.12364380691594225
+    },
+    {
+      "start": 1703.52,
+      "end": 1705.36,
+      "text": "Smart just smart guys",
+      "source": "pass1",
+      "avg_logprob": -0.12364380691594225
+    },
+    {
+      "start": 1705.36,
+      "end": 1711.36,
+      "text": "People who are smart who were thinking these things out who were interested in trying to understand these markets a little bit better",
+      "source": "pass1",
+      "avg_logprob": -0.12364380691594225
+    },
+    {
+      "start": 1711.68,
+      "end": 1714.24,
+      "text": "And we're able to take advantage of them. Those people don't get",
+      "source": "pass1",
+      "avg_logprob": -0.12364380691594225
+    },
+    {
+      "start": 1714.96,
+      "end": 1716.96,
+      "text": "Featured nearly as often",
+      "source": "pass1",
+      "avg_logprob": -0.12364380691594225
+    },
+    {
+      "start": 1717.2,
+      "end": 1719.84,
+      "text": "Yeah, and like how do you take away anything other",
+      "source": "pass1",
+      "avg_logprob": -0.12232390523218271
+    },
+    {
+      "start": 1720.8,
+      "end": 1723.6,
+      "text": "than this article other than this guy is",
+      "source": "pass1",
+      "avg_logprob": -0.12232390523218271
+    },
+    {
+      "start": 1724.32,
+      "end": 1726.96,
+      "text": "You know god, it has a gambling problem or is not smart",
+      "source": "pass1",
+      "avg_logprob": -0.12232390523218271
+    },
+    {
+      "start": 1727.36,
+      "end": 1731.28,
+      "text": "Like I don't understand how you can look at it and say the thing is bad that he's engaged",
+      "source": "pass1",
+      "avg_logprob": -0.12232390523218271
+    },
+    {
+      "start": 1731.36,
+      "end": 1733.6,
+      "text": "Like did he engage in this interview thinking?",
+      "source": "pass1",
+      "avg_logprob": -0.12232390523218271
+    },
+    {
+      "start": 1734.24,
+      "end": 1738.64,
+      "text": "Man, I'm going to show them how bad this prediction market thing is over here",
+      "source": "pass1",
+      "avg_logprob": -0.12232390523218271
+    },
+    {
+      "start": 1739.2,
+      "end": 1745.12,
+      "text": "When he made a series of some of the worst decisions you could possibly make at 33 years old",
+      "source": "pass1",
+      "avg_logprob": -0.12232390523218271
+    },
+    {
+      "start": 1745.52,
+      "end": 1749.36,
+      "text": "You lose your job you go and do I mean we've all been young and we all",
+      "source": "pass1",
+      "avg_logprob": -0.12899853418192525
+    },
+    {
+      "start": 1750.16,
+      "end": 1757.04,
+      "text": "Had situations where maybe a job we had fell through or we couldn't find a job and you just get a job and you work",
+      "source": "pass1",
+      "avg_logprob": -0.12899853418192525
+    },
+    {
+      "start": 1757.52,
+      "end": 1760.88,
+      "text": "You don't sit there and go. You know what is a great idea. I'm gonna go ahead and get a",
+      "source": "pass1",
+      "avg_logprob": -0.12899853418192525
+    },
+    {
+      "start": 1761.44,
+      "end": 1763.44,
+      "text": "variable rate loan and then just",
+      "source": "pass1",
+      "avg_logprob": -0.12899853418192525
+    },
+    {
+      "start": 1764.16,
+      "end": 1766.0,
+      "text": "Sit here and start",
+      "source": "pass1",
+      "avg_logprob": -0.12899853418192525
+    },
+    {
+      "start": 1766.0,
+      "end": 1770.0,
+      "text": "Flinging it around at places. It's literally the worst thing you could do",
+      "source": "pass1",
+      "avg_logprob": -0.12899853418192525
+    },
+    {
+      "start": 1770.48,
+      "end": 1774.48,
+      "text": "And so I don't I don't see how this article proves anything stew other than",
+      "source": "pass1",
+      "avg_logprob": -0.12899853418192525
+    },
+    {
+      "start": 1775.52,
+      "end": 1781.52,
+      "text": "This guy made some horrible decisions. Right. I mean you could easily just say, you know, uh, well, uh, did you know, uh,",
+      "source": "pass1",
+      "avg_logprob": -0.17646281835105684
+    },
+    {
+      "start": 1782.64,
+      "end": 1787.36,
+      "text": "Chick-fil-a this guy ate, you know, 9,000 nuggets a day and he's really",
+      "source": "pass1",
+      "avg_logprob": -0.17646281835105684
+    },
+    {
+      "start": 1788.72,
+      "end": 1790.96,
+      "text": "Shut it down. It's not Chick-fil-a's fault",
+      "source": "pass1",
+      "avg_logprob": -0.17646281835105684
+    },
+    {
+      "start": 1791.68,
+      "end": 1794.0,
+      "text": "You know, it's like you you go there and you make your own decisions",
+      "source": "pass1",
+      "avg_logprob": -0.17646281835105684
+    },
+    {
+      "start": 1794.0,
+      "end": 1798.56,
+      "text": "And I swear, you know, this is a very progressive concern over a very long period of time",
+      "source": "pass1",
+      "avg_logprob": -0.17646281835105684
+    },
+    {
+      "start": 1798.56,
+      "end": 1800.56,
+      "text": "But like what they're trying to do is get rid",
+      "source": "pass1",
+      "avg_logprob": -0.17646281835105684
+    },
+    {
+      "start": 1801.12,
+      "end": 1804.96,
+      "text": "Of the possibility of people being able to control their own lives and outcomes",
+      "source": "pass1",
+      "avg_logprob": -0.17646281835105684
+    },
+    {
+      "start": 1805.36,
+      "end": 1810.08,
+      "text": "And you know, they think everybody's too stupid. Everybody's gonna go do this. Well, that's not necessarily true",
+      "source": "pass1",
+      "avg_logprob": -0.11970672622078755
+    },
+    {
+      "start": 1810.72,
+      "end": 1813.6,
+      "text": "You can go do this another way. You can eat healthy at Chick-fil-a too",
+      "source": "pass1",
+      "avg_logprob": -0.11970672622078755
+    },
+    {
+      "start": 1814.16,
+      "end": 1817.12,
+      "text": "You can you can do things the right way. We're gonna try to do that",
+      "source": "pass1",
+      "avg_logprob": -0.11970672622078755
+    },
+    {
+      "start": 1817.68,
+      "end": 1820.72,
+      "text": "Here I I did want to get your go ahead real quick though",
+      "source": "pass1",
+      "avg_logprob": -0.11970672622078755
+    },
+    {
+      "start": 1820.72,
+      "end": 1824.24,
+      "text": "All those politicians that are telling you all these things that are so bad for your life",
+      "source": "pass1",
+      "avg_logprob": -0.11970672622078755
+    },
+    {
+      "start": 1824.32,
+      "end": 1829.12,
+      "text": "They're the ones that all go out and have drinks at the bar afterwards at night",
+      "source": "pass1",
+      "avg_logprob": -0.11970672622078755
+    },
+    {
+      "start": 1830.08,
+      "end": 1835.2,
+      "text": "Yeah, so that's totally fine. Eric Swalwell is probably out there telling you how bad this is for you",
+      "source": "pass1",
+      "avg_logprob": -0.1355629606062875
+    },
+    {
+      "start": 1835.2,
+      "end": 1838.88,
+      "text": "And then he goes and is I don't know hanging out with hookers and",
+      "source": "pass1",
+      "avg_logprob": -0.1355629606062875
+    },
+    {
+      "start": 1839.6,
+      "end": 1842.96,
+      "text": "Abusing people and all this other stuff, but but we're gonna get lectured on them",
+      "source": "pass1",
+      "avg_logprob": -0.1355629606062875
+    },
+    {
+      "start": 1842.96,
+      "end": 1847.12,
+      "text": "I'm you know putting a couple bucks into a a market. I mean, it's crazy",
+      "source": "pass1",
+      "avg_logprob": -0.1355629606062875
+    },
+    {
+      "start": 1847.12,
+      "end": 1853.44,
+      "text": "It's very sad Dan that Eric Swalwell did all of his molesting before he started talking about prediction markets",
+      "source": "pass1",
+      "avg_logprob": -0.1355629606062875
+    },
+    {
+      "start": 1853.44,
+      "end": 1857.36,
+      "text": "Because he would have been just as dumb as he is on everything else and would have given us so much",
+      "source": "pass1",
+      "avg_logprob": -0.1355629606062875
+    },
+    {
+      "start": 1857.84,
+      "end": 1859.04,
+      "text": "material",
+      "source": "pass1",
+      "avg_logprob": -0.16005877245252378
+    },
+    {
+      "start": 1859.04,
+      "end": 1861.2,
+      "text": "over a long period of time, but I suppose that's",
+      "source": "pass1",
+      "avg_logprob": -0.16005877245252378
+    },
+    {
+      "start": 1862.4,
+      "end": 1865.6,
+      "text": "Neither here nor there because Eric is thankfully out of our lives",
+      "source": "pass1",
+      "avg_logprob": -0.16005877245252378
+    },
+    {
+      "start": 1866.64,
+      "end": 1872.0,
+      "text": "I wanted to bring a couple of quick things to you. Have a quick bone to pick with you on this particular market",
+      "source": "pass1",
+      "avg_logprob": -0.16005877245252378
+    },
+    {
+      "start": 1872.64,
+      "end": 1873.84,
+      "text": "Oh boy",
+      "source": "pass1",
+      "avg_logprob": -0.16005877245252378
+    },
+    {
+      "start": 1873.84,
+      "end": 1875.84,
+      "text": "So there's a new movie coming out",
+      "source": "pass1",
+      "avg_logprob": -0.16005877245252378
+    },
+    {
+      "start": 1876.32,
+      "end": 1880.56,
+      "text": "Okay Star Wars the Mandalorian and Grogu is coming out",
+      "source": "pass1",
+      "avg_logprob": -0.16005877245252378
+    },
+    {
+      "start": 1881.2,
+      "end": 1884.24,
+      "text": "And excited for it. Yeah. Yeah. I know you're a big Star Wars fan",
+      "source": "pass1",
+      "avg_logprob": -0.16005877245252378
+    },
+    {
+      "start": 1884.24,
+      "end": 1887.04,
+      "text": "We've watched Star Wars when we were kids together, right? So",
+      "source": "pass1",
+      "avg_logprob": -0.1619277217171409
+    },
+    {
+      "start": 1888.16,
+      "end": 1890.16,
+      "text": "I know you're a huge fan of this",
+      "source": "pass1",
+      "avg_logprob": -0.1619277217171409
+    },
+    {
+      "start": 1890.4,
+      "end": 1891.76,
+      "text": "Um",
+      "source": "pass1",
+      "avg_logprob": -0.1619277217171409
+    },
+    {
+      "start": 1891.76,
+      "end": 1893.92,
+      "text": "You know if you happen to listen to the show we did an interview",
+      "source": "pass1",
+      "avg_logprob": -0.1619277217171409
+    },
+    {
+      "start": 1894.64,
+      "end": 1897.6,
+      "text": "With michael selig the the head of the chair of the",
+      "source": "pass1",
+      "avg_logprob": -0.1619277217171409
+    },
+    {
+      "start": 1898.08,
+      "end": 1899.28,
+      "text": "CFTC",
+      "source": "pass1",
+      "avg_logprob": -0.1619277217171409
+    },
+    {
+      "start": 1899.28,
+      "end": 1902.16,
+      "text": "Who oversees prediction markets for the trump administration?",
+      "source": "pass1",
+      "avg_logprob": -0.1619277217171409
+    },
+    {
+      "start": 1902.16,
+      "end": 1904.48,
+      "text": "And one of the things he pointed out was that you cannot",
+      "source": "pass1",
+      "avg_logprob": -0.1619277217171409
+    },
+    {
+      "start": 1905.2,
+      "end": 1911.84,
+      "text": "Go on calcium or Polymarket or any of these prediction markets and do anything with a box office receipts because that for some reason",
+      "source": "pass1",
+      "avg_logprob": -0.1619277217171409
+    },
+    {
+      "start": 1912.32,
+      "end": 1919.44,
+      "text": "Some favor to somebody in hollywood was actually exempted out of their oversight, which is an amazing story in and of itself",
+      "source": "pass1",
+      "avg_logprob": -0.12444573584057037
+    },
+    {
+      "start": 1919.84,
+      "end": 1925.6,
+      "text": "But the way that they sort of replicate these markets on calcium and Polymarket is is the movie going to be any good",
+      "source": "pass1",
+      "avg_logprob": -0.12444573584057037
+    },
+    {
+      "start": 1925.6,
+      "end": 1928.56,
+      "text": "And the data point that they have for that is",
+      "source": "pass1",
+      "avg_logprob": -0.12444573584057037
+    },
+    {
+      "start": 1929.92,
+      "end": 1934.24,
+      "text": "Rotten tomatoes so rotten tomatoes takes all the you know professional critic reviews",
+      "source": "pass1",
+      "avg_logprob": -0.12444573584057037
+    },
+    {
+      "start": 1934.64,
+      "end": 1937.84,
+      "text": "And they give you a percentage. Is it a good movie or is it a bad movie?",
+      "source": "pass1",
+      "avg_logprob": -0.12444573584057037
+    },
+    {
+      "start": 1938.48,
+      "end": 1940.32,
+      "text": "And we now have",
+      "source": "pass1",
+      "avg_logprob": -0.192058479663023
+    },
+    {
+      "start": 1940.32,
+      "end": 1944.72,
+      "text": "At least a forecast as to what this particular market will be",
+      "source": "pass1",
+      "avg_logprob": -0.192058479663023
+    },
+    {
+      "start": 1945.2,
+      "end": 1946.4,
+      "text": "And it is",
+      "source": "pass1",
+      "avg_logprob": -0.192058479663023
+    },
+    {
+      "start": 1946.4,
+      "end": 1951.44,
+      "text": "Star Wars Mandalorian and grogu the rotten tomato score projected to be 74.3",
+      "source": "pass1",
+      "avg_logprob": -0.192058479663023
+    },
+    {
+      "start": 1952.08,
+      "end": 1955.68,
+      "text": "74.3 to give you a sense of what that means dam",
+      "source": "pass1",
+      "avg_logprob": -0.192058479663023
+    },
+    {
+      "start": 1956.32,
+      "end": 1961.44,
+      "text": "You got 74.3 is going to be ahead of a solo a star wars story",
+      "source": "pass1",
+      "avg_logprob": -0.192058479663023
+    },
+    {
+      "start": 1962.24,
+      "end": 1966.96,
+      "text": "Ahead which is at 70 percent star wars episode 2 attack of the clones 65",
+      "source": "pass1",
+      "avg_logprob": -0.192058479663023
+    },
+    {
+      "start": 1967.84,
+      "end": 1973.84,
+      "text": "Star Wars episode 1 the phantom menace at 52 percent. That's what's below it immediately above it is",
+      "source": "pass1",
+      "avg_logprob": -0.16556696769866078
+    },
+    {
+      "start": 1974.72,
+      "end": 1977.68,
+      "text": "Revenge of the sith episode 3 at 79 percent",
+      "source": "pass1",
+      "avg_logprob": -0.16556696769866078
+    },
+    {
+      "start": 1978.48,
+      "end": 1980.48,
+      "text": "Return of the jedi's 83 percent",
+      "source": "pass1",
+      "avg_logprob": -0.16556696769866078
+    },
+    {
+      "start": 1981.2,
+      "end": 1987.6,
+      "text": "And then looking through some of the other ones like for example, the Mandalorian season 3 is 84 percent",
+      "source": "pass1",
+      "avg_logprob": -0.16556696769866078
+    },
+    {
+      "start": 1987.6,
+      "end": 1991.84,
+      "text": "So they're saying basically a little bit worse than some of the seasons of Mandalorian",
+      "source": "pass1",
+      "avg_logprob": -0.16556696769866078
+    },
+    {
+      "start": 1992.24,
+      "end": 1995.6,
+      "text": "Better than what some of the movies that I've seen have kind of flops",
+      "source": "pass1",
+      "avg_logprob": -0.16556696769866078
+    },
+    {
+      "start": 1996.32,
+      "end": 2002.0,
+      "text": "If you will there's not really a flop. I suppose in the star wars universe, but that's kind of where they're seeing this play out",
+      "source": "pass1",
+      "avg_logprob": -0.11541947091539059
+    },
+    {
+      "start": 2003.6,
+      "end": 2007.12,
+      "text": "What do you think are you do you think this is going to be too high too low? Where would you go on this?",
+      "source": "pass1",
+      "avg_logprob": -0.11541947091539059
+    },
+    {
+      "start": 2007.6,
+      "end": 2012.96,
+      "text": "I um, well first of all, I will say it feels pretty close actually because",
+      "source": "pass1",
+      "avg_logprob": -0.11541947091539059
+    },
+    {
+      "start": 2013.6,
+      "end": 2015.84,
+      "text": "My sense would be like the Mandalorian series",
+      "source": "pass1",
+      "avg_logprob": -0.11541947091539059
+    },
+    {
+      "start": 2016.64,
+      "end": 2018.64,
+      "text": "I believe was so good",
+      "source": "pass1",
+      "avg_logprob": -0.11541947091539059
+    },
+    {
+      "start": 2018.72,
+      "end": 2022.64,
+      "text": "Um, and then people are a little nervous when they see the trailer. They feel like it's going to be",
+      "source": "pass1",
+      "avg_logprob": -0.11541947091539059
+    },
+    {
+      "start": 2023.44,
+      "end": 2029.76,
+      "text": "You know a little bit sticky and oh the baby's going to do cute things and that's pretty much all it's going to be",
+      "source": "pass1",
+      "avg_logprob": -0.12559566402635655
+    },
+    {
+      "start": 2029.76,
+      "end": 2032.8,
+      "text": "You know, it's like going to be jar jar banks in like a cuter package",
+      "source": "pass1",
+      "avg_logprob": -0.12559566402635655
+    },
+    {
+      "start": 2033.28,
+      "end": 2036.16,
+      "text": "Like I think that's what people are afraid of is going to happen",
+      "source": "pass1",
+      "avg_logprob": -0.12559566402635655
+    },
+    {
+      "start": 2036.8,
+      "end": 2041.2,
+      "text": "And so I can I actually can see the market settling on that but uh",
+      "source": "pass1",
+      "avg_logprob": -0.12559566402635655
+    },
+    {
+      "start": 2041.92,
+      "end": 2046.16,
+      "text": "Uh, so I don't hate where the market is actually the only other thing I'll say is",
+      "source": "pass1",
+      "avg_logprob": -0.12559566402635655
+    },
+    {
+      "start": 2047.44,
+      "end": 2050.48,
+      "text": "If anything it might even be a little bit bullish because",
+      "source": "pass1",
+      "avg_logprob": -0.12559566402635655
+    },
+    {
+      "start": 2051.2,
+      "end": 2054.4,
+      "text": "Star Wars fans are notoriously",
+      "source": "pass1",
+      "avg_logprob": -0.18029253672936868
+    },
+    {
+      "start": 2055.36,
+      "end": 2057.36,
+      "text": "Complainers they complain",
+      "source": "pass1",
+      "avg_logprob": -0.18029253672936868
+    },
+    {
+      "start": 2058.08,
+      "end": 2058.88,
+      "text": "Yes",
+      "source": "pass1",
+      "avg_logprob": -0.18029253672936868
+    },
+    {
+      "start": 2058.88,
+      "end": 2063.04,
+      "text": "About everything they cannot just now listen. I know there have been some duds",
+      "source": "pass1",
+      "avg_logprob": -0.18029253672936868
+    },
+    {
+      "start": 2063.04,
+      "end": 2066.48,
+      "text": "I'm the big one of the biggest Star Wars fans out there and I you know",
+      "source": "pass1",
+      "avg_logprob": -0.18029253672936868
+    },
+    {
+      "start": 2067.2,
+      "end": 2069.2,
+      "text": "I haven't even watched the uh",
+      "source": "pass1",
+      "avg_logprob": -0.18029253672936868
+    },
+    {
+      "start": 2069.92,
+      "end": 2071.36,
+      "text": "You know, I haven't even thought about it",
+      "source": "pass1",
+      "avg_logprob": -0.18029253672936868
+    },
+    {
+      "start": 2071.36,
+      "end": 2074.32,
+      "text": "And so long I can't even remember the name off top my head as we're talking here",
+      "source": "pass1",
+      "avg_logprob": -0.18029253672936868
+    },
+    {
+      "start": 2074.32,
+      "end": 2077.84,
+      "text": "But the second one out of the last three, you know, oh gosh",
+      "source": "pass1",
+      "avg_logprob": -0.18029253672936868
+    },
+    {
+      "start": 2077.92,
+      "end": 2080.08,
+      "text": "Yeah, the the last Jedi or the",
+      "source": "pass1",
+      "avg_logprob": -0.125822867330623
+    },
+    {
+      "start": 2081.36,
+      "end": 2086.08,
+      "text": "You're talking episode eight, I guess. Yeah. Oh my gosh. That was terrible terrible",
+      "source": "pass1",
+      "avg_logprob": -0.125822867330623
+    },
+    {
+      "start": 2086.48,
+      "end": 2089.68,
+      "text": "It was so bad and then the last one wasn't even like it was better",
+      "source": "pass1",
+      "avg_logprob": -0.125822867330623
+    },
+    {
+      "start": 2089.68,
+      "end": 2095.36,
+      "text": "But still weird and like not great like I have you know, it's not good when you haven't like gone back to watch it",
+      "source": "pass1",
+      "avg_logprob": -0.125822867330623
+    },
+    {
+      "start": 2095.52,
+      "end": 2099.44,
+      "text": "Yeah, like solo story to me is pretty underrated. I thought it was actually pretty good. It was fine",
+      "source": "pass1",
+      "avg_logprob": -0.125822867330623
+    },
+    {
+      "start": 2099.52,
+      "end": 2101.84,
+      "text": "I don't know why people didn't like that one. I thought it was fine",
+      "source": "pass1",
+      "avg_logprob": -0.125822867330623
+    },
+    {
+      "start": 2101.84,
+      "end": 2105.6,
+      "text": "I don't know either. I thought the guy they picked for haunted great. Um, but yeah",
+      "source": "pass1",
+      "avg_logprob": -0.125822867330623
+    },
+    {
+      "start": 2105.68,
+      "end": 2110.8,
+      "text": "I mean, I think uh, I think people if there's any schlockiness and at all with grogu",
+      "source": "pass1",
+      "avg_logprob": -0.19553283255704693
+    },
+    {
+      "start": 2111.92,
+      "end": 2116.72,
+      "text": "You could expect that that thing to go down. I gotta say Dan, you know, I know you like the Mandalorian",
+      "source": "pass1",
+      "avg_logprob": -0.19553283255704693
+    },
+    {
+      "start": 2117.92,
+      "end": 2121.6,
+      "text": "I gotta actually I gotta show you look. Oh, no, let's see. Dan is uh",
+      "source": "pass1",
+      "avg_logprob": -0.19553283255704693
+    },
+    {
+      "start": 2122.4,
+      "end": 2123.84,
+      "text": "Well, I mean, let's see. What do you have?",
+      "source": "pass1",
+      "avg_logprob": -0.19553283255704693
+    },
+    {
+      "start": 2123.84,
+      "end": 2128.48,
+      "text": "Well, I mean, I move spots in here and so you might have remembered this from uh, let's see if I can get it",
+      "source": "pass1",
+      "avg_logprob": -0.19553283255704693
+    },
+    {
+      "start": 2128.72,
+      "end": 2132.64,
+      "text": "From behind you. Yeah, that your old set in your home my old set. Yeah",
+      "source": "pass1",
+      "avg_logprob": -0.19553283255704693
+    },
+    {
+      "start": 2132.64,
+      "end": 2134.64,
+      "text": "So I still have this prop here. So",
+      "source": "pass1",
+      "avg_logprob": -0.17142957178029147
+    },
+    {
+      "start": 2134.88,
+      "end": 2137.92,
+      "text": "You know big mando fan, but yeah, so so what is your concern here?",
+      "source": "pass1",
+      "avg_logprob": -0.17142957178029147
+    },
+    {
+      "start": 2138.0,
+      "end": 2140.4,
+      "text": "I just don't I just I think it was honestly kind of boring",
+      "source": "pass1",
+      "avg_logprob": -0.17142957178029147
+    },
+    {
+      "start": 2141.04,
+      "end": 2143.04,
+      "text": "I frankly didn't make it all the way through the seasons",
+      "source": "pass1",
+      "avg_logprob": -0.17142957178029147
+    },
+    {
+      "start": 2143.68,
+      "end": 2147.2,
+      "text": "Part of it. I will say uh to be completely transparent",
+      "source": "pass1",
+      "avg_logprob": -0.17142957178029147
+    },
+    {
+      "start": 2147.52,
+      "end": 2151.76,
+      "text": "Was I was really annoyed by the Gina Carano thing like that really bothered me. Yes",
+      "source": "pass1",
+      "avg_logprob": -0.17142957178029147
+    },
+    {
+      "start": 2152.16,
+      "end": 2154.16,
+      "text": "She was I thought the best character on the show",
+      "source": "pass1",
+      "avg_logprob": -0.17142957178029147
+    },
+    {
+      "start": 2154.8,
+      "end": 2159.44,
+      "text": "Um, she was yes, and the fact that they just blew her out and tried to ruin her career",
+      "source": "pass1",
+      "avg_logprob": -0.17142957178029147
+    },
+    {
+      "start": 2160.4,
+      "end": 2162.4,
+      "text": "It was so",
+      "source": "pass1",
+      "avg_logprob": -0.1714341363241506
+    },
+    {
+      "start": 2162.96,
+      "end": 2164.0,
+      "text": "Was so annoying to me",
+      "source": "pass1",
+      "avg_logprob": -0.1714341363241506
+    },
+    {
+      "start": 2164.0,
+      "end": 2167.76,
+      "text": "It was the peak of the kind of that woke era and that drove me so crazy that I",
+      "source": "pass1",
+      "avg_logprob": -0.1714341363241506
+    },
+    {
+      "start": 2168.56,
+      "end": 2171.44,
+      "text": "I couldn't I couldn't maybe that was part of the problem. I have",
+      "source": "pass1",
+      "avg_logprob": -0.1714341363241506
+    },
+    {
+      "start": 2171.76,
+      "end": 2173.76,
+      "text": "It didn't keep my attention. I will say",
+      "source": "pass1",
+      "avg_logprob": -0.1714341363241506
+    },
+    {
+      "start": 2173.84,
+      "end": 2179.2,
+      "text": "Uh, it just didn't have the I don't know it just a little boring. I mean a little slow. How about that a little slow?",
+      "source": "pass1",
+      "avg_logprob": -0.1714341363241506
+    },
+    {
+      "start": 2180.8,
+      "end": 2182.8,
+      "text": "I mean listen, I uh",
+      "source": "pass1",
+      "avg_logprob": -0.1714341363241506
+    },
+    {
+      "start": 2183.6,
+      "end": 2185.6,
+      "text": "I mean, where do we even go on this? I",
+      "source": "pass1",
+      "avg_logprob": -0.1714341363241506
+    },
+    {
+      "start": 2186.32,
+      "end": 2187.68,
+      "text": "I'm not sure if we're",
+      "source": "pass1",
+      "avg_logprob": -0.1714341363241506
+    },
+    {
+      "start": 2187.68,
+      "end": 2192.32,
+      "text": "Listen, we're are we do we grow up in the same town? I mean, I don't know. I'm a little surprised",
+      "source": "pass1",
+      "avg_logprob": -0.1446245711320525
+    },
+    {
+      "start": 2192.4,
+      "end": 2194.48,
+      "text": "I'm a little surprised that uh that you thought no",
+      "source": "pass1",
+      "avg_logprob": -0.1446245711320525
+    },
+    {
+      "start": 2194.56,
+      "end": 2197.36,
+      "text": "I mean because I could see that though on because the other one uh andor",
+      "source": "pass1",
+      "avg_logprob": -0.1446245711320525
+    },
+    {
+      "start": 2197.6,
+      "end": 2201.2,
+      "text": "I mean, this is what happens when you come out with so many things or andor was a little slow moving",
+      "source": "pass1",
+      "avg_logprob": -0.1446245711320525
+    },
+    {
+      "start": 2201.52,
+      "end": 2206.32,
+      "text": "Yeah, I thought it was pretty good, but also slow moving. That's what I will say dad looking at that",
+      "source": "pass1",
+      "avg_logprob": -0.1446245711320525
+    },
+    {
+      "start": 2206.4,
+      "end": 2208.96,
+      "text": "I never saw I gave up basically after the Gina Carano thing",
+      "source": "pass1",
+      "avg_logprob": -0.1446245711320525
+    },
+    {
+      "start": 2208.96,
+      "end": 2212.0,
+      "text": "I have not watched pretty much anything that is a fair reason to give up",
+      "source": "pass1",
+      "avg_logprob": -0.1446245711320525
+    },
+    {
+      "start": 2212.0,
+      "end": 2214.0,
+      "text": "I actually had to very much power through it",
+      "source": "pass1",
+      "avg_logprob": -0.1446245711320525
+    },
+    {
+      "start": 2214.16,
+      "end": 2216.16,
+      "text": "It was tough to keep going",
+      "source": "pass1",
+      "avg_logprob": -0.1874932813477683
+    },
+    {
+      "start": 2216.24,
+      "end": 2221.12,
+      "text": "But andor season one and andor season two 96 and 97 percent on rotten tomatoes",
+      "source": "pass1",
+      "avg_logprob": -0.1874932813477683
+    },
+    {
+      "start": 2221.12,
+      "end": 2223.44,
+      "text": "So the critics seem to very much like that",
+      "source": "pass1",
+      "avg_logprob": -0.1874932813477683
+    },
+    {
+      "start": 2223.84,
+      "end": 2227.36,
+      "text": "It's fact that most basically the most popular thing star wars has ever done",
+      "source": "pass1",
+      "avg_logprob": -0.1874932813477683
+    },
+    {
+      "start": 2228.08,
+      "end": 2231.12,
+      "text": "So anyway, that's where we are. It's good, but it's not that good, but anyway, okay",
+      "source": "pass1",
+      "avg_logprob": -0.1874932813477683
+    },
+    {
+      "start": 2231.6,
+      "end": 2234.0,
+      "text": "Before you go one more thing. I have to bring this up. I hate to do this",
+      "source": "pass1",
+      "avg_logprob": -0.1874932813477683
+    },
+    {
+      "start": 2234.16,
+      "end": 2237.84,
+      "text": "It's not, you know busting you busting on you for star wars is one thing",
+      "source": "pass1",
+      "avg_logprob": -0.1874932813477683
+    },
+    {
+      "start": 2238.48,
+      "end": 2242.96,
+      "text": "Unfortunately, the boston Celtics lose a three to one lead and wind up",
+      "source": "pass1",
+      "avg_logprob": -0.1874932813477683
+    },
+    {
+      "start": 2243.76,
+      "end": 2247.84,
+      "text": "Wind of losing. I you know, I did was there a thought at all for you",
+      "source": "pass1",
+      "avg_logprob": -0.16253896073802657
+    },
+    {
+      "start": 2248.64,
+      "end": 2254.8,
+      "text": "To do something that you know that I do often and hedge your life and take some investment dollars",
+      "source": "pass1",
+      "avg_logprob": -0.16253896073802657
+    },
+    {
+      "start": 2256.24,
+      "end": 2262.24,
+      "text": "And invest them in hedging your happiness and going with the other side the sixers in this particular",
+      "source": "pass1",
+      "avg_logprob": -0.16253896073802657
+    },
+    {
+      "start": 2262.72,
+      "end": 2267.04,
+      "text": "instance to try to make yourself feel a little bit better when the horrible thing happened",
+      "source": "pass1",
+      "avg_logprob": -0.16253896073802657
+    },
+    {
+      "start": 2267.68,
+      "end": 2270.48,
+      "text": "It is a very plausible life strategy",
+      "source": "pass1",
+      "avg_logprob": -0.16253896073802657
+    },
+    {
+      "start": 2270.72,
+      "end": 2272.72,
+      "text": "And one that I think is viable",
+      "source": "pass1",
+      "avg_logprob": -0.14014196867990023
+    },
+    {
+      "start": 2273.28,
+      "end": 2279.28,
+      "text": "And a worthwhile venture in in these sorts of situations where there is no upside",
+      "source": "pass1",
+      "avg_logprob": -0.14014196867990023
+    },
+    {
+      "start": 2279.76,
+      "end": 2283.04,
+      "text": "You know really for them winning because they I didn't actually to be honest",
+      "source": "pass1",
+      "avg_logprob": -0.14014196867990023
+    },
+    {
+      "start": 2283.04,
+      "end": 2285.44,
+      "text": "I didn't even watch much of games six and seven because",
+      "source": "pass1",
+      "avg_logprob": -0.14014196867990023
+    },
+    {
+      "start": 2286.4,
+      "end": 2288.72,
+      "text": "Uh at that point you're up three one",
+      "source": "pass1",
+      "avg_logprob": -0.14014196867990023
+    },
+    {
+      "start": 2289.36,
+      "end": 2291.36,
+      "text": "And then three two and it's just like",
+      "source": "pass1",
+      "avg_logprob": -0.14014196867990023
+    },
+    {
+      "start": 2291.36,
+      "end": 2296.4,
+      "text": "Okay, if they win they were supposed to win and then if they lose the whole series",
+      "source": "pass1",
+      "avg_logprob": -0.14014196867990023
+    },
+    {
+      "start": 2296.4,
+      "end": 2301.6,
+      "text": "It's an utter disaster. So like watching it. You're just going to be stressed out the whole time that they're going to blow it",
+      "source": "pass1",
+      "avg_logprob": -0.1054110270205552
+    },
+    {
+      "start": 2302.56,
+      "end": 2305.52,
+      "text": "So, you know, but yeah very frustrating series",
+      "source": "pass1",
+      "avg_logprob": -0.1054110270205552
+    },
+    {
+      "start": 2305.6,
+      "end": 2312.48,
+      "text": "But uh if the the sixers were at like 30 percent even after they won two in a row and it just stayed at 30 percent",
+      "source": "pass1",
+      "avg_logprob": -0.1054110270205552
+    },
+    {
+      "start": 2313.12,
+      "end": 2320.16,
+      "text": "And I just thought that's crazy. I'm watching the indicator going that is that is nuts the the Celtics clearly had not figured things out",
+      "source": "pass1",
+      "avg_logprob": -0.1054110270205552
+    },
+    {
+      "start": 2320.96,
+      "end": 2324.56,
+      "text": "Uh and we're struggling and a bead was back and the sixers were rolling",
+      "source": "pass1",
+      "avg_logprob": -0.1054110270205552
+    },
+    {
+      "start": 2325.04,
+      "end": 2328.64,
+      "text": "Yeah, I was surprised. It was surprise. Although we did call it. We were talking about this before",
+      "source": "pass1",
+      "avg_logprob": -0.15841355199128196
+    },
+    {
+      "start": 2329.44,
+      "end": 2334.72,
+      "text": "Before the uh before game six. What would happen if it went to game seven? We predicted 30 percent",
+      "source": "pass1",
+      "avg_logprob": -0.15841355199128196
+    },
+    {
+      "start": 2335.28,
+      "end": 2338.32,
+      "text": "One of the things we were talking about it. This is about where it went to I saw it at 28",
+      "source": "pass1",
+      "avg_logprob": -0.15841355199128196
+    },
+    {
+      "start": 2338.64,
+      "end": 2341.52,
+      "text": "But it was right around there. Uh, so, uh, you know, again",
+      "source": "pass1",
+      "avg_logprob": -0.15841355199128196
+    },
+    {
+      "start": 2342.08,
+      "end": 2346.16,
+      "text": "Sports is sports and I love it and I you know, I love getting myself involved in it",
+      "source": "pass1",
+      "avg_logprob": -0.15841355199128196
+    },
+    {
+      "start": 2346.16,
+      "end": 2348.96,
+      "text": "But I will say it's one of the things that really is a",
+      "source": "pass1",
+      "avg_logprob": -0.15841355199128196
+    },
+    {
+      "start": 2349.68,
+      "end": 2353.04,
+      "text": "They some people call it an emotional hedge. I don't like that term. I like hedging your life",
+      "source": "pass1",
+      "avg_logprob": -0.15841355199128196
+    },
+    {
+      "start": 2353.6,
+      "end": 2356.4,
+      "text": "Hedging your life. It's not emotions. It's reason",
+      "source": "pass1",
+      "avg_logprob": -0.10745074913121652
+    },
+    {
+      "start": 2357.04,
+      "end": 2361.6,
+      "text": "Because it's the most sometimes the most important thing to you is a stupid game and when that happens",
+      "source": "pass1",
+      "avg_logprob": -0.10745074913121652
+    },
+    {
+      "start": 2361.92,
+      "end": 2365.28,
+      "text": "It's important to be able to hedge yourself. All right, dan. Uh, thank you so much for joining me",
+      "source": "pass1",
+      "avg_logprob": -0.10745074913121652
+    },
+    {
+      "start": 2365.36,
+      "end": 2367.76,
+      "text": "I can follow dan, of course on quick start the podcast",
+      "source": "pass1",
+      "avg_logprob": -0.10745074913121652
+    },
+    {
+      "start": 2368.4,
+      "end": 2372.32,
+      "text": "And on social media as well. We'll have you come back, of course, dan",
+      "source": "pass1",
+      "avg_logprob": -0.10745074913121652
+    },
+    {
+      "start": 2372.32,
+      "end": 2376.08,
+      "text": "Thanks so much for taking the time to come on and we will be back in just a moment",
+      "source": "pass1",
+      "avg_logprob": -0.10745074913121652
+    },
+    {
+      "start": 2377.2,
+      "end": 2380.64,
+      "text": "Okay, as we were talking about that you should know that my producer adam",
+      "source": "pass1",
+      "avg_logprob": -0.10745074913121652
+    },
+    {
+      "start": 2381.44,
+      "end": 2388.08,
+      "text": "Wound up going under 65% on the mandalorian rotten tomato score. He said the movie's going to suck",
+      "source": "pass1",
+      "avg_logprob": -0.13380576227162336
+    },
+    {
+      "start": 2388.96,
+      "end": 2392.88,
+      "text": "So and sadly very soon he will be at a homeless shelter",
+      "source": "pass1",
+      "avg_logprob": -0.13380576227162336
+    },
+    {
+      "start": 2393.92,
+      "end": 2398.56,
+      "text": "This is what happens every time you get on one of these apps and all of a sudden your mandalorian markets",
+      "source": "pass1",
+      "avg_logprob": -0.13380576227162336
+    },
+    {
+      "start": 2398.56,
+      "end": 2401.36,
+      "text": "The next thing you know, you got a variable rate loan",
+      "source": "pass1",
+      "avg_logprob": -0.13380576227162336
+    },
+    {
+      "start": 2401.84,
+      "end": 2408.48,
+      "text": "And and you've lost your job at outback steakhouse, which is honestly a much better job than he has currently on this particular show",
+      "source": "pass1",
+      "avg_logprob": -0.13380576227162336
+    },
+    {
+      "start": 2408.48,
+      "end": 2412.16,
+      "text": "So anyway, uh, so I want to end this and I'd like to do this from time to time",
+      "source": "pass1",
+      "avg_logprob": -0.1082773404399844
+    },
+    {
+      "start": 2412.88,
+      "end": 2417.36,
+      "text": "Uh, give you some kind of offbeat thing that I'm thinking about in these markets",
+      "source": "pass1",
+      "avg_logprob": -0.1082773404399844
+    },
+    {
+      "start": 2417.92,
+      "end": 2420.96,
+      "text": "Trying to find these little nuggets the little nuggets of gold",
+      "source": "pass1",
+      "avg_logprob": -0.1082773404399844
+    },
+    {
+      "start": 2421.68,
+      "end": 2424.24,
+      "text": "Out there in the in the world and so",
+      "source": "pass1",
+      "avg_logprob": -0.1082773404399844
+    },
+    {
+      "start": 2425.04,
+      "end": 2428.16,
+      "text": "My kind of working title on this maybe this is just what we'll go with which is",
+      "source": "pass1",
+      "avg_logprob": -0.1082773404399844
+    },
+    {
+      "start": 2428.96,
+      "end": 2433.44,
+      "text": "Here's one I kind of like I'm not telling you I'm locking in my financial future on this thing",
+      "source": "pass1",
+      "avg_logprob": -0.1082773404399844
+    },
+    {
+      "start": 2433.52,
+      "end": 2436.24,
+      "text": "It's just one. I'm kind of like I'm kind of interested. I'm kind of following",
+      "source": "pass1",
+      "avg_logprob": -0.1082773404399844
+    },
+    {
+      "start": 2436.4,
+      "end": 2439.44,
+      "text": "Think there might be some value there a little bit of interest",
+      "source": "pass1",
+      "avg_logprob": -0.1518726661926558
+    },
+    {
+      "start": 2439.52,
+      "end": 2443.76,
+      "text": "And this one is particular for you if you happen to be maybe a trump supporter",
+      "source": "pass1",
+      "avg_logprob": -0.1518726661926558
+    },
+    {
+      "start": 2444.08,
+      "end": 2448.64,
+      "text": "You happen to be someone who is uh more of a fan of trump because this is more just a torture",
+      "source": "pass1",
+      "avg_logprob": -0.1518726661926558
+    },
+    {
+      "start": 2449.04,
+      "end": 2452.32,
+      "text": "Your your liberal friends than anything else, but this is the market",
+      "source": "pass1",
+      "avg_logprob": -0.1518726661926558
+    },
+    {
+      "start": 2452.72,
+      "end": 2456.08,
+      "text": "Will gelane maxwell be released from government custody",
+      "source": "pass1",
+      "avg_logprob": -0.1518726661926558
+    },
+    {
+      "start": 2456.56,
+      "end": 2459.68,
+      "text": "Now donald trump does a lot of unpredictable things, okay",
+      "source": "pass1",
+      "avg_logprob": -0.1518726661926558
+    },
+    {
+      "start": 2460.16,
+      "end": 2464.08,
+      "text": "I know this is a show that's called predictable and judging sometimes donald trump's, uh",
+      "source": "pass1",
+      "avg_logprob": -0.1518726661926558
+    },
+    {
+      "start": 2464.96,
+      "end": 2467.52,
+      "text": "Wims here and there are difficult. We can all understand that",
+      "source": "pass1",
+      "avg_logprob": -0.15819490799364053
+    },
+    {
+      "start": 2469.81,
+      "end": 2475.49,
+      "text": "But walk me through the thought process where he releases gelane maxwell from prison",
+      "source": "pass1",
+      "avg_logprob": -0.15819490799364053
+    },
+    {
+      "start": 2476.13,
+      "end": 2482.61,
+      "text": "I can't even imagine a scenario where this would occur and you know, the thing is the reason it's right now at, uh,",
+      "source": "pass1",
+      "avg_logprob": -0.15819490799364053
+    },
+    {
+      "start": 2482.93,
+      "end": 2484.93,
+      "text": "As a 13 or 13 percent",
+      "source": "pass1",
+      "avg_logprob": -0.15819490799364053
+    },
+    {
+      "start": 2485.73,
+      "end": 2487.17,
+      "text": "Will he release",
+      "source": "pass1",
+      "avg_logprob": -0.15819490799364053
+    },
+    {
+      "start": 2487.17,
+      "end": 2492.77,
+      "text": "This year my position on this would be no by the way. He's not going to release gelane maxwell of all things",
+      "source": "pass1",
+      "avg_logprob": -0.15819490799364053
+    },
+    {
+      "start": 2493.17,
+      "end": 2496.53,
+      "text": "He's he's already had to deal with the nightmare of the epstein file stuff",
+      "source": "pass1",
+      "avg_logprob": -0.13766771237607356
+    },
+    {
+      "start": 2497.17,
+      "end": 2500.45,
+      "text": "Uh, and so I don't think there's any chance he would do this if he did it",
+      "source": "pass1",
+      "avg_logprob": -0.13766771237607356
+    },
+    {
+      "start": 2500.53,
+      "end": 2504.85,
+      "text": "If there if there if he were to do it the only thing it would do is make him look more guilty",
+      "source": "pass1",
+      "avg_logprob": -0.13766771237607356
+    },
+    {
+      "start": 2505.73,
+      "end": 2507.73,
+      "text": "If he was giving a pardon",
+      "source": "pass1",
+      "avg_logprob": -0.13766771237607356
+    },
+    {
+      "start": 2508.29,
+      "end": 2512.53,
+      "text": "Delain maxwell, it would make him look much more guilty than he is",
+      "source": "pass1",
+      "avg_logprob": -0.13766771237607356
+    },
+    {
+      "start": 2512.93,
+      "end": 2517.49,
+      "text": "Now the other thing what's interesting about this is obviously no political",
+      "source": "pass1",
+      "avg_logprob": -0.13766771237607356
+    },
+    {
+      "start": 2518.45,
+      "end": 2522.93,
+      "text": "Mind would say yeah, release her this will do this will do your your presidency good",
+      "source": "pass1",
+      "avg_logprob": -0.1501907007593029
+    },
+    {
+      "start": 2523.01,
+      "end": 2527.65,
+      "text": "Like there's no upside to this whatsoever. It would be a horrible decision if you were to do it",
+      "source": "pass1",
+      "avg_logprob": -0.1501907007593029
+    },
+    {
+      "start": 2528.37,
+      "end": 2533.81,
+      "text": "Um, but the funny thing about this the reason why this isn't one or two percent a chance",
+      "source": "pass1",
+      "avg_logprob": -0.1501907007593029
+    },
+    {
+      "start": 2534.37,
+      "end": 2539.41,
+      "text": "Uh, I mean sure there's a little bit of trump unpredictability. I get that but really the reason is is because",
+      "source": "pass1",
+      "avg_logprob": -0.1501907007593029
+    },
+    {
+      "start": 2539.89,
+      "end": 2543.17,
+      "text": "all the most annoying people on tiktok and on",
+      "source": "pass1",
+      "avg_logprob": -0.1501907007593029
+    },
+    {
+      "start": 2543.89,
+      "end": 2545.89,
+      "text": "I shouldn't even say twitter blue sky",
+      "source": "pass1",
+      "avg_logprob": -0.13945469953890505
+    },
+    {
+      "start": 2546.29,
+      "end": 2551.01,
+      "text": "All those people who think donald trump actually was at epstein island every weekend",
+      "source": "pass1",
+      "avg_logprob": -0.13945469953890505
+    },
+    {
+      "start": 2551.41,
+      "end": 2555.81,
+      "text": "And there's gonna all the evidence is about to come out and it's right around the corner at any moment",
+      "source": "pass1",
+      "avg_logprob": -0.13945469953890505
+    },
+    {
+      "start": 2556.29,
+      "end": 2561.41,
+      "text": "All those people those are the people in the 13 percent saying that he's going to release him",
+      "source": "pass1",
+      "avg_logprob": -0.13945469953890505
+    },
+    {
+      "start": 2561.65,
+      "end": 2565.97,
+      "text": "So you're taking their money with this market now. It's only 13 percent. Although",
+      "source": "pass1",
+      "avg_logprob": -0.13945469953890505
+    },
+    {
+      "start": 2566.69,
+      "end": 2570.93,
+      "text": "What are we in may 13 percent in seven months? That's certainly not a bad take home",
+      "source": "pass1",
+      "avg_logprob": -0.13945469953890505
+    },
+    {
+      "start": 2571.49,
+      "end": 2576.93,
+      "text": "Think about your checking account. It's giving you probably 0.3 percent. So 13 percent in seven months not bad",
+      "source": "pass1",
+      "avg_logprob": -0.14115741705162482
+    },
+    {
+      "start": 2577.89,
+      "end": 2580.69,
+      "text": "If he does this it's the most insane thing in the world",
+      "source": "pass1",
+      "avg_logprob": -0.14115741705162482
+    },
+    {
+      "start": 2581.01,
+      "end": 2583.01,
+      "text": "It's not impossible",
+      "source": "pass1",
+      "avg_logprob": -0.14115741705162482
+    },
+    {
+      "start": 2583.09,
+      "end": 2584.45,
+      "text": "But I got to say",
+      "source": "pass1",
+      "avg_logprob": -0.14115741705162482
+    },
+    {
+      "start": 2584.45,
+      "end": 2589.41,
+      "text": "It's one I kind of like will gelane maxwell be released from government custody. I'm going to take the position of",
+      "source": "pass1",
+      "avg_logprob": -0.14115741705162482
+    },
+    {
+      "start": 2589.97,
+      "end": 2594.77,
+      "text": "No, and if it happens my producer will make sure he pulls this video up to remind you",
+      "source": "pass1",
+      "avg_logprob": -0.14115741705162482
+    },
+    {
+      "start": 2595.17,
+      "end": 2596.69,
+      "text": "That's the side I was on",
+      "source": "pass1",
+      "avg_logprob": -0.14115741705162482
+    },
+    {
+      "start": 2596.69,
+      "end": 2603.25,
+      "text": "Okay, that's it for predictable today go to predictable show dot com check out the program there and also check out the uh",
+      "source": "pass1",
+      "avg_logprob": -0.1414734619419749
+    },
+    {
+      "start": 2604.13,
+      "end": 2608.21,
+      "text": "The written pieces that we have we've got some more coming. Maybe I'll write one up on gelane maxwell. Who knows",
+      "source": "pass1",
+      "avg_logprob": -0.1414734619419749
+    },
+    {
+      "start": 2608.61,
+      "end": 2610.61,
+      "text": "We've got that coming up as well",
+      "source": "pass1",
+      "avg_logprob": -0.1414734619419749
+    },
+    {
+      "start": 2610.69,
+      "end": 2616.37,
+      "text": "And uh fall the show on youtube and on podcast as well as stew and dave do america that's available on blaze tv",
+      "source": "pass1",
+      "avg_logprob": -0.1414734619419749
+    },
+    {
+      "start": 2616.61,
+      "end": 2618.69,
+      "text": "It's also available on youtube tv",
+      "source": "pass1",
+      "avg_logprob": -0.1414734619419749
+    },
+    {
+      "start": 2619.17,
+      "end": 2622.69,
+      "text": "Or youtube um dot com slash stew and dave do america or something",
+      "source": "pass1",
+      "avg_logprob": -0.1414734619419749
+    },
+    {
+      "start": 2622.77,
+      "end": 2627.01,
+      "text": "And uh look for it you'll find it just search for stew and dave do america there and on the podcast as well",
+      "source": "pass1",
+      "avg_logprob": -0.13561760232998774
+    },
+    {
+      "start": 2627.33,
+      "end": 2629.97,
+      "text": "We will see you with more predictable tomorrow",
+      "source": "pass1",
+      "avg_logprob": -0.13561760232998774
+    }
+  ],
+  "full_text": "Welcome to Predictable with Stu show that attempts to make the world a little bit more predictable we're here in the new set and We are here and it's Pretty cool. We're pretty excited about being on a new set for the first time still dealing with all a bunch of the graphics coming in And all this stuff We're still sort of in half launch mode here soft launch mode if you will So thank you so much for joining us as we go through this and there's so much to talk about if you happen to be here and A fan of a stew or excuse me stew does America the old show that used to be on this channel I encourage you to of course stay and enjoy what we're gonna be doing here It has to do with prediction markets and how to understand the news and the world as it relates to prediction markets But if you're also looking for a little bit more on the funny news side as well We have stew and Dave do america. It's a new show kind of an expansion of stew does America And it's available if you search YouTube or on blaze TV Stew and Dave do America. So make sure to go check that out Let me talk to you a little bit about The world we're looking at right now because the prediction market world is one you might be new to you might not necessarily Have a vibe on right now. There's a lot of kind of honestly BS Being circulated about prediction markets stuff that doesn't really make any sense. We'll go through some of that today You some where you would think they would have a better understanding of it and maybe a Closer connection to the truth And I find that at times that's a real weak point in the media right now And I think we should make sure we understand that we're also going to give you some different markets To look forward to there's some interesting stuff in sports and culture We'll get into a little bit later, but I do want to start with this WSJ headline Why almost everyone loses except a few sharks on prediction markets. Hmm. There you go That's the big headline. That's kind of the spin honestly. We've been seeing constantly on prediction markets these days It is Sort of a way to scare you away from them I would say that's kind of the thing that they're trying to do right now They want you to know what they are just enough so that you're terrified of them I will say what is it again? What's the word these sharks? Almost a few sharks. Look, this is the I'll try not to admit this all that often Okay, because it does not help me really on this program whatsoever to tell you this but like Here's something that you may be very very aware of already But here's the thing. I'm not a shark Okay, I'm not a shark. I'm not special. I don't have some magical knowledge of prediction markets I can't trade 50,000 times in three seconds. I have no AI doing it for me. That's not what we're doing here They want to terrify you to think that it's all gosh. It's only a few sharks Well, I've done very well on prediction markets for a decade. I'm far from a shark I'm far from some mastermind that can somehow dig into the markets and unleash some secret code what I'm trying to do is take information that I care about that I that I'm interested in and synthesize it into something where we can maybe make a little bit of a profit Inside of prediction markets, maybe we can do that together. Maybe you guys can tell me the markets that you like I'll tell you some that I like and we'll look at this and make some decisions On our own merit like sometimes we'll win sometimes we'll lose but we'll do I think pretty well I have been doing very well for a long time on these things That's not to say that I won't screw up that I won't get some wrong But they want you to believe that apparently people like me are sharks Look, I'm not a shark. I'm not a you know some Complete, you know flash trading nerd. I'm a nerd But I do as little flashing as possible and that's to your benefit, okay Because there's a visual element to the show so that's important by the way You can listen to this on podcast or on YouTube if you are on one or the other just search for Predictable with stew on either platform, whether it's podcast You know YouTube all the all the places you can go and find this let me give you a little bit of this because this is what they're doing in the Media right now, and I don't think it's right And this is one of the reasons I went to Washington DC a couple weeks ago to try to help people understand these Topics a little bit better This is this is the story that give you to warn you about how some people aren't making money in prediction markets Are you ready for it? Because if this is you we're gonna have some we need to have a conversation, okay? John Peterson 33 years old couldn't work the former outback steakhouse line cook was Recovering from a car crash and running out of money. This is not a good start Kalshi the prediction market promised a quick way to fix that He took out a variable interest loan and started betting now stop for one second Right off the bat Kalshi Polymarket PredictIt any prediction market you're considering joining none of them promise you a quick quick way to To fix your financial future. Is it a possibility? Yes, it's a possibility if you do it well, and you do it smart the first thing you should do when you think about going into a prediction market like this is to Exize the word betting from your life Because if you're doing in a way that you consider to be betting you'll likely lose because as you know gambling isn't normally all That profitable there are some people who do very well with it It's possible to do very very well with it, but honestly if that's the way you're thinking about this You're gonna probably put yourself in trouble. Let me layer something on top of that This man took out a variable interest loan To then go on Kalshi and bet He didn't even get a fixed rate loan boys and girls. Hey, I mean I Would argue perhaps use money you have okay? That would be maybe place number one I would start is try to use money That's actually your money if you're taking out giant loans To use to even invest but bet as the heat the term he used on on Polymarket or Kalshi I would advise you at least get a fixed rate loan so that you're Halfway through there's like, oh, sorry. We're gonna jack up your loan rate So variable rate loan that's that's problem number two because betting would be problem number one think about this differently Okay, so this is what he did okay now again. You might say this is obviously a disaster story This is gonna be a catastrophe from minute one. It wasn't he actually did really well listen to this at first It worked Peterson turned about $2,000 into close to 8,000 by betting on daily Snowfall totals in Detroit where he lives now look There are real experts out there on the weather Okay, there are people who are on Kalshi who are on Polymarket who are on predicted or all these markets and they Are making money predicting What will happen with snowfall in various cities? There are as you know, there's meteorologists out there who are studying this stuff There's really smart people if you are a line cook from out back steakhouse You're probably not the guy that is gonna go into daily Snowfall markets in Detroit and win long-term. That's probably not you you might make a mean bloom an onion But my guess is probably not the guy who's gonna know to the tenth of an inch Snowfall total in advance. That's just me. You can get lucky as he seemingly did he went from 2,000 to 8,000 He parlayed that into $41,000 by trading on sports using a strategy He developed with the help of AI according to a WSJ review of his account records now Betting on sports is something that you know people do you can there's a lot of different approaches on that We will give you some approaches that will seem Considerably separate from the betting that you may have used or heard of before there's nothing wrong with sports gambling in my mind I'm not a not a puritan on that. I know some people really don't like it. That's fine I don't have any problem with sports gambling and I will say this though And it's it's important to understand on prediction markets prediction markets are gonna give you I think a better experience Wagering on sports if that's what you want to do I mean, I think it's better than having a house edge You're trading with other people. You just have to outsmart other people that being said these are really sharp markets There are millions and millions and millions and millions of dollars going into sports like typical sports Gaming type of vibes, right? If you know who's gonna win is it gonna be the you know the the Patriots of the Seahawks there's a lot of money going in those markets, okay and You to win in a market like that is really really difficult because they're so smart one of the one of the largest Participants in these markets. At least this is the reporting and we don't know this for sure, of course But the actual sports books the people at the sports books who have imbalances on their books can go on these and offset their balances That's the type of money you're talking about millions of dollars are going into these Yes, you can get lucky. You can turn eight thousand dollars into forty one thousand dollars Just like you could do at any casino, right? If that's how you decide to use it and to be clear You can do this anywhere You can gamble you can turn anything into gambling if you want to you can do meme stocks You can do penny stocks or you can go in and buy a really boring index fund, right? That is what is out there and available to you if you want it So this guy turns eight thousand into forty one thousand He should have probably stopped but this is where he went next then he placed his mod most audacious bet yet all 41,000 dollars that a celebrity would say a particular word on TV He lost it all now is That I'm not saying that there aren't any stories like that But is that a typical experience a line cook that takes it turns gets forty one thousand dollars between betting on snow and betting on the sports gambling and then throws all of it one hundred percent of his of his pocketbook on a Mention market and loses is it possible to do that? Of course, it's possible to do that question is whether it's a good idea or if that's how normal people use this And of course, it's a total outlier. Let me give you the second example of why these are a problem. Are you ready for it? It's detailed a cell. This is how it starts a self-described problem gambler. I Mean in Connecticut lost two thousand dollars in a day betting on the Super Bowl on Cal-Chi during the fourth quarter A tense fourth quarter really wasn't that tense I don't know if anyone watched that game But wasn't that tense a 31 year old in Indiana who called the trading like a drug lost about five thousand dollars Betting nearly daily on sports and Cal-Chi until the first month of the year again You can use these things for all sorts of extreme betting You can go on your e-trade account too and buy stocks that are worth a penny and hope they go up Okay, that's all available to you. You could do that with crypto. You can do that with investment You can do that with options. You can do that with derivatives. You can do this with a million different topics Or you can do things a little bit more sanely and of course, that's what we're trying to Get through and help you with here unpredictable But also This is how you should be thinking about this on in your data daily life If you're thinking about I'm gonna turn $2,000 into 41,000 and then bet it all on 40 41,000 on a word You're probably gonna wind up losing in fact You're definitely gonna wind up losing eventually because when you're betting quote-unquote betting your entire wallet on one Particular wager eventually you're going to lose once and then it all is gone. That's just a certainty. It's math Don't do that But the whole article is more and there's a bunch of outliers of crazy people who do crazy things in here but it is it also has a It's trying to talk you out of getting into prediction markets and look, you know, if you don't like them That's fine One thing about this show is we're gonna use prediction markets largely to inform our view of the world So if you don't care about prediction markets, if you don't want to get into them We're just gonna take the value out of them We're gonna let all those people go do all those things in all those markets and take the information It's suck that information out for you and be able to say, okay This is what these things are. This is another tool to help us understand the world So whether you like prediction markets or not, I think you're gonna like this show But let me give you a little bit more of this plate piece from the WSJ on Kalshi This observer talked about in this particular article a large number of casual traders jut just bet yes on what they hope will happen That's not what you see in crypto or stock exchange where people are trading securities. I got news for you That's a lot of people are doing on a lot of these markets You're telling me that people don't go in there and throw money at bitcoin with the hope that it goes up And that's really their only piece of knowledge on them on the market. Of course that happens You think that happens with nvidia? Of course it happens There are a lot of people who go in and do all sorts of things But the the point is not to scare everybody away from what could be a good investment and something that could improve their future Instead, let's talk about doing it the right way They say more than 70 percent of Polymarket users lose money says the WSJ A working paper last month from researchers in france and canada had similar findings They found that the gains on prediction markets go almost entirely to sophisticated traders While the long shot bets and unsophisticated traders take losses you will usually lose when you take long shot bets That is true. That's uh, how long shots actually work In fact, they inform you that they are a long shot by telling you they are a long shot and giving you like One percent and they're giving you a hundred times your money You should expect to lose almost all the time when you're betting at something Or investing on something that has a one percent chance of success It indicates the possibility of a 99 chance of loss That's how percentages work The journal's analysis of Polymarket trading data indicates a typical user is down between one and a hundred dollars While the least successful of Polymarket traders have lost an average of four thousand dollars each And this is one of the things these numbers get skewed very easily A lot of people hear about an app like calci or Polymarket. They hop on they throw a few bucks at something They might win once maybe they win twice Then they lose because they put all their money on something and they wind up losing And that's the end of it and they never really go back That's where you're getting why they look at raw numbers of accounts the people who win don't leave The people who lose could they come in and they filter in and they take a couple shots And then they bail and never think about this again because those people aren't necessarily trying to do this In the type of ways that we're talking about here and the the idea that sophisticated large traders make a large portion of the profits Makes a lot of sense because they're the ones putting all the money at risk Right when you go in there with four dollars, my wife has 20 dollars. She put into calci She's now up to 27 by the way. She's up 35 percent. Okay. How's that for an investment? I will tell you it's more profitable than a vacuum habit Which is going the opposite direction for our financial future but It is a situation where her money is not going to move the These overall numbers on a huge exchange like Polymarket or calci There's millions and billions of dollars are going into these markets, right? They're worth they I mean both Cali Calci and Polymarket are worth around 20 billion dollars each And that's the last time they value them. It goes up every single time They provide this healthy healthy chart Just 0.1 of accounts on Polymarket take home 67 of the profits. Okay, that sounds like a really scary number Okay, and you see that there's more accounts that do lose than than win Of course, again, the people who lose are a lot of people who just jumping in trying something new Throwing a few bucks at it for entertainment and then never coming back That's a lot of the people that you see in that lower red area when it comes to Profitable you see 33 of the profits come from the top accounts, you know, you kind of have to make a decision, right? If you were just just random distribution You're There's a 50-50 chance You're in the top or the bottom if you have no knowledge of who you are or what you think If you don't think you can be in the top 30 percent of traders Frankly, you know, I might not be the thing for you and that's fine You know, we'll still suck out all the information for free from from these these incredible tools And we'll learn a lot about the world together. That's fine If you don't think you that you're like, hey, I know politics better than most people I know You probably don't want to go huge in these markets I mean, maybe you want to play a little bit have some fun, you know, again I keep bringing this up to people. They're like, oh gosh. Well, uh, you know, some people lose money Yeah, some people do lose money. I know that everything else I do in my life I always lose money when I go to you know, a restaurant. They take it every time They never say it's not like every eighth meal. They're like, hey, you won a hundred dollars That never happens when I go out to a movie The movie usually sucks But I one thing that never happens is that at the end of it, they say, well, you know what? I guess you guess what you got nine free movies because you were here today Like, you know, calcium your Polymarket provides a little entertainment for some people They sometimes win. They sometimes lose. That's not the people I'm talking about Let me show you why it's important to understand that these numbers like, oh gosh Point one percent of the traders get 67 percent of the profits on the platform Let me give you the top. What is this eight traders on Polymarket right now? This is from a site Polymarket analytics that that breaks this stuff down And it's a little might be a little difficult to see but let me break this down for you All of them like for example, uh, the the guy here. I can't even read these graphics. I'm sorry on here But it's millions and millions of dollars That are being traded by these guys And if you see the the sort of red and green breakdown in the middle, those are their wins and losses Two of the top eight traders on Polymarket two of the top eight In this time period have below 50 success rates They are losing a lot. They're just winning the right positions when they win They are putting millions and millions and millions of dollars on both sides of these transactions Some of them are like, hey, they won. They're up four million dollars. They won 36 million and lost 32 million Well, when you have people like that That are skewing these are just whales in there doing their thing Yes, they're going to have most of the profits because other people they're you're comparing them to put a hundred dollars on the platform It's going to be really hard for them to win four million This is what's going on right now And over and over again They keep trying to skew these things into uh to make them a scary foreign thing One of the things we're going to do here is break them down so they're not that way Right, they don't have to be scary. They don't have to be intimidating What it has what's great about these markets is there's so much more accessible than traditional investments You know think about trying to even understand how to trade options, right? It's very difficult think about going on and really understand I mean, I know, you know ai is going to be big so in video, right Hey, you know iphone sell a lot apple That's about what people put in to the stock market when they're thinking about it And they don't have a lot of information necessarily on those things other than the basics When it comes to prediction markets, it's a simple yes or no question and if you know something About a particular topic if there's something you're really invested in something you're really interested in something you want to study You want to read you want to think about a little bit more than uh, you know the the is iphone good or bad If you have that inside of you it's something you want to do These are great markets to get in because you're answering a very specific question calcy just added these things Uh kpi is where you can go in there's just specific measures for companies Do you think this product is going to sell well? Um, is it going to sell over this many units? That's a question that you could ask and maybe you have an opinion on right? Maybe you think a product's about to take off and you want you want to see if you can uh collect some on an investment on that You can get a yes or a no where if you just invest in the stock There's a lot of other variables. Maybe one of their other products fails Maybe there's a supply chain issue somewhere. Maybe you know, they're, uh, their ceo is in the epstein files And all of a sudden here you are your stocks down 40 percent even though you were right on how many they would sell Bottom line is I think these are more accessible not less and and that seems to be I don't know the intimidation level from the more professional class on this stuff Uh, let me get a little bit more. Um, and just to give you a sense of this You have to understand that there are real pros out there. It's not nothing You're not going in here and just going against people who know nothing. This is not what these markets are There was a time a glorious time in the past Where that was sort of the case like you could really go in here and sometimes clean up With people who didn't really know what they were talking about and it was kind of nice. Uh as a trader You were like, oh gosh that that price is completely wrong. I'm gonna go the other way on it There are a lot of people in here Let me give you an example Jonathan stall ryan a co-founder of another firm with about a dozen staff like him I'll call the college students the firm is among the top five traders by volume betting on crypto prices on Kalshi and stall ryan has turned a thousand dollars into seven figure profits The company pays more than two hundred thousand dollars a year for live data feeds AI coding agents and servers and uses algorithms to execute live trades tens of thousands a day You should know people like that are out there and the way they make money is not necessarily knowing or predicting what the future is They are helping with price discovery. Uh, and I think they're a positive Um, uh influence on these markets when when they see a weakness in a market, they'll come in but A lot of these guys are just coming in they're trading tens of thousands of times a day And they're chipping away like uh, what was it superman? Three was it three or four where they were taking the little shaves of penny office space They would take the little shake the shavings of pennies and pocketing them because of millions of transactions a day or whatever They're trying to do That's not how I look at this stuff at all I look at something that says hey in three months something's going to happen And it says there's a 40 chance that I think it's an 80 chance So i'm going to go in there if I get in one of these traders might get it at 40 and I might get it at 41 I'm not that worried about that That's not the game i'm playing the game that they are playing Flash trading very quick incredibly high technology levels All sorts of advanced technology if you're trying to beat them at that game like this uh guy from Uh, the steakhouse outback steakhouse was doing with his ai probably free chat gbt trying to get some model figured out If that's what you're trying to do look It's not impossible you'll succeed But I would say it's pretty unlikely a lot of people have that idea And a lot of people are putting incredible resources into trying to do that They're trying to get the slightest trading advantages and they're trading in and out of positions You know sometimes hundreds of times a minute It you're not gonna that's if you're trying to play that game It's going to be really difficult when you're looking long term You're taking uh, you're taking investments and positions on on things that make sense over a long period of time With deeper knowledge and you're not looking to try to Do this at some crazy volume. There are real opportunities out there. Um, and by the way our friend From outback steakhouse. Unfortunately, he did lose it all He had few other sources resources to turn to it's a really a sad story He's currently living in a homeless shelter in downtown Detroit Which how could you even tell with Detroit if you're in a homeless shelter or not? Uh, frankly, that's it's hard to know. But uh, anyway, uh, he this is the best part of the story He recently got an offer to for a job selling mortgages Of course, this is the guy right because there's never been any problem with mortgages ruining our economy Let's bring the guy from outback steakhouse who blew his savings on bed after bed after bed after bed after bed On whether by the way the the market he went into was whether a rapper would say the word rapper on television By the way, I felt bad for him because the guy actually said rapper, but they cut it out of the interview That sucks. I will say mention markets are very finicky creatures I will say we like doing them. They're fun But I wouldn't say that they're the peak of my uh, they're on on our degenometer They're a little bit more towards the degen side than I like to be although they are a little fun I will say that as well. Okay. I want to come back. Take a break and come back on the other side with uh Dan andros and I want to talk to him I've got a couple of things to take up with him a couple bones to pick with mr. Andros on some markets So I want to get to that next We are live from feddy's house guests are gathering around the tv even with a big storm outside All we worried about the feet. No, they have xfinity wi-fi get reliable fiber powered gig wi-fi with peacock included to stream the beautiful game this summer Xfinity imagine that restrictions apply new gig internet customers only actual speeds vary offer for peacock premium with ads currently at 1099 a month value and limited to xfinity internet members with newer upgraded gig speed or faster service activation required to access content Peacock must be activated within first 90 days management of existing subscriptions may be required to avoid multiple subscriptions and duplicate charges Third party bill subscriptions continue until cancelled Welcome back to predictable predictable show dot com by the way is uh the place to go to Not only get the show and some of the behind the scenes stuff, but also Uh some live streams and written pieces on particular markets We're going to be building that out more as we get started here. This is again not even a full show We don't have all of our graphics ready. We're just first day in the studio first day new dicks So thanks for joining us here on predictable and make sure to go to predictable show dot com and join us There as well. You can do it with just an email. I want to bring in dan andros Welcome to the program dan You know dan, of course over doing quick start with cbn And has been on our programs over the years many many times andros Of course here to bring the dany long shots advice For all of our prediction market fund dan welcome to the program. All right, thanks One of the things we were just talking about I would love to get your reaction on is the fact that the media You realize how when it's When it's about things that you understand you realize how bad they are And I think this is another example of prediction markets because when you see how they handle prediction markets You realize how bad they must be on everything else Right when you take it if you've been following the news very closely over the years and you look at how they spin different things Uh, you know, it kind of gets muddy and like they're like that's kind of when they're on like their a spin game Is when it's in like politics and stuff like that, but then when you see them try to do it in their mind They're just saying Prediction market bad. We need to spin this bad. What do we do and they go and find they try to find the poster child But they don't know how to do it like this is uncharted territory for them. So they grab This guy and you have to realize that this is what they do On all the other topics. They're just a little bit, you know, they're just a little bit more clever with it Right, they've had more practice at it over the years. So when the border situation they want to Say, you know, Trump's border crackdown is bad or whatever it is. They want to say they go and find You know The most sad story they can find out of the whole thing, which is not indicative generally of everything that's happening Yeah, all the time. I mean this is what politicians have been doing forever, right? They'll take the one sad story The one sob story the one really tragic thing and try to turn that Into something and it's the opposite when they want the opposite result, right? If like if they loved prediction markets, they would be featuring the guy who I mean, I met several of them One of the prediction conferences I went to a couple weeks ago In people who have took almost no money and turned it into hundreds of thousands and sometimes millions of dollars because they're really Smart just smart guys People who are smart who were thinking these things out who were interested in trying to understand these markets a little bit better And we're able to take advantage of them. Those people don't get Featured nearly as often Yeah, and like how do you take away anything other than this article other than this guy is You know god, it has a gambling problem or is not smart Like I don't understand how you can look at it and say the thing is bad that he's engaged Like did he engage in this interview thinking? Man, I'm going to show them how bad this prediction market thing is over here When he made a series of some of the worst decisions you could possibly make at 33 years old You lose your job you go and do I mean we've all been young and we all Had situations where maybe a job we had fell through or we couldn't find a job and you just get a job and you work You don't sit there and go. You know what is a great idea. I'm gonna go ahead and get a variable rate loan and then just Sit here and start Flinging it around at places. It's literally the worst thing you could do And so I don't I don't see how this article proves anything stew other than This guy made some horrible decisions. Right. I mean you could easily just say, you know, uh, well, uh, did you know, uh, Chick-fil-a this guy ate, you know, 9,000 nuggets a day and he's really Shut it down. It's not Chick-fil-a's fault You know, it's like you you go there and you make your own decisions And I swear, you know, this is a very progressive concern over a very long period of time But like what they're trying to do is get rid Of the possibility of people being able to control their own lives and outcomes And you know, they think everybody's too stupid. Everybody's gonna go do this. Well, that's not necessarily true You can go do this another way. You can eat healthy at Chick-fil-a too You can you can do things the right way. We're gonna try to do that Here I I did want to get your go ahead real quick though All those politicians that are telling you all these things that are so bad for your life They're the ones that all go out and have drinks at the bar afterwards at night Yeah, so that's totally fine. Eric Swalwell is probably out there telling you how bad this is for you And then he goes and is I don't know hanging out with hookers and Abusing people and all this other stuff, but but we're gonna get lectured on them I'm you know putting a couple bucks into a a market. I mean, it's crazy It's very sad Dan that Eric Swalwell did all of his molesting before he started talking about prediction markets Because he would have been just as dumb as he is on everything else and would have given us so much material over a long period of time, but I suppose that's Neither here nor there because Eric is thankfully out of our lives I wanted to bring a couple of quick things to you. Have a quick bone to pick with you on this particular market Oh boy So there's a new movie coming out Okay Star Wars the Mandalorian and Grogu is coming out And excited for it. Yeah. Yeah. I know you're a big Star Wars fan We've watched Star Wars when we were kids together, right? So I know you're a huge fan of this Um You know if you happen to listen to the show we did an interview With michael selig the the head of the chair of the CFTC Who oversees prediction markets for the trump administration? And one of the things he pointed out was that you cannot Go on calcium or Polymarket or any of these prediction markets and do anything with a box office receipts because that for some reason Some favor to somebody in hollywood was actually exempted out of their oversight, which is an amazing story in and of itself But the way that they sort of replicate these markets on calcium and Polymarket is is the movie going to be any good And the data point that they have for that is Rotten tomatoes so rotten tomatoes takes all the you know professional critic reviews And they give you a percentage. Is it a good movie or is it a bad movie? And we now have At least a forecast as to what this particular market will be And it is Star Wars Mandalorian and grogu the rotten tomato score projected to be 74.3 74.3 to give you a sense of what that means dam You got 74.3 is going to be ahead of a solo a star wars story Ahead which is at 70 percent star wars episode 2 attack of the clones 65 Star Wars episode 1 the phantom menace at 52 percent. That's what's below it immediately above it is Revenge of the sith episode 3 at 79 percent Return of the jedi's 83 percent And then looking through some of the other ones like for example, the Mandalorian season 3 is 84 percent So they're saying basically a little bit worse than some of the seasons of Mandalorian Better than what some of the movies that I've seen have kind of flops If you will there's not really a flop. I suppose in the star wars universe, but that's kind of where they're seeing this play out What do you think are you do you think this is going to be too high too low? Where would you go on this? I um, well first of all, I will say it feels pretty close actually because My sense would be like the Mandalorian series I believe was so good Um, and then people are a little nervous when they see the trailer. They feel like it's going to be You know a little bit sticky and oh the baby's going to do cute things and that's pretty much all it's going to be You know, it's like going to be jar jar banks in like a cuter package Like I think that's what people are afraid of is going to happen And so I can I actually can see the market settling on that but uh Uh, so I don't hate where the market is actually the only other thing I'll say is If anything it might even be a little bit bullish because Star Wars fans are notoriously Complainers they complain Yes About everything they cannot just now listen. I know there have been some duds I'm the big one of the biggest Star Wars fans out there and I you know I haven't even watched the uh You know, I haven't even thought about it And so long I can't even remember the name off top my head as we're talking here But the second one out of the last three, you know, oh gosh Yeah, the the last Jedi or the You're talking episode eight, I guess. Yeah. Oh my gosh. That was terrible terrible It was so bad and then the last one wasn't even like it was better But still weird and like not great like I have you know, it's not good when you haven't like gone back to watch it Yeah, like solo story to me is pretty underrated. I thought it was actually pretty good. It was fine I don't know why people didn't like that one. I thought it was fine I don't know either. I thought the guy they picked for haunted great. Um, but yeah I mean, I think uh, I think people if there's any schlockiness and at all with grogu You could expect that that thing to go down. I gotta say Dan, you know, I know you like the Mandalorian I gotta actually I gotta show you look. Oh, no, let's see. Dan is uh Well, I mean, let's see. What do you have? Well, I mean, I move spots in here and so you might have remembered this from uh, let's see if I can get it From behind you. Yeah, that your old set in your home my old set. Yeah So I still have this prop here. So You know big mando fan, but yeah, so so what is your concern here? I just don't I just I think it was honestly kind of boring I frankly didn't make it all the way through the seasons Part of it. I will say uh to be completely transparent Was I was really annoyed by the Gina Carano thing like that really bothered me. Yes She was I thought the best character on the show Um, she was yes, and the fact that they just blew her out and tried to ruin her career It was so Was so annoying to me It was the peak of the kind of that woke era and that drove me so crazy that I I couldn't I couldn't maybe that was part of the problem. I have It didn't keep my attention. I will say Uh, it just didn't have the I don't know it just a little boring. I mean a little slow. How about that a little slow? I mean listen, I uh I mean, where do we even go on this? I I'm not sure if we're Listen, we're are we do we grow up in the same town? I mean, I don't know. I'm a little surprised I'm a little surprised that uh that you thought no I mean because I could see that though on because the other one uh andor I mean, this is what happens when you come out with so many things or andor was a little slow moving Yeah, I thought it was pretty good, but also slow moving. That's what I will say dad looking at that I never saw I gave up basically after the Gina Carano thing I have not watched pretty much anything that is a fair reason to give up I actually had to very much power through it It was tough to keep going But andor season one and andor season two 96 and 97 percent on rotten tomatoes So the critics seem to very much like that It's fact that most basically the most popular thing star wars has ever done So anyway, that's where we are. It's good, but it's not that good, but anyway, okay Before you go one more thing. I have to bring this up. I hate to do this It's not, you know busting you busting on you for star wars is one thing Unfortunately, the boston Celtics lose a three to one lead and wind up Wind of losing. I you know, I did was there a thought at all for you To do something that you know that I do often and hedge your life and take some investment dollars And invest them in hedging your happiness and going with the other side the sixers in this particular instance to try to make yourself feel a little bit better when the horrible thing happened It is a very plausible life strategy And one that I think is viable And a worthwhile venture in in these sorts of situations where there is no upside You know really for them winning because they I didn't actually to be honest I didn't even watch much of games six and seven because Uh at that point you're up three one And then three two and it's just like Okay, if they win they were supposed to win and then if they lose the whole series It's an utter disaster. So like watching it. You're just going to be stressed out the whole time that they're going to blow it So, you know, but yeah very frustrating series But uh if the the sixers were at like 30 percent even after they won two in a row and it just stayed at 30 percent And I just thought that's crazy. I'm watching the indicator going that is that is nuts the the Celtics clearly had not figured things out Uh and we're struggling and a bead was back and the sixers were rolling Yeah, I was surprised. It was surprise. Although we did call it. We were talking about this before Before the uh before game six. What would happen if it went to game seven? We predicted 30 percent One of the things we were talking about it. This is about where it went to I saw it at 28 But it was right around there. Uh, so, uh, you know, again Sports is sports and I love it and I you know, I love getting myself involved in it But I will say it's one of the things that really is a They some people call it an emotional hedge. I don't like that term. I like hedging your life Hedging your life. It's not emotions. It's reason Because it's the most sometimes the most important thing to you is a stupid game and when that happens It's important to be able to hedge yourself. All right, dan. Uh, thank you so much for joining me I can follow dan, of course on quick start the podcast And on social media as well. We'll have you come back, of course, dan Thanks so much for taking the time to come on and we will be back in just a moment Okay, as we were talking about that you should know that my producer adam Wound up going under 65% on the mandalorian rotten tomato score. He said the movie's going to suck So and sadly very soon he will be at a homeless shelter This is what happens every time you get on one of these apps and all of a sudden your mandalorian markets The next thing you know, you got a variable rate loan And and you've lost your job at outback steakhouse, which is honestly a much better job than he has currently on this particular show So anyway, uh, so I want to end this and I'd like to do this from time to time Uh, give you some kind of offbeat thing that I'm thinking about in these markets Trying to find these little nuggets the little nuggets of gold Out there in the in the world and so My kind of working title on this maybe this is just what we'll go with which is Here's one I kind of like I'm not telling you I'm locking in my financial future on this thing It's just one. I'm kind of like I'm kind of interested. I'm kind of following Think there might be some value there a little bit of interest And this one is particular for you if you happen to be maybe a trump supporter You happen to be someone who is uh more of a fan of trump because this is more just a torture Your your liberal friends than anything else, but this is the market Will gelane maxwell be released from government custody Now donald trump does a lot of unpredictable things, okay I know this is a show that's called predictable and judging sometimes donald trump's, uh Wims here and there are difficult. We can all understand that But walk me through the thought process where he releases gelane maxwell from prison I can't even imagine a scenario where this would occur and you know, the thing is the reason it's right now at, uh, As a 13 or 13 percent Will he release This year my position on this would be no by the way. He's not going to release gelane maxwell of all things He's he's already had to deal with the nightmare of the epstein file stuff Uh, and so I don't think there's any chance he would do this if he did it If there if there if he were to do it the only thing it would do is make him look more guilty If he was giving a pardon Delain maxwell, it would make him look much more guilty than he is Now the other thing what's interesting about this is obviously no political Mind would say yeah, release her this will do this will do your your presidency good Like there's no upside to this whatsoever. It would be a horrible decision if you were to do it Um, but the funny thing about this the reason why this isn't one or two percent a chance Uh, I mean sure there's a little bit of trump unpredictability. I get that but really the reason is is because all the most annoying people on tiktok and on I shouldn't even say twitter blue sky All those people who think donald trump actually was at epstein island every weekend And there's gonna all the evidence is about to come out and it's right around the corner at any moment All those people those are the people in the 13 percent saying that he's going to release him So you're taking their money with this market now. It's only 13 percent. Although What are we in may 13 percent in seven months? That's certainly not a bad take home Think about your checking account. It's giving you probably 0.3 percent. So 13 percent in seven months not bad If he does this it's the most insane thing in the world It's not impossible But I got to say It's one I kind of like will gelane maxwell be released from government custody. I'm going to take the position of No, and if it happens my producer will make sure he pulls this video up to remind you That's the side I was on Okay, that's it for predictable today go to predictable show dot com check out the program there and also check out the uh The written pieces that we have we've got some more coming. Maybe I'll write one up on gelane maxwell. Who knows We've got that coming up as well And uh fall the show on youtube and on podcast as well as stew and dave do america that's available on blaze tv It's also available on youtube tv Or youtube um dot com slash stew and dave do america or something And uh look for it you'll find it just search for stew and dave do america there and on the podcast as well We will see you with more predictable tomorrow"
+}

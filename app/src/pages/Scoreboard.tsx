@@ -101,6 +101,33 @@ export function Scoreboard() {
           </div>
         </section>
       )}
+
+      {data.recent_losses.length > 0 && (
+        <section>
+          <h2 className="text-base md:text-lg font-medium mb-3">Losses</h2>
+          <div className="space-y-2">
+            {data.recent_losses.map((l) => (
+              <Link
+                key={l.id}
+                to={`/calls/${l.id}`}
+                className="tap flex items-center justify-between gap-3 rounded border border-[var(--color-border)] bg-[var(--color-bg-elev)] px-4 py-3 hover:border-[var(--color-border-strong)]"
+              >
+                <div className="min-w-0 flex-1">
+                  <div className="font-medium truncate">{l.market_hint}</div>
+                  <div className="text-xs text-[var(--color-text-muted)] truncate">
+                    {l.publish_date} · {l.episode_title} · {CONVICTION_LABELS[l.conviction]}
+                  </div>
+                </div>
+                <div className="text-right flex-shrink-0">
+                  <div className="text-lg font-semibold text-[var(--color-status-resolved-loss)]">
+                    {formatPct(l.realized_pct, 0)}
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
     </div>
   );
 }

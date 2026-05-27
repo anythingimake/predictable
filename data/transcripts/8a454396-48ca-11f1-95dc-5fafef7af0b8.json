@@ -1,0 +1,3974 @@
+{
+  "audio_file": "C:\\Users\\NoahYaffe\\Documents\\GitHub\\anythingimake\\predictable\\data\\audio\\8a454396-48ca-11f1-95dc-5fafef7af0b8.mp3",
+  "language": "en",
+  "duration": 2359.275125,
+  "pass1_model": "small",
+  "pass2_model": null,
+  "pass2_rescued_count": 0,
+  "pass1_segment_count": 566,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 4.48,
+      "text": "Okay, I have to tell you I was just looking on eBay where I go for all kinds of things",
+      "source": "pass1",
+      "avg_logprob": -0.23143217318198261
+    },
+    {
+      "start": 4.48,
+      "end": 10.16,
+      "text": "I love and there it was that hologram trading card one of the rarest the last one I needed for my set",
+      "source": "pass1",
+      "avg_logprob": -0.23143217318198261
+    },
+    {
+      "start": 10.32,
+      "end": 16.8,
+      "text": "Shiny like the designer handbag of my dreams one of a kind eBay had it and now everyone's asking",
+      "source": "pass1",
+      "avg_logprob": -0.23143217318198261
+    },
+    {
+      "start": 16.8,
+      "end": 22.24,
+      "text": "Oh, where'd you get your windshield wipers eBay has all the parts that fit my car no more annoying",
+      "source": "pass1",
+      "avg_logprob": -0.23143217318198261
+    },
+    {
+      "start": 23.4,
+      "end": 25.4,
+      "text": "Just beautiful",
+      "source": "pass1",
+      "avg_logprob": -0.23143217318198261
+    },
+    {
+      "start": 25.64,
+      "end": 29.88,
+      "text": "Millions of finds each with a story eBay things people love",
+      "source": "pass1",
+      "avg_logprob": -0.13885259194281493
+    },
+    {
+      "start": 32.52,
+      "end": 38.12,
+      "text": "Welcome to predictable with stew go to predictable show dot com",
+      "source": "pass1",
+      "avg_logprob": -0.13885259194281493
+    },
+    {
+      "start": 39.72,
+      "end": 42.76,
+      "text": "If you want to get all connected with the substack",
+      "source": "pass1",
+      "avg_logprob": -0.13885259194281493
+    },
+    {
+      "start": 42.76,
+      "end": 47.72,
+      "text": "We have a lot of written pieces that are kind of prepped and ready to go as we're getting ready to launch all the stuff",
+      "source": "pass1",
+      "avg_logprob": -0.13885259194281493
+    },
+    {
+      "start": 48.04,
+      "end": 50.04,
+      "text": "We're entering into primary season",
+      "source": "pass1",
+      "avg_logprob": -0.13885259194281493
+    },
+    {
+      "start": 50.04,
+      "end": 54.92,
+      "text": "It's going to be a big season for us here at predictable and of course going into election season as well",
+      "source": "pass1",
+      "avg_logprob": -0.13885259194281493
+    },
+    {
+      "start": 55.24,
+      "end": 60.84,
+      "text": "If you are on this channel on maybe on youtube and you are here subscribed for stew does america",
+      "source": "pass1",
+      "avg_logprob": -0.16279658104511016
+    },
+    {
+      "start": 60.84,
+      "end": 64.6,
+      "text": "Let me just quickly tell you that stew and dave do america now exists. It's a thing",
+      "source": "pass1",
+      "avg_logprob": -0.16279658104511016
+    },
+    {
+      "start": 65.16,
+      "end": 68.68,
+      "text": "It's a thing we've been doing for a couple of weeks now and we would love for you to enjoy",
+      "source": "pass1",
+      "avg_logprob": -0.16279658104511016
+    },
+    {
+      "start": 69.0,
+      "end": 70.2,
+      "text": "Joyus",
+      "source": "pass1",
+      "avg_logprob": -0.16279658104511016
+    },
+    {
+      "start": 70.2,
+      "end": 75.16,
+      "text": "Enjoying us over at that channel. It's stew and dave do america search youtube search podcast",
+      "source": "pass1",
+      "avg_logprob": -0.16279658104511016
+    },
+    {
+      "start": 75.56,
+      "end": 79.16,
+      "text": "Do the things is with comedian dave land out. It was really really funny. I think you like the show",
+      "source": "pass1",
+      "avg_logprob": -0.16279658104511016
+    },
+    {
+      "start": 79.88,
+      "end": 82.28,
+      "text": "Quite a bit and it's over on blaze tv",
+      "source": "pass1",
+      "avg_logprob": -0.16279658104511016
+    },
+    {
+      "start": 83.08,
+      "end": 84.84,
+      "text": "as well now",
+      "source": "pass1",
+      "avg_logprob": -0.16279658104511016
+    },
+    {
+      "start": 84.92,
+      "end": 87.4,
+      "text": "We have a primary night tonight. Yeah",
+      "source": "pass1",
+      "avg_logprob": -0.09636061325196237
+    },
+    {
+      "start": 88.2,
+      "end": 89.72,
+      "text": "I will say",
+      "source": "pass1",
+      "avg_logprob": -0.09636061325196237
+    },
+    {
+      "start": 89.72,
+      "end": 91.72,
+      "text": "It's kind of boring",
+      "source": "pass1",
+      "avg_logprob": -0.09636061325196237
+    },
+    {
+      "start": 91.8,
+      "end": 93.8,
+      "text": "I will say it's mostly boring",
+      "source": "pass1",
+      "avg_logprob": -0.09636061325196237
+    },
+    {
+      "start": 93.96,
+      "end": 96.68,
+      "text": "Uh, it's probably a bad way to sell this segment to you",
+      "source": "pass1",
+      "avg_logprob": -0.09636061325196237
+    },
+    {
+      "start": 96.68,
+      "end": 100.04,
+      "text": "But there are of course important elections going on important things going on",
+      "source": "pass1",
+      "avg_logprob": -0.09636061325196237
+    },
+    {
+      "start": 100.68,
+      "end": 103.88,
+      "text": "And a lot of that ties into the prediction market scene",
+      "source": "pass1",
+      "avg_logprob": -0.09636061325196237
+    },
+    {
+      "start": 103.88,
+      "end": 105.88,
+      "text": "So I want to give you a little bit of background on these elections",
+      "source": "pass1",
+      "avg_logprob": -0.09636061325196237
+    },
+    {
+      "start": 106.12,
+      "end": 109.0,
+      "text": "Give you some of the prediction market info as well. Where do things stand?",
+      "source": "pass1",
+      "avg_logprob": -0.09636061325196237
+    },
+    {
+      "start": 109.08,
+      "end": 111.64,
+      "text": "What are we looking for going forward? We have that coming up",
+      "source": "pass1",
+      "avg_logprob": -0.09636061325196237
+    },
+    {
+      "start": 111.64,
+      "end": 114.84,
+      "text": "We have a bunch of stuff as it relates to oil prices and Iran",
+      "source": "pass1",
+      "avg_logprob": -0.15368223610249432
+    },
+    {
+      "start": 115.48,
+      "end": 118.84,
+      "text": "And prediction markets as well as uh, you know, kind of a market",
+      "source": "pass1",
+      "avg_logprob": -0.15368223610249432
+    },
+    {
+      "start": 118.84,
+      "end": 121.08,
+      "text": "I kind of like we'll end the show with today",
+      "source": "pass1",
+      "avg_logprob": -0.15368223610249432
+    },
+    {
+      "start": 121.48,
+      "end": 127.32,
+      "text": "We're going to start though with seven midterm elections on tuesday. We'll test trump's power in indiana",
+      "source": "pass1",
+      "avg_logprob": -0.15368223610249432
+    },
+    {
+      "start": 127.64,
+      "end": 130.76,
+      "text": "This is the way the media is kind of talking about this particular election",
+      "source": "pass1",
+      "avg_logprob": -0.15368223610249432
+    },
+    {
+      "start": 131.96,
+      "end": 136.92,
+      "text": "Understandably so because really again, there's not a ton of drama on these individual races",
+      "source": "pass1",
+      "avg_logprob": -0.15368223610249432
+    },
+    {
+      "start": 136.92,
+      "end": 144.12,
+      "text": "Particularly the ones that you can go on a calcium or a Polymarket or PredictIt and look at there is a good piece from decision desk hq",
+      "source": "pass1",
+      "avg_logprob": -0.16576156492989796
+    },
+    {
+      "start": 144.2,
+      "end": 146.2,
+      "text": "Which is a great source for",
+      "source": "pass1",
+      "avg_logprob": -0.16576156492989796
+    },
+    {
+      "start": 146.76,
+      "end": 153.0,
+      "text": "Election data, especially we want to really dig in deep 16 races to watch in indiana and ohio",
+      "source": "pass1",
+      "avg_logprob": -0.16576156492989796
+    },
+    {
+      "start": 153.16,
+      "end": 155.16,
+      "text": "There's a lot there the the",
+      "source": "pass1",
+      "avg_logprob": -0.16576156492989796
+    },
+    {
+      "start": 156.6,
+      "end": 161.0,
+      "text": "The sort of like main headline here when it comes to this election",
+      "source": "pass1",
+      "avg_logprob": -0.16576156492989796
+    },
+    {
+      "start": 161.64,
+      "end": 166.36,
+      "text": "Is this sort of revenge thing this and the way this all played out",
+      "source": "pass1",
+      "avg_logprob": -0.16576156492989796
+    },
+    {
+      "start": 167.08,
+      "end": 171.16,
+      "text": "If you go back a while we started out with this redistricting process",
+      "source": "pass1",
+      "avg_logprob": -0.16646560481799547
+    },
+    {
+      "start": 171.56,
+      "end": 176.68,
+      "text": "And I can't you know, I get into the middle of these sentences and i'm like, this is the least sexy topic",
+      "source": "pass1",
+      "avg_logprob": -0.16646560481799547
+    },
+    {
+      "start": 178.04,
+      "end": 184.2,
+      "text": "Possibly let me talk to you about redistricting but not the main redistricting the revenge tour",
+      "source": "pass1",
+      "avg_logprob": -0.16646560481799547
+    },
+    {
+      "start": 184.6,
+      "end": 188.76,
+      "text": "The redistricting revenge tour is what we're talking about today. So",
+      "source": "pass1",
+      "avg_logprob": -0.16646560481799547
+    },
+    {
+      "start": 189.32,
+      "end": 192.04,
+      "text": "Trump wanted these states to redistrict their",
+      "source": "pass1",
+      "avg_logprob": -0.16646560481799547
+    },
+    {
+      "start": 192.84,
+      "end": 198.04,
+      "text": "Uh states, you know in between the census to get more seats for republicans leading into the midterms",
+      "source": "pass1",
+      "avg_logprob": -0.17922170693054795
+    },
+    {
+      "start": 198.52,
+      "end": 204.12,
+      "text": "Understandable motivation there, you know, texas did it then california responded then it became this sort of all out",
+      "source": "pass1",
+      "avg_logprob": -0.17922170693054795
+    },
+    {
+      "start": 204.2,
+      "end": 206.2,
+      "text": "Let's find all the seats that we can find",
+      "source": "pass1",
+      "avg_logprob": -0.17922170693054795
+    },
+    {
+      "start": 206.92,
+      "end": 214.04,
+      "text": "One of the states trump looked to was indiana and there they needed to pass this re new redistricting map",
+      "source": "pass1",
+      "avg_logprob": -0.17922170693054795
+    },
+    {
+      "start": 214.44,
+      "end": 217.0,
+      "text": "Which would theoretically net",
+      "source": "pass1",
+      "avg_logprob": -0.17922170693054795
+    },
+    {
+      "start": 217.96,
+      "end": 222.36,
+      "text": "Republicans two seats a lot of people talk about these things as if they're very very",
+      "source": "pass1",
+      "avg_logprob": -0.13511194821891434
+    },
+    {
+      "start": 223.0,
+      "end": 228.04,
+      "text": "Uh formal. Well, we want to we we now want two more seats for republicans and now we will get them",
+      "source": "pass1",
+      "avg_logprob": -0.13511194821891434
+    },
+    {
+      "start": 228.28,
+      "end": 230.6,
+      "text": "It's not the way redistricting redistricting works",
+      "source": "pass1",
+      "avg_logprob": -0.13511194821891434
+    },
+    {
+      "start": 230.68,
+      "end": 233.24,
+      "text": "What you do is basically draw a bunch of lines to try",
+      "source": "pass1",
+      "avg_logprob": -0.13511194821891434
+    },
+    {
+      "start": 233.8,
+      "end": 235.96,
+      "text": "To guarantee your side a few more seats",
+      "source": "pass1",
+      "avg_logprob": -0.13511194821891434
+    },
+    {
+      "start": 236.52,
+      "end": 243.0,
+      "text": "Does that work a lot of times it doesn't and we are seeing examples of this play out as as this election looks",
+      "source": "pass1",
+      "avg_logprob": -0.13511194821891434
+    },
+    {
+      "start": 243.0,
+      "end": 246.84,
+      "text": "A little shaky for republicans in certain places particularly with minority voters",
+      "source": "pass1",
+      "avg_logprob": -0.11532958577840756
+    },
+    {
+      "start": 247.56,
+      "end": 250.92,
+      "text": "There's an issue potentially where you redraw these districts",
+      "source": "pass1",
+      "avg_logprob": -0.11532958577840756
+    },
+    {
+      "start": 251.72,
+      "end": 256.84,
+      "text": "And wind up blowing some districts you already had there's some risk of this in florida",
+      "source": "pass1",
+      "avg_logprob": -0.11532958577840756
+    },
+    {
+      "start": 257.16,
+      "end": 261.16,
+      "text": "Do I think it's gonna happen in florida? No, I think it's probably going to improve the situation in florida",
+      "source": "pass1",
+      "avg_logprob": -0.11532958577840756
+    },
+    {
+      "start": 261.24,
+      "end": 263.24,
+      "text": "But there is some risk there",
+      "source": "pass1",
+      "avg_logprob": -0.11532958577840756
+    },
+    {
+      "start": 264.2,
+      "end": 266.36,
+      "text": "So seven of these republicans",
+      "source": "pass1",
+      "avg_logprob": -0.11532958577840756
+    },
+    {
+      "start": 267.48,
+      "end": 272.36,
+      "text": "Were out there saying hey, uh, you know, we don't want the redistricting in indiana",
+      "source": "pass1",
+      "avg_logprob": -0.11532958577840756
+    },
+    {
+      "start": 272.36,
+      "end": 274.36,
+      "text": "It winds up not passing",
+      "source": "pass1",
+      "avg_logprob": -0.13397556704443855
+    },
+    {
+      "start": 274.52,
+      "end": 278.92,
+      "text": "In indiana and so this angers trump trump says basically i'm going to get revenge on you guys",
+      "source": "pass1",
+      "avg_logprob": -0.13397556704443855
+    },
+    {
+      "start": 279.0,
+      "end": 280.2,
+      "text": "We're going to get",
+      "source": "pass1",
+      "avg_logprob": -0.13397556704443855
+    },
+    {
+      "start": 280.2,
+      "end": 282.44,
+      "text": "Opponents in these primaries to take you all out",
+      "source": "pass1",
+      "avg_logprob": -0.13397556704443855
+    },
+    {
+      "start": 282.84,
+      "end": 288.04,
+      "text": "He's been able to basically arrange and endorse seven different candidates in some of these races",
+      "source": "pass1",
+      "avg_logprob": -0.13397556704443855
+    },
+    {
+      "start": 288.44,
+      "end": 293.64,
+      "text": "Uh district one district 11 19 21 23 38 and 41",
+      "source": "pass1",
+      "avg_logprob": -0.13397556704443855
+    },
+    {
+      "start": 294.12,
+      "end": 297.32,
+      "text": "Spread around the state as you see here on this helpful map",
+      "source": "pass1",
+      "avg_logprob": -0.13397556704443855
+    },
+    {
+      "start": 298.28,
+      "end": 301.24,
+      "text": "Which shows you that these are all pretty red districts honestly",
+      "source": "pass1",
+      "avg_logprob": -0.13397556704443855
+    },
+    {
+      "start": 301.24,
+      "end": 306.76,
+      "text": "They'll probably be red after this, but uh, there's a couple of interesting matchups in here",
+      "source": "pass1",
+      "avg_logprob": -0.18470566098888716
+    },
+    {
+      "start": 307.48,
+      "end": 312.76,
+      "text": "Couple to highlight linda rogers is one kind of seen as more of a moderate",
+      "source": "pass1",
+      "avg_logprob": -0.18470566098888716
+    },
+    {
+      "start": 313.48,
+      "end": 315.48,
+      "text": "And it's being at least promoted that way",
+      "source": "pass1",
+      "avg_logprob": -0.18470566098888716
+    },
+    {
+      "start": 316.04,
+      "end": 322.52,
+      "text": "By her opponent, uh, dr. Brian schmultz her it's going to be a you know, that's one that they think rogers will hold onto",
+      "source": "pass1",
+      "avg_logprob": -0.18470566098888716
+    },
+    {
+      "start": 323.24,
+      "end": 329.4,
+      "text": "Another is the the jim buck story is kind of interesting jim buck is the incumbent going against a challenger tracy powell",
+      "source": "pass1",
+      "avg_logprob": -0.18470566098888716
+    },
+    {
+      "start": 330.28,
+      "end": 333.8,
+      "text": "Uh, trump powell is the trump backed insurgent candidate if you will",
+      "source": "pass1",
+      "avg_logprob": -0.1606621497817207
+    },
+    {
+      "start": 334.6,
+      "end": 338.84,
+      "text": "Buck is kind of one of the main targets of this push to try to out oversee",
+      "source": "pass1",
+      "avg_logprob": -0.1606621497817207
+    },
+    {
+      "start": 339.4,
+      "end": 342.68,
+      "text": "To take him out. What's interesting about it is he was going to retire. He's like 80",
+      "source": "pass1",
+      "avg_logprob": -0.1606621497817207
+    },
+    {
+      "start": 343.56,
+      "end": 348.76,
+      "text": "Which is by the way, I don't know if you know this jim way too early to retire in politics 80",
+      "source": "pass1",
+      "avg_logprob": -0.1606621497817207
+    },
+    {
+      "start": 348.76,
+      "end": 352.04,
+      "text": "You're a spring chicken. You're the youngest person in washington dc",
+      "source": "pass1",
+      "avg_logprob": -0.1606621497817207
+    },
+    {
+      "start": 352.68,
+      "end": 354.68,
+      "text": "But he wanted to retire",
+      "source": "pass1",
+      "avg_logprob": -0.1606621497817207
+    },
+    {
+      "start": 354.68,
+      "end": 361.24,
+      "text": "And then this whole dist redistricting fight came up. He decided to stay in that race is an interesting one to watch",
+      "source": "pass1",
+      "avg_logprob": -0.11366989277303219
+    },
+    {
+      "start": 361.4,
+      "end": 363.4,
+      "text": "And there's a bunch of these now. I will say",
+      "source": "pass1",
+      "avg_logprob": -0.11366989277303219
+    },
+    {
+      "start": 364.52,
+      "end": 371.0,
+      "text": "There's not a ton of markets on this stuff in at that level really the markets for these races tend to",
+      "source": "pass1",
+      "avg_logprob": -0.11366989277303219
+    },
+    {
+      "start": 371.56,
+      "end": 376.28,
+      "text": "Go a little bit at a higher level for congressmen or senate or governor",
+      "source": "pass1",
+      "avg_logprob": -0.11366989277303219
+    },
+    {
+      "start": 376.28,
+      "end": 379.72,
+      "text": "And that's what we're going to focus on for most of this, but let me give you some of these",
+      "source": "pass1",
+      "avg_logprob": -0.11366989277303219
+    },
+    {
+      "start": 380.44,
+      "end": 382.44,
+      "text": "Races and just kind of look give you a quick",
+      "source": "pass1",
+      "avg_logprob": -0.20883043367287207
+    },
+    {
+      "start": 382.92,
+      "end": 386.84,
+      "text": "Glance at these other races when it comes to the redistricting situation",
+      "source": "pass1",
+      "avg_logprob": -0.20883043367287207
+    },
+    {
+      "start": 387.64,
+      "end": 392.76,
+      "text": "In these districts, uh, these all are all bright red districts the closest one being district one",
+      "source": "pass1",
+      "avg_logprob": -0.20883043367287207
+    },
+    {
+      "start": 393.32,
+      "end": 396.68,
+      "text": "7.2 margin in 2024 for republicans",
+      "source": "pass1",
+      "avg_logprob": -0.20883043367287207
+    },
+    {
+      "start": 397.0,
+      "end": 403.72,
+      "text": "This ranges up from about 13 points in that linda rogers district all the way up to you know over",
+      "source": "pass1",
+      "avg_logprob": -0.20883043367287207
+    },
+    {
+      "start": 403.8,
+      "end": 407.0,
+      "text": "38 points in district 19",
+      "source": "pass1",
+      "avg_logprob": -0.13555912051386046
+    },
+    {
+      "start": 407.08,
+      "end": 411.24,
+      "text": "So most of these are going to wind up being republican seats. The question really is which republican",
+      "source": "pass1",
+      "avg_logprob": -0.13555912051386046
+    },
+    {
+      "start": 411.64,
+      "end": 414.92,
+      "text": "Do you want and before we move on from this? I just want to say how central of a",
+      "source": "pass1",
+      "avg_logprob": -0.13555912051386046
+    },
+    {
+      "start": 415.88,
+      "end": 421.96,
+      "text": "Of a strategy this could be and should be for republicans in certain circumstances situations",
+      "source": "pass1",
+      "avg_logprob": -0.13555912051386046
+    },
+    {
+      "start": 423.32,
+      "end": 426.84,
+      "text": "I'm not going to necessarily like I don't like the whole redistricting and you get rid of this",
+      "source": "pass1",
+      "avg_logprob": -0.13555912051386046
+    },
+    {
+      "start": 426.92,
+      "end": 428.92,
+      "text": "I don't like the whole redistricting",
+      "source": "pass1",
+      "avg_logprob": -0.13555912051386046
+    },
+    {
+      "start": 429.56,
+      "end": 433.88,
+      "text": "Approach here. I I wish it wasn't a thing that was happening",
+      "source": "pass1",
+      "avg_logprob": -0.07883327170196226
+    },
+    {
+      "start": 433.88,
+      "end": 437.88,
+      "text": "I wish it wasn't a thing where every state is trying to redistrict on overtly",
+      "source": "pass1",
+      "avg_logprob": -0.07883327170196226
+    },
+    {
+      "start": 438.52,
+      "end": 442.28,
+      "text": "Partisan lines the supreme court basically said you can't do it on racial lines",
+      "source": "pass1",
+      "avg_logprob": -0.07883327170196226
+    },
+    {
+      "start": 442.76,
+      "end": 445.88,
+      "text": "So they want to do it on on these sort of partisan lines",
+      "source": "pass1",
+      "avg_logprob": -0.07883327170196226
+    },
+    {
+      "start": 446.6,
+      "end": 452.92,
+      "text": "Once the district redistricting wars start as the clone wars once did you really can't stop pumping out clones",
+      "source": "pass1",
+      "avg_logprob": -0.07883327170196226
+    },
+    {
+      "start": 452.92,
+      "end": 457.8,
+      "text": "You better do it because this will be a thing where the other side's going to take advantage of you",
+      "source": "pass1",
+      "avg_logprob": -0.07883327170196226
+    },
+    {
+      "start": 457.8,
+      "end": 460.28,
+      "text": "So everyone's going to escalate this to the max",
+      "source": "pass1",
+      "avg_logprob": -0.09438806534584226
+    },
+    {
+      "start": 460.92,
+      "end": 465.32,
+      "text": "The reason why republicans sort of like this is if they can get all these states to redistrict",
+      "source": "pass1",
+      "avg_logprob": -0.09438806534584226
+    },
+    {
+      "start": 465.48,
+      "end": 468.36,
+      "text": "And I do think a state like indiana's possible after this",
+      "source": "pass1",
+      "avg_logprob": -0.09438806534584226
+    },
+    {
+      "start": 468.92,
+      "end": 471.4,
+      "text": "But I also think blue states like illinois are possible",
+      "source": "pass1",
+      "avg_logprob": -0.09438806534584226
+    },
+    {
+      "start": 472.44,
+      "end": 478.36,
+      "text": "Once you do this and you start going to the everyone goes balls to the wall basically you wind up republicans",
+      "source": "pass1",
+      "avg_logprob": -0.09438806534584226
+    },
+    {
+      "start": 478.76,
+      "end": 485.4,
+      "text": "Have more room they have more room to gain from redistricting than democrats do because democrats have been doing it for a long time",
+      "source": "pass1",
+      "avg_logprob": -0.09438806534584226
+    },
+    {
+      "start": 485.4,
+      "end": 490.52,
+      "text": "They've been gerrymandering for a very very long time and they've done it better than republicans have",
+      "source": "pass1",
+      "avg_logprob": -0.11433121186118943
+    },
+    {
+      "start": 491.32,
+      "end": 492.76,
+      "text": "That's the truth",
+      "source": "pass1",
+      "avg_logprob": -0.11433121186118943
+    },
+    {
+      "start": 492.76,
+      "end": 496.28,
+      "text": "You can see this throughout a ton of blue states have almost zero",
+      "source": "pass1",
+      "avg_logprob": -0.11433121186118943
+    },
+    {
+      "start": 497.0,
+      "end": 501.4,
+      "text": "Republican representation. So as this all plays out, I wish",
+      "source": "pass1",
+      "avg_logprob": -0.11433121186118943
+    },
+    {
+      "start": 502.76,
+      "end": 504.76,
+      "text": "I wish this wasn't the case",
+      "source": "pass1",
+      "avg_logprob": -0.11433121186118943
+    },
+    {
+      "start": 505.08,
+      "end": 509.08,
+      "text": "Okay, I wish it wasn't a situation where these redistricting was going on",
+      "source": "pass1",
+      "avg_logprob": -0.11433121186118943
+    },
+    {
+      "start": 509.48,
+      "end": 515.32,
+      "text": "But stepping back from that for a minute one of the core approaches if you happen to be a conservative republican",
+      "source": "pass1",
+      "avg_logprob": -0.11433121186118943
+    },
+    {
+      "start": 515.8,
+      "end": 518.36,
+      "text": "go on and and and if you're gonna have a",
+      "source": "pass1",
+      "avg_logprob": -0.17402568845187916
+    },
+    {
+      "start": 519.32,
+      "end": 523.64,
+      "text": "An approach here when it comes to primaries it should be targeting weaker",
+      "source": "pass1",
+      "avg_logprob": -0.17402568845187916
+    },
+    {
+      "start": 524.28,
+      "end": 526.28,
+      "text": "more moderate",
+      "source": "pass1",
+      "avg_logprob": -0.17402568845187916
+    },
+    {
+      "start": 526.44,
+      "end": 529.64,
+      "text": "Republicans in bright red districts and states",
+      "source": "pass1",
+      "avg_logprob": -0.17402568845187916
+    },
+    {
+      "start": 530.12,
+      "end": 535.0,
+      "text": "There's no reason for mediocre republicans to be in bright red states",
+      "source": "pass1",
+      "avg_logprob": -0.17402568845187916
+    },
+    {
+      "start": 535.08,
+      "end": 538.04,
+      "text": "If you know, you're gonna win again. No, I'm putting in air quotes",
+      "source": "pass1",
+      "avg_logprob": -0.17402568845187916
+    },
+    {
+      "start": 538.52,
+      "end": 540.52,
+      "text": "Republicans have lost",
+      "source": "pass1",
+      "avg_logprob": -0.17402568845187916
+    },
+    {
+      "start": 541.16,
+      "end": 546.28,
+      "text": "You know races in places like alabama, right if the wrong candidates in there you can lose but",
+      "source": "pass1",
+      "avg_logprob": -0.09087285690737847
+    },
+    {
+      "start": 547.32,
+      "end": 550.44,
+      "text": "If you look at a state which is basically a safe safe state",
+      "source": "pass1",
+      "avg_logprob": -0.09087285690737847
+    },
+    {
+      "start": 550.84,
+      "end": 553.56,
+      "text": "If you're looking at a district that is basically a safe district",
+      "source": "pass1",
+      "avg_logprob": -0.09087285690737847
+    },
+    {
+      "start": 553.96,
+      "end": 556.84,
+      "text": "You should get the most conservative person possible into that district",
+      "source": "pass1",
+      "avg_logprob": -0.09087285690737847
+    },
+    {
+      "start": 557.48,
+      "end": 558.76,
+      "text": "Some of that is happening here",
+      "source": "pass1",
+      "avg_logprob": -0.09087285690737847
+    },
+    {
+      "start": 558.84,
+      "end": 562.44,
+      "text": "You know, some of it is just sort of revenge for other redistricting thing",
+      "source": "pass1",
+      "avg_logprob": -0.09087285690737847
+    },
+    {
+      "start": 562.44,
+      "end": 566.04,
+      "text": "But some of those candidates are actually better than the candidates that preceded them",
+      "source": "pass1",
+      "avg_logprob": -0.09087285690737847
+    },
+    {
+      "start": 566.28,
+      "end": 569.4,
+      "text": "And if you can do that if you can improve in a bright red district, you should do that",
+      "source": "pass1",
+      "avg_logprob": -0.09087285690737847
+    },
+    {
+      "start": 569.8,
+      "end": 574.68,
+      "text": "What you don't want to do is throw some hardcore conservative in a race that they're going to lose",
+      "source": "pass1",
+      "avg_logprob": -0.15146010502790794
+    },
+    {
+      "start": 575.64,
+      "end": 580.04,
+      "text": "Um, you know, and when I say hardcore conservative, usually that means is it with air quotes",
+      "source": "pass1",
+      "avg_logprob": -0.15146010502790794
+    },
+    {
+      "start": 580.04,
+      "end": 585.24,
+      "text": "I don't necessarily mean positive, uh, or I don't even mean policy wise a lot of times this just goes back to",
+      "source": "pass1",
+      "avg_logprob": -0.15146010502790794
+    },
+    {
+      "start": 586.28,
+      "end": 590.6,
+      "text": "You know, is there a scandal? Is there a weak candidate? Is there a candidate that can't talk?",
+      "source": "pass1",
+      "avg_logprob": -0.15146010502790794
+    },
+    {
+      "start": 591.24,
+      "end": 594.84,
+      "text": "Uh, is there a candidate that you know may have murdered a school child",
+      "source": "pass1",
+      "avg_logprob": -0.15146010502790794
+    },
+    {
+      "start": 595.16,
+      "end": 599.32,
+      "text": "12 years ago that we're just discovering now those types of things tend to weaken a candidate",
+      "source": "pass1",
+      "avg_logprob": -0.1321898231903712
+    },
+    {
+      "start": 599.48,
+      "end": 603.56,
+      "text": "So you don't want to throw anybody in there, but you should get the most conservative",
+      "source": "pass1",
+      "avg_logprob": -0.1321898231903712
+    },
+    {
+      "start": 603.96,
+      "end": 609.08,
+      "text": "Policy person in those situations if it's at all possible and that person can win",
+      "source": "pass1",
+      "avg_logprob": -0.1321898231903712
+    },
+    {
+      "start": 609.64,
+      "end": 612.76,
+      "text": "Get the most conservative person for the election that they are in",
+      "source": "pass1",
+      "avg_logprob": -0.1321898231903712
+    },
+    {
+      "start": 613.4,
+      "end": 618.52,
+      "text": "That is winnable. You don't want to always go with the most conservative person at least when it comes to",
+      "source": "pass1",
+      "avg_logprob": -0.1321898231903712
+    },
+    {
+      "start": 619.08,
+      "end": 624.52,
+      "text": "This generic left-right thing. I would rather have a strong conservative who can articulate the policies",
+      "source": "pass1",
+      "avg_logprob": -0.1321898231903712
+    },
+    {
+      "start": 625.24,
+      "end": 629.96,
+      "text": "Rather than some, you know, milk toast person. So that's just me. Um, by the way, uh, in ohio",
+      "source": "pass1",
+      "avg_logprob": -0.18751395208870664
+    },
+    {
+      "start": 630.04,
+      "end": 632.76,
+      "text": "Let's go through a couple a little bit of ohio. Ohio has the senate race",
+      "source": "pass1",
+      "avg_logprob": -0.18751395208870664
+    },
+    {
+      "start": 633.24,
+      "end": 639.08,
+      "text": "But there's no real mystery here in the primaries. Uh, housted versus a shared brown shared brown's going to win the democratic side",
+      "source": "pass1",
+      "avg_logprob": -0.18751395208870664
+    },
+    {
+      "start": 639.56,
+      "end": 641.56,
+      "text": "Houston's going to win the republican side",
+      "source": "pass1",
+      "avg_logprob": -0.18751395208870664
+    },
+    {
+      "start": 642.28,
+      "end": 646.68,
+      "text": "Now this is for a special election to replace jd van. So you may have heard",
+      "source": "pass1",
+      "avg_logprob": -0.18751395208870664
+    },
+    {
+      "start": 647.32,
+      "end": 649.64,
+      "text": "Was elected vice president of the united states. Yeah, I know",
+      "source": "pass1",
+      "avg_logprob": -0.18751395208870664
+    },
+    {
+      "start": 651.08,
+      "end": 652.36,
+      "text": "That's a big thing",
+      "source": "pass1",
+      "avg_logprob": -0.18751395208870664
+    },
+    {
+      "start": 652.36,
+      "end": 658.76,
+      "text": "So he that that is uh, you know going to um, he was uh, he said what's put in as the uh",
+      "source": "pass1",
+      "avg_logprob": -0.12358968081916201
+    },
+    {
+      "start": 659.4,
+      "end": 663.32,
+      "text": "Appointee and now he is running to there to get their shared brown",
+      "source": "pass1",
+      "avg_logprob": -0.12358968081916201
+    },
+    {
+      "start": 663.32,
+      "end": 666.52,
+      "text": "Of course former democratic senator lots of name recognition",
+      "source": "pass1",
+      "avg_logprob": -0.12358968081916201
+    },
+    {
+      "start": 666.84,
+      "end": 669.48,
+      "text": "One of these guys that could actually win in a state like ohio",
+      "source": "pass1",
+      "avg_logprob": -0.12358968081916201
+    },
+    {
+      "start": 669.64,
+      "end": 674.2,
+      "text": "And I would say if the republicans are going to lose the senate. This is a must win",
+      "source": "pass1",
+      "avg_logprob": -0.12358968081916201
+    },
+    {
+      "start": 675.08,
+      "end": 680.36,
+      "text": "It's not exactly a must win like they the democrats could win the senate without ohio",
+      "source": "pass1",
+      "avg_logprob": -0.12358968081916201
+    },
+    {
+      "start": 680.36,
+      "end": 683.64,
+      "text": "But this is one of their better chances in a race. They really shouldn't win",
+      "source": "pass1",
+      "avg_logprob": -0.1312221696234157
+    },
+    {
+      "start": 684.04,
+      "end": 687.24,
+      "text": "And I do think that likely ohio still winds up going",
+      "source": "pass1",
+      "avg_logprob": -0.1312221696234157
+    },
+    {
+      "start": 688.04,
+      "end": 689.88,
+      "text": "Red at the end of the day",
+      "source": "pass1",
+      "avg_logprob": -0.1312221696234157
+    },
+    {
+      "start": 689.88,
+      "end": 693.48,
+      "text": "It is important though to understand that this is a a race that you can't take for granted",
+      "source": "pass1",
+      "avg_logprob": -0.1312221696234157
+    },
+    {
+      "start": 693.48,
+      "end": 698.04,
+      "text": "Especially with a guy like shared brown who's had some statewide success in a place like ohio",
+      "source": "pass1",
+      "avg_logprob": -0.1312221696234157
+    },
+    {
+      "start": 698.44,
+      "end": 701.96,
+      "text": "In the gubernatorial race, you have another relatively close race",
+      "source": "pass1",
+      "avg_logprob": -0.1312221696234157
+    },
+    {
+      "start": 701.96,
+      "end": 704.76,
+      "text": "Vivek Rama swami though is going to cruise to victory tonight",
+      "source": "pass1",
+      "avg_logprob": -0.1312221696234157
+    },
+    {
+      "start": 705.08,
+      "end": 710.6,
+      "text": "Amy acton is going to cruise to victory tonight as well. Both of those cases are pretty much",
+      "source": "pass1",
+      "avg_logprob": -0.1489437911847625
+    },
+    {
+      "start": 711.08,
+      "end": 714.52,
+      "text": "Sure things when it comes to the poll, uh, let me give you this one as well",
+      "source": "pass1",
+      "avg_logprob": -0.1489437911847625
+    },
+    {
+      "start": 715.32,
+      "end": 720.52,
+      "text": "This is a when you're talking about the house races that are kind of up there right now. These are the democratic",
+      "source": "pass1",
+      "avg_logprob": -0.1489437911847625
+    },
+    {
+      "start": 721.48,
+      "end": 723.32,
+      "text": "how races that",
+      "source": "pass1",
+      "avg_logprob": -0.1489437911847625
+    },
+    {
+      "start": 723.32,
+      "end": 725.32,
+      "text": "These are seats that the democrats hold",
+      "source": "pass1",
+      "avg_logprob": -0.1489437911847625
+    },
+    {
+      "start": 725.72,
+      "end": 729.32,
+      "text": "That were in races that trump won in districts that trump won",
+      "source": "pass1",
+      "avg_logprob": -0.1489437911847625
+    },
+    {
+      "start": 729.8,
+      "end": 735.72,
+      "text": "So there's not a ton of them they range from a republican plus 16 district all the way down to",
+      "source": "pass1",
+      "avg_logprob": -0.13914049869385836
+    },
+    {
+      "start": 736.2,
+      "end": 739.48,
+      "text": "a republic republican 1.8 percent district",
+      "source": "pass1",
+      "avg_logprob": -0.13914049869385836
+    },
+    {
+      "start": 739.96,
+      "end": 743.08,
+      "text": "If you see the line though, it's about 10 points. That's where",
+      "source": "pass1",
+      "avg_logprob": -0.13914049869385836
+    },
+    {
+      "start": 743.8,
+      "end": 748.84,
+      "text": "Most experts are seeing this right now if you are in a republican district that you won by 10 or more",
+      "source": "pass1",
+      "avg_logprob": -0.13914049869385836
+    },
+    {
+      "start": 749.72,
+      "end": 753.64,
+      "text": "It's probably leaning your way or maybe even is a solid republican race",
+      "source": "pass1",
+      "avg_logprob": -0.13914049869385836
+    },
+    {
+      "start": 753.88,
+      "end": 757.08,
+      "text": "If you are in a race where trump won by 10 or less",
+      "source": "pass1",
+      "avg_logprob": -0.13914049869385836
+    },
+    {
+      "start": 757.88,
+      "end": 761.8,
+      "text": "Those races tend to be leaning democrat one little asterisk",
+      "source": "pass1",
+      "avg_logprob": -0.13041191445342426
+    },
+    {
+      "start": 761.88,
+      "end": 767.4,
+      "text": "I will show you on the fourth race down there is Henry quay are who looked like he might be going to prison",
+      "source": "pass1",
+      "avg_logprob": -0.13041191445342426
+    },
+    {
+      "start": 768.28,
+      "end": 771.64,
+      "text": "And then trump pardoned him and then quay are ran anyway",
+      "source": "pass1",
+      "avg_logprob": -0.13041191445342426
+    },
+    {
+      "start": 772.36,
+      "end": 776.68,
+      "text": "I think there was an understanding or at least a belief by trump that he'd get out of that race if he got",
+      "source": "pass1",
+      "avg_logprob": -0.13041191445342426
+    },
+    {
+      "start": 776.92,
+      "end": 781.32,
+      "text": "Pardoned instead. He just took advantage of the pardon stayed in the race and now looks like he might hold the seat",
+      "source": "pass1",
+      "avg_logprob": -0.13041191445342426
+    },
+    {
+      "start": 782.12,
+      "end": 784.12,
+      "text": "Which is just completely typical",
+      "source": "pass1",
+      "avg_logprob": -0.13041191445342426
+    },
+    {
+      "start": 784.12,
+      "end": 788.76,
+      "text": "Let me give you a sense as to what we have going on right now in a bunch of these primary races",
+      "source": "pass1",
+      "avg_logprob": -0.17311161702817623
+    },
+    {
+      "start": 788.76,
+      "end": 792.36,
+      "text": "As I said, it's not that sexy, but there are places for you to take advantage",
+      "source": "pass1",
+      "avg_logprob": -0.17311161702817623
+    },
+    {
+      "start": 793.32,
+      "end": 796.36,
+      "text": "Indiana oh three. This is stutzman the guy that we like",
+      "source": "pass1",
+      "avg_logprob": -0.17311161702817623
+    },
+    {
+      "start": 797.32,
+      "end": 801.32,
+      "text": "He is uh somewhere around a 95 percent chance to win today",
+      "source": "pass1",
+      "avg_logprob": -0.17311161702817623
+    },
+    {
+      "start": 801.96,
+      "end": 803.96,
+      "text": "That one from kalshee",
+      "source": "pass1",
+      "avg_logprob": -0.17311161702817623
+    },
+    {
+      "start": 804.2,
+      "end": 810.68,
+      "text": "In indiana oh five victoria sparts running again in the mid 90s when it comes to your chance to win",
+      "source": "pass1",
+      "avg_logprob": -0.17311161702817623
+    },
+    {
+      "start": 811.48,
+      "end": 817.16,
+      "text": "Indiana oh seven is a 95.6 chance for petrick mccally to win",
+      "source": "pass1",
+      "avg_logprob": -0.22369238811990488
+    },
+    {
+      "start": 817.72,
+      "end": 822.2,
+      "text": "No, big surprises here even less a surprise as you get to these bigger races because there's not a ton of",
+      "source": "pass1",
+      "avg_logprob": -0.22369238811990488
+    },
+    {
+      "start": 822.68,
+      "end": 824.68,
+      "text": "liquidity and not a ton of action in those",
+      "source": "pass1",
+      "avg_logprob": -0.22369238811990488
+    },
+    {
+      "start": 824.92,
+      "end": 828.2,
+      "text": "Smaller races when you talk to ohio gubernatorial race",
+      "source": "pass1",
+      "avg_logprob": -0.22369238811990488
+    },
+    {
+      "start": 828.76,
+      "end": 833.64,
+      "text": "Vikram swami as I said, he's got his cruise to victory yet 99.3 chance to win. So that seems pretty good",
+      "source": "pass1",
+      "avg_logprob": -0.22369238811990488
+    },
+    {
+      "start": 834.92,
+      "end": 836.76,
+      "text": "when you go to",
+      "source": "pass1",
+      "avg_logprob": -0.22369238811990488
+    },
+    {
+      "start": 836.76,
+      "end": 838.76,
+      "text": "the more interesting races",
+      "source": "pass1",
+      "avg_logprob": -0.22369238811990488
+    },
+    {
+      "start": 838.76,
+      "end": 842.2,
+      "text": "When it comes to tonight's primary like rama swami, is he going to win? Yes",
+      "source": "pass1",
+      "avg_logprob": -0.12504077235709377
+    },
+    {
+      "start": 842.28,
+      "end": 846.52,
+      "text": "And is there something that you can get out of that? Let me stop here first because there is something",
+      "source": "pass1",
+      "avg_logprob": -0.12504077235709377
+    },
+    {
+      "start": 847.32,
+      "end": 849.32,
+      "text": "That is worthwhile for you",
+      "source": "pass1",
+      "avg_logprob": -0.12504077235709377
+    },
+    {
+      "start": 849.4,
+      "end": 853.96,
+      "text": "When it comes to prediction markets when it comes to increasing your bankroll a little bit for",
+      "source": "pass1",
+      "avg_logprob": -0.12504077235709377
+    },
+    {
+      "start": 854.6,
+      "end": 859.24,
+      "text": "future action in these in these uh primaries that are coming and they're going to come fast and furious now",
+      "source": "pass1",
+      "avg_logprob": -0.12504077235709377
+    },
+    {
+      "start": 859.32,
+      "end": 861.32,
+      "text": "And we're going to have a live stream tonight",
+      "source": "pass1",
+      "avg_logprob": -0.12504077235709377
+    },
+    {
+      "start": 861.8,
+      "end": 867.72,
+      "text": "Going over the results of these and you can take some advantage here now. This is going to sound kind of boring",
+      "source": "pass1",
+      "avg_logprob": -0.12504077235709377
+    },
+    {
+      "start": 868.76,
+      "end": 870.76,
+      "text": "Because it is kind of boring",
+      "source": "pass1",
+      "avg_logprob": -0.11039876899517634
+    },
+    {
+      "start": 871.08,
+      "end": 874.84,
+      "text": "But some of the best financial decisions you make are boring",
+      "source": "pass1",
+      "avg_logprob": -0.11039876899517634
+    },
+    {
+      "start": 875.88,
+      "end": 876.76,
+      "text": "You know",
+      "source": "pass1",
+      "avg_logprob": -0.11039876899517634
+    },
+    {
+      "start": 876.76,
+      "end": 879.32,
+      "text": "Warren Buffett is like a really boring guy",
+      "source": "pass1",
+      "avg_logprob": -0.11039876899517634
+    },
+    {
+      "start": 879.88,
+      "end": 883.0,
+      "text": "You know at least he appears that way from the outside. I've never met him",
+      "source": "pass1",
+      "avg_logprob": -0.11039876899517634
+    },
+    {
+      "start": 883.0,
+      "end": 887.8,
+      "text": "And unless he's making a really dumb point about tax rates and a secretary. He's just kind of a dullard, right?",
+      "source": "pass1",
+      "avg_logprob": -0.11039876899517634
+    },
+    {
+      "start": 887.8,
+      "end": 892.04,
+      "text": "Like he's a very rich dullard. He's not he doesn't he's not driving around Lamborghinis",
+      "source": "pass1",
+      "avg_logprob": -0.11039876899517634
+    },
+    {
+      "start": 892.28,
+      "end": 896.12,
+      "text": "He's not doing it the sexy way, right? He's doing it the boring way and that's his charm",
+      "source": "pass1",
+      "avg_logprob": -0.11039876899517634
+    },
+    {
+      "start": 896.44,
+      "end": 901.8,
+      "text": "When you look at his 10. I was just in a restaurant the other day that has his 10 pieces of investment advice on the wall",
+      "source": "pass1",
+      "avg_logprob": -0.1189090848839196
+    },
+    {
+      "start": 902.2,
+      "end": 907.56,
+      "text": "It was uh, jimmy johns. I think it was and yes, there's all sorts of advice on the walls of jimmy johns",
+      "source": "pass1",
+      "avg_logprob": -0.1189090848839196
+    },
+    {
+      "start": 907.8,
+      "end": 910.44,
+      "text": "But when you're in jimmy johns, look at that read it. It's boring",
+      "source": "pass1",
+      "avg_logprob": -0.1189090848839196
+    },
+    {
+      "start": 911.0,
+      "end": 913.88,
+      "text": "It sets up a very boring approach the reason I bring that up",
+      "source": "pass1",
+      "avg_logprob": -0.1189090848839196
+    },
+    {
+      "start": 914.36,
+      "end": 917.96,
+      "text": "Is because right now if you have money in your checking account, it's going to get you",
+      "source": "pass1",
+      "avg_logprob": -0.1189090848839196
+    },
+    {
+      "start": 918.04,
+      "end": 923.16,
+      "text": "I don't know zero point one percent probably annually every year",
+      "source": "pass1",
+      "avg_logprob": -0.1189090848839196
+    },
+    {
+      "start": 924.12,
+      "end": 926.12,
+      "text": "Not very sexy, okay",
+      "source": "pass1",
+      "avg_logprob": -0.13191547847929455
+    },
+    {
+      "start": 926.28,
+      "end": 932.76,
+      "text": "If you have money in a savings account, maybe you're getting two three percent. There's some really aggressive pieces",
+      "source": "pass1",
+      "avg_logprob": -0.13191547847929455
+    },
+    {
+      "start": 933.56,
+      "end": 935.56,
+      "text": "You know where you might be able to get to four percent",
+      "source": "pass1",
+      "avg_logprob": -0.13191547847929455
+    },
+    {
+      "start": 936.04,
+      "end": 939.16,
+      "text": "There's other ways you put it in the stock market. You can get to 10 percent annually",
+      "source": "pass1",
+      "avg_logprob": -0.13191547847929455
+    },
+    {
+      "start": 939.16,
+      "end": 943.96,
+      "text": "Maybe like on a year to year basis with obviously ups and downs throughout that process",
+      "source": "pass1",
+      "avg_logprob": -0.13191547847929455
+    },
+    {
+      "start": 945.16,
+      "end": 949.72,
+      "text": "These these races that we're talking about are many of them very much sure thing",
+      "source": "pass1",
+      "avg_logprob": -0.13191547847929455
+    },
+    {
+      "start": 949.72,
+      "end": 953.08,
+      "text": "Like stutzman's gonna win his race. Okay, that's gonna happen tonight",
+      "source": "pass1",
+      "avg_logprob": -0.16088904819246067
+    },
+    {
+      "start": 953.96,
+      "end": 954.92,
+      "text": "I",
+      "source": "pass1",
+      "avg_logprob": -0.16088904819246067
+    },
+    {
+      "start": 954.92,
+      "end": 959.0,
+      "text": "I would tell you I'm I would invest on that and I have okay",
+      "source": "pass1",
+      "avg_logprob": -0.16088904819246067
+    },
+    {
+      "start": 960.04,
+      "end": 964.6,
+      "text": "I and you might say well, wait a minute. We were talking about this like 96 chance. What's the point?",
+      "source": "pass1",
+      "avg_logprob": -0.16088904819246067
+    },
+    {
+      "start": 965.16,
+      "end": 967.16,
+      "text": "Well, it's happening tonight",
+      "source": "pass1",
+      "avg_logprob": -0.16088904819246067
+    },
+    {
+      "start": 968.28,
+      "end": 971.96,
+      "text": "If you can get four percent in a day, it's pretty good",
+      "source": "pass1",
+      "avg_logprob": -0.16088904819246067
+    },
+    {
+      "start": 973.16,
+      "end": 977.32,
+      "text": "Not to mention you're if you're in a calcium account for example, they're going to give you three percent annually",
+      "source": "pass1",
+      "avg_logprob": -0.16088904819246067
+    },
+    {
+      "start": 977.32,
+      "end": 980.36,
+      "text": "Anyway, which is what you'd make if you were sticking it in an account now",
+      "source": "pass1",
+      "avg_logprob": -0.102301243012839
+    },
+    {
+      "start": 980.36,
+      "end": 986.04,
+      "text": "There's some fdic insurance differences granted calcium pretty financially stable right now",
+      "source": "pass1",
+      "avg_logprob": -0.102301243012839
+    },
+    {
+      "start": 986.68,
+      "end": 989.56,
+      "text": "So i'm not concerned on that on that particular standpoint",
+      "source": "pass1",
+      "avg_logprob": -0.102301243012839
+    },
+    {
+      "start": 989.8,
+      "end": 993.96,
+      "text": "My my I guess my argument here is if you have some money in your account and you're sitting around",
+      "source": "pass1",
+      "avg_logprob": -0.102301243012839
+    },
+    {
+      "start": 993.96,
+      "end": 996.6,
+      "text": "You're like well, what should I do with it? I've got an election",
+      "source": "pass1",
+      "avg_logprob": -0.102301243012839
+    },
+    {
+      "start": 996.6,
+      "end": 999.8,
+      "text": "I want to put this money into the house race that's going to happen in november",
+      "source": "pass1",
+      "avg_logprob": -0.102301243012839
+    },
+    {
+      "start": 1000.28,
+      "end": 1006.2,
+      "text": "A lot of times the smarter play is to keep it on the sidelines and pop it into races like this",
+      "source": "pass1",
+      "avg_logprob": -0.102301243012839
+    },
+    {
+      "start": 1006.76,
+      "end": 1010.6,
+      "text": "Where you are in a in a sure thing quote unquote environment now look",
+      "source": "pass1",
+      "avg_logprob": -0.16499346825811598
+    },
+    {
+      "start": 1011.32,
+      "end": 1015.96,
+      "text": "Some of the every 95 chance every once in a while you're going to have one that does not work",
+      "source": "pass1",
+      "avg_logprob": -0.16499346825811598
+    },
+    {
+      "start": 1016.04,
+      "end": 1021.0,
+      "text": "I would argue none of those races that I just described are one in 20 type situations that you're going to lose",
+      "source": "pass1",
+      "avg_logprob": -0.16499346825811598
+    },
+    {
+      "start": 1021.56,
+      "end": 1025.4,
+      "text": "um this race for rama swami, ohio rama swami rate is uh",
+      "source": "pass1",
+      "avg_logprob": -0.16499346825811598
+    },
+    {
+      "start": 1026.28,
+      "end": 1031.16,
+      "text": "It was 99.3 chance. You say well, what's the point in that? Well rama swami is going to win tonight",
+      "source": "pass1",
+      "avg_logprob": -0.16499346825811598
+    },
+    {
+      "start": 1031.16,
+      "end": 1035.56,
+      "text": "He's going to win his primary that is a as near a certainty as you can find",
+      "source": "pass1",
+      "avg_logprob": -0.16499346825811598
+    },
+    {
+      "start": 1036.44,
+      "end": 1041.48,
+      "text": "And that's a 0.7 percent, you know, whatever it is 0.7 percent. That's not a great return",
+      "source": "pass1",
+      "avg_logprob": -0.10702478468923246
+    },
+    {
+      "start": 1041.48,
+      "end": 1045.16,
+      "text": "But when you're talking about, you know, maybe you can get it at 98 or 99 percent",
+      "source": "pass1",
+      "avg_logprob": -0.10702478468923246
+    },
+    {
+      "start": 1045.56,
+      "end": 1051.32,
+      "text": "A one or two percent return in an evening is not necessarily the wrong thing to do as long as you don't",
+      "source": "pass1",
+      "avg_logprob": -0.10702478468923246
+    },
+    {
+      "start": 1051.88,
+      "end": 1059.56,
+      "text": "Uh throw this around all the time one of the terms you'll hear used in prediction market talk is called bonding and",
+      "source": "pass1",
+      "avg_logprob": -0.10702478468923246
+    },
+    {
+      "start": 1060.04,
+      "end": 1063.88,
+      "text": "Uh basically what that means is that people will invest in something early on",
+      "source": "pass1",
+      "avg_logprob": -0.10702478468923246
+    },
+    {
+      "start": 1064.36,
+      "end": 1068.04,
+      "text": "It will go up to 98 99 percent when it's sure that it's going to happen",
+      "source": "pass1",
+      "avg_logprob": -0.08579771075033604
+    },
+    {
+      "start": 1068.44,
+      "end": 1071.88,
+      "text": "And then people who have those positions want access to that cash",
+      "source": "pass1",
+      "avg_logprob": -0.08579771075033604
+    },
+    {
+      "start": 1071.96,
+      "end": 1076.84,
+      "text": "They want to exit those positions and say hey, you know, I don't want to wait another month for this to go",
+      "source": "pass1",
+      "avg_logprob": -0.08579771075033604
+    },
+    {
+      "start": 1077.08,
+      "end": 1081.88,
+      "text": "Or another week for this to go from 99 to 100 and I'm going to get 1 I want to put that money somewhere else",
+      "source": "pass1",
+      "avg_logprob": -0.08579771075033604
+    },
+    {
+      "start": 1082.28,
+      "end": 1086.76,
+      "text": "So they will sell out of their positions at 99 a lot of people will say well, this is a sure thing",
+      "source": "pass1",
+      "avg_logprob": -0.08579771075033604
+    },
+    {
+      "start": 1087.48,
+      "end": 1091.32,
+      "text": "I'm happy to come in at 99 and take that 1 off your hands",
+      "source": "pass1",
+      "avg_logprob": -0.08579771075033604
+    },
+    {
+      "start": 1091.56,
+      "end": 1096.84,
+      "text": "I'll give you access to your cash back, right? I'll buy it 99 percent. I'll wait for it to resolve at a dollar later on",
+      "source": "pass1",
+      "avg_logprob": -0.11331646114347442
+    },
+    {
+      "start": 1097.16,
+      "end": 1099.16,
+      "text": "Yeah, sure, it's 1 percent on your money",
+      "source": "pass1",
+      "avg_logprob": -0.11331646114347442
+    },
+    {
+      "start": 1099.24,
+      "end": 1102.92,
+      "text": "But you can stack those gains over a year if you're if you're doing that once a week",
+      "source": "pass1",
+      "avg_logprob": -0.11331646114347442
+    },
+    {
+      "start": 1103.88,
+      "end": 1106.36,
+      "text": "Kind of looks a lot better than a checking account, doesn't it?",
+      "source": "pass1",
+      "avg_logprob": -0.11331646114347442
+    },
+    {
+      "start": 1107.08,
+      "end": 1110.92,
+      "text": "So that is where you can really like take things that are",
+      "source": "pass1",
+      "avg_logprob": -0.11331646114347442
+    },
+    {
+      "start": 1112.04,
+      "end": 1113.72,
+      "text": "relatively sure",
+      "source": "pass1",
+      "avg_logprob": -0.11331646114347442
+    },
+    {
+      "start": 1113.72,
+      "end": 1119.48,
+      "text": "Very good possibilities of happening and stack very very small gains in very short periods of time",
+      "source": "pass1",
+      "avg_logprob": -0.11331646114347442
+    },
+    {
+      "start": 1119.88,
+      "end": 1122.36,
+      "text": "Giving you an annual percentage yield that looks pretty darn good",
+      "source": "pass1",
+      "avg_logprob": -0.14334065420553088
+    },
+    {
+      "start": 1123.08,
+      "end": 1127.08,
+      "text": "Now if you want to get a little bit riskier if you want to look into something with the chance of",
+      "source": "pass1",
+      "avg_logprob": -0.14334065420553088
+    },
+    {
+      "start": 1127.8,
+      "end": 1131.16,
+      "text": "Of more gains, you could still find those things tonight. Let me give you an example of that",
+      "source": "pass1",
+      "avg_logprob": -0.14334065420553088
+    },
+    {
+      "start": 1131.24,
+      "end": 1134.52,
+      "text": "Ohio Republican governor primary Vivek Ramaswamy",
+      "source": "pass1",
+      "avg_logprob": -0.14334065420553088
+    },
+    {
+      "start": 1135.0,
+      "end": 1139.8,
+      "text": "Vote percentage. So this is not whether he will win or not. It's how high he will get",
+      "source": "pass1",
+      "avg_logprob": -0.14334065420553088
+    },
+    {
+      "start": 1140.44,
+      "end": 1144.28,
+      "text": "Most of the polls show him in the high 60s to low 70s",
+      "source": "pass1",
+      "avg_logprob": -0.14334065420553088
+    },
+    {
+      "start": 1144.92,
+      "end": 1147.56,
+      "text": "with some of his kind of lower named, uh, you know",
+      "source": "pass1",
+      "avg_logprob": -0.14334065420553088
+    },
+    {
+      "start": 1148.2,
+      "end": 1149.4,
+      "text": "Uh",
+      "source": "pass1",
+      "avg_logprob": -0.12990731108296025
+    },
+    {
+      "start": 1149.4,
+      "end": 1152.36,
+      "text": "Opponents who will almost definitely not win the race",
+      "source": "pass1",
+      "avg_logprob": -0.12990731108296025
+    },
+    {
+      "start": 1152.92,
+      "end": 1158.76,
+      "text": "You know, they can get into the low the high single digits the low double digits. Maybe 15 16 percent even",
+      "source": "pass1",
+      "avg_logprob": -0.12990731108296025
+    },
+    {
+      "start": 1159.48,
+      "end": 1161.48,
+      "text": "Will that be enough to keep him?",
+      "source": "pass1",
+      "avg_logprob": -0.12990731108296025
+    },
+    {
+      "start": 1161.8,
+      "end": 1165.8,
+      "text": "Ramaswamy around, uh, you know 70 80 percent",
+      "source": "pass1",
+      "avg_logprob": -0.12990731108296025
+    },
+    {
+      "start": 1165.88,
+      "end": 1171.16,
+      "text": "There's a bunch of markets listed here where you can go in and invest as to what you think that rate will be",
+      "source": "pass1",
+      "avg_logprob": -0.12990731108296025
+    },
+    {
+      "start": 1171.64,
+      "end": 1175.56,
+      "text": "Now one interesting thing and this is something that you'll learn looking around these markets",
+      "source": "pass1",
+      "avg_logprob": -0.12990731108296025
+    },
+    {
+      "start": 1175.56,
+      "end": 1177.56,
+      "text": "If you're if you're interested in these things",
+      "source": "pass1",
+      "avg_logprob": -0.1275347627482368
+    },
+    {
+      "start": 1178.12,
+      "end": 1183.8,
+      "text": "There is a position for um for Vivek Ramaswamy to win under 50 percent",
+      "source": "pass1",
+      "avg_logprob": -0.1275347627482368
+    },
+    {
+      "start": 1184.6,
+      "end": 1189.4,
+      "text": "Now if he wins under 50 percent, there's a chance he's going to lose that election, of course",
+      "source": "pass1",
+      "avg_logprob": -0.1275347627482368
+    },
+    {
+      "start": 1189.96,
+      "end": 1192.76,
+      "text": "um, and that would be, uh, you know",
+      "source": "pass1",
+      "avg_logprob": -0.1275347627482368
+    },
+    {
+      "start": 1193.72,
+      "end": 1198.52,
+      "text": "Very small percentage that it would happen. However, there's a, uh, you know",
+      "source": "pass1",
+      "avg_logprob": -0.1275347627482368
+    },
+    {
+      "start": 1198.6,
+      "end": 1200.6,
+      "text": "Also a chance he could win the election, right",
+      "source": "pass1",
+      "avg_logprob": -0.1275347627482368
+    },
+    {
+      "start": 1201.16,
+      "end": 1204.6,
+      "text": "And still be under 50 percent if his other opponents somehow got higher",
+      "source": "pass1",
+      "avg_logprob": -0.10660572024453588
+    },
+    {
+      "start": 1204.76,
+      "end": 1209.72,
+      "text": "The bottom line here is to say that there's more value in his under 50 percent",
+      "source": "pass1",
+      "avg_logprob": -0.10660572024453588
+    },
+    {
+      "start": 1210.76,
+      "end": 1212.76,
+      "text": "To say no, he won't be under 50 percent",
+      "source": "pass1",
+      "avg_logprob": -0.10660572024453588
+    },
+    {
+      "start": 1213.16,
+      "end": 1217.88,
+      "text": "Then there is whether he will win and I think there's almost no chance he's going to be under 50 percent",
+      "source": "pass1",
+      "avg_logprob": -0.10660572024453588
+    },
+    {
+      "start": 1217.96,
+      "end": 1221.48,
+      "text": "So bottom line is a lot of times you can look around and find multiple markets",
+      "source": "pass1",
+      "avg_logprob": -0.10660572024453588
+    },
+    {
+      "start": 1221.48,
+      "end": 1225.08,
+      "text": "So that are looking at the same thing and find a slider slightly better advantage",
+      "source": "pass1",
+      "avg_logprob": -0.10660572024453588
+    },
+    {
+      "start": 1225.64,
+      "end": 1227.8,
+      "text": "There, uh than in other places again",
+      "source": "pass1",
+      "avg_logprob": -0.10660572024453588
+    },
+    {
+      "start": 1228.52,
+      "end": 1229.96,
+      "text": "This isn't the sexiest election night",
+      "source": "pass1",
+      "avg_logprob": -0.1364388229735827
+    },
+    {
+      "start": 1229.96,
+      "end": 1231.24,
+      "text": "I gotta be honest with you",
+      "source": "pass1",
+      "avg_logprob": -0.1364388229735827
+    },
+    {
+      "start": 1231.24,
+      "end": 1233.96,
+      "text": "These are not major things that are up for debate",
+      "source": "pass1",
+      "avg_logprob": -0.1364388229735827
+    },
+    {
+      "start": 1233.96,
+      "end": 1237.48,
+      "text": "But if you want to say hey, will Vivek Ramaswamy clear 80 percent",
+      "source": "pass1",
+      "avg_logprob": -0.1364388229735827
+    },
+    {
+      "start": 1238.04,
+      "end": 1239.48,
+      "text": "It's about a 50-50 chance",
+      "source": "pass1",
+      "avg_logprob": -0.1364388229735827
+    },
+    {
+      "start": 1239.48,
+      "end": 1242.44,
+      "text": "I think it's now rising a little bit above that most people think he may",
+      "source": "pass1",
+      "avg_logprob": -0.1364388229735827
+    },
+    {
+      "start": 1243.08,
+      "end": 1247.0,
+      "text": "Actually clear 80 percent in this uh in this particular election",
+      "source": "pass1",
+      "avg_logprob": -0.1364388229735827
+    },
+    {
+      "start": 1247.88,
+      "end": 1253.64,
+      "text": "The projection from everybody putting their positions in has him at about 75 percent chance",
+      "source": "pass1",
+      "avg_logprob": -0.1364388229735827
+    },
+    {
+      "start": 1254.2,
+      "end": 1256.2,
+      "text": "Or 75 percent of the vote",
+      "source": "pass1",
+      "avg_logprob": -0.1364388229735827
+    },
+    {
+      "start": 1256.76,
+      "end": 1260.68,
+      "text": "Will he get over 80 if he does a little bit better if you think he's going to do a little bit better than people think",
+      "source": "pass1",
+      "avg_logprob": -0.11304357525755147
+    },
+    {
+      "start": 1261.24,
+      "end": 1264.44,
+      "text": "Then you go over 80 and you could actually double your money",
+      "source": "pass1",
+      "avg_logprob": -0.11304357525755147
+    },
+    {
+      "start": 1265.16,
+      "end": 1268.68,
+      "text": "Today, so that is another one to look at anything else important. I should get to here",
+      "source": "pass1",
+      "avg_logprob": -0.11304357525755147
+    },
+    {
+      "start": 1269.0,
+      "end": 1272.2,
+      "text": "Let me just give you a couple of overviews here before we move on to other topics",
+      "source": "pass1",
+      "avg_logprob": -0.11304357525755147
+    },
+    {
+      "start": 1272.68,
+      "end": 1276.76,
+      "text": "Which party will win the us house all the redistricting from the supreme court has",
+      "source": "pass1",
+      "avg_logprob": -0.11304357525755147
+    },
+    {
+      "start": 1277.48,
+      "end": 1281.8,
+      "text": "Given you the slightest difference here. Remember we talked about this race at the beginning",
+      "source": "pass1",
+      "avg_logprob": -0.11304357525755147
+    },
+    {
+      "start": 1282.44,
+      "end": 1285.56,
+      "text": "I mean we we go back all the time where it was at the 50s and 60s",
+      "source": "pass1",
+      "avg_logprob": -0.12435802243171482
+    },
+    {
+      "start": 1285.56,
+      "end": 1290.76,
+      "text": "But recently we've talked about this race at about an 85 chance for democrats to win the house",
+      "source": "pass1",
+      "avg_logprob": -0.12435802243171482
+    },
+    {
+      "start": 1291.24,
+      "end": 1295.0,
+      "text": "Again, that might not make you happy. It does not make me happy, but I do believe it is",
+      "source": "pass1",
+      "avg_logprob": -0.12435802243171482
+    },
+    {
+      "start": 1295.72,
+      "end": 1301.8,
+      "text": "Appropriately priced that number has slid down slightly from 85 to about 80",
+      "source": "pass1",
+      "avg_logprob": -0.12435802243171482
+    },
+    {
+      "start": 1302.76,
+      "end": 1306.04,
+      "text": "Since the supreme court ruling so what we're seeing here",
+      "source": "pass1",
+      "avg_logprob": -0.12435802243171482
+    },
+    {
+      "start": 1307.0,
+      "end": 1309.24,
+      "text": "Is a market that's telling us hey",
+      "source": "pass1",
+      "avg_logprob": -0.12435802243171482
+    },
+    {
+      "start": 1310.2,
+      "end": 1312.2,
+      "text": "We think there's going to be a change",
+      "source": "pass1",
+      "avg_logprob": -0.12091013789176941
+    },
+    {
+      "start": 1312.76,
+      "end": 1313.96,
+      "text": "In this market",
+      "source": "pass1",
+      "avg_logprob": -0.12091013789176941
+    },
+    {
+      "start": 1313.96,
+      "end": 1319.16,
+      "text": "We think there's going to be a change in the chances of of of republicans winning the house",
+      "source": "pass1",
+      "avg_logprob": -0.12091013789176941
+    },
+    {
+      "start": 1319.64,
+      "end": 1325.08,
+      "text": "We think that there is going to be a change in the number of seats republicans win because of all the redistricting on top",
+      "source": "pass1",
+      "avg_logprob": -0.12091013789176941
+    },
+    {
+      "start": 1325.4,
+      "end": 1329.72,
+      "text": "Of the supreme court ruling which is going to make states like louisiana need to redraw their districts",
+      "source": "pass1",
+      "avg_logprob": -0.12091013789176941
+    },
+    {
+      "start": 1330.12,
+      "end": 1332.12,
+      "text": "We recognize that as a market",
+      "source": "pass1",
+      "avg_logprob": -0.12091013789176941
+    },
+    {
+      "start": 1332.6,
+      "end": 1336.28,
+      "text": "And what we think as a market is that that's not going to be enough",
+      "source": "pass1",
+      "avg_logprob": -0.12091013789176941
+    },
+    {
+      "start": 1336.76,
+      "end": 1340.52,
+      "text": "For republicans to still hold the house. They have a better chance to do it",
+      "source": "pass1",
+      "avg_logprob": -0.13988640097280344
+    },
+    {
+      "start": 1341.0,
+      "end": 1346.04,
+      "text": "But it's still at an 80 20 situation. So a four four out of every five elections",
+      "source": "pass1",
+      "avg_logprob": -0.13988640097280344
+    },
+    {
+      "start": 1346.68,
+      "end": 1349.88,
+      "text": "Democrats would win. That's what the markets are saying right now. You disagree with this",
+      "source": "pass1",
+      "avg_logprob": -0.13988640097280344
+    },
+    {
+      "start": 1349.96,
+      "end": 1354.76,
+      "text": "You go on calcium you go on Polymarket you go and PredictIt and it's very easy to find a place to",
+      "source": "pass1",
+      "avg_logprob": -0.13988640097280344
+    },
+    {
+      "start": 1355.4,
+      "end": 1360.92,
+      "text": "Make big time money if you think republicans republicans are going to win there for every 20 cents that you invest",
+      "source": "pass1",
+      "avg_logprob": -0.13988640097280344
+    },
+    {
+      "start": 1361.32,
+      "end": 1362.6,
+      "text": "You'd win a dollar",
+      "source": "pass1",
+      "avg_logprob": -0.13988640097280344
+    },
+    {
+      "start": 1362.68,
+      "end": 1366.6,
+      "text": "Okay, so 80 cents profit on a 20 cents 20 cent investment",
+      "source": "pass1",
+      "avg_logprob": -0.11606303671641009
+    },
+    {
+      "start": 1367.08,
+      "end": 1371.4,
+      "text": "That's good eating if that's what you think is going to happen. I frankly don't at this point",
+      "source": "pass1",
+      "avg_logprob": -0.11606303671641009
+    },
+    {
+      "start": 1371.64,
+      "end": 1374.28,
+      "text": "I would need more evidence on the to the contrary to convince me",
+      "source": "pass1",
+      "avg_logprob": -0.11606303671641009
+    },
+    {
+      "start": 1375.0,
+      "end": 1377.4,
+      "text": "But that is where we are right now",
+      "source": "pass1",
+      "avg_logprob": -0.11606303671641009
+    },
+    {
+      "start": 1377.96,
+      "end": 1381.32,
+      "text": "Um, and and honestly, you know democrats start getting into the 70s",
+      "source": "pass1",
+      "avg_logprob": -0.11606303671641009
+    },
+    {
+      "start": 1381.32,
+      "end": 1385.88,
+      "text": "I'm going to start looking at you know potentially increasing my position again because I don't I don't think it's that",
+      "source": "pass1",
+      "avg_logprob": -0.11606303671641009
+    },
+    {
+      "start": 1386.76,
+      "end": 1391.8,
+      "text": "You know, I think probably low 70s. I'm back in I was buying back in the 50s and 60s quite a bit",
+      "source": "pass1",
+      "avg_logprob": -0.11606303671641009
+    },
+    {
+      "start": 1391.96,
+      "end": 1394.44,
+      "text": "It's been up to to 85 it continues to fall",
+      "source": "pass1",
+      "avg_logprob": -0.1346784460861071
+    },
+    {
+      "start": 1394.84,
+      "end": 1397.72,
+      "text": "I'd be at least interested to look at it on the other side",
+      "source": "pass1",
+      "avg_logprob": -0.1346784460861071
+    },
+    {
+      "start": 1397.72,
+      "end": 1401.88,
+      "text": "We're seeing a little bit of a bump in the senate and there's not really a great reason for that",
+      "source": "pass1",
+      "avg_logprob": -0.1346784460861071
+    },
+    {
+      "start": 1402.68,
+      "end": 1407.48,
+      "text": "Like the redistricting thing did not affect the senate race, but which party will win the u.s. Senate",
+      "source": "pass1",
+      "avg_logprob": -0.1346784460861071
+    },
+    {
+      "start": 1408.04,
+      "end": 1416.2,
+      "text": "It was at one point, you know 75 80 percent republicans dropped down to about 60 percent republicans held there for a long time until it narrowed",
+      "source": "pass1",
+      "avg_logprob": -0.1346784460861071
+    },
+    {
+      "start": 1417.0,
+      "end": 1422.2,
+      "text": "Relatively recently and became a tie race at the beginning of this year",
+      "source": "pass1",
+      "avg_logprob": -0.105198442389112
+    },
+    {
+      "start": 1423.0,
+      "end": 1430.68,
+      "text": "Maybe february and it's bounced back and forth since republicans now taking a 54 46 chance to win the senate",
+      "source": "pass1",
+      "avg_logprob": -0.105198442389112
+    },
+    {
+      "start": 1431.08,
+      "end": 1435.96,
+      "text": "Obviously, it's a massive situation particularly when you're talking about having very old supreme court justices",
+      "source": "pass1",
+      "avg_logprob": -0.105198442389112
+    },
+    {
+      "start": 1436.28,
+      "end": 1440.68,
+      "text": "It's important for the senate to remain in republican control if that's what you if you're conservative",
+      "source": "pass1",
+      "avg_logprob": -0.105198442389112
+    },
+    {
+      "start": 1440.68,
+      "end": 1444.76,
+      "text": "And that's what you think if you want democrats obviously winning that is a major deal as well",
+      "source": "pass1",
+      "avg_logprob": -0.105198442389112
+    },
+    {
+      "start": 1444.84,
+      "end": 1449.72,
+      "text": "Maybe the biggest part of this because the senate is going to is something that republicans should win",
+      "source": "pass1",
+      "avg_logprob": -0.11342146969580835
+    },
+    {
+      "start": 1450.04,
+      "end": 1453.48,
+      "text": "We have a senate preview that kind of explains all this of that predictable show dot com",
+      "source": "pass1",
+      "avg_logprob": -0.11342146969580835
+    },
+    {
+      "start": 1453.48,
+      "end": 1458.44,
+      "text": "You can go check that out. It's good reading to get you set for this season. So that's where we are tonight",
+      "source": "pass1",
+      "avg_logprob": -0.11342146969580835
+    },
+    {
+      "start": 1458.52,
+      "end": 1463.24,
+      "text": "We're going to do a live stream tonight on substack. I think on substack maybe on youtube too",
+      "source": "pass1",
+      "avg_logprob": -0.11342146969580835
+    },
+    {
+      "start": 1463.32,
+      "end": 1467.32,
+      "text": "I don't know you could check that out by going to predictable show dot com",
+      "source": "pass1",
+      "avg_logprob": -0.11342146969580835
+    },
+    {
+      "start": 1467.72,
+      "end": 1470.76,
+      "text": "Join us tonight. We'll walk you through if there are any surprises tonight",
+      "source": "pass1",
+      "avg_logprob": -0.11342146969580835
+    },
+    {
+      "start": 1470.84,
+      "end": 1473.72,
+      "text": "We'll look at that. Vivek Ramaswamy vote percentage",
+      "source": "pass1",
+      "avg_logprob": -0.09444380593551717
+    },
+    {
+      "start": 1474.28,
+      "end": 1475.48,
+      "text": "Mark it a little bit",
+      "source": "pass1",
+      "avg_logprob": -0.09444380593551717
+    },
+    {
+      "start": 1475.48,
+      "end": 1477.48,
+      "text": "We'll look at how this is affecting",
+      "source": "pass1",
+      "avg_logprob": -0.09444380593551717
+    },
+    {
+      "start": 1477.64,
+      "end": 1480.52,
+      "text": "The races going forward because if republicans have a big night tonight",
+      "source": "pass1",
+      "avg_logprob": -0.09444380593551717
+    },
+    {
+      "start": 1481.08,
+      "end": 1486.36,
+      "text": "If democrats have a big night tonight, you can see the overall race switch a little bit as well",
+      "source": "pass1",
+      "avg_logprob": -0.09444380593551717
+    },
+    {
+      "start": 1486.76,
+      "end": 1489.8,
+      "text": "We'll talk about that tonight on the live stream",
+      "source": "pass1",
+      "avg_logprob": -0.09444380593551717
+    },
+    {
+      "start": 1490.2,
+      "end": 1493.16,
+      "text": "I don't know what time we're going to start exactly but as the votes start coming in",
+      "source": "pass1",
+      "avg_logprob": -0.09444380593551717
+    },
+    {
+      "start": 1493.4,
+      "end": 1495.88,
+      "text": "We'll get in and we'll get you up to date as to what is happening",
+      "source": "pass1",
+      "avg_logprob": -0.09444380593551717
+    },
+    {
+      "start": 1495.96,
+      "end": 1499.64,
+      "text": "And if there are any opportunities sometimes there are sometimes you'll get a situation where",
+      "source": "pass1",
+      "avg_logprob": -0.09444380593551717
+    },
+    {
+      "start": 1499.96,
+      "end": 1501.96,
+      "text": "you know republicans get a",
+      "source": "pass1",
+      "avg_logprob": -0.12528135671335108
+    },
+    {
+      "start": 1502.04,
+      "end": 1504.04,
+      "text": "or democrats get a big",
+      "source": "pass1",
+      "avg_logprob": -0.12528135671335108
+    },
+    {
+      "start": 1504.36,
+      "end": 1505.64,
+      "text": "burst early",
+      "source": "pass1",
+      "avg_logprob": -0.12528135671335108
+    },
+    {
+      "start": 1505.64,
+      "end": 1511.24,
+      "text": "And you look at what is remaining in the vote and you say wait a minute. This is going to come back the other way",
+      "source": "pass1",
+      "avg_logprob": -0.12528135671335108
+    },
+    {
+      "start": 1511.8,
+      "end": 1517.32,
+      "text": "There's sometimes opportunities in markets to take advantage of that. So this hopefully is kind of telling you where we stand",
+      "source": "pass1",
+      "avg_logprob": -0.12528135671335108
+    },
+    {
+      "start": 1517.48,
+      "end": 1522.68,
+      "text": "And where we can maybe profit as well in the coming days and weeks",
+      "source": "pass1",
+      "avg_logprob": -0.12528135671335108
+    },
+    {
+      "start": 1522.84,
+      "end": 1525.8,
+      "text": "So we'll join you tonight predictable show dot com",
+      "source": "pass1",
+      "avg_logprob": -0.12528135671335108
+    },
+    {
+      "start": 1525.88,
+      "end": 1529.4,
+      "text": "We have more coming up with oil and another market that I",
+      "source": "pass1",
+      "avg_logprob": -0.13293135704265702
+    },
+    {
+      "start": 1530.04,
+      "end": 1532.2,
+      "text": "I kind of like I'll talk to you about that next",
+      "source": "pass1",
+      "avg_logprob": -0.13293135704265702
+    },
+    {
+      "start": 1533.64,
+      "end": 1539.32,
+      "text": "Welcome back to predictable predictable show dot com and it's predictable show on all sorts of social media go there",
+      "source": "pass1",
+      "avg_logprob": -0.13293135704265702
+    },
+    {
+      "start": 1539.8,
+      "end": 1542.28,
+      "text": "Follow the show we got all this stuff that we're going to give you",
+      "source": "pass1",
+      "avg_logprob": -0.13293135704265702
+    },
+    {
+      "start": 1542.52,
+      "end": 1547.4,
+      "text": "So do that do those things whatever those things are go and do them a couple of",
+      "source": "pass1",
+      "avg_logprob": -0.13293135704265702
+    },
+    {
+      "start": 1548.2,
+      "end": 1549.56,
+      "text": "markets I want to",
+      "source": "pass1",
+      "avg_logprob": -0.13293135704265702
+    },
+    {
+      "start": 1549.56,
+      "end": 1552.28,
+      "text": "Kind of show you to give you a picture as to",
+      "source": "pass1",
+      "avg_logprob": -0.13293135704265702
+    },
+    {
+      "start": 1553.0,
+      "end": 1555.64,
+      "text": "What the world is really thinking right now because we are currently",
+      "source": "pass1",
+      "avg_logprob": -0.11302005563830507
+    },
+    {
+      "start": 1555.72,
+      "end": 1561.32,
+      "text": "I don't know if you've heard this in a war with Iran and that war is kind of on kind of off",
+      "source": "pass1",
+      "avg_logprob": -0.11302005563830507
+    },
+    {
+      "start": 1561.4,
+      "end": 1564.68,
+      "text": "I don't know what's happening though straight up or moves kind of open kind of closed",
+      "source": "pass1",
+      "avg_logprob": -0.11302005563830507
+    },
+    {
+      "start": 1565.48,
+      "end": 1568.2,
+      "text": "there's a lot of uncertainty out there and",
+      "source": "pass1",
+      "avg_logprob": -0.11302005563830507
+    },
+    {
+      "start": 1568.84,
+      "end": 1575.0,
+      "text": "There's sort of a fear of a big oil spike. There's a fear of the war escalating out of control",
+      "source": "pass1",
+      "avg_logprob": -0.11302005563830507
+    },
+    {
+      "start": 1575.64,
+      "end": 1579.24,
+      "text": "And there's also, you know people who want this thing to be over",
+      "source": "pass1",
+      "avg_logprob": -0.11302005563830507
+    },
+    {
+      "start": 1579.32,
+      "end": 1584.52,
+      "text": "Remember this was kind of sold to us as a multi-week operation. That's kind of how it was",
+      "source": "pass1",
+      "avg_logprob": -0.13602333674280662
+    },
+    {
+      "start": 1585.08,
+      "end": 1589.56,
+      "text": "Described at the beginning of multiple times by the president and other officials who said, you know, we go in there",
+      "source": "pass1",
+      "avg_logprob": -0.13602333674280662
+    },
+    {
+      "start": 1589.56,
+      "end": 1591.56,
+      "text": "We'll get this over with and it should be done soon",
+      "source": "pass1",
+      "avg_logprob": -0.13602333674280662
+    },
+    {
+      "start": 1591.88,
+      "end": 1598.2,
+      "text": "We'll kind of pass those initial deadlines anyway right now and now we're looking forward to see what could we expect going forward",
+      "source": "pass1",
+      "avg_logprob": -0.13602333674280662
+    },
+    {
+      "start": 1598.2,
+      "end": 1602.92,
+      "text": "Let me show you a couple things that the markets are saying right now. Here's a Polymarket market",
+      "source": "pass1",
+      "avg_logprob": -0.13602333674280662
+    },
+    {
+      "start": 1603.8,
+      "end": 1607.32,
+      "text": "us and Iran with a permanent peace deal by",
+      "source": "pass1",
+      "avg_logprob": -0.13602333674280662
+    },
+    {
+      "start": 1608.2,
+      "end": 1612.28,
+      "text": "May 15th may 31st june 30th or december 31st",
+      "source": "pass1",
+      "avg_logprob": -0.17937877150469048
+    },
+    {
+      "start": 1612.84,
+      "end": 1618.04,
+      "text": "Now quite clearly with a 4 chance by may 15th only about a week and a half away",
+      "source": "pass1",
+      "avg_logprob": -0.17937877150469048
+    },
+    {
+      "start": 1619.16,
+      "end": 1625.72,
+      "text": "Not very likely according to these markets only a 4 chance by the end of the month that goes up to about a 14 percent chance",
+      "source": "pass1",
+      "avg_logprob": -0.17937877150469048
+    },
+    {
+      "start": 1626.12,
+      "end": 1629.4,
+      "text": "By the end of june a 37 percent chance",
+      "source": "pass1",
+      "avg_logprob": -0.17937877150469048
+    },
+    {
+      "start": 1629.96,
+      "end": 1631.96,
+      "text": "I got to say",
+      "source": "pass1",
+      "avg_logprob": -0.17937877150469048
+    },
+    {
+      "start": 1631.96,
+      "end": 1634.76,
+      "text": "Good chunk of me thinking I might go on that market and go no",
+      "source": "pass1",
+      "avg_logprob": -0.11802222336007055
+    },
+    {
+      "start": 1635.56,
+      "end": 1642.44,
+      "text": "On that one. I don't know. I'm not that optimistic and then by the end of the year a 65 chance again a permanent peace deal",
+      "source": "pass1",
+      "avg_logprob": -0.11802222336007055
+    },
+    {
+      "start": 1644.36,
+      "end": 1649.88,
+      "text": "Now I don't have the the rules of this particular market printed out in front of me um, but",
+      "source": "pass1",
+      "avg_logprob": -0.11802222336007055
+    },
+    {
+      "start": 1652.44,
+      "end": 1654.84,
+      "text": "A permanent peace deal is a pretty high bar",
+      "source": "pass1",
+      "avg_logprob": -0.11802222336007055
+    },
+    {
+      "start": 1655.08,
+      "end": 1659.32,
+      "text": "And I want to I want to read those rules specifically to see what ticks that off because you never know",
+      "source": "pass1",
+      "avg_logprob": -0.11802222336007055
+    },
+    {
+      "start": 1659.64,
+      "end": 1663.08,
+      "text": "Sometimes it's just people saying they've got a permanent peace deal and that will tick the",
+      "source": "pass1",
+      "avg_logprob": -0.10773699669013347
+    },
+    {
+      "start": 1663.56,
+      "end": 1669.72,
+      "text": "Check the box. If so makes me a little bit, you know, that doesn't necessarily mean that peace deal is real",
+      "source": "pass1",
+      "avg_logprob": -0.10773699669013347
+    },
+    {
+      "start": 1669.96,
+      "end": 1675.88,
+      "text": "Right, but usually a peace deal is you know, that's a serious situation. You're signing documents and that's usually what that means",
+      "source": "pass1",
+      "avg_logprob": -0.10773699669013347
+    },
+    {
+      "start": 1676.52,
+      "end": 1680.68,
+      "text": "What the markets are saying here is look, we don't think this war is going to go on forever",
+      "source": "pass1",
+      "avg_logprob": -0.10773699669013347
+    },
+    {
+      "start": 1681.96,
+      "end": 1684.12,
+      "text": "But it's not going to end anytime really soon",
+      "source": "pass1",
+      "avg_logprob": -0.10773699669013347
+    },
+    {
+      "start": 1684.68,
+      "end": 1688.12,
+      "text": "You know less than a 50 chance by you know, we're talking another couple months",
+      "source": "pass1",
+      "avg_logprob": -0.10773699669013347
+    },
+    {
+      "start": 1689.0,
+      "end": 1693.08,
+      "text": "The markets are saying we're skeptical of a deal even if you go out to the end of june",
+      "source": "pass1",
+      "avg_logprob": -0.09272765437210048
+    },
+    {
+      "start": 1693.16,
+      "end": 1695.0,
+      "text": "We're at the beginning of may",
+      "source": "pass1",
+      "avg_logprob": -0.09272765437210048
+    },
+    {
+      "start": 1695.0,
+      "end": 1697.64,
+      "text": "So there's a lot of skepticism there by the end of the year",
+      "source": "pass1",
+      "avg_logprob": -0.09272765437210048
+    },
+    {
+      "start": 1698.28,
+      "end": 1702.04,
+      "text": "We're over 50 to 65 percent markets are saying",
+      "source": "pass1",
+      "avg_logprob": -0.09272765437210048
+    },
+    {
+      "start": 1702.6,
+      "end": 1704.04,
+      "text": "Hey",
+      "source": "pass1",
+      "avg_logprob": -0.09272765437210048
+    },
+    {
+      "start": 1704.04,
+      "end": 1707.8,
+      "text": "We think something's going to happen here. We think we'll we'll get to a peace deal eventually",
+      "source": "pass1",
+      "avg_logprob": -0.09272765437210048
+    },
+    {
+      "start": 1708.28,
+      "end": 1710.28,
+      "text": "But I wouldn't expect it anytime soon",
+      "source": "pass1",
+      "avg_logprob": -0.09272765437210048
+    },
+    {
+      "start": 1710.92,
+      "end": 1712.92,
+      "text": "That's that market by the way",
+      "source": "pass1",
+      "avg_logprob": -0.09272765437210048
+    },
+    {
+      "start": 1712.92,
+      "end": 1717.32,
+      "text": "One thing I love when it comes to prediction markets is when my opinion",
+      "source": "pass1",
+      "avg_logprob": -0.13587660803036256
+    },
+    {
+      "start": 1717.88,
+      "end": 1721.0,
+      "text": "My vibe my position on a market",
+      "source": "pass1",
+      "avg_logprob": -0.13587660803036256
+    },
+    {
+      "start": 1721.64,
+      "end": 1724.28,
+      "text": "Coincides with me being able to hedge my life",
+      "source": "pass1",
+      "avg_logprob": -0.13587660803036256
+    },
+    {
+      "start": 1724.76,
+      "end": 1727.24,
+      "text": "Hedge my life is a very central part of my life",
+      "source": "pass1",
+      "avg_logprob": -0.13587660803036256
+    },
+    {
+      "start": 1727.24,
+      "end": 1731.4,
+      "text": "I've talked about this a bunch of times and you'll hear it a million times here unpredictable with stew",
+      "source": "pass1",
+      "avg_logprob": -0.13587660803036256
+    },
+    {
+      "start": 1731.96,
+      "end": 1736.04,
+      "text": "I if it's never a reason to take a position",
+      "source": "pass1",
+      "avg_logprob": -0.13587660803036256
+    },
+    {
+      "start": 1737.48,
+      "end": 1742.28,
+      "text": "For investment gains it is a a reason to take a position like for example as I've discussed",
+      "source": "pass1",
+      "avg_logprob": -0.13587660803036256
+    },
+    {
+      "start": 1743.88,
+      "end": 1749.4,
+      "text": "Investing hedging my life against a philadelphia eagles, let's say super bowl victory",
+      "source": "pass1",
+      "avg_logprob": -0.12276969797222327
+    },
+    {
+      "start": 1750.04,
+      "end": 1755.32,
+      "text": "If I go against the eagles if the eagles lose that ruins my life for a period of time",
+      "source": "pass1",
+      "avg_logprob": -0.12276969797222327
+    },
+    {
+      "start": 1756.44,
+      "end": 1758.44,
+      "text": "But I get paid for that",
+      "source": "pass1",
+      "avg_logprob": -0.12276969797222327
+    },
+    {
+      "start": 1759.0,
+      "end": 1762.12,
+      "text": "That's that's hedging your life. Okay. That's a pure hedge of your life",
+      "source": "pass1",
+      "avg_logprob": -0.12276969797222327
+    },
+    {
+      "start": 1762.2,
+      "end": 1765.32,
+      "text": "Like it's it's going to make me happy if the eagles win",
+      "source": "pass1",
+      "avg_logprob": -0.12276969797222327
+    },
+    {
+      "start": 1765.32,
+      "end": 1769.32,
+      "text": "I won't care about losing the money if the eagles lose. I'll be sad. I better get some money",
+      "source": "pass1",
+      "avg_logprob": -0.12276969797222327
+    },
+    {
+      "start": 1769.48,
+      "end": 1772.36,
+      "text": "That's how I look at it. That's a pure hedge. This is not a pure hedge",
+      "source": "pass1",
+      "avg_logprob": -0.12276969797222327
+    },
+    {
+      "start": 1772.76,
+      "end": 1774.52,
+      "text": "I have a real opinion honestly looking at this",
+      "source": "pass1",
+      "avg_logprob": -0.1673366344776474
+    },
+    {
+      "start": 1774.52,
+      "end": 1780.28,
+      "text": "I have some skepticism on this numbers a permanent peace deal again pending on these rules in the description",
+      "source": "pass1",
+      "avg_logprob": -0.1673366344776474
+    },
+    {
+      "start": 1780.68,
+      "end": 1788.68,
+      "text": "June 30th for a 37 chance like I do not think there's a 37 chance of a permanent peace deal being done in the next six weeks",
+      "source": "pass1",
+      "avg_logprob": -0.1673366344776474
+    },
+    {
+      "start": 1789.08,
+      "end": 1792.84,
+      "text": "Like I think that's really unlikely and then when you talk about",
+      "source": "pass1",
+      "avg_logprob": -0.1673366344776474
+    },
+    {
+      "start": 1793.8,
+      "end": 1795.8,
+      "text": "I would put that more at like five percent",
+      "source": "pass1",
+      "avg_logprob": -0.1673366344776474
+    },
+    {
+      "start": 1796.2,
+      "end": 1801.4,
+      "text": "And then when it comes to the end of you know, you're talking december 31st end of the year a permanent",
+      "source": "pass1",
+      "avg_logprob": -0.1673366344776474
+    },
+    {
+      "start": 1801.96,
+      "end": 1803.16,
+      "text": "peace deal again",
+      "source": "pass1",
+      "avg_logprob": -0.13487775191880655
+    },
+    {
+      "start": 1803.16,
+      "end": 1808.2,
+      "text": "This isn't a standoff where we all kind of just say that we won and people stop firing at each other",
+      "source": "pass1",
+      "avg_logprob": -0.13487775191880655
+    },
+    {
+      "start": 1808.2,
+      "end": 1813.0,
+      "text": "We're talking about a permanent peace deal. I don't think there's a 65 chance of that by the end of the year",
+      "source": "pass1",
+      "avg_logprob": -0.13487775191880655
+    },
+    {
+      "start": 1813.16,
+      "end": 1815.16,
+      "text": "I think that might be 25 percent",
+      "source": "pass1",
+      "avg_logprob": -0.13487775191880655
+    },
+    {
+      "start": 1815.16,
+      "end": 1820.84,
+      "text": "So I like both of those no markets at june 30th and then december 31st particularly and honestly",
+      "source": "pass1",
+      "avg_logprob": -0.13487775191880655
+    },
+    {
+      "start": 1821.32,
+      "end": 1824.04,
+      "text": "14 percent by the end of may kind of sounds delicious as well",
+      "source": "pass1",
+      "avg_logprob": -0.13487775191880655
+    },
+    {
+      "start": 1824.6,
+      "end": 1827.8,
+      "text": "So I'd be no on pretty much all of these markets",
+      "source": "pass1",
+      "avg_logprob": -0.13487775191880655
+    },
+    {
+      "start": 1828.2,
+      "end": 1830.92,
+      "text": "The other thing I like about this just to give me a little added push",
+      "source": "pass1",
+      "avg_logprob": -0.13487775191880655
+    },
+    {
+      "start": 1831.56,
+      "end": 1834.52,
+      "text": "Is the fact that if I'm wrong and I lose this money",
+      "source": "pass1",
+      "avg_logprob": -0.12500192270829127
+    },
+    {
+      "start": 1835.0,
+      "end": 1837.0,
+      "text": "We've ended a war",
+      "source": "pass1",
+      "avg_logprob": -0.12500192270829127
+    },
+    {
+      "start": 1837.0,
+      "end": 1839.64,
+      "text": "And I'm going to be pretty happy about a war being over",
+      "source": "pass1",
+      "avg_logprob": -0.12500192270829127
+    },
+    {
+      "start": 1839.8,
+      "end": 1843.16,
+      "text": "So there's a little bit of a hedging your life thing there that gives me a little bit of a bonus",
+      "source": "pass1",
+      "avg_logprob": -0.12500192270829127
+    },
+    {
+      "start": 1843.48,
+      "end": 1847.48,
+      "text": "To get into one of these markets, which you know, by the way, I probably will uh secondarily",
+      "source": "pass1",
+      "avg_logprob": -0.12500192270829127
+    },
+    {
+      "start": 1848.12,
+      "end": 1851.08,
+      "text": "Here is uh, because we're telling telling a little bit of a story here",
+      "source": "pass1",
+      "avg_logprob": -0.12500192270829127
+    },
+    {
+      "start": 1851.72,
+      "end": 1857.72,
+      "text": "Crude oil now right now we're sick in between $9,500 a barrel on this measure right now",
+      "source": "pass1",
+      "avg_logprob": -0.12500192270829127
+    },
+    {
+      "start": 1857.72,
+      "end": 1862.44,
+      "text": "This is what another probably market looks like what will oil get to in may of 2026",
+      "source": "pass1",
+      "avg_logprob": -0.11571844216240079
+    },
+    {
+      "start": 1862.44,
+      "end": 1863.64,
+      "text": "So a short term oil prices",
+      "source": "pass1",
+      "avg_logprob": -0.11571844216240079
+    },
+    {
+      "start": 1863.64,
+      "end": 1869.0,
+      "text": "What's the peak or the the bottom of where they will get to since we're between 95 and 100?",
+      "source": "pass1",
+      "avg_logprob": -0.11571844216240079
+    },
+    {
+      "start": 1869.0,
+      "end": 1874.36,
+      "text": "You'll see the highest prices right around there a 77 chance that it drops to some point at 95",
+      "source": "pass1",
+      "avg_logprob": -0.11571844216240079
+    },
+    {
+      "start": 1874.84,
+      "end": 1876.44,
+      "text": "dollars a barrel this month",
+      "source": "pass1",
+      "avg_logprob": -0.11571844216240079
+    },
+    {
+      "start": 1876.44,
+      "end": 1880.52,
+      "text": "But a 92 chance it goes over 100 so a little bit more",
+      "source": "pass1",
+      "avg_logprob": -0.11571844216240079
+    },
+    {
+      "start": 1881.24,
+      "end": 1885.96,
+      "text": "On the upside chance, but there will be some movement here going forward",
+      "source": "pass1",
+      "avg_logprob": -0.11571844216240079
+    },
+    {
+      "start": 1885.96,
+      "end": 1887.96,
+      "text": "But I want you to drop down a little bit",
+      "source": "pass1",
+      "avg_logprob": -0.1332686648505633
+    },
+    {
+      "start": 1888.28,
+      "end": 1891.24,
+      "text": "Will it drop down to 90 dollars a barrel is a 60 percent chance",
+      "source": "pass1",
+      "avg_logprob": -0.1332686648505633
+    },
+    {
+      "start": 1891.24,
+      "end": 1896.44,
+      "text": "So still over you know a half and we'll go over 80 dollars a barrel only a 22 percent chance",
+      "source": "pass1",
+      "avg_logprob": -0.1332686648505633
+    },
+    {
+      "start": 1896.44,
+      "end": 1897.88,
+      "text": "So they're saying",
+      "source": "pass1",
+      "avg_logprob": -0.1332686648505633
+    },
+    {
+      "start": 1897.88,
+      "end": 1901.16,
+      "text": "Markets are saying look we don't expect any wonderful glorious",
+      "source": "pass1",
+      "avg_logprob": -0.1332686648505633
+    },
+    {
+      "start": 1901.64,
+      "end": 1904.84,
+      "text": "Uh situation that's going to make oil drop to you know",
+      "source": "pass1",
+      "avg_logprob": -0.1332686648505633
+    },
+    {
+      "start": 1905.64,
+      "end": 1909.64,
+      "text": "Normal levels anytime soon at least in the month of may going the other way",
+      "source": "pass1",
+      "avg_logprob": -0.1332686648505633
+    },
+    {
+      "start": 1909.72,
+      "end": 1913.16,
+      "text": "Will it get to 110 dollars a barrel that's a that's a significant increase",
+      "source": "pass1",
+      "avg_logprob": -0.1332686648505633
+    },
+    {
+      "start": 1913.16,
+      "end": 1915.16,
+      "text": "But only a 70 percent chance of that happening",
+      "source": "pass1",
+      "avg_logprob": -0.10426821277558225
+    },
+    {
+      "start": 1915.32,
+      "end": 1920.92,
+      "text": "But the real spike at 120 dollars a barrel only a 36 percent chance of that happening",
+      "source": "pass1",
+      "avg_logprob": -0.10426821277558225
+    },
+    {
+      "start": 1921.16,
+      "end": 1924.44,
+      "text": "What are the markets saying here? They're saying look we expect some movement",
+      "source": "pass1",
+      "avg_logprob": -0.10426821277558225
+    },
+    {
+      "start": 1924.68,
+      "end": 1930.68,
+      "text": "We expect some volatility, but we don't expect either a solution or a massive inflammation",
+      "source": "pass1",
+      "avg_logprob": -0.10426821277558225
+    },
+    {
+      "start": 1931.64,
+      "end": 1933.64,
+      "text": "In the next several weeks",
+      "source": "pass1",
+      "avg_logprob": -0.10426821277558225
+    },
+    {
+      "start": 1934.44,
+      "end": 1941.08,
+      "text": "Put those two things together and what are we learning what we're seeing here is that they don't expect an oil crisis anytime soon",
+      "source": "pass1",
+      "avg_logprob": -0.10426821277558225
+    },
+    {
+      "start": 1941.96,
+      "end": 1943.56,
+      "text": "And we don't expect",
+      "source": "pass1",
+      "avg_logprob": -0.13104733957184686
+    },
+    {
+      "start": 1943.56,
+      "end": 1950.76,
+      "text": "Uh nirvana anytime soon right what we expect is more of the same more plotting",
+      "source": "pass1",
+      "avg_logprob": -0.13104733957184686
+    },
+    {
+      "start": 1951.4,
+      "end": 1959.64,
+      "text": "More consistent sort of tension without a massive increase or a massive decrease in that tension",
+      "source": "pass1",
+      "avg_logprob": -0.13104733957184686
+    },
+    {
+      "start": 1960.2,
+      "end": 1963.56,
+      "text": "Uh, we're going to continue kind of on the same path for the foreseeable future",
+      "source": "pass1",
+      "avg_logprob": -0.13104733957184686
+    },
+    {
+      "start": 1963.8,
+      "end": 1967.56,
+      "text": "That's what both of these markets are telling you together when you kind of piece them together and see the story",
+      "source": "pass1",
+      "avg_logprob": -0.13104733957184686
+    },
+    {
+      "start": 1967.64,
+      "end": 1969.64,
+      "text": "Now what does that mean that that doesn't mean",
+      "source": "pass1",
+      "avg_logprob": -0.12952826471410245
+    },
+    {
+      "start": 1970.6,
+      "end": 1975.48,
+      "text": "We're not we can't know for sure what the new ayatollah is going to do or what president trump's going to do",
+      "source": "pass1",
+      "avg_logprob": -0.12952826471410245
+    },
+    {
+      "start": 1975.48,
+      "end": 1979.88,
+      "text": "We could see this go out of control. We could see it going in a bunch of different directions",
+      "source": "pass1",
+      "avg_logprob": -0.12952826471410245
+    },
+    {
+      "start": 1980.28,
+      "end": 1982.28,
+      "text": "But that is what there's no",
+      "source": "pass1",
+      "avg_logprob": -0.12952826471410245
+    },
+    {
+      "start": 1983.0,
+      "end": 1989.32,
+      "text": "Oil crisis on your doorstep right now at least as far as the markets believe that's a good thing",
+      "source": "pass1",
+      "avg_logprob": -0.12952826471410245
+    },
+    {
+      "start": 1989.88,
+      "end": 1994.2,
+      "text": "There's no nirvana ahead of us. We as a you know as a",
+      "source": "pass1",
+      "avg_logprob": -0.12952826471410245
+    },
+    {
+      "start": 1994.84,
+      "end": 1996.6,
+      "text": "When you look at prediction markets, what are they telling us?",
+      "source": "pass1",
+      "avg_logprob": -0.10001199322718161
+    },
+    {
+      "start": 1996.6,
+      "end": 2001.32,
+      "text": "They're predicting a future that looks a lot like what we have right now at least for the coming weeks and months",
+      "source": "pass1",
+      "avg_logprob": -0.10001199322718161
+    },
+    {
+      "start": 2001.88,
+      "end": 2003.88,
+      "text": "When will that change?",
+      "source": "pass1",
+      "avg_logprob": -0.10001199322718161
+    },
+    {
+      "start": 2003.88,
+      "end": 2006.92,
+      "text": "The markets seem to think by the end of the year probably will change",
+      "source": "pass1",
+      "avg_logprob": -0.10001199322718161
+    },
+    {
+      "start": 2007.32,
+      "end": 2010.6,
+      "text": "But we might not see a massive drop-off in oil prices",
+      "source": "pass1",
+      "avg_logprob": -0.10001199322718161
+    },
+    {
+      "start": 2011.24,
+      "end": 2015.72,
+      "text": "Anytime soon and we get into the summer you start to have the normal oil pressures that could make them rise",
+      "source": "pass1",
+      "avg_logprob": -0.10001199322718161
+    },
+    {
+      "start": 2016.12,
+      "end": 2017.72,
+      "text": "Even more so",
+      "source": "pass1",
+      "avg_logprob": -0.10001199322718161
+    },
+    {
+      "start": 2017.72,
+      "end": 2022.68,
+      "text": "You know, there's a concern there. We've talked about how to offset your oil prices and gas prices when it comes",
+      "source": "pass1",
+      "avg_logprob": -0.10001199322718161
+    },
+    {
+      "start": 2023.0,
+      "end": 2025.88,
+      "text": "To prediction markets we can get into that a little bit more as well",
+      "source": "pass1",
+      "avg_logprob": -0.10860303224160753
+    },
+    {
+      "start": 2025.88,
+      "end": 2031.08,
+      "text": "But that's where we stand as far as foreign affairs go. We'll be back with a market. I kind of like next",
+      "source": "pass1",
+      "avg_logprob": -0.10860303224160753
+    },
+    {
+      "start": 2032.28,
+      "end": 2037.16,
+      "text": "It's predictable show dot com to go and get on the sub stack",
+      "source": "pass1",
+      "avg_logprob": -0.10860303224160753
+    },
+    {
+      "start": 2037.32,
+      "end": 2041.0,
+      "text": "We also have a live election special coming up tonight going through",
+      "source": "pass1",
+      "avg_logprob": -0.10860303224160753
+    },
+    {
+      "start": 2041.0,
+      "end": 2044.36,
+      "text": "There's some of the results in the primaries in indiana and ohio",
+      "source": "pass1",
+      "avg_logprob": -0.10860303224160753
+    },
+    {
+      "start": 2044.76,
+      "end": 2046.04,
+      "text": "So join us there",
+      "source": "pass1",
+      "avg_logprob": -0.10860303224160753
+    },
+    {
+      "start": 2046.04,
+      "end": 2048.92,
+      "text": "We'll look for maybe a couple of markets where we can cash in",
+      "source": "pass1",
+      "avg_logprob": -0.10860303224160753
+    },
+    {
+      "start": 2049.32,
+      "end": 2053.24,
+      "text": "On what's going on in the world and what's affecting you on a day-to-day basis",
+      "source": "pass1",
+      "avg_logprob": -0.12006725029398997
+    },
+    {
+      "start": 2053.24,
+      "end": 2055.72,
+      "text": "I mean politicians have been making money off of you for long enough",
+      "source": "pass1",
+      "avg_logprob": -0.12006725029398997
+    },
+    {
+      "start": 2056.04,
+      "end": 2058.04,
+      "text": "So maybe you could make some money off of them",
+      "source": "pass1",
+      "avg_logprob": -0.12006725029398997
+    },
+    {
+      "start": 2058.12,
+      "end": 2063.4,
+      "text": "Just a little baby goal we have here on this particular program and in that vein",
+      "source": "pass1",
+      "avg_logprob": -0.12006725029398997
+    },
+    {
+      "start": 2063.48,
+      "end": 2065.56,
+      "text": "Let me give you a market. So here's one",
+      "source": "pass1",
+      "avg_logprob": -0.12006725029398997
+    },
+    {
+      "start": 2066.2,
+      "end": 2067.48,
+      "text": "I kind of like",
+      "source": "pass1",
+      "avg_logprob": -0.12006725029398997
+    },
+    {
+      "start": 2067.48,
+      "end": 2071.08,
+      "text": "GameStop is making a 56 billion dollar bid for ebay",
+      "source": "pass1",
+      "avg_logprob": -0.12006725029398997
+    },
+    {
+      "start": 2071.72,
+      "end": 2077.4,
+      "text": "Hoping to rival amazon 55.5 billion dollars is what they're offering",
+      "source": "pass1",
+      "avg_logprob": -0.12006725029398997
+    },
+    {
+      "start": 2078.2,
+      "end": 2080.2,
+      "text": "uh to",
+      "source": "pass1",
+      "avg_logprob": -0.13366130315340483
+    },
+    {
+      "start": 2080.36,
+      "end": 2085.4,
+      "text": "Pay for amazon for ebay and they're trying to make themselves in this giant company and of course game stop",
+      "source": "pass1",
+      "avg_logprob": -0.13366130315340483
+    },
+    {
+      "start": 2085.48,
+      "end": 2090.12,
+      "text": "You know, it's a video game. It's a place that sells video games. You know, it's a meme stock",
+      "source": "pass1",
+      "avg_logprob": -0.13366130315340483
+    },
+    {
+      "start": 2090.2,
+      "end": 2091.88,
+      "text": "It's gone through that whole process",
+      "source": "pass1",
+      "avg_logprob": -0.13366130315340483
+    },
+    {
+      "start": 2091.88,
+      "end": 2093.88,
+      "text": "It's been able to access certainly a lot of cash",
+      "source": "pass1",
+      "avg_logprob": -0.13366130315340483
+    },
+    {
+      "start": 2094.2,
+      "end": 2095.88,
+      "text": "And now they're going to try to buy ebay now",
+      "source": "pass1",
+      "avg_logprob": -0.13366130315340483
+    },
+    {
+      "start": 2095.88,
+      "end": 2098.6,
+      "text": "There's some synergy there right between ebay and game stop",
+      "source": "pass1",
+      "avg_logprob": -0.13366130315340483
+    },
+    {
+      "start": 2098.92,
+      "end": 2102.04,
+      "text": "But you know game stop not only has video games has collectibles",
+      "source": "pass1",
+      "avg_logprob": -0.13366130315340483
+    },
+    {
+      "start": 2102.76,
+      "end": 2104.76,
+      "text": "has you know kind of",
+      "source": "pass1",
+      "avg_logprob": -0.13366130315340483
+    },
+    {
+      "start": 2105.4,
+      "end": 2109.08,
+      "text": "I would say a pretty close branding connection with ebay in a way",
+      "source": "pass1",
+      "avg_logprob": -0.0812242885354821
+    },
+    {
+      "start": 2109.72,
+      "end": 2114.76,
+      "text": "But ebay is really really big. It's a 55.5 billion dollar offer",
+      "source": "pass1",
+      "avg_logprob": -0.0812242885354821
+    },
+    {
+      "start": 2115.24,
+      "end": 2117.08,
+      "text": "Do they have the cash to come up with it?",
+      "source": "pass1",
+      "avg_logprob": -0.0812242885354821
+    },
+    {
+      "start": 2117.48,
+      "end": 2121.24,
+      "text": "And so there's a market out there will game stop acquire ebay this year",
+      "source": "pass1",
+      "avg_logprob": -0.0812242885354821
+    },
+    {
+      "start": 2121.32,
+      "end": 2125.96,
+      "text": "There's a lot of stuff to think about usually these acquisitions take a long time to actually go through",
+      "source": "pass1",
+      "avg_logprob": -0.0812242885354821
+    },
+    {
+      "start": 2126.44,
+      "end": 2130.92,
+      "text": "So even if everything was going swimmingly right now, this is an unsolicited offer",
+      "source": "pass1",
+      "avg_logprob": -0.0812242885354821
+    },
+    {
+      "start": 2130.92,
+      "end": 2133.88,
+      "text": "They'd have to agree to the offer. It would have to go through the entire process",
+      "source": "pass1",
+      "avg_logprob": -0.0812242885354821
+    },
+    {
+      "start": 2133.88,
+      "end": 2136.68,
+      "text": "There'd probably all sorts of legal challenges to it and god knows what else",
+      "source": "pass1",
+      "avg_logprob": -0.09338559535212983
+    },
+    {
+      "start": 2137.16,
+      "end": 2140.92,
+      "text": "Even if they even if this was the smoothest thing in the world, I'm not sure I'd be confident",
+      "source": "pass1",
+      "avg_logprob": -0.09338559535212983
+    },
+    {
+      "start": 2141.08,
+      "end": 2143.08,
+      "text": "They'd get this done by the end of the year",
+      "source": "pass1",
+      "avg_logprob": -0.09338559535212983
+    },
+    {
+      "start": 2143.64,
+      "end": 2149.08,
+      "text": "But I want to give you one more piece of evidence because I do have a position on this market. This is one I kind of like",
+      "source": "pass1",
+      "avg_logprob": -0.09338559535212983
+    },
+    {
+      "start": 2150.44,
+      "end": 2152.44,
+      "text": "Let me show you a clip of an interview",
+      "source": "pass1",
+      "avg_logprob": -0.09338559535212983
+    },
+    {
+      "start": 2152.6,
+      "end": 2155.8,
+      "text": "Would the game stop ceo about this deal?",
+      "source": "pass1",
+      "avg_logprob": -0.09338559535212983
+    },
+    {
+      "start": 2156.44,
+      "end": 2157.24,
+      "text": "watch",
+      "source": "pass1",
+      "avg_logprob": -0.09338559535212983
+    },
+    {
+      "start": 2157.24,
+      "end": 2161.8,
+      "text": "Sort of walk us through how how you could get to that price and how it would work",
+      "source": "pass1",
+      "avg_logprob": -0.09338559535212983
+    },
+    {
+      "start": 2163.99,
+      "end": 2167.03,
+      "text": "It's on our website. It's half cash",
+      "source": "pass1",
+      "avg_logprob": -0.14730624591602998
+    },
+    {
+      "start": 2167.99,
+      "end": 2169.99,
+      "text": "half stock",
+      "source": "pass1",
+      "avg_logprob": -0.14730624591602998
+    },
+    {
+      "start": 2170.15,
+      "end": 2173.43,
+      "text": "But but the details are are on our website",
+      "source": "pass1",
+      "avg_logprob": -0.14730624591602998
+    },
+    {
+      "start": 2175.7,
+      "end": 2179.3,
+      "text": "Can you help I've read them, but can you help our audience understand them?",
+      "source": "pass1",
+      "avg_logprob": -0.14730624591602998
+    },
+    {
+      "start": 2181.46,
+      "end": 2183.7,
+      "text": "Yeah, what which part exactly?",
+      "source": "pass1",
+      "avg_logprob": -0.14730624591602998
+    },
+    {
+      "start": 2185.94,
+      "end": 2187.38,
+      "text": "well",
+      "source": "pass1",
+      "avg_logprob": -0.14730624591602998
+    },
+    {
+      "start": 2187.38,
+      "end": 2192.02,
+      "text": "I think we can start with the idea that the market cap of game staff is call it",
+      "source": "pass1",
+      "avg_logprob": -0.14730624591602998
+    },
+    {
+      "start": 2192.74,
+      "end": 2194.74,
+      "text": "11 billion dollars",
+      "source": "pass1",
+      "avg_logprob": -0.14730624591602998
+    },
+    {
+      "start": 2194.74,
+      "end": 2197.7,
+      "text": "You have nine billion dollars on your balance sheet",
+      "source": "pass1",
+      "avg_logprob": -0.16128019947524463
+    },
+    {
+      "start": 2198.58,
+      "end": 2200.58,
+      "text": "Arguably, if you're if you're providing",
+      "source": "pass1",
+      "avg_logprob": -0.16128019947524463
+    },
+    {
+      "start": 2201.22,
+      "end": 2203.22,
+      "text": "effectively all of your stock",
+      "source": "pass1",
+      "avg_logprob": -0.16128019947524463
+    },
+    {
+      "start": 2203.62,
+      "end": 2206.02,
+      "text": "And then and then the cash that gets you to 20",
+      "source": "pass1",
+      "avg_logprob": -0.16128019947524463
+    },
+    {
+      "start": 2206.74,
+      "end": 2208.74,
+      "text": "You have this letter from td",
+      "source": "pass1",
+      "avg_logprob": -0.16128019947524463
+    },
+    {
+      "start": 2208.98,
+      "end": 2210.98,
+      "text": "That's another 20",
+      "source": "pass1",
+      "avg_logprob": -0.16128019947524463
+    },
+    {
+      "start": 2211.06,
+      "end": 2212.74,
+      "text": "We're now at 40",
+      "source": "pass1",
+      "avg_logprob": -0.16128019947524463
+    },
+    {
+      "start": 2212.74,
+      "end": 2214.5,
+      "text": "But we're still off",
+      "source": "pass1",
+      "avg_logprob": -0.16128019947524463
+    },
+    {
+      "start": 2214.5,
+      "end": 2215.38,
+      "text": "by",
+      "source": "pass1",
+      "avg_logprob": -0.16128019947524463
+    },
+    {
+      "start": 2215.38,
+      "end": 2216.5,
+      "text": "call it",
+      "source": "pass1",
+      "avg_logprob": -0.16128019947524463
+    },
+    {
+      "start": 2216.5,
+      "end": 2217.94,
+      "text": "16",
+      "source": "pass1",
+      "avg_logprob": -0.16128019947524463
+    },
+    {
+      "start": 2217.94,
+      "end": 2224.58,
+      "text": "And and the 20 as far as I understand while it's considered a highly confident letter meaning td saying they're highly",
+      "source": "pass1",
+      "avg_logprob": -0.16128019947524463
+    },
+    {
+      "start": 2224.74,
+      "end": 2228.58,
+      "text": "Confident that they would provide the financing. It's not locked financing",
+      "source": "pass1",
+      "avg_logprob": -0.1544524443420497
+    },
+    {
+      "start": 2230.92,
+      "end": 2234.55,
+      "text": "Yeah, we'll see what happens",
+      "source": "pass1",
+      "avg_logprob": -0.1544524443420497
+    },
+    {
+      "start": 2240.15,
+      "end": 2242.15,
+      "text": "I hear you",
+      "source": "pass1",
+      "avg_logprob": -0.1544524443420497
+    },
+    {
+      "start": 2244.5,
+      "end": 2248.02,
+      "text": "Let's see what happens. I mean that's a great answer first of all",
+      "source": "pass1",
+      "avg_logprob": -0.1544524443420497
+    },
+    {
+      "start": 2248.74,
+      "end": 2251.38,
+      "text": "And I like his approach to the media frankly",
+      "source": "pass1",
+      "avg_logprob": -0.1544524443420497
+    },
+    {
+      "start": 2251.94,
+      "end": 2253.94,
+      "text": "He's probably has a future as a talk show host",
+      "source": "pass1",
+      "avg_logprob": -0.1544524443420497
+    },
+    {
+      "start": 2254.5,
+      "end": 2259.46,
+      "text": "That being said, you know the entire value of his company is 11 billion dollars",
+      "source": "pass1",
+      "avg_logprob": -0.1544524443420497
+    },
+    {
+      "start": 2259.62,
+      "end": 2262.26,
+      "text": "He's got another nine billion dollars in cash. Let's say 20 billion there",
+      "source": "pass1",
+      "avg_logprob": -0.1544524443420497
+    },
+    {
+      "start": 2262.66,
+      "end": 2268.58,
+      "text": "He's got a promise not locked in but a promise of another 20 billion in financing which gets him to 40 billion",
+      "source": "pass1",
+      "avg_logprob": -0.13079029763654126
+    },
+    {
+      "start": 2269.14,
+      "end": 2275.46,
+      "text": "Which leaves him 16 billion dollars short of the first offer he's making that they could obviously refuse",
+      "source": "pass1",
+      "avg_logprob": -0.13079029763654126
+    },
+    {
+      "start": 2276.98,
+      "end": 2281.22,
+      "text": "The problem with all of this is uh, I don't think they're getting this done by the end of the year",
+      "source": "pass1",
+      "avg_logprob": -0.13079029763654126
+    },
+    {
+      "start": 2281.78,
+      "end": 2286.9,
+      "text": "That's what I'm gonna say. So, uh, here's one. I kind of like will game stop acquire ebay this year",
+      "source": "pass1",
+      "avg_logprob": -0.13079029763654126
+    },
+    {
+      "start": 2287.46,
+      "end": 2289.46,
+      "text": "I'm gonna go with no",
+      "source": "pass1",
+      "avg_logprob": -0.13079029763654126
+    },
+    {
+      "start": 2289.7,
+      "end": 2291.7,
+      "text": "Which would be a 22",
+      "source": "pass1",
+      "avg_logprob": -0.13079029763654126
+    },
+    {
+      "start": 2292.82,
+      "end": 2300.42,
+      "text": "22 percent chance of that happening. So, uh, you'd be getting a 22 cent gain on every 78 cents you invest",
+      "source": "pass1",
+      "avg_logprob": -0.124734334592466
+    },
+    {
+      "start": 2301.38,
+      "end": 2304.98,
+      "text": "Well worth it. I would say uh, and I think a return on I'm",
+      "source": "pass1",
+      "avg_logprob": -0.124734334592466
+    },
+    {
+      "start": 2306.1,
+      "end": 2310.98,
+      "text": "Pretty confident after seeing that interview. Okay predictable show.com is the place to go to get on the sub stack",
+      "source": "pass1",
+      "avg_logprob": -0.124734334592466
+    },
+    {
+      "start": 2310.98,
+      "end": 2313.3,
+      "text": "Just put your email in there. We'll keep you updated with everything",
+      "source": "pass1",
+      "avg_logprob": -0.124734334592466
+    },
+    {
+      "start": 2313.38,
+      "end": 2317.3,
+      "text": "We'll get your markets like that on a day-to-day basis. You'll also get the show there",
+      "source": "pass1",
+      "avg_logprob": -0.124734334592466
+    },
+    {
+      "start": 2317.38,
+      "end": 2321.54,
+      "text": "We'll also have a live stream tonight to go through the election results. We hope you join us",
+      "source": "pass1",
+      "avg_logprob": -0.124734334592466
+    },
+    {
+      "start": 2322.42,
+      "end": 2324.42,
+      "text": "And uh, you know",
+      "source": "pass1",
+      "avg_logprob": -0.1191585722176925
+    },
+    {
+      "start": 2324.42,
+      "end": 2327.56,
+      "text": "Let's see what happens",
+      "source": "pass1",
+      "avg_logprob": -0.1191585722176925
+    },
+    {
+      "start": 2327.56,
+      "end": 2329.56,
+      "text": "Good night. We'll talk to you tomorrow",
+      "source": "pass1",
+      "avg_logprob": -0.1191585722176925
+    },
+    {
+      "start": 2329.56,
+      "end": 2335.48,
+      "text": "Hi, I'm katie your friend and jeweler at shane company daydreaming about bringing your engagement ring vision to life",
+      "source": "pass1",
+      "avg_logprob": -0.1191585722176925
+    },
+    {
+      "start": 2335.96,
+      "end": 2340.36,
+      "text": "As a jewelry consultant. I'm here to help compare ring styles side by side",
+      "source": "pass1",
+      "avg_logprob": -0.1191585722176925
+    },
+    {
+      "start": 2340.68,
+      "end": 2345.64,
+      "text": "They're in stock and ready to try on then customize it with an engraving or decorative crown",
+      "source": "pass1",
+      "avg_logprob": -0.1191585722176925
+    },
+    {
+      "start": 2346.04,
+      "end": 2350.44,
+      "text": "At shane company. There are so many ways to create your dream ring at your dream price",
+      "source": "pass1",
+      "avg_logprob": -0.1191585722176925
+    },
+    {
+      "start": 2350.84,
+      "end": 2356.2,
+      "text": "Visit us in store or at shameco.com because a friend wants you to get exactly what you want",
+      "source": "pass1",
+      "avg_logprob": -0.1793726718786991
+    },
+    {
+      "start": 2356.68,
+      "end": 2358.68,
+      "text": "shame company your friend and jeweler",
+      "source": "pass1",
+      "avg_logprob": -0.1793726718786991
+    }
+  ],
+  "full_text": "Okay, I have to tell you I was just looking on eBay where I go for all kinds of things I love and there it was that hologram trading card one of the rarest the last one I needed for my set Shiny like the designer handbag of my dreams one of a kind eBay had it and now everyone's asking Oh, where'd you get your windshield wipers eBay has all the parts that fit my car no more annoying Just beautiful Millions of finds each with a story eBay things people love Welcome to predictable with stew go to predictable show dot com If you want to get all connected with the substack We have a lot of written pieces that are kind of prepped and ready to go as we're getting ready to launch all the stuff We're entering into primary season It's going to be a big season for us here at predictable and of course going into election season as well If you are on this channel on maybe on youtube and you are here subscribed for stew does america Let me just quickly tell you that stew and dave do america now exists. It's a thing It's a thing we've been doing for a couple of weeks now and we would love for you to enjoy Joyus Enjoying us over at that channel. It's stew and dave do america search youtube search podcast Do the things is with comedian dave land out. It was really really funny. I think you like the show Quite a bit and it's over on blaze tv as well now We have a primary night tonight. Yeah I will say It's kind of boring I will say it's mostly boring Uh, it's probably a bad way to sell this segment to you But there are of course important elections going on important things going on And a lot of that ties into the prediction market scene So I want to give you a little bit of background on these elections Give you some of the prediction market info as well. Where do things stand? What are we looking for going forward? We have that coming up We have a bunch of stuff as it relates to oil prices and Iran And prediction markets as well as uh, you know, kind of a market I kind of like we'll end the show with today We're going to start though with seven midterm elections on tuesday. We'll test trump's power in indiana This is the way the media is kind of talking about this particular election Understandably so because really again, there's not a ton of drama on these individual races Particularly the ones that you can go on a calcium or a Polymarket or PredictIt and look at there is a good piece from decision desk hq Which is a great source for Election data, especially we want to really dig in deep 16 races to watch in indiana and ohio There's a lot there the the The sort of like main headline here when it comes to this election Is this sort of revenge thing this and the way this all played out If you go back a while we started out with this redistricting process And I can't you know, I get into the middle of these sentences and i'm like, this is the least sexy topic Possibly let me talk to you about redistricting but not the main redistricting the revenge tour The redistricting revenge tour is what we're talking about today. So Trump wanted these states to redistrict their Uh states, you know in between the census to get more seats for republicans leading into the midterms Understandable motivation there, you know, texas did it then california responded then it became this sort of all out Let's find all the seats that we can find One of the states trump looked to was indiana and there they needed to pass this re new redistricting map Which would theoretically net Republicans two seats a lot of people talk about these things as if they're very very Uh formal. Well, we want to we we now want two more seats for republicans and now we will get them It's not the way redistricting redistricting works What you do is basically draw a bunch of lines to try To guarantee your side a few more seats Does that work a lot of times it doesn't and we are seeing examples of this play out as as this election looks A little shaky for republicans in certain places particularly with minority voters There's an issue potentially where you redraw these districts And wind up blowing some districts you already had there's some risk of this in florida Do I think it's gonna happen in florida? No, I think it's probably going to improve the situation in florida But there is some risk there So seven of these republicans Were out there saying hey, uh, you know, we don't want the redistricting in indiana It winds up not passing In indiana and so this angers trump trump says basically i'm going to get revenge on you guys We're going to get Opponents in these primaries to take you all out He's been able to basically arrange and endorse seven different candidates in some of these races Uh district one district 11 19 21 23 38 and 41 Spread around the state as you see here on this helpful map Which shows you that these are all pretty red districts honestly They'll probably be red after this, but uh, there's a couple of interesting matchups in here Couple to highlight linda rogers is one kind of seen as more of a moderate And it's being at least promoted that way By her opponent, uh, dr. Brian schmultz her it's going to be a you know, that's one that they think rogers will hold onto Another is the the jim buck story is kind of interesting jim buck is the incumbent going against a challenger tracy powell Uh, trump powell is the trump backed insurgent candidate if you will Buck is kind of one of the main targets of this push to try to out oversee To take him out. What's interesting about it is he was going to retire. He's like 80 Which is by the way, I don't know if you know this jim way too early to retire in politics 80 You're a spring chicken. You're the youngest person in washington dc But he wanted to retire And then this whole dist redistricting fight came up. He decided to stay in that race is an interesting one to watch And there's a bunch of these now. I will say There's not a ton of markets on this stuff in at that level really the markets for these races tend to Go a little bit at a higher level for congressmen or senate or governor And that's what we're going to focus on for most of this, but let me give you some of these Races and just kind of look give you a quick Glance at these other races when it comes to the redistricting situation In these districts, uh, these all are all bright red districts the closest one being district one 7.2 margin in 2024 for republicans This ranges up from about 13 points in that linda rogers district all the way up to you know over 38 points in district 19 So most of these are going to wind up being republican seats. The question really is which republican Do you want and before we move on from this? I just want to say how central of a Of a strategy this could be and should be for republicans in certain circumstances situations I'm not going to necessarily like I don't like the whole redistricting and you get rid of this I don't like the whole redistricting Approach here. I I wish it wasn't a thing that was happening I wish it wasn't a thing where every state is trying to redistrict on overtly Partisan lines the supreme court basically said you can't do it on racial lines So they want to do it on on these sort of partisan lines Once the district redistricting wars start as the clone wars once did you really can't stop pumping out clones You better do it because this will be a thing where the other side's going to take advantage of you So everyone's going to escalate this to the max The reason why republicans sort of like this is if they can get all these states to redistrict And I do think a state like indiana's possible after this But I also think blue states like illinois are possible Once you do this and you start going to the everyone goes balls to the wall basically you wind up republicans Have more room they have more room to gain from redistricting than democrats do because democrats have been doing it for a long time They've been gerrymandering for a very very long time and they've done it better than republicans have That's the truth You can see this throughout a ton of blue states have almost zero Republican representation. So as this all plays out, I wish I wish this wasn't the case Okay, I wish it wasn't a situation where these redistricting was going on But stepping back from that for a minute one of the core approaches if you happen to be a conservative republican go on and and and if you're gonna have a An approach here when it comes to primaries it should be targeting weaker more moderate Republicans in bright red districts and states There's no reason for mediocre republicans to be in bright red states If you know, you're gonna win again. No, I'm putting in air quotes Republicans have lost You know races in places like alabama, right if the wrong candidates in there you can lose but If you look at a state which is basically a safe safe state If you're looking at a district that is basically a safe district You should get the most conservative person possible into that district Some of that is happening here You know, some of it is just sort of revenge for other redistricting thing But some of those candidates are actually better than the candidates that preceded them And if you can do that if you can improve in a bright red district, you should do that What you don't want to do is throw some hardcore conservative in a race that they're going to lose Um, you know, and when I say hardcore conservative, usually that means is it with air quotes I don't necessarily mean positive, uh, or I don't even mean policy wise a lot of times this just goes back to You know, is there a scandal? Is there a weak candidate? Is there a candidate that can't talk? Uh, is there a candidate that you know may have murdered a school child 12 years ago that we're just discovering now those types of things tend to weaken a candidate So you don't want to throw anybody in there, but you should get the most conservative Policy person in those situations if it's at all possible and that person can win Get the most conservative person for the election that they are in That is winnable. You don't want to always go with the most conservative person at least when it comes to This generic left-right thing. I would rather have a strong conservative who can articulate the policies Rather than some, you know, milk toast person. So that's just me. Um, by the way, uh, in ohio Let's go through a couple a little bit of ohio. Ohio has the senate race But there's no real mystery here in the primaries. Uh, housted versus a shared brown shared brown's going to win the democratic side Houston's going to win the republican side Now this is for a special election to replace jd van. So you may have heard Was elected vice president of the united states. Yeah, I know That's a big thing So he that that is uh, you know going to um, he was uh, he said what's put in as the uh Appointee and now he is running to there to get their shared brown Of course former democratic senator lots of name recognition One of these guys that could actually win in a state like ohio And I would say if the republicans are going to lose the senate. This is a must win It's not exactly a must win like they the democrats could win the senate without ohio But this is one of their better chances in a race. They really shouldn't win And I do think that likely ohio still winds up going Red at the end of the day It is important though to understand that this is a a race that you can't take for granted Especially with a guy like shared brown who's had some statewide success in a place like ohio In the gubernatorial race, you have another relatively close race Vivek Rama swami though is going to cruise to victory tonight Amy acton is going to cruise to victory tonight as well. Both of those cases are pretty much Sure things when it comes to the poll, uh, let me give you this one as well This is a when you're talking about the house races that are kind of up there right now. These are the democratic how races that These are seats that the democrats hold That were in races that trump won in districts that trump won So there's not a ton of them they range from a republican plus 16 district all the way down to a republic republican 1.8 percent district If you see the line though, it's about 10 points. That's where Most experts are seeing this right now if you are in a republican district that you won by 10 or more It's probably leaning your way or maybe even is a solid republican race If you are in a race where trump won by 10 or less Those races tend to be leaning democrat one little asterisk I will show you on the fourth race down there is Henry quay are who looked like he might be going to prison And then trump pardoned him and then quay are ran anyway I think there was an understanding or at least a belief by trump that he'd get out of that race if he got Pardoned instead. He just took advantage of the pardon stayed in the race and now looks like he might hold the seat Which is just completely typical Let me give you a sense as to what we have going on right now in a bunch of these primary races As I said, it's not that sexy, but there are places for you to take advantage Indiana oh three. This is stutzman the guy that we like He is uh somewhere around a 95 percent chance to win today That one from kalshee In indiana oh five victoria sparts running again in the mid 90s when it comes to your chance to win Indiana oh seven is a 95.6 chance for petrick mccally to win No, big surprises here even less a surprise as you get to these bigger races because there's not a ton of liquidity and not a ton of action in those Smaller races when you talk to ohio gubernatorial race Vikram swami as I said, he's got his cruise to victory yet 99.3 chance to win. So that seems pretty good when you go to the more interesting races When it comes to tonight's primary like rama swami, is he going to win? Yes And is there something that you can get out of that? Let me stop here first because there is something That is worthwhile for you When it comes to prediction markets when it comes to increasing your bankroll a little bit for future action in these in these uh primaries that are coming and they're going to come fast and furious now And we're going to have a live stream tonight Going over the results of these and you can take some advantage here now. This is going to sound kind of boring Because it is kind of boring But some of the best financial decisions you make are boring You know Warren Buffett is like a really boring guy You know at least he appears that way from the outside. I've never met him And unless he's making a really dumb point about tax rates and a secretary. He's just kind of a dullard, right? Like he's a very rich dullard. He's not he doesn't he's not driving around Lamborghinis He's not doing it the sexy way, right? He's doing it the boring way and that's his charm When you look at his 10. I was just in a restaurant the other day that has his 10 pieces of investment advice on the wall It was uh, jimmy johns. I think it was and yes, there's all sorts of advice on the walls of jimmy johns But when you're in jimmy johns, look at that read it. It's boring It sets up a very boring approach the reason I bring that up Is because right now if you have money in your checking account, it's going to get you I don't know zero point one percent probably annually every year Not very sexy, okay If you have money in a savings account, maybe you're getting two three percent. There's some really aggressive pieces You know where you might be able to get to four percent There's other ways you put it in the stock market. You can get to 10 percent annually Maybe like on a year to year basis with obviously ups and downs throughout that process These these races that we're talking about are many of them very much sure thing Like stutzman's gonna win his race. Okay, that's gonna happen tonight I I would tell you I'm I would invest on that and I have okay I and you might say well, wait a minute. We were talking about this like 96 chance. What's the point? Well, it's happening tonight If you can get four percent in a day, it's pretty good Not to mention you're if you're in a calcium account for example, they're going to give you three percent annually Anyway, which is what you'd make if you were sticking it in an account now There's some fdic insurance differences granted calcium pretty financially stable right now So i'm not concerned on that on that particular standpoint My my I guess my argument here is if you have some money in your account and you're sitting around You're like well, what should I do with it? I've got an election I want to put this money into the house race that's going to happen in november A lot of times the smarter play is to keep it on the sidelines and pop it into races like this Where you are in a in a sure thing quote unquote environment now look Some of the every 95 chance every once in a while you're going to have one that does not work I would argue none of those races that I just described are one in 20 type situations that you're going to lose um this race for rama swami, ohio rama swami rate is uh It was 99.3 chance. You say well, what's the point in that? Well rama swami is going to win tonight He's going to win his primary that is a as near a certainty as you can find And that's a 0.7 percent, you know, whatever it is 0.7 percent. That's not a great return But when you're talking about, you know, maybe you can get it at 98 or 99 percent A one or two percent return in an evening is not necessarily the wrong thing to do as long as you don't Uh throw this around all the time one of the terms you'll hear used in prediction market talk is called bonding and Uh basically what that means is that people will invest in something early on It will go up to 98 99 percent when it's sure that it's going to happen And then people who have those positions want access to that cash They want to exit those positions and say hey, you know, I don't want to wait another month for this to go Or another week for this to go from 99 to 100 and I'm going to get 1 I want to put that money somewhere else So they will sell out of their positions at 99 a lot of people will say well, this is a sure thing I'm happy to come in at 99 and take that 1 off your hands I'll give you access to your cash back, right? I'll buy it 99 percent. I'll wait for it to resolve at a dollar later on Yeah, sure, it's 1 percent on your money But you can stack those gains over a year if you're if you're doing that once a week Kind of looks a lot better than a checking account, doesn't it? So that is where you can really like take things that are relatively sure Very good possibilities of happening and stack very very small gains in very short periods of time Giving you an annual percentage yield that looks pretty darn good Now if you want to get a little bit riskier if you want to look into something with the chance of Of more gains, you could still find those things tonight. Let me give you an example of that Ohio Republican governor primary Vivek Ramaswamy Vote percentage. So this is not whether he will win or not. It's how high he will get Most of the polls show him in the high 60s to low 70s with some of his kind of lower named, uh, you know Uh Opponents who will almost definitely not win the race You know, they can get into the low the high single digits the low double digits. Maybe 15 16 percent even Will that be enough to keep him? Ramaswamy around, uh, you know 70 80 percent There's a bunch of markets listed here where you can go in and invest as to what you think that rate will be Now one interesting thing and this is something that you'll learn looking around these markets If you're if you're interested in these things There is a position for um for Vivek Ramaswamy to win under 50 percent Now if he wins under 50 percent, there's a chance he's going to lose that election, of course um, and that would be, uh, you know Very small percentage that it would happen. However, there's a, uh, you know Also a chance he could win the election, right And still be under 50 percent if his other opponents somehow got higher The bottom line here is to say that there's more value in his under 50 percent To say no, he won't be under 50 percent Then there is whether he will win and I think there's almost no chance he's going to be under 50 percent So bottom line is a lot of times you can look around and find multiple markets So that are looking at the same thing and find a slider slightly better advantage There, uh than in other places again This isn't the sexiest election night I gotta be honest with you These are not major things that are up for debate But if you want to say hey, will Vivek Ramaswamy clear 80 percent It's about a 50-50 chance I think it's now rising a little bit above that most people think he may Actually clear 80 percent in this uh in this particular election The projection from everybody putting their positions in has him at about 75 percent chance Or 75 percent of the vote Will he get over 80 if he does a little bit better if you think he's going to do a little bit better than people think Then you go over 80 and you could actually double your money Today, so that is another one to look at anything else important. I should get to here Let me just give you a couple of overviews here before we move on to other topics Which party will win the us house all the redistricting from the supreme court has Given you the slightest difference here. Remember we talked about this race at the beginning I mean we we go back all the time where it was at the 50s and 60s But recently we've talked about this race at about an 85 chance for democrats to win the house Again, that might not make you happy. It does not make me happy, but I do believe it is Appropriately priced that number has slid down slightly from 85 to about 80 Since the supreme court ruling so what we're seeing here Is a market that's telling us hey We think there's going to be a change In this market We think there's going to be a change in the chances of of of republicans winning the house We think that there is going to be a change in the number of seats republicans win because of all the redistricting on top Of the supreme court ruling which is going to make states like louisiana need to redraw their districts We recognize that as a market And what we think as a market is that that's not going to be enough For republicans to still hold the house. They have a better chance to do it But it's still at an 80 20 situation. So a four four out of every five elections Democrats would win. That's what the markets are saying right now. You disagree with this You go on calcium you go on Polymarket you go and PredictIt and it's very easy to find a place to Make big time money if you think republicans republicans are going to win there for every 20 cents that you invest You'd win a dollar Okay, so 80 cents profit on a 20 cents 20 cent investment That's good eating if that's what you think is going to happen. I frankly don't at this point I would need more evidence on the to the contrary to convince me But that is where we are right now Um, and and honestly, you know democrats start getting into the 70s I'm going to start looking at you know potentially increasing my position again because I don't I don't think it's that You know, I think probably low 70s. I'm back in I was buying back in the 50s and 60s quite a bit It's been up to to 85 it continues to fall I'd be at least interested to look at it on the other side We're seeing a little bit of a bump in the senate and there's not really a great reason for that Like the redistricting thing did not affect the senate race, but which party will win the u.s. Senate It was at one point, you know 75 80 percent republicans dropped down to about 60 percent republicans held there for a long time until it narrowed Relatively recently and became a tie race at the beginning of this year Maybe february and it's bounced back and forth since republicans now taking a 54 46 chance to win the senate Obviously, it's a massive situation particularly when you're talking about having very old supreme court justices It's important for the senate to remain in republican control if that's what you if you're conservative And that's what you think if you want democrats obviously winning that is a major deal as well Maybe the biggest part of this because the senate is going to is something that republicans should win We have a senate preview that kind of explains all this of that predictable show dot com You can go check that out. It's good reading to get you set for this season. So that's where we are tonight We're going to do a live stream tonight on substack. I think on substack maybe on youtube too I don't know you could check that out by going to predictable show dot com Join us tonight. We'll walk you through if there are any surprises tonight We'll look at that. Vivek Ramaswamy vote percentage Mark it a little bit We'll look at how this is affecting The races going forward because if republicans have a big night tonight If democrats have a big night tonight, you can see the overall race switch a little bit as well We'll talk about that tonight on the live stream I don't know what time we're going to start exactly but as the votes start coming in We'll get in and we'll get you up to date as to what is happening And if there are any opportunities sometimes there are sometimes you'll get a situation where you know republicans get a or democrats get a big burst early And you look at what is remaining in the vote and you say wait a minute. This is going to come back the other way There's sometimes opportunities in markets to take advantage of that. So this hopefully is kind of telling you where we stand And where we can maybe profit as well in the coming days and weeks So we'll join you tonight predictable show dot com We have more coming up with oil and another market that I I kind of like I'll talk to you about that next Welcome back to predictable predictable show dot com and it's predictable show on all sorts of social media go there Follow the show we got all this stuff that we're going to give you So do that do those things whatever those things are go and do them a couple of markets I want to Kind of show you to give you a picture as to What the world is really thinking right now because we are currently I don't know if you've heard this in a war with Iran and that war is kind of on kind of off I don't know what's happening though straight up or moves kind of open kind of closed there's a lot of uncertainty out there and There's sort of a fear of a big oil spike. There's a fear of the war escalating out of control And there's also, you know people who want this thing to be over Remember this was kind of sold to us as a multi-week operation. That's kind of how it was Described at the beginning of multiple times by the president and other officials who said, you know, we go in there We'll get this over with and it should be done soon We'll kind of pass those initial deadlines anyway right now and now we're looking forward to see what could we expect going forward Let me show you a couple things that the markets are saying right now. Here's a Polymarket market us and Iran with a permanent peace deal by May 15th may 31st june 30th or december 31st Now quite clearly with a 4 chance by may 15th only about a week and a half away Not very likely according to these markets only a 4 chance by the end of the month that goes up to about a 14 percent chance By the end of june a 37 percent chance I got to say Good chunk of me thinking I might go on that market and go no On that one. I don't know. I'm not that optimistic and then by the end of the year a 65 chance again a permanent peace deal Now I don't have the the rules of this particular market printed out in front of me um, but A permanent peace deal is a pretty high bar And I want to I want to read those rules specifically to see what ticks that off because you never know Sometimes it's just people saying they've got a permanent peace deal and that will tick the Check the box. If so makes me a little bit, you know, that doesn't necessarily mean that peace deal is real Right, but usually a peace deal is you know, that's a serious situation. You're signing documents and that's usually what that means What the markets are saying here is look, we don't think this war is going to go on forever But it's not going to end anytime really soon You know less than a 50 chance by you know, we're talking another couple months The markets are saying we're skeptical of a deal even if you go out to the end of june We're at the beginning of may So there's a lot of skepticism there by the end of the year We're over 50 to 65 percent markets are saying Hey We think something's going to happen here. We think we'll we'll get to a peace deal eventually But I wouldn't expect it anytime soon That's that market by the way One thing I love when it comes to prediction markets is when my opinion My vibe my position on a market Coincides with me being able to hedge my life Hedge my life is a very central part of my life I've talked about this a bunch of times and you'll hear it a million times here unpredictable with stew I if it's never a reason to take a position For investment gains it is a a reason to take a position like for example as I've discussed Investing hedging my life against a philadelphia eagles, let's say super bowl victory If I go against the eagles if the eagles lose that ruins my life for a period of time But I get paid for that That's that's hedging your life. Okay. That's a pure hedge of your life Like it's it's going to make me happy if the eagles win I won't care about losing the money if the eagles lose. I'll be sad. I better get some money That's how I look at it. That's a pure hedge. This is not a pure hedge I have a real opinion honestly looking at this I have some skepticism on this numbers a permanent peace deal again pending on these rules in the description June 30th for a 37 chance like I do not think there's a 37 chance of a permanent peace deal being done in the next six weeks Like I think that's really unlikely and then when you talk about I would put that more at like five percent And then when it comes to the end of you know, you're talking december 31st end of the year a permanent peace deal again This isn't a standoff where we all kind of just say that we won and people stop firing at each other We're talking about a permanent peace deal. I don't think there's a 65 chance of that by the end of the year I think that might be 25 percent So I like both of those no markets at june 30th and then december 31st particularly and honestly 14 percent by the end of may kind of sounds delicious as well So I'd be no on pretty much all of these markets The other thing I like about this just to give me a little added push Is the fact that if I'm wrong and I lose this money We've ended a war And I'm going to be pretty happy about a war being over So there's a little bit of a hedging your life thing there that gives me a little bit of a bonus To get into one of these markets, which you know, by the way, I probably will uh secondarily Here is uh, because we're telling telling a little bit of a story here Crude oil now right now we're sick in between $9,500 a barrel on this measure right now This is what another probably market looks like what will oil get to in may of 2026 So a short term oil prices What's the peak or the the bottom of where they will get to since we're between 95 and 100? You'll see the highest prices right around there a 77 chance that it drops to some point at 95 dollars a barrel this month But a 92 chance it goes over 100 so a little bit more On the upside chance, but there will be some movement here going forward But I want you to drop down a little bit Will it drop down to 90 dollars a barrel is a 60 percent chance So still over you know a half and we'll go over 80 dollars a barrel only a 22 percent chance So they're saying Markets are saying look we don't expect any wonderful glorious Uh situation that's going to make oil drop to you know Normal levels anytime soon at least in the month of may going the other way Will it get to 110 dollars a barrel that's a that's a significant increase But only a 70 percent chance of that happening But the real spike at 120 dollars a barrel only a 36 percent chance of that happening What are the markets saying here? They're saying look we expect some movement We expect some volatility, but we don't expect either a solution or a massive inflammation In the next several weeks Put those two things together and what are we learning what we're seeing here is that they don't expect an oil crisis anytime soon And we don't expect Uh nirvana anytime soon right what we expect is more of the same more plotting More consistent sort of tension without a massive increase or a massive decrease in that tension Uh, we're going to continue kind of on the same path for the foreseeable future That's what both of these markets are telling you together when you kind of piece them together and see the story Now what does that mean that that doesn't mean We're not we can't know for sure what the new ayatollah is going to do or what president trump's going to do We could see this go out of control. We could see it going in a bunch of different directions But that is what there's no Oil crisis on your doorstep right now at least as far as the markets believe that's a good thing There's no nirvana ahead of us. We as a you know as a When you look at prediction markets, what are they telling us? They're predicting a future that looks a lot like what we have right now at least for the coming weeks and months When will that change? The markets seem to think by the end of the year probably will change But we might not see a massive drop-off in oil prices Anytime soon and we get into the summer you start to have the normal oil pressures that could make them rise Even more so You know, there's a concern there. We've talked about how to offset your oil prices and gas prices when it comes To prediction markets we can get into that a little bit more as well But that's where we stand as far as foreign affairs go. We'll be back with a market. I kind of like next It's predictable show dot com to go and get on the sub stack We also have a live election special coming up tonight going through There's some of the results in the primaries in indiana and ohio So join us there We'll look for maybe a couple of markets where we can cash in On what's going on in the world and what's affecting you on a day-to-day basis I mean politicians have been making money off of you for long enough So maybe you could make some money off of them Just a little baby goal we have here on this particular program and in that vein Let me give you a market. So here's one I kind of like GameStop is making a 56 billion dollar bid for ebay Hoping to rival amazon 55.5 billion dollars is what they're offering uh to Pay for amazon for ebay and they're trying to make themselves in this giant company and of course game stop You know, it's a video game. It's a place that sells video games. You know, it's a meme stock It's gone through that whole process It's been able to access certainly a lot of cash And now they're going to try to buy ebay now There's some synergy there right between ebay and game stop But you know game stop not only has video games has collectibles has you know kind of I would say a pretty close branding connection with ebay in a way But ebay is really really big. It's a 55.5 billion dollar offer Do they have the cash to come up with it? And so there's a market out there will game stop acquire ebay this year There's a lot of stuff to think about usually these acquisitions take a long time to actually go through So even if everything was going swimmingly right now, this is an unsolicited offer They'd have to agree to the offer. It would have to go through the entire process There'd probably all sorts of legal challenges to it and god knows what else Even if they even if this was the smoothest thing in the world, I'm not sure I'd be confident They'd get this done by the end of the year But I want to give you one more piece of evidence because I do have a position on this market. This is one I kind of like Let me show you a clip of an interview Would the game stop ceo about this deal? watch Sort of walk us through how how you could get to that price and how it would work It's on our website. It's half cash half stock But but the details are are on our website Can you help I've read them, but can you help our audience understand them? Yeah, what which part exactly? well I think we can start with the idea that the market cap of game staff is call it 11 billion dollars You have nine billion dollars on your balance sheet Arguably, if you're if you're providing effectively all of your stock And then and then the cash that gets you to 20 You have this letter from td That's another 20 We're now at 40 But we're still off by call it 16 And and the 20 as far as I understand while it's considered a highly confident letter meaning td saying they're highly Confident that they would provide the financing. It's not locked financing Yeah, we'll see what happens I hear you Let's see what happens. I mean that's a great answer first of all And I like his approach to the media frankly He's probably has a future as a talk show host That being said, you know the entire value of his company is 11 billion dollars He's got another nine billion dollars in cash. Let's say 20 billion there He's got a promise not locked in but a promise of another 20 billion in financing which gets him to 40 billion Which leaves him 16 billion dollars short of the first offer he's making that they could obviously refuse The problem with all of this is uh, I don't think they're getting this done by the end of the year That's what I'm gonna say. So, uh, here's one. I kind of like will game stop acquire ebay this year I'm gonna go with no Which would be a 22 22 percent chance of that happening. So, uh, you'd be getting a 22 cent gain on every 78 cents you invest Well worth it. I would say uh, and I think a return on I'm Pretty confident after seeing that interview. Okay predictable show.com is the place to go to get on the sub stack Just put your email in there. We'll keep you updated with everything We'll get your markets like that on a day-to-day basis. You'll also get the show there We'll also have a live stream tonight to go through the election results. We hope you join us And uh, you know Let's see what happens Good night. We'll talk to you tomorrow Hi, I'm katie your friend and jeweler at shane company daydreaming about bringing your engagement ring vision to life As a jewelry consultant. I'm here to help compare ring styles side by side They're in stock and ready to try on then customize it with an engraving or decorative crown At shane company. There are so many ways to create your dream ring at your dream price Visit us in store or at shameco.com because a friend wants you to get exactly what you want shame company your friend and jeweler"
+}

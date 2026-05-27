@@ -4,13 +4,14 @@ import { db } from "../db.js";
 const router = Router();
 
 router.get("/", (req, res) => {
-  const { conviction, status, market, category } = req.query as Record<string, string | undefined>;
+  const { conviction, status, market, category, market_source } = req.query as Record<string, string | undefined>;
   const clauses: string[] = [];
   const params: any[] = [];
-  if (conviction) { clauses.push("c.conviction = ?"); params.push(conviction); }
-  if (status)     { clauses.push("c.status = ?");     params.push(status); }
-  if (market)     { clauses.push("c.market_id = ?");  params.push(market); }
-  if (category)   { clauses.push("m.category = ?");   params.push(category); }
+  if (conviction)    { clauses.push("c.conviction = ?");    params.push(conviction); }
+  if (status)        { clauses.push("c.status = ?");        params.push(status); }
+  if (market)        { clauses.push("c.market_id = ?");     params.push(market); }
+  if (category)      { clauses.push("m.category = ?");      params.push(category); }
+  if (market_source) { clauses.push("m.source = ?");        params.push(market_source); }
   const where = clauses.length ? `WHERE ${clauses.join(" AND ")}` : "";
 
   const rows = db().prepare(`

@@ -11,12 +11,10 @@ const PRIMARY: NavItem[] = [
   { to: "/", label: "Scoreboard", end: true },
   { to: "/calls", label: "Calls" },
   { to: "/episodes", label: "Episodes" },
-  { to: "/markets", label: "Markets" },
+  { to: "/calendar", label: "Calendar" },
 ];
 
 const MORE: NavItem[] = [
-  { to: "/principles", label: "Principles" },
-  { to: "/calendar", label: "Calendar" },
   { to: "/calculator", label: "Calculator" },
   { to: "/guide", label: "Guide" },
   { to: "/about", label: "About" },
@@ -58,11 +56,11 @@ function Icon({ name, className }: { name: string; className?: string }) {
           <path d="M10 9l5 3-5 3z" fill="currentColor" />
         </svg>
       );
-    case "Markets":
+    case "Calendar":
       return (
         <svg {...common}>
-          <path d="M3 17l6-6 4 4 8-8" />
-          <path d="M14 7h7v7" />
+          <rect x="3" y="5" width="18" height="16" rx="2" />
+          <path d="M3 10h18M8 3v4M16 3v4" />
         </svg>
       );
     case "More":

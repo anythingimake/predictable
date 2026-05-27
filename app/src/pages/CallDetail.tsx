@@ -20,6 +20,15 @@ const EVENT_GLYPH: Record<string, string> = {
   clarify: "💬",
 };
 
+const EVENT_LABEL: Record<string, string> = {
+  entry: "Entry",
+  add: "Add",
+  trim: "Trim",
+  exit: "Exit",
+  resolve: "Resolved",
+  clarify: "Clarification",
+};
+
 export function CallDetail() {
   const { id } = useParams<{ id: string }>();
   const [data, setData] = useState<CallDetailData | null>(null);
@@ -74,19 +83,6 @@ export function CallDetail() {
       </section>
 
       <section>
-        <h2 className="text-base md:text-lg font-medium mb-2">Price + events</h2>
-        <div className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-elev)] p-3 sm:p-4">
-          <div className="overflow-x-auto -mx-1 px-1">
-            <div className="min-w-[320px]">
-              <Suspense fallback={<ChartSkeleton />}>
-                <LifecycleChart priceHistory={data.price_history} events={data.events} />
-              </Suspense>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section>
         <h2 className="text-base md:text-lg font-medium mb-3">Lifecycle</h2>
         <div className="space-y-3">
           {data.events.map((e) => (
@@ -97,7 +93,7 @@ export function CallDetail() {
               <div className="flex items-start sm:items-center justify-between gap-3 flex-col sm:flex-row">
                 <div className="flex items-center gap-2 flex-wrap">
                   <span className="text-lg">{EVENT_GLYPH[e.event_type] ?? "•"}</span>
-                  <span className="font-medium uppercase text-sm">{e.event_type}</span>
+                  <span className="font-semibold text-sm">{EVENT_LABEL[e.event_type] ?? e.event_type}</span>
                   {e.price_pct != null && (
                     <span className="text-sm text-[var(--color-text-muted)]">@ {e.price_pct.toFixed(1)}¢</span>
                   )}
@@ -136,6 +132,19 @@ export function CallDetail() {
               )}
             </div>
           ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-base md:text-lg font-medium mb-2">Market price over time</h2>
+        <div className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-elev)] p-3 sm:p-4">
+          <div className="overflow-x-auto -mx-1 px-1">
+            <div className="min-w-[320px]">
+              <Suspense fallback={<ChartSkeleton />}>
+                <LifecycleChart priceHistory={data.price_history} events={data.events} />
+              </Suspense>
+            </div>
+          </div>
         </div>
       </section>
 

@@ -18,8 +18,6 @@ const NAV = [
   { to: "/", label: "Scoreboard", end: true },
   { to: "/calls", label: "Calls" },
   { to: "/episodes", label: "Episodes" },
-  { to: "/markets", label: "Markets" },
-  { to: "/principles", label: "Principles" },
   { to: "/calendar", label: "Calendar" },
   { to: "/calculator", label: "Calculator" },
   { to: "/guide", label: "Guide" },
