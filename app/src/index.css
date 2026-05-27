@@ -79,3 +79,20 @@ a:hover { color: var(--color-text); }
 .no-scrollbar::-webkit-scrollbar {
   display: none;                  /* Chrome / Safari / Edge */
 }
+
+/* Mobile touch-target helper — apply to interactive elements that fall below 44px */
+@media (max-width: 767px) {
+  .tap { min-height: 44px; min-width: 44px; }
+}
+
+/* Bottom-sheet drawer animation */
+@keyframes drawer-slide-up {
+  from { transform: translateY(100%); }
+  to   { transform: translateY(0); }
+}
+@keyframes drawer-fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+.drawer-sheet { animation: drawer-slide-up 0.22s ease-out; }
+.drawer-backdrop { animation: drawer-fade-in 0.18s ease-out; }

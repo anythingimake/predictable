@@ -22,7 +22,7 @@ export function Scoreboard() {
   return (
     <div className="space-y-8">
       <div>
-        <h1 className="text-2xl font-semibold mb-1">Scoreboard</h1>
+        <h1 className="text-xl md:text-2xl font-semibold mb-1">Scoreboard</h1>
         <p className="text-sm text-[var(--color-text-muted)]">
           Stu's tracked calls across Kalshi · Polymarket · PredictIt
         </p>
@@ -47,7 +47,7 @@ export function Scoreboard() {
 
       {data.by_tier.length > 0 && (
         <section>
-          <h2 className="text-lg font-medium mb-3">By conviction tier</h2>
+          <h2 className="text-base md:text-lg font-medium mb-3">By conviction tier</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
             {data.by_tier.map((t) => (
               <div
@@ -72,21 +72,21 @@ export function Scoreboard() {
 
       {data.recent_wins.length > 0 && (
         <section>
-          <h2 className="text-lg font-medium mb-3">Top winners</h2>
+          <h2 className="text-base md:text-lg font-medium mb-3">Top winners</h2>
           <div className="space-y-2">
             {data.recent_wins.map((w) => (
               <Link
                 key={w.id}
                 to={`/calls/${w.id}`}
-                className="flex items-center justify-between rounded border border-[var(--color-border)] bg-[var(--color-bg-elev)] px-4 py-3 hover:border-[var(--color-border-strong)]"
+                className="tap flex items-center justify-between gap-3 rounded border border-[var(--color-border)] bg-[var(--color-bg-elev)] px-4 py-3 hover:border-[var(--color-border-strong)]"
               >
-                <div>
-                  <div className="font-medium">{w.market_hint}</div>
-                  <div className="text-xs text-[var(--color-text-muted)]">
+                <div className="min-w-0 flex-1">
+                  <div className="font-medium truncate">{w.market_hint}</div>
+                  <div className="text-xs text-[var(--color-text-muted)] truncate">
                     {w.publish_date} · {w.episode_title} · {CONVICTION_LABELS[w.conviction]}
                   </div>
                 </div>
-                <div className="text-right">
+                <div className="text-right flex-shrink-0">
                   <div className="text-lg font-semibold text-[var(--color-tier-play)]">
                     +{formatPct(w.realized_pct, 0)}
                   </div>

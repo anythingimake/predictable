@@ -12,6 +12,7 @@ import { Guide } from "./pages/Guide";
 import { Admin } from "./pages/Admin";
 import { About } from "./pages/About";
 import { Wordmark } from "./components/Wordmark";
+import { BottomTabBar } from "./components/BottomTabBar";
 
 const NAV = [
   { to: "/", label: "Scoreboard", end: true },
@@ -33,7 +34,7 @@ export default function App() {
         href="https://predictable.substack.com"
         target="_blank"
         rel="noreferrer"
-        className="block text-center text-xs sm:text-sm font-medium px-3 py-2 transition-all hover:brightness-110"
+        className="block text-center text-[11px] sm:text-sm font-medium px-3 py-1.5 sm:py-2 transition-all hover:brightness-110 leading-snug"
         style={{
           background: "linear-gradient(90deg, #0a1a0e 0%, #0f2b1c 50%, #0a1a0e 100%)",
           borderBottom: "1px solid rgba(34, 197, 94, 0.25)",
@@ -42,7 +43,7 @@ export default function App() {
       >
         <span className="opacity-80">📺 Watch the official show:</span>{" "}
         <span className="font-bold text-[#22c55e]">predictable.substack.com</span>
-        <span className="opacity-80 ml-1">— by Stu Burguiere</span>
+        <span className="opacity-80 ml-1 hidden sm:inline">— by Stu Burguiere</span>
         <span className="ml-2 opacity-60">↗</span>
       </a>
 
@@ -54,10 +55,10 @@ export default function App() {
           boxShadow: "0 1px 0 rgba(91, 141, 246, 0.06), 0 4px 24px rgba(0, 0, 0, 0.3)",
         }}
       >
-        <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between gap-6">
+        <div className="max-w-6xl mx-auto px-4 h-12 md:h-16 flex items-center justify-between gap-6">
           <Wordmark />
           <nav
-            className="flex items-stretch text-sm overflow-x-auto no-scrollbar h-10 rounded-md"
+            className="hidden md:flex items-stretch text-sm overflow-x-auto no-scrollbar h-10 rounded-md"
             style={{
               border: "1px solid var(--color-border)",
               background: "rgba(13, 17, 38, 0.4)",
@@ -98,7 +99,7 @@ export default function App() {
         </div>
       </header>
 
-      <main className="flex-1 max-w-6xl w-full mx-auto px-4 py-6">
+      <main className="flex-1 max-w-6xl w-full mx-auto px-4 py-6 pb-24 md:pb-6">
         <Routes>
           <Route path="/" element={<Scoreboard />} />
           <Route path="/calls" element={<Calls />} />
@@ -115,7 +116,7 @@ export default function App() {
         </Routes>
       </main>
 
-      <footer className="mt-12 border-t border-[var(--color-border)] py-8 text-xs text-[var(--color-text-faint)]">
+      <footer className="mt-12 border-t border-[var(--color-border)] py-8 text-xs text-[var(--color-text-faint)] pb-24 md:pb-8">
         <div className="max-w-6xl mx-auto px-4 flex items-start justify-between gap-6 flex-wrap">
           <div className="space-y-1.5 max-w-lg">
             <p className="font-medium text-[var(--color-text-muted)]">
@@ -124,15 +125,17 @@ export default function App() {
             <p>Nothing here is investment advice. Prediction markets carry real financial risk.</p>
           </div>
           <div className="flex gap-5 text-xs">
-            <a href="https://predictable.substack.com" target="_blank" rel="noreferrer" className="hover:text-[var(--color-text)]">
+            <a href="https://predictable.substack.com" target="_blank" rel="noreferrer" className="tap inline-flex items-center hover:text-[var(--color-text)]">
               The Show ↗
             </a>
-            <a href="https://github.com/anythingimake/predictable" target="_blank" rel="noreferrer" className="hover:text-[var(--color-text)]">
+            <a href="https://github.com/anythingimake/predictable" target="_blank" rel="noreferrer" className="tap inline-flex items-center hover:text-[var(--color-text)]">
               Source ↗
             </a>
           </div>
         </div>
       </footer>
+
+      <BottomTabBar />
     </div>
   );
 }

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "251770204",
+    "author": "GammPaKnight",
+    "body": "Is there some place that has your recommendations on what to buy? I drive for a living so I can't write it down.",
+    "posted_at": "2026-04-30T21:03:31.516Z",
+    "parent_id": null,
+    "is_stu": false
+  },
+  {
+    "id": "255179864",
+    "author": "GammPaKnight",
+    "body": "Those that liked this I found the answer. He put up yesterday's transcript on substack",
+    "posted_at": "2026-05-07T14:08:52.490Z",
+    "parent_id": "251770204",
+    "is_stu": false
+  },
+  {
+    "id": "256335466",
+    "author": "Stu Burguiere",
+    "body": "We\u2019ll be having more written explainers on the individual markets as we go as well. Thanks for checking the show out!",
+    "posted_at": "2026-05-09T16:49:58.152Z",
+    "parent_id": "255179864",
+    "is_stu": true
+  },
+  {
+    "id": "258852511",
+    "author": "John Larson",
+    "body": "These are positions on long shots that are likely to go up some but not win in the end...hence the auto sell orders.",
+    "posted_at": "2026-05-14T11:29:51.108Z",
+    "parent_id": null,
+    "is_stu": false
+  },
+  {
+    "id": "258851993",
+    "author": "John Larson",
+    "body": "Hi Stu, I've started placing positions and setting automatic sell orders when it gets 150% profit against my initial position. This is conservative but is it a smart strategy?",
+    "posted_at": "2026-05-14T11:28:30.540Z",
+    "parent_id": null,
+    "is_stu": false
+  },
+  {
+    "id": "259047167",
+    "author": "Stu Burguiere",
+    "body": "Nothing wrong with that approach. I think as you go, you can tailor it a bit to the types of contracts and opinions you have.  But, if you\u2019re consistently grabbing 50% gains, it\u2019s a great place to be (obviously!)",
+    "posted_at": "2026-05-14T17:37:45.752Z",
+    "parent_id": "258851993",
+    "is_stu": true
+  },
+  {
+    "id": "252011386",
+    "author": "Stefanie Riley",
+    "body": "Stu, I've always known you were the real brains behind Glenn, but your strategy for hedging gas prices with oil markets is BRILLIANT! I am looking forward to learning more about that specifically.",
+    "posted_at": "2026-05-01T11:14:39.903Z",
+    "parent_id": null,
+    "is_stu": false
+  },
+  {
+    "id": "252848894",
+    "author": "Stu Burguiere",
+    "body": "Thanks! Going to work on a separate post about that one as well. ",
+    "posted_at": "2026-05-03T00:59:43.305Z",
+    "parent_id": "252011386",
+    "is_stu": true
+  },
+  {
+    "id": "253611966",
+    "author": "Jack Perkins",
+    "body": "Fascinating! Very informative. I like the term \u201cTruthy\u201d.",
+    "posted_at": "2026-05-04T16:08:38.885Z",
+    "parent_id": null,
+    "is_stu": false
+  },
+  {
+    "id": "253584498",
+    "author": "Barry",
+    "body": "Hi Stu, whats your definition of value as it pertains to the prediction markets",
+    "posted_at": "2026-05-04T15:16:56.575Z",
+    "parent_id": null,
+    "is_stu": false
+  }
+]

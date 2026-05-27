@@ -1,0 +1,4149 @@
+{
+  "audio_file": "C:\\Users\\NoahYaffe\\Documents\\GitHub\\anythingimake\\predictable\\data\\audio\\4e1a374a-4290-11f1-aa98-ebb29423ed9e.mp3",
+  "language": "en",
+  "duration": 1666.61225,
+  "pass1_model": "small",
+  "pass2_model": null,
+  "pass2_rescued_count": 0,
+  "pass1_segment_count": 591,
+  "segments": [
+    {
+      "start": 0.21,
+      "end": 3.77,
+      "text": "Hi, I'm Katie, your friend and jeweler at Shane Company.",
+      "source": "pass1",
+      "avg_logprob": -0.16910877227783203
+    },
+    {
+      "start": 3.77,
+      "end": 6.97,
+      "text": "Daydreaming about bringing your engagement ring vision to life?",
+      "source": "pass1",
+      "avg_logprob": -0.16910877227783203
+    },
+    {
+      "start": 6.97,
+      "end": 9.37,
+      "text": "As a jewelry consultant, I'm here to help.",
+      "source": "pass1",
+      "avg_logprob": -0.16910877227783203
+    },
+    {
+      "start": 9.37,
+      "end": 11.73,
+      "text": "Compare ring styles side by side.",
+      "source": "pass1",
+      "avg_logprob": -0.16910877227783203
+    },
+    {
+      "start": 11.73,
+      "end": 13.93,
+      "text": "They're in stock and ready to try on.",
+      "source": "pass1",
+      "avg_logprob": -0.16910877227783203
+    },
+    {
+      "start": 13.93,
+      "end": 17.13,
+      "text": "Then customize it with an engraving or decorative crown.",
+      "source": "pass1",
+      "avg_logprob": -0.16910877227783203
+    },
+    {
+      "start": 17.13,
+      "end": 20.85,
+      "text": "At Shane Company, there are so many ways to create your dream ring at your dream",
+      "source": "pass1",
+      "avg_logprob": -0.16910877227783203
+    },
+    {
+      "start": 20.85,
+      "end": 21.85,
+      "text": "price.",
+      "source": "pass1",
+      "avg_logprob": -0.16910877227783203
+    },
+    {
+      "start": 21.85,
+      "end": 26.77,
+      "text": "Visit us in-store or at ShaneCo.com because a friend wants you to get exactly what you",
+      "source": "pass1",
+      "avg_logprob": -0.16910877227783203
+    },
+    {
+      "start": 26.77,
+      "end": 27.77,
+      "text": "want.",
+      "source": "pass1",
+      "avg_logprob": -0.16910877227783203
+    },
+    {
+      "start": 27.77,
+      "end": 30.57,
+      "text": "Shane Company, your friend and jeweler.",
+      "source": "pass1",
+      "avg_logprob": -0.23128710146392545
+    },
+    {
+      "start": 30.57,
+      "end": 33.93,
+      "text": "Welcome to Predictable with Stu.",
+      "source": "pass1",
+      "avg_logprob": -0.23128710146392545
+    },
+    {
+      "start": 33.93,
+      "end": 41.41,
+      "text": "I am of course your host, Stu Bergear, and we're kind of in soft launch mode right now.",
+      "source": "pass1",
+      "avg_logprob": -0.23128710146392545
+    },
+    {
+      "start": 41.41,
+      "end": 45.61,
+      "text": "I'm here at the Belize Studios behind me, a couple of rooms over.",
+      "source": "pass1",
+      "avg_logprob": -0.23128710146392545
+    },
+    {
+      "start": 45.61,
+      "end": 51.69,
+      "text": "They are currently constructing and lighting our new studio, our fancy new dicks that",
+      "source": "pass1",
+      "avg_logprob": -0.23128710146392545
+    },
+    {
+      "start": 51.69,
+      "end": 56.17,
+      "text": "are going to be used on a day-to-day basis for the show Predictable once we get started.",
+      "source": "pass1",
+      "avg_logprob": -0.23128710146392545
+    },
+    {
+      "start": 56.17,
+      "end": 57.53,
+      "text": "I think it's going to be next week.",
+      "source": "pass1",
+      "avg_logprob": -0.23128710146392545
+    },
+    {
+      "start": 57.89,
+      "end": 62.41,
+      "text": "It's possible it's late this week, it's right around here where we'll start getting into",
+      "source": "pass1",
+      "avg_logprob": -0.14062047721748067
+    },
+    {
+      "start": 62.41,
+      "end": 66.41,
+      "text": "more of a flow of a normal show, but I wanted to make sure that you're getting some content",
+      "source": "pass1",
+      "avg_logprob": -0.14062047721748067
+    },
+    {
+      "start": 66.41,
+      "end": 69.73,
+      "text": "on the big stories that are going on right now.",
+      "source": "pass1",
+      "avg_logprob": -0.14062047721748067
+    },
+    {
+      "start": 69.73,
+      "end": 76.25,
+      "text": "In fact, it's funny because this is a show that looks at the world, looks at news",
+      "source": "pass1",
+      "avg_logprob": -0.14062047721748067
+    },
+    {
+      "start": 76.25,
+      "end": 79.05,
+      "text": "through the lens of prediction markets.",
+      "source": "pass1",
+      "avg_logprob": -0.14062047721748067
+    },
+    {
+      "start": 79.05,
+      "end": 82.97,
+      "text": "So far, we haven't really started off giving you individual markets and really showing",
+      "source": "pass1",
+      "avg_logprob": -0.14062047721748067
+    },
+    {
+      "start": 82.97,
+      "end": 84.49,
+      "text": "you all the details on those.",
+      "source": "pass1",
+      "avg_logprob": -0.14062047721748067
+    },
+    {
+      "start": 84.49,
+      "end": 87.13,
+      "text": "We'll be doing that once we're in the main studio.",
+      "source": "pass1",
+      "avg_logprob": -0.14062047721748067
+    },
+    {
+      "start": 87.21,
+      "end": 90.73,
+      "text": "I figured it would be at least worth talking about some of these broader issues around",
+      "source": "pass1",
+      "avg_logprob": -0.16957478093043452
+    },
+    {
+      "start": 90.73,
+      "end": 96.89,
+      "text": "prediction markets, especially because honestly, because I'm such a loser and such",
+      "source": "pass1",
+      "avg_logprob": -0.16957478093043452
+    },
+    {
+      "start": 96.89,
+      "end": 100.89,
+      "text": "a nerd and have been in this world for a long time, it's one of those things that",
+      "source": "pass1",
+      "avg_logprob": -0.16957478093043452
+    },
+    {
+      "start": 100.89,
+      "end": 104.89,
+      "text": "I kind of feel like people are more aware of than maybe they are.",
+      "source": "pass1",
+      "avg_logprob": -0.16957478093043452
+    },
+    {
+      "start": 104.89,
+      "end": 107.53,
+      "text": "Like, what do these things mean, how do they work?",
+      "source": "pass1",
+      "avg_logprob": -0.16957478093043452
+    },
+    {
+      "start": 108.57,
+      "end": 112.17,
+      "text": "And a lot of people have a lot of basic questions and a lot of intricate",
+      "source": "pass1",
+      "avg_logprob": -0.16957478093043452
+    },
+    {
+      "start": 112.17,
+      "end": 116.49,
+      "text": "questions about prediction markets and how they are swimming in the world,",
+      "source": "pass1",
+      "avg_logprob": -0.16957478093043452
+    },
+    {
+      "start": 117.05,
+      "end": 121.29,
+      "text": "of course, the media is doing everything they can to destroy them right now.",
+      "source": "pass1",
+      "avg_logprob": -0.11813634168356657
+    },
+    {
+      "start": 121.29,
+      "end": 124.57,
+      "text": "The media is doing everything they can to try to paint these markets as some",
+      "source": "pass1",
+      "avg_logprob": -0.11813634168356657
+    },
+    {
+      "start": 125.13,
+      "end": 129.05,
+      "text": "evil, terrible thing for people without giving anybody the facts.",
+      "source": "pass1",
+      "avg_logprob": -0.11813634168356657
+    },
+    {
+      "start": 129.05,
+      "end": 132.25,
+      "text": "And I think it's important to understand what the facts are around this.",
+      "source": "pass1",
+      "avg_logprob": -0.11813634168356657
+    },
+    {
+      "start": 132.25,
+      "end": 136.49,
+      "text": "I had a bunch of texts from people that I know over the weekend who said,",
+      "source": "pass1",
+      "avg_logprob": -0.11813634168356657
+    },
+    {
+      "start": 136.49,
+      "end": 141.05,
+      "text": "oh gosh, these prediction markets, is there a market on whether someone would",
+      "source": "pass1",
+      "avg_logprob": -0.11813634168356657
+    },
+    {
+      "start": 141.05,
+      "end": 144.41,
+      "text": "try to take President Trump's life like they did at the White House",
+      "source": "pass1",
+      "avg_logprob": -0.11813634168356657
+    },
+    {
+      "start": 144.41,
+      "end": 148.33,
+      "text": "Correspondents' Dinner, you know, there is a history to this.",
+      "source": "pass1",
+      "avg_logprob": -0.12596820064426698
+    },
+    {
+      "start": 148.33,
+      "end": 152.65,
+      "text": "If you go back a long time, there's a long-term academic sort of argument",
+      "source": "pass1",
+      "avg_logprob": -0.12596820064426698
+    },
+    {
+      "start": 152.65,
+      "end": 156.73,
+      "text": "around prediction markets as it relates to things like assassination and terrorism.",
+      "source": "pass1",
+      "avg_logprob": -0.12596820064426698
+    },
+    {
+      "start": 156.73,
+      "end": 163.45,
+      "text": "One of the first uses of prediction markets was DARPA who came up with the idea,",
+      "source": "pass1",
+      "avg_logprob": -0.12596820064426698
+    },
+    {
+      "start": 163.45,
+      "end": 170.49,
+      "text": "hey, what if we make an internal prediction market and let people wager or invest on whether,",
+      "source": "pass1",
+      "avg_logprob": -0.12596820064426698
+    },
+    {
+      "start": 171.29,
+      "end": 174.25,
+      "text": "like, what is the next terrorist attack going to be?",
+      "source": "pass1",
+      "avg_logprob": -0.12781130427663975
+    },
+    {
+      "start": 174.25,
+      "end": 175.29,
+      "text": "This is right after 9-11.",
+      "source": "pass1",
+      "avg_logprob": -0.12781130427663975
+    },
+    {
+      "start": 175.29,
+      "end": 178.49,
+      "text": "I'm thinking like, what's an innovative way to solve a problem like this?",
+      "source": "pass1",
+      "avg_logprob": -0.12781130427663975
+    },
+    {
+      "start": 179.29,
+      "end": 182.17,
+      "text": "Because we obviously missed this 9-11 thing pretty badly.",
+      "source": "pass1",
+      "avg_logprob": -0.12781130427663975
+    },
+    {
+      "start": 182.81,
+      "end": 188.09,
+      "text": "And one of the answers was a market that individuals who were in the intelligence community",
+      "source": "pass1",
+      "avg_logprob": -0.12781130427663975
+    },
+    {
+      "start": 188.65,
+      "end": 192.73,
+      "text": "could put their own money up and say, I think the next terrorist attack is going to be",
+      "source": "pass1",
+      "avg_logprob": -0.12781130427663975
+    },
+    {
+      "start": 192.73,
+      "end": 195.61,
+      "text": "here and they may be working on Somalia.",
+      "source": "pass1",
+      "avg_logprob": -0.12781130427663975
+    },
+    {
+      "start": 195.61,
+      "end": 201.45,
+      "text": "And it was a way to basically elevate the opinions of agents in the field who are like,",
+      "source": "pass1",
+      "avg_logprob": -0.09497436120697897
+    },
+    {
+      "start": 201.45,
+      "end": 202.81,
+      "text": "my stuff is getting ignored.",
+      "source": "pass1",
+      "avg_logprob": -0.09497436120697897
+    },
+    {
+      "start": 202.81,
+      "end": 206.25,
+      "text": "I'm turning this stuff in and I think there's going to be a massive threat from this area.",
+      "source": "pass1",
+      "avg_logprob": -0.09497436120697897
+    },
+    {
+      "start": 206.25,
+      "end": 207.61,
+      "text": "No one's paying attention to me.",
+      "source": "pass1",
+      "avg_logprob": -0.09497436120697897
+    },
+    {
+      "start": 207.61,
+      "end": 208.57,
+      "text": "How do we get that attention?",
+      "source": "pass1",
+      "avg_logprob": -0.09497436120697897
+    },
+    {
+      "start": 208.57,
+      "end": 213.29,
+      "text": "Well, if those markets started to reflect that, the higher ups could say, wait a minute,",
+      "source": "pass1",
+      "avg_logprob": -0.09497436120697897
+    },
+    {
+      "start": 213.29,
+      "end": 214.17,
+      "text": "that's popping over there.",
+      "source": "pass1",
+      "avg_logprob": -0.09497436120697897
+    },
+    {
+      "start": 214.17,
+      "end": 215.53,
+      "text": "What's going on in Somalia?",
+      "source": "pass1",
+      "avg_logprob": -0.09497436120697897
+    },
+    {
+      "start": 215.53,
+      "end": 218.49,
+      "text": "That was kind of the original thought of prediction markets.",
+      "source": "pass1",
+      "avg_logprob": -0.09497436120697897
+    },
+    {
+      "start": 218.49,
+      "end": 221.77,
+      "text": "There, of course, was the book The Wisdom of Crowds that kind of promoted",
+      "source": "pass1",
+      "avg_logprob": -0.09497436120697897
+    },
+    {
+      "start": 221.77,
+      "end": 227.37,
+      "text": "them a little bit more and kind of was one of the first mainstream understandings and",
+      "source": "pass1",
+      "avg_logprob": -0.14114260017427047
+    },
+    {
+      "start": 227.37,
+      "end": 230.17,
+      "text": "mentions of these prediction markets.",
+      "source": "pass1",
+      "avg_logprob": -0.14114260017427047
+    },
+    {
+      "start": 230.17,
+      "end": 237.45,
+      "text": "But as they've developed into real time, the sort of academic purist sort of view on them",
+      "source": "pass1",
+      "avg_logprob": -0.14114260017427047
+    },
+    {
+      "start": 238.01,
+      "end": 238.81,
+      "text": "has changed.",
+      "source": "pass1",
+      "avg_logprob": -0.14114260017427047
+    },
+    {
+      "start": 238.81,
+      "end": 240.49,
+      "text": "This is very normal, by the way.",
+      "source": "pass1",
+      "avg_logprob": -0.14114260017427047
+    },
+    {
+      "start": 240.49,
+      "end": 242.81,
+      "text": "I mean, you can see this in crypto, like Bitcoin, for example.",
+      "source": "pass1",
+      "avg_logprob": -0.14114260017427047
+    },
+    {
+      "start": 242.81,
+      "end": 246.09,
+      "text": "Like obviously the initial use was more of as a currency.",
+      "source": "pass1",
+      "avg_logprob": -0.14114260017427047
+    },
+    {
+      "start": 246.09,
+      "end": 248.65,
+      "text": "It's sort of kind of changed into more of like a digital goal.",
+      "source": "pass1",
+      "avg_logprob": -0.14114260017427047
+    },
+    {
+      "start": 248.65,
+      "end": 250.97,
+      "text": "Now, of course, there's people that do spend it as a currency.",
+      "source": "pass1",
+      "avg_logprob": -0.14114260017427047
+    },
+    {
+      "start": 251.05,
+      "end": 252.17,
+      "text": "And I'm a supporter.",
+      "source": "pass1",
+      "avg_logprob": -0.07842171908789919
+    },
+    {
+      "start": 252.81,
+      "end": 255.29,
+      "text": "But also, that's just the reality of the situation.",
+      "source": "pass1",
+      "avg_logprob": -0.07842171908789919
+    },
+    {
+      "start": 255.29,
+      "end": 259.05,
+      "text": "A lot of times these big grandiose ideas you have at the beginning",
+      "source": "pass1",
+      "avg_logprob": -0.07842171908789919
+    },
+    {
+      "start": 259.05,
+      "end": 261.61,
+      "text": "wind up not being the way the technology is used.",
+      "source": "pass1",
+      "avg_logprob": -0.07842171908789919
+    },
+    {
+      "start": 262.49,
+      "end": 263.53,
+      "text": "I think that's okay.",
+      "source": "pass1",
+      "avg_logprob": -0.07842171908789919
+    },
+    {
+      "start": 263.53,
+      "end": 264.97,
+      "text": "That's not a bad thing.",
+      "source": "pass1",
+      "avg_logprob": -0.07842171908789919
+    },
+    {
+      "start": 264.97,
+      "end": 267.29,
+      "text": "It's something that we all kind of have to get used to.",
+      "source": "pass1",
+      "avg_logprob": -0.07842171908789919
+    },
+    {
+      "start": 267.29,
+      "end": 270.65,
+      "text": "I bring all that up because people were asking me about prediction markets",
+      "source": "pass1",
+      "avg_logprob": -0.07842171908789919
+    },
+    {
+      "start": 270.65,
+      "end": 275.93,
+      "text": "and is there going to be a market on President Trump getting assassinated?",
+      "source": "pass1",
+      "avg_logprob": -0.07842171908789919
+    },
+    {
+      "start": 275.93,
+      "end": 278.49,
+      "text": "I'll say this as someone who's watched this.",
+      "source": "pass1",
+      "avg_logprob": -0.07842171908789919
+    },
+    {
+      "start": 278.49,
+      "end": 280.17,
+      "text": "I don't know if they could have prediction markets on this",
+      "source": "pass1",
+      "avg_logprob": -0.10084449808309033
+    },
+    {
+      "start": 280.17,
+      "end": 282.97,
+      "text": "because it seems like every other freaking week someone's trying to kill the guy.",
+      "source": "pass1",
+      "avg_logprob": -0.10084449808309033
+    },
+    {
+      "start": 282.97,
+      "end": 283.53,
+      "text": "Okay?",
+      "source": "pass1",
+      "avg_logprob": -0.10084449808309033
+    },
+    {
+      "start": 283.53,
+      "end": 284.49,
+      "text": "That's really bad.",
+      "source": "pass1",
+      "avg_logprob": -0.10084449808309033
+    },
+    {
+      "start": 284.49,
+      "end": 286.17,
+      "text": "And by the way, if you're thinking of that, don't.",
+      "source": "pass1",
+      "avg_logprob": -0.10084449808309033
+    },
+    {
+      "start": 287.05,
+      "end": 289.21,
+      "text": "Is that something that we can all kind of agree on?",
+      "source": "pass1",
+      "avg_logprob": -0.10084449808309033
+    },
+    {
+      "start": 289.21,
+      "end": 292.17,
+      "text": "That seems amazing that I have to say something like that.",
+      "source": "pass1",
+      "avg_logprob": -0.10084449808309033
+    },
+    {
+      "start": 292.17,
+      "end": 294.49,
+      "text": "But it does seem to be the reality these days.",
+      "source": "pass1",
+      "avg_logprob": -0.10084449808309033
+    },
+    {
+      "start": 295.13,
+      "end": 299.37,
+      "text": "Anyway, the question as to whether there are assassination markets.",
+      "source": "pass1",
+      "avg_logprob": -0.10084449808309033
+    },
+    {
+      "start": 299.37,
+      "end": 301.13,
+      "text": "Are there terrorism markets?",
+      "source": "pass1",
+      "avg_logprob": -0.10084449808309033
+    },
+    {
+      "start": 301.13,
+      "end": 303.37,
+      "text": "I put that exact question to Michael Selick.",
+      "source": "pass1",
+      "avg_logprob": -0.10084449808309033
+    },
+    {
+      "start": 303.37,
+      "end": 307.05,
+      "text": "He's the chair of the CFTC, the CFTC Overseas Prediction Markets",
+      "source": "pass1",
+      "avg_logprob": -0.10084449808309033
+    },
+    {
+      "start": 307.05,
+      "end": 308.89,
+      "text": "and all the prediction market companies.",
+      "source": "pass1",
+      "avg_logprob": -0.08694551063804176
+    },
+    {
+      "start": 308.89,
+      "end": 313.45,
+      "text": "CFTC is the head regulator and Michael Selick is the chairman of that organization.",
+      "source": "pass1",
+      "avg_logprob": -0.08694551063804176
+    },
+    {
+      "start": 313.45,
+      "end": 314.73,
+      "text": "I was in Washington, D.C.",
+      "source": "pass1",
+      "avg_logprob": -0.08694551063804176
+    },
+    {
+      "start": 314.73,
+      "end": 316.97,
+      "text": "If you didn't catch the whole interview, I want to give you a clip of it.",
+      "source": "pass1",
+      "avg_logprob": -0.08694551063804176
+    },
+    {
+      "start": 316.97,
+      "end": 320.09,
+      "text": "This is Michael Selick talking about markets like this.",
+      "source": "pass1",
+      "avg_logprob": -0.08694551063804176
+    },
+    {
+      "start": 320.09,
+      "end": 323.29,
+      "text": "The media loves stories, these outlier kind of stories",
+      "source": "pass1",
+      "avg_logprob": -0.08694551063804176
+    },
+    {
+      "start": 323.29,
+      "end": 324.65,
+      "text": "when it comes to prediction markets.",
+      "source": "pass1",
+      "avg_logprob": -0.08694551063804176
+    },
+    {
+      "start": 324.65,
+      "end": 327.85,
+      "text": "Most of them are not even occurring here in the United States.",
+      "source": "pass1",
+      "avg_logprob": -0.08694551063804176
+    },
+    {
+      "start": 327.85,
+      "end": 332.97,
+      "text": "We hear these things about war, about death, about assassination,",
+      "source": "pass1",
+      "avg_logprob": -0.08694551063804176
+    },
+    {
+      "start": 332.97,
+      "end": 334.65,
+      "text": "all these markets.",
+      "source": "pass1",
+      "avg_logprob": -0.10039737761610805
+    },
+    {
+      "start": 334.65,
+      "end": 337.05,
+      "text": "Are those markets legal here in the United States?",
+      "source": "pass1",
+      "avg_logprob": -0.10039737761610805
+    },
+    {
+      "start": 337.05,
+      "end": 338.49,
+      "text": "Those markets are also prohibited.",
+      "source": "pass1",
+      "avg_logprob": -0.10039737761610805
+    },
+    {
+      "start": 338.49,
+      "end": 345.37,
+      "text": "Our statute includes a provision that states contracts on war, assassination, terrorism,",
+      "source": "pass1",
+      "avg_logprob": -0.10039737761610805
+    },
+    {
+      "start": 345.37,
+      "end": 348.17,
+      "text": "illegal activity, gaming, which is undefined.",
+      "source": "pass1",
+      "avg_logprob": -0.10039737761610805
+    },
+    {
+      "start": 348.73,
+      "end": 351.77,
+      "text": "These are within the agency's discretion to prohibit.",
+      "source": "pass1",
+      "avg_logprob": -0.10039737761610805
+    },
+    {
+      "start": 351.77,
+      "end": 355.37,
+      "text": "And so we have not allowed and we can reject contracts.",
+      "source": "pass1",
+      "avg_logprob": -0.10039737761610805
+    },
+    {
+      "start": 355.37,
+      "end": 360.09,
+      "text": "We have not allowed any exchanges to list war, terrorism, assassination,",
+      "source": "pass1",
+      "avg_logprob": -0.10039737761610805
+    },
+    {
+      "start": 360.09,
+      "end": 363.21,
+      "text": "and various other sorts of contracts that are illegal.",
+      "source": "pass1",
+      "avg_logprob": -0.09709633424157096
+    },
+    {
+      "start": 364.01,
+      "end": 367.53,
+      "text": "Offshore, we do not oversee the listing of contracts.",
+      "source": "pass1",
+      "avg_logprob": -0.09709633424157096
+    },
+    {
+      "start": 367.53,
+      "end": 370.57,
+      "text": "So there are some exchanges that list these things offshore.",
+      "source": "pass1",
+      "avg_logprob": -0.09709633424157096
+    },
+    {
+      "start": 370.57,
+      "end": 373.85,
+      "text": "And to the extent U.S. persons are accessing that somehow,",
+      "source": "pass1",
+      "avg_logprob": -0.09709633424157096
+    },
+    {
+      "start": 373.85,
+      "end": 376.81,
+      "text": "we have authority to the extent it's extraterritorial,",
+      "source": "pass1",
+      "avg_logprob": -0.09709633424157096
+    },
+    {
+      "start": 376.81,
+      "end": 380.73,
+      "text": "but we don't oversee the exchanges as their primary regulator.",
+      "source": "pass1",
+      "avg_logprob": -0.09709633424157096
+    },
+    {
+      "start": 380.73,
+      "end": 384.49,
+      "text": "And that's where all of these stories seem to come from.",
+      "source": "pass1",
+      "avg_logprob": -0.09709633424157096
+    },
+    {
+      "start": 384.49,
+      "end": 388.41,
+      "text": "Are these overseas exchanges that are not regulated by you?",
+      "source": "pass1",
+      "avg_logprob": -0.09709633424157096
+    },
+    {
+      "start": 388.41,
+      "end": 389.69,
+      "text": "You would not allow that to happen.",
+      "source": "pass1",
+      "avg_logprob": -0.09709633424157096
+    },
+    {
+      "start": 389.77,
+      "end": 391.05,
+      "text": "That's not a thing that can occur.",
+      "source": "pass1",
+      "avg_logprob": -0.12498559679572038
+    },
+    {
+      "start": 391.05,
+      "end": 391.53,
+      "text": "That's right.",
+      "source": "pass1",
+      "avg_logprob": -0.12498559679572038
+    },
+    {
+      "start": 393.53,
+      "end": 396.09,
+      "text": "I can't believe how many people don't understand that.",
+      "source": "pass1",
+      "avg_logprob": -0.12498559679572038
+    },
+    {
+      "start": 397.13,
+      "end": 398.89,
+      "text": "One of the big things I hear from people,",
+      "source": "pass1",
+      "avg_logprob": -0.12498559679572038
+    },
+    {
+      "start": 398.89,
+      "end": 402.49,
+      "text": "including some conservatives and people that I agree with on a lot of things,",
+      "source": "pass1",
+      "avg_logprob": -0.12498559679572038
+    },
+    {
+      "start": 402.49,
+      "end": 404.49,
+      "text": "like, we just can't let these things be the wild west.",
+      "source": "pass1",
+      "avg_logprob": -0.12498559679572038
+    },
+    {
+      "start": 405.13,
+      "end": 406.41,
+      "text": "It's not the wild west.",
+      "source": "pass1",
+      "avg_logprob": -0.12498559679572038
+    },
+    {
+      "start": 406.41,
+      "end": 411.21,
+      "text": "You have regulatory authority over this and you're helping shape this as we go",
+      "source": "pass1",
+      "avg_logprob": -0.12498559679572038
+    },
+    {
+      "start": 412.01,
+      "end": 414.73,
+      "text": "with the attention, at least in my understanding,",
+      "source": "pass1",
+      "avg_logprob": -0.12498559679572038
+    },
+    {
+      "start": 414.73,
+      "end": 417.53,
+      "text": "of allowing these markets and innovations to flourish.",
+      "source": "pass1",
+      "avg_logprob": -0.12498559679572038
+    },
+    {
+      "start": 418.01,
+      "end": 421.29,
+      "text": "It's really an unfair criticism because if you think about, for example,",
+      "source": "pass1",
+      "avg_logprob": -0.10646919092094456
+    },
+    {
+      "start": 421.29,
+      "end": 425.05,
+      "text": "our regulation around food and drinks and all of that here in the United States,",
+      "source": "pass1",
+      "avg_logprob": -0.10646919092094456
+    },
+    {
+      "start": 425.05,
+      "end": 426.25,
+      "text": "we allow certain things.",
+      "source": "pass1",
+      "avg_logprob": -0.10646919092094456
+    },
+    {
+      "start": 427.13,
+      "end": 429.21,
+      "text": "Other countries allow much more things.",
+      "source": "pass1",
+      "avg_logprob": -0.10646919092094456
+    },
+    {
+      "start": 429.21,
+      "end": 430.01,
+      "text": "We have different standards.",
+      "source": "pass1",
+      "avg_logprob": -0.10646919092094456
+    },
+    {
+      "start": 430.01,
+      "end": 432.01,
+      "text": "Some countries have more stringent standards.",
+      "source": "pass1",
+      "avg_logprob": -0.10646919092094456
+    },
+    {
+      "start": 432.01,
+      "end": 435.69,
+      "text": "In the U.S., we have very stringent standards around the listing of these contracts,",
+      "source": "pass1",
+      "avg_logprob": -0.10646919092094456
+    },
+    {
+      "start": 435.69,
+      "end": 439.37,
+      "text": "but that's not to say that they can't be listed offshore in a different exchange",
+      "source": "pass1",
+      "avg_logprob": -0.10646919092094456
+    },
+    {
+      "start": 439.37,
+      "end": 440.97,
+      "text": "under different laws and regulations.",
+      "source": "pass1",
+      "avg_logprob": -0.10646919092094456
+    },
+    {
+      "start": 440.97,
+      "end": 441.29,
+      "text": "Right.",
+      "source": "pass1",
+      "avg_logprob": -0.10646919092094456
+    },
+    {
+      "start": 441.29,
+      "end": 443.77,
+      "text": "I mean, I've eaten in some of these countries and did not work out well.",
+      "source": "pass1",
+      "avg_logprob": -0.10646919092094456
+    },
+    {
+      "start": 443.77,
+      "end": 444.41,
+      "text": "I will tell you.",
+      "source": "pass1",
+      "avg_logprob": -0.10646919092094456
+    },
+    {
+      "start": 444.41,
+      "end": 445.93,
+      "text": "So I'm glad we have some of those rules.",
+      "source": "pass1",
+      "avg_logprob": -0.10646919092094456
+    },
+    {
+      "start": 446.01,
+      "end": 446.57,
+      "text": "Okay.",
+      "source": "pass1",
+      "avg_logprob": -0.1257707805277031
+    },
+    {
+      "start": 446.57,
+      "end": 449.53,
+      "text": "So I don't know that he could have been any more clear about that.",
+      "source": "pass1",
+      "avg_logprob": -0.1257707805277031
+    },
+    {
+      "start": 451.45,
+      "end": 452.65,
+      "text": "These are not legal.",
+      "source": "pass1",
+      "avg_logprob": -0.1257707805277031
+    },
+    {
+      "start": 453.21,
+      "end": 454.89,
+      "text": "They are not legal.",
+      "source": "pass1",
+      "avg_logprob": -0.1257707805277031
+    },
+    {
+      "start": 454.89,
+      "end": 458.97,
+      "text": "Every once in a while, you'll hear about kind of an outlier, crazy market.",
+      "source": "pass1",
+      "avg_logprob": -0.1257707805277031
+    },
+    {
+      "start": 458.97,
+      "end": 466.65,
+      "text": "Someone talking about something when it comes to death or assassination or whatever it is.",
+      "source": "pass1",
+      "avg_logprob": -0.1257707805277031
+    },
+    {
+      "start": 466.65,
+      "end": 471.69,
+      "text": "At the end of the day, though, those are all overseas markets not regulated",
+      "source": "pass1",
+      "avg_logprob": -0.1257707805277031
+    },
+    {
+      "start": 471.69,
+      "end": 474.09,
+      "text": "by the CFTC here in the United States.",
+      "source": "pass1",
+      "avg_logprob": -0.1257707805277031
+    },
+    {
+      "start": 475.05,
+      "end": 478.97,
+      "text": "Of course, it doesn't matter what you do here, passing laws.",
+      "source": "pass1",
+      "avg_logprob": -0.1139453566857498
+    },
+    {
+      "start": 478.97,
+      "end": 485.05,
+      "text": "It's not going to affect what's going on in these other countries or in the darkness of the internet",
+      "source": "pass1",
+      "avg_logprob": -0.1139453566857498
+    },
+    {
+      "start": 485.05,
+      "end": 485.77,
+      "text": "somewhere.",
+      "source": "pass1",
+      "avg_logprob": -0.1139453566857498
+    },
+    {
+      "start": 485.77,
+      "end": 488.49,
+      "text": "So it's important to understand that.",
+      "source": "pass1",
+      "avg_logprob": -0.1139453566857498
+    },
+    {
+      "start": 488.49,
+      "end": 490.89,
+      "text": "And the other question I get all the time is not just about assassinations,",
+      "source": "pass1",
+      "avg_logprob": -0.1139453566857498
+    },
+    {
+      "start": 490.89,
+      "end": 492.09,
+      "text": "it's about insider trading.",
+      "source": "pass1",
+      "avg_logprob": -0.1139453566857498
+    },
+    {
+      "start": 492.09,
+      "end": 494.25,
+      "text": "I wrote a piece on this on predictableshow.com.",
+      "source": "pass1",
+      "avg_logprob": -0.1139453566857498
+    },
+    {
+      "start": 494.25,
+      "end": 498.25,
+      "text": "I encourage you to go to predictableshow.com, subscribe to the sub-stack there.",
+      "source": "pass1",
+      "avg_logprob": -0.1139453566857498
+    },
+    {
+      "start": 498.25,
+      "end": 503.29,
+      "text": "We're going to have lots of articles up to and including specific markets that you can",
+      "source": "pass1",
+      "avg_logprob": -0.1139453566857498
+    },
+    {
+      "start": 503.29,
+      "end": 504.41,
+      "text": "profit on right now.",
+      "source": "pass1",
+      "avg_logprob": -0.09845310123637319
+    },
+    {
+      "start": 504.41,
+      "end": 507.05,
+      "text": "Those will be rolling out here as we go forward.",
+      "source": "pass1",
+      "avg_logprob": -0.09845310123637319
+    },
+    {
+      "start": 507.69,
+      "end": 510.97,
+      "text": "We also have talking about the prediction markets generally.",
+      "source": "pass1",
+      "avg_logprob": -0.09845310123637319
+    },
+    {
+      "start": 510.97,
+      "end": 513.45,
+      "text": "We'll have clips of the show, we'll have live streams, everything you want there.",
+      "source": "pass1",
+      "avg_logprob": -0.09845310123637319
+    },
+    {
+      "start": 514.25,
+      "end": 517.05,
+      "text": "Go to predictableshow.com.",
+      "source": "pass1",
+      "avg_logprob": -0.09845310123637319
+    },
+    {
+      "start": 517.61,
+      "end": 524.73,
+      "text": "But I wanted to go through the insider trading part of this because a lot of people have temptations.",
+      "source": "pass1",
+      "avg_logprob": -0.09845310123637319
+    },
+    {
+      "start": 525.93,
+      "end": 529.93,
+      "text": "Now, what if you are a person who has a little bit of inside knowledge?",
+      "source": "pass1",
+      "avg_logprob": -0.09845310123637319
+    },
+    {
+      "start": 529.93,
+      "end": 530.89,
+      "text": "Just a little bit.",
+      "source": "pass1",
+      "avg_logprob": -0.09845310123637319
+    },
+    {
+      "start": 530.89,
+      "end": 533.21,
+      "text": "And you're thinking to yourself, how do I line my pockets?",
+      "source": "pass1",
+      "avg_logprob": -0.09845310123637319
+    },
+    {
+      "start": 533.93,
+      "end": 536.89,
+      "text": "With the cash flowing through prediction markets right now?",
+      "source": "pass1",
+      "avg_logprob": -0.104375087853634
+    },
+    {
+      "start": 538.49,
+      "end": 542.57,
+      "text": "It's an understandable question because it's this new thing.",
+      "source": "pass1",
+      "avg_logprob": -0.104375087853634
+    },
+    {
+      "start": 542.57,
+      "end": 548.89,
+      "text": "And you probably never had real insight as to what Walmart was doing behind the scenes.",
+      "source": "pass1",
+      "avg_logprob": -0.104375087853634
+    },
+    {
+      "start": 548.89,
+      "end": 555.13,
+      "text": "You may have never had real insult as to what NVIDIA was doing behind the scenes.",
+      "source": "pass1",
+      "avg_logprob": -0.104375087853634
+    },
+    {
+      "start": 555.69,
+      "end": 558.65,
+      "text": "But you may very well have insight onto another issue.",
+      "source": "pass1",
+      "avg_logprob": -0.104375087853634
+    },
+    {
+      "start": 558.65,
+      "end": 562.81,
+      "text": "When you can predict, invest, bet, whatever you want to call it.",
+      "source": "pass1",
+      "avg_logprob": -0.104375087853634
+    },
+    {
+      "start": 562.81,
+      "end": 567.77,
+      "text": "On anything, one of those things might be something you actually have knowledge of.",
+      "source": "pass1",
+      "avg_logprob": -0.11348520311815985
+    },
+    {
+      "start": 568.49,
+      "end": 571.77,
+      "text": "As a person who was on the Glenn Beck program for years and years and years,",
+      "source": "pass1",
+      "avg_logprob": -0.11348520311815985
+    },
+    {
+      "start": 571.77,
+      "end": 577.05,
+      "text": "if there was markets about, hey, will Glenn add an affiliate in Topeka next week?",
+      "source": "pass1",
+      "avg_logprob": -0.11348520311815985
+    },
+    {
+      "start": 577.93,
+      "end": 578.97,
+      "text": "I might know that.",
+      "source": "pass1",
+      "avg_logprob": -0.11348520311815985
+    },
+    {
+      "start": 578.97,
+      "end": 580.89,
+      "text": "And I might be able to go on there and say, yeah, he will.",
+      "source": "pass1",
+      "avg_logprob": -0.11348520311815985
+    },
+    {
+      "start": 580.89,
+      "end": 584.41,
+      "text": "Or is Glenn going, what is Glenn going to say to Donald Trump in this interview?",
+      "source": "pass1",
+      "avg_logprob": -0.11348520311815985
+    },
+    {
+      "start": 585.05,
+      "end": 586.41,
+      "text": "I might have already heard the interview.",
+      "source": "pass1",
+      "avg_logprob": -0.11348520311815985
+    },
+    {
+      "start": 586.41,
+      "end": 587.93,
+      "text": "I might know what the plan is.",
+      "source": "pass1",
+      "avg_logprob": -0.11348520311815985
+    },
+    {
+      "start": 587.93,
+      "end": 589.85,
+      "text": "I might have inside information.",
+      "source": "pass1",
+      "avg_logprob": -0.11348520311815985
+    },
+    {
+      "start": 589.85,
+      "end": 591.77,
+      "text": "What should I do to line my pockets?",
+      "source": "pass1",
+      "avg_logprob": -0.11348520311815985
+    },
+    {
+      "start": 591.77,
+      "end": 593.21,
+      "text": "What's the appropriate way of doing this?",
+      "source": "pass1",
+      "avg_logprob": -0.0788319740547902
+    },
+    {
+      "start": 593.21,
+      "end": 596.81,
+      "text": "I titled it, How to Properly Conduct Insider Trading.",
+      "source": "pass1",
+      "avg_logprob": -0.0788319740547902
+    },
+    {
+      "start": 596.81,
+      "end": 597.85,
+      "text": "And here's the right way to do it.",
+      "source": "pass1",
+      "avg_logprob": -0.0788319740547902
+    },
+    {
+      "start": 598.65,
+      "end": 601.93,
+      "text": "Don't, don't do it.",
+      "source": "pass1",
+      "avg_logprob": -0.0788319740547902
+    },
+    {
+      "start": 604.47,
+      "end": 607.83,
+      "text": "This is a sort of a project that we've been working on for a while.",
+      "source": "pass1",
+      "avg_logprob": -0.0788319740547902
+    },
+    {
+      "start": 607.83,
+      "end": 610.07,
+      "text": "One of the, there's a lot of goals I have for it.",
+      "source": "pass1",
+      "avg_logprob": -0.0788319740547902
+    },
+    {
+      "start": 610.07,
+      "end": 611.51,
+      "text": "And of course I want you to watch it.",
+      "source": "pass1",
+      "avg_logprob": -0.0788319740547902
+    },
+    {
+      "start": 611.51,
+      "end": 616.07,
+      "text": "I want people to, I want you, as Rush used to say, create revenue.",
+      "source": "pass1",
+      "avg_logprob": -0.0788319740547902
+    },
+    {
+      "start": 616.07,
+      "end": 618.95,
+      "text": "I want to make this into a successful business, of course.",
+      "source": "pass1",
+      "avg_logprob": -0.0788319740547902
+    },
+    {
+      "start": 619.91,
+      "end": 622.39,
+      "text": "That's part of my aim here.",
+      "source": "pass1",
+      "avg_logprob": -0.0788319740547902
+    },
+    {
+      "start": 622.39,
+      "end": 627.75,
+      "text": "Part of my aim is also to help you maybe to make a little cash for yourself.",
+      "source": "pass1",
+      "avg_logprob": -0.08308132716587611
+    },
+    {
+      "start": 627.75,
+      "end": 630.79,
+      "text": "Maybe we can be the ones that are a little bit profitable and do pretty well",
+      "source": "pass1",
+      "avg_logprob": -0.08308132716587611
+    },
+    {
+      "start": 630.79,
+      "end": 633.99,
+      "text": "and maybe pay for a dinner out or a vacation or who knows what else.",
+      "source": "pass1",
+      "avg_logprob": -0.08308132716587611
+    },
+    {
+      "start": 634.55,
+      "end": 637.43,
+      "text": "All that's very central to what we're doing here.",
+      "source": "pass1",
+      "avg_logprob": -0.08308132716587611
+    },
+    {
+      "start": 637.43,
+      "end": 641.35,
+      "text": "Another goal, however, and maybe this is our lowest hurdle,",
+      "source": "pass1",
+      "avg_logprob": -0.08308132716587611
+    },
+    {
+      "start": 641.35,
+      "end": 649.11,
+      "text": "is to try to make anyone, someone in the media understand prediction markets before writing",
+      "source": "pass1",
+      "avg_logprob": -0.08308132716587611
+    },
+    {
+      "start": 649.75,
+      "end": 653.03,
+      "text": "about prediction markets, before talking about prediction markets.",
+      "source": "pass1",
+      "avg_logprob": -0.0966930530361227
+    },
+    {
+      "start": 653.59,
+      "end": 658.47,
+      "text": "Any sort of knowledge whatsoever about prediction markets before becoming an expert",
+      "source": "pass1",
+      "avg_logprob": -0.0966930530361227
+    },
+    {
+      "start": 658.47,
+      "end": 662.63,
+      "text": "on prediction markets publicly and trying to explain them to everyday people.",
+      "source": "pass1",
+      "avg_logprob": -0.0966930530361227
+    },
+    {
+      "start": 662.63,
+      "end": 664.71,
+      "text": "Because, you know, they have jobs, right?",
+      "source": "pass1",
+      "avg_logprob": -0.0966930530361227
+    },
+    {
+      "start": 664.71,
+      "end": 665.91,
+      "text": "They have lives.",
+      "source": "pass1",
+      "avg_logprob": -0.0966930530361227
+    },
+    {
+      "start": 665.91,
+      "end": 669.43,
+      "text": "The average person isn't sitting around trying to figure this stuff out on a day-to-day",
+      "source": "pass1",
+      "avg_logprob": -0.0966930530361227
+    },
+    {
+      "start": 669.43,
+      "end": 671.03,
+      "text": "basis, but they're probably interested in it.",
+      "source": "pass1",
+      "avg_logprob": -0.0966930530361227
+    },
+    {
+      "start": 671.03,
+      "end": 673.83,
+      "text": "And they see all these headlines about people being killed and someone made",
+      "source": "pass1",
+      "avg_logprob": -0.0966930530361227
+    },
+    {
+      "start": 673.83,
+      "end": 679.91,
+      "text": "money and someone, you know, in Venezuela, the Venezuela Maduro action,",
+      "source": "pass1",
+      "avg_logprob": -0.13257531121373176
+    },
+    {
+      "start": 679.91,
+      "end": 683.59,
+      "text": "someone knew about it in advance, they made $400,000, someone's going to jail for it.",
+      "source": "pass1",
+      "avg_logprob": -0.13257531121373176
+    },
+    {
+      "start": 684.15,
+      "end": 684.95,
+      "text": "What's going on?",
+      "source": "pass1",
+      "avg_logprob": -0.13257531121373176
+    },
+    {
+      "start": 686.47,
+      "end": 688.23,
+      "text": "I understand why you have these questions.",
+      "source": "pass1",
+      "avg_logprob": -0.13257531121373176
+    },
+    {
+      "start": 688.23,
+      "end": 691.51,
+      "text": "And I understand that the media is not doing a very good job answering them.",
+      "source": "pass1",
+      "avg_logprob": -0.13257531121373176
+    },
+    {
+      "start": 691.51,
+      "end": 699.03,
+      "text": "Now, this is a newsletter that is a newsletter that covers Hollywood,",
+      "source": "pass1",
+      "avg_logprob": -0.13257531121373176
+    },
+    {
+      "start": 699.03,
+      "end": 700.15,
+      "text": "insider newsletter.",
+      "source": "pass1",
+      "avg_logprob": -0.13257531121373176
+    },
+    {
+      "start": 700.15,
+      "end": 704.39,
+      "text": "And they had this, and I thought it was an interesting illustration of the problem",
+      "source": "pass1",
+      "avg_logprob": -0.10395848491628255
+    },
+    {
+      "start": 704.39,
+      "end": 706.39,
+      "text": "right now in this particular area.",
+      "source": "pass1",
+      "avg_logprob": -0.10395848491628255
+    },
+    {
+      "start": 706.39,
+      "end": 707.19,
+      "text": "This is what they write.",
+      "source": "pass1",
+      "avg_logprob": -0.10395848491628255
+    },
+    {
+      "start": 708.47,
+      "end": 712.23,
+      "text": "In the prediction market era, almost anyone can bet on anything,",
+      "source": "pass1",
+      "avg_logprob": -0.10395848491628255
+    },
+    {
+      "start": 712.23,
+      "end": 716.07,
+      "text": "from the Nicolas Maduro ouster to the Outer Banks release date,",
+      "source": "pass1",
+      "avg_logprob": -0.10395848491628255
+    },
+    {
+      "start": 716.07,
+      "end": 719.83,
+      "text": "even if they have privileged knowledge that makes betting a sure thing.",
+      "source": "pass1",
+      "avg_logprob": -0.10395848491628255
+    },
+    {
+      "start": 720.55,
+      "end": 725.67,
+      "text": "The problem with a sentence like this is that it is 100% inaccurate.",
+      "source": "pass1",
+      "avg_logprob": -0.10395848491628255
+    },
+    {
+      "start": 725.67,
+      "end": 729.35,
+      "text": "Literally every part of that sentence is wrong.",
+      "source": "pass1",
+      "avg_logprob": -0.10395848491628255
+    },
+    {
+      "start": 730.07,
+      "end": 735.27,
+      "text": "You cannot, if you have insider information about when is the release date of Outer Banks,",
+      "source": "pass1",
+      "avg_logprob": -0.09945397356809196
+    },
+    {
+      "start": 735.27,
+      "end": 739.43,
+      "text": "go on a prediction market and put your money down on that position.",
+      "source": "pass1",
+      "avg_logprob": -0.09945397356809196
+    },
+    {
+      "start": 739.43,
+      "end": 740.23,
+      "text": "Why?",
+      "source": "pass1",
+      "avg_logprob": -0.09945397356809196
+    },
+    {
+      "start": 740.23,
+      "end": 741.51,
+      "text": "It is illegal.",
+      "source": "pass1",
+      "avg_logprob": -0.09945397356809196
+    },
+    {
+      "start": 741.51,
+      "end": 742.39,
+      "text": "This is a crime.",
+      "source": "pass1",
+      "avg_logprob": -0.09945397356809196
+    },
+    {
+      "start": 743.11,
+      "end": 744.79,
+      "text": "Insider trading is a crime.",
+      "source": "pass1",
+      "avg_logprob": -0.09945397356809196
+    },
+    {
+      "start": 744.79,
+      "end": 747.11,
+      "text": "Now, I suppose you can do it.",
+      "source": "pass1",
+      "avg_logprob": -0.09945397356809196
+    },
+    {
+      "start": 747.11,
+      "end": 751.83,
+      "text": "You can theoretically go on and sign up and put money on one of these,",
+      "source": "pass1",
+      "avg_logprob": -0.09945397356809196
+    },
+    {
+      "start": 751.83,
+      "end": 752.71,
+      "text": "but it is illegal.",
+      "source": "pass1",
+      "avg_logprob": -0.09945397356809196
+    },
+    {
+      "start": 752.71,
+      "end": 756.31,
+      "text": "Just like, you know, someone in this era of automobiles,",
+      "source": "pass1",
+      "avg_logprob": -0.09945397356809196
+    },
+    {
+      "start": 757.27,
+      "end": 761.51,
+      "text": "and almost anyone can run over a bunch of kindergartners at a bus stop.",
+      "source": "pass1",
+      "avg_logprob": -0.11920004920853723
+    },
+    {
+      "start": 761.51,
+      "end": 766.87,
+      "text": "Yes, you can do it, but we have criminal penalties in place to stop you from doing it,",
+      "source": "pass1",
+      "avg_logprob": -0.11920004920853723
+    },
+    {
+      "start": 766.87,
+      "end": 769.19,
+      "text": "to dissuade you from going that direction.",
+      "source": "pass1",
+      "avg_logprob": -0.11920004920853723
+    },
+    {
+      "start": 769.83,
+      "end": 773.91,
+      "text": "And, you know, I think when people look at this and they say,",
+      "source": "pass1",
+      "avg_logprob": -0.11920004920853723
+    },
+    {
+      "start": 773.91,
+      "end": 778.31,
+      "text": "oh, I can get on there, I can throw some money down and make a little extra scratch.",
+      "source": "pass1",
+      "avg_logprob": -0.11920004920853723
+    },
+    {
+      "start": 778.31,
+      "end": 779.67,
+      "text": "I happen to know something about this.",
+      "source": "pass1",
+      "avg_logprob": -0.11920004920853723
+    },
+    {
+      "start": 780.71,
+      "end": 784.23,
+      "text": "Michael Selick went into that in that clip on some of those markets,",
+      "source": "pass1",
+      "avg_logprob": -0.11920004920853723
+    },
+    {
+      "start": 784.23,
+      "end": 788.87,
+      "text": "but also throughout the interview talking about how this is just actually wrong and illegal.",
+      "source": "pass1",
+      "avg_logprob": -0.12563121448392453
+    },
+    {
+      "start": 790.15,
+      "end": 793.51,
+      "text": "It's, I think the issue is it feels fun.",
+      "source": "pass1",
+      "avg_logprob": -0.12563121448392453
+    },
+    {
+      "start": 794.39,
+      "end": 798.47,
+      "text": "Nothing's fun about investing in pork bellies, pork belly futures.",
+      "source": "pass1",
+      "avg_logprob": -0.12563121448392453
+    },
+    {
+      "start": 798.47,
+      "end": 802.71,
+      "text": "Nothing's fun about, you know, picking up a mining company and saying,",
+      "source": "pass1",
+      "avg_logprob": -0.12563121448392453
+    },
+    {
+      "start": 802.71,
+      "end": 803.67,
+      "text": "I'm going to buy their stock.",
+      "source": "pass1",
+      "avg_logprob": -0.12563121448392453
+    },
+    {
+      "start": 803.67,
+      "end": 805.83,
+      "text": "That's just like a drudgery, right?",
+      "source": "pass1",
+      "avg_logprob": -0.12563121448392453
+    },
+    {
+      "start": 805.83,
+      "end": 807.43,
+      "text": "It's, I mean, maybe you're really into it.",
+      "source": "pass1",
+      "avg_logprob": -0.12563121448392453
+    },
+    {
+      "start": 807.43,
+      "end": 809.51,
+      "text": "Maybe you're a NBC nerd and that's cool.",
+      "source": "pass1",
+      "avg_logprob": -0.12563121448392453
+    },
+    {
+      "start": 810.31,
+      "end": 813.83,
+      "text": "But if you're a normal person, like, you don't care about that.",
+      "source": "pass1",
+      "avg_logprob": -0.12563121448392453
+    },
+    {
+      "start": 813.83,
+      "end": 817.43,
+      "text": "Predicting what might happen in a sporting event that you care about,",
+      "source": "pass1",
+      "avg_logprob": -0.08810252719853498
+    },
+    {
+      "start": 817.43,
+      "end": 820.39,
+      "text": "what happened at the Oscars, what might happen in an election.",
+      "source": "pass1",
+      "avg_logprob": -0.08810252719853498
+    },
+    {
+      "start": 820.39,
+      "end": 822.47,
+      "text": "Those are fun and interesting to people.",
+      "source": "pass1",
+      "avg_logprob": -0.08810252719853498
+    },
+    {
+      "start": 822.47,
+      "end": 825.83,
+      "text": "And because of that, I think there's a, the guard is down a little bit.",
+      "source": "pass1",
+      "avg_logprob": -0.08810252719853498
+    },
+    {
+      "start": 826.55,
+      "end": 829.19,
+      "text": "People sit back and they say, ah, you know, it's just,",
+      "source": "pass1",
+      "avg_logprob": -0.08810252719853498
+    },
+    {
+      "start": 829.19,
+      "end": 830.87,
+      "text": "it's just, you know, thrown a few bucks in there.",
+      "source": "pass1",
+      "avg_logprob": -0.08810252719853498
+    },
+    {
+      "start": 830.87,
+      "end": 831.59,
+      "text": "It's no big deal.",
+      "source": "pass1",
+      "avg_logprob": -0.08810252719853498
+    },
+    {
+      "start": 831.59,
+      "end": 832.87,
+      "text": "It's just good, clean fun.",
+      "source": "pass1",
+      "avg_logprob": -0.08810252719853498
+    },
+    {
+      "start": 833.51,
+      "end": 837.43,
+      "text": "I understand that, but just remember, these are actual financial markets.",
+      "source": "pass1",
+      "avg_logprob": -0.08810252719853498
+    },
+    {
+      "start": 837.43,
+      "end": 839.43,
+      "text": "They actually have a regulator.",
+      "source": "pass1",
+      "avg_logprob": -0.08810252719853498
+    },
+    {
+      "start": 839.43,
+      "end": 842.87,
+      "text": "This is something, if you feel like you're on the line,",
+      "source": "pass1",
+      "avg_logprob": -0.08810252719853498
+    },
+    {
+      "start": 842.87,
+      "end": 844.47,
+      "text": "if you're asking yourself, gosh, I don't know,",
+      "source": "pass1",
+      "avg_logprob": -0.10389359342824121
+    },
+    {
+      "start": 844.47,
+      "end": 846.63,
+      "text": "this, is this going to be a problem with insider trading?",
+      "source": "pass1",
+      "avg_logprob": -0.10389359342824121
+    },
+    {
+      "start": 846.63,
+      "end": 849.11,
+      "text": "If I'm ever asked about it, just stay away from it.",
+      "source": "pass1",
+      "avg_logprob": -0.10389359342824121
+    },
+    {
+      "start": 849.75,
+      "end": 852.71,
+      "text": "There's plenty of markets out there that you know nothing about.",
+      "source": "pass1",
+      "avg_logprob": -0.10389359342824121
+    },
+    {
+      "start": 852.71,
+      "end": 854.23,
+      "text": "Absolutely nothing about.",
+      "source": "pass1",
+      "avg_logprob": -0.10389359342824121
+    },
+    {
+      "start": 854.23,
+      "end": 857.59,
+      "text": "And you could still wind up being profitable there.",
+      "source": "pass1",
+      "avg_logprob": -0.10389359342824121
+    },
+    {
+      "start": 857.59,
+      "end": 858.71,
+      "text": "We're going to help you try to do that.",
+      "source": "pass1",
+      "avg_logprob": -0.10389359342824121
+    },
+    {
+      "start": 859.43,
+      "end": 862.31,
+      "text": "There are probably things you know about that just watching in the news.",
+      "source": "pass1",
+      "avg_logprob": -0.10389359342824121
+    },
+    {
+      "start": 862.31,
+      "end": 865.19,
+      "text": "There are things you know about in your day-to-day life,",
+      "source": "pass1",
+      "avg_logprob": -0.10389359342824121
+    },
+    {
+      "start": 865.19,
+      "end": 868.79,
+      "text": "observations you've made, rules you've made in your own head that prove",
+      "source": "pass1",
+      "avg_logprob": -0.10389359342824121
+    },
+    {
+      "start": 868.79,
+      "end": 870.31,
+      "text": "that you're going to win in a particular market.",
+      "source": "pass1",
+      "avg_logprob": -0.10389359342824121
+    },
+    {
+      "start": 870.31,
+      "end": 871.19,
+      "text": "That all is real.",
+      "source": "pass1",
+      "avg_logprob": -0.10452596109304856
+    },
+    {
+      "start": 872.31,
+      "end": 877.11,
+      "text": "Knowing something for sure in advance and investing in a market like this",
+      "source": "pass1",
+      "avg_logprob": -0.10452596109304856
+    },
+    {
+      "start": 877.11,
+      "end": 880.79,
+      "text": "can actually give you massive legal trouble and you want to stay away from it.",
+      "source": "pass1",
+      "avg_logprob": -0.10452596109304856
+    },
+    {
+      "start": 880.79,
+      "end": 882.79,
+      "text": "Now, a lot of people will say, oh, it's just a little side money.",
+      "source": "pass1",
+      "avg_logprob": -0.10452596109304856
+    },
+    {
+      "start": 882.79,
+      "end": 883.91,
+      "text": "That's what the article said.",
+      "source": "pass1",
+      "avg_logprob": -0.10452596109304856
+    },
+    {
+      "start": 883.91,
+      "end": 886.15,
+      "text": "It said it was just a little bit of side money you can earn.",
+      "source": "pass1",
+      "avg_logprob": -0.10452596109304856
+    },
+    {
+      "start": 886.87,
+      "end": 889.43,
+      "text": "And I get that, but it's more than that.",
+      "source": "pass1",
+      "avg_logprob": -0.10452596109304856
+    },
+    {
+      "start": 891.83,
+      "end": 896.39,
+      "text": "This is a clip from this same newsletter.",
+      "source": "pass1",
+      "avg_logprob": -0.10452596109304856
+    },
+    {
+      "start": 896.39,
+      "end": 897.43,
+      "text": "Let's see if I can find it here real quick.",
+      "source": "pass1",
+      "avg_logprob": -0.10452596109304856
+    },
+    {
+      "start": 898.23,
+      "end": 898.79,
+      "text": "Here it is.",
+      "source": "pass1",
+      "avg_logprob": -0.10452596109304856
+    },
+    {
+      "start": 898.79,
+      "end": 902.39,
+      "text": "He says, I know a guy who works for a CBS competition show.",
+      "source": "pass1",
+      "avg_logprob": -0.07951780079409133
+    },
+    {
+      "start": 902.39,
+      "end": 904.15,
+      "text": "Now, I don't watch a lot of CBS.",
+      "source": "pass1",
+      "avg_logprob": -0.07951780079409133
+    },
+    {
+      "start": 904.15,
+      "end": 905.67,
+      "text": "I don't watch a lot of competition shows.",
+      "source": "pass1",
+      "avg_logprob": -0.07951780079409133
+    },
+    {
+      "start": 905.67,
+      "end": 907.03,
+      "text": "The only one I know of is Survivor.",
+      "source": "pass1",
+      "avg_logprob": -0.07951780079409133
+    },
+    {
+      "start": 907.03,
+      "end": 908.15,
+      "text": "So maybe he's talking about that.",
+      "source": "pass1",
+      "avg_logprob": -0.07951780079409133
+    },
+    {
+      "start": 908.15,
+      "end": 908.55,
+      "text": "I don't know.",
+      "source": "pass1",
+      "avg_logprob": -0.07951780079409133
+    },
+    {
+      "start": 909.11,
+      "end": 910.55,
+      "text": "He says, you can guess which one.",
+      "source": "pass1",
+      "avg_logprob": -0.07951780079409133
+    },
+    {
+      "start": 910.55,
+      "end": 912.95,
+      "text": "And he's been making a little side money on the prediction apps.",
+      "source": "pass1",
+      "avg_logprob": -0.07951780079409133
+    },
+    {
+      "start": 912.95,
+      "end": 914.47,
+      "text": "It's actually pretty easy.",
+      "source": "pass1",
+      "avg_logprob": -0.07951780079409133
+    },
+    {
+      "start": 914.47,
+      "end": 915.99,
+      "text": "It is easy, I'm sure.",
+      "source": "pass1",
+      "avg_logprob": -0.07951780079409133
+    },
+    {
+      "start": 915.99,
+      "end": 919.27,
+      "text": "Lots of people do lots of things that are very easy and also illegal.",
+      "source": "pass1",
+      "avg_logprob": -0.07951780079409133
+    },
+    {
+      "start": 920.95,
+      "end": 922.47,
+      "text": "You can get away with a lot of things.",
+      "source": "pass1",
+      "avg_logprob": -0.07951780079409133
+    },
+    {
+      "start": 923.19,
+      "end": 925.83,
+      "text": "It's just the risk builds up the more and more you do it.",
+      "source": "pass1",
+      "avg_logprob": -0.07951780079409133
+    },
+    {
+      "start": 926.47,
+      "end": 927.59,
+      "text": "Try to stay away from that.",
+      "source": "pass1",
+      "avg_logprob": -0.07951780079409133
+    },
+    {
+      "start": 929.03,
+      "end": 932.87,
+      "text": "And this sort of fake concern from everybody in the media.",
+      "source": "pass1",
+      "avg_logprob": -0.07341923336593473
+    },
+    {
+      "start": 932.87,
+      "end": 936.79,
+      "text": "Oh, gosh, I can't believe this person made $5,000 on this.",
+      "source": "pass1",
+      "avg_logprob": -0.07341923336593473
+    },
+    {
+      "start": 937.75,
+      "end": 939.27,
+      "text": "Will you stop it for a second?",
+      "source": "pass1",
+      "avg_logprob": -0.07341923336593473
+    },
+    {
+      "start": 939.27,
+      "end": 942.95,
+      "text": "Where were you guys when, you know,",
+      "source": "pass1",
+      "avg_logprob": -0.07341923336593473
+    },
+    {
+      "start": 942.95,
+      "end": 945.83,
+      "text": "leaning centers were popping up all over Minnesota?",
+      "source": "pass1",
+      "avg_logprob": -0.07341923336593473
+    },
+    {
+      "start": 945.83,
+      "end": 946.55,
+      "text": "Where were you then?",
+      "source": "pass1",
+      "avg_logprob": -0.07341923336593473
+    },
+    {
+      "start": 947.67,
+      "end": 953.35,
+      "text": "Where were you when COVID fraud was absolutely everywhere",
+      "source": "pass1",
+      "avg_logprob": -0.07341923336593473
+    },
+    {
+      "start": 953.35,
+      "end": 957.99,
+      "text": "and hundreds of billions of dollars were being wasted?",
+      "source": "pass1",
+      "avg_logprob": -0.07341923336593473
+    },
+    {
+      "start": 958.07,
+      "end": 965.91,
+      "text": "Where were you when Nancy freaking Pelosi somehow became",
+      "source": "pass1",
+      "avg_logprob": -0.06660956610934902
+    },
+    {
+      "start": 965.91,
+      "end": 972.39,
+      "text": "the single most clairvoyant stock investor in American history?",
+      "source": "pass1",
+      "avg_logprob": -0.06660956610934902
+    },
+    {
+      "start": 972.39,
+      "end": 973.19,
+      "text": "Where were you?",
+      "source": "pass1",
+      "avg_logprob": -0.06660956610934902
+    },
+    {
+      "start": 974.07,
+      "end": 975.99,
+      "text": "No one said anything about it.",
+      "source": "pass1",
+      "avg_logprob": -0.06660956610934902
+    },
+    {
+      "start": 975.99,
+      "end": 978.63,
+      "text": "So spare me your real concern.",
+      "source": "pass1",
+      "avg_logprob": -0.06660956610934902
+    },
+    {
+      "start": 978.63,
+      "end": 980.87,
+      "text": "I wish you were concerned about a thing like this.",
+      "source": "pass1",
+      "avg_logprob": -0.06660956610934902
+    },
+    {
+      "start": 980.87,
+      "end": 982.15,
+      "text": "We all know you're not.",
+      "source": "pass1",
+      "avg_logprob": -0.06660956610934902
+    },
+    {
+      "start": 982.15,
+      "end": 983.91,
+      "text": "There's no real concern over this.",
+      "source": "pass1",
+      "avg_logprob": -0.06660956610934902
+    },
+    {
+      "start": 983.91,
+      "end": 986.31,
+      "text": "It's just a sexy story and they've got a new target.",
+      "source": "pass1",
+      "avg_logprob": -0.06660956610934902
+    },
+    {
+      "start": 986.31,
+      "end": 988.07,
+      "text": "And the new target is prediction markets.",
+      "source": "pass1",
+      "avg_logprob": -0.10259292215752087
+    },
+    {
+      "start": 989.99,
+      "end": 992.55,
+      "text": "Can you make a little money off survivor if you work at survivor?",
+      "source": "pass1",
+      "avg_logprob": -0.10259292215752087
+    },
+    {
+      "start": 994.31,
+      "end": 995.51,
+      "text": "It's possible.",
+      "source": "pass1",
+      "avg_logprob": -0.10259292215752087
+    },
+    {
+      "start": 995.51,
+      "end": 998.79,
+      "text": "You can make a little cash, maybe a little scratch.",
+      "source": "pass1",
+      "avg_logprob": -0.10259292215752087
+    },
+    {
+      "start": 998.79,
+      "end": 1001.27,
+      "text": "If you don't get caught, you are breaking the law.",
+      "source": "pass1",
+      "avg_logprob": -0.10259292215752087
+    },
+    {
+      "start": 1001.27,
+      "end": 1004.71,
+      "text": "But again, the same thing applies to whether you walk into a store",
+      "source": "pass1",
+      "avg_logprob": -0.10259292215752087
+    },
+    {
+      "start": 1004.71,
+      "end": 1007.75,
+      "text": "and take a bag of Funions as you walk out and don't pay for them.",
+      "source": "pass1",
+      "avg_logprob": -0.10259292215752087
+    },
+    {
+      "start": 1007.75,
+      "end": 1009.43,
+      "text": "You probably could get away with it.",
+      "source": "pass1",
+      "avg_logprob": -0.10259292215752087
+    },
+    {
+      "start": 1009.43,
+      "end": 1010.39,
+      "text": "Funions are a little loud though.",
+      "source": "pass1",
+      "avg_logprob": -0.10259292215752087
+    },
+    {
+      "start": 1010.39,
+      "end": 1013.19,
+      "text": "That packaging is loud and they're very crunchy.",
+      "source": "pass1",
+      "avg_logprob": -0.10259292215752087
+    },
+    {
+      "start": 1013.19,
+      "end": 1015.59,
+      "text": "So I would stay away.",
+      "source": "pass1",
+      "avg_logprob": -0.10259292215752087
+    },
+    {
+      "start": 1015.59,
+      "end": 1017.67,
+      "text": "You want to go for something maybe like a yogurt.",
+      "source": "pass1",
+      "avg_logprob": -0.09873236886536081
+    },
+    {
+      "start": 1017.67,
+      "end": 1018.15,
+      "text": "Okay?",
+      "source": "pass1",
+      "avg_logprob": -0.09873236886536081
+    },
+    {
+      "start": 1018.15,
+      "end": 1021.43,
+      "text": "Something that's going to be a little bit less noisy as you walk out",
+      "source": "pass1",
+      "avg_logprob": -0.09873236886536081
+    },
+    {
+      "start": 1021.43,
+      "end": 1023.19,
+      "text": "and then maybe try to eat it.",
+      "source": "pass1",
+      "avg_logprob": -0.09873236886536081
+    },
+    {
+      "start": 1023.19,
+      "end": 1026.15,
+      "text": "But my point here is that you can get away with a lot of things.",
+      "source": "pass1",
+      "avg_logprob": -0.09873236886536081
+    },
+    {
+      "start": 1026.15,
+      "end": 1030.31,
+      "text": "You might notice that every product at Walgreens is now behind glass.",
+      "source": "pass1",
+      "avg_logprob": -0.09873236886536081
+    },
+    {
+      "start": 1030.31,
+      "end": 1033.83,
+      "text": "Like there's a reason why is because a lot of people got away from stealing.",
+      "source": "pass1",
+      "avg_logprob": -0.09873236886536081
+    },
+    {
+      "start": 1034.79,
+      "end": 1037.99,
+      "text": "Insider trading is something you probably could get away with if you're lucky.",
+      "source": "pass1",
+      "avg_logprob": -0.09873236886536081
+    },
+    {
+      "start": 1038.63,
+      "end": 1040.15,
+      "text": "But at what cost?",
+      "source": "pass1",
+      "avg_logprob": -0.09873236886536081
+    },
+    {
+      "start": 1040.15,
+      "end": 1043.19,
+      "text": "You're making a little bit of extra cash, a little extra scratch for what?",
+      "source": "pass1",
+      "avg_logprob": -0.09873236886536081
+    },
+    {
+      "start": 1043.99,
+      "end": 1046.23,
+      "text": "You're putting your job on the line.",
+      "source": "pass1",
+      "avg_logprob": -0.07328137135505676
+    },
+    {
+      "start": 1046.23,
+      "end": 1049.03,
+      "text": "You're putting your freedom on the line.",
+      "source": "pass1",
+      "avg_logprob": -0.07328137135505676
+    },
+    {
+      "start": 1049.03,
+      "end": 1050.87,
+      "text": "You could go to prison for this.",
+      "source": "pass1",
+      "avg_logprob": -0.07328137135505676
+    },
+    {
+      "start": 1050.87,
+      "end": 1055.91,
+      "text": "We talked about the Venezuela situation where a soldier or someone in the military",
+      "source": "pass1",
+      "avg_logprob": -0.07328137135505676
+    },
+    {
+      "start": 1056.47,
+      "end": 1061.43,
+      "text": "who's involved at some level in the interaction regarding the removal of Maduro",
+      "source": "pass1",
+      "avg_logprob": -0.07328137135505676
+    },
+    {
+      "start": 1061.43,
+      "end": 1064.87,
+      "text": "wound up profiting to the tune of something like $400,000.",
+      "source": "pass1",
+      "avg_logprob": -0.07328137135505676
+    },
+    {
+      "start": 1064.87,
+      "end": 1067.27,
+      "text": "Now that's a lot more than a little scratch, a little extra cash.",
+      "source": "pass1",
+      "avg_logprob": -0.07328137135505676
+    },
+    {
+      "start": 1067.99,
+      "end": 1068.87,
+      "text": "It's really hard to do.",
+      "source": "pass1",
+      "avg_logprob": -0.07328137135505676
+    },
+    {
+      "start": 1070.07,
+      "end": 1072.47,
+      "text": "That is also something that is going to be pretty notable.",
+      "source": "pass1",
+      "avg_logprob": -0.07328137135505676
+    },
+    {
+      "start": 1072.63,
+      "end": 1073.99,
+      "text": "People go, well, I'll just get a little bit.",
+      "source": "pass1",
+      "avg_logprob": -0.08499410117665927
+    },
+    {
+      "start": 1073.99,
+      "end": 1075.83,
+      "text": "Maybe a little bit of a few dollars here and there.",
+      "source": "pass1",
+      "avg_logprob": -0.08499410117665927
+    },
+    {
+      "start": 1075.83,
+      "end": 1076.95,
+      "text": "I can get a little bit of a profit.",
+      "source": "pass1",
+      "avg_logprob": -0.08499410117665927
+    },
+    {
+      "start": 1077.51,
+      "end": 1081.51,
+      "text": "You will open yourself up to real problems.",
+      "source": "pass1",
+      "avg_logprob": -0.08499410117665927
+    },
+    {
+      "start": 1081.51,
+      "end": 1083.83,
+      "text": "And the fact is you could go to prison for it.",
+      "source": "pass1",
+      "avg_logprob": -0.08499410117665927
+    },
+    {
+      "start": 1083.83,
+      "end": 1085.91,
+      "text": "You might also just get fined and kicked off the service.",
+      "source": "pass1",
+      "avg_logprob": -0.08499410117665927
+    },
+    {
+      "start": 1085.91,
+      "end": 1087.43,
+      "text": "This is what's happened to some people.",
+      "source": "pass1",
+      "avg_logprob": -0.08499410117665927
+    },
+    {
+      "start": 1087.43,
+      "end": 1091.43,
+      "text": "But you also could go to prison, especially as that number gets bigger.",
+      "source": "pass1",
+      "avg_logprob": -0.08499410117665927
+    },
+    {
+      "start": 1091.43,
+      "end": 1095.51,
+      "text": "Now if you go big, if you go small, it's not really worth the risk.",
+      "source": "pass1",
+      "avg_logprob": -0.08499410117665927
+    },
+    {
+      "start": 1095.51,
+      "end": 1098.07,
+      "text": "Because not only could you go to prison, you could also lose your job.",
+      "source": "pass1",
+      "avg_logprob": -0.08499410117665927
+    },
+    {
+      "start": 1098.07,
+      "end": 1102.87,
+      "text": "If you're working at Survivor and they say, hey, we noticed by the way,",
+      "source": "pass1",
+      "avg_logprob": -0.11512832953625877
+    },
+    {
+      "start": 1102.87,
+      "end": 1105.91,
+      "text": "and they make a public showing of this, which by the way, these companies will do,",
+      "source": "pass1",
+      "avg_logprob": -0.11512832953625877
+    },
+    {
+      "start": 1105.91,
+      "end": 1109.91,
+      "text": "make a showing, hey, we caught this person who was dealing an insider information",
+      "source": "pass1",
+      "avg_logprob": -0.11512832953625877
+    },
+    {
+      "start": 1109.91,
+      "end": 1112.79,
+      "text": "and we've kicked him off the platform and find them, here's their name.",
+      "source": "pass1",
+      "avg_logprob": -0.11512832953625877
+    },
+    {
+      "start": 1112.79,
+      "end": 1115.43,
+      "text": "When that happens to you, you're going to lose your job.",
+      "source": "pass1",
+      "avg_logprob": -0.11512832953625877
+    },
+    {
+      "start": 1116.79,
+      "end": 1120.15,
+      "text": "The whole concept of Survivor, even having any value at all to humanity,",
+      "source": "pass1",
+      "avg_logprob": -0.11512832953625877
+    },
+    {
+      "start": 1120.15,
+      "end": 1122.63,
+      "text": "whatever value it has, is that you don't know the outcome of it.",
+      "source": "pass1",
+      "avg_logprob": -0.11512832953625877
+    },
+    {
+      "start": 1123.27,
+      "end": 1126.63,
+      "text": "So if you don't know the outcome to a situation like that,",
+      "source": "pass1",
+      "avg_logprob": -0.11512832953625877
+    },
+    {
+      "start": 1127.59,
+      "end": 1130.79,
+      "text": "leaking it out there, and this is a way of publicly leaking information.",
+      "source": "pass1",
+      "avg_logprob": -0.1267842419685856
+    },
+    {
+      "start": 1131.67,
+      "end": 1137.27,
+      "text": "If you have that information and you are to put your investment dollars in on this,",
+      "source": "pass1",
+      "avg_logprob": -0.1267842419685856
+    },
+    {
+      "start": 1137.27,
+      "end": 1140.07,
+      "text": "and it's not really an investment, I suppose, when you know the outcome,",
+      "source": "pass1",
+      "avg_logprob": -0.1267842419685856
+    },
+    {
+      "start": 1140.07,
+      "end": 1145.51,
+      "text": "you put it in there and it drives the percentage chance of Bob winning from 10% to 50%.",
+      "source": "pass1",
+      "avg_logprob": -0.1267842419685856
+    },
+    {
+      "start": 1146.23,
+      "end": 1147.75,
+      "text": "Well, you're kind of giving away the ending.",
+      "source": "pass1",
+      "avg_logprob": -0.1267842419685856
+    },
+    {
+      "start": 1149.35,
+      "end": 1150.55,
+      "text": "A lot of people are going to think you are.",
+      "source": "pass1",
+      "avg_logprob": -0.1267842419685856
+    },
+    {
+      "start": 1151.27,
+      "end": 1152.39,
+      "text": "That is hurting your company.",
+      "source": "pass1",
+      "avg_logprob": -0.1267842419685856
+    },
+    {
+      "start": 1152.39,
+      "end": 1153.83,
+      "text": "They're going to fire you for that.",
+      "source": "pass1",
+      "avg_logprob": -0.1267842419685856
+    },
+    {
+      "start": 1153.83,
+      "end": 1158.23,
+      "text": "So now you've risked your freedom and you've risked your job, your employment, your livelihood.",
+      "source": "pass1",
+      "avg_logprob": -0.09226529877370512
+    },
+    {
+      "start": 1158.23,
+      "end": 1159.59,
+      "text": "For what? A few extra bucks?",
+      "source": "pass1",
+      "avg_logprob": -0.09226529877370512
+    },
+    {
+      "start": 1160.47,
+      "end": 1165.11,
+      "text": "Now, if you're going to go big, you might say, look, I got some money problems,",
+      "source": "pass1",
+      "avg_logprob": -0.09226529877370512
+    },
+    {
+      "start": 1165.11,
+      "end": 1168.39,
+      "text": "I want a yacht, whatever the situation is, and you're going to go really,",
+      "source": "pass1",
+      "avg_logprob": -0.09226529877370512
+    },
+    {
+      "start": 1168.39,
+      "end": 1171.03,
+      "text": "really big and you're going to make hundreds of thousands, maybe millions of dollars.",
+      "source": "pass1",
+      "avg_logprob": -0.09226529877370512
+    },
+    {
+      "start": 1171.03,
+      "end": 1171.83,
+      "text": "Is that possible?",
+      "source": "pass1",
+      "avg_logprob": -0.09226529877370512
+    },
+    {
+      "start": 1172.39,
+      "end": 1175.11,
+      "text": "Well, it is possible, right?",
+      "source": "pass1",
+      "avg_logprob": -0.09226529877370512
+    },
+    {
+      "start": 1175.11,
+      "end": 1176.63,
+      "text": "You could attempt it.",
+      "source": "pass1",
+      "avg_logprob": -0.09226529877370512
+    },
+    {
+      "start": 1177.67,
+      "end": 1183.27,
+      "text": "If you do it, if you have some prediction and you take this incredible long shot,",
+      "source": "pass1",
+      "avg_logprob": -0.09226529877370512
+    },
+    {
+      "start": 1183.27,
+      "end": 1186.63,
+      "text": "it's a hundred to one, and you go out there and you put all your money in there,",
+      "source": "pass1",
+      "avg_logprob": -0.06559249996407632
+    },
+    {
+      "start": 1186.63,
+      "end": 1188.95,
+      "text": "you sign up for an account, you dump $30,000 into account,",
+      "source": "pass1",
+      "avg_logprob": -0.06559249996407632
+    },
+    {
+      "start": 1188.95,
+      "end": 1192.47,
+      "text": "you turn it into $3 million or $30 million or whatever it is.",
+      "source": "pass1",
+      "avg_logprob": -0.06559249996407632
+    },
+    {
+      "start": 1194.39,
+      "end": 1196.79,
+      "text": "If you do that, they're going to notice.",
+      "source": "pass1",
+      "avg_logprob": -0.06559249996407632
+    },
+    {
+      "start": 1196.79,
+      "end": 1198.39,
+      "text": "This is not normal behavior.",
+      "source": "pass1",
+      "avg_logprob": -0.06559249996407632
+    },
+    {
+      "start": 1198.39,
+      "end": 1200.07,
+      "text": "This people don't do that.",
+      "source": "pass1",
+      "avg_logprob": -0.06559249996407632
+    },
+    {
+      "start": 1200.07,
+      "end": 1200.95,
+      "text": "They're going to notice.",
+      "source": "pass1",
+      "avg_logprob": -0.06559249996407632
+    },
+    {
+      "start": 1200.95,
+      "end": 1203.35,
+      "text": "Now, if you happen to luck out and hit one of those,",
+      "source": "pass1",
+      "avg_logprob": -0.06559249996407632
+    },
+    {
+      "start": 1203.35,
+      "end": 1205.59,
+      "text": "they'll look into you and they'll realize there's nothing there.",
+      "source": "pass1",
+      "avg_logprob": -0.06559249996407632
+    },
+    {
+      "start": 1206.15,
+      "end": 1208.63,
+      "text": "But because of the way these companies operate in the United States,",
+      "source": "pass1",
+      "avg_logprob": -0.06559249996407632
+    },
+    {
+      "start": 1208.63,
+      "end": 1210.15,
+      "text": "they have KYC rules.",
+      "source": "pass1",
+      "avg_logprob": -0.06559249996407632
+    },
+    {
+      "start": 1210.15,
+      "end": 1212.39,
+      "text": "KYC means know your customer.",
+      "source": "pass1",
+      "avg_logprob": -0.06559249996407632
+    },
+    {
+      "start": 1212.39,
+      "end": 1213.35,
+      "text": "It's a big term.",
+      "source": "pass1",
+      "avg_logprob": -0.09565322201639886
+    },
+    {
+      "start": 1214.15,
+      "end": 1217.27,
+      "text": "I became familiar with it really through the crypto stuff,",
+      "source": "pass1",
+      "avg_logprob": -0.09565322201639886
+    },
+    {
+      "start": 1217.27,
+      "end": 1221.03,
+      "text": "because you can go through overseas exchanges and things like that.",
+      "source": "pass1",
+      "avg_logprob": -0.09565322201639886
+    },
+    {
+      "start": 1221.03,
+      "end": 1223.35,
+      "text": "There's a lot of privacy concerns around crypto,",
+      "source": "pass1",
+      "avg_logprob": -0.09565322201639886
+    },
+    {
+      "start": 1223.35,
+      "end": 1228.15,
+      "text": "and a lot of people who got into crypto particularly early under many anti-government",
+      "source": "pass1",
+      "avg_logprob": -0.09565322201639886
+    },
+    {
+      "start": 1228.15,
+      "end": 1231.83,
+      "text": "or limited government libertarian ideals,",
+      "source": "pass1",
+      "avg_logprob": -0.09565322201639886
+    },
+    {
+      "start": 1231.83,
+      "end": 1235.19,
+      "text": "they didn't want to give all their information up to banks or exchanges.",
+      "source": "pass1",
+      "avg_logprob": -0.09565322201639886
+    },
+    {
+      "start": 1235.19,
+      "end": 1237.59,
+      "text": "So they went through a way that they didn't have to use those rules.",
+      "source": "pass1",
+      "avg_logprob": -0.09565322201639886
+    },
+    {
+      "start": 1237.59,
+      "end": 1239.91,
+      "text": "In the United States, if you're a regulated exchange,",
+      "source": "pass1",
+      "avg_logprob": -0.09565322201639886
+    },
+    {
+      "start": 1239.91,
+      "end": 1242.55,
+      "text": "you have these KYC rules you have to comply with.",
+      "source": "pass1",
+      "avg_logprob": -0.06368824987546771
+    },
+    {
+      "start": 1242.55,
+      "end": 1244.31,
+      "text": "So they know a lot about you.",
+      "source": "pass1",
+      "avg_logprob": -0.06368824987546771
+    },
+    {
+      "start": 1244.31,
+      "end": 1248.07,
+      "text": "If you all of a sudden turn $1,000 into a million dollars overnight,",
+      "source": "pass1",
+      "avg_logprob": -0.06368824987546771
+    },
+    {
+      "start": 1248.07,
+      "end": 1251.59,
+      "text": "or $100,000 overnight, they're going to freaking notice",
+      "source": "pass1",
+      "avg_logprob": -0.06368824987546771
+    },
+    {
+      "start": 1251.59,
+      "end": 1252.47,
+      "text": "and they're going to come look at you.",
+      "source": "pass1",
+      "avg_logprob": -0.06368824987546771
+    },
+    {
+      "start": 1252.47,
+      "end": 1257.19,
+      "text": "And when they see your employment is associated with the contract,",
+      "source": "pass1",
+      "avg_logprob": -0.06368824987546771
+    },
+    {
+      "start": 1257.19,
+      "end": 1259.91,
+      "text": "you're going to lose all that money, you're going to get fined,",
+      "source": "pass1",
+      "avg_logprob": -0.06368824987546771
+    },
+    {
+      "start": 1259.91,
+      "end": 1263.43,
+      "text": "you're going to lose your account for multiple years,",
+      "source": "pass1",
+      "avg_logprob": -0.06368824987546771
+    },
+    {
+      "start": 1263.43,
+      "end": 1267.35,
+      "text": "and likely are going to go to prison for something like that.",
+      "source": "pass1",
+      "avg_logprob": -0.06368824987546771
+    },
+    {
+      "start": 1267.35,
+      "end": 1269.19,
+      "text": "It is not worth it.",
+      "source": "pass1",
+      "avg_logprob": -0.06368824987546771
+    },
+    {
+      "start": 1269.19,
+      "end": 1270.31,
+      "text": "This is the problem.",
+      "source": "pass1",
+      "avg_logprob": -0.10850321633595947
+    },
+    {
+      "start": 1270.31,
+      "end": 1272.15,
+      "text": "There's not really a sweet spot here.",
+      "source": "pass1",
+      "avg_logprob": -0.10850321633595947
+    },
+    {
+      "start": 1273.43,
+      "end": 1276.47,
+      "text": "This isn't me even discouraging you from committing crimes.",
+      "source": "pass1",
+      "avg_logprob": -0.10850321633595947
+    },
+    {
+      "start": 1276.47,
+      "end": 1280.23,
+      "text": "This is me telling you, hey, the crime just doesn't pay here.",
+      "source": "pass1",
+      "avg_logprob": -0.10850321633595947
+    },
+    {
+      "start": 1281.03,
+      "end": 1283.99,
+      "text": "Because either you're only going to make a few bucks with a lot of risk,",
+      "source": "pass1",
+      "avg_logprob": -0.10850321633595947
+    },
+    {
+      "start": 1284.87,
+      "end": 1286.47,
+      "text": "or you can make a lot of money,",
+      "source": "pass1",
+      "avg_logprob": -0.10850321633595947
+    },
+    {
+      "start": 1286.47,
+      "end": 1287.75,
+      "text": "but the risk is going to be so high,",
+      "source": "pass1",
+      "avg_logprob": -0.10850321633595947
+    },
+    {
+      "start": 1287.75,
+      "end": 1289.43,
+      "text": "you're almost definitely going to get caught.",
+      "source": "pass1",
+      "avg_logprob": -0.10850321633595947
+    },
+    {
+      "start": 1289.43,
+      "end": 1291.51,
+      "text": "Now, some people will say you can go overseas",
+      "source": "pass1",
+      "avg_logprob": -0.10850321633595947
+    },
+    {
+      "start": 1291.51,
+      "end": 1296.31,
+      "text": "and you can get positions overseas markets,",
+      "source": "pass1",
+      "avg_logprob": -0.10850321633595947
+    },
+    {
+      "start": 1296.31,
+      "end": 1297.43,
+      "text": "which is true.",
+      "source": "pass1",
+      "avg_logprob": -0.10850321633595947
+    },
+    {
+      "start": 1297.43,
+      "end": 1298.71,
+      "text": "However, you should also know.",
+      "source": "pass1",
+      "avg_logprob": -0.10850321633595947
+    },
+    {
+      "start": 1299.67,
+      "end": 1300.95,
+      "text": "Most of these overseas markets,",
+      "source": "pass1",
+      "avg_logprob": -0.08447047474423075
+    },
+    {
+      "start": 1300.95,
+      "end": 1304.63,
+      "text": "the ones we're talking about that have these really open rules",
+      "source": "pass1",
+      "avg_logprob": -0.08447047474423075
+    },
+    {
+      "start": 1304.63,
+      "end": 1308.39,
+      "text": "for different contracts and events that you can invest in,",
+      "source": "pass1",
+      "avg_logprob": -0.08447047474423075
+    },
+    {
+      "start": 1309.27,
+      "end": 1313.99,
+      "text": "those particular markets are almost exclusively blockchain type markets.",
+      "source": "pass1",
+      "avg_logprob": -0.08447047474423075
+    },
+    {
+      "start": 1313.99,
+      "end": 1314.71,
+      "text": "What does that mean?",
+      "source": "pass1",
+      "avg_logprob": -0.08447047474423075
+    },
+    {
+      "start": 1314.71,
+      "end": 1318.79,
+      "text": "Well, it's like a cryptocurrency, like a Bitcoin.",
+      "source": "pass1",
+      "avg_logprob": -0.08447047474423075
+    },
+    {
+      "start": 1318.79,
+      "end": 1321.59,
+      "text": "Everybody can see every transaction made on the blockchain.",
+      "source": "pass1",
+      "avg_logprob": -0.08447047474423075
+    },
+    {
+      "start": 1321.59,
+      "end": 1322.79,
+      "text": "They don't know it's you.",
+      "source": "pass1",
+      "avg_logprob": -0.08447047474423075
+    },
+    {
+      "start": 1322.79,
+      "end": 1324.39,
+      "text": "They can't see your name,",
+      "source": "pass1",
+      "avg_logprob": -0.08447047474423075
+    },
+    {
+      "start": 1324.39,
+      "end": 1326.31,
+      "text": "but they can see some account.",
+      "source": "pass1",
+      "avg_logprob": -0.08447047474423075
+    },
+    {
+      "start": 1326.31,
+      "end": 1328.47,
+      "text": "All of a sudden came up with this brilliant idea,",
+      "source": "pass1",
+      "avg_logprob": -0.08447047474423075
+    },
+    {
+      "start": 1328.47,
+      "end": 1331.27,
+      "text": "10 minutes before something happened and cash in big time.",
+      "source": "pass1",
+      "avg_logprob": -0.10316315197357626
+    },
+    {
+      "start": 1332.23,
+      "end": 1336.23,
+      "text": "When that is seen, there's an entire cottage industry",
+      "source": "pass1",
+      "avg_logprob": -0.10316315197357626
+    },
+    {
+      "start": 1336.23,
+      "end": 1341.19,
+      "text": "of people who are looking for these types of anomalies.",
+      "source": "pass1",
+      "avg_logprob": -0.10316315197357626
+    },
+    {
+      "start": 1341.19,
+      "end": 1343.75,
+      "text": "They're looking for, wait a minute, why did that person do that?",
+      "source": "pass1",
+      "avg_logprob": -0.10316315197357626
+    },
+    {
+      "start": 1343.75,
+      "end": 1344.31,
+      "text": "This is weird.",
+      "source": "pass1",
+      "avg_logprob": -0.10316315197357626
+    },
+    {
+      "start": 1344.31,
+      "end": 1345.11,
+      "text": "This is suspicious.",
+      "source": "pass1",
+      "avg_logprob": -0.10316315197357626
+    },
+    {
+      "start": 1345.11,
+      "end": 1347.99,
+      "text": "They post about it and everyone tries to figure out who it is.",
+      "source": "pass1",
+      "avg_logprob": -0.10316315197357626
+    },
+    {
+      "start": 1347.99,
+      "end": 1349.83,
+      "text": "If the government gets interested enough,",
+      "source": "pass1",
+      "avg_logprob": -0.10316315197357626
+    },
+    {
+      "start": 1349.83,
+      "end": 1351.51,
+      "text": "they too will still find you.",
+      "source": "pass1",
+      "avg_logprob": -0.10316315197357626
+    },
+    {
+      "start": 1351.51,
+      "end": 1353.83,
+      "text": "And just because you place it on an overseas market,",
+      "source": "pass1",
+      "avg_logprob": -0.10316315197357626
+    },
+    {
+      "start": 1353.83,
+      "end": 1355.67,
+      "text": "which is by the way, what this soldier did,",
+      "source": "pass1",
+      "avg_logprob": -0.10316315197357626
+    },
+    {
+      "start": 1355.75,
+      "end": 1358.95,
+      "text": "he was on a non-regulated market overseas,",
+      "source": "pass1",
+      "avg_logprob": -0.0844838073226943
+    },
+    {
+      "start": 1359.51,
+      "end": 1363.27,
+      "text": "got nothing to do with the business here in the United States,",
+      "source": "pass1",
+      "avg_logprob": -0.0844838073226943
+    },
+    {
+      "start": 1363.83,
+      "end": 1366.07,
+      "text": "but he was an unregulated market overseas",
+      "source": "pass1",
+      "avg_logprob": -0.0844838073226943
+    },
+    {
+      "start": 1366.07,
+      "end": 1368.63,
+      "text": "and he was still caught and still prosecuted",
+      "source": "pass1",
+      "avg_logprob": -0.0844838073226943
+    },
+    {
+      "start": 1368.63,
+      "end": 1371.35,
+      "text": "and is still going to have massive, massive legal trouble.",
+      "source": "pass1",
+      "avg_logprob": -0.0844838073226943
+    },
+    {
+      "start": 1371.35,
+      "end": 1372.95,
+      "text": "So this is the problem.",
+      "source": "pass1",
+      "avg_logprob": -0.0844838073226943
+    },
+    {
+      "start": 1372.95,
+      "end": 1374.79,
+      "text": "It's really just a type of situation",
+      "source": "pass1",
+      "avg_logprob": -0.0844838073226943
+    },
+    {
+      "start": 1374.79,
+      "end": 1377.59,
+      "text": "where there's not a sweet spot for anyone to be.",
+      "source": "pass1",
+      "avg_logprob": -0.0844838073226943
+    },
+    {
+      "start": 1377.59,
+      "end": 1379.51,
+      "text": "You should not, of course, do it anyway,",
+      "source": "pass1",
+      "avg_logprob": -0.0844838073226943
+    },
+    {
+      "start": 1379.51,
+      "end": 1381.91,
+      "text": "because it's wrong and it's illegal.",
+      "source": "pass1",
+      "avg_logprob": -0.0844838073226943
+    },
+    {
+      "start": 1381.91,
+      "end": 1383.99,
+      "text": "But even if you want to break the rules,",
+      "source": "pass1",
+      "avg_logprob": -0.0844838073226943
+    },
+    {
+      "start": 1383.99,
+      "end": 1385.19,
+      "text": "if you're a big rule breaker,",
+      "source": "pass1",
+      "avg_logprob": -0.08426784746304243
+    },
+    {
+      "start": 1386.07,
+      "end": 1388.47,
+      "text": "I'm sitting here in Pat Gray's studio right now,",
+      "source": "pass1",
+      "avg_logprob": -0.08426784746304243
+    },
+    {
+      "start": 1389.03,
+      "end": 1391.43,
+      "text": "man known to go a few miles an hour",
+      "source": "pass1",
+      "avg_logprob": -0.08426784746304243
+    },
+    {
+      "start": 1391.43,
+      "end": 1393.03,
+      "text": "occasionally over the speed limit.",
+      "source": "pass1",
+      "avg_logprob": -0.08426784746304243
+    },
+    {
+      "start": 1393.03,
+      "end": 1395.43,
+      "text": "Some of us occasionally cross such lines.",
+      "source": "pass1",
+      "avg_logprob": -0.08426784746304243
+    },
+    {
+      "start": 1396.31,
+      "end": 1399.43,
+      "text": "This is a line that doesn't have the payoff",
+      "source": "pass1",
+      "avg_logprob": -0.08426784746304243
+    },
+    {
+      "start": 1399.43,
+      "end": 1400.55,
+      "text": "on the other side of it.",
+      "source": "pass1",
+      "avg_logprob": -0.08426784746304243
+    },
+    {
+      "start": 1400.55,
+      "end": 1401.43,
+      "text": "So it's important to know,",
+      "source": "pass1",
+      "avg_logprob": -0.08426784746304243
+    },
+    {
+      "start": 1401.43,
+      "end": 1402.95,
+      "text": "and I mean this because there's a lot of people",
+      "source": "pass1",
+      "avg_logprob": -0.08426784746304243
+    },
+    {
+      "start": 1402.95,
+      "end": 1404.39,
+      "text": "that I know who are getting into these markets",
+      "source": "pass1",
+      "avg_logprob": -0.08426784746304243
+    },
+    {
+      "start": 1404.39,
+      "end": 1405.43,
+      "text": "for the first time.",
+      "source": "pass1",
+      "avg_logprob": -0.08426784746304243
+    },
+    {
+      "start": 1405.43,
+      "end": 1406.23,
+      "text": "Be freaking careful.",
+      "source": "pass1",
+      "avg_logprob": -0.08426784746304243
+    },
+    {
+      "start": 1406.23,
+      "end": 1407.43,
+      "text": "These are real markets.",
+      "source": "pass1",
+      "avg_logprob": -0.08426784746304243
+    },
+    {
+      "start": 1407.43,
+      "end": 1408.71,
+      "text": "They treat them as real things.",
+      "source": "pass1",
+      "avg_logprob": -0.08426784746304243
+    },
+    {
+      "start": 1408.71,
+      "end": 1410.63,
+      "text": "It's not just a fun play money thing.",
+      "source": "pass1",
+      "avg_logprob": -0.08426784746304243
+    },
+    {
+      "start": 1410.63,
+      "end": 1412.23,
+      "text": "This is a real financial market.",
+      "source": "pass1",
+      "avg_logprob": -0.08426784746304243
+    },
+    {
+      "start": 1412.23,
+      "end": 1413.67,
+      "text": "We talk about investments a lot",
+      "source": "pass1",
+      "avg_logprob": -0.08426784746304243
+    },
+    {
+      "start": 1414.15,
+      "end": 1415.83,
+      "text": "and we always like to joke about the difference",
+      "source": "pass1",
+      "avg_logprob": -0.07195389933056301
+    },
+    {
+      "start": 1415.83,
+      "end": 1416.95,
+      "text": "between betting and investments",
+      "source": "pass1",
+      "avg_logprob": -0.07195389933056301
+    },
+    {
+      "start": 1416.95,
+      "end": 1418.15,
+      "text": "and everyone likes to give me a hard time",
+      "source": "pass1",
+      "avg_logprob": -0.07195389933056301
+    },
+    {
+      "start": 1418.15,
+      "end": 1419.27,
+      "text": "on that one, which is fine.",
+      "source": "pass1",
+      "avg_logprob": -0.07195389933056301
+    },
+    {
+      "start": 1419.83,
+      "end": 1423.67,
+      "text": "But the problem here is that these are regulated markets.",
+      "source": "pass1",
+      "avg_logprob": -0.07195389933056301
+    },
+    {
+      "start": 1423.67,
+      "end": 1425.51,
+      "text": "You have to be really, really careful",
+      "source": "pass1",
+      "avg_logprob": -0.07195389933056301
+    },
+    {
+      "start": 1425.51,
+      "end": 1427.11,
+      "text": "that you don't screw this up.",
+      "source": "pass1",
+      "avg_logprob": -0.07195389933056301
+    },
+    {
+      "start": 1427.11,
+      "end": 1429.91,
+      "text": "So going to a little bit of extra money,",
+      "source": "pass1",
+      "avg_logprob": -0.07195389933056301
+    },
+    {
+      "start": 1429.91,
+      "end": 1431.91,
+      "text": "trying to turn it into your retirement plan,",
+      "source": "pass1",
+      "avg_logprob": -0.07195389933056301
+    },
+    {
+      "start": 1431.91,
+      "end": 1434.95,
+      "text": "there's a lot of problems with that strategy.",
+      "source": "pass1",
+      "avg_logprob": -0.07195389933056301
+    },
+    {
+      "start": 1434.95,
+      "end": 1435.83,
+      "text": "It's not a good one.",
+      "source": "pass1",
+      "avg_logprob": -0.07195389933056301
+    },
+    {
+      "start": 1436.95,
+      "end": 1439.43,
+      "text": "It is a strategy that may very well land you",
+      "source": "pass1",
+      "avg_logprob": -0.07195389933056301
+    },
+    {
+      "start": 1439.43,
+      "end": 1441.03,
+      "text": "in prison or losing your job",
+      "source": "pass1",
+      "avg_logprob": -0.07195389933056301
+    },
+    {
+      "start": 1441.03,
+      "end": 1442.23,
+      "text": "or God only knows what else.",
+      "source": "pass1",
+      "avg_logprob": -0.07195389933056301
+    },
+    {
+      "start": 1442.23,
+      "end": 1443.59,
+      "text": "So be careful there.",
+      "source": "pass1",
+      "avg_logprob": -0.07195389933056301
+    },
+    {
+      "start": 1443.59,
+      "end": 1445.67,
+      "text": "And understand that a lot of the complaints",
+      "source": "pass1",
+      "avg_logprob": -0.13006241801075447
+    },
+    {
+      "start": 1445.67,
+      "end": 1447.83,
+      "text": "coming from the media are not real.",
+      "source": "pass1",
+      "avg_logprob": -0.13006241801075447
+    },
+    {
+      "start": 1447.83,
+      "end": 1449.99,
+      "text": "When they say, oh gosh, there's all this insider trading.",
+      "source": "pass1",
+      "avg_logprob": -0.13006241801075447
+    },
+    {
+      "start": 1449.99,
+      "end": 1450.95,
+      "text": "Not in the United States.",
+      "source": "pass1",
+      "avg_logprob": -0.13006241801075447
+    },
+    {
+      "start": 1451.99,
+      "end": 1455.67,
+      "text": "They caught a guy the other day who was a politician",
+      "source": "pass1",
+      "avg_logprob": -0.13006241801075447
+    },
+    {
+      "start": 1455.67,
+      "end": 1458.87,
+      "text": "who put a $50 position on his own campaign",
+      "source": "pass1",
+      "avg_logprob": -0.13006241801075447
+    },
+    {
+      "start": 1458.87,
+      "end": 1460.63,
+      "text": "saying he was going to win the election.",
+      "source": "pass1",
+      "avg_logprob": -0.13006241801075447
+    },
+    {
+      "start": 1460.63,
+      "end": 1462.87,
+      "text": "That's really, to me, I don't see how honestly",
+      "source": "pass1",
+      "avg_logprob": -0.13006241801075447
+    },
+    {
+      "start": 1462.87,
+      "end": 1464.23,
+      "text": "that even is a distortion.",
+      "source": "pass1",
+      "avg_logprob": -0.13006241801075447
+    },
+    {
+      "start": 1464.23,
+      "end": 1466.31,
+      "text": "It is insider trading, I guess, technically",
+      "source": "pass1",
+      "avg_logprob": -0.13006241801075447
+    },
+    {
+      "start": 1466.31,
+      "end": 1468.95,
+      "text": "by those rules, but I don't see what it does.",
+      "source": "pass1",
+      "avg_logprob": -0.13006241801075447
+    },
+    {
+      "start": 1468.95,
+      "end": 1470.47,
+      "text": "The guy's like, oh, well, I just wanted to prove",
+      "source": "pass1",
+      "avg_logprob": -0.13006241801075447
+    },
+    {
+      "start": 1470.47,
+      "end": 1471.83,
+      "text": "that any election can be bought.",
+      "source": "pass1",
+      "avg_logprob": -0.13006241801075447
+    },
+    {
+      "start": 1471.91,
+      "end": 1475.67,
+      "text": "Well, how has it bought that you put $50 on yourself?",
+      "source": "pass1",
+      "avg_logprob": -0.1363049754872918
+    },
+    {
+      "start": 1475.67,
+      "end": 1476.79,
+      "text": "You didn't even move the market,",
+      "source": "pass1",
+      "avg_logprob": -0.1363049754872918
+    },
+    {
+      "start": 1476.79,
+      "end": 1478.55,
+      "text": "let alone buy yourself an election.",
+      "source": "pass1",
+      "avg_logprob": -0.1363049754872918
+    },
+    {
+      "start": 1478.55,
+      "end": 1479.91,
+      "text": "Just so you know, these prediction markets",
+      "source": "pass1",
+      "avg_logprob": -0.1363049754872918
+    },
+    {
+      "start": 1479.91,
+      "end": 1481.11,
+      "text": "are not deciding elections.",
+      "source": "pass1",
+      "avg_logprob": -0.1363049754872918
+    },
+    {
+      "start": 1482.07,
+      "end": 1483.83,
+      "text": "That's got nothing to do with who wins.",
+      "source": "pass1",
+      "avg_logprob": -0.1363049754872918
+    },
+    {
+      "start": 1484.63,
+      "end": 1488.07,
+      "text": "It is a prediction of who will win, but it doesn't mean.",
+      "source": "pass1",
+      "avg_logprob": -0.1363049754872918
+    },
+    {
+      "start": 1488.07,
+      "end": 1489.59,
+      "text": "You can't, if you win the prediction market",
+      "source": "pass1",
+      "avg_logprob": -0.1363049754872918
+    },
+    {
+      "start": 1489.59,
+      "end": 1492.87,
+      "text": "and lose the election, you still don't get to go into office.",
+      "source": "pass1",
+      "avg_logprob": -0.1363049754872918
+    },
+    {
+      "start": 1492.87,
+      "end": 1493.99,
+      "text": "This guy was such a dunce.",
+      "source": "pass1",
+      "avg_logprob": -0.1363049754872918
+    },
+    {
+      "start": 1493.99,
+      "end": 1495.27,
+      "text": "Apparently he didn't understand that.",
+      "source": "pass1",
+      "avg_logprob": -0.1363049754872918
+    },
+    {
+      "start": 1495.83,
+      "end": 1497.91,
+      "text": "But you know, you've got a $50 position",
+      "source": "pass1",
+      "avg_logprob": -0.1363049754872918
+    },
+    {
+      "start": 1498.87,
+      "end": 1503.03,
+      "text": "where you're kind of investing on yourself, if you will.",
+      "source": "pass1",
+      "avg_logprob": -0.10082218657105656
+    },
+    {
+      "start": 1505.35,
+      "end": 1507.27,
+      "text": "If they're catching something like that,",
+      "source": "pass1",
+      "avg_logprob": -0.10082218657105656
+    },
+    {
+      "start": 1507.91,
+      "end": 1509.51,
+      "text": "if you're making hundreds of thousands of dollars,",
+      "source": "pass1",
+      "avg_logprob": -0.10082218657105656
+    },
+    {
+      "start": 1509.51,
+      "end": 1511.43,
+      "text": "tens of thousands of dollars, the fact is,",
+      "source": "pass1",
+      "avg_logprob": -0.10082218657105656
+    },
+    {
+      "start": 1511.43,
+      "end": 1513.19,
+      "text": "they're going to see that action",
+      "source": "pass1",
+      "avg_logprob": -0.10082218657105656
+    },
+    {
+      "start": 1513.19,
+      "end": 1514.39,
+      "text": "and they're going to check it out.",
+      "source": "pass1",
+      "avg_logprob": -0.10082218657105656
+    },
+    {
+      "start": 1515.27,
+      "end": 1519.03,
+      "text": "So this stuff, there's no assassination markets.",
+      "source": "pass1",
+      "avg_logprob": -0.10082218657105656
+    },
+    {
+      "start": 1519.03,
+      "end": 1520.79,
+      "text": "There's no terrorism markets.",
+      "source": "pass1",
+      "avg_logprob": -0.10082218657105656
+    },
+    {
+      "start": 1520.79,
+      "end": 1522.07,
+      "text": "There's no murder markets.",
+      "source": "pass1",
+      "avg_logprob": -0.10082218657105656
+    },
+    {
+      "start": 1522.07,
+      "end": 1523.59,
+      "text": "There's no life or death markets.",
+      "source": "pass1",
+      "avg_logprob": -0.10082218657105656
+    },
+    {
+      "start": 1523.59,
+      "end": 1524.63,
+      "text": "None of that stuff is real.",
+      "source": "pass1",
+      "avg_logprob": -0.10082218657105656
+    },
+    {
+      "start": 1525.59,
+      "end": 1529.03,
+      "text": "There is, you know, insider trading, to be honest, of course,",
+      "source": "pass1",
+      "avg_logprob": -0.1500896524582336
+    },
+    {
+      "start": 1529.03,
+      "end": 1530.23,
+      "text": "it's not a perfect system.",
+      "source": "pass1",
+      "avg_logprob": -0.1500896524582336
+    },
+    {
+      "start": 1530.87,
+      "end": 1534.71,
+      "text": "The lead investigators here are these exchanges themselves.",
+      "source": "pass1",
+      "avg_logprob": -0.1500896524582336
+    },
+    {
+      "start": 1534.71,
+      "end": 1536.31,
+      "text": "The CFTC is the backup there.",
+      "source": "pass1",
+      "avg_logprob": -0.1500896524582336
+    },
+    {
+      "start": 1536.95,
+      "end": 1538.07,
+      "text": "Do they catch every one of these things?",
+      "source": "pass1",
+      "avg_logprob": -0.1500896524582336
+    },
+    {
+      "start": 1538.07,
+      "end": 1538.63,
+      "text": "Of course not.",
+      "source": "pass1",
+      "avg_logprob": -0.1500896524582336
+    },
+    {
+      "start": 1538.63,
+      "end": 1539.11,
+      "text": "Of course not.",
+      "source": "pass1",
+      "avg_logprob": -0.1500896524582336
+    },
+    {
+      "start": 1539.11,
+      "end": 1541.99,
+      "text": "I mean, there are people making some money, I'm sure,",
+      "source": "pass1",
+      "avg_logprob": -0.1500896524582336
+    },
+    {
+      "start": 1541.99,
+      "end": 1544.07,
+      "text": "on insider information.",
+      "source": "pass1",
+      "avg_logprob": -0.1500896524582336
+    },
+    {
+      "start": 1544.07,
+      "end": 1545.19,
+      "text": "Will they get caught eventually?",
+      "source": "pass1",
+      "avg_logprob": -0.1500896524582336
+    },
+    {
+      "start": 1545.19,
+      "end": 1546.31,
+      "text": "I mean, I will tell you this.",
+      "source": "pass1",
+      "avg_logprob": -0.1500896524582336
+    },
+    {
+      "start": 1546.87,
+      "end": 1549.11,
+      "text": "These organizations, Kashi Polymarket,",
+      "source": "pass1",
+      "avg_logprob": -0.1500896524582336
+    },
+    {
+      "start": 1549.11,
+      "end": 1551.51,
+      "text": "predicted all these big ones are spending fortune",
+      "source": "pass1",
+      "avg_logprob": -0.1500896524582336
+    },
+    {
+      "start": 1552.07,
+      "end": 1555.99,
+      "text": "on AI technology and staffing to try to catch these things.",
+      "source": "pass1",
+      "avg_logprob": -0.058071788825444726
+    },
+    {
+      "start": 1555.99,
+      "end": 1556.31,
+      "text": "Why?",
+      "source": "pass1",
+      "avg_logprob": -0.058071788825444726
+    },
+    {
+      "start": 1556.31,
+      "end": 1558.71,
+      "text": "It's not because they're the warmest souls in the world,",
+      "source": "pass1",
+      "avg_logprob": -0.058071788825444726
+    },
+    {
+      "start": 1558.71,
+      "end": 1559.99,
+      "text": "although they may be very nice people.",
+      "source": "pass1",
+      "avg_logprob": -0.058071788825444726
+    },
+    {
+      "start": 1560.79,
+      "end": 1562.15,
+      "text": "It's because they are companies",
+      "source": "pass1",
+      "avg_logprob": -0.058071788825444726
+    },
+    {
+      "start": 1562.15,
+      "end": 1565.27,
+      "text": "that are worth tens of billions of dollars.",
+      "source": "pass1",
+      "avg_logprob": -0.058071788825444726
+    },
+    {
+      "start": 1565.27,
+      "end": 1567.99,
+      "text": "They don't care about the transaction fee",
+      "source": "pass1",
+      "avg_logprob": -0.058071788825444726
+    },
+    {
+      "start": 1567.99,
+      "end": 1570.39,
+      "text": "they're getting from your $100 investment.",
+      "source": "pass1",
+      "avg_logprob": -0.058071788825444726
+    },
+    {
+      "start": 1571.11,
+      "end": 1572.95,
+      "text": "That's a small potatoes to them.",
+      "source": "pass1",
+      "avg_logprob": -0.058071788825444726
+    },
+    {
+      "start": 1572.95,
+      "end": 1574.31,
+      "text": "They don't want to look the other way to that.",
+      "source": "pass1",
+      "avg_logprob": -0.058071788825444726
+    },
+    {
+      "start": 1574.31,
+      "end": 1575.99,
+      "text": "They'd rather go to regulators and say,",
+      "source": "pass1",
+      "avg_logprob": -0.058071788825444726
+    },
+    {
+      "start": 1575.99,
+      "end": 1577.43,
+      "text": "hey, look, we found this guy",
+      "source": "pass1",
+      "avg_logprob": -0.058071788825444726
+    },
+    {
+      "start": 1577.43,
+      "end": 1579.43,
+      "text": "who's only putting $50 out there",
+      "source": "pass1",
+      "avg_logprob": -0.058071788825444726
+    },
+    {
+      "start": 1579.43,
+      "end": 1580.95,
+      "text": "or catching all this stuff.",
+      "source": "pass1",
+      "avg_logprob": -0.058071788825444726
+    },
+    {
+      "start": 1580.95,
+      "end": 1583.75,
+      "text": "They want to be able to communicate to regulators",
+      "source": "pass1",
+      "avg_logprob": -0.10245668843276519
+    },
+    {
+      "start": 1583.75,
+      "end": 1585.43,
+      "text": "that they are on top of this",
+      "source": "pass1",
+      "avg_logprob": -0.10245668843276519
+    },
+    {
+      "start": 1585.43,
+      "end": 1586.95,
+      "text": "so that the American people don't feel",
+      "source": "pass1",
+      "avg_logprob": -0.10245668843276519
+    },
+    {
+      "start": 1586.95,
+      "end": 1588.23,
+      "text": "like they're getting ripped off",
+      "source": "pass1",
+      "avg_logprob": -0.10245668843276519
+    },
+    {
+      "start": 1588.23,
+      "end": 1590.15,
+      "text": "and so that Elizabeth Warren doesn't come in",
+      "source": "pass1",
+      "avg_logprob": -0.10245668843276519
+    },
+    {
+      "start": 1590.15,
+      "end": 1592.95,
+      "text": "with her mega fancy bill to ruin all their businesses,",
+      "source": "pass1",
+      "avg_logprob": -0.10245668843276519
+    },
+    {
+      "start": 1592.95,
+      "end": 1595.35,
+      "text": "which of course is what she wants to do with everything.",
+      "source": "pass1",
+      "avg_logprob": -0.10245668843276519
+    },
+    {
+      "start": 1596.07,
+      "end": 1598.63,
+      "text": "So that's kind of the state of affairs here.",
+      "source": "pass1",
+      "avg_logprob": -0.10245668843276519
+    },
+    {
+      "start": 1598.63,
+      "end": 1600.87,
+      "text": "I wanted to at least kind of set that ground",
+      "source": "pass1",
+      "avg_logprob": -0.10245668843276519
+    },
+    {
+      "start": 1601.99,
+      "end": 1604.63,
+      "text": "like ground level understanding of that",
+      "source": "pass1",
+      "avg_logprob": -0.10245668843276519
+    },
+    {
+      "start": 1604.63,
+      "end": 1607.03,
+      "text": "if you are just diving into these for the first time,",
+      "source": "pass1",
+      "avg_logprob": -0.10245668843276519
+    },
+    {
+      "start": 1607.59,
+      "end": 1609.19,
+      "text": "because it is an important thing",
+      "source": "pass1",
+      "avg_logprob": -0.10245668843276519
+    },
+    {
+      "start": 1609.67,
+      "end": 1612.07,
+      "text": "if you get involved, if you get on one of these apps",
+      "source": "pass1",
+      "avg_logprob": -0.10456201478676952
+    },
+    {
+      "start": 1612.07,
+      "end": 1613.51,
+      "text": "you're going to have those questions.",
+      "source": "pass1",
+      "avg_logprob": -0.10456201478676952
+    },
+    {
+      "start": 1613.51,
+      "end": 1615.99,
+      "text": "I'm completely certain of it.",
+      "source": "pass1",
+      "avg_logprob": -0.10456201478676952
+    },
+    {
+      "start": 1615.99,
+      "end": 1618.63,
+      "text": "So now you'll know at least a little bit on how to answer them.",
+      "source": "pass1",
+      "avg_logprob": -0.10456201478676952
+    },
+    {
+      "start": 1618.63,
+      "end": 1619.91,
+      "text": "We'll have more coming up this week.",
+      "source": "pass1",
+      "avg_logprob": -0.10456201478676952
+    },
+    {
+      "start": 1619.91,
+      "end": 1621.99,
+      "text": "Again, we're kind of just in our temporary studios here",
+      "source": "pass1",
+      "avg_logprob": -0.10456201478676952
+    },
+    {
+      "start": 1621.99,
+      "end": 1623.35,
+      "text": "waiting for our studios to be built.",
+      "source": "pass1",
+      "avg_logprob": -0.10456201478676952
+    },
+    {
+      "start": 1623.35,
+      "end": 1624.71,
+      "text": "Well, we'll have all the bells and whistles",
+      "source": "pass1",
+      "avg_logprob": -0.10456201478676952
+    },
+    {
+      "start": 1624.71,
+      "end": 1625.67,
+      "text": "of the normal show.",
+      "source": "pass1",
+      "avg_logprob": -0.10456201478676952
+    },
+    {
+      "start": 1625.67,
+      "end": 1627.35,
+      "text": "We can show all the clips in the markets",
+      "source": "pass1",
+      "avg_logprob": -0.10456201478676952
+    },
+    {
+      "start": 1627.35,
+      "end": 1628.55,
+      "text": "and all the different things.",
+      "source": "pass1",
+      "avg_logprob": -0.10456201478676952
+    },
+    {
+      "start": 1628.55,
+      "end": 1629.91,
+      "text": "That's all right around the corner.",
+      "source": "pass1",
+      "avg_logprob": -0.10456201478676952
+    },
+    {
+      "start": 1629.91,
+      "end": 1631.11,
+      "text": "But for now, I would just ask you,",
+      "source": "pass1",
+      "avg_logprob": -0.10456201478676952
+    },
+    {
+      "start": 1631.99,
+      "end": 1633.03,
+      "text": "if you want to share this with someone,",
+      "source": "pass1",
+      "avg_logprob": -0.10456201478676952
+    },
+    {
+      "start": 1633.03,
+      "end": 1634.15,
+      "text": "I would love that.",
+      "source": "pass1",
+      "avg_logprob": -0.10456201478676952
+    },
+    {
+      "start": 1634.15,
+      "end": 1636.23,
+      "text": "Go to predictableshow.com.",
+      "source": "pass1",
+      "avg_logprob": -0.10456201478676952
+    },
+    {
+      "start": 1636.23,
+      "end": 1637.51,
+      "text": "It is right up there.",
+      "source": "pass1",
+      "avg_logprob": -0.10456201478676952
+    },
+    {
+      "start": 1637.51,
+      "end": 1638.15,
+      "text": "Subscribe.",
+      "source": "pass1",
+      "avg_logprob": -0.12759311841084406
+    },
+    {
+      "start": 1638.15,
+      "end": 1639.11,
+      "text": "It's just an email address.",
+      "source": "pass1",
+      "avg_logprob": -0.12759311841084406
+    },
+    {
+      "start": 1639.11,
+      "end": 1639.91,
+      "text": "It's all you have to do.",
+      "source": "pass1",
+      "avg_logprob": -0.12759311841084406
+    },
+    {
+      "start": 1639.91,
+      "end": 1641.67,
+      "text": "You'll get these emails whenever we update,",
+      "source": "pass1",
+      "avg_logprob": -0.12759311841084406
+    },
+    {
+      "start": 1641.67,
+      "end": 1643.91,
+      "text": "when we've got a tip on a market that we like,",
+      "source": "pass1",
+      "avg_logprob": -0.12759311841084406
+    },
+    {
+      "start": 1643.91,
+      "end": 1646.87,
+      "text": "whatever it is, you'll get that there as well.",
+      "source": "pass1",
+      "avg_logprob": -0.12759311841084406
+    },
+    {
+      "start": 1646.87,
+      "end": 1647.67,
+      "text": "And the show, of course,",
+      "source": "pass1",
+      "avg_logprob": -0.12759311841084406
+    },
+    {
+      "start": 1647.67,
+      "end": 1649.11,
+      "text": "airs on youtube.youtube.com",
+      "source": "pass1",
+      "avg_logprob": -0.12759311841084406
+    },
+    {
+      "start": 1650.07,
+      "end": 1651.75,
+      "text": "at predictableshow.",
+      "source": "pass1",
+      "avg_logprob": -0.12759311841084406
+    },
+    {
+      "start": 1651.75,
+      "end": 1654.23,
+      "text": "Same thing if you search for predictable show with stew",
+      "source": "pass1",
+      "avg_logprob": -0.12759311841084406
+    },
+    {
+      "start": 1654.23,
+      "end": 1657.51,
+      "text": "or predictable with stew on any podcast app,",
+      "source": "pass1",
+      "avg_logprob": -0.12759311841084406
+    },
+    {
+      "start": 1657.51,
+      "end": 1659.43,
+      "text": "you can get that there as well.",
+      "source": "pass1",
+      "avg_logprob": -0.12759311841084406
+    },
+    {
+      "start": 1659.43,
+      "end": 1661.43,
+      "text": "And listen up to the broadcast.",
+      "source": "pass1",
+      "avg_logprob": -0.12759311841084406
+    },
+    {
+      "start": 1661.43,
+      "end": 1663.35,
+      "text": "So thanks so much for tuning in.",
+      "source": "pass1",
+      "avg_logprob": -0.12759311841084406
+    },
+    {
+      "start": 1663.35,
+      "end": 1665.99,
+      "text": "We appreciate your time and we will see you tomorrow.",
+      "source": "pass1",
+      "avg_logprob": -0.12759311841084406
+    }
+  ],
+  "full_text": "Hi, I'm Katie, your friend and jeweler at Shane Company. Daydreaming about bringing your engagement ring vision to life? As a jewelry consultant, I'm here to help. Compare ring styles side by side. They're in stock and ready to try on. Then customize it with an engraving or decorative crown. At Shane Company, there are so many ways to create your dream ring at your dream price. Visit us in-store or at ShaneCo.com because a friend wants you to get exactly what you want. Shane Company, your friend and jeweler. Welcome to Predictable with Stu. I am of course your host, Stu Bergear, and we're kind of in soft launch mode right now. I'm here at the Belize Studios behind me, a couple of rooms over. They are currently constructing and lighting our new studio, our fancy new dicks that are going to be used on a day-to-day basis for the show Predictable once we get started. I think it's going to be next week. It's possible it's late this week, it's right around here where we'll start getting into more of a flow of a normal show, but I wanted to make sure that you're getting some content on the big stories that are going on right now. In fact, it's funny because this is a show that looks at the world, looks at news through the lens of prediction markets. So far, we haven't really started off giving you individual markets and really showing you all the details on those. We'll be doing that once we're in the main studio. I figured it would be at least worth talking about some of these broader issues around prediction markets, especially because honestly, because I'm such a loser and such a nerd and have been in this world for a long time, it's one of those things that I kind of feel like people are more aware of than maybe they are. Like, what do these things mean, how do they work? And a lot of people have a lot of basic questions and a lot of intricate questions about prediction markets and how they are swimming in the world, of course, the media is doing everything they can to destroy them right now. The media is doing everything they can to try to paint these markets as some evil, terrible thing for people without giving anybody the facts. And I think it's important to understand what the facts are around this. I had a bunch of texts from people that I know over the weekend who said, oh gosh, these prediction markets, is there a market on whether someone would try to take President Trump's life like they did at the White House Correspondents' Dinner, you know, there is a history to this. If you go back a long time, there's a long-term academic sort of argument around prediction markets as it relates to things like assassination and terrorism. One of the first uses of prediction markets was DARPA who came up with the idea, hey, what if we make an internal prediction market and let people wager or invest on whether, like, what is the next terrorist attack going to be? This is right after 9-11. I'm thinking like, what's an innovative way to solve a problem like this? Because we obviously missed this 9-11 thing pretty badly. And one of the answers was a market that individuals who were in the intelligence community could put their own money up and say, I think the next terrorist attack is going to be here and they may be working on Somalia. And it was a way to basically elevate the opinions of agents in the field who are like, my stuff is getting ignored. I'm turning this stuff in and I think there's going to be a massive threat from this area. No one's paying attention to me. How do we get that attention? Well, if those markets started to reflect that, the higher ups could say, wait a minute, that's popping over there. What's going on in Somalia? That was kind of the original thought of prediction markets. There, of course, was the book The Wisdom of Crowds that kind of promoted them a little bit more and kind of was one of the first mainstream understandings and mentions of these prediction markets. But as they've developed into real time, the sort of academic purist sort of view on them has changed. This is very normal, by the way. I mean, you can see this in crypto, like Bitcoin, for example. Like obviously the initial use was more of as a currency. It's sort of kind of changed into more of like a digital goal. Now, of course, there's people that do spend it as a currency. And I'm a supporter. But also, that's just the reality of the situation. A lot of times these big grandiose ideas you have at the beginning wind up not being the way the technology is used. I think that's okay. That's not a bad thing. It's something that we all kind of have to get used to. I bring all that up because people were asking me about prediction markets and is there going to be a market on President Trump getting assassinated? I'll say this as someone who's watched this. I don't know if they could have prediction markets on this because it seems like every other freaking week someone's trying to kill the guy. Okay? That's really bad. And by the way, if you're thinking of that, don't. Is that something that we can all kind of agree on? That seems amazing that I have to say something like that. But it does seem to be the reality these days. Anyway, the question as to whether there are assassination markets. Are there terrorism markets? I put that exact question to Michael Selick. He's the chair of the CFTC, the CFTC Overseas Prediction Markets and all the prediction market companies. CFTC is the head regulator and Michael Selick is the chairman of that organization. I was in Washington, D.C. If you didn't catch the whole interview, I want to give you a clip of it. This is Michael Selick talking about markets like this. The media loves stories, these outlier kind of stories when it comes to prediction markets. Most of them are not even occurring here in the United States. We hear these things about war, about death, about assassination, all these markets. Are those markets legal here in the United States? Those markets are also prohibited. Our statute includes a provision that states contracts on war, assassination, terrorism, illegal activity, gaming, which is undefined. These are within the agency's discretion to prohibit. And so we have not allowed and we can reject contracts. We have not allowed any exchanges to list war, terrorism, assassination, and various other sorts of contracts that are illegal. Offshore, we do not oversee the listing of contracts. So there are some exchanges that list these things offshore. And to the extent U.S. persons are accessing that somehow, we have authority to the extent it's extraterritorial, but we don't oversee the exchanges as their primary regulator. And that's where all of these stories seem to come from. Are these overseas exchanges that are not regulated by you? You would not allow that to happen. That's not a thing that can occur. That's right. I can't believe how many people don't understand that. One of the big things I hear from people, including some conservatives and people that I agree with on a lot of things, like, we just can't let these things be the wild west. It's not the wild west. You have regulatory authority over this and you're helping shape this as we go with the attention, at least in my understanding, of allowing these markets and innovations to flourish. It's really an unfair criticism because if you think about, for example, our regulation around food and drinks and all of that here in the United States, we allow certain things. Other countries allow much more things. We have different standards. Some countries have more stringent standards. In the U.S., we have very stringent standards around the listing of these contracts, but that's not to say that they can't be listed offshore in a different exchange under different laws and regulations. Right. I mean, I've eaten in some of these countries and did not work out well. I will tell you. So I'm glad we have some of those rules. Okay. So I don't know that he could have been any more clear about that. These are not legal. They are not legal. Every once in a while, you'll hear about kind of an outlier, crazy market. Someone talking about something when it comes to death or assassination or whatever it is. At the end of the day, though, those are all overseas markets not regulated by the CFTC here in the United States. Of course, it doesn't matter what you do here, passing laws. It's not going to affect what's going on in these other countries or in the darkness of the internet somewhere. So it's important to understand that. And the other question I get all the time is not just about assassinations, it's about insider trading. I wrote a piece on this on predictableshow.com. I encourage you to go to predictableshow.com, subscribe to the sub-stack there. We're going to have lots of articles up to and including specific markets that you can profit on right now. Those will be rolling out here as we go forward. We also have talking about the prediction markets generally. We'll have clips of the show, we'll have live streams, everything you want there. Go to predictableshow.com. But I wanted to go through the insider trading part of this because a lot of people have temptations. Now, what if you are a person who has a little bit of inside knowledge? Just a little bit. And you're thinking to yourself, how do I line my pockets? With the cash flowing through prediction markets right now? It's an understandable question because it's this new thing. And you probably never had real insight as to what Walmart was doing behind the scenes. You may have never had real insult as to what NVIDIA was doing behind the scenes. But you may very well have insight onto another issue. When you can predict, invest, bet, whatever you want to call it. On anything, one of those things might be something you actually have knowledge of. As a person who was on the Glenn Beck program for years and years and years, if there was markets about, hey, will Glenn add an affiliate in Topeka next week? I might know that. And I might be able to go on there and say, yeah, he will. Or is Glenn going, what is Glenn going to say to Donald Trump in this interview? I might have already heard the interview. I might know what the plan is. I might have inside information. What should I do to line my pockets? What's the appropriate way of doing this? I titled it, How to Properly Conduct Insider Trading. And here's the right way to do it. Don't, don't do it. This is a sort of a project that we've been working on for a while. One of the, there's a lot of goals I have for it. And of course I want you to watch it. I want people to, I want you, as Rush used to say, create revenue. I want to make this into a successful business, of course. That's part of my aim here. Part of my aim is also to help you maybe to make a little cash for yourself. Maybe we can be the ones that are a little bit profitable and do pretty well and maybe pay for a dinner out or a vacation or who knows what else. All that's very central to what we're doing here. Another goal, however, and maybe this is our lowest hurdle, is to try to make anyone, someone in the media understand prediction markets before writing about prediction markets, before talking about prediction markets. Any sort of knowledge whatsoever about prediction markets before becoming an expert on prediction markets publicly and trying to explain them to everyday people. Because, you know, they have jobs, right? They have lives. The average person isn't sitting around trying to figure this stuff out on a day-to-day basis, but they're probably interested in it. And they see all these headlines about people being killed and someone made money and someone, you know, in Venezuela, the Venezuela Maduro action, someone knew about it in advance, they made $400,000, someone's going to jail for it. What's going on? I understand why you have these questions. And I understand that the media is not doing a very good job answering them. Now, this is a newsletter that is a newsletter that covers Hollywood, insider newsletter. And they had this, and I thought it was an interesting illustration of the problem right now in this particular area. This is what they write. In the prediction market era, almost anyone can bet on anything, from the Nicolas Maduro ouster to the Outer Banks release date, even if they have privileged knowledge that makes betting a sure thing. The problem with a sentence like this is that it is 100% inaccurate. Literally every part of that sentence is wrong. You cannot, if you have insider information about when is the release date of Outer Banks, go on a prediction market and put your money down on that position. Why? It is illegal. This is a crime. Insider trading is a crime. Now, I suppose you can do it. You can theoretically go on and sign up and put money on one of these, but it is illegal. Just like, you know, someone in this era of automobiles, and almost anyone can run over a bunch of kindergartners at a bus stop. Yes, you can do it, but we have criminal penalties in place to stop you from doing it, to dissuade you from going that direction. And, you know, I think when people look at this and they say, oh, I can get on there, I can throw some money down and make a little extra scratch. I happen to know something about this. Michael Selick went into that in that clip on some of those markets, but also throughout the interview talking about how this is just actually wrong and illegal. It's, I think the issue is it feels fun. Nothing's fun about investing in pork bellies, pork belly futures. Nothing's fun about, you know, picking up a mining company and saying, I'm going to buy their stock. That's just like a drudgery, right? It's, I mean, maybe you're really into it. Maybe you're a NBC nerd and that's cool. But if you're a normal person, like, you don't care about that. Predicting what might happen in a sporting event that you care about, what happened at the Oscars, what might happen in an election. Those are fun and interesting to people. And because of that, I think there's a, the guard is down a little bit. People sit back and they say, ah, you know, it's just, it's just, you know, thrown a few bucks in there. It's no big deal. It's just good, clean fun. I understand that, but just remember, these are actual financial markets. They actually have a regulator. This is something, if you feel like you're on the line, if you're asking yourself, gosh, I don't know, this, is this going to be a problem with insider trading? If I'm ever asked about it, just stay away from it. There's plenty of markets out there that you know nothing about. Absolutely nothing about. And you could still wind up being profitable there. We're going to help you try to do that. There are probably things you know about that just watching in the news. There are things you know about in your day-to-day life, observations you've made, rules you've made in your own head that prove that you're going to win in a particular market. That all is real. Knowing something for sure in advance and investing in a market like this can actually give you massive legal trouble and you want to stay away from it. Now, a lot of people will say, oh, it's just a little side money. That's what the article said. It said it was just a little bit of side money you can earn. And I get that, but it's more than that. This is a clip from this same newsletter. Let's see if I can find it here real quick. Here it is. He says, I know a guy who works for a CBS competition show. Now, I don't watch a lot of CBS. I don't watch a lot of competition shows. The only one I know of is Survivor. So maybe he's talking about that. I don't know. He says, you can guess which one. And he's been making a little side money on the prediction apps. It's actually pretty easy. It is easy, I'm sure. Lots of people do lots of things that are very easy and also illegal. You can get away with a lot of things. It's just the risk builds up the more and more you do it. Try to stay away from that. And this sort of fake concern from everybody in the media. Oh, gosh, I can't believe this person made $5,000 on this. Will you stop it for a second? Where were you guys when, you know, leaning centers were popping up all over Minnesota? Where were you then? Where were you when COVID fraud was absolutely everywhere and hundreds of billions of dollars were being wasted? Where were you when Nancy freaking Pelosi somehow became the single most clairvoyant stock investor in American history? Where were you? No one said anything about it. So spare me your real concern. I wish you were concerned about a thing like this. We all know you're not. There's no real concern over this. It's just a sexy story and they've got a new target. And the new target is prediction markets. Can you make a little money off survivor if you work at survivor? It's possible. You can make a little cash, maybe a little scratch. If you don't get caught, you are breaking the law. But again, the same thing applies to whether you walk into a store and take a bag of Funions as you walk out and don't pay for them. You probably could get away with it. Funions are a little loud though. That packaging is loud and they're very crunchy. So I would stay away. You want to go for something maybe like a yogurt. Okay? Something that's going to be a little bit less noisy as you walk out and then maybe try to eat it. But my point here is that you can get away with a lot of things. You might notice that every product at Walgreens is now behind glass. Like there's a reason why is because a lot of people got away from stealing. Insider trading is something you probably could get away with if you're lucky. But at what cost? You're making a little bit of extra cash, a little extra scratch for what? You're putting your job on the line. You're putting your freedom on the line. You could go to prison for this. We talked about the Venezuela situation where a soldier or someone in the military who's involved at some level in the interaction regarding the removal of Maduro wound up profiting to the tune of something like $400,000. Now that's a lot more than a little scratch, a little extra cash. It's really hard to do. That is also something that is going to be pretty notable. People go, well, I'll just get a little bit. Maybe a little bit of a few dollars here and there. I can get a little bit of a profit. You will open yourself up to real problems. And the fact is you could go to prison for it. You might also just get fined and kicked off the service. This is what's happened to some people. But you also could go to prison, especially as that number gets bigger. Now if you go big, if you go small, it's not really worth the risk. Because not only could you go to prison, you could also lose your job. If you're working at Survivor and they say, hey, we noticed by the way, and they make a public showing of this, which by the way, these companies will do, make a showing, hey, we caught this person who was dealing an insider information and we've kicked him off the platform and find them, here's their name. When that happens to you, you're going to lose your job. The whole concept of Survivor, even having any value at all to humanity, whatever value it has, is that you don't know the outcome of it. So if you don't know the outcome to a situation like that, leaking it out there, and this is a way of publicly leaking information. If you have that information and you are to put your investment dollars in on this, and it's not really an investment, I suppose, when you know the outcome, you put it in there and it drives the percentage chance of Bob winning from 10% to 50%. Well, you're kind of giving away the ending. A lot of people are going to think you are. That is hurting your company. They're going to fire you for that. So now you've risked your freedom and you've risked your job, your employment, your livelihood. For what? A few extra bucks? Now, if you're going to go big, you might say, look, I got some money problems, I want a yacht, whatever the situation is, and you're going to go really, really big and you're going to make hundreds of thousands, maybe millions of dollars. Is that possible? Well, it is possible, right? You could attempt it. If you do it, if you have some prediction and you take this incredible long shot, it's a hundred to one, and you go out there and you put all your money in there, you sign up for an account, you dump $30,000 into account, you turn it into $3 million or $30 million or whatever it is. If you do that, they're going to notice. This is not normal behavior. This people don't do that. They're going to notice. Now, if you happen to luck out and hit one of those, they'll look into you and they'll realize there's nothing there. But because of the way these companies operate in the United States, they have KYC rules. KYC means know your customer. It's a big term. I became familiar with it really through the crypto stuff, because you can go through overseas exchanges and things like that. There's a lot of privacy concerns around crypto, and a lot of people who got into crypto particularly early under many anti-government or limited government libertarian ideals, they didn't want to give all their information up to banks or exchanges. So they went through a way that they didn't have to use those rules. In the United States, if you're a regulated exchange, you have these KYC rules you have to comply with. So they know a lot about you. If you all of a sudden turn $1,000 into a million dollars overnight, or $100,000 overnight, they're going to freaking notice and they're going to come look at you. And when they see your employment is associated with the contract, you're going to lose all that money, you're going to get fined, you're going to lose your account for multiple years, and likely are going to go to prison for something like that. It is not worth it. This is the problem. There's not really a sweet spot here. This isn't me even discouraging you from committing crimes. This is me telling you, hey, the crime just doesn't pay here. Because either you're only going to make a few bucks with a lot of risk, or you can make a lot of money, but the risk is going to be so high, you're almost definitely going to get caught. Now, some people will say you can go overseas and you can get positions overseas markets, which is true. However, you should also know. Most of these overseas markets, the ones we're talking about that have these really open rules for different contracts and events that you can invest in, those particular markets are almost exclusively blockchain type markets. What does that mean? Well, it's like a cryptocurrency, like a Bitcoin. Everybody can see every transaction made on the blockchain. They don't know it's you. They can't see your name, but they can see some account. All of a sudden came up with this brilliant idea, 10 minutes before something happened and cash in big time. When that is seen, there's an entire cottage industry of people who are looking for these types of anomalies. They're looking for, wait a minute, why did that person do that? This is weird. This is suspicious. They post about it and everyone tries to figure out who it is. If the government gets interested enough, they too will still find you. And just because you place it on an overseas market, which is by the way, what this soldier did, he was on a non-regulated market overseas, got nothing to do with the business here in the United States, but he was an unregulated market overseas and he was still caught and still prosecuted and is still going to have massive, massive legal trouble. So this is the problem. It's really just a type of situation where there's not a sweet spot for anyone to be. You should not, of course, do it anyway, because it's wrong and it's illegal. But even if you want to break the rules, if you're a big rule breaker, I'm sitting here in Pat Gray's studio right now, man known to go a few miles an hour occasionally over the speed limit. Some of us occasionally cross such lines. This is a line that doesn't have the payoff on the other side of it. So it's important to know, and I mean this because there's a lot of people that I know who are getting into these markets for the first time. Be freaking careful. These are real markets. They treat them as real things. It's not just a fun play money thing. This is a real financial market. We talk about investments a lot and we always like to joke about the difference between betting and investments and everyone likes to give me a hard time on that one, which is fine. But the problem here is that these are regulated markets. You have to be really, really careful that you don't screw this up. So going to a little bit of extra money, trying to turn it into your retirement plan, there's a lot of problems with that strategy. It's not a good one. It is a strategy that may very well land you in prison or losing your job or God only knows what else. So be careful there. And understand that a lot of the complaints coming from the media are not real. When they say, oh gosh, there's all this insider trading. Not in the United States. They caught a guy the other day who was a politician who put a $50 position on his own campaign saying he was going to win the election. That's really, to me, I don't see how honestly that even is a distortion. It is insider trading, I guess, technically by those rules, but I don't see what it does. The guy's like, oh, well, I just wanted to prove that any election can be bought. Well, how has it bought that you put $50 on yourself? You didn't even move the market, let alone buy yourself an election. Just so you know, these prediction markets are not deciding elections. That's got nothing to do with who wins. It is a prediction of who will win, but it doesn't mean. You can't, if you win the prediction market and lose the election, you still don't get to go into office. This guy was such a dunce. Apparently he didn't understand that. But you know, you've got a $50 position where you're kind of investing on yourself, if you will. If they're catching something like that, if you're making hundreds of thousands of dollars, tens of thousands of dollars, the fact is, they're going to see that action and they're going to check it out. So this stuff, there's no assassination markets. There's no terrorism markets. There's no murder markets. There's no life or death markets. None of that stuff is real. There is, you know, insider trading, to be honest, of course, it's not a perfect system. The lead investigators here are these exchanges themselves. The CFTC is the backup there. Do they catch every one of these things? Of course not. Of course not. I mean, there are people making some money, I'm sure, on insider information. Will they get caught eventually? I mean, I will tell you this. These organizations, Kashi Polymarket, predicted all these big ones are spending fortune on AI technology and staffing to try to catch these things. Why? It's not because they're the warmest souls in the world, although they may be very nice people. It's because they are companies that are worth tens of billions of dollars. They don't care about the transaction fee they're getting from your $100 investment. That's a small potatoes to them. They don't want to look the other way to that. They'd rather go to regulators and say, hey, look, we found this guy who's only putting $50 out there or catching all this stuff. They want to be able to communicate to regulators that they are on top of this so that the American people don't feel like they're getting ripped off and so that Elizabeth Warren doesn't come in with her mega fancy bill to ruin all their businesses, which of course is what she wants to do with everything. So that's kind of the state of affairs here. I wanted to at least kind of set that ground like ground level understanding of that if you are just diving into these for the first time, because it is an important thing if you get involved, if you get on one of these apps you're going to have those questions. I'm completely certain of it. So now you'll know at least a little bit on how to answer them. We'll have more coming up this week. Again, we're kind of just in our temporary studios here waiting for our studios to be built. Well, we'll have all the bells and whistles of the normal show. We can show all the clips in the markets and all the different things. That's all right around the corner. But for now, I would just ask you, if you want to share this with someone, I would love that. Go to predictableshow.com. It is right up there. Subscribe. It's just an email address. It's all you have to do. You'll get these emails whenever we update, when we've got a tip on a market that we like, whatever it is, you'll get that there as well. And the show, of course, airs on youtube.youtube.com at predictableshow. Same thing if you search for predictable show with stew or predictable with stew on any podcast app, you can get that there as well. And listen up to the broadcast. So thanks so much for tuning in. We appreciate your time and we will see you tomorrow."
+}

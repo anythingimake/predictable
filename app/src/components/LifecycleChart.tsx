@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Line, LineChart, ReferenceDot, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 import type { CallEvent } from "../types";
 
@@ -5,6 +6,24 @@ interface Props {
   priceHistory: Array<{ snapshot_date: string; price: number }>;
   events: CallEvent[];
   height?: number;
+}
+
+// Track viewport breakpoint to drop chart height on mobile (≥ above-fold real estate for events list).
+function useIsMobile(): boolean {
+  const [isMobile, setIsMobile] = useState<boolean>(() => {
+    if (typeof window === "undefined") return false;
+    return window.matchMedia("(max-width: 767px)").matches;
+  });
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const mql = window.matchMedia("(max-width: 767px)");
+    const onChange = (e: MediaQueryListEvent) => setIsMobile(e.matches);
+    mql.addEventListener("change", onChange);
+    return () => mql.removeEventListener("change", onChange);
+  }, []);
+
+  return isMobile;
 }
 
 const EVENT_COLOR: Record<CallEvent["event_type"], string> = {
@@ -16,7 +35,9 @@ const EVENT_COLOR: Record<CallEvent["event_type"], string> = {
   clarify: "var(--color-text-faint)",
 };
 
-export function LifecycleChart({ priceHistory, events, height = 240 }: Props) {
+export function LifecycleChart({ priceHistory, events, height }: Props) {
+  const isMobile = useIsMobile();
+  const chartHeight = height ?? (isMobile ? 180 : 240);
   // Build the line series: convert snapshot prices (0..1) to cents 0..100
   const series = priceHistory.map((p) => ({
     date: p.snapshot_date,
@@ -44,22 +65,24 @@ export function LifecycleChart({ priceHistory, events, height = 240 }: Props) {
   }
 
   return (
-    <ResponsiveContainer width="100%" height={height}>
+    <ResponsiveContainer width="100%" height={chartHeight}>
       <LineChart data={series} margin={{ top: 10, right: 10, left: 10, bottom: 10 }}>
         <XAxis
           dataKey="ts"
           type="number"
           domain={["dataMin", "dataMax"]}
           tickFormatter={(ts) => new Date(ts).toLocaleDateString(undefined, { month: "short", day: "numeric" })}
-          tick={{ fill: "var(--color-text-muted)", fontSize: 11 }}
+          tick={{ fill: "var(--color-text-muted)", fontSize: isMobile ? 10 : 11 }}
           stroke="var(--color-border)"
+          interval={isMobile ? "preserveStartEnd" : "preserveStartEnd"}
+          minTickGap={isMobile ? 32 : 16}
         />
         <YAxis
           domain={[0, 100]}
           tickFormatter={(v) => `${v}¢`}
-          tick={{ fill: "var(--color-text-muted)", fontSize: 11 }}
+          tick={{ fill: "var(--color-text-muted)", fontSize: isMobile ? 10 : 11 }}
           stroke="var(--color-border)"
-          width={40}
+          width={isMobile ? 32 : 40}
         />
         <Tooltip
           contentStyle={{ background: "var(--color-surface)", border: "1px solid var(--color-border)" }}

@@ -22,28 +22,34 @@ export function EpisodeDetail() {
 
   return (
     <article className="space-y-6">
-      <header className="flex items-start gap-4">
+      <header className="flex flex-col sm:flex-row items-start gap-3 sm:gap-4">
         {ep.cover_image_url && (
-          <img src={ep.cover_image_url} alt="" className="w-28 h-28 rounded object-cover" />
+          <img
+            src={ep.cover_image_url}
+            alt=""
+            className="w-20 h-20 sm:w-28 sm:h-28 rounded object-cover flex-shrink-0"
+            loading="lazy"
+            decoding="async"
+          />
         )}
-        <div>
+        <div className="min-w-0">
           <div className="text-xs text-[var(--color-text-muted)] uppercase">
             {ep.publish_date} · {formatSec(ep.duration_sec)} · {ep.type}
           </div>
-          <h1 className="text-2xl font-semibold mt-1">{ep.title}</h1>
-          <div className="flex gap-3 mt-2 text-sm">
+          <h1 className="text-xl md:text-2xl font-semibold mt-1">{ep.title}</h1>
+          <div className="flex flex-wrap gap-x-4 gap-y-2 mt-2 text-sm">
             {ep.youtube_id && (
-              <a href={youtubeUrlAt(ep.youtube_id, 0)} target="_blank" rel="noreferrer">
+              <a href={youtubeUrlAt(ep.youtube_id, 0)} target="_blank" rel="noreferrer" className="tap inline-flex items-center">
                 YouTube ↗
               </a>
             )}
             {ep.substack_slug && (
-              <a href={substackUrlAt(ep.substack_slug, null)} target="_blank" rel="noreferrer">
+              <a href={substackUrlAt(ep.substack_slug, null)} target="_blank" rel="noreferrer" className="tap inline-flex items-center">
                 Substack ↗
               </a>
             )}
             {ep.audio_url && (
-              <a href={ep.audio_url} target="_blank" rel="noreferrer">
+              <a href={ep.audio_url} target="_blank" rel="noreferrer" className="tap inline-flex items-center">
                 MP3 ↗
               </a>
             )}
@@ -53,20 +59,20 @@ export function EpisodeDetail() {
 
       {ep.calls.length > 0 && (
         <section>
-          <h2 className="text-lg font-medium mb-3">Calls in this episode ({ep.calls.length})</h2>
+          <h2 className="text-base md:text-lg font-medium mb-3">Calls in this episode ({ep.calls.length})</h2>
           <div className="space-y-2">
             {ep.calls.map((c) => (
               <Link
                 key={c.id}
                 to={`/calls/${c.id}`}
-                className="flex items-center justify-between rounded border border-[var(--color-border)] bg-[var(--color-bg-elev)] px-4 py-2 hover:border-[var(--color-border-strong)]"
+                className="tap flex items-center justify-between rounded border border-[var(--color-border)] bg-[var(--color-bg-elev)] px-3 py-3 sm:px-4 sm:py-2 hover:border-[var(--color-border-strong)]"
               >
                 <div className="flex items-center gap-2 min-w-0">
                   <ConvictionBadge conviction={c.conviction} showLabel={false} />
                   <span className="font-medium truncate">{c.market_hint}</span>
                   <span className="text-xs text-[var(--color-text-faint)]">{c.side.toUpperCase()}</span>
                 </div>
-                <span className="text-xs text-[var(--color-text-muted)] whitespace-nowrap ml-3">
+                <span className="text-xs text-[var(--color-text-muted)] whitespace-nowrap ml-3 flex-shrink-0">
                   @ {formatSec(c.first_event_ts ?? null)}
                 </span>
               </Link>
@@ -77,8 +83,18 @@ export function EpisodeDetail() {
 
       {ep.substack_body && (
         <section>
-          <h2 className="text-lg font-medium mb-2">Substack write-up</h2>
-          <div className="rounded border border-[var(--color-border)] bg-[var(--color-bg-elev)] p-4 text-sm whitespace-pre-wrap leading-relaxed">
+          <h2 className="text-base md:text-lg font-medium mb-2">Substack write-up</h2>
+          {/* On mobile: collapsed by default to keep first-paint short. On md+: always open. */}
+          <details className="md:hidden rounded border border-[var(--color-border)] bg-[var(--color-bg-elev)] group">
+            <summary className="tap flex items-center justify-between cursor-pointer list-none px-4 py-3 text-sm font-medium text-[var(--color-text-muted)] hover:text-[var(--color-text)]">
+              <span>Read full write-up</span>
+              <span className="text-xs opacity-60 group-open:rotate-180 transition-transform" aria-hidden>▼</span>
+            </summary>
+            <div className="px-4 pb-4 text-base whitespace-pre-wrap leading-relaxed border-t border-[var(--color-border)] pt-3">
+              {ep.substack_body}
+            </div>
+          </details>
+          <div className="hidden md:block rounded border border-[var(--color-border)] bg-[var(--color-bg-elev)] p-4 text-sm whitespace-pre-wrap leading-relaxed">
             {ep.substack_body}
           </div>
         </section>

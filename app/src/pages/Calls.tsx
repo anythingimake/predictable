@@ -44,16 +44,16 @@ export function Calls() {
   return (
     <div className="space-y-5">
       <div>
-        <h1 className="text-2xl font-semibold mb-1">Calls</h1>
+        <h1 className="text-xl md:text-2xl font-semibold mb-1">Calls</h1>
         <p className="text-sm text-[var(--color-text-muted)]">Every position Stu has taken on the show.</p>
       </div>
 
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap gap-1.5 sm:gap-2">
         {TIERS.map((t) => (
           <button
             key={t.value || "_all"}
             onClick={() => setFilter({ ...filter, conviction: t.value || undefined })}
-            className={`px-3 py-1 rounded-full text-xs border transition-colors ${
+            className={`tap inline-flex items-center px-3 py-2 sm:py-1 rounded-full text-sm sm:text-xs border transition-colors ${
               (filter.conviction ?? "") === t.value
                 ? "border-[var(--color-accent)] text-[var(--color-text)] bg-[var(--color-surface)]"
                 : "border-[var(--color-border)] text-[var(--color-text-muted)] hover:text-[var(--color-text)]"
@@ -78,7 +78,7 @@ export function Calls() {
               <Link
                 key={c.id}
                 to={`/calls/${c.id}`}
-                className="flex items-center justify-between rounded border border-[var(--color-border)] bg-[var(--color-bg-elev)] px-4 py-3 hover:border-[var(--color-border-strong)]"
+                className="tap flex items-center justify-between rounded border border-[var(--color-border)] bg-[var(--color-bg-elev)] px-3 py-3 sm:px-4 hover:border-[var(--color-border-strong)]"
               >
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 flex-wrap">
@@ -88,11 +88,11 @@ export function Calls() {
                   </div>
                   <div className="text-xs text-[var(--color-text-muted)] mt-1 truncate">
                     {c.episode_title}
-                    {c.market_source && ` · ${c.market_source}`}
-                    {c.market_ticker && ` · ${c.market_ticker}`}
+                    {c.market_source && <span className="hidden sm:inline"> · {c.market_source}</span>}
+                    {c.market_ticker && <span className="hidden sm:inline"> · {c.market_ticker}</span>}
                   </div>
                 </div>
-                <div className="text-right text-sm whitespace-nowrap ml-3">
+                <div className="text-right text-sm whitespace-nowrap ml-3 flex-shrink-0">
                   {c.realized_pct != null ? (
                     <span
                       className="font-semibold"

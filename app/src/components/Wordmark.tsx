@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 
 export function Wordmark() {
   return (
-    <Link to="/" className="flex items-center gap-3 group">
+    <Link to="/" className="tap flex items-center gap-2 sm:gap-3 group py-2 -my-2">
       <img
         src="/predictable-logo.png"
         alt="Predictable"
-        className="h-7 w-auto block"
+        className="h-6 sm:h-7 w-auto block"
         style={{ filter: "drop-shadow(0 0 6px rgba(34, 197, 94, 0.18))" }}
       />
       <UnofficialBadge />

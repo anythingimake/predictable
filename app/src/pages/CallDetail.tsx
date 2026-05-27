@@ -1,11 +1,15 @@
-import { useEffect, useState } from "react";
+import { lazy, Suspense, useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { api } from "../api";
 import type { CallDetail as CallDetailData } from "../types";
 import { ConvictionBadge } from "../components/ConvictionBadge";
-import { LifecycleChart } from "../components/LifecycleChart";
 import { formatPct, formatSec, substackUrlAt, youtubeUrlAt } from "../lib/format";
 import { ErrorBanner, Loading } from "./Scoreboard";
+
+// Recharts is ~120 KB gzipped — defer it past first paint of CallDetail.
+const LifecycleChart = lazy(() =>
+  import("../components/LifecycleChart").then((m) => ({ default: m.LifecycleChart })),
+);
 
 const EVENT_GLYPH: Record<string, string> = {
   entry: "📥",
@@ -32,6 +36,12 @@ export function CallDetail() {
 
   return (
     <article className="space-y-6">
+      <Link
+        to="/calls"
+        className="tap md:hidden inline-flex items-center text-xs text-[var(--color-text-muted)] hover:text-[var(--color-text)] -mt-1"
+      >
+        ← All calls
+      </Link>
       <header>
         <div className="flex items-center gap-3 flex-wrap mb-1">
           <ConvictionBadge conviction={data.conviction} />
@@ -41,7 +51,7 @@ export function CallDetail() {
           )}
           <span className="text-xs text-[var(--color-text-faint)]">· {data.speaker}</span>
         </div>
-        <h1 className="text-2xl font-semibold">{data.market_hint}</h1>
+        <h1 className="text-xl md:text-2xl font-semibold">{data.market_hint}</h1>
         <p className="text-sm text-[var(--color-text-muted)] mt-1">
           From{" "}
           <Link to={`/episodes/${data.episode_id}`} className="underline">
@@ -64,22 +74,28 @@ export function CallDetail() {
       </section>
 
       <section>
-        <h2 className="text-lg font-medium mb-2">Price + events</h2>
-        <div className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-elev)] p-4">
-          <LifecycleChart priceHistory={data.price_history} events={data.events} />
+        <h2 className="text-base md:text-lg font-medium mb-2">Price + events</h2>
+        <div className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-elev)] p-3 sm:p-4">
+          <div className="overflow-x-auto -mx-1 px-1">
+            <div className="min-w-[320px]">
+              <Suspense fallback={<ChartSkeleton />}>
+                <LifecycleChart priceHistory={data.price_history} events={data.events} />
+              </Suspense>
+            </div>
+          </div>
         </div>
       </section>
 
       <section>
-        <h2 className="text-lg font-medium mb-3">Lifecycle</h2>
+        <h2 className="text-base md:text-lg font-medium mb-3">Lifecycle</h2>
         <div className="space-y-3">
           {data.events.map((e) => (
             <div
               key={e.id}
               className="rounded border border-[var(--color-border)] bg-[var(--color-bg-elev)] p-4"
             >
-              <div className="flex items-center justify-between gap-3 flex-wrap">
-                <div className="flex items-center gap-2">
+              <div className="flex items-start sm:items-center justify-between gap-3 flex-col sm:flex-row">
+                <div className="flex items-center gap-2 flex-wrap">
                   <span className="text-lg">{EVENT_GLYPH[e.event_type] ?? "•"}</span>
                   <span className="font-medium uppercase text-sm">{e.event_type}</span>
                   {e.price_pct != null && (
@@ -96,7 +112,7 @@ export function CallDetail() {
                     href={youtubeUrlAt(data.youtube_id, e.timestamp_sec)}
                     target="_blank"
                     rel="noreferrer"
-                    className="text-xs text-[var(--color-accent)]"
+                    className="tap inline-flex items-center text-xs text-[var(--color-accent)] w-full sm:w-auto"
                   >
                     Jump to {formatSec(e.timestamp_sec)} ↗
                   </a>
@@ -105,7 +121,7 @@ export function CallDetail() {
                     href={substackUrlAt(data.substack_slug, e.timestamp_sec)}
                     target="_blank"
                     rel="noreferrer"
-                    className="text-xs text-[var(--color-accent)]"
+                    className="tap inline-flex items-center text-xs text-[var(--color-accent)] w-full sm:w-auto"
                   >
                     Open at {formatSec(e.timestamp_sec)} ↗
                   </a>
@@ -114,7 +130,7 @@ export function CallDetail() {
                 )}
               </div>
               {e.quote && (
-                <blockquote className="mt-2 pl-3 border-l-2 border-[var(--color-border-strong)] text-sm text-[var(--color-text-muted)] italic">
+                <blockquote className="mt-2 pl-3 border-l-2 border-[var(--color-border-strong)] text-base md:text-sm text-[var(--color-text-muted)] italic leading-relaxed">
                   "{e.quote}"
                 </blockquote>
               )}
@@ -125,7 +141,7 @@ export function CallDetail() {
 
       {data.clarifications.length > 0 && (
         <section>
-          <h2 className="text-lg font-medium mb-3">Clarifications from comments</h2>
+          <h2 className="text-base md:text-lg font-medium mb-3">Clarifications from comments</h2>
           <div className="space-y-2">
             {data.clarifications.map((c) => (
               <div
@@ -147,7 +163,7 @@ export function CallDetail() {
 
       {data.media.length > 0 && (
         <section>
-          <h2 className="text-lg font-medium mb-3">Referenced media</h2>
+          <h2 className="text-base md:text-lg font-medium mb-3">Referenced media</h2>
           <ul className="space-y-1 text-sm">
             {data.media.map((m) => (
               <li key={m.id}>
@@ -178,6 +194,17 @@ function Stat({ label, value, accent }: { label: string; value: string | number;
       <div className="text-lg font-semibold mt-1" style={{ color: accent }}>
         {value}
       </div>
+    </div>
+  );
+}
+
+function ChartSkeleton() {
+  return (
+    <div
+      className="h-[180px] md:h-[240px] rounded border border-dashed border-[var(--color-border)] flex items-center justify-center text-xs text-[var(--color-text-faint)]"
+      aria-label="Loading chart"
+    >
+      Loading chart…
     </div>
   );
 }

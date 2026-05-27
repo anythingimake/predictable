@@ -1,0 +1,20 @@
+{
+  "sagas": [
+    {
+      "name": "Democrats win the House in 2026 midterms (updated post-SCOTUS VRA ruling)",
+      "market_hint": "Democrats win the House in 2026 midterms (updated post-SCOTUS VRA ruling)",
+      "episode_ids": [
+        "78addc38-4410-11f1-b266-7b41bdbbde27",
+        "cbfa6092-4347-11f1-842f-2bc8d66d7ed7"
+      ]
+    },
+    {
+      "name": "James Talarico wins TX Senate 2026 (Stu: bearish, R wins)",
+      "market_hint": "James Talarico wins TX Senate 2026 (Stu: bearish, R wins)",
+      "episode_ids": [
+        "78addc38-4410-11f1-b266-7b41bdbbde27",
+        "cbfa6092-4347-11f1-842f-2bc8d66d7ed7"
+      ]
+    }
+  ]
+}

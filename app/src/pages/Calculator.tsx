@@ -23,7 +23,7 @@ export function Calculator() {
   return (
     <div className="space-y-6 max-w-2xl">
       <div>
-        <h1 className="text-2xl font-semibold mb-1">Calculator</h1>
+        <h1 className="text-xl md:text-2xl font-semibold mb-1">Calculator</h1>
         <p className="text-sm text-[var(--color-text-muted)]">
           Expected value, Kelly sizing, and break-even for a single prediction-market position.
         </p>
@@ -110,11 +110,12 @@ function Field({
       <div className="text-xs uppercase text-[var(--color-text-muted)]">{label}</div>
       <input
         type="number"
+        inputMode="decimal"
         value={value}
         min={min}
         max={max}
         onChange={(e) => onChange(Number(e.target.value))}
-        className="mt-1 w-full bg-[var(--color-bg-elev)] border border-[var(--color-border)] rounded px-3 py-2 text-[var(--color-text)] focus:outline-none focus:border-[var(--color-accent)]"
+        className="mt-1 w-full bg-[var(--color-bg-elev)] border border-[var(--color-border)] rounded px-3 py-2 text-base text-[var(--color-text)] focus:outline-none focus:border-[var(--color-accent)]"
       />
       <div className="text-xs text-[var(--color-text-faint)] mt-1">{help}</div>
     </label>
