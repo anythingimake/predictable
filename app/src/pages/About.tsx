@@ -59,11 +59,11 @@ const PLATFORMS: PlatformLink[] = [
 export function About() {
   return (
     <div className="space-y-12">
+      <ConservanerdsBanner />
       <Hero />
       <WhereToFind />
       <NotSection />
       <ReachOut />
-      <ConservanerdsBanner />
     </div>
   );
 }
@@ -111,18 +111,6 @@ function ConservanerdsBanner() {
 function Hero() {
   return (
     <section className="space-y-4">
-      <h1 className="text-3xl md:text-4xl font-semibold leading-tight">
-        <span
-          className="bg-clip-text text-transparent"
-          style={{
-            backgroundImage:
-              "linear-gradient(90deg, var(--color-mark) 0%, var(--color-accent) 60%, var(--color-text) 100%)",
-          }}
-        >
-          An unofficial scoreboard
-        </span>{" "}
-        for Stu's calls.
-      </h1>
       <p className="text-base md:text-lg text-[var(--color-text-muted)] max-w-2xl leading-relaxed">
         Stu Burguiere calls positions on air every weekday — markets, sides, entry prices,
         and conviction tiers in his own vocabulary. Listeners have no good way to verify the
