@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 import { api } from "../api";
 import type { Call, Conviction } from "../types";
 import { ConvictionBadge } from "../components/ConvictionBadge";
+import { MultiSelect } from "../components/MultiSelect";
 import { useStore } from "../store";
 import { formatPct } from "../lib/format";
 import { ErrorBanner, Loading } from "./Scoreboard";
 
-const TIERS: Array<{ value: Conviction | ""; label: string }> = [
-  { value: "", label: "All" },
+const TIERS: Array<{ value: Conviction; label: string }> = [
   { value: "play", label: "★★★ The Play" },
   { value: "solid", label: "★★ Solid" },
   { value: "flyer", label: "★ Flyer" },
@@ -20,27 +20,23 @@ const TIERS: Array<{ value: Conviction | ""; label: string }> = [
 // Two distinct end-of-life events worth distinguishing:
 //   Exit  = Stu sold/trimmed and noted his exit price on the show (status='closed' in DB)
 //   Settled = the market itself paid out (status='resolved' in DB)
-// We label them in users' terms; the underlying enum stays.
-const STATUSES: Array<{ value: string; label: string }> = [
-  { value: "", label: "All" },
+const STATUSES = [
   { value: "open", label: "Open" },
   { value: "closed", label: "Stu exited" },
   { value: "resolved", label: "Market settled" },
 ];
 
-const SIDES: Array<{ value: string; label: string }> = [
-  { value: "", label: "Any" },
+const SOURCES = [
+  { value: "kalshi", label: "Kalshi" },
+  { value: "polymarket", label: "Polymarket" },
+  { value: "predictit", label: "PredictIt" },
+];
+
+const SIDES = [
   { value: "yes", label: "YES" },
   { value: "no", label: "NO" },
   { value: "over", label: "Over" },
   { value: "under", label: "Under" },
-];
-
-const SOURCES: Array<{ value: string; label: string }> = [
-  { value: "", label: "All" },
-  { value: "kalshi", label: "Kalshi" },
-  { value: "polymarket", label: "Polymarket" },
-  { value: "predictit", label: "PredictIt" },
 ];
 
 export function Calls() {
@@ -50,33 +46,42 @@ export function Calls() {
   const [err, setErr] = useState<string | null>(null);
   const [query, setQuery] = useState("");
 
+  // Pull every call once. All filtering happens client-side so multi-select
+  // checkboxes don't have to round-trip the API per click.
   useEffect(() => {
     setCalls(null);
-    api.calls(filter).then(setCalls).catch((e) => setErr(String(e)));
-  }, [filter]);
+    api.calls().then(setCalls).catch((e) => setErr(String(e)));
+  }, []);
 
-  // Client-side filters that aren't worth round-tripping to the API: text search
-  // across market_hint + episode title, side filter, and date range.
   const filtered = useMemo(() => {
     if (!calls) return null;
     const q = query.trim().toLowerCase();
     const fromTs = filter.date_from ? Date.parse(`${filter.date_from}T00:00:00Z`) : null;
     const toTs = filter.date_to ? Date.parse(`${filter.date_to}T23:59:59Z`) : null;
+    const statuses = filter.status ?? [];
+    const sources = filter.market_source ?? [];
+    const sides = filter.side ?? [];
+    const tiers = filter.conviction ?? [];
+
     return calls.filter((c) => {
-      if (filter.side && c.side !== filter.side) return false;
+      if (statuses.length > 0 && !statuses.includes(c.status)) return false;
+      if (sources.length > 0 && !sources.includes(c.market_source ?? "")) return false;
+      if (sides.length > 0 && !sides.includes(c.side)) return false;
+      if (tiers.length > 0 && !tiers.includes(c.conviction)) return false;
       if (q) {
         const blob = `${c.market_hint ?? ""} ${c.episode_title ?? ""} ${c.market_ticker ?? ""}`.toLowerCase();
         if (!blob.includes(q)) return false;
       }
       if (fromTs != null || toTs != null) {
         const t = Date.parse(`${c.publish_date.slice(0, 10)}T12:00:00Z`);
-        if (Number.isNaN(t)) return true;
-        if (fromTs != null && t < fromTs) return false;
-        if (toTs != null && t > toTs) return false;
+        if (!Number.isNaN(t)) {
+          if (fromTs != null && t < fromTs) return false;
+          if (toTs != null && t > toTs) return false;
+        }
       }
       return true;
     });
-  }, [calls, query, filter.side, filter.date_from, filter.date_to]);
+  }, [calls, query, filter]);
 
   const grouped = useMemo(() => {
     if (!filtered) return [];
@@ -89,15 +94,14 @@ export function Calls() {
     return Array.from(map.entries());
   }, [filtered]);
 
-  const activeFilterCount = [
-    filter.status,
-    filter.market_source,
-    filter.conviction,
-    filter.side,
-    filter.date_from,
-    filter.date_to,
-    query.trim() || undefined,
-  ].filter(Boolean).length;
+  const activeFilterCount =
+    (filter.status?.length ?? 0) +
+    (filter.market_source?.length ?? 0) +
+    (filter.side?.length ?? 0) +
+    (filter.conviction?.length ?? 0) +
+    (filter.date_from ? 1 : 0) +
+    (filter.date_to ? 1 : 0) +
+    (query.trim() ? 1 : 0);
 
   if (err) return <ErrorBanner message={err} />;
 
@@ -105,7 +109,12 @@ export function Calls() {
     <div className="space-y-5">
       <div>
         <h1 className="text-xl md:text-2xl font-semibold mb-1">Calls</h1>
-        <p className="text-sm text-[var(--color-text-muted)]">Every position Stu has taken on the show.</p>
+        <p className="text-sm text-[var(--color-text-muted)]">
+          Every position Stu has taken on the show.
+          {calls && filtered && filtered.length !== calls.length && (
+            <span className="ml-1">Showing {filtered.length} of {calls.length}.</span>
+          )}
+        </p>
       </div>
 
       <div className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-elev)] p-3 sm:p-4 space-y-3">
@@ -126,9 +135,33 @@ export function Calls() {
           )}
         </div>
 
-        <FilterRow label="Status" options={STATUSES} value={filter.status ?? ""} onChange={(v) => setFilter({ ...filter, status: v || undefined })} />
-        <FilterRow label="Source" options={SOURCES} value={filter.market_source ?? ""} onChange={(v) => setFilter({ ...filter, market_source: v || undefined })} />
-        <FilterRow label="Side" options={SIDES} value={filter.side ?? ""} onChange={(v) => setFilter({ ...filter, side: v || undefined })} />
+        <div className="flex flex-wrap gap-2 items-center">
+          <MultiSelect
+            label="Status"
+            options={STATUSES}
+            selected={filter.status ?? []}
+            onChange={(v) => setFilter({ ...filter, status: v.length ? v : undefined })}
+          />
+          <MultiSelect
+            label="Source"
+            options={SOURCES}
+            selected={filter.market_source ?? []}
+            onChange={(v) => setFilter({ ...filter, market_source: v.length ? v : undefined })}
+          />
+          <MultiSelect
+            label="Side"
+            options={SIDES}
+            selected={filter.side ?? []}
+            onChange={(v) => setFilter({ ...filter, side: v.length ? v : undefined })}
+            emptyLabel="Any"
+          />
+          <MultiSelect
+            label="Tier"
+            options={TIERS}
+            selected={filter.conviction ?? []}
+            onChange={(v) => setFilter({ ...filter, conviction: v.length ? v : undefined })}
+          />
+        </div>
 
         <div className="flex flex-wrap gap-2 items-center">
           <span className="text-xs uppercase tracking-wide text-[var(--color-text-faint)] mr-1">Date:</span>
@@ -143,23 +176,6 @@ export function Calls() {
             onChange={(v) => setFilter({ ...filter, date_to: v || undefined })}
             placeholder="To"
           />
-        </div>
-
-        <div className="flex flex-wrap gap-2 items-center">
-          <span className="text-xs uppercase tracking-wide text-[var(--color-text-faint)] mr-1">Tier:</span>
-          {TIERS.map((t) => (
-            <button
-              key={t.value || "_all"}
-              onClick={() => setFilter({ ...filter, conviction: t.value || undefined })}
-              className={`tap inline-flex items-center px-3 py-1 rounded-full text-xs border transition-colors ${
-                (filter.conviction ?? "") === t.value
-                  ? "border-[var(--color-accent)] text-[var(--color-text)] bg-[var(--color-surface)]"
-                  : "border-[var(--color-border)] text-[var(--color-text-muted)] hover:text-[var(--color-text)]"
-              }`}
-            >
-              {t.label}
-            </button>
-          ))}
         </div>
       </div>
 
@@ -220,8 +236,6 @@ export function Calls() {
 
 // "2026-05-27" → "Wed, May 27, 2026". Group keys are ISO dates from the API.
 function formatGroupDate(iso: string): string {
-  // Parse as UTC then format in local TZ — these are publish_date only (no time component),
-  // so anchoring to UTC avoids off-by-one shifts in negative-offset timezones.
   const d = new Date(`${iso}T12:00:00Z`);
   if (Number.isNaN(d.getTime())) return iso;
   return d.toLocaleDateString(undefined, {
@@ -238,35 +252,8 @@ function DateInput({ value, onChange, placeholder }: { value: string; onChange: 
       type="date"
       value={value}
       onChange={(e) => onChange(e.target.value)}
-      placeholder={placeholder}
       aria-label={placeholder}
       className="tap inline-flex items-center bg-[var(--color-bg)] border border-[var(--color-border)] rounded px-2 py-1 text-xs text-[var(--color-text)] focus:outline-none focus:border-[var(--color-accent)]"
     />
-  );
-}
-
-function FilterRow({ label, options, value, onChange }: {
-  label: string;
-  options: Array<{ value: string; label: string }>;
-  value: string;
-  onChange: (v: string) => void;
-}) {
-  return (
-    <div className="flex flex-wrap gap-2 items-center">
-      <span className="text-xs uppercase tracking-wide text-[var(--color-text-faint)] mr-1">{label}:</span>
-      {options.map((o) => (
-        <button
-          key={o.value || "_all"}
-          onClick={() => onChange(o.value)}
-          className={`tap inline-flex items-center px-3 py-1 rounded-full text-xs border transition-colors ${
-            value === o.value
-              ? "border-[var(--color-accent)] text-[var(--color-text)] bg-[var(--color-surface)]"
-              : "border-[var(--color-border)] text-[var(--color-text-muted)] hover:text-[var(--color-text)]"
-          }`}
-        >
-          {o.label}
-        </button>
-      ))}
-    </div>
   );
 }
