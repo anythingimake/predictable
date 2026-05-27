@@ -23,8 +23,10 @@ export function db(): Database.Database {
     fresh.close();
   }
   _db = new Database(DB_PATH, { readonly: true, fileMustExist: true });
-  _db.pragma("journal_mode = WAL");
-  _db.pragma("foreign_keys = ON");
+  // Don't try to SET pragmas on a readonly connection — that's a write op
+  // and fails with SQLITE_READONLY. journal_mode is a file-level state set
+  // by whichever writer opened the DB; the reader inherits it. foreign_keys
+  // only matters for writes, also irrelevant here.
   return _db;
 }
 

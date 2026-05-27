@@ -45,7 +45,16 @@ def search_markets(
 
 
 def get_market_by_slug(slug: str) -> dict | None:
+    """Look up a market by its slug. The Gamma /markets endpoint silently
+    hides closed/inactive markets by default, so if the first query is empty
+    we retry with `closed=true` to catch resolved ones. (Pre-fix, resolved
+    markets like the Paxton primary or Cooper Flagg ROY returned None from
+    here, which broke historical price backfill.)"""
     data = _get(GAMMA, "/markets", {"slug": slug, "limit": 1})
+    items = data if isinstance(data, list) else (data.get("markets") or [])
+    if items:
+        return items[0]
+    data = _get(GAMMA, "/markets", {"slug": slug, "closed": "true", "limit": 1})
     items = data if isinstance(data, list) else (data.get("markets") or [])
     return items[0] if items else None
 

@@ -48,11 +48,30 @@ _STOPWORDS = frozenset(
     }
 )
 
+# "Weak" tokens — strong enough to keep in the score but too generic to count
+# as informative on their own. Election years are the prime offender: every
+# politics market mentions a year, so a single shared year token across two
+# unrelated markets isn't real evidence of a match. (See Roy Cooper / Jon
+# Cooper false match: shared tokens were `cooper` + `2026`. Without 2026,
+# `cooper` alone shouldn't have been enough to claim the match.)
+_WEAK_TOKENS = frozenset(
+    {str(y) for y in range(2018, 2036)}
+    | {"win", "wins", "won", "loss", "lose", "lost", "winner", "race",
+       "primary", "election", "elections", "midterm", "midterms"}
+)
+
 
 def _tokens(s: str) -> set[str]:
     s = (s or "").lower()
     parts = re.findall(r"[a-z0-9]+", s)
     return {p for p in parts if p and p not in _STOPWORDS and len(p) > 1}
+
+
+def _strong_tokens(s: str) -> set[str]:
+    """Tokens that carry actual identifying signal — names, places, distinctive
+    nouns. Used to make sure a 'match' actually shares meaningful content,
+    not just generic year + verb."""
+    return _tokens(s) - _WEAK_TOKENS
 
 
 def _title_overlap(hint: str, title: str) -> float:
@@ -287,8 +306,19 @@ def match_market(market_hint: str, candidates: list[dict]) -> Optional[dict]:
     """Pick the best candidate for a free-text hint, or None if nothing is plausible.
 
     Heuristic = title-overlap (token-Jaccard + sequence ratio) + small recency bonus.
-    Threshold tuned conservatively: better to leave for human review than to
-    misattribute Stu's call.
+
+    Acceptance gate (intentionally conservative — false positives are worse than
+    leaving a call unresolved for human review):
+      - score >= 0.20  (raw similarity)
+      - AND at least 2 shared STRONG tokens (names/places/distinctive nouns),
+        OR 1 strong token if the raw score is >= 0.45 (i.e. one strong token
+        plus a lot of structural overlap).
+    Year tokens, generic words like "election" / "wins", and source names are
+    classified as weak so they can't carry a match on their own.
+
+    Was: required `score >= 0.20` and any one shared informative token. That
+    let "Roy Cooper wins NC Senate 2026" latch onto "Jon Cooper Jack Adams
+    Award" because both shared `cooper` + `2026` (one weak, one weak).
     """
     if not market_hint or not candidates:
         return None
@@ -298,12 +328,28 @@ def match_market(market_hint: str, candidates: list[dict]) -> Optional[dict]:
         score += _recency_bonus(c.get("_end") or c.get("resolution_date"))
         if score > best_score:
             best, best_score = c, score
-    # Require both: meaningful overlap AND at least one shared informative token
-    informative_overlap = bool(
-        _tokens(market_hint) & _tokens(best.get("_title", "") if best else "")
-    )
-    if best and best_score >= 0.20 and informative_overlap:
+    if not best:
+        return None
+    if best_score < 0.20:
+        return None
+    hint_strong = _strong_tokens(market_hint)
+    title_strong = _strong_tokens(best.get("_title") or best.get("question") or "")
+    shared_strong = hint_strong & title_strong
+    # 2+ shared strong tokens = solid.
+    if len(shared_strong) >= 2:
         return best
+    # 1 shared strong token: require strong structural overlap. Bumped from
+    # 0.45 → 0.30 after empirical tuning showed legitimate "Democrats win the
+    # House" / "Democratic Party control the House" only shares `house`
+    # (different word stems for democrats), but the rest of the structure
+    # matches and the score lands ~0.24–0.32.
+    if len(shared_strong) == 1 and best_score >= 0.30:
+        return best
+    # 0 shared strong tokens: never accept, regardless of score (this is the
+    # Roy Cooper / Jon Cooper guard — sharing only year + name surname between
+    # totally unrelated domains should not match).
+    if len(shared_strong) == 0:
+        return None
     return None
 
 

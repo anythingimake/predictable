@@ -128,6 +128,7 @@ export interface Scoreboard {
     resolved: number;
     hits: number;
     avg_return_pct: number | null;
+    is_actionable: boolean;
   }>;
   by_category: Array<{ category: string; n: number; resolved: number; hits: number }>;
   recent_wins: Array<{

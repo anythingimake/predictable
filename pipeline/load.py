@@ -197,6 +197,30 @@ def load_calls(conn) -> int:
     return total_calls
 
 
+def recompute_first_event_ts(conn) -> int:
+    """Backfill calls.first_event_ts from MIN(call_events.timestamp_sec).
+
+    Catches calls that were manually inserted (no `events` array in their
+    source JSON) or where events were added out-of-band after the call row.
+    Updates rows where first_event_ts disagrees with the events table OR
+    is NULL while events exist. Returns the number of rows touched.
+    """
+    fixed = conn.execute(
+        """
+        UPDATE calls
+        SET first_event_ts = (
+            SELECT MIN(timestamp_sec) FROM call_events WHERE call_id = calls.id
+        )
+        WHERE EXISTS (SELECT 1 FROM call_events WHERE call_id = calls.id)
+          AND (
+            first_event_ts IS NULL
+            OR first_event_ts <> (SELECT MIN(timestamp_sec) FROM call_events WHERE call_id = calls.id)
+          )
+        """
+    ).rowcount
+    return fixed
+
+
 def load_substack_bodies_and_comments(conn) -> tuple[int, int]:
     """Push per-slug body + comment snapshots into the DB.
 
@@ -460,6 +484,8 @@ def main() -> int:
             print(f"[load] sagas inserted: {n_sagas}")
             n_qa = load_qa(conn)
             print(f"[load] call_clarifications inserted: {n_qa}")
+            n_first_ts = recompute_first_event_ts(conn)
+            print(f"[load] calls.first_event_ts recomputed: {n_first_ts}")
     return 0
 
 

@@ -77,12 +77,25 @@ def _snapshot_kalshi(conn, market_id: str, ticker: str, since_iso: str | None) -
     except (TypeError, ValueError):
         pass
 
-    # Backfill — Kalshi wants unix ts and 1h or 1d candles
-    if since_iso:
+    # Backfill — Kalshi wants unix ts and 1h or 1d candles.
+    # `since_iso` defaults to the call's episode publish_date, but for markets
+    # like the Paxton runoff that were trading days before Stu mentioned them,
+    # the right lookback floor is the market's `open_time`. Fall back to a
+    # 30-day rolling window if neither is available.
+    floor_iso = since_iso
+    open_time = market.get("open_time") or market.get("expected_expiration_time")
+    if open_time:
+        otime = open_time[:10]
+        if not floor_iso or otime < floor_iso:
+            floor_iso = otime
+    if floor_iso:
         try:
-            start = int(datetime.fromisoformat(f"{since_iso}T00:00:00+00:00").timestamp())
+            start = int(datetime.fromisoformat(f"{floor_iso}T00:00:00+00:00").timestamp())
             end = int(datetime.now(timezone.utc).timestamp())
-            # Daily-ish: 1440 minutes
+            # Daily-ish: 1440 minutes. If the window is < 2 days, widen it
+            # so we always pull *some* history when one's available.
+            if end - start < 86400 * 2:
+                start = end - 86400 * 30
             candles = kalshi.get_candlesticks(ticker, start, end, interval_min=1440)
         except (requests.RequestException, ValueError):
             candles = []
@@ -96,19 +109,29 @@ def _snapshot_kalshi(conn, market_id: str, ticker: str, since_iso: str | None) -
             if day in seen_days:
                 continue
             seen_days.add(day)
-            # Prefer yes_ask.close, then price.close, then price.mean
+            # Prefer yes_ask.close, then price.close, then price.mean.
+            # Kalshi v2 candles return *both* `close` (cents int) and
+            # `close_dollars` (string like "0.0700"). The bare `close` is
+            # missing on some markets so we try the _dollars variant too.
             cprice = None
             for key in ("yes_ask", "price"):
                 node = c.get(key) or {}
-                if isinstance(node, dict):
-                    cprice = node.get("close") or node.get("mean") or node.get("open")
-                    if cprice is not None:
+                if not isinstance(node, dict):
+                    continue
+                for field in ("close", "close_dollars", "mean", "mean_dollars",
+                              "open", "open_dollars", "previous_dollars"):
+                    if node.get(field) is not None:
+                        cprice = node.get(field)
                         break
+                if cprice is not None:
+                    break
             if cprice is None:
                 continue
             try:
                 cprice = float(cprice)
-                # Kalshi candle prices are in cents (0–100), normalize to dollars (0–1)
+                # Kalshi candle prices come as cents OR dollars depending on
+                # which field we picked. The `_dollars` fields are 0..1
+                # strings; the bare fields are 0..100 ints. Normalize.
                 if cprice > 1.5:
                     cprice = cprice / 100.0
                 vol = c.get("volume")
@@ -145,13 +168,18 @@ def _snapshot_polymarket(conn, market_id: str, slug_or_id: str, since_iso: str |
     except (TypeError, ValueError, json.JSONDecodeError):
         pass
 
-    # Backfill via CLOB prices-history on the YES token
+    # Backfill via CLOB prices-history on the YES token. For markets that have
+    # been closed for a while, `interval=1d` returns an empty series — the
+    # CLOB only seems to keep the rolling 30/60-day window for fine intervals.
+    # `interval=all` returns the full lifetime series for closed markets.
     token_ids = polymarket.token_ids_for_market(market)
     if not token_ids:
         return written
     yes_token = token_ids[0]
     try:
         hist = polymarket.prices_history(yes_token, interval="1d")
+        if not hist:
+            hist = polymarket.prices_history(yes_token, interval="all")
     except requests.RequestException:
         hist = []
     seen_days: set[str] = set()
@@ -178,12 +206,24 @@ def _snapshot_polymarket(conn, market_id: str, slug_or_id: str, since_iso: str |
 
 
 def snapshot_all() -> dict:
-    """Walk every market with at least one open call, snapshot + backfill."""
+    """Walk every market with at least one call (open OR resolved), snapshot + backfill.
+
+    Two passes:
+      1. Open/closed-call markets — current price + history from first event date.
+         This is the original daily-cron behavior.
+      2. Resolved-call markets that don't yet have any history rows — pull the
+         full candlestick / prices-history series so the call detail page can
+         render a real chart instead of the empty-state placeholder. (Pre-fix,
+         the Paxton +20% chart was always empty because resolved markets were
+         filtered out of the pass-1 loop.)
+    """
     by_market = 0
     total_rows = 0
     skipped = 0
 
     with connect() as conn:
+        # Pass 1: live markets — current price + recent history (idempotent
+        # daily refresh).
         rows = list(
             conn.execute(
                 """SELECT DISTINCT m.id AS market_id, m.source, m.ticker
@@ -210,6 +250,42 @@ def snapshot_all() -> dict:
             if n:
                 by_market += 1
                 total_rows += n
+
+        # Pass 2: resolved-call markets with no history yet. We only do this
+        # once per market — the snapshots table has the data forever after.
+        # Live-pass rows that already wrote today's snapshot are not in this
+        # query because of the LEFT JOIN ... HAVING COUNT(snapshot_date)=0
+        # guard, so there's no double-work.
+        resolved_rows = list(
+            conn.execute(
+                """SELECT DISTINCT m.id AS market_id, m.source, m.ticker
+                     FROM markets m
+                     JOIN calls c ON c.market_id = m.id
+                LEFT JOIN market_price_snapshots mps ON mps.market_id = m.id
+                    WHERE c.status = 'resolved'
+                 GROUP BY m.id, m.source, m.ticker
+                   HAVING COUNT(mps.snapshot_date) = 0"""
+            )
+        )
+        for r in resolved_rows:
+            mid, source, ticker = r["market_id"], r["source"], r["ticker"]
+            since = _earliest_event_date(conn, mid)
+            try:
+                if source == "kalshi":
+                    n = _snapshot_kalshi(conn, mid, ticker, since)
+                elif source == "polymarket":
+                    n = _snapshot_polymarket(conn, mid, ticker, since)
+                else:
+                    skipped += 1
+                    continue
+            except Exception as e:  # noqa: BLE001 — keep cron alive
+                print(f"[price_snapshot] resolved-backfill error on {mid}: {e}")
+                skipped += 1
+                continue
+            if n:
+                by_market += 1
+                total_rows += n
+                print(f"[price_snapshot] resolved-backfill: {mid} -> {n} rows")
 
     return {"markets_snapshotted": by_market, "rows_written": total_rows, "skipped": skipped}
 

@@ -1,0 +1,4457 @@
+{
+  "audio_file": "C:\\Users\\NoahYaffe\\Documents\\GitHub\\anythingimake\\predictable\\data\\audio\\db127434-4a63-11f1-a8fb-ef2ec4f7bc56.mp3",
+  "language": "en",
+  "duration": 2766.9681875,
+  "pass1_model": "small",
+  "pass2_model": null,
+  "pass2_rescued_count": 0,
+  "pass1_segment_count": 635,
+  "segments": [
+    {
+      "start": 0.18,
+      "end": 5.9,
+      "text": "Ray-Ban Meta glasses take the friction out of travel move through the world with your hands free and your head up",
+      "source": "pass1",
+      "avg_logprob": -0.24091373299195515
+    },
+    {
+      "start": 5.9,
+      "end": 12.1,
+      "text": "Hey meta, where's the nearest metro station closest metro to you is Union Square about three blocks away. Hey meta text mom",
+      "source": "pass1",
+      "avg_logprob": -0.24091373299195515
+    },
+    {
+      "start": 12.1,
+      "end": 18.46,
+      "text": "I'm getting on the train now sending message juggle your itinerary take calls and listen to music with open-ear audio",
+      "source": "pass1",
+      "avg_logprob": -0.24091373299195515
+    },
+    {
+      "start": 18.46,
+      "end": 26.24,
+      "text": "No digging for your phone. No stopping for a map. Just you and your glasses Ray-Ban Meta iconic style meets Meta AI",
+      "source": "pass1",
+      "avg_logprob": -0.24091373299195515
+    },
+    {
+      "start": 26.78,
+      "end": 29.18,
+      "text": "available at Walmart and other authorized retailers",
+      "source": "pass1",
+      "avg_logprob": -0.24091373299195515
+    },
+    {
+      "start": 35.58,
+      "end": 40.18,
+      "text": "Welcome to predictable with stew. Thank you so much for tuning in today",
+      "source": "pass1",
+      "avg_logprob": -0.23893516008244003
+    },
+    {
+      "start": 40.94,
+      "end": 44.26,
+      "text": "We got a lot to talk about today, California governor's race the",
+      "source": "pass1",
+      "avg_logprob": -0.23893516008244003
+    },
+    {
+      "start": 45.06,
+      "end": 51.14,
+      "text": "Issues going on in Iran some late-breaking news on that one and so much more. Thank you so much for joining us",
+      "source": "pass1",
+      "avg_logprob": -0.23893516008244003
+    },
+    {
+      "start": 51.14,
+      "end": 55.38,
+      "text": "By the way, if you happen to be a stew does America fan, don't forget to check out stew and Dave do America",
+      "source": "pass1",
+      "avg_logprob": -0.23893516008244003
+    },
+    {
+      "start": 55.5,
+      "end": 58.1,
+      "text": "It's a new show with Dave Landau",
+      "source": "pass1",
+      "avg_logprob": -0.23893516008244003
+    },
+    {
+      "start": 58.5,
+      "end": 65.14,
+      "text": "Covering the news of the day and we laugh about it a lot stew and Dave do America or at blaze TV comm slash",
+      "source": "pass1",
+      "avg_logprob": -0.23893516008244003
+    },
+    {
+      "start": 65.18,
+      "end": 70.38,
+      "text": "Stew and Dave, please check it out. You can save 20 bucks off your subscription if you use the code stew and Dave",
+      "source": "pass1",
+      "avg_logprob": -0.18452240699945494
+    },
+    {
+      "start": 70.38,
+      "end": 73.18,
+      "text": "Of course, we would love thank you so much for joining us here on",
+      "source": "pass1",
+      "avg_logprob": -0.18452240699945494
+    },
+    {
+      "start": 73.9,
+      "end": 77.7,
+      "text": "predictable with stew this particular episode",
+      "source": "pass1",
+      "avg_logprob": -0.18452240699945494
+    },
+    {
+      "start": 77.7,
+      "end": 81.66,
+      "text": "I want to focus a little bit on California in a couple of different ways to start and",
+      "source": "pass1",
+      "avg_logprob": -0.18452240699945494
+    },
+    {
+      "start": 82.1,
+      "end": 87.74,
+      "text": "We're gonna go through the latest developments in these elections that are coming up in the coming weeks",
+      "source": "pass1",
+      "avg_logprob": -0.18452240699945494
+    },
+    {
+      "start": 87.74,
+      "end": 89.5,
+      "text": "And then in addition to that of course",
+      "source": "pass1",
+      "avg_logprob": -0.18452240699945494
+    },
+    {
+      "start": 89.5,
+      "end": 94.42,
+      "text": "We'll go into the markets and help you to try to understand is there a place you should put some cash",
+      "source": "pass1",
+      "avg_logprob": -0.18452240699945494
+    },
+    {
+      "start": 94.42,
+      "end": 97.58,
+      "text": "Maybe there's some opportunities in these markets. I think there is",
+      "source": "pass1",
+      "avg_logprob": -0.23253031552416606
+    },
+    {
+      "start": 98.18,
+      "end": 101.38,
+      "text": "But you know, you have to of course watch what you're doing at all times",
+      "source": "pass1",
+      "avg_logprob": -0.23253031552416606
+    },
+    {
+      "start": 101.7,
+      "end": 106.54,
+      "text": "There was a big debate that just happened by the way this this primary happens on June 2nd",
+      "source": "pass1",
+      "avg_logprob": -0.23253031552416606
+    },
+    {
+      "start": 106.54,
+      "end": 108.66,
+      "text": "So we're three weeks and five days away",
+      "source": "pass1",
+      "avg_logprob": -0.23253031552416606
+    },
+    {
+      "start": 109.3,
+      "end": 112.58,
+      "text": "from the California gubernatorial",
+      "source": "pass1",
+      "avg_logprob": -0.23253031552416606
+    },
+    {
+      "start": 113.02,
+      "end": 115.98,
+      "text": "Primary and just a quick reminder on this",
+      "source": "pass1",
+      "avg_logprob": -0.23253031552416606
+    },
+    {
+      "start": 116.62,
+      "end": 120.9,
+      "text": "This is called a jungle primary. It's a very weird system basically",
+      "source": "pass1",
+      "avg_logprob": -0.23253031552416606
+    },
+    {
+      "start": 121.42,
+      "end": 127.18,
+      "text": "500 million different candidates run the top two advanced to a finals if you will",
+      "source": "pass1",
+      "avg_logprob": -0.19584087959744714
+    },
+    {
+      "start": 127.58,
+      "end": 133.7,
+      "text": "On election day, so this is doesn't matter what party you're in everyone competes against everybody during this primary process",
+      "source": "pass1",
+      "avg_logprob": -0.19584087959744714
+    },
+    {
+      "start": 133.7,
+      "end": 139.14,
+      "text": "Just to give you the really annoying rules before we get started. There was a debate takeaways from the latest",
+      "source": "pass1",
+      "avg_logprob": -0.19584087959744714
+    },
+    {
+      "start": 139.9,
+      "end": 141.9,
+      "text": "California governor debate",
+      "source": "pass1",
+      "avg_logprob": -0.19584087959744714
+    },
+    {
+      "start": 142.34,
+      "end": 148.54,
+      "text": "restrictions zoning housing in California a big topic for sure home insurance rates",
+      "source": "pass1",
+      "avg_logprob": -0.19584087959744714
+    },
+    {
+      "start": 149.54,
+      "end": 152.9,
+      "text": "Homelessness of course always a topic in California",
+      "source": "pass1",
+      "avg_logprob": -0.1865839336103606
+    },
+    {
+      "start": 154.26,
+      "end": 157.98,
+      "text": "Oil production should they turn that back on a bunch of different things. I",
+      "source": "pass1",
+      "avg_logprob": -0.1865839336103606
+    },
+    {
+      "start": 158.66,
+      "end": 161.54,
+      "text": "Tell you all this to give you a lead into a couple of",
+      "source": "pass1",
+      "avg_logprob": -0.1865839336103606
+    },
+    {
+      "start": 162.58,
+      "end": 165.82,
+      "text": "Questions and kind of points that we have right off the top number one",
+      "source": "pass1",
+      "avg_logprob": -0.1865839336103606
+    },
+    {
+      "start": 165.82,
+      "end": 170.9,
+      "text": "You remember this race because Eric Swalwell a person who stew and Dave do America one of the first",
+      "source": "pass1",
+      "avg_logprob": -0.1865839336103606
+    },
+    {
+      "start": 171.3,
+      "end": 175.18,
+      "text": "Official acts of that program was to eliminate Eric Swalwell from your political life",
+      "source": "pass1",
+      "avg_logprob": -0.1865839336103606
+    },
+    {
+      "start": 175.22,
+      "end": 180.1,
+      "text": "We were successful in doing that reporting on him and then like a couple days later. He finally dropped off, but",
+      "source": "pass1",
+      "avg_logprob": -0.17016061197500676
+    },
+    {
+      "start": 181.42,
+      "end": 183.1,
+      "text": "Eric Swalwell sucks",
+      "source": "pass1",
+      "avg_logprob": -0.17016061197500676
+    },
+    {
+      "start": 183.1,
+      "end": 184.9,
+      "text": "One of the market opportunities",
+      "source": "pass1",
+      "avg_logprob": -0.17016061197500676
+    },
+    {
+      "start": 184.9,
+      "end": 191.12,
+      "text": "I found very early in the California gubernatorial election markets was to say no to Eric Swalwell when he was at like",
+      "source": "pass1",
+      "avg_logprob": -0.17016061197500676
+    },
+    {
+      "start": 191.3,
+      "end": 195.74,
+      "text": "60% because I just am not a believer now. I know fang fang likes him",
+      "source": "pass1",
+      "avg_logprob": -0.17016061197500676
+    },
+    {
+      "start": 195.74,
+      "end": 199.58,
+      "text": "I know fang fang had a lot of nice evenings with Eric",
+      "source": "pass1",
+      "avg_logprob": -0.17016061197500676
+    },
+    {
+      "start": 199.58,
+      "end": 204.1,
+      "text": "I know a lot of other women had evenings with Eric that they didn't appreciate quite that much",
+      "source": "pass1",
+      "avg_logprob": -0.17016061197500676
+    },
+    {
+      "start": 204.22,
+      "end": 208.18,
+      "text": "Which is one of the reasons why he's out of the race, but I never believed he was a 60% favorite",
+      "source": "pass1",
+      "avg_logprob": -0.17813117731185185
+    },
+    {
+      "start": 208.3,
+      "end": 213.22,
+      "text": "That seemed insane to me if you remember before Eric Swalwell was the favorite",
+      "source": "pass1",
+      "avg_logprob": -0.17813117731185185
+    },
+    {
+      "start": 213.22,
+      "end": 219.74,
+      "text": "it was Katie Porter who was kind of seen as the top dog and then she faded away a lot of people wondering whether",
+      "source": "pass1",
+      "avg_logprob": -0.17813117731185185
+    },
+    {
+      "start": 219.82,
+      "end": 224.46,
+      "text": "Eric Swalwell is dropping out would make Katie Porter sort of rise back to the top of this field",
+      "source": "pass1",
+      "avg_logprob": -0.17813117731185185
+    },
+    {
+      "start": 225.14,
+      "end": 227.58,
+      "text": "And I will say just as an observer",
+      "source": "pass1",
+      "avg_logprob": -0.17813117731185185
+    },
+    {
+      "start": 227.9,
+      "end": 235.46,
+      "text": "The most satisfying thing about the California election this time around is Eric Swalwell dropping out of our lives",
+      "source": "pass1",
+      "avg_logprob": -0.16350518060582026
+    },
+    {
+      "start": 235.46,
+      "end": 239.18,
+      "text": "That's number one and also it protects so many women and girls",
+      "source": "pass1",
+      "avg_logprob": -0.16350518060582026
+    },
+    {
+      "start": 239.38,
+      "end": 246.54,
+      "text": "It's nice to see that they were protected after all this although. I am a little worried about Eric Swalwell with more free time",
+      "source": "pass1",
+      "avg_logprob": -0.16350518060582026
+    },
+    {
+      "start": 247.22,
+      "end": 251.06,
+      "text": "That's concerning, but he's gone from at least our political life",
+      "source": "pass1",
+      "avg_logprob": -0.16350518060582026
+    },
+    {
+      "start": 251.62,
+      "end": 253.82,
+      "text": "Now and that's good that I'm excited about",
+      "source": "pass1",
+      "avg_logprob": -0.16350518060582026
+    },
+    {
+      "start": 254.74,
+      "end": 260.82,
+      "text": "Outside of Swalwell flaming out the second best thing about the California gubernatorial election is",
+      "source": "pass1",
+      "avg_logprob": -0.1425628404204662
+    },
+    {
+      "start": 261.82,
+      "end": 265.42,
+      "text": "Katie Porter continually humiliating herself. I love it",
+      "source": "pass1",
+      "avg_logprob": -0.1425628404204662
+    },
+    {
+      "start": 265.42,
+      "end": 268.54,
+      "text": "I know this has nothing really directly to do with markets",
+      "source": "pass1",
+      "avg_logprob": -0.1425628404204662
+    },
+    {
+      "start": 268.54,
+      "end": 272.78,
+      "text": "Although maybe you did see this coming and get some no money on",
+      "source": "pass1",
+      "avg_logprob": -0.1425628404204662
+    },
+    {
+      "start": 273.42,
+      "end": 278.06,
+      "text": "One Katie Porter because if you did that early enough you definitely would be cashing in right now",
+      "source": "pass1",
+      "avg_logprob": -0.1425628404204662
+    },
+    {
+      "start": 278.06,
+      "end": 282.06,
+      "text": "Let me give you a couple of highlights quickly from this debate. Here is Katie Porter",
+      "source": "pass1",
+      "avg_logprob": -0.1425628404204662
+    },
+    {
+      "start": 282.06,
+      "end": 287.06,
+      "text": "This was kind of the big standout moment. Everyone was talking about this moment. Everyone's saying oh, I can't believe that was said",
+      "source": "pass1",
+      "avg_logprob": -0.21715053543448448
+    },
+    {
+      "start": 287.38,
+      "end": 290.7,
+      "text": "That's evil. That's wrong. This is Katie Porter",
+      "source": "pass1",
+      "avg_logprob": -0.21715053543448448
+    },
+    {
+      "start": 291.78,
+      "end": 297.5,
+      "text": "Blabbing about something and then Chad Bianco who's one of the Republican candidates near the top of the list",
+      "source": "pass1",
+      "avg_logprob": -0.21715053543448448
+    },
+    {
+      "start": 297.78,
+      "end": 300.54,
+      "text": "He comes in with a little sassy comeback",
+      "source": "pass1",
+      "avg_logprob": -0.21715053543448448
+    },
+    {
+      "start": 301.22,
+      "end": 306.98,
+      "text": "controversy ensues. I think we ought to enforce the existing sanctuary laws everywhere",
+      "source": "pass1",
+      "avg_logprob": -0.21715053543448448
+    },
+    {
+      "start": 307.06,
+      "end": 314.34,
+      "text": "So we don't have crazy cowboys taking the law into their own tell that to a crazy mother who lost her child",
+      "source": "pass1",
+      "avg_logprob": -0.20188180943137235
+    },
+    {
+      "start": 314.54,
+      "end": 319.34,
+      "text": "Sir, I don't need any lectures from you about being a mother. Of course. You might",
+      "source": "pass1",
+      "avg_logprob": -0.20188180943137235
+    },
+    {
+      "start": 323.06,
+      "end": 326.02,
+      "text": "Like that guy already. Yeah, you might actually Katie",
+      "source": "pass1",
+      "avg_logprob": -0.20188180943137235
+    },
+    {
+      "start": 326.7,
+      "end": 330.74,
+      "text": "Frankly seeing the way that you handle people who you think you can boss around",
+      "source": "pass1",
+      "avg_logprob": -0.20188180943137235
+    },
+    {
+      "start": 331.42,
+      "end": 335.74,
+      "text": "Perhaps maybe you do need a little bit of advice here by the way in case you don't remember this",
+      "source": "pass1",
+      "avg_logprob": -0.20188180943137235
+    },
+    {
+      "start": 335.74,
+      "end": 342.14,
+      "text": "This is Katie Porter. This is Politico actually broke this story at the time Katie Porter was thought of as kind of the leader here",
+      "source": "pass1",
+      "avg_logprob": -0.22819200516320193
+    },
+    {
+      "start": 342.42,
+      "end": 344.42,
+      "text": "this story came out and",
+      "source": "pass1",
+      "avg_logprob": -0.22819200516320193
+    },
+    {
+      "start": 344.58,
+      "end": 346.1,
+      "text": "Did not help",
+      "source": "pass1",
+      "avg_logprob": -0.22819200516320193
+    },
+    {
+      "start": 346.1,
+      "end": 350.58,
+      "text": "She was doing an interview with then energy secretary Jennifer Granholm",
+      "source": "pass1",
+      "avg_logprob": -0.22819200516320193
+    },
+    {
+      "start": 351.94,
+      "end": 354.06,
+      "text": "And I never have to go to the gas station",
+      "source": "pass1",
+      "avg_logprob": -0.22819200516320193
+    },
+    {
+      "start": 354.98,
+      "end": 360.22,
+      "text": "That's awesome and six hundred thirty two dollars is real money and I know here at UCI",
+      "source": "pass1",
+      "avg_logprob": -0.22819200516320193
+    },
+    {
+      "start": 360.22,
+      "end": 364.42,
+      "text": "We have a national fuel center research center if we don't",
+      "source": "pass1",
+      "avg_logprob": -0.22819200516320193
+    },
+    {
+      "start": 365.3,
+      "end": 371.1,
+      "text": "Electrified our transportation sector that we're gonna lose more than half a million California",
+      "source": "pass1",
+      "avg_logprob": -0.27606206555520335
+    },
+    {
+      "start": 371.1,
+      "end": 376.12,
+      "text": "It's dying prematurely to air pollution and other problems and the state could lose",
+      "source": "pass1",
+      "avg_logprob": -0.27606206555520335
+    },
+    {
+      "start": 377.7,
+      "end": 379.7,
+      "text": "Get out of my shot",
+      "source": "pass1",
+      "avg_logprob": -0.27606206555520335
+    },
+    {
+      "start": 388.26,
+      "end": 391.94,
+      "text": "Okay, it does okay, you also were in my shop before that",
+      "source": "pass1",
+      "avg_logprob": -0.27606206555520335
+    },
+    {
+      "start": 392.94,
+      "end": 399.26,
+      "text": "Stay out of my shot. Okay. I'm gonna start again with electric vehicle saving us money",
+      "source": "pass1",
+      "avg_logprob": -0.2582826960299696
+    },
+    {
+      "start": 400.26,
+      "end": 402.46,
+      "text": "I mean, it's just such a great clip now",
+      "source": "pass1",
+      "avg_logprob": -0.2582826960299696
+    },
+    {
+      "start": 402.62,
+      "end": 404.62,
+      "text": "There's a little game that we play sort of behind the scenes",
+      "source": "pass1",
+      "avg_logprob": -0.2582826960299696
+    },
+    {
+      "start": 404.62,
+      "end": 408.62,
+      "text": "Maybe we'll bring this to the actual show at some point Dan and Rose and I play this often",
+      "source": "pass1",
+      "avg_logprob": -0.2582826960299696
+    },
+    {
+      "start": 409.02,
+      "end": 414.82,
+      "text": "Off the air which is sort of predict the prediction. Okay, that's what we're calling it predict the prediction and",
+      "source": "pass1",
+      "avg_logprob": -0.2582826960299696
+    },
+    {
+      "start": 415.66,
+      "end": 418.74,
+      "text": "Basically, what you do is you hear about a market",
+      "source": "pass1",
+      "avg_logprob": -0.2582826960299696
+    },
+    {
+      "start": 419.3,
+      "end": 425.18,
+      "text": "Before you've looked at it and in your mind you sort of predict what that market might be",
+      "source": "pass1",
+      "avg_logprob": -0.17184492654916717
+    },
+    {
+      "start": 425.5,
+      "end": 429.82,
+      "text": "You might say, okay. Well, Katie Porter. She's running for governor right now",
+      "source": "pass1",
+      "avg_logprob": -0.17184492654916717
+    },
+    {
+      "start": 429.82,
+      "end": 435.26,
+      "text": "What would you say her market should be at and if you think, you know, it's 80% chance to win",
+      "source": "pass1",
+      "avg_logprob": -0.17184492654916717
+    },
+    {
+      "start": 435.66,
+      "end": 440.02,
+      "text": "You think there's an 80% chance Katie Porter is gonna win you go on the market and it says 20%",
+      "source": "pass1",
+      "avg_logprob": -0.17184492654916717
+    },
+    {
+      "start": 440.02,
+      "end": 446.42,
+      "text": "Well, you're that's a way of identifying value, right? Like your opinion of the market was that she should be at 80",
+      "source": "pass1",
+      "avg_logprob": -0.17184492654916717
+    },
+    {
+      "start": 446.42,
+      "end": 449.5,
+      "text": "She's only at 20. Maybe that's a buy opportunity for you",
+      "source": "pass1",
+      "avg_logprob": -0.16561281786555737
+    },
+    {
+      "start": 449.54,
+      "end": 454.66,
+      "text": "Those are theoretical numbers nowhere near where she actually is, but I want you to play that game internally right now",
+      "source": "pass1",
+      "avg_logprob": -0.16561281786555737
+    },
+    {
+      "start": 454.66,
+      "end": 456.46,
+      "text": "We're gonna go to this market in a minute",
+      "source": "pass1",
+      "avg_logprob": -0.16561281786555737
+    },
+    {
+      "start": 456.46,
+      "end": 459.82,
+      "text": "Think to yourself. You just watched her do that",
+      "source": "pass1",
+      "avg_logprob": -0.16561281786555737
+    },
+    {
+      "start": 460.98,
+      "end": 462.98,
+      "text": "You just watched her in the debate",
+      "source": "pass1",
+      "avg_logprob": -0.16561281786555737
+    },
+    {
+      "start": 463.5,
+      "end": 466.58,
+      "text": "Where do you think Katie Porter is in this election?",
+      "source": "pass1",
+      "avg_logprob": -0.16561281786555737
+    },
+    {
+      "start": 467.02,
+      "end": 471.9,
+      "text": "Think about it for a second. Just come up with a number. Where do you think she is to win?",
+      "source": "pass1",
+      "avg_logprob": -0.16561281786555737
+    },
+    {
+      "start": 472.38,
+      "end": 476.3,
+      "text": "For California governor and then we'll get you the answer here in a second",
+      "source": "pass1",
+      "avg_logprob": -0.15705245877044244
+    },
+    {
+      "start": 476.3,
+      "end": 480.3,
+      "text": "But before we do I want you to see how she handled that controversy",
+      "source": "pass1",
+      "avg_logprob": -0.15705245877044244
+    },
+    {
+      "start": 481.1,
+      "end": 486.14,
+      "text": "She's released an ad okay that kind of addresses in a way at the end",
+      "source": "pass1",
+      "avg_logprob": -0.15705245877044244
+    },
+    {
+      "start": 486.3,
+      "end": 491.62,
+      "text": "The controversy that you just saw with her yelling at staff members get out of my shot with a bunch of swear words in between",
+      "source": "pass1",
+      "avg_logprob": -0.15705245877044244
+    },
+    {
+      "start": 492.22,
+      "end": 495.98,
+      "text": "Here's her new ad where she tries to lean into it a little bit",
+      "source": "pass1",
+      "avg_logprob": -0.15705245877044244
+    },
+    {
+      "start": 496.22,
+      "end": 500.1,
+      "text": "I'm Katie Porter and I'm not like most people who run for governor",
+      "source": "pass1",
+      "avg_logprob": -0.15705245877044244
+    },
+    {
+      "start": 500.1,
+      "end": 506.38,
+      "text": "I actually get what you're going through a single mom of three kids. I know what it's like to push the shopping cart",
+      "source": "pass1",
+      "avg_logprob": -0.20090906526528152
+    },
+    {
+      "start": 506.38,
+      "end": 508.38,
+      "text": "My minivan has almost",
+      "source": "pass1",
+      "avg_logprob": -0.20090906526528152
+    },
+    {
+      "start": 508.98,
+      "end": 515.82,
+      "text": "200,000 miles I've a grown kid who may soon be living on my couch to give Californians what they need",
+      "source": "pass1",
+      "avg_logprob": -0.20090906526528152
+    },
+    {
+      "start": 515.82,
+      "end": 522.34,
+      "text": "It's gonna take standing up to Donald Trump calling out greedy corporations and stepping on some toes along the way",
+      "source": "pass1",
+      "avg_logprob": -0.20090906526528152
+    },
+    {
+      "start": 522.54,
+      "end": 525.46,
+      "text": "Now could you guys please get out of my shot?",
+      "source": "pass1",
+      "avg_logprob": -0.20090906526528152
+    },
+    {
+      "start": 526.1,
+      "end": 528.1,
+      "text": "No",
+      "source": "pass1",
+      "avg_logprob": -0.20090906526528152
+    },
+    {
+      "start": 531.66,
+      "end": 533.66,
+      "text": "Do you get it",
+      "source": "pass1",
+      "avg_logprob": -0.14952609894656332
+    },
+    {
+      "start": 533.66,
+      "end": 538.38,
+      "text": "That was the thing where she was yelling at an underling and she was swearing at her",
+      "source": "pass1",
+      "avg_logprob": -0.14952609894656332
+    },
+    {
+      "start": 538.38,
+      "end": 542.5,
+      "text": "And then she brought that back without the swears and smiled through it",
+      "source": "pass1",
+      "avg_logprob": -0.14952609894656332
+    },
+    {
+      "start": 542.5,
+      "end": 544.14,
+      "text": "So now it's supposed to be okay",
+      "source": "pass1",
+      "avg_logprob": -0.14952609894656332
+    },
+    {
+      "start": 544.14,
+      "end": 549.5,
+      "text": "The other part I really love about the clip where she loses it on her underling is the part where",
+      "source": "pass1",
+      "avg_logprob": -0.14952609894656332
+    },
+    {
+      "start": 550.62,
+      "end": 553.46,
+      "text": "She also was totally wrong about what she was saying",
+      "source": "pass1",
+      "avg_logprob": -0.14952609894656332
+    },
+    {
+      "start": 553.46,
+      "end": 556.82,
+      "text": "She was being interrupted because she was basically lying on the air",
+      "source": "pass1",
+      "avg_logprob": -0.14952609894656332
+    },
+    {
+      "start": 557.14,
+      "end": 559.98,
+      "text": "But again, why would you interrupt Katie Porter for something like that?",
+      "source": "pass1",
+      "avg_logprob": -0.14952609894656332
+    },
+    {
+      "start": 560.66,
+      "end": 563.22,
+      "text": "Porter one more thing before you come up with the number that's in your head",
+      "source": "pass1",
+      "avg_logprob": -0.22501668290180318
+    },
+    {
+      "start": 563.9,
+      "end": 569.26,
+      "text": "What percentage chance do you think she has according to the markets Katie Porter had this tweet out?",
+      "source": "pass1",
+      "avg_logprob": -0.22501668290180318
+    },
+    {
+      "start": 569.7,
+      "end": 571.7,
+      "text": "someone said on Fox News",
+      "source": "pass1",
+      "avg_logprob": -0.22501668290180318
+    },
+    {
+      "start": 571.7,
+      "end": 572.82,
+      "text": "Katie Porter",
+      "source": "pass1",
+      "avg_logprob": -0.22501668290180318
+    },
+    {
+      "start": 572.82,
+      "end": 581.42,
+      "text": "enthusiastically said she supports taxpayer-funded health care for illegal immigrants during the California gubernatorial primary debate and she",
+      "source": "pass1",
+      "avg_logprob": -0.22501668290180318
+    },
+    {
+      "start": 582.38,
+      "end": 587.78,
+      "text": "Retweets it and says I'm Katie Porter and I approve this message. So she wants you to know",
+      "source": "pass1",
+      "avg_logprob": -0.22501668290180318
+    },
+    {
+      "start": 588.78,
+      "end": 592.98,
+      "text": "She supports the health care for illegal immigrants situation",
+      "source": "pass1",
+      "avg_logprob": -0.22484911233186722
+    },
+    {
+      "start": 592.98,
+      "end": 596.02,
+      "text": "By the way, you may remember if you have been around for a little while",
+      "source": "pass1",
+      "avg_logprob": -0.22484911233186722
+    },
+    {
+      "start": 596.02,
+      "end": 597.38,
+      "text": "If you happen to be of a certain age",
+      "source": "pass1",
+      "avg_logprob": -0.22484911233186722
+    },
+    {
+      "start": 597.38,
+      "end": 603.74,
+      "text": "You may remember back to the time in the mid 2010s when someone in the crowd it was a",
+      "source": "pass1",
+      "avg_logprob": -0.22484911233186722
+    },
+    {
+      "start": 604.62,
+      "end": 606.22,
+      "text": "Republican congressman",
+      "source": "pass1",
+      "avg_logprob": -0.22484911233186722
+    },
+    {
+      "start": 606.22,
+      "end": 614.5,
+      "text": "Yeld out you lie to Barack Obama that thing is exactly what he was saying you lie about he was saying basically illegal immigrants will have",
+      "source": "pass1",
+      "avg_logprob": -0.22484911233186722
+    },
+    {
+      "start": 614.94,
+      "end": 620.62,
+      "text": "Health care rights under these proposals and here we are now. They're all bragging about it. So that's fun",
+      "source": "pass1",
+      "avg_logprob": -0.19276192535956702
+    },
+    {
+      "start": 620.78,
+      "end": 622.82,
+      "text": "That's a foot by the way, did you come up with a number yet?",
+      "source": "pass1",
+      "avg_logprob": -0.19276192535956702
+    },
+    {
+      "start": 623.18,
+      "end": 627.9,
+      "text": "Have you internalized what number Katie Porter might have after watching some of this?",
+      "source": "pass1",
+      "avg_logprob": -0.19276192535956702
+    },
+    {
+      "start": 627.9,
+      "end": 633.94,
+      "text": "Let me give you a little bit more because we're gonna guess all of these here Chad Bianco now Chad Bianco had that moment",
+      "source": "pass1",
+      "avg_logprob": -0.19276192535956702
+    },
+    {
+      "start": 634.02,
+      "end": 639.54,
+      "text": "Where he's like, hey, you know, maybe you do need a little bit of a motherly advice there dear",
+      "source": "pass1",
+      "avg_logprob": -0.19276192535956702
+    },
+    {
+      "start": 639.9,
+      "end": 643.88,
+      "text": "That was very controversial what wasn't played by most",
+      "source": "pass1",
+      "avg_logprob": -0.1911747881770134
+    },
+    {
+      "start": 644.5,
+      "end": 652.62,
+      "text": "Television stations and cable news outlets was what led up to that particular moment where Bianca is go out there and he is",
+      "source": "pass1",
+      "avg_logprob": -0.1911747881770134
+    },
+    {
+      "start": 653.02,
+      "end": 655.02,
+      "text": "He's out there saying hey",
+      "source": "pass1",
+      "avg_logprob": -0.1911747881770134
+    },
+    {
+      "start": 655.82,
+      "end": 658.66,
+      "text": "You know, we have a real problem here in this state with",
+      "source": "pass1",
+      "avg_logprob": -0.1911747881770134
+    },
+    {
+      "start": 659.66,
+      "end": 664.86,
+      "text": "Immigration and we need some reform and the sanctuary state thing isn't really working out so well",
+      "source": "pass1",
+      "avg_logprob": -0.1911747881770134
+    },
+    {
+      "start": 664.86,
+      "end": 667.14,
+      "text": "Let me give you an example of that. Here's Chad Bianco",
+      "source": "pass1",
+      "avg_logprob": -0.1911747881770134
+    },
+    {
+      "start": 667.18,
+      "end": 674.42,
+      "text": "But what is one thing mr. Bianco you would replace or change about the current sanctuary law in California one aspect just one",
+      "source": "pass1",
+      "avg_logprob": -0.17058691536028361
+    },
+    {
+      "start": 674.42,
+      "end": 676.98,
+      "text": "I would eliminate sanctuary state",
+      "source": "pass1",
+      "avg_logprob": -0.17058691536028361
+    },
+    {
+      "start": 677.58,
+      "end": 682.9,
+      "text": "Sanctuary state is what is creating the issue that we have in California. It didn't exist before 2017",
+      "source": "pass1",
+      "avg_logprob": -0.17058691536028361
+    },
+    {
+      "start": 685.47,
+      "end": 691.79,
+      "text": "Immigration is it is the responsibility of the federal government to enforce immigration laws and prior to 2017",
+      "source": "pass1",
+      "avg_logprob": -0.17058691536028361
+    },
+    {
+      "start": 691.79,
+      "end": 694.79,
+      "text": "They would come into our jails and they would come into our prisons",
+      "source": "pass1",
+      "avg_logprob": -0.17058691536028361
+    },
+    {
+      "start": 694.79,
+      "end": 701.03,
+      "text": "And they would remove those criminals who are victimizing us and they would and they would deport them that ended with prop with",
+      "source": "pass1",
+      "avg_logprob": -0.20635382266877925
+    },
+    {
+      "start": 701.71,
+      "end": 708.59,
+      "text": "Sanctuary state law SB 54 they forced us to release those people back into our communities",
+      "source": "pass1",
+      "avg_logprob": -0.20635382266877925
+    },
+    {
+      "start": 708.59,
+      "end": 714.63,
+      "text": "And then ice has to go into the communities to get them instead of in the safety and security of the jail",
+      "source": "pass1",
+      "avg_logprob": -0.20635382266877925
+    },
+    {
+      "start": 716.31,
+      "end": 718.31,
+      "text": "Again, you know what?",
+      "source": "pass1",
+      "avg_logprob": -0.20635382266877925
+    },
+    {
+      "start": 719.03,
+      "end": 724.47,
+      "text": "California's California, they're gonna California themselves and you think someone who's talking about that type of stuff",
+      "source": "pass1",
+      "avg_logprob": -0.20635382266877925
+    },
+    {
+      "start": 724.47,
+      "end": 728.23,
+      "text": "That sounds pretty rational. I mean, you know, if you're not a an immigration",
+      "source": "pass1",
+      "avg_logprob": -0.17167231336883876
+    },
+    {
+      "start": 728.67,
+      "end": 731.67,
+      "text": "Nerd if you're not sitting around thinking about these policies all the time",
+      "source": "pass1",
+      "avg_logprob": -0.17167231336883876
+    },
+    {
+      "start": 731.67,
+      "end": 738.07,
+      "text": "I think that seems pretty obvious to you if someone's in prison for something else and they're a little an illegal immigrant",
+      "source": "pass1",
+      "avg_logprob": -0.17167231336883876
+    },
+    {
+      "start": 738.11,
+      "end": 743.51,
+      "text": "You wouldn't release them back into society. They would be punished for both of these things that they did",
+      "source": "pass1",
+      "avg_logprob": -0.17167231336883876
+    },
+    {
+      "start": 743.51,
+      "end": 745.91,
+      "text": "I mean that seems kind of obvious. I think to most people",
+      "source": "pass1",
+      "avg_logprob": -0.17167231336883876
+    },
+    {
+      "start": 745.91,
+      "end": 749.75,
+      "text": "I think to an average person that being said in California",
+      "source": "pass1",
+      "avg_logprob": -0.17167231336883876
+    },
+    {
+      "start": 749.75,
+      "end": 754.55,
+      "text": "That's not true at all. Basically Chad Bianco is gonna be down the list quite a bit",
+      "source": "pass1",
+      "avg_logprob": -0.19110964195659527
+    },
+    {
+      "start": 754.55,
+      "end": 756.23,
+      "text": "We'll show you that here in just a second",
+      "source": "pass1",
+      "avg_logprob": -0.19110964195659527
+    },
+    {
+      "start": 756.23,
+      "end": 762.23,
+      "text": "They also had a situation about men's in women men in women's sports as part of this debate. Here's how that went",
+      "source": "pass1",
+      "avg_logprob": -0.19110964195659527
+    },
+    {
+      "start": 762.63,
+      "end": 769.51,
+      "text": "Under in California education code you perform an athletic event k through 12 based on your identification by gender",
+      "source": "pass1",
+      "avg_logprob": -0.19110964195659527
+    },
+    {
+      "start": 770.07,
+      "end": 775.91,
+      "text": "Would you change that law to match the ioc that you identify based on your?",
+      "source": "pass1",
+      "avg_logprob": -0.19110964195659527
+    },
+    {
+      "start": 776.63,
+      "end": 782.95,
+      "text": "Or your your your birth agenda. Yes or no, very quickly. We have 30 seconds left. Mr. Mayhem, so I change which law",
+      "source": "pass1",
+      "avg_logprob": -0.2944961713071455
+    },
+    {
+      "start": 783.75,
+      "end": 789.99,
+      "text": "The current law says you identify and that's how you participate. Yeah, but at higher levels. I would let the leagues decide",
+      "source": "pass1",
+      "avg_logprob": -0.2944961713071455
+    },
+    {
+      "start": 789.99,
+      "end": 793.11,
+      "text": "Okay, mr. Becerra and force the law. Okay, mr.",
+      "source": "pass1",
+      "avg_logprob": -0.2944961713071455
+    },
+    {
+      "start": 794.47,
+      "end": 796.07,
+      "text": "Steyer",
+      "source": "pass1",
+      "avg_logprob": -0.2944961713071455
+    },
+    {
+      "start": 796.07,
+      "end": 803.43,
+      "text": "Allow trans athletes to participate. Mr. Hilton. I have a wristband that says save girl spool. I will go Katie Porter",
+      "source": "pass1",
+      "avg_logprob": -0.2944961713071455
+    },
+    {
+      "start": 804.23,
+      "end": 806.23,
+      "text": "Yes enforce the existing law",
+      "source": "pass1",
+      "avg_logprob": -0.13946379638380474
+    },
+    {
+      "start": 807.67,
+      "end": 809.91,
+      "text": "By the way, does she have a beautiful speaking voice or what?",
+      "source": "pass1",
+      "avg_logprob": -0.13946379638380474
+    },
+    {
+      "start": 810.87,
+      "end": 812.87,
+      "text": "You know, I mean if you were thinking about",
+      "source": "pass1",
+      "avg_logprob": -0.13946379638380474
+    },
+    {
+      "start": 812.87,
+      "end": 815.43,
+      "text": "Who to vote for and you just had to go by voice first of all",
+      "source": "pass1",
+      "avg_logprob": -0.13946379638380474
+    },
+    {
+      "start": 815.43,
+      "end": 820.15,
+      "text": "You're going Hilton clearly because he's got an English accent and whenever you say something in an English accent",
+      "source": "pass1",
+      "avg_logprob": -0.13946379638380474
+    },
+    {
+      "start": 820.15,
+      "end": 822.79,
+      "text": "It sounds smarter. There's no prediction market access to",
+      "source": "pass1",
+      "avg_logprob": -0.13946379638380474
+    },
+    {
+      "start": 823.51,
+      "end": 827.27,
+      "text": "Markets to support that particular point of view, but it is just true",
+      "source": "pass1",
+      "avg_logprob": -0.13946379638380474
+    },
+    {
+      "start": 828.31,
+      "end": 830.95,
+      "text": "So, you know, I mean I just that's just one of my things",
+      "source": "pass1",
+      "avg_logprob": -0.13946379638380474
+    },
+    {
+      "start": 831.43,
+      "end": 833.11,
+      "text": "Okay, high speed rail another big thing",
+      "source": "pass1",
+      "avg_logprob": -0.215201063033862
+    },
+    {
+      "start": 833.11,
+      "end": 836.63,
+      "text": "We've talked about that a lot on studos america the glenbeck program back in the day",
+      "source": "pass1",
+      "avg_logprob": -0.215201063033862
+    },
+    {
+      "start": 837.11,
+      "end": 842.39,
+      "text": "If that's an issue you followed because of that coverage, I want to give you their answers on the high speed rail",
+      "source": "pass1",
+      "avg_logprob": -0.215201063033862
+    },
+    {
+      "start": 843.19,
+      "end": 845.67,
+      "text": "It'll cost another 30 billion to finish",
+      "source": "pass1",
+      "avg_logprob": -0.215201063033862
+    },
+    {
+      "start": 846.07,
+      "end": 852.63,
+      "text": "California high speed rail from merced the bakersfield. We've got the viaduct laid. We have overpasses",
+      "source": "pass1",
+      "avg_logprob": -0.215201063033862
+    },
+    {
+      "start": 852.95,
+      "end": 856.39,
+      "text": "Do you finish it? Yes or no, mayor virigosa? Yes",
+      "source": "pass1",
+      "avg_logprob": -0.215201063033862
+    },
+    {
+      "start": 857.11,
+      "end": 858.71,
+      "text": "A congresswoman porter",
+      "source": "pass1",
+      "avg_logprob": -0.25175825522763884
+    },
+    {
+      "start": 858.71,
+      "end": 863.03,
+      "text": "Yes, if you can build it faster and cheaper than it's been projected. Okay, sheriff bianco",
+      "source": "pass1",
+      "avg_logprob": -0.25175825522763884
+    },
+    {
+      "start": 863.51,
+      "end": 866.23,
+      "text": "No, I would rather arrest the people that stole our money. All right",
+      "source": "pass1",
+      "avg_logprob": -0.25175825522763884
+    },
+    {
+      "start": 866.39,
+      "end": 869.67,
+      "text": "That was the unbranded for you doing things that are illegal. Mr. Helton",
+      "source": "pass1",
+      "avg_logprob": -0.25175825522763884
+    },
+    {
+      "start": 869.99,
+      "end": 875.67,
+      "text": "Stop spending tax-based money on pointless things and improve our roads. I guess that's the worst in the country",
+      "source": "pass1",
+      "avg_logprob": -0.25175825522763884
+    },
+    {
+      "start": 875.83,
+      "end": 880.47,
+      "text": "Because of democrat policies mr. Stiles. Yes, we need a secretary of transportation",
+      "source": "pass1",
+      "avg_logprob": -0.25175825522763884
+    },
+    {
+      "start": 881.19,
+      "end": 885.75,
+      "text": "This slow speed delivery of high speed rail. No, but a high speed delivery of high speed rail. Yes",
+      "source": "pass1",
+      "avg_logprob": -0.25175825522763884
+    },
+    {
+      "start": 885.75,
+      "end": 887.75,
+      "text": "What does that mean?",
+      "source": "pass1",
+      "avg_logprob": -0.15332232286100803
+    },
+    {
+      "start": 895.19,
+      "end": 897.19,
+      "text": "That's basically what most of the debate was",
+      "source": "pass1",
+      "avg_logprob": -0.15332232286100803
+    },
+    {
+      "start": 897.51,
+      "end": 901.35,
+      "text": "Screaming over each other and what does that mean high speed delivery of high speed rail",
+      "source": "pass1",
+      "avg_logprob": -0.15332232286100803
+    },
+    {
+      "start": 901.59,
+      "end": 905.67,
+      "text": "I like the high speed delivery of high speed rail, but not the slow speed delivery of high speed rail",
+      "source": "pass1",
+      "avg_logprob": -0.15332232286100803
+    },
+    {
+      "start": 905.91,
+      "end": 907.91,
+      "text": "Or the high speed delivery of slow speed rail",
+      "source": "pass1",
+      "avg_logprob": -0.15332232286100803
+    },
+    {
+      "start": 908.79,
+      "end": 912.07,
+      "text": "I don't even know what that means. I mean it just it's continually stupid",
+      "source": "pass1",
+      "avg_logprob": -0.15332232286100803
+    },
+    {
+      "start": 912.31,
+      "end": 918.63,
+      "text": "Basically, they've screwed this up a lot, but people still want to say yes to trains for whatever reason. This is one thing. This is by the way",
+      "source": "pass1",
+      "avg_logprob": -0.11997228789636318
+    },
+    {
+      "start": 919.43,
+      "end": 923.11,
+      "text": "You come to stew does america. You get a lot of the coverage on the train issue",
+      "source": "pass1",
+      "avg_logprob": -0.11997228789636318
+    },
+    {
+      "start": 923.51,
+      "end": 926.31,
+      "text": "You come to predictable with stew. You're getting the coverage on",
+      "source": "pass1",
+      "avg_logprob": -0.11997228789636318
+    },
+    {
+      "start": 926.95,
+      "end": 927.99,
+      "text": "the",
+      "source": "pass1",
+      "avg_logprob": -0.11997228789636318
+    },
+    {
+      "start": 927.99,
+      "end": 930.23,
+      "text": "The races and the prediction markets associated with them",
+      "source": "pass1",
+      "avg_logprob": -0.11997228789636318
+    },
+    {
+      "start": 930.23,
+      "end": 934.79,
+      "text": "But I want you to just get this a little bonus piece of information because I think it's important to",
+      "source": "pass1",
+      "avg_logprob": -0.11997228789636318
+    },
+    {
+      "start": 935.03,
+      "end": 939.11,
+      "text": "Whatever audience you come from you might be a brand new listener. You might have been around for years and years and years",
+      "source": "pass1",
+      "avg_logprob": -0.11997228789636318
+    },
+    {
+      "start": 939.35,
+      "end": 941.35,
+      "text": "Here's the thing you need to know. We have",
+      "source": "pass1",
+      "avg_logprob": -0.13770937100871578
+    },
+    {
+      "start": 942.63,
+      "end": 946.15,
+      "text": "planes",
+      "source": "pass1",
+      "avg_logprob": -0.13770937100871578
+    },
+    {
+      "start": 946.15,
+      "end": 948.15,
+      "text": "They fly up in the sky",
+      "source": "pass1",
+      "avg_logprob": -0.13770937100871578
+    },
+    {
+      "start": 948.47,
+      "end": 951.19,
+      "text": "They go hundreds of miles an hour in the sky",
+      "source": "pass1",
+      "avg_logprob": -0.13770937100871578
+    },
+    {
+      "start": 951.75,
+      "end": 956.63,
+      "text": "And if you want to transport yourself from one place to another, that's a wonderful way to do it",
+      "source": "pass1",
+      "avg_logprob": -0.13770937100871578
+    },
+    {
+      "start": 957.99,
+      "end": 963.83,
+      "text": "Doesn't cost another 160 billion dollars or whatever they're they've expanded it to so far",
+      "source": "pass1",
+      "avg_logprob": -0.13770937100871578
+    },
+    {
+      "start": 963.83,
+      "end": 966.31,
+      "text": "So anyway, terrible idea in my opinion",
+      "source": "pass1",
+      "avg_logprob": -0.13770937100871578
+    },
+    {
+      "start": 967.27,
+      "end": 972.07,
+      "text": "And the handling of those types of hot button issues are what kind of lead what's going to lead to who wins",
+      "source": "pass1",
+      "avg_logprob": -0.14369775933667647
+    },
+    {
+      "start": 972.47,
+      "end": 975.27,
+      "text": "This particular election now taking the basis here for a second",
+      "source": "pass1",
+      "avg_logprob": -0.14369775933667647
+    },
+    {
+      "start": 975.51,
+      "end": 978.79,
+      "text": "We all know california is a blue state at this point",
+      "source": "pass1",
+      "avg_logprob": -0.14369775933667647
+    },
+    {
+      "start": 978.79,
+      "end": 982.23,
+      "text": "This is not ronald reagan's california anymore the chances of a republican winning",
+      "source": "pass1",
+      "avg_logprob": -0.14369775933667647
+    },
+    {
+      "start": 982.79,
+      "end": 986.63,
+      "text": "In this state are very very low that being said we have seen it",
+      "source": "pass1",
+      "avg_logprob": -0.14369775933667647
+    },
+    {
+      "start": 987.27,
+      "end": 989.27,
+      "text": "wilson schwarzenegger",
+      "source": "pass1",
+      "avg_logprob": -0.14369775933667647
+    },
+    {
+      "start": 989.67,
+      "end": 994.07,
+      "text": "We've seen some who have been able to come over that usually with a very specific profile",
+      "source": "pass1",
+      "avg_logprob": -0.14369775933667647
+    },
+    {
+      "start": 994.63,
+      "end": 997.59,
+      "text": "But it is possible right it is possible",
+      "source": "pass1",
+      "avg_logprob": -0.16697413650984616
+    },
+    {
+      "start": 998.31,
+      "end": 1000.31,
+      "text": "That that could happen",
+      "source": "pass1",
+      "avg_logprob": -0.16697413650984616
+    },
+    {
+      "start": 1001.51,
+      "end": 1004.55,
+      "text": "Could okay. Here's where we are right now in the race",
+      "source": "pass1",
+      "avg_logprob": -0.16697413650984616
+    },
+    {
+      "start": 1006.07,
+      "end": 1008.15,
+      "text": "And this is a kind of like",
+      "source": "pass1",
+      "avg_logprob": -0.16697413650984616
+    },
+    {
+      "start": 1009.59,
+      "end": 1014.79,
+      "text": "When we're looking at a race like this, it's a very clear example of something that I will say to you",
+      "source": "pass1",
+      "avg_logprob": -0.16697413650984616
+    },
+    {
+      "start": 1014.95,
+      "end": 1018.39,
+      "text": "One zillion times over the next few months and years",
+      "source": "pass1",
+      "avg_logprob": -0.16697413650984616
+    },
+    {
+      "start": 1019.11,
+      "end": 1022.79,
+      "text": "It is easier to predict won't won't happen than what will happen",
+      "source": "pass1",
+      "avg_logprob": -0.16697413650984616
+    },
+    {
+      "start": 1023.35,
+      "end": 1025.19,
+      "text": "You might look at this field and say I don't know",
+      "source": "pass1",
+      "avg_logprob": -0.1936745337645213
+    },
+    {
+      "start": 1025.67,
+      "end": 1030.79,
+      "text": "I mean, have you or this is where it looks like right now. Have you are beserra's at 44 percent tom steyer",
+      "source": "pass1",
+      "avg_logprob": -0.1936745337645213
+    },
+    {
+      "start": 1031.35,
+      "end": 1033.35,
+      "text": "When we pulled this 37 percent",
+      "source": "pass1",
+      "avg_logprob": -0.1936745337645213
+    },
+    {
+      "start": 1033.99,
+      "end": 1035.99,
+      "text": "Steve hilton and about nine percent",
+      "source": "pass1",
+      "avg_logprob": -0.1936745337645213
+    },
+    {
+      "start": 1036.47,
+      "end": 1039.59,
+      "text": "Bianco the guy you just saw in one of those clips at three percent",
+      "source": "pass1",
+      "avg_logprob": -0.1936745337645213
+    },
+    {
+      "start": 1039.99,
+      "end": 1044.87,
+      "text": "Matt mayhem another democrat which we didn't show you really in that clip because he's kind of boring at three percent",
+      "source": "pass1",
+      "avg_logprob": -0.1936745337645213
+    },
+    {
+      "start": 1045.19,
+      "end": 1047.19,
+      "text": "And katie porter. Did you come up with a number?",
+      "source": "pass1",
+      "avg_logprob": -0.1936745337645213
+    },
+    {
+      "start": 1047.91,
+      "end": 1051.83,
+      "text": "Did you come up with a number before when you're watching all those clips? What's katie porter's chance of winning this?",
+      "source": "pass1",
+      "avg_logprob": -0.1936745337645213
+    },
+    {
+      "start": 1053.51,
+      "end": 1054.95,
+      "text": "1%",
+      "source": "pass1",
+      "avg_logprob": -0.1611539077858965
+    },
+    {
+      "start": 1054.95,
+      "end": 1056.95,
+      "text": "Now that's kind of the lowest it goes",
+      "source": "pass1",
+      "avg_logprob": -0.1611539077858965
+    },
+    {
+      "start": 1057.43,
+      "end": 1063.27,
+      "text": "Just so you're aware they don't typically have zero sometimes they'll do decimals and get a 0.7 percent chance or something like that",
+      "source": "pass1",
+      "avg_logprob": -0.1611539077858965
+    },
+    {
+      "start": 1063.51,
+      "end": 1065.91,
+      "text": "But honestly in this particular market one percent",
+      "source": "pass1",
+      "avg_logprob": -0.1611539077858965
+    },
+    {
+      "start": 1065.91,
+      "end": 1069.99,
+      "text": "It's about as low as it goes and she was the head headliner of this race at one point",
+      "source": "pass1",
+      "avg_logprob": -0.1611539077858965
+    },
+    {
+      "start": 1070.31,
+      "end": 1073.03,
+      "text": "So katie porter not looking good for her right now",
+      "source": "pass1",
+      "avg_logprob": -0.1611539077858965
+    },
+    {
+      "start": 1073.59,
+      "end": 1077.19,
+      "text": "Uh and part of that is when you have a situation like swall well",
+      "source": "pass1",
+      "avg_logprob": -0.1611539077858965
+    },
+    {
+      "start": 1078.07,
+      "end": 1080.23,
+      "text": "What voters tend to do",
+      "source": "pass1",
+      "avg_logprob": -0.1611539077858965
+    },
+    {
+      "start": 1080.95,
+      "end": 1084.55,
+      "text": "If think about your put yourself in the mind of a california democratic voter for a second",
+      "source": "pass1",
+      "avg_logprob": -0.12004615124474224
+    },
+    {
+      "start": 1084.95,
+      "end": 1093.03,
+      "text": "You were gonna pick eric swall well. He was your guy. He's loud. He's outspoken. He has a lot of enemies. He's been you know",
+      "source": "pass1",
+      "avg_logprob": -0.12004615124474224
+    },
+    {
+      "start": 1094.07,
+      "end": 1099.75,
+      "text": "Constantly targeting people unfairly. They have an axe to grind with him. He's a target plus",
+      "source": "pass1",
+      "avg_logprob": -0.12004615124474224
+    },
+    {
+      "start": 1100.07,
+      "end": 1102.87,
+      "text": "He's been molesting everyone around him for multiple years",
+      "source": "pass1",
+      "avg_logprob": -0.12004615124474224
+    },
+    {
+      "start": 1103.35,
+      "end": 1108.55,
+      "text": "When that happens and that situation blows up the one thing you don't want after that",
+      "source": "pass1",
+      "avg_logprob": -0.12004615124474224
+    },
+    {
+      "start": 1108.63,
+      "end": 1110.63,
+      "text": "If you're a california democratic voter",
+      "source": "pass1",
+      "avg_logprob": -0.06938561190546086
+    },
+    {
+      "start": 1110.87,
+      "end": 1112.87,
+      "text": "Is another risk",
+      "source": "pass1",
+      "avg_logprob": -0.06938561190546086
+    },
+    {
+      "start": 1113.19,
+      "end": 1120.07,
+      "text": "What you don't want is another person mired in scandal what you don't want is another person who's been abusing co-workers on camera",
+      "source": "pass1",
+      "avg_logprob": -0.06938561190546086
+    },
+    {
+      "start": 1120.71,
+      "end": 1125.19,
+      "text": "That's katie porter. So when you have a situation where swall well drops out",
+      "source": "pass1",
+      "avg_logprob": -0.06938561190546086
+    },
+    {
+      "start": 1125.83,
+      "end": 1130.71,
+      "text": "What typically the mind of a california democratic voter or really any voter is going to do is wait a minute",
+      "source": "pass1",
+      "avg_logprob": -0.06938561190546086
+    },
+    {
+      "start": 1130.79,
+      "end": 1134.23,
+      "text": "We have this scandal thing that didn't work out. Let's go somewhere safe",
+      "source": "pass1",
+      "avg_logprob": -0.06938561190546086
+    },
+    {
+      "start": 1135.03,
+      "end": 1141.19,
+      "text": "That's why we have taken a position on javier basera. Now. I don't think he'll be a good governor",
+      "source": "pass1",
+      "avg_logprob": -0.16258712805162265
+    },
+    {
+      "start": 1141.51,
+      "end": 1144.39,
+      "text": "He was the hhs secretary for a while there",
+      "source": "pass1",
+      "avg_logprob": -0.16258712805162265
+    },
+    {
+      "start": 1144.79,
+      "end": 1149.43,
+      "text": "Um, I don't think he'll be do a good job at all. In fact, I think he'll be he'll do a terrible job",
+      "source": "pass1",
+      "avg_logprob": -0.16258712805162265
+    },
+    {
+      "start": 1149.67,
+      "end": 1155.19,
+      "text": "But I do think that there's a good chance and it has happened so far that people will run to basera",
+      "source": "pass1",
+      "avg_logprob": -0.16258712805162265
+    },
+    {
+      "start": 1155.51,
+      "end": 1158.15,
+      "text": "basera is one of these guys who's kind of seen as a very",
+      "source": "pass1",
+      "avg_logprob": -0.16258712805162265
+    },
+    {
+      "start": 1158.79,
+      "end": 1160.23,
+      "text": "boring",
+      "source": "pass1",
+      "avg_logprob": -0.16258712805162265
+    },
+    {
+      "start": 1160.23,
+      "end": 1161.51,
+      "text": "dull",
+      "source": "pass1",
+      "avg_logprob": -0.16258712805162265
+    },
+    {
+      "start": 1161.51,
+      "end": 1163.11,
+      "text": "government official",
+      "source": "pass1",
+      "avg_logprob": -0.16258712805162265
+    },
+    {
+      "start": 1163.11,
+      "end": 1168.31,
+      "text": "And frankly coming out of eric swall well and katie porter if you're a california democrat",
+      "source": "pass1",
+      "avg_logprob": -0.14432098357765763
+    },
+    {
+      "start": 1168.31,
+      "end": 1172.07,
+      "text": "That sounds delicious to you right now somebody who's going to make no news",
+      "source": "pass1",
+      "avg_logprob": -0.14432098357765763
+    },
+    {
+      "start": 1172.39,
+      "end": 1174.39,
+      "text": "Who's never going to say anything interesting?",
+      "source": "pass1",
+      "avg_logprob": -0.14432098357765763
+    },
+    {
+      "start": 1174.71,
+      "end": 1179.67,
+      "text": "That's what you want and that's who you have in in in javier basera now",
+      "source": "pass1",
+      "avg_logprob": -0.14432098357765763
+    },
+    {
+      "start": 1180.07,
+      "end": 1180.63,
+      "text": "basera",
+      "source": "pass1",
+      "avg_logprob": -0.14432098357765763
+    },
+    {
+      "start": 1180.63,
+      "end": 1183.83,
+      "text": "I will say has some issues, um, but they're very",
+      "source": "pass1",
+      "avg_logprob": -0.14432098357765763
+    },
+    {
+      "start": 1184.47,
+      "end": 1187.83,
+      "text": "You know, they're typical issues. Oh, there's corruption here. They spent too much there",
+      "source": "pass1",
+      "avg_logprob": -0.14432098357765763
+    },
+    {
+      "start": 1187.83,
+      "end": 1190.55,
+      "text": "No one cares about that stuff. Let us know no one thinks there's there's",
+      "source": "pass1",
+      "avg_logprob": -0.14432098357765763
+    },
+    {
+      "start": 1191.27,
+      "end": 1193.11,
+      "text": "Videos of him",
+      "source": "pass1",
+      "avg_logprob": -0.18621626615524292
+    },
+    {
+      "start": 1193.11,
+      "end": 1195.11,
+      "text": "Making out with a prostitute around the corner",
+      "source": "pass1",
+      "avg_logprob": -0.18621626615524292
+    },
+    {
+      "start": 1195.75,
+      "end": 1197.11,
+      "text": "now",
+      "source": "pass1",
+      "avg_logprob": -0.18621626615524292
+    },
+    {
+      "start": 1197.11,
+      "end": 1202.39,
+      "text": "Don't put it past them. He lived in washington dc. Okay, but we don't think right now",
+      "source": "pass1",
+      "avg_logprob": -0.18621626615524292
+    },
+    {
+      "start": 1203.19,
+      "end": 1210.07,
+      "text": "That's going to happen anytime soon. So basera now leaves at 40 the updated numbers 45 styret 40 hilton at 9",
+      "source": "pass1",
+      "avg_logprob": -0.18621626615524292
+    },
+    {
+      "start": 1210.15,
+      "end": 1213.27,
+      "text": "Bianco 3 mayhem 3 and porter 1",
+      "source": "pass1",
+      "avg_logprob": -0.18621626615524292
+    },
+    {
+      "start": 1214.23,
+      "end": 1216.23,
+      "text": "Now when it comes to party",
+      "source": "pass1",
+      "avg_logprob": -0.18621626615524292
+    },
+    {
+      "start": 1216.71,
+      "end": 1217.99,
+      "text": "if you think about",
+      "source": "pass1",
+      "avg_logprob": -0.18621626615524292
+    },
+    {
+      "start": 1217.99,
+      "end": 1220.87,
+      "text": "Which party is going to take the office?",
+      "source": "pass1",
+      "avg_logprob": -0.1240102558032326
+    },
+    {
+      "start": 1222.55,
+      "end": 1225.11,
+      "text": "It's an interesting formulation because of those rules",
+      "source": "pass1",
+      "avg_logprob": -0.1240102558032326
+    },
+    {
+      "start": 1225.11,
+      "end": 1231.43,
+      "text": "I talked about before this jungle primary where you have the top two people from any party that can get into",
+      "source": "pass1",
+      "avg_logprob": -0.1240102558032326
+    },
+    {
+      "start": 1231.99,
+      "end": 1236.47,
+      "text": "Uh finals and those will be the only two choices come november",
+      "source": "pass1",
+      "avg_logprob": -0.1240102558032326
+    },
+    {
+      "start": 1236.95,
+      "end": 1245.03,
+      "text": "So what are we looking at here the scary situation again? If you're a california democrat is that the top two places go to",
+      "source": "pass1",
+      "avg_logprob": -0.1240102558032326
+    },
+    {
+      "start": 1245.99,
+      "end": 1250.39,
+      "text": "To republicans if that happens you will not have a choice of a democrat at all",
+      "source": "pass1",
+      "avg_logprob": -0.08788001945330984
+    },
+    {
+      "start": 1250.39,
+      "end": 1256.47,
+      "text": "It'll be republican versus republican the reason they changed these laws a long time ago is because what they wanted was more",
+      "source": "pass1",
+      "avg_logprob": -0.08788001945330984
+    },
+    {
+      "start": 1257.03,
+      "end": 1259.03,
+      "text": "left-wing democrats to have an opportunity",
+      "source": "pass1",
+      "avg_logprob": -0.08788001945330984
+    },
+    {
+      "start": 1259.11,
+      "end": 1261.67,
+      "text": "So we wouldn't get so many centrist democrats",
+      "source": "pass1",
+      "avg_logprob": -0.08788001945330984
+    },
+    {
+      "start": 1262.31,
+      "end": 1265.27,
+      "text": "In california because that's a huge problem for so many people",
+      "source": "pass1",
+      "avg_logprob": -0.08788001945330984
+    },
+    {
+      "start": 1265.91,
+      "end": 1267.91,
+      "text": "Instead what they wanted was a chance for to elect",
+      "source": "pass1",
+      "avg_logprob": -0.08788001945330984
+    },
+    {
+      "start": 1267.99,
+      "end": 1274.15,
+      "text": "You know the AOC wing of the party right who couldn't normally get elected when if you put an AOC member of the party up",
+      "source": "pass1",
+      "avg_logprob": -0.08788001945330984
+    },
+    {
+      "start": 1274.63,
+      "end": 1278.87,
+      "text": "Against a republican maybe the republican wins that's scary for california democrats",
+      "source": "pass1",
+      "avg_logprob": -0.10972575135905334
+    },
+    {
+      "start": 1279.03,
+      "end": 1281.03,
+      "text": "So they made it so it would be republican",
+      "source": "pass1",
+      "avg_logprob": -0.10972575135905334
+    },
+    {
+      "start": 1281.43,
+      "end": 1285.99,
+      "text": "Or the top two and what they expected to happen was democrat versus democrat",
+      "source": "pass1",
+      "avg_logprob": -0.10972575135905334
+    },
+    {
+      "start": 1286.47,
+      "end": 1290.87,
+      "text": "What we have now are there are so many people in this race a lot of them with giant egos",
+      "source": "pass1",
+      "avg_logprob": -0.10972575135905334
+    },
+    {
+      "start": 1290.87,
+      "end": 1292.87,
+      "text": "And they don't want to drop out of the race",
+      "source": "pass1",
+      "avg_logprob": -0.10972575135905334
+    },
+    {
+      "start": 1293.11,
+      "end": 1298.87,
+      "text": "So it's left a very small possibility that you could get republican versus republican",
+      "source": "pass1",
+      "avg_logprob": -0.10972575135905334
+    },
+    {
+      "start": 1299.51,
+      "end": 1305.27,
+      "text": "At the end of this situation where bianco and hilton could win first and second place with something like let's say",
+      "source": "pass1",
+      "avg_logprob": -0.1415962513210704
+    },
+    {
+      "start": 1305.83,
+      "end": 1307.83,
+      "text": "18 and 15 percent",
+      "source": "pass1",
+      "avg_logprob": -0.1415962513210704
+    },
+    {
+      "start": 1308.15,
+      "end": 1313.11,
+      "text": "And then maybe basera gets 14 percent and you have the top two being both republicans",
+      "source": "pass1",
+      "avg_logprob": -0.1415962513210704
+    },
+    {
+      "start": 1313.19,
+      "end": 1315.19,
+      "text": "This is the democratic nightmare situation",
+      "source": "pass1",
+      "avg_logprob": -0.1415962513210704
+    },
+    {
+      "start": 1315.51,
+      "end": 1321.75,
+      "text": "It is possible right now the markets believe that there is a an 11 percent chance",
+      "source": "pass1",
+      "avg_logprob": -0.1415962513210704
+    },
+    {
+      "start": 1321.99,
+      "end": 1327.11,
+      "text": "Not of that but an 11 percent chance of a republican winning now when you're looking at that situation",
+      "source": "pass1",
+      "avg_logprob": -0.1415962513210704
+    },
+    {
+      "start": 1327.35,
+      "end": 1333.35,
+      "text": "You have to consider two different things number one both republicans win the jungle primary and they're the only options",
+      "source": "pass1",
+      "avg_logprob": -0.12756722768147785
+    },
+    {
+      "start": 1333.51,
+      "end": 1336.87,
+      "text": "So in that situation, of course a republican would get elected",
+      "source": "pass1",
+      "avg_logprob": -0.12756722768147785
+    },
+    {
+      "start": 1337.11,
+      "end": 1341.03,
+      "text": "The second possibility is let's say a steve hilton comes in first or second",
+      "source": "pass1",
+      "avg_logprob": -0.12756722768147785
+    },
+    {
+      "start": 1341.27,
+      "end": 1346.31,
+      "text": "He goes onto the finals and just flat beats a javier basera or tom steyer",
+      "source": "pass1",
+      "avg_logprob": -0.12756722768147785
+    },
+    {
+      "start": 1347.03,
+      "end": 1349.75,
+      "text": "That's possible. I mean honestly watching hilton in that debate",
+      "source": "pass1",
+      "avg_logprob": -0.12756722768147785
+    },
+    {
+      "start": 1351.27,
+      "end": 1353.67,
+      "text": "Seems like a pretty good candidate frankly now",
+      "source": "pass1",
+      "avg_logprob": -0.12756722768147785
+    },
+    {
+      "start": 1354.15,
+      "end": 1357.59,
+      "text": "Yes, i'm partially won over by the british accent. It just just works",
+      "source": "pass1",
+      "avg_logprob": -0.08526232300533189
+    },
+    {
+      "start": 1357.67,
+      "end": 1360.31,
+      "text": "It's just a good solid smart sounding accent",
+      "source": "pass1",
+      "avg_logprob": -0.08526232300533189
+    },
+    {
+      "start": 1360.31,
+      "end": 1364.55,
+      "text": "But he was good in the debate and he's a good speaker and he doesn't seem to be",
+      "source": "pass1",
+      "avg_logprob": -0.08526232300533189
+    },
+    {
+      "start": 1365.19,
+      "end": 1370.63,
+      "text": "The extreme type of republican that i might enjoy or you might enjoy but california might hate",
+      "source": "pass1",
+      "avg_logprob": -0.08526232300533189
+    },
+    {
+      "start": 1371.27,
+      "end": 1376.07,
+      "text": "He had a very good answer that we didn't have time to get to today on when it came to immigration",
+      "source": "pass1",
+      "avg_logprob": -0.08526232300533189
+    },
+    {
+      "start": 1376.15,
+      "end": 1379.67,
+      "text": "I mean, you know, he was able to say look, i'm the only one up here who actually is an immigrant",
+      "source": "pass1",
+      "avg_logprob": -0.08526232300533189
+    },
+    {
+      "start": 1380.07,
+      "end": 1385.51,
+      "text": "I'm an immigrant right now. I'm up here talking to you. So I do care about these issues and I care about legal immigration",
+      "source": "pass1",
+      "avg_logprob": -0.1430715261361538
+    },
+    {
+      "start": 1385.83,
+      "end": 1387.83,
+      "text": "So there is a a very",
+      "source": "pass1",
+      "avg_logprob": -0.1430715261361538
+    },
+    {
+      "start": 1388.23,
+      "end": 1390.23,
+      "text": "straight line here to",
+      "source": "pass1",
+      "avg_logprob": -0.1430715261361538
+    },
+    {
+      "start": 1390.31,
+      "end": 1392.31,
+      "text": "Hilton getting to the final two",
+      "source": "pass1",
+      "avg_logprob": -0.1430715261361538
+    },
+    {
+      "start": 1392.47,
+      "end": 1396.63,
+      "text": "Winning that race is very difficult, you know, it's a very difficult thing one-on-one situation",
+      "source": "pass1",
+      "avg_logprob": -0.1430715261361538
+    },
+    {
+      "start": 1396.87,
+      "end": 1401.35,
+      "text": "Republican versus democrat. This is another reason they put this formulation together",
+      "source": "pass1",
+      "avg_logprob": -0.1430715261361538
+    },
+    {
+      "start": 1401.75,
+      "end": 1406.79,
+      "text": "Thinking in these types of times you'd get a situation where a republican might get to the final round",
+      "source": "pass1",
+      "avg_logprob": -0.1430715261361538
+    },
+    {
+      "start": 1406.79,
+      "end": 1409.83,
+      "text": "It would be very difficult for them to win right now",
+      "source": "pass1",
+      "avg_logprob": -0.15888450356821218
+    },
+    {
+      "start": 1409.91,
+      "end": 1416.47,
+      "text": "And it was an 11 chance that a republican wins which again encompasses that one-two republican scenario",
+      "source": "pass1",
+      "avg_logprob": -0.15888450356821218
+    },
+    {
+      "start": 1416.55,
+      "end": 1419.11,
+      "text": "And a republican just flat out winning in the finals",
+      "source": "pass1",
+      "avg_logprob": -0.15888450356821218
+    },
+    {
+      "start": 1419.83,
+      "end": 1422.23,
+      "text": "There's a way we can look at what percentage of",
+      "source": "pass1",
+      "avg_logprob": -0.15888450356821218
+    },
+    {
+      "start": 1423.11,
+      "end": 1427.43,
+      "text": "Time they think republicans are actually going to win and I will say it's very very low",
+      "source": "pass1",
+      "avg_logprob": -0.15888450356821218
+    },
+    {
+      "start": 1427.83,
+      "end": 1431.67,
+      "text": "So in that weird situation where one two are both republicans",
+      "source": "pass1",
+      "avg_logprob": -0.15888450356821218
+    },
+    {
+      "start": 1432.23,
+      "end": 1437.43,
+      "text": "The markets think that there's about a seven percent chance that it's bianco versus hilton going into the final round",
+      "source": "pass1",
+      "avg_logprob": -0.1050918900605404
+    },
+    {
+      "start": 1437.43,
+      "end": 1440.95,
+      "text": "This is the cap the exact matchup. California gubernatorial matchup",
+      "source": "pass1",
+      "avg_logprob": -0.1050918900605404
+    },
+    {
+      "start": 1441.35,
+      "end": 1445.27,
+      "text": "One this is another one of these situations where you can kind of look at a long list of candidates and say",
+      "source": "pass1",
+      "avg_logprob": -0.1050918900605404
+    },
+    {
+      "start": 1445.35,
+      "end": 1447.51,
+      "text": "I don't think that person's gonna win. I don't think that person's gonna win",
+      "source": "pass1",
+      "avg_logprob": -0.1050918900605404
+    },
+    {
+      "start": 1447.59,
+      "end": 1449.11,
+      "text": "I'm not sure what's gonna happen",
+      "source": "pass1",
+      "avg_logprob": -0.1050918900605404
+    },
+    {
+      "start": 1449.19,
+      "end": 1451.19,
+      "text": "But I don't think that's going to be the matchup",
+      "source": "pass1",
+      "avg_logprob": -0.1050918900605404
+    },
+    {
+      "start": 1451.43,
+      "end": 1455.43,
+      "text": "You can pretty easily go in here and say I don't think it's gonna be bianco versus hilton",
+      "source": "pass1",
+      "avg_logprob": -0.1050918900605404
+    },
+    {
+      "start": 1455.83,
+      "end": 1458.79,
+      "text": "The chances of it being bianco versus hilton are pretty low",
+      "source": "pass1",
+      "avg_logprob": -0.1050918900605404
+    },
+    {
+      "start": 1459.43,
+      "end": 1461.43,
+      "text": "The markets say about seven percent",
+      "source": "pass1",
+      "avg_logprob": -0.1050918900605404
+    },
+    {
+      "start": 1462.31,
+      "end": 1465.99,
+      "text": "So that's what they say right now. So there's a seven percent chance that uh,",
+      "source": "pass1",
+      "avg_logprob": -0.14192460323957837
+    },
+    {
+      "start": 1466.07,
+      "end": 1471.59,
+      "text": "Bianco versus hilton come together and then one of those republicans wins and there's a four percent chance that",
+      "source": "pass1",
+      "avg_logprob": -0.14192460323957837
+    },
+    {
+      "start": 1472.55,
+      "end": 1478.63,
+      "text": "One of the republicans gets into the primary against a democrat and somehow defeats them. So not optimistic",
+      "source": "pass1",
+      "avg_logprob": -0.14192460323957837
+    },
+    {
+      "start": 1479.35,
+      "end": 1482.79,
+      "text": "I will say is what what they're saying here, but if you go in here and you see a matchup of like",
+      "source": "pass1",
+      "avg_logprob": -0.14192460323957837
+    },
+    {
+      "start": 1483.19,
+      "end": 1485.51,
+      "text": "Well, I don't think it's going to be tom steyer versus katie porter",
+      "source": "pass1",
+      "avg_logprob": -0.14192460323957837
+    },
+    {
+      "start": 1485.51,
+      "end": 1489.59,
+      "text": "You can go know on that and uh and and clean up your one percent",
+      "source": "pass1",
+      "avg_logprob": -0.14192460323957837
+    },
+    {
+      "start": 1489.99,
+      "end": 1491.99,
+      "text": "Honestly, a lot of those are pretty small",
+      "source": "pass1",
+      "avg_logprob": -0.11272375259016242
+    },
+    {
+      "start": 1491.99,
+      "end": 1495.27,
+      "text": "Outcomes, but there are some there like I think there's some interest honestly",
+      "source": "pass1",
+      "avg_logprob": -0.11272375259016242
+    },
+    {
+      "start": 1495.35,
+      "end": 1497.35,
+      "text": "I have in saying no",
+      "source": "pass1",
+      "avg_logprob": -0.11272375259016242
+    },
+    {
+      "start": 1497.35,
+      "end": 1499.83,
+      "text": "To the republican versus republican situation",
+      "source": "pass1",
+      "avg_logprob": -0.11272375259016242
+    },
+    {
+      "start": 1500.31,
+      "end": 1504.15,
+      "text": "The main reason why eric swalwell is not in this race. You might say well, of course",
+      "source": "pass1",
+      "avg_logprob": -0.11272375259016242
+    },
+    {
+      "start": 1504.23,
+      "end": 1508.55,
+      "text": "He's not in this race. He was touching women. He was harassing them. He was sending them unwarranted",
+      "source": "pass1",
+      "avg_logprob": -0.11272375259016242
+    },
+    {
+      "start": 1509.99,
+      "end": 1514.47,
+      "text": "Very downsized photos all the things that he was probably doing with",
+      "source": "pass1",
+      "avg_logprob": -0.11272375259016242
+    },
+    {
+      "start": 1515.27,
+      "end": 1521.03,
+      "text": "You know, he had a weird history the bottom line is none of those things are why eric swalwell is not in this race",
+      "source": "pass1",
+      "avg_logprob": -0.15209911738411855
+    },
+    {
+      "start": 1521.11,
+      "end": 1525.11,
+      "text": "It's not because he abused other employees. It's not because he hit on women outside of his marriage",
+      "source": "pass1",
+      "avg_logprob": -0.15209911738411855
+    },
+    {
+      "start": 1525.35,
+      "end": 1527.83,
+      "text": "It's not because he was sending pictures of his uh,",
+      "source": "pass1",
+      "avg_logprob": -0.15209911738411855
+    },
+    {
+      "start": 1528.71,
+      "end": 1532.31,
+      "text": "Little swalwell. It's not because of fang fang. None of those reasons",
+      "source": "pass1",
+      "avg_logprob": -0.15209911738411855
+    },
+    {
+      "start": 1532.39,
+      "end": 1537.75,
+      "text": "None of them have anything to do with why he's not in the race. The reason he's not in this race is because",
+      "source": "pass1",
+      "avg_logprob": -0.15209911738411855
+    },
+    {
+      "start": 1538.07,
+      "end": 1540.07,
+      "text": "California democrats were terrified",
+      "source": "pass1",
+      "avg_logprob": -0.16752672645280947
+    },
+    {
+      "start": 1541.03,
+      "end": 1544.79,
+      "text": "terrified it would be republican versus republican so they",
+      "source": "pass1",
+      "avg_logprob": -0.16752672645280947
+    },
+    {
+      "start": 1545.91,
+      "end": 1552.63,
+      "text": "Again, this was almost exclusively done by democrats where they came out all of them knew about his terrible history",
+      "source": "pass1",
+      "avg_logprob": -0.16752672645280947
+    },
+    {
+      "start": 1553.11,
+      "end": 1557.51,
+      "text": "And they were able tom steyer is rumored to be largely behind a lot of this",
+      "source": "pass1",
+      "avg_logprob": -0.16752672645280947
+    },
+    {
+      "start": 1557.75,
+      "end": 1562.63,
+      "text": "But they came out and they said we got to get him out of this race if we can get uh swalwell out of this race",
+      "source": "pass1",
+      "avg_logprob": -0.16752672645280947
+    },
+    {
+      "start": 1562.95,
+      "end": 1567.35,
+      "text": "We can number one guarantee most likely that those democrat votes",
+      "source": "pass1",
+      "avg_logprob": -0.16752672645280947
+    },
+    {
+      "start": 1567.43,
+      "end": 1572.47,
+      "text": "Will shift to other candidates and that will give them enough of a boost to get one of them over",
+      "source": "pass1",
+      "avg_logprob": -0.08923137014810469
+    },
+    {
+      "start": 1572.95,
+      "end": 1574.95,
+      "text": "Either bianco or hilton",
+      "source": "pass1",
+      "avg_logprob": -0.08923137014810469
+    },
+    {
+      "start": 1575.11,
+      "end": 1576.79,
+      "text": "That's the strategy here",
+      "source": "pass1",
+      "avg_logprob": -0.08923137014810469
+    },
+    {
+      "start": 1576.79,
+      "end": 1581.27,
+      "text": "It's got nothing to do with whether they care about any of these women. Nothing zero zilch",
+      "source": "pass1",
+      "avg_logprob": -0.08923137014810469
+    },
+    {
+      "start": 1581.35,
+      "end": 1582.95,
+      "text": "They don't care about that at all",
+      "source": "pass1",
+      "avg_logprob": -0.08923137014810469
+    },
+    {
+      "start": 1582.95,
+      "end": 1585.91,
+      "text": "All they care about is getting him out of the race because when they get him out of the race",
+      "source": "pass1",
+      "avg_logprob": -0.08923137014810469
+    },
+    {
+      "start": 1586.31,
+      "end": 1591.35,
+      "text": "Somebody on the democratic side will likely get to the final two and that's what they were trying to make sure",
+      "source": "pass1",
+      "avg_logprob": -0.08923137014810469
+    },
+    {
+      "start": 1592.23,
+      "end": 1596.31,
+      "text": "Went on here. So that is where we stand now with the california gubernatorial race",
+      "source": "pass1",
+      "avg_logprob": -0.08923137014810469
+    },
+    {
+      "start": 1596.87,
+      "end": 1601.67,
+      "text": "The likely outcome here and i'm just going to be straight with you one of the things we do here unpredictable",
+      "source": "pass1",
+      "avg_logprob": -0.09475209214019054
+    },
+    {
+      "start": 1601.75,
+      "end": 1608.31,
+      "text": "It's one of the things i've done my entire career is make you miserable if you want it to be a bianco versus us",
+      "source": "pass1",
+      "avg_logprob": -0.09475209214019054
+    },
+    {
+      "start": 1608.71,
+      "end": 1610.71,
+      "text": "Hilton situation and you want one of them to win",
+      "source": "pass1",
+      "avg_logprob": -0.09475209214019054
+    },
+    {
+      "start": 1611.83,
+      "end": 1612.95,
+      "text": "You know, I would agree with you",
+      "source": "pass1",
+      "avg_logprob": -0.09475209214019054
+    },
+    {
+      "start": 1612.95,
+      "end": 1618.71,
+      "text": "I would think either one of them would be much better governors than anyone that I saw on that stage from the democratic party",
+      "source": "pass1",
+      "avg_logprob": -0.09475209214019054
+    },
+    {
+      "start": 1619.03,
+      "end": 1621.03,
+      "text": "That's my opinion on the situation",
+      "source": "pass1",
+      "avg_logprob": -0.09475209214019054
+    },
+    {
+      "start": 1621.43,
+      "end": 1625.03,
+      "text": "What i'm looking for here is to try to give you number one the truth",
+      "source": "pass1",
+      "avg_logprob": -0.09475209214019054
+    },
+    {
+      "start": 1625.43,
+      "end": 1627.43,
+      "text": "And number two opportunity",
+      "source": "pass1",
+      "avg_logprob": -0.12580838599311772
+    },
+    {
+      "start": 1627.59,
+      "end": 1631.59,
+      "text": "Where should you go in these markets and honestly like if I were to look at that and say hey",
+      "source": "pass1",
+      "avg_logprob": -0.12580838599311772
+    },
+    {
+      "start": 1631.59,
+      "end": 1636.23,
+      "text": "What's going to happen with that first one and two situation pretty skeptical that's going to be an outcome",
+      "source": "pass1",
+      "avg_logprob": -0.12580838599311772
+    },
+    {
+      "start": 1636.55,
+      "end": 1639.43,
+      "text": "That's only a seven percent gain if you go no on that",
+      "source": "pass1",
+      "avg_logprob": -0.12580838599311772
+    },
+    {
+      "start": 1639.99,
+      "end": 1643.11,
+      "text": "Well, it's seven of 93. So we know probably you know eight percent gain",
+      "source": "pass1",
+      "avg_logprob": -0.12580838599311772
+    },
+    {
+      "start": 1643.67,
+      "end": 1646.79,
+      "text": "That being said it's only over a couple weeks. Remember, this is june 2nd",
+      "source": "pass1",
+      "avg_logprob": -0.12580838599311772
+    },
+    {
+      "start": 1646.79,
+      "end": 1652.23,
+      "text": "This is going to play out. So we will see how it plays out how that pays out here in the coming weeks",
+      "source": "pass1",
+      "avg_logprob": -0.12580838599311772
+    },
+    {
+      "start": 1652.55,
+      "end": 1655.91,
+      "text": "That's where we are right now. I want to take you from the big state of california",
+      "source": "pass1",
+      "avg_logprob": -0.15332640013621965
+    },
+    {
+      "start": 1656.47,
+      "end": 1662.95,
+      "text": "Down to a tiny little part of california in los angeles. The mayor election going on as well. We'll get to that next",
+      "source": "pass1",
+      "avg_logprob": -0.15332640013621965
+    },
+    {
+      "start": 1663.75,
+      "end": 1666.71,
+      "text": "There's a pill version of osempic",
+      "source": "pass1",
+      "avg_logprob": -0.15332640013621965
+    },
+    {
+      "start": 1667.03,
+      "end": 1672.15,
+      "text": "Hello, i'm osempic and i'm other glp ones kind of like him. Hey, did I hear there's a pill version of osempic?",
+      "source": "pass1",
+      "avg_logprob": -0.15332640013621965
+    },
+    {
+      "start": 1672.39,
+      "end": 1677.11,
+      "text": "Yep, you sure did ask your doctor about which fda approved uses of the osempic pen or pill",
+      "source": "pass1",
+      "avg_logprob": -0.15332640013621965
+    },
+    {
+      "start": 1677.27,
+      "end": 1684.47,
+      "text": "Maybe right for you call 1833 osempic or visit osempic.com to view the medication guide and learn more about osempic",
+      "source": "pass1",
+      "avg_logprob": -0.16743413218878267
+    },
+    {
+      "start": 1684.71,
+      "end": 1693.35,
+      "text": "semagletide tablets 9 milligrams and osempic semagletide injection 2 milligrams. There's a pill version of osempic",
+      "source": "pass1",
+      "avg_logprob": -0.16743413218878267
+    },
+    {
+      "start": 1694.39,
+      "end": 1699.03,
+      "text": "Welcome back to predictable with stew. It's predictable show dot com get on the sub stack",
+      "source": "pass1",
+      "avg_logprob": -0.16743413218878267
+    },
+    {
+      "start": 1699.43,
+      "end": 1702.63,
+      "text": "Check it out. You'll like I think the stuff that we're going to be coming up with here",
+      "source": "pass1",
+      "avg_logprob": -0.16743413218878267
+    },
+    {
+      "start": 1703.11,
+      "end": 1706.39,
+      "text": "And someone wrote it a comment the other day of like, hey, it would be great when you start",
+      "source": "pass1",
+      "avg_logprob": -0.16743413218878267
+    },
+    {
+      "start": 1707.35,
+      "end": 1709.35,
+      "text": "Doing the show instead of talking about doing the show",
+      "source": "pass1",
+      "avg_logprob": -0.10566315468210373
+    },
+    {
+      "start": 1709.99,
+      "end": 1713.75,
+      "text": "You ain't kidding. I'm with you on that and we are of course getting very close",
+      "source": "pass1",
+      "avg_logprob": -0.10566315468210373
+    },
+    {
+      "start": 1713.83,
+      "end": 1717.83,
+      "text": "And we are doing more and more on a day-to-day basis, but we're not a hundred percent there still have a lot",
+      "source": "pass1",
+      "avg_logprob": -0.10566315468210373
+    },
+    {
+      "start": 1718.31,
+      "end": 1723.59,
+      "text": "Of a little bells and whistles. We're going to be adding and you'll be able to get a lot of the written stuff as well",
+      "source": "pass1",
+      "avg_logprob": -0.10566315468210373
+    },
+    {
+      "start": 1724.47,
+      "end": 1729.83,
+      "text": "That includes us taking you through a market you may not have heard of if you're looking for opportunities",
+      "source": "pass1",
+      "avg_logprob": -0.10566315468210373
+    },
+    {
+      "start": 1730.31,
+      "end": 1733.99,
+      "text": "This is a good place to be because we're going to try to identify them for you",
+      "source": "pass1",
+      "avg_logprob": -0.10566315468210373
+    },
+    {
+      "start": 1733.99,
+      "end": 1737.27,
+      "text": "And we're going to try to get you across the finish line when it comes to being profitable",
+      "source": "pass1",
+      "avg_logprob": -0.13333330763147233
+    },
+    {
+      "start": 1737.35,
+      "end": 1740.23,
+      "text": "I mean, you'll hear in the media constantly. I saw another one today. Oh",
+      "source": "pass1",
+      "avg_logprob": -0.13333330763147233
+    },
+    {
+      "start": 1741.19,
+      "end": 1743.19,
+      "text": "Everyone loses on prediction markets. Do they",
+      "source": "pass1",
+      "avg_logprob": -0.13333330763147233
+    },
+    {
+      "start": 1743.99,
+      "end": 1745.99,
+      "text": "This audience isn't losing on prediction markets",
+      "source": "pass1",
+      "avg_logprob": -0.13333330763147233
+    },
+    {
+      "start": 1746.39,
+      "end": 1749.19,
+      "text": "So I maybe maybe more people should just listen and more pictures",
+      "source": "pass1",
+      "avg_logprob": -0.13333330763147233
+    },
+    {
+      "start": 1749.27,
+      "end": 1753.11,
+      "text": "More people should just watch and those people can come here. They can be profitable",
+      "source": "pass1",
+      "avg_logprob": -0.13333330763147233
+    },
+    {
+      "start": 1753.11,
+      "end": 1757.35,
+      "text": "We'll turn those percentages around so the media has to shut up. How about that? Let's do that together",
+      "source": "pass1",
+      "avg_logprob": -0.13333330763147233
+    },
+    {
+      "start": 1757.59,
+      "end": 1761.59,
+      "text": "Okay, uh, I want to take you to los angeles the race to become la mayor",
+      "source": "pass1",
+      "avg_logprob": -0.13333330763147233
+    },
+    {
+      "start": 1761.99,
+      "end": 1766.23,
+      "text": "What to know about top candidates karen bass. She's the current mayor",
+      "source": "pass1",
+      "avg_logprob": -0.15994285254014862
+    },
+    {
+      "start": 1766.79,
+      "end": 1772.39,
+      "text": "Uh, when she's not in like yuganda on a wedding trip or something while the city is burning to the ground",
+      "source": "pass1",
+      "avg_logprob": -0.15994285254014862
+    },
+    {
+      "start": 1772.79,
+      "end": 1778.15,
+      "text": "She is the first woman to become la mayor the first black woman to be speaker of the california state assembly",
+      "source": "pass1",
+      "avg_logprob": -0.15994285254014862
+    },
+    {
+      "start": 1778.79,
+      "end": 1780.79,
+      "text": "Wow, you know put it on your business card",
+      "source": "pass1",
+      "avg_logprob": -0.15994285254014862
+    },
+    {
+      "start": 1781.19,
+      "end": 1788.07,
+      "text": "Uh, I love this line while critics may want to replace bass with someone else over the handling of the wildfire",
+      "source": "pass1",
+      "avg_logprob": -0.15994285254014862
+    },
+    {
+      "start": 1788.47,
+      "end": 1792.39,
+      "text": "Bass is a seasoned politician who's never lost an election",
+      "source": "pass1",
+      "avg_logprob": -0.1895330311697826
+    },
+    {
+      "start": 1793.59,
+      "end": 1796.79,
+      "text": "What does that say about us as a as a society?",
+      "source": "pass1",
+      "avg_logprob": -0.1895330311697826
+    },
+    {
+      "start": 1797.35,
+      "end": 1799.35,
+      "text": "Uh, I don't know nothing good",
+      "source": "pass1",
+      "avg_logprob": -0.1895330311697826
+    },
+    {
+      "start": 1800.07,
+      "end": 1803.83,
+      "text": "That I can tell you Spencer Pratt is in this race. He's a republican candidate",
+      "source": "pass1",
+      "avg_logprob": -0.1895330311697826
+    },
+    {
+      "start": 1804.15,
+      "end": 1809.43,
+      "text": "He is a media entrepreneur. Now. He you may know him from the hills. His wife hai montag",
+      "source": "pass1",
+      "avg_logprob": -0.1895330311697826
+    },
+    {
+      "start": 1810.31,
+      "end": 1815.99,
+      "text": "They were a big thing back. I don't know when was it 2010? I'm you know kind of guesstimating",
+      "source": "pass1",
+      "avg_logprob": -0.1895330311697826
+    },
+    {
+      "start": 1816.87,
+      "end": 1820.39,
+      "text": "Spencer Pratt was in that race. He is he's definitely seems to be",
+      "source": "pass1",
+      "avg_logprob": -0.11606280548724136
+    },
+    {
+      "start": 1821.03,
+      "end": 1824.79,
+      "text": "The I mean he's saying he's a republican. Is he like some big conservative? I don't think so",
+      "source": "pass1",
+      "avg_logprob": -0.11606280548724136
+    },
+    {
+      "start": 1824.87,
+      "end": 1826.87,
+      "text": "He just seems to be kind of a commonsense guy",
+      "source": "pass1",
+      "avg_logprob": -0.11606280548724136
+    },
+    {
+      "start": 1827.59,
+      "end": 1830.31,
+      "text": "At least at this stage in his life. I don't I didn't watch the reality show",
+      "source": "pass1",
+      "avg_logprob": -0.11606280548724136
+    },
+    {
+      "start": 1830.39,
+      "end": 1833.99,
+      "text": "I don't know what he did on the reality show. He may have been the worst guy in the world on the reality show",
+      "source": "pass1",
+      "avg_logprob": -0.11606280548724136
+    },
+    {
+      "start": 1833.99,
+      "end": 1838.07,
+      "text": "I have no idea. I don't even honestly until he was running from eric didn't really know his name",
+      "source": "pass1",
+      "avg_logprob": -0.11606280548724136
+    },
+    {
+      "start": 1838.23,
+      "end": 1841.67,
+      "text": "I feel like I heard hai de montag though. I feel like I've heard that name before",
+      "source": "pass1",
+      "avg_logprob": -0.11606280548724136
+    },
+    {
+      "start": 1841.91,
+      "end": 1845.03,
+      "text": "But honestly, I don't know I don't know really know anything about them",
+      "source": "pass1",
+      "avg_logprob": -0.11606280548724136
+    },
+    {
+      "start": 1845.11,
+      "end": 1846.47,
+      "text": "I will say",
+      "source": "pass1",
+      "avg_logprob": -0.15127918802625764
+    },
+    {
+      "start": 1846.47,
+      "end": 1850.95,
+      "text": "He is running a pretty good campaign. I want to get to that here in a second. The third candidate is nithya ramon",
+      "source": "pass1",
+      "avg_logprob": -0.15127918802625764
+    },
+    {
+      "start": 1851.51,
+      "end": 1853.67,
+      "text": "She is a south asian woman",
+      "source": "pass1",
+      "avg_logprob": -0.15127918802625764
+    },
+    {
+      "start": 1854.79,
+      "end": 1856.87,
+      "text": "Which again when your first candidate is like",
+      "source": "pass1",
+      "avg_logprob": -0.15127918802625764
+    },
+    {
+      "start": 1857.67,
+      "end": 1860.07,
+      "text": "Where somebody who isn't even you was born?",
+      "source": "pass1",
+      "avg_logprob": -0.15127918802625764
+    },
+    {
+      "start": 1863.03,
+      "end": 1863.99,
+      "text": "Really?",
+      "source": "pass1",
+      "avg_logprob": -0.15127918802625764
+    },
+    {
+      "start": 1863.99,
+      "end": 1868.07,
+      "text": "Like yeah, I just don't even understand why we identify people that way. I don't know why",
+      "source": "pass1",
+      "avg_logprob": -0.15127918802625764
+    },
+    {
+      "start": 1868.63,
+      "end": 1871.99,
+      "text": "She was elected to the la city council in 2020",
+      "source": "pass1",
+      "avg_logprob": -0.15127918802625764
+    },
+    {
+      "start": 1872.63,
+      "end": 1876.39,
+      "text": "And she's a big she talks about homelessness a lot and she goes after",
+      "source": "pass1",
+      "avg_logprob": -0.15127918802625764
+    },
+    {
+      "start": 1877.27,
+      "end": 1880.79,
+      "text": "Karen bass on that so bass has basically been terrible on everything. She's handled",
+      "source": "pass1",
+      "avg_logprob": -0.13920838824089835
+    },
+    {
+      "start": 1881.83,
+      "end": 1885.43,
+      "text": "The two main complaints though are homelessness and the fires",
+      "source": "pass1",
+      "avg_logprob": -0.13920838824089835
+    },
+    {
+      "start": 1886.15,
+      "end": 1888.15,
+      "text": "ramon is saying hey homelessness",
+      "source": "pass1",
+      "avg_logprob": -0.13920838824089835
+    },
+    {
+      "start": 1888.79,
+      "end": 1890.79,
+      "text": "Spencer Pratt is saying hey",
+      "source": "pass1",
+      "avg_logprob": -0.13920838824089835
+    },
+    {
+      "start": 1890.87,
+      "end": 1892.47,
+      "text": "fires that's",
+      "source": "pass1",
+      "avg_logprob": -0.13920838824089835
+    },
+    {
+      "start": 1892.47,
+      "end": 1896.39,
+      "text": "Give you a very basic breakdown of this race. I do want to give you one",
+      "source": "pass1",
+      "avg_logprob": -0.13920838824089835
+    },
+    {
+      "start": 1897.11,
+      "end": 1899.11,
+      "text": "piece of sort of",
+      "source": "pass1",
+      "avg_logprob": -0.13920838824089835
+    },
+    {
+      "start": 1899.83,
+      "end": 1904.95,
+      "text": "Of campaign content from this particular race just because it's made a lot of news and had a lot of buzz",
+      "source": "pass1",
+      "avg_logprob": -0.13920838824089835
+    },
+    {
+      "start": 1905.51,
+      "end": 1907.99,
+      "text": "This is Spencer Pratt's ad that he made",
+      "source": "pass1",
+      "avg_logprob": -0.1481461903452873
+    },
+    {
+      "start": 1908.71,
+      "end": 1913.35,
+      "text": "Talking about karen bass and his run for uh for mayor of los angeles",
+      "source": "pass1",
+      "avg_logprob": -0.1481461903452873
+    },
+    {
+      "start": 1913.99,
+      "end": 1920.39,
+      "text": "This is where mayor bass lives. You notice something or here where nithya ramon's three million dollar mansion sits",
+      "source": "pass1",
+      "avg_logprob": -0.1481461903452873
+    },
+    {
+      "start": 1920.47,
+      "end": 1924.07,
+      "text": "They don't have to live in the mess. They've created where you live",
+      "source": "pass1",
+      "avg_logprob": -0.1481461903452873
+    },
+    {
+      "start": 1926.15,
+      "end": 1931.99,
+      "text": "This is where I live they let my home burn down. I know what the consequences of failed leadership are",
+      "source": "pass1",
+      "avg_logprob": -0.1481461903452873
+    },
+    {
+      "start": 1932.23,
+      "end": 1936.71,
+      "text": "That's why i'm running for mayor for my sons and the rest of us angelenos",
+      "source": "pass1",
+      "avg_logprob": -0.1294620720915092
+    },
+    {
+      "start": 1936.87,
+      "end": 1940.31,
+      "text": "That want to stop these corrupt politicians from destroying our city",
+      "source": "pass1",
+      "avg_logprob": -0.1294620720915092
+    },
+    {
+      "start": 1940.63,
+      "end": 1943.35,
+      "text": "We are going to get the golden age of los angeles back",
+      "source": "pass1",
+      "avg_logprob": -0.1294620720915092
+    },
+    {
+      "start": 1944.15,
+      "end": 1949.19,
+      "text": "I gotta say it's a pretty good ad. I mean that is a pretty effective ad especially when you think about",
+      "source": "pass1",
+      "avg_logprob": -0.1294620720915092
+    },
+    {
+      "start": 1949.51,
+      "end": 1951.51,
+      "text": "You know the comparisons of all these very, you know",
+      "source": "pass1",
+      "avg_logprob": -0.1294620720915092
+    },
+    {
+      "start": 1952.39,
+      "end": 1954.55,
+      "text": "Ridiculous houses that these other people live in",
+      "source": "pass1",
+      "avg_logprob": -0.1294620720915092
+    },
+    {
+      "start": 1954.95,
+      "end": 1959.03,
+      "text": "You'd live the guys live in a trailer because there's house burned to the ground and you can't get his house home rebuilt",
+      "source": "pass1",
+      "avg_logprob": -0.1294620720915092
+    },
+    {
+      "start": 1959.43,
+      "end": 1961.27,
+      "text": "This is a super common thing in this era",
+      "source": "pass1",
+      "avg_logprob": -0.10693434465291171
+    },
+    {
+      "start": 1961.27,
+      "end": 1966.23,
+      "text": "And it's going that message is going to connect with a lot of people in los angeles and his campaign",
+      "source": "pass1",
+      "avg_logprob": -0.10693434465291171
+    },
+    {
+      "start": 1966.71,
+      "end": 1972.07,
+      "text": "Is strong enough that I do think he's going to overperform what a republican would normally do in a situation",
+      "source": "pass1",
+      "avg_logprob": -0.10693434465291171
+    },
+    {
+      "start": 1972.55,
+      "end": 1976.15,
+      "text": "Like this that being said very difficult road for him to go",
+      "source": "pass1",
+      "avg_logprob": -0.10693434465291171
+    },
+    {
+      "start": 1976.63,
+      "end": 1980.31,
+      "text": "Uh, let me give you the what is the most likely match up after this primary",
+      "source": "pass1",
+      "avg_logprob": -0.10693434465291171
+    },
+    {
+      "start": 1980.63,
+      "end": 1986.07,
+      "text": "The most likely match up is karen bass versus Spencer Pratt. 50 chance says the markets",
+      "source": "pass1",
+      "avg_logprob": -0.10693434465291171
+    },
+    {
+      "start": 1986.39,
+      "end": 1989.35,
+      "text": "You see that's a it's a if you're watching, uh on the",
+      "source": "pass1",
+      "avg_logprob": -0.15402440002986362
+    },
+    {
+      "start": 1990.63,
+      "end": 1992.63,
+      "text": "On the magical tv box or youtube's",
+      "source": "pass1",
+      "avg_logprob": -0.15402440002986362
+    },
+    {
+      "start": 1993.19,
+      "end": 1995.19,
+      "text": "You'll notice the green line",
+      "source": "pass1",
+      "avg_logprob": -0.15402440002986362
+    },
+    {
+      "start": 1995.75,
+      "end": 1997.75,
+      "text": "Pretty pretty high",
+      "source": "pass1",
+      "avg_logprob": -0.15402440002986362
+    },
+    {
+      "start": 1997.83,
+      "end": 2004.63,
+      "text": "Uh and pretty steep incline here recently people do like the ads they think pratt is running a competent campaign",
+      "source": "pass1",
+      "avg_logprob": -0.15402440002986362
+    },
+    {
+      "start": 2004.71,
+      "end": 2008.95,
+      "text": "Which is kind of amazing from a reality show star with no particular",
+      "source": "pass1",
+      "avg_logprob": -0.15402440002986362
+    },
+    {
+      "start": 2010.15,
+      "end": 2015.83,
+      "text": "Experience in politics now we have seen that formula work for some politicians as we as we might be able to note",
+      "source": "pass1",
+      "avg_logprob": -0.15402440002986362
+    },
+    {
+      "start": 2016.15,
+      "end": 2020.63,
+      "text": "But generally speaking not always the easiest road karen bass again has never lost an election",
+      "source": "pass1",
+      "avg_logprob": -0.16521329492811235
+    },
+    {
+      "start": 2020.63,
+      "end": 2021.83,
+      "text": "She's been around forever",
+      "source": "pass1",
+      "avg_logprob": -0.16521329492811235
+    },
+    {
+      "start": 2021.83,
+      "end": 2027.43,
+      "text": "She was on the short list for joe biden to become vice president when they went with kamala harris that worked out",
+      "source": "pass1",
+      "avg_logprob": -0.16521329492811235
+    },
+    {
+      "start": 2027.51,
+      "end": 2034.47,
+      "text": "Well, uh, all of that is going on then the second highest possibility is uh ramon versus bass and the third",
+      "source": "pass1",
+      "avg_logprob": -0.16521329492811235
+    },
+    {
+      "start": 2034.95,
+      "end": 2039.67,
+      "text": "Is ramon versus pratt only a 13 percent chance. So where who's going to win this race?",
+      "source": "pass1",
+      "avg_logprob": -0.16521329492811235
+    },
+    {
+      "start": 2041.27,
+      "end": 2045.91,
+      "text": "Well, uh, it looks so far to, uh, the markets believe at least",
+      "source": "pass1",
+      "avg_logprob": -0.16521329492811235
+    },
+    {
+      "start": 2046.63,
+      "end": 2049.11,
+      "text": "That it is going to be karen bass though",
+      "source": "pass1",
+      "avg_logprob": -0.089548395411803
+    },
+    {
+      "start": 2050.07,
+      "end": 2054.39,
+      "text": "Interestingly enough, uh, you know, it was ramon very recently",
+      "source": "pass1",
+      "avg_logprob": -0.089548395411803
+    },
+    {
+      "start": 2054.47,
+      "end": 2058.87,
+      "text": "It seems like there is a very strong anti bass sentiment in the city",
+      "source": "pass1",
+      "avg_logprob": -0.089548395411803
+    },
+    {
+      "start": 2059.51,
+      "end": 2065.19,
+      "text": "And the idea that bass is going to get another term after the way she has handled this job so far",
+      "source": "pass1",
+      "avg_logprob": -0.089548395411803
+    },
+    {
+      "start": 2065.75,
+      "end": 2067.75,
+      "text": "I think most people were pretty skeptical of",
+      "source": "pass1",
+      "avg_logprob": -0.089548395411803
+    },
+    {
+      "start": 2068.55,
+      "end": 2075.59,
+      "text": "That being said what you got was a strong republican challenger and a pretty weak democratic challenger ramon",
+      "source": "pass1",
+      "avg_logprob": -0.089548395411803
+    },
+    {
+      "start": 2076.23,
+      "end": 2081.75,
+      "text": "Pratt, I think at the debate the other day called her a random city councilman and and like that's",
+      "source": "pass1",
+      "avg_logprob": -0.19356519098465258
+    },
+    {
+      "start": 2082.31,
+      "end": 2087.51,
+      "text": "I think he may have said city council woman, but uh, a random member of the city council",
+      "source": "pass1",
+      "avg_logprob": -0.19356519098465258
+    },
+    {
+      "start": 2087.99,
+      "end": 2093.99,
+      "text": "That's kind of how she's seen like she checks the box of democrat and she checks the box of not karen bass",
+      "source": "pass1",
+      "avg_logprob": -0.19356519098465258
+    },
+    {
+      "start": 2094.55,
+      "end": 2100.07,
+      "text": "That's what the marketers are looking at right now. On the other hand, uh, you have a situation where, uh,",
+      "source": "pass1",
+      "avg_logprob": -0.19356519098465258
+    },
+    {
+      "start": 2100.07,
+      "end": 2106.71,
+      "text": "Stent Spencer Pratt is you know, he's been bubbling around the 25 chance and he's that's where he is right now",
+      "source": "pass1",
+      "avg_logprob": -0.11577041839298449
+    },
+    {
+      "start": 2107.35,
+      "end": 2109.35,
+      "text": "A pretty close third",
+      "source": "pass1",
+      "avg_logprob": -0.11577041839298449
+    },
+    {
+      "start": 2111.03,
+      "end": 2111.59,
+      "text": "You know again",
+      "source": "pass1",
+      "avg_logprob": -0.11577041839298449
+    },
+    {
+      "start": 2111.59,
+      "end": 2116.95,
+      "text": "I talk about hedging your life a lot and I get tempted by those opportunities because I would really like to see Spencer Pratt",
+      "source": "pass1",
+      "avg_logprob": -0.11577041839298449
+    },
+    {
+      "start": 2116.95,
+      "end": 2121.11,
+      "text": "Win that race personally. I have no interest in los angeles as far as I don't live there",
+      "source": "pass1",
+      "avg_logprob": -0.11577041839298449
+    },
+    {
+      "start": 2121.11,
+      "end": 2123.91,
+      "text": "I don't have anybody that I you know, I guess I know some people who live there",
+      "source": "pass1",
+      "avg_logprob": -0.11577041839298449
+    },
+    {
+      "start": 2123.91,
+      "end": 2127.11,
+      "text": "But I don't have any deep interest in what happens to los angeles",
+      "source": "pass1",
+      "avg_logprob": -0.11577041839298449
+    },
+    {
+      "start": 2127.83,
+      "end": 2130.63,
+      "text": "You know, I've watched enough earthquake disaster movies to know at any point",
+      "source": "pass1",
+      "avg_logprob": -0.1238930382733715
+    },
+    {
+      "start": 2130.87,
+      "end": 2136.07,
+      "text": "Either a spaceship or an earthquake is going to happen and the whole thing's going to probably fall into the sea anyway",
+      "source": "pass1",
+      "avg_logprob": -0.1238930382733715
+    },
+    {
+      "start": 2136.39,
+      "end": 2139.99,
+      "text": "But until that point I would really like people in los angeles to have a better life",
+      "source": "pass1",
+      "avg_logprob": -0.1238930382733715
+    },
+    {
+      "start": 2139.99,
+      "end": 2144.23,
+      "text": "And I think honestly their best opportunity here is a former reality star",
+      "source": "pass1",
+      "avg_logprob": -0.1238930382733715
+    },
+    {
+      "start": 2144.31,
+      "end": 2146.31,
+      "text": "I mean, honestly, that's what I believe",
+      "source": "pass1",
+      "avg_logprob": -0.1238930382733715
+    },
+    {
+      "start": 2146.39,
+      "end": 2150.07,
+      "text": "And I kind of like the idea that I could go know there and get 24 profit",
+      "source": "pass1",
+      "avg_logprob": -0.1238930382733715
+    },
+    {
+      "start": 2151.11,
+      "end": 2153.11,
+      "text": "24 percentage point profit",
+      "source": "pass1",
+      "avg_logprob": -0.1238930382733715
+    },
+    {
+      "start": 2153.19,
+      "end": 2158.23,
+      "text": "And um, again, it's easier to say no what's not going to happen than what is going to happen",
+      "source": "pass1",
+      "avg_logprob": -0.10452245017055606
+    },
+    {
+      "start": 2158.63,
+      "end": 2161.27,
+      "text": "I kind of like the idea of that plus if I lose that one",
+      "source": "pass1",
+      "avg_logprob": -0.10452245017055606
+    },
+    {
+      "start": 2161.27,
+      "end": 2163.35,
+      "text": "I'm going to be happy for at least the people of los angeles",
+      "source": "pass1",
+      "avg_logprob": -0.10452245017055606
+    },
+    {
+      "start": 2163.75,
+      "end": 2167.91,
+      "text": "I don't have a position in this particular market, but that's the way I'm thinking about it right now",
+      "source": "pass1",
+      "avg_logprob": -0.10452245017055606
+    },
+    {
+      "start": 2168.15,
+      "end": 2172.79,
+      "text": "We do have more maybe even more serious things than fires and uh, and earthquakes",
+      "source": "pass1",
+      "avg_logprob": -0.10452245017055606
+    },
+    {
+      "start": 2173.27,
+      "end": 2177.75,
+      "text": "And uh homelessness and all the other things going on in california dominating that situation",
+      "source": "pass1",
+      "avg_logprob": -0.10452245017055606
+    },
+    {
+      "start": 2178.15,
+      "end": 2181.99,
+      "text": "We've got war and oil and all the massive economic",
+      "source": "pass1",
+      "avg_logprob": -0.08462927820942094
+    },
+    {
+      "start": 2182.79,
+      "end": 2187.67,
+      "text": "Outputs that could come from what's going on in iran. I want to hit that briefly here in just a second",
+      "source": "pass1",
+      "avg_logprob": -0.08462927820942094
+    },
+    {
+      "start": 2188.63,
+      "end": 2192.79,
+      "text": "Hi, I'm dustin your friend and jeweler at shane company as a diamond sourcing expert",
+      "source": "pass1",
+      "avg_logprob": -0.08462927820942094
+    },
+    {
+      "start": 2192.87,
+      "end": 2197.59,
+      "text": "I'll tell you just how differently we source our diamonds so your engagement ring can be the most beautiful",
+      "source": "pass1",
+      "avg_logprob": -0.08462927820942094
+    },
+    {
+      "start": 2197.83,
+      "end": 2201.67,
+      "text": "We work directly with our diamond partners who reserve the best stones just for us",
+      "source": "pass1",
+      "avg_logprob": -0.08462927820942094
+    },
+    {
+      "start": 2201.91,
+      "end": 2206.23,
+      "text": "We handpick and inspect each diamond then negotiate the best price at shane company",
+      "source": "pass1",
+      "avg_logprob": -0.08462927820942094
+    },
+    {
+      "start": 2206.31,
+      "end": 2209.11,
+      "text": "We believe this is the only way to properly buy a diamond",
+      "source": "pass1",
+      "avg_logprob": -0.13561571935812633
+    },
+    {
+      "start": 2209.27,
+      "end": 2213.91,
+      "text": "Because a friend goes the extra mile to make sure you get your dream diamond at your dream price",
+      "source": "pass1",
+      "avg_logprob": -0.13561571935812633
+    },
+    {
+      "start": 2214.31,
+      "end": 2218.23,
+      "text": "Visit us in store or at shaneco.com shane company your friend and jeweler",
+      "source": "pass1",
+      "avg_logprob": -0.13561571935812633
+    },
+    {
+      "start": 2219.11,
+      "end": 2221.11,
+      "text": "Welcome back to predictable with stew",
+      "source": "pass1",
+      "avg_logprob": -0.13561571935812633
+    },
+    {
+      "start": 2221.59,
+      "end": 2227.83,
+      "text": "It is a show that looks at the news through the lens of prediction markets and of course additional available",
+      "source": "pass1",
+      "avg_logprob": -0.13561571935812633
+    },
+    {
+      "start": 2228.15,
+      "end": 2230.15,
+      "text": "material at predictable show",
+      "source": "pass1",
+      "avg_logprob": -0.13561571935812633
+    },
+    {
+      "start": 2230.71,
+      "end": 2235.75,
+      "text": "Dot com go there put your email address and you'll get all sorts of updates to get the show every day plus you get",
+      "source": "pass1",
+      "avg_logprob": -0.13561571935812633
+    },
+    {
+      "start": 2236.31,
+      "end": 2238.79,
+      "text": "A bunch of different written stuff behind the scenes",
+      "source": "pass1",
+      "avg_logprob": -0.09165581949308615
+    },
+    {
+      "start": 2239.35,
+      "end": 2240.07,
+      "text": "live streams",
+      "source": "pass1",
+      "avg_logprob": -0.09165581949308615
+    },
+    {
+      "start": 2240.07,
+      "end": 2243.67,
+      "text": "I mean we gave you a winner during a live stream just the other day",
+      "source": "pass1",
+      "avg_logprob": -0.09165581949308615
+    },
+    {
+      "start": 2244.07,
+      "end": 2248.07,
+      "text": "We're doing a live streamer watching election results come in we find the answer to that election",
+      "source": "pass1",
+      "avg_logprob": -0.09165581949308615
+    },
+    {
+      "start": 2248.39,
+      "end": 2253.75,
+      "text": "We give it to you in real time and we've been hearing from you who are watching that stream and profiting from those events",
+      "source": "pass1",
+      "avg_logprob": -0.09165581949308615
+    },
+    {
+      "start": 2253.75,
+      "end": 2258.63,
+      "text": "So i'm so glad please tell me please drop comments and tell us the stories of your successes",
+      "source": "pass1",
+      "avg_logprob": -0.09165581949308615
+    },
+    {
+      "start": 2258.95,
+      "end": 2261.51,
+      "text": "If you want to give us your failures too, we can learn from them",
+      "source": "pass1",
+      "avg_logprob": -0.09165581949308615
+    },
+    {
+      "start": 2261.51,
+      "end": 2265.19,
+      "text": "That's what we do here because I have plenty of failures to do and I will tell you about them as we go",
+      "source": "pass1",
+      "avg_logprob": -0.09165581949308615
+    },
+    {
+      "start": 2265.35,
+      "end": 2269.83,
+      "text": "Okay, I want to highlight this story real quick and then we're going to hit a new segment called",
+      "source": "pass1",
+      "avg_logprob": -0.12339460416970884
+    },
+    {
+      "start": 2270.47,
+      "end": 2274.47,
+      "text": "Uh, what are the rules and if you've watched it's always sunny in philadelphia",
+      "source": "pass1",
+      "avg_logprob": -0.12339460416970884
+    },
+    {
+      "start": 2274.47,
+      "end": 2279.27,
+      "text": "I want you to sing what are the rules in this the way that that song is because now that's all I think about when I think of",
+      "source": "pass1",
+      "avg_logprob": -0.12339460416970884
+    },
+    {
+      "start": 2279.51,
+      "end": 2281.51,
+      "text": "Of rules, but what are the rules?",
+      "source": "pass1",
+      "avg_logprob": -0.12339460416970884
+    },
+    {
+      "start": 2282.15,
+      "end": 2288.23,
+      "text": "The doj is probing a 2.6 billion dollars in oil trades related to the iran war",
+      "source": "pass1",
+      "avg_logprob": -0.12339460416970884
+    },
+    {
+      "start": 2288.87,
+      "end": 2293.11,
+      "text": "Sources say let me give you the details of this. It's they're legitimately incredible because what we've seen",
+      "source": "pass1",
+      "avg_logprob": -0.12339460416970884
+    },
+    {
+      "start": 2293.43,
+      "end": 2296.39,
+      "text": "You know, there's another big story out here about prediction markets that I might hit next week",
+      "source": "pass1",
+      "avg_logprob": -0.14362931032793239
+    },
+    {
+      "start": 2297.03,
+      "end": 2300.15,
+      "text": "Where they were saying someone may have won a few thousand dollars",
+      "source": "pass1",
+      "avg_logprob": -0.14362931032793239
+    },
+    {
+      "start": 2301.83,
+      "end": 2307.83,
+      "text": "Kind of front running a trade on a poll from a candidate they worked for and this is a big controversy",
+      "source": "pass1",
+      "avg_logprob": -0.14362931032793239
+    },
+    {
+      "start": 2307.83,
+      "end": 2312.07,
+      "text": "Everyone was just sharing that story today. It was a big deal. Let me just give you another story here",
+      "source": "pass1",
+      "avg_logprob": -0.14362931032793239
+    },
+    {
+      "start": 2312.31,
+      "end": 2317.91,
+      "text": "On march 23rd 15 minutes before the trump announced that he would delay the threatened attacks on iran's power grid",
+      "source": "pass1",
+      "avg_logprob": -0.14362931032793239
+    },
+    {
+      "start": 2318.31,
+      "end": 2323.03,
+      "text": "Traders traders bet more than 500 million dollars that oil prices would fall",
+      "source": "pass1",
+      "avg_logprob": -0.1989713688691457
+    },
+    {
+      "start": 2324.23,
+      "end": 2333.75,
+      "text": "On april 7th hours ahead of temporary ceasefire traders bet 960 million dollars that oil prices would fall april 17th 20 minutes before",
+      "source": "pass1",
+      "avg_logprob": -0.1989713688691457
+    },
+    {
+      "start": 2334.23,
+      "end": 2341.27,
+      "text": "The iran foreign minister posted on social media saying that the straight of hormuz was open had that workout for everybody",
+      "source": "pass1",
+      "avg_logprob": -0.1989713688691457
+    },
+    {
+      "start": 2342.07,
+      "end": 2348.47,
+      "text": "Traders bet 760 million dollars that oil prices would fall in april 21st 15 minutes before trump announced",
+      "source": "pass1",
+      "avg_logprob": -0.12193427265932162
+    },
+    {
+      "start": 2348.47,
+      "end": 2351.51,
+      "text": "He would extend the ceasefire traders placed a series of bets worth",
+      "source": "pass1",
+      "avg_logprob": -0.12193427265932162
+    },
+    {
+      "start": 2352.71,
+      "end": 2355.91,
+      "text": "430 million dollars that oil prices would fall",
+      "source": "pass1",
+      "avg_logprob": -0.12193427265932162
+    },
+    {
+      "start": 2357.75,
+      "end": 2361.83,
+      "text": "What's interesting about this is none of that happened on prediction markets",
+      "source": "pass1",
+      "avg_logprob": -0.12193427265932162
+    },
+    {
+      "start": 2362.55,
+      "end": 2368.71,
+      "text": "Prediction markets have been of course the focus of everybody because of a few thousand dollars here and there that they've been able to uncover",
+      "source": "pass1",
+      "avg_logprob": -0.12193427265932162
+    },
+    {
+      "start": 2369.11,
+      "end": 2374.31,
+      "text": "Not always proven a lot of anonymous sourcing behind that. There have been some situations and I don't doubt it",
+      "source": "pass1",
+      "avg_logprob": -0.11633837373136617
+    },
+    {
+      "start": 2374.31,
+      "end": 2376.07,
+      "text": "I'm not like saying that I'm you know",
+      "source": "pass1",
+      "avg_logprob": -0.11633837373136617
+    },
+    {
+      "start": 2376.07,
+      "end": 2378.95,
+      "text": "I'm not I don't believe that there is none of this going on",
+      "source": "pass1",
+      "avg_logprob": -0.11633837373136617
+    },
+    {
+      "start": 2378.95,
+      "end": 2383.11,
+      "text": "I think some people think it's fun and think they can get a few extra bucks. It's a bad idea",
+      "source": "pass1",
+      "avg_logprob": -0.11633837373136617
+    },
+    {
+      "start": 2383.11,
+      "end": 2385.11,
+      "text": "We've covered why it's a bad idea",
+      "source": "pass1",
+      "avg_logprob": -0.11633837373136617
+    },
+    {
+      "start": 2385.11,
+      "end": 2389.99,
+      "text": "Don't get yourself involved in it if you see a line and you're wondering am I crossing the line stay away from the line",
+      "source": "pass1",
+      "avg_logprob": -0.11633837373136617
+    },
+    {
+      "start": 2390.15,
+      "end": 2394.63,
+      "text": "These are real markets even though prediction markets are fun. Don't screw around be careful",
+      "source": "pass1",
+      "avg_logprob": -0.11633837373136617
+    },
+    {
+      "start": 2395.59,
+      "end": 2399.43,
+      "text": "But none of this happened with prediction markets. This happened with the london stock exchange group",
+      "source": "pass1",
+      "avg_logprob": -0.09431683360983473
+    },
+    {
+      "start": 2402.04,
+      "end": 2403.48,
+      "text": "so",
+      "source": "pass1",
+      "avg_logprob": -0.09431683360983473
+    },
+    {
+      "start": 2403.48,
+      "end": 2405.48,
+      "text": "Really nothing to do with prediction markets",
+      "source": "pass1",
+      "avg_logprob": -0.09431683360983473
+    },
+    {
+      "start": 2405.64,
+      "end": 2410.36,
+      "text": "But those stories are happening and they're happening. They happen in legal markets all the time",
+      "source": "pass1",
+      "avg_logprob": -0.09431683360983473
+    },
+    {
+      "start": 2410.92,
+      "end": 2417.0,
+      "text": "This is something that is these organizations in the government are designed to root out these types of stories",
+      "source": "pass1",
+      "avg_logprob": -0.09431683360983473
+    },
+    {
+      "start": 2417.48,
+      "end": 2420.6,
+      "text": "So I wanted to at least make you aware of that breaking news",
+      "source": "pass1",
+      "avg_logprob": -0.09431683360983473
+    },
+    {
+      "start": 2421.32,
+      "end": 2424.76,
+      "text": "Today because probably a lot of people will think oh, this must be prediction markets",
+      "source": "pass1",
+      "avg_logprob": -0.09431683360983473
+    },
+    {
+      "start": 2424.76,
+      "end": 2428.84,
+      "text": "This must have happened on Polymarket. I mean look, there's a lot of volume going into these markets right now",
+      "source": "pass1",
+      "avg_logprob": -0.12243856138484494
+    },
+    {
+      "start": 2428.84,
+      "end": 2432.6,
+      "text": "You're not you're not able to trade nine hundred and sixty million dollars in 15 minutes on those markets",
+      "source": "pass1",
+      "avg_logprob": -0.12243856138484494
+    },
+    {
+      "start": 2432.6,
+      "end": 2437.16,
+      "text": "That's not that's not they're not that big yet. Hopefully they are someday honestly, but they're not right now",
+      "source": "pass1",
+      "avg_logprob": -0.12243856138484494
+    },
+    {
+      "start": 2437.4,
+      "end": 2440.04,
+      "text": "Okay, I want to give you something to make sure you look at the rules",
+      "source": "pass1",
+      "avg_logprob": -0.12243856138484494
+    },
+    {
+      "start": 2440.12,
+      "end": 2443.4,
+      "text": "This is important because one of the things on Iran we'll cover this more next week",
+      "source": "pass1",
+      "avg_logprob": -0.12243856138484494
+    },
+    {
+      "start": 2444.04,
+      "end": 2448.12,
+      "text": "My kind of current stance on all these are Iran markets straight-of-hormuz",
+      "source": "pass1",
+      "avg_logprob": -0.12243856138484494
+    },
+    {
+      "start": 2448.28,
+      "end": 2451.32,
+      "text": "I told you before I got burned on a straight-of-hormuz market earlier this year",
+      "source": "pass1",
+      "avg_logprob": -0.12243856138484494
+    },
+    {
+      "start": 2451.88,
+      "end": 2456.36,
+      "text": "Um is kind of think whatever the whatever seems to be happening go the other way",
+      "source": "pass1",
+      "avg_logprob": -0.10248370696115129
+    },
+    {
+      "start": 2456.68,
+      "end": 2461.24,
+      "text": "That's kind of what I feel like right now because you get these announcements about oh, there's a peace deal right around the corner",
+      "source": "pass1",
+      "avg_logprob": -0.10248370696115129
+    },
+    {
+      "start": 2461.24,
+      "end": 2462.44,
+      "text": "That's where we are right now",
+      "source": "pass1",
+      "avg_logprob": -0.10248370696115129
+    },
+    {
+      "start": 2462.44,
+      "end": 2466.76,
+      "text": "It feels like what the right thing to do is probably just go the opposite because these things break down so often",
+      "source": "pass1",
+      "avg_logprob": -0.10248370696115129
+    },
+    {
+      "start": 2466.84,
+      "end": 2468.84,
+      "text": "And so much of the stuff that we hear",
+      "source": "pass1",
+      "avg_logprob": -0.10248370696115129
+    },
+    {
+      "start": 2469.08,
+      "end": 2473.96,
+      "text": "Comes through an administration with president trump who really just is you know thinks it's very important to",
+      "source": "pass1",
+      "avg_logprob": -0.10248370696115129
+    },
+    {
+      "start": 2474.76,
+      "end": 2478.6,
+      "text": "Negotiate these things publicly and push people into the situations that he wants",
+      "source": "pass1",
+      "avg_logprob": -0.10248370696115129
+    },
+    {
+      "start": 2478.6,
+      "end": 2482.28,
+      "text": "So when he wants something he says what he wants and he says basically it's happening",
+      "source": "pass1",
+      "avg_logprob": -0.09363598780972616
+    },
+    {
+      "start": 2482.6,
+      "end": 2487.08,
+      "text": "And he makes the other person come out and say wait a minute. No, it's not and then they look like they're the ones backing out",
+      "source": "pass1",
+      "avg_logprob": -0.09363598780972616
+    },
+    {
+      "start": 2487.16,
+      "end": 2488.84,
+      "text": "I mean trump is an expert negotiator",
+      "source": "pass1",
+      "avg_logprob": -0.09363598780972616
+    },
+    {
+      "start": 2488.84,
+      "end": 2494.6,
+      "text": "We know that but a lot of times we are taking information from trump in his negotiations and acting like that's news",
+      "source": "pass1",
+      "avg_logprob": -0.09363598780972616
+    },
+    {
+      "start": 2494.6,
+      "end": 2496.44,
+      "text": "And a lot of times it isn't",
+      "source": "pass1",
+      "avg_logprob": -0.09363598780972616
+    },
+    {
+      "start": 2496.44,
+      "end": 2500.04,
+      "text": "Right now is there going to be a u.s. Iran nuclear deal is sitting up?",
+      "source": "pass1",
+      "avg_logprob": -0.09363598780972616
+    },
+    {
+      "start": 2500.76,
+      "end": 2506.84,
+      "text": "This year at 59 percent is going to happen before september 48 percent before august 40 percent",
+      "source": "pass1",
+      "avg_logprob": -0.09363598780972616
+    },
+    {
+      "start": 2506.92,
+      "end": 2511.16,
+      "text": "Now of course when you think about the mechanics of a deal like that they take a long time to negotiate",
+      "source": "pass1",
+      "avg_logprob": -0.12040247868246107
+    },
+    {
+      "start": 2511.4,
+      "end": 2513.4,
+      "text": "You got to get these parties to sign",
+      "source": "pass1",
+      "avg_logprob": -0.12040247868246107
+    },
+    {
+      "start": 2513.88,
+      "end": 2516.84,
+      "text": "Sounds really really hard could take a long time even if they'd agree today",
+      "source": "pass1",
+      "avg_logprob": -0.12040247868246107
+    },
+    {
+      "start": 2516.92,
+      "end": 2518.52,
+      "text": "It might not be done by the end of the year",
+      "source": "pass1",
+      "avg_logprob": -0.12040247868246107
+    },
+    {
+      "start": 2518.52,
+      "end": 2520.28,
+      "text": "But this is where we play",
+      "source": "pass1",
+      "avg_logprob": -0.12040247868246107
+    },
+    {
+      "start": 2520.28,
+      "end": 2524.52,
+      "text": "What are the rules because you need to make sure when you're in a prediction market",
+      "source": "pass1",
+      "avg_logprob": -0.12040247868246107
+    },
+    {
+      "start": 2524.76,
+      "end": 2530.68,
+      "text": "You take the extra few seconds to actually read what you're investing in is actually important",
+      "source": "pass1",
+      "avg_logprob": -0.12040247868246107
+    },
+    {
+      "start": 2531.08,
+      "end": 2536.52,
+      "text": "Let me give you just a little boil down here of the calci market on the iran nuclear deal market",
+      "source": "pass1",
+      "avg_logprob": -0.12040247868246107
+    },
+    {
+      "start": 2537.08,
+      "end": 2542.44,
+      "text": "This is if it's a yes if the united states has agreed to signed or accepted",
+      "source": "pass1",
+      "avg_logprob": -0.1502360686983751
+    },
+    {
+      "start": 2543.16,
+      "end": 2548.52,
+      "text": "Agreed to signed or accepted that's a very broad set of categories",
+      "source": "pass1",
+      "avg_logprob": -0.1502360686983751
+    },
+    {
+      "start": 2549.0,
+      "end": 2555.32,
+      "text": "Have they agreed signed or accepted a u.s. Iran nuclear deal before january 20",
+      "source": "pass1",
+      "avg_logprob": -0.1502360686983751
+    },
+    {
+      "start": 2555.56,
+      "end": 2559.16,
+      "text": "January 1st 2027 then the market resolves to yes",
+      "source": "pass1",
+      "avg_logprob": -0.1502360686983751
+    },
+    {
+      "start": 2559.32,
+      "end": 2563.08,
+      "text": "They give you a bunch of sources where you can get that information from it also says this though",
+      "source": "pass1",
+      "avg_logprob": -0.1502360686983751
+    },
+    {
+      "start": 2563.88,
+      "end": 2567.88,
+      "text": "An agreement also made with other countries like a multilateral agreement",
+      "source": "pass1",
+      "avg_logprob": -0.12614901559521455
+    },
+    {
+      "start": 2568.36,
+      "end": 2571.08,
+      "text": "Is still encompassed if the united states participates",
+      "source": "pass1",
+      "avg_logprob": -0.12614901559521455
+    },
+    {
+      "start": 2571.08,
+      "end": 2575.56,
+      "text": "So it doesn't have to be just us and iran if it's a you know 25 countries that have been involved in this",
+      "source": "pass1",
+      "avg_logprob": -0.12614901559521455
+    },
+    {
+      "start": 2575.56,
+      "end": 2581.56,
+      "text": "It can also be a yes a u.s. Iran nuclear deal means a formal written agreement",
+      "source": "pass1",
+      "avg_logprob": -0.12614901559521455
+    },
+    {
+      "start": 2582.28,
+      "end": 2587.64,
+      "text": "Signed by an authorized representative of both the u.s. And iran that does two things",
+      "source": "pass1",
+      "avg_logprob": -0.12614901559521455
+    },
+    {
+      "start": 2588.12,
+      "end": 2594.2,
+      "text": "It must be at least these two things it imposes variable restrictions on iran's nuclear program",
+      "source": "pass1",
+      "avg_logprob": -0.11285599884252216
+    },
+    {
+      "start": 2594.76,
+      "end": 2598.92,
+      "text": "And in addition to that so it's not just limiting iran's nuclear program",
+      "source": "pass1",
+      "avg_logprob": -0.11285599884252216
+    },
+    {
+      "start": 2599.16,
+      "end": 2607.0,
+      "text": "But it also must provide for the lifting suspension or modification of at least one u.s. Economic sanction",
+      "source": "pass1",
+      "avg_logprob": -0.11285599884252216
+    },
+    {
+      "start": 2607.4,
+      "end": 2609.4,
+      "text": "so a signed",
+      "source": "pass1",
+      "avg_logprob": -0.11285599884252216
+    },
+    {
+      "start": 2609.48,
+      "end": 2615.24,
+      "text": "Surrender an unconditional surrender by iran would not actually take off this contract",
+      "source": "pass1",
+      "avg_logprob": -0.11285599884252216
+    },
+    {
+      "start": 2615.96,
+      "end": 2618.68,
+      "text": "And also does it even need to be signed?",
+      "source": "pass1",
+      "avg_logprob": -0.102395043641861
+    },
+    {
+      "start": 2619.96,
+      "end": 2621.96,
+      "text": "Remember what it said at the beginning has agreed",
+      "source": "pass1",
+      "avg_logprob": -0.102395043641861
+    },
+    {
+      "start": 2622.36,
+      "end": 2627.24,
+      "text": "Signed or accepted. What does that mean? There's a clarification in these rules. Here's what it says",
+      "source": "pass1",
+      "avg_logprob": -0.102395043641861
+    },
+    {
+      "start": 2627.48,
+      "end": 2632.6,
+      "text": "It must be a formal written agreement signed by authorized representatives of both governments",
+      "source": "pass1",
+      "avg_logprob": -0.102395043641861
+    },
+    {
+      "start": 2633.08,
+      "end": 2638.84,
+      "text": "However, it does not impose a precondition that the signing itself must occur",
+      "source": "pass1",
+      "avg_logprob": -0.102395043641861
+    },
+    {
+      "start": 2639.4,
+      "end": 2645.08,
+      "text": "Before resolution. These are pretty convoluted rules. Honestly, I think they could do a better job with this particular set of rules",
+      "source": "pass1",
+      "avg_logprob": -0.102395043641861
+    },
+    {
+      "start": 2645.64,
+      "end": 2651.24,
+      "text": "Both governments must publicly and officially agree to the terms if they are agreeing publicly",
+      "source": "pass1",
+      "avg_logprob": -0.10106371356322702
+    },
+    {
+      "start": 2652.12,
+      "end": 2655.24,
+      "text": "A formal signing does not need to take place",
+      "source": "pass1",
+      "avg_logprob": -0.10106371356322702
+    },
+    {
+      "start": 2656.36,
+      "end": 2659.56,
+      "text": "So if you're thinking to yourself, well, no, this process is going to land up forever",
+      "source": "pass1",
+      "avg_logprob": -0.10106371356322702
+    },
+    {
+      "start": 2659.56,
+      "end": 2662.28,
+      "text": "They're never going to sign this thing. They're going to go back and forth. They're going to complain",
+      "source": "pass1",
+      "avg_logprob": -0.10106371356322702
+    },
+    {
+      "start": 2662.28,
+      "end": 2664.28,
+      "text": "It's going to break down 90 times",
+      "source": "pass1",
+      "avg_logprob": -0.10106371356322702
+    },
+    {
+      "start": 2664.36,
+      "end": 2666.6,
+      "text": "All they have to do is announce they've agreed",
+      "source": "pass1",
+      "avg_logprob": -0.10106371356322702
+    },
+    {
+      "start": 2667.48,
+      "end": 2670.2,
+      "text": "And you've lost if you're a no on that market",
+      "source": "pass1",
+      "avg_logprob": -0.10106371356322702
+    },
+    {
+      "start": 2670.2,
+      "end": 2673.8,
+      "text": "So be careful and always know what are the rules?",
+      "source": "pass1",
+      "avg_logprob": -0.13612692860456613
+    },
+    {
+      "start": 2674.44,
+      "end": 2677.16,
+      "text": "Very important part of your prediction market life",
+      "source": "pass1",
+      "avg_logprob": -0.13612692860456613
+    },
+    {
+      "start": 2677.16,
+      "end": 2681.56,
+      "text": "And we will go through more examples of this as they pop themselves up. Okay. Couple things before we go",
+      "source": "pass1",
+      "avg_logprob": -0.13612692860456613
+    },
+    {
+      "start": 2681.8,
+      "end": 2685.0,
+      "text": "Got a weekend coming up. Hope you have a great one. There'll be lots of great markets",
+      "source": "pass1",
+      "avg_logprob": -0.13612692860456613
+    },
+    {
+      "start": 2685.16,
+      "end": 2686.76,
+      "text": "Maybe we'll do a live stream this weekend",
+      "source": "pass1",
+      "avg_logprob": -0.13612692860456613
+    },
+    {
+      "start": 2686.84,
+      "end": 2690.52,
+      "text": "We'll see what pops up in the prediction market world if we're going to do one",
+      "source": "pass1",
+      "avg_logprob": -0.13612692860456613
+    },
+    {
+      "start": 2690.76,
+      "end": 2692.6,
+      "text": "You can go over to the substack go to",
+      "source": "pass1",
+      "avg_logprob": -0.13612692860456613
+    },
+    {
+      "start": 2693.32,
+      "end": 2696.44,
+      "text": "Predictableshow.com that'll get you to the substack",
+      "source": "pass1",
+      "avg_logprob": -0.13612692860456613
+    },
+    {
+      "start": 2696.68,
+      "end": 2700.36,
+      "text": "You can get the live streams. You can get all the extra stuff that we're doing the written stuff",
+      "source": "pass1",
+      "avg_logprob": -0.11269014475383157
+    },
+    {
+      "start": 2700.52,
+      "end": 2703.4,
+      "text": "We have a kind of written show summary every single day of what we talk about",
+      "source": "pass1",
+      "avg_logprob": -0.11269014475383157
+    },
+    {
+      "start": 2703.64,
+      "end": 2707.56,
+      "text": "Can help you work through the markets understand them and we'll give you tips on the markets here",
+      "source": "pass1",
+      "avg_logprob": -0.11269014475383157
+    },
+    {
+      "start": 2707.8,
+      "end": 2711.72,
+      "text": "That we think are possibilities for profit opportunity coming up",
+      "source": "pass1",
+      "avg_logprob": -0.11269014475383157
+    },
+    {
+      "start": 2711.72,
+      "end": 2714.92,
+      "text": "We're not a financial advice show quite obviously, but we do try to give you",
+      "source": "pass1",
+      "avg_logprob": -0.11269014475383157
+    },
+    {
+      "start": 2715.48,
+      "end": 2718.68,
+      "text": "What we're doing and if you want to join us, we would we would love that",
+      "source": "pass1",
+      "avg_logprob": -0.11269014475383157
+    },
+    {
+      "start": 2719.08,
+      "end": 2721.64,
+      "text": "Send us your your questions drop them in the comments",
+      "source": "pass1",
+      "avg_logprob": -0.11269014475383157
+    },
+    {
+      "start": 2722.2,
+      "end": 2728.04,
+      "text": "Questions comments the stories about your investments. Were you able to jump on one of ours that we've talked about and get some profit?",
+      "source": "pass1",
+      "avg_logprob": -0.11091607637585156
+    },
+    {
+      "start": 2728.36,
+      "end": 2729.96,
+      "text": "Did you go the other way?",
+      "source": "pass1",
+      "avg_logprob": -0.11091607637585156
+    },
+    {
+      "start": 2729.96,
+      "end": 2731.96,
+      "text": "Did you go somewhere else and lose money?",
+      "source": "pass1",
+      "avg_logprob": -0.11091607637585156
+    },
+    {
+      "start": 2732.12,
+      "end": 2737.56,
+      "text": "What have you learned from it? We want to get those stories from you, of course at predictableshow.com",
+      "source": "pass1",
+      "avg_logprob": -0.11091607637585156
+    },
+    {
+      "start": 2737.72,
+      "end": 2743.16,
+      "text": "We'll also have new stew and dave do america today. Good. Check that out on youtube or at blaze tv",
+      "source": "pass1",
+      "avg_logprob": -0.11091607637585156
+    },
+    {
+      "start": 2743.24,
+      "end": 2746.2,
+      "text": "We love our friends at blaze tv. We're in the blaze tv studios right over here",
+      "source": "pass1",
+      "avg_logprob": -0.11091607637585156
+    },
+    {
+      "start": 2746.2,
+      "end": 2749.32,
+      "text": "Is ali stucky studio right out of my view over here?",
+      "source": "pass1",
+      "avg_logprob": -0.13500295487935082
+    },
+    {
+      "start": 2749.4,
+      "end": 2754.2,
+      "text": "You've got the old studos america and stew and dave do america and then even farther that way the old glenbeck radio",
+      "source": "pass1",
+      "avg_logprob": -0.13500295487935082
+    },
+    {
+      "start": 2754.44,
+      "end": 2757.64,
+      "text": "Studio, so we're right here. We're with the family here at blaze tv",
+      "source": "pass1",
+      "avg_logprob": -0.13500295487935082
+    },
+    {
+      "start": 2757.72,
+      "end": 2761.16,
+      "text": "We love blaze tv and we would love you to sign up and check that out as well",
+      "source": "pass1",
+      "avg_logprob": -0.13500295487935082
+    },
+    {
+      "start": 2761.4,
+      "end": 2766.52,
+      "text": "Okay, that's it from predictable show.com. It's predictable with stew. We will see you next week",
+      "source": "pass1",
+      "avg_logprob": -0.13500295487935082
+    }
+  ],
+  "full_text": "Ray-Ban Meta glasses take the friction out of travel move through the world with your hands free and your head up Hey meta, where's the nearest metro station closest metro to you is Union Square about three blocks away. Hey meta text mom I'm getting on the train now sending message juggle your itinerary take calls and listen to music with open-ear audio No digging for your phone. No stopping for a map. Just you and your glasses Ray-Ban Meta iconic style meets Meta AI available at Walmart and other authorized retailers Welcome to predictable with stew. Thank you so much for tuning in today We got a lot to talk about today, California governor's race the Issues going on in Iran some late-breaking news on that one and so much more. Thank you so much for joining us By the way, if you happen to be a stew does America fan, don't forget to check out stew and Dave do America It's a new show with Dave Landau Covering the news of the day and we laugh about it a lot stew and Dave do America or at blaze TV comm slash Stew and Dave, please check it out. You can save 20 bucks off your subscription if you use the code stew and Dave Of course, we would love thank you so much for joining us here on predictable with stew this particular episode I want to focus a little bit on California in a couple of different ways to start and We're gonna go through the latest developments in these elections that are coming up in the coming weeks And then in addition to that of course We'll go into the markets and help you to try to understand is there a place you should put some cash Maybe there's some opportunities in these markets. I think there is But you know, you have to of course watch what you're doing at all times There was a big debate that just happened by the way this this primary happens on June 2nd So we're three weeks and five days away from the California gubernatorial Primary and just a quick reminder on this This is called a jungle primary. It's a very weird system basically 500 million different candidates run the top two advanced to a finals if you will On election day, so this is doesn't matter what party you're in everyone competes against everybody during this primary process Just to give you the really annoying rules before we get started. There was a debate takeaways from the latest California governor debate restrictions zoning housing in California a big topic for sure home insurance rates Homelessness of course always a topic in California Oil production should they turn that back on a bunch of different things. I Tell you all this to give you a lead into a couple of Questions and kind of points that we have right off the top number one You remember this race because Eric Swalwell a person who stew and Dave do America one of the first Official acts of that program was to eliminate Eric Swalwell from your political life We were successful in doing that reporting on him and then like a couple days later. He finally dropped off, but Eric Swalwell sucks One of the market opportunities I found very early in the California gubernatorial election markets was to say no to Eric Swalwell when he was at like 60% because I just am not a believer now. I know fang fang likes him I know fang fang had a lot of nice evenings with Eric I know a lot of other women had evenings with Eric that they didn't appreciate quite that much Which is one of the reasons why he's out of the race, but I never believed he was a 60% favorite That seemed insane to me if you remember before Eric Swalwell was the favorite it was Katie Porter who was kind of seen as the top dog and then she faded away a lot of people wondering whether Eric Swalwell is dropping out would make Katie Porter sort of rise back to the top of this field And I will say just as an observer The most satisfying thing about the California election this time around is Eric Swalwell dropping out of our lives That's number one and also it protects so many women and girls It's nice to see that they were protected after all this although. I am a little worried about Eric Swalwell with more free time That's concerning, but he's gone from at least our political life Now and that's good that I'm excited about Outside of Swalwell flaming out the second best thing about the California gubernatorial election is Katie Porter continually humiliating herself. I love it I know this has nothing really directly to do with markets Although maybe you did see this coming and get some no money on One Katie Porter because if you did that early enough you definitely would be cashing in right now Let me give you a couple of highlights quickly from this debate. Here is Katie Porter This was kind of the big standout moment. Everyone was talking about this moment. Everyone's saying oh, I can't believe that was said That's evil. That's wrong. This is Katie Porter Blabbing about something and then Chad Bianco who's one of the Republican candidates near the top of the list He comes in with a little sassy comeback controversy ensues. I think we ought to enforce the existing sanctuary laws everywhere So we don't have crazy cowboys taking the law into their own tell that to a crazy mother who lost her child Sir, I don't need any lectures from you about being a mother. Of course. You might Like that guy already. Yeah, you might actually Katie Frankly seeing the way that you handle people who you think you can boss around Perhaps maybe you do need a little bit of advice here by the way in case you don't remember this This is Katie Porter. This is Politico actually broke this story at the time Katie Porter was thought of as kind of the leader here this story came out and Did not help She was doing an interview with then energy secretary Jennifer Granholm And I never have to go to the gas station That's awesome and six hundred thirty two dollars is real money and I know here at UCI We have a national fuel center research center if we don't Electrified our transportation sector that we're gonna lose more than half a million California It's dying prematurely to air pollution and other problems and the state could lose Get out of my shot Okay, it does okay, you also were in my shop before that Stay out of my shot. Okay. I'm gonna start again with electric vehicle saving us money I mean, it's just such a great clip now There's a little game that we play sort of behind the scenes Maybe we'll bring this to the actual show at some point Dan and Rose and I play this often Off the air which is sort of predict the prediction. Okay, that's what we're calling it predict the prediction and Basically, what you do is you hear about a market Before you've looked at it and in your mind you sort of predict what that market might be You might say, okay. Well, Katie Porter. She's running for governor right now What would you say her market should be at and if you think, you know, it's 80% chance to win You think there's an 80% chance Katie Porter is gonna win you go on the market and it says 20% Well, you're that's a way of identifying value, right? Like your opinion of the market was that she should be at 80 She's only at 20. Maybe that's a buy opportunity for you Those are theoretical numbers nowhere near where she actually is, but I want you to play that game internally right now We're gonna go to this market in a minute Think to yourself. You just watched her do that You just watched her in the debate Where do you think Katie Porter is in this election? Think about it for a second. Just come up with a number. Where do you think she is to win? For California governor and then we'll get you the answer here in a second But before we do I want you to see how she handled that controversy She's released an ad okay that kind of addresses in a way at the end The controversy that you just saw with her yelling at staff members get out of my shot with a bunch of swear words in between Here's her new ad where she tries to lean into it a little bit I'm Katie Porter and I'm not like most people who run for governor I actually get what you're going through a single mom of three kids. I know what it's like to push the shopping cart My minivan has almost 200,000 miles I've a grown kid who may soon be living on my couch to give Californians what they need It's gonna take standing up to Donald Trump calling out greedy corporations and stepping on some toes along the way Now could you guys please get out of my shot? No Do you get it That was the thing where she was yelling at an underling and she was swearing at her And then she brought that back without the swears and smiled through it So now it's supposed to be okay The other part I really love about the clip where she loses it on her underling is the part where She also was totally wrong about what she was saying She was being interrupted because she was basically lying on the air But again, why would you interrupt Katie Porter for something like that? Porter one more thing before you come up with the number that's in your head What percentage chance do you think she has according to the markets Katie Porter had this tweet out? someone said on Fox News Katie Porter enthusiastically said she supports taxpayer-funded health care for illegal immigrants during the California gubernatorial primary debate and she Retweets it and says I'm Katie Porter and I approve this message. So she wants you to know She supports the health care for illegal immigrants situation By the way, you may remember if you have been around for a little while If you happen to be of a certain age You may remember back to the time in the mid 2010s when someone in the crowd it was a Republican congressman Yeld out you lie to Barack Obama that thing is exactly what he was saying you lie about he was saying basically illegal immigrants will have Health care rights under these proposals and here we are now. They're all bragging about it. So that's fun That's a foot by the way, did you come up with a number yet? Have you internalized what number Katie Porter might have after watching some of this? Let me give you a little bit more because we're gonna guess all of these here Chad Bianco now Chad Bianco had that moment Where he's like, hey, you know, maybe you do need a little bit of a motherly advice there dear That was very controversial what wasn't played by most Television stations and cable news outlets was what led up to that particular moment where Bianca is go out there and he is He's out there saying hey You know, we have a real problem here in this state with Immigration and we need some reform and the sanctuary state thing isn't really working out so well Let me give you an example of that. Here's Chad Bianco But what is one thing mr. Bianco you would replace or change about the current sanctuary law in California one aspect just one I would eliminate sanctuary state Sanctuary state is what is creating the issue that we have in California. It didn't exist before 2017 Immigration is it is the responsibility of the federal government to enforce immigration laws and prior to 2017 They would come into our jails and they would come into our prisons And they would remove those criminals who are victimizing us and they would and they would deport them that ended with prop with Sanctuary state law SB 54 they forced us to release those people back into our communities And then ice has to go into the communities to get them instead of in the safety and security of the jail Again, you know what? California's California, they're gonna California themselves and you think someone who's talking about that type of stuff That sounds pretty rational. I mean, you know, if you're not a an immigration Nerd if you're not sitting around thinking about these policies all the time I think that seems pretty obvious to you if someone's in prison for something else and they're a little an illegal immigrant You wouldn't release them back into society. They would be punished for both of these things that they did I mean that seems kind of obvious. I think to most people I think to an average person that being said in California That's not true at all. Basically Chad Bianco is gonna be down the list quite a bit We'll show you that here in just a second They also had a situation about men's in women men in women's sports as part of this debate. Here's how that went Under in California education code you perform an athletic event k through 12 based on your identification by gender Would you change that law to match the ioc that you identify based on your? Or your your your birth agenda. Yes or no, very quickly. We have 30 seconds left. Mr. Mayhem, so I change which law The current law says you identify and that's how you participate. Yeah, but at higher levels. I would let the leagues decide Okay, mr. Becerra and force the law. Okay, mr. Steyer Allow trans athletes to participate. Mr. Hilton. I have a wristband that says save girl spool. I will go Katie Porter Yes enforce the existing law By the way, does she have a beautiful speaking voice or what? You know, I mean if you were thinking about Who to vote for and you just had to go by voice first of all You're going Hilton clearly because he's got an English accent and whenever you say something in an English accent It sounds smarter. There's no prediction market access to Markets to support that particular point of view, but it is just true So, you know, I mean I just that's just one of my things Okay, high speed rail another big thing We've talked about that a lot on studos america the glenbeck program back in the day If that's an issue you followed because of that coverage, I want to give you their answers on the high speed rail It'll cost another 30 billion to finish California high speed rail from merced the bakersfield. We've got the viaduct laid. We have overpasses Do you finish it? Yes or no, mayor virigosa? Yes A congresswoman porter Yes, if you can build it faster and cheaper than it's been projected. Okay, sheriff bianco No, I would rather arrest the people that stole our money. All right That was the unbranded for you doing things that are illegal. Mr. Helton Stop spending tax-based money on pointless things and improve our roads. I guess that's the worst in the country Because of democrat policies mr. Stiles. Yes, we need a secretary of transportation This slow speed delivery of high speed rail. No, but a high speed delivery of high speed rail. Yes What does that mean? That's basically what most of the debate was Screaming over each other and what does that mean high speed delivery of high speed rail I like the high speed delivery of high speed rail, but not the slow speed delivery of high speed rail Or the high speed delivery of slow speed rail I don't even know what that means. I mean it just it's continually stupid Basically, they've screwed this up a lot, but people still want to say yes to trains for whatever reason. This is one thing. This is by the way You come to stew does america. You get a lot of the coverage on the train issue You come to predictable with stew. You're getting the coverage on the The races and the prediction markets associated with them But I want you to just get this a little bonus piece of information because I think it's important to Whatever audience you come from you might be a brand new listener. You might have been around for years and years and years Here's the thing you need to know. We have planes They fly up in the sky They go hundreds of miles an hour in the sky And if you want to transport yourself from one place to another, that's a wonderful way to do it Doesn't cost another 160 billion dollars or whatever they're they've expanded it to so far So anyway, terrible idea in my opinion And the handling of those types of hot button issues are what kind of lead what's going to lead to who wins This particular election now taking the basis here for a second We all know california is a blue state at this point This is not ronald reagan's california anymore the chances of a republican winning In this state are very very low that being said we have seen it wilson schwarzenegger We've seen some who have been able to come over that usually with a very specific profile But it is possible right it is possible That that could happen Could okay. Here's where we are right now in the race And this is a kind of like When we're looking at a race like this, it's a very clear example of something that I will say to you One zillion times over the next few months and years It is easier to predict won't won't happen than what will happen You might look at this field and say I don't know I mean, have you or this is where it looks like right now. Have you are beserra's at 44 percent tom steyer When we pulled this 37 percent Steve hilton and about nine percent Bianco the guy you just saw in one of those clips at three percent Matt mayhem another democrat which we didn't show you really in that clip because he's kind of boring at three percent And katie porter. Did you come up with a number? Did you come up with a number before when you're watching all those clips? What's katie porter's chance of winning this? 1% Now that's kind of the lowest it goes Just so you're aware they don't typically have zero sometimes they'll do decimals and get a 0.7 percent chance or something like that But honestly in this particular market one percent It's about as low as it goes and she was the head headliner of this race at one point So katie porter not looking good for her right now Uh and part of that is when you have a situation like swall well What voters tend to do If think about your put yourself in the mind of a california democratic voter for a second You were gonna pick eric swall well. He was your guy. He's loud. He's outspoken. He has a lot of enemies. He's been you know Constantly targeting people unfairly. They have an axe to grind with him. He's a target plus He's been molesting everyone around him for multiple years When that happens and that situation blows up the one thing you don't want after that If you're a california democratic voter Is another risk What you don't want is another person mired in scandal what you don't want is another person who's been abusing co-workers on camera That's katie porter. So when you have a situation where swall well drops out What typically the mind of a california democratic voter or really any voter is going to do is wait a minute We have this scandal thing that didn't work out. Let's go somewhere safe That's why we have taken a position on javier basera. Now. I don't think he'll be a good governor He was the hhs secretary for a while there Um, I don't think he'll be do a good job at all. In fact, I think he'll be he'll do a terrible job But I do think that there's a good chance and it has happened so far that people will run to basera basera is one of these guys who's kind of seen as a very boring dull government official And frankly coming out of eric swall well and katie porter if you're a california democrat That sounds delicious to you right now somebody who's going to make no news Who's never going to say anything interesting? That's what you want and that's who you have in in in javier basera now basera I will say has some issues, um, but they're very You know, they're typical issues. Oh, there's corruption here. They spent too much there No one cares about that stuff. Let us know no one thinks there's there's Videos of him Making out with a prostitute around the corner now Don't put it past them. He lived in washington dc. Okay, but we don't think right now That's going to happen anytime soon. So basera now leaves at 40 the updated numbers 45 styret 40 hilton at 9 Bianco 3 mayhem 3 and porter 1 Now when it comes to party if you think about Which party is going to take the office? It's an interesting formulation because of those rules I talked about before this jungle primary where you have the top two people from any party that can get into Uh finals and those will be the only two choices come november So what are we looking at here the scary situation again? If you're a california democrat is that the top two places go to To republicans if that happens you will not have a choice of a democrat at all It'll be republican versus republican the reason they changed these laws a long time ago is because what they wanted was more left-wing democrats to have an opportunity So we wouldn't get so many centrist democrats In california because that's a huge problem for so many people Instead what they wanted was a chance for to elect You know the AOC wing of the party right who couldn't normally get elected when if you put an AOC member of the party up Against a republican maybe the republican wins that's scary for california democrats So they made it so it would be republican Or the top two and what they expected to happen was democrat versus democrat What we have now are there are so many people in this race a lot of them with giant egos And they don't want to drop out of the race So it's left a very small possibility that you could get republican versus republican At the end of this situation where bianco and hilton could win first and second place with something like let's say 18 and 15 percent And then maybe basera gets 14 percent and you have the top two being both republicans This is the democratic nightmare situation It is possible right now the markets believe that there is a an 11 percent chance Not of that but an 11 percent chance of a republican winning now when you're looking at that situation You have to consider two different things number one both republicans win the jungle primary and they're the only options So in that situation, of course a republican would get elected The second possibility is let's say a steve hilton comes in first or second He goes onto the finals and just flat beats a javier basera or tom steyer That's possible. I mean honestly watching hilton in that debate Seems like a pretty good candidate frankly now Yes, i'm partially won over by the british accent. It just just works It's just a good solid smart sounding accent But he was good in the debate and he's a good speaker and he doesn't seem to be The extreme type of republican that i might enjoy or you might enjoy but california might hate He had a very good answer that we didn't have time to get to today on when it came to immigration I mean, you know, he was able to say look, i'm the only one up here who actually is an immigrant I'm an immigrant right now. I'm up here talking to you. So I do care about these issues and I care about legal immigration So there is a a very straight line here to Hilton getting to the final two Winning that race is very difficult, you know, it's a very difficult thing one-on-one situation Republican versus democrat. This is another reason they put this formulation together Thinking in these types of times you'd get a situation where a republican might get to the final round It would be very difficult for them to win right now And it was an 11 chance that a republican wins which again encompasses that one-two republican scenario And a republican just flat out winning in the finals There's a way we can look at what percentage of Time they think republicans are actually going to win and I will say it's very very low So in that weird situation where one two are both republicans The markets think that there's about a seven percent chance that it's bianco versus hilton going into the final round This is the cap the exact matchup. California gubernatorial matchup One this is another one of these situations where you can kind of look at a long list of candidates and say I don't think that person's gonna win. I don't think that person's gonna win I'm not sure what's gonna happen But I don't think that's going to be the matchup You can pretty easily go in here and say I don't think it's gonna be bianco versus hilton The chances of it being bianco versus hilton are pretty low The markets say about seven percent So that's what they say right now. So there's a seven percent chance that uh, Bianco versus hilton come together and then one of those republicans wins and there's a four percent chance that One of the republicans gets into the primary against a democrat and somehow defeats them. So not optimistic I will say is what what they're saying here, but if you go in here and you see a matchup of like Well, I don't think it's going to be tom steyer versus katie porter You can go know on that and uh and and clean up your one percent Honestly, a lot of those are pretty small Outcomes, but there are some there like I think there's some interest honestly I have in saying no To the republican versus republican situation The main reason why eric swalwell is not in this race. You might say well, of course He's not in this race. He was touching women. He was harassing them. He was sending them unwarranted Very downsized photos all the things that he was probably doing with You know, he had a weird history the bottom line is none of those things are why eric swalwell is not in this race It's not because he abused other employees. It's not because he hit on women outside of his marriage It's not because he was sending pictures of his uh, Little swalwell. It's not because of fang fang. None of those reasons None of them have anything to do with why he's not in the race. The reason he's not in this race is because California democrats were terrified terrified it would be republican versus republican so they Again, this was almost exclusively done by democrats where they came out all of them knew about his terrible history And they were able tom steyer is rumored to be largely behind a lot of this But they came out and they said we got to get him out of this race if we can get uh swalwell out of this race We can number one guarantee most likely that those democrat votes Will shift to other candidates and that will give them enough of a boost to get one of them over Either bianco or hilton That's the strategy here It's got nothing to do with whether they care about any of these women. Nothing zero zilch They don't care about that at all All they care about is getting him out of the race because when they get him out of the race Somebody on the democratic side will likely get to the final two and that's what they were trying to make sure Went on here. So that is where we stand now with the california gubernatorial race The likely outcome here and i'm just going to be straight with you one of the things we do here unpredictable It's one of the things i've done my entire career is make you miserable if you want it to be a bianco versus us Hilton situation and you want one of them to win You know, I would agree with you I would think either one of them would be much better governors than anyone that I saw on that stage from the democratic party That's my opinion on the situation What i'm looking for here is to try to give you number one the truth And number two opportunity Where should you go in these markets and honestly like if I were to look at that and say hey What's going to happen with that first one and two situation pretty skeptical that's going to be an outcome That's only a seven percent gain if you go no on that Well, it's seven of 93. So we know probably you know eight percent gain That being said it's only over a couple weeks. Remember, this is june 2nd This is going to play out. So we will see how it plays out how that pays out here in the coming weeks That's where we are right now. I want to take you from the big state of california Down to a tiny little part of california in los angeles. The mayor election going on as well. We'll get to that next There's a pill version of osempic Hello, i'm osempic and i'm other glp ones kind of like him. Hey, did I hear there's a pill version of osempic? Yep, you sure did ask your doctor about which fda approved uses of the osempic pen or pill Maybe right for you call 1833 osempic or visit osempic.com to view the medication guide and learn more about osempic semagletide tablets 9 milligrams and osempic semagletide injection 2 milligrams. There's a pill version of osempic Welcome back to predictable with stew. It's predictable show dot com get on the sub stack Check it out. You'll like I think the stuff that we're going to be coming up with here And someone wrote it a comment the other day of like, hey, it would be great when you start Doing the show instead of talking about doing the show You ain't kidding. I'm with you on that and we are of course getting very close And we are doing more and more on a day-to-day basis, but we're not a hundred percent there still have a lot Of a little bells and whistles. We're going to be adding and you'll be able to get a lot of the written stuff as well That includes us taking you through a market you may not have heard of if you're looking for opportunities This is a good place to be because we're going to try to identify them for you And we're going to try to get you across the finish line when it comes to being profitable I mean, you'll hear in the media constantly. I saw another one today. Oh Everyone loses on prediction markets. Do they This audience isn't losing on prediction markets So I maybe maybe more people should just listen and more pictures More people should just watch and those people can come here. They can be profitable We'll turn those percentages around so the media has to shut up. How about that? Let's do that together Okay, uh, I want to take you to los angeles the race to become la mayor What to know about top candidates karen bass. She's the current mayor Uh, when she's not in like yuganda on a wedding trip or something while the city is burning to the ground She is the first woman to become la mayor the first black woman to be speaker of the california state assembly Wow, you know put it on your business card Uh, I love this line while critics may want to replace bass with someone else over the handling of the wildfire Bass is a seasoned politician who's never lost an election What does that say about us as a as a society? Uh, I don't know nothing good That I can tell you Spencer Pratt is in this race. He's a republican candidate He is a media entrepreneur. Now. He you may know him from the hills. His wife hai montag They were a big thing back. I don't know when was it 2010? I'm you know kind of guesstimating Spencer Pratt was in that race. He is he's definitely seems to be The I mean he's saying he's a republican. Is he like some big conservative? I don't think so He just seems to be kind of a commonsense guy At least at this stage in his life. I don't I didn't watch the reality show I don't know what he did on the reality show. He may have been the worst guy in the world on the reality show I have no idea. I don't even honestly until he was running from eric didn't really know his name I feel like I heard hai de montag though. I feel like I've heard that name before But honestly, I don't know I don't know really know anything about them I will say He is running a pretty good campaign. I want to get to that here in a second. The third candidate is nithya ramon She is a south asian woman Which again when your first candidate is like Where somebody who isn't even you was born? Really? Like yeah, I just don't even understand why we identify people that way. I don't know why She was elected to the la city council in 2020 And she's a big she talks about homelessness a lot and she goes after Karen bass on that so bass has basically been terrible on everything. She's handled The two main complaints though are homelessness and the fires ramon is saying hey homelessness Spencer Pratt is saying hey fires that's Give you a very basic breakdown of this race. I do want to give you one piece of sort of Of campaign content from this particular race just because it's made a lot of news and had a lot of buzz This is Spencer Pratt's ad that he made Talking about karen bass and his run for uh for mayor of los angeles This is where mayor bass lives. You notice something or here where nithya ramon's three million dollar mansion sits They don't have to live in the mess. They've created where you live This is where I live they let my home burn down. I know what the consequences of failed leadership are That's why i'm running for mayor for my sons and the rest of us angelenos That want to stop these corrupt politicians from destroying our city We are going to get the golden age of los angeles back I gotta say it's a pretty good ad. I mean that is a pretty effective ad especially when you think about You know the comparisons of all these very, you know Ridiculous houses that these other people live in You'd live the guys live in a trailer because there's house burned to the ground and you can't get his house home rebuilt This is a super common thing in this era And it's going that message is going to connect with a lot of people in los angeles and his campaign Is strong enough that I do think he's going to overperform what a republican would normally do in a situation Like this that being said very difficult road for him to go Uh, let me give you the what is the most likely match up after this primary The most likely match up is karen bass versus Spencer Pratt. 50 chance says the markets You see that's a it's a if you're watching, uh on the On the magical tv box or youtube's You'll notice the green line Pretty pretty high Uh and pretty steep incline here recently people do like the ads they think pratt is running a competent campaign Which is kind of amazing from a reality show star with no particular Experience in politics now we have seen that formula work for some politicians as we as we might be able to note But generally speaking not always the easiest road karen bass again has never lost an election She's been around forever She was on the short list for joe biden to become vice president when they went with kamala harris that worked out Well, uh, all of that is going on then the second highest possibility is uh ramon versus bass and the third Is ramon versus pratt only a 13 percent chance. So where who's going to win this race? Well, uh, it looks so far to, uh, the markets believe at least That it is going to be karen bass though Interestingly enough, uh, you know, it was ramon very recently It seems like there is a very strong anti bass sentiment in the city And the idea that bass is going to get another term after the way she has handled this job so far I think most people were pretty skeptical of That being said what you got was a strong republican challenger and a pretty weak democratic challenger ramon Pratt, I think at the debate the other day called her a random city councilman and and like that's I think he may have said city council woman, but uh, a random member of the city council That's kind of how she's seen like she checks the box of democrat and she checks the box of not karen bass That's what the marketers are looking at right now. On the other hand, uh, you have a situation where, uh, Stent Spencer Pratt is you know, he's been bubbling around the 25 chance and he's that's where he is right now A pretty close third You know again I talk about hedging your life a lot and I get tempted by those opportunities because I would really like to see Spencer Pratt Win that race personally. I have no interest in los angeles as far as I don't live there I don't have anybody that I you know, I guess I know some people who live there But I don't have any deep interest in what happens to los angeles You know, I've watched enough earthquake disaster movies to know at any point Either a spaceship or an earthquake is going to happen and the whole thing's going to probably fall into the sea anyway But until that point I would really like people in los angeles to have a better life And I think honestly their best opportunity here is a former reality star I mean, honestly, that's what I believe And I kind of like the idea that I could go know there and get 24 profit 24 percentage point profit And um, again, it's easier to say no what's not going to happen than what is going to happen I kind of like the idea of that plus if I lose that one I'm going to be happy for at least the people of los angeles I don't have a position in this particular market, but that's the way I'm thinking about it right now We do have more maybe even more serious things than fires and uh, and earthquakes And uh homelessness and all the other things going on in california dominating that situation We've got war and oil and all the massive economic Outputs that could come from what's going on in iran. I want to hit that briefly here in just a second Hi, I'm dustin your friend and jeweler at shane company as a diamond sourcing expert I'll tell you just how differently we source our diamonds so your engagement ring can be the most beautiful We work directly with our diamond partners who reserve the best stones just for us We handpick and inspect each diamond then negotiate the best price at shane company We believe this is the only way to properly buy a diamond Because a friend goes the extra mile to make sure you get your dream diamond at your dream price Visit us in store or at shaneco.com shane company your friend and jeweler Welcome back to predictable with stew It is a show that looks at the news through the lens of prediction markets and of course additional available material at predictable show Dot com go there put your email address and you'll get all sorts of updates to get the show every day plus you get A bunch of different written stuff behind the scenes live streams I mean we gave you a winner during a live stream just the other day We're doing a live streamer watching election results come in we find the answer to that election We give it to you in real time and we've been hearing from you who are watching that stream and profiting from those events So i'm so glad please tell me please drop comments and tell us the stories of your successes If you want to give us your failures too, we can learn from them That's what we do here because I have plenty of failures to do and I will tell you about them as we go Okay, I want to highlight this story real quick and then we're going to hit a new segment called Uh, what are the rules and if you've watched it's always sunny in philadelphia I want you to sing what are the rules in this the way that that song is because now that's all I think about when I think of Of rules, but what are the rules? The doj is probing a 2.6 billion dollars in oil trades related to the iran war Sources say let me give you the details of this. It's they're legitimately incredible because what we've seen You know, there's another big story out here about prediction markets that I might hit next week Where they were saying someone may have won a few thousand dollars Kind of front running a trade on a poll from a candidate they worked for and this is a big controversy Everyone was just sharing that story today. It was a big deal. Let me just give you another story here On march 23rd 15 minutes before the trump announced that he would delay the threatened attacks on iran's power grid Traders traders bet more than 500 million dollars that oil prices would fall On april 7th hours ahead of temporary ceasefire traders bet 960 million dollars that oil prices would fall april 17th 20 minutes before The iran foreign minister posted on social media saying that the straight of hormuz was open had that workout for everybody Traders bet 760 million dollars that oil prices would fall in april 21st 15 minutes before trump announced He would extend the ceasefire traders placed a series of bets worth 430 million dollars that oil prices would fall What's interesting about this is none of that happened on prediction markets Prediction markets have been of course the focus of everybody because of a few thousand dollars here and there that they've been able to uncover Not always proven a lot of anonymous sourcing behind that. There have been some situations and I don't doubt it I'm not like saying that I'm you know I'm not I don't believe that there is none of this going on I think some people think it's fun and think they can get a few extra bucks. It's a bad idea We've covered why it's a bad idea Don't get yourself involved in it if you see a line and you're wondering am I crossing the line stay away from the line These are real markets even though prediction markets are fun. Don't screw around be careful But none of this happened with prediction markets. This happened with the london stock exchange group so Really nothing to do with prediction markets But those stories are happening and they're happening. They happen in legal markets all the time This is something that is these organizations in the government are designed to root out these types of stories So I wanted to at least make you aware of that breaking news Today because probably a lot of people will think oh, this must be prediction markets This must have happened on Polymarket. I mean look, there's a lot of volume going into these markets right now You're not you're not able to trade nine hundred and sixty million dollars in 15 minutes on those markets That's not that's not they're not that big yet. Hopefully they are someday honestly, but they're not right now Okay, I want to give you something to make sure you look at the rules This is important because one of the things on Iran we'll cover this more next week My kind of current stance on all these are Iran markets straight-of-hormuz I told you before I got burned on a straight-of-hormuz market earlier this year Um is kind of think whatever the whatever seems to be happening go the other way That's kind of what I feel like right now because you get these announcements about oh, there's a peace deal right around the corner That's where we are right now It feels like what the right thing to do is probably just go the opposite because these things break down so often And so much of the stuff that we hear Comes through an administration with president trump who really just is you know thinks it's very important to Negotiate these things publicly and push people into the situations that he wants So when he wants something he says what he wants and he says basically it's happening And he makes the other person come out and say wait a minute. No, it's not and then they look like they're the ones backing out I mean trump is an expert negotiator We know that but a lot of times we are taking information from trump in his negotiations and acting like that's news And a lot of times it isn't Right now is there going to be a u.s. Iran nuclear deal is sitting up? This year at 59 percent is going to happen before september 48 percent before august 40 percent Now of course when you think about the mechanics of a deal like that they take a long time to negotiate You got to get these parties to sign Sounds really really hard could take a long time even if they'd agree today It might not be done by the end of the year But this is where we play What are the rules because you need to make sure when you're in a prediction market You take the extra few seconds to actually read what you're investing in is actually important Let me give you just a little boil down here of the calci market on the iran nuclear deal market This is if it's a yes if the united states has agreed to signed or accepted Agreed to signed or accepted that's a very broad set of categories Have they agreed signed or accepted a u.s. Iran nuclear deal before january 20 January 1st 2027 then the market resolves to yes They give you a bunch of sources where you can get that information from it also says this though An agreement also made with other countries like a multilateral agreement Is still encompassed if the united states participates So it doesn't have to be just us and iran if it's a you know 25 countries that have been involved in this It can also be a yes a u.s. Iran nuclear deal means a formal written agreement Signed by an authorized representative of both the u.s. And iran that does two things It must be at least these two things it imposes variable restrictions on iran's nuclear program And in addition to that so it's not just limiting iran's nuclear program But it also must provide for the lifting suspension or modification of at least one u.s. Economic sanction so a signed Surrender an unconditional surrender by iran would not actually take off this contract And also does it even need to be signed? Remember what it said at the beginning has agreed Signed or accepted. What does that mean? There's a clarification in these rules. Here's what it says It must be a formal written agreement signed by authorized representatives of both governments However, it does not impose a precondition that the signing itself must occur Before resolution. These are pretty convoluted rules. Honestly, I think they could do a better job with this particular set of rules Both governments must publicly and officially agree to the terms if they are agreeing publicly A formal signing does not need to take place So if you're thinking to yourself, well, no, this process is going to land up forever They're never going to sign this thing. They're going to go back and forth. They're going to complain It's going to break down 90 times All they have to do is announce they've agreed And you've lost if you're a no on that market So be careful and always know what are the rules? Very important part of your prediction market life And we will go through more examples of this as they pop themselves up. Okay. Couple things before we go Got a weekend coming up. Hope you have a great one. There'll be lots of great markets Maybe we'll do a live stream this weekend We'll see what pops up in the prediction market world if we're going to do one You can go over to the substack go to Predictableshow.com that'll get you to the substack You can get the live streams. You can get all the extra stuff that we're doing the written stuff We have a kind of written show summary every single day of what we talk about Can help you work through the markets understand them and we'll give you tips on the markets here That we think are possibilities for profit opportunity coming up We're not a financial advice show quite obviously, but we do try to give you What we're doing and if you want to join us, we would we would love that Send us your your questions drop them in the comments Questions comments the stories about your investments. Were you able to jump on one of ours that we've talked about and get some profit? Did you go the other way? Did you go somewhere else and lose money? What have you learned from it? We want to get those stories from you, of course at predictableshow.com We'll also have new stew and dave do america today. Good. Check that out on youtube or at blaze tv We love our friends at blaze tv. We're in the blaze tv studios right over here Is ali stucky studio right out of my view over here? You've got the old studos america and stew and dave do america and then even farther that way the old glenbeck radio Studio, so we're right here. We're with the family here at blaze tv We love blaze tv and we would love you to sign up and check that out as well Okay, that's it from predictable show.com. It's predictable with stew. We will see you next week"
+}

@@ -62,20 +62,38 @@ def get_market(ticker: str) -> dict | None:
             return None
 
 
+def _series_from_ticker(ticker: str) -> str:
+    """Kalshi market tickers are `{series_ticker}-{event_suffix}-{contract_suffix}`.
+    The series ticker is everything up to the first hyphen separator. The
+    canonical candlesticks endpoint is `/series/{series}/markets/{ticker}/...`."""
+    return ticker.split("-", 1)[0]
+
+
 def get_candlesticks(ticker: str, start_ts: int, end_ts: int, interval_min: int = 60) -> list[dict]:
-    """Historical price candlesticks for a market between unix timestamps."""
-    try:
-        data = _get(
-            f"/markets/{ticker}/candlesticks",
-            {"start_ts": start_ts, "end_ts": end_ts, "period_interval": interval_min},
-        )
-    except requests.HTTPError:
-        # Live cutoff may have moved this to historical
-        data = _get(
-            f"/historical/markets/{ticker}/candlesticks",
-            {"start_ts": start_ts, "end_ts": end_ts, "period_interval": interval_min},
-        )
-    return data.get("candlesticks") or []
+    """Historical price candlesticks for a market between unix timestamps.
+
+    Kalshi exposes candlesticks under
+      /trade-api/v2/series/{series}/markets/{ticker}/candlesticks
+    The shorter `/markets/{ticker}/candlesticks` path returns 404 for many
+    tickers (e.g. all the KX-prefixed margin-of-victory contracts). We try
+    the canonical series path first, then fall back to the bare path, then
+    to the historical alias as a last resort.
+    """
+    series = _series_from_ticker(ticker)
+    params = {"start_ts": start_ts, "end_ts": end_ts, "period_interval": interval_min}
+    for path in (
+        f"/series/{series}/markets/{ticker}/candlesticks",
+        f"/markets/{ticker}/candlesticks",
+        f"/historical/markets/{ticker}/candlesticks",
+    ):
+        try:
+            data = _get(path, params)
+        except requests.HTTPError:
+            continue
+        cs = data.get("candlesticks") or []
+        if cs:
+            return cs
+    return []
 
 
 def events(*, status: str = "open", limit: int = 50) -> list[dict]:
