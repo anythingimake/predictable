@@ -57,6 +57,14 @@ cd api && npm run build && rsync -avz dist/ root@5.78.89.136:/opt/predictable-ap
 
 This is the user's established pattern — see `~/.claude/projects/C--Users-NoahYaffe/memory/feedback_two_pass_whisper.md`.
 
+## Secrets
+
+The pipeline needs an Anthropic API key for Claude extraction. Set ONE of:
+- `export ANTHROPIC_API_KEY=sk-ant-...` in your shell
+- `~/.secrets/anthropic.env` containing `ANTHROPIC_API_KEY=sk-ant-...`
+
+Everything else (Megaphone, Substack, YouTube, Kalshi, Polymarket, PredictIt) is public and needs no auth.
+
 ## Critical conventions
 
 - **Every Call links to its raw quote + episode timestamp.** Click any call → jumps to the exact second on YouTube/Megaphone player. Source-of-truth verifiability is the app's reason for existing.
