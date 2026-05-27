@@ -3,6 +3,11 @@ import { db } from "../db.js";
 
 const router = Router();
 
+// Safety cap so /api/calls never streams the entire table back as the show grows.
+// Clients can override with ?limit=, but never above the hard ceiling.
+const DEFAULT_CALLS_LIMIT = 500;
+const MAX_CALLS_LIMIT = 2000;
+
 router.get("/", (req, res) => {
   const { conviction, status, market, category, market_source } = req.query as Record<string, string | undefined>;
   const clauses: string[] = [];
@@ -13,6 +18,11 @@ router.get("/", (req, res) => {
   if (category)      { clauses.push("m.category = ?");      params.push(category); }
   if (market_source) { clauses.push("m.source = ?");        params.push(market_source); }
   const where = clauses.length ? `WHERE ${clauses.join(" AND ")}` : "";
+
+  const rawLimit = Number(req.query.limit);
+  const limit = Number.isFinite(rawLimit) && rawLimit > 0
+    ? Math.min(Math.floor(rawLimit), MAX_CALLS_LIMIT)
+    : DEFAULT_CALLS_LIMIT;
 
   const rows = db().prepare(`
     SELECT c.id, c.market_id, c.market_hint, c.episode_id, c.side, c.conviction,
@@ -25,7 +35,8 @@ router.get("/", (req, res) => {
     LEFT JOIN markets m ON m.id = c.market_id
     ${where}
     ORDER BY e.publish_date DESC, c.first_event_ts
-  `).all(...params);
+    LIMIT ?
+  `).all(...params, limit);
   res.json(rows);
 });
 

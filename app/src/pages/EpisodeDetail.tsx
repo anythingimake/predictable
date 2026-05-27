@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { api } from "../api";
 import type { Comment, EpisodeDetail as EpisodeDetailData } from "../types";
 import { ConvictionBadge } from "../components/ConvictionBadge";
-import { formatSec, substackUrlAt, youtubeUrlAt } from "../lib/format";
+import { formatDateSafe, formatSec, substackUrlAt, youtubeUrlAt } from "../lib/format";
 import { ErrorBanner, Loading } from "./Scoreboard";
 
 export function EpisodeDetail() {
@@ -181,7 +181,7 @@ function CommentBubble({ comment: c }: { comment: Comment }) {
     >
       <div className="text-xs text-[var(--color-text-muted)] mb-1">
         {c.is_stu ? "★ " : ""}
-        {c.author} · {new Date(c.posted_at).toLocaleDateString()}
+        {c.author} · {formatDateSafe(c.posted_at)}
       </div>
       <div className="whitespace-pre-wrap break-words">{c.body}</div>
     </div>

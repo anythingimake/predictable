@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useStore } from "../store";
+import { formatDateTimeSafe } from "../lib/format";
 
 interface Note {
   id: number;
@@ -142,7 +143,7 @@ export function Admin() {
             <div className="flex items-center justify-between text-xs text-[var(--color-text-muted)] mb-1">
               <span>
                 {n.scope_type}
-                {n.scope_id ? ` · ${n.scope_id}` : ""} · {new Date(n.created_at).toLocaleString()}
+                {n.scope_id ? ` · ${n.scope_id}` : ""} · {formatDateTimeSafe(n.created_at)}
               </span>
               <button onClick={() => deleteNote(n.id)} className="text-[var(--color-text-faint)]">
                 delete

@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { api } from "../api";
 import type { CallDetail as CallDetailData } from "../types";
 import { ConvictionBadge } from "../components/ConvictionBadge";
-import { formatPct, formatSec, substackUrlAt, youtubeUrlAt } from "../lib/format";
+import { formatDateSafe, formatPct, formatSec, substackUrlAt, youtubeUrlAt } from "../lib/format";
 import { ErrorBanner, Loading } from "./Scoreboard";
 
 // Recharts is ~120 KB gzipped — defer it past first paint of CallDetail.
@@ -164,7 +164,7 @@ export function CallDetail() {
                 className="rounded border border-[var(--color-border)] bg-[var(--color-bg-elev)] p-3 text-sm"
               >
                 <div className="text-[var(--color-text-muted)] text-xs mb-1">
-                  {c.author} · {new Date(c.posted_at).toLocaleDateString()}
+                  {c.author} · {formatDateSafe(c.posted_at)}
                 </div>
                 <div className="text-[var(--color-text)]">{c.clarification}</div>
                 {c.extracted_value && (

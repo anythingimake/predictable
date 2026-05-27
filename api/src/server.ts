@@ -12,7 +12,27 @@ import adminRouter from "./routes/admin.js";
 dotenv.config();
 
 const app = express();
-app.use(cors());
+// Strip Express's "x-powered-by: Express" header — no need to advertise the stack.
+app.disable("x-powered-by");
+
+// CORS: in prod the SPA is same-origin (served via the nginx /api proxy), so the
+// only legit cross-origin callers are local dev (vite on :5173) and explicit allowlist.
+// Default-allow when CORS_ORIGINS is unset so dev/staging keep working; lock down in prod env.
+const allowedOrigins = (process.env.CORS_ORIGINS ?? "")
+  .split(",")
+  .map((s) => s.trim())
+  .filter(Boolean);
+app.use(
+  cors({
+    origin: allowedOrigins.length === 0
+      ? true // dev fallback — reflect request origin
+      : (origin, cb) => {
+          // Same-origin / curl / server-side fetches have no Origin header — let through.
+          if (!origin) return cb(null, true);
+          cb(null, allowedOrigins.includes(origin));
+        },
+  })
+);
 app.use(express.json({ limit: "1mb" }));
 
 app.get("/api/health", (_req, res) => {
@@ -25,6 +45,12 @@ app.use("/api/markets", marketsRouter);
 app.use("/api/scoreboard", scoreboardRouter);
 app.use("/api", miscRouter);
 app.use("/api/admin", adminRouter);
+
+// JSON 404 for any /api/* path that didn't match a route — better than Express's
+// default HTML for clients that always expect JSON.
+app.use("/api", (_req, res) => {
+  res.status(404).json({ error: "not_found" });
+});
 
 app.use((err: Error, _req: express.Request, res: express.Response, _next: express.NextFunction) => {
   console.error(err);

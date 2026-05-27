@@ -52,3 +52,31 @@ export function substackUrlAt(slug: string, sec: number | null | undefined): str
   if (sec == null) return base;
   return `${base}?t=${Math.floor(sec)}`;
 }
+
+/**
+ * Formats an ISO date string safely.
+ *
+ * `new Date(null).toLocaleDateString()` returns "Invalid Date" which renders
+ * ugly in comment bubbles / clarifications. Use this anywhere the source
+ * field is nullable (Substack comments occasionally arrive with missing posted_at).
+ */
+export function formatDateSafe(
+  iso: string | null | undefined,
+  opts: Intl.DateTimeFormatOptions = {},
+  fallback = "—",
+): string {
+  if (!iso) return fallback;
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return fallback;
+  return d.toLocaleDateString(undefined, opts);
+}
+
+export function formatDateTimeSafe(
+  iso: string | null | undefined,
+  fallback = "—",
+): string {
+  if (!iso) return fallback;
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return fallback;
+  return d.toLocaleString();
+}
