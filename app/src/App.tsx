@@ -10,6 +10,7 @@ import { Calendar } from "./pages/Calendar";
 import { Calculator } from "./pages/Calculator";
 import { Guide } from "./pages/Guide";
 import { Admin } from "./pages/Admin";
+import { Wordmark } from "./components/Wordmark";
 
 const NAV = [
   { to: "/", label: "Scoreboard", end: true },
@@ -25,26 +26,62 @@ const NAV = [
 export default function App() {
   return (
     <div className="min-h-screen flex flex-col">
-      <header className="border-b border-[var(--color-border)] bg-[var(--color-bg-elev)] sticky top-0 z-10">
-        <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-6 flex-wrap">
-          <NavLink to="/" className="font-semibold text-lg text-[var(--color-text)]">
-            Predictable<span className="text-[var(--color-text-faint)] font-normal text-sm ml-2">unofficial tracker</span>
-          </NavLink>
-          <nav className="flex gap-3 flex-wrap text-sm">
+      {/* Top ribbon — prominent link to the official show */}
+      <a
+        href="https://predictable.substack.com"
+        target="_blank"
+        rel="noreferrer"
+        className="block text-center text-xs sm:text-sm font-medium px-3 py-2 transition-all hover:brightness-110"
+        style={{
+          background: "linear-gradient(90deg, #0a1a0e 0%, #0f2b1c 50%, #0a1a0e 100%)",
+          borderBottom: "1px solid rgba(34, 197, 94, 0.25)",
+          color: "#eef1ff",
+        }}
+      >
+        <span className="opacity-80">📺 Watch the official show:</span>{" "}
+        <span className="font-bold text-[#22c55e]">predictable.substack.com</span>
+        <span className="opacity-80 ml-1">— by Stu Burguiere</span>
+        <span className="ml-2 opacity-60">↗</span>
+      </a>
+
+      <header
+        className="sticky top-0 z-10 backdrop-blur-md"
+        style={{
+          background: "rgba(7, 9, 26, 0.85)",
+          borderBottom: "1px solid var(--color-border)",
+          boxShadow: "0 1px 0 rgba(91, 141, 246, 0.06), 0 4px 24px rgba(0, 0, 0, 0.3)",
+        }}
+      >
+        <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between gap-6">
+          <Wordmark />
+          <nav className="flex items-center gap-0.5 text-sm overflow-x-auto">
             {NAV.map((n) => (
               <NavLink
                 key={n.to}
                 to={n.to}
                 end={n.end}
                 className={({ isActive }) =>
-                  `px-2 py-1 rounded transition-colors ${
+                  `relative px-3 py-1.5 font-medium tracking-[0.01em] transition-all duration-150 whitespace-nowrap ${
                     isActive
-                      ? "bg-[var(--color-surface)] text-[var(--color-text)]"
+                      ? "text-[var(--color-text)]"
                       : "text-[var(--color-text-muted)] hover:text-[var(--color-text)]"
                   }`
                 }
               >
-                {n.label}
+                {({ isActive }) => (
+                  <>
+                    <span>{n.label}</span>
+                    {isActive && (
+                      <span
+                        className="absolute left-3 right-3 -bottom-[1px] h-[2px] rounded-full"
+                        style={{
+                          background: "linear-gradient(90deg, var(--color-accent), var(--color-mark))",
+                          boxShadow: "0 0 8px var(--color-accent-glow)",
+                        }}
+                      />
+                    )}
+                  </>
+                )}
               </NavLink>
             ))}
           </nav>
@@ -67,16 +104,22 @@ export default function App() {
         </Routes>
       </main>
 
-      <footer className="border-t border-[var(--color-border)] py-6 text-xs text-[var(--color-text-faint)]">
-        <div className="max-w-6xl mx-auto px-4 space-y-1">
-          <p>
-            Unofficial fan project. Not affiliated with Stu Burguiere or Predictable. Nothing here is investment advice.
-          </p>
-          <p>
-            Source:{" "}
-            <a href="https://github.com/anythingimake/predictable">github.com/anythingimake/predictable</a> ·
-            Show: <a href="https://predictable.substack.com">predictable.substack.com</a>
-          </p>
+      <footer className="mt-12 border-t border-[var(--color-border)] py-8 text-xs text-[var(--color-text-faint)]">
+        <div className="max-w-6xl mx-auto px-4 flex items-start justify-between gap-6 flex-wrap">
+          <div className="space-y-1.5 max-w-lg">
+            <p className="font-medium text-[var(--color-text-muted)]">
+              Unofficial fan project · not affiliated with Stu Burguiere or Predictable
+            </p>
+            <p>Nothing here is investment advice. Prediction markets carry real financial risk.</p>
+          </div>
+          <div className="flex gap-5 text-xs">
+            <a href="https://predictable.substack.com" target="_blank" rel="noreferrer" className="hover:text-[var(--color-text)]">
+              The Show ↗
+            </a>
+            <a href="https://github.com/anythingimake/predictable" target="_blank" rel="noreferrer" className="hover:text-[var(--color-text)]">
+              Source ↗
+            </a>
+          </div>
         </div>
       </footer>
     </div>
