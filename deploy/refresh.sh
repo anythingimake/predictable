@@ -31,6 +31,10 @@ git pull --quiet --ff-only origin main
 # Load any new extraction data into SQLite
 PREDICTABLE_DB="$DB" python3 -m pipeline.load 2>&1
 
+# Probe market resolutions, then hard+soft score, then refresh scoreboard snapshot
+PREDICTABLE_DB="$DB" python3 -m pipeline.enrich.probe_resolutions 2>&1 || echo "probe failed"
+PREDICTABLE_DB="$DB" python3 -m pipeline.enrich.scoring 2>&1 || echo "scoring failed"
+
 # Bounce the API so better-sqlite3 reopens the file
 $PM2 restart predictable-api --update-env >/dev/null 2>&1 || $PM2 restart predictable-api >/dev/null 2>&1
 

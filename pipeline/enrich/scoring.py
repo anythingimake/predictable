@@ -1,20 +1,24 @@
 """
-Score resolved calls + snapshot the public scoreboard.
+Score resolved + soft-resolved calls and refresh the scoreboard snapshot.
 
-For each call where `status != 'resolved'`:
-  - If the linked market.resolved == 1, compute the realized return:
-      hit  -> ((100 - entry_price_cents) / entry_price_cents) * 100
-      miss -> -100 (full loss of the binary position)
-  - Update calls.status = 'resolved', calls.realized_pct = <computed>.
+Two paths to a realized_pct:
 
-Then write today's scoreboard_snapshots row with totals + per-tier + per-category
-breakdowns. ON CONFLICT updates so re-running on the same day is safe.
+  HARD-RESOLVE — market.resolved=1 and market.resolution in {'yes','no'}.
+    The contract has settled; compute the realized return from the call's
+    entry-event price_pct against a payout of 100¢ (win) or 0¢ (loss).
 
-`hit` is determined by whether the market's `resolution` matches `calls.side`:
-  - For "yes"/"no": exact string match (case-insensitive).
-  - For "over"/"under": same.
-  - If `resolution` is unset but `resolved` is true, we conservatively skip the
-    call (don't score it) and leave it open for the next run.
+  SOFT-RESOLVE — call has its own 'exit', 'trim', or 'resolve' event with
+    a price_pct, meaning Stu noted his close on the show. Use that close as
+    the effective price. Status becomes 'closed' (vs 'resolved' for hard).
+
+Price math, expressed in cents (0-100) on the YES side of the order book:
+  - YES contract bought at P pays 100 on YES, 0 on NO.
+    Return = (close - P) / P * 100, where close ∈ [0, 100] is the YES price.
+  - NO contract bought at (100 - P) pays 100 on NO, 0 on YES.
+    cost = 100 - P; payout = 100 - close.
+    Return = (payout - cost) / cost * 100.
+
+Idempotent. Re-running recomputes fresh values.
 """
 from __future__ import annotations
 
@@ -24,9 +28,6 @@ from typing import Optional
 
 
 def _entry_price_cents(conn, call_id: int) -> Optional[float]:
-    """First call_events row with event_type='entry' for this call. price_pct
-    is stored in cents (0-100). Returns None if no entry row found OR price_pct
-    is missing — caller MUST skip scoring in that case."""
     row = conn.execute(
         """SELECT price_pct FROM call_events
             WHERE call_id = ? AND event_type = 'entry'
@@ -42,71 +43,90 @@ def _entry_price_cents(conn, call_id: int) -> Optional[float]:
         return None
 
 
-def _side_hits(side: str, resolution: str | None) -> Optional[bool]:
-    """Return True if the call's side won, False if it lost, None if unknown."""
-    if not resolution:
+def _close_event_price_cents(conn, call_id: int) -> Optional[float]:
+    """Latest exit/trim/resolve event with a price_pct — Stu's soft close."""
+    row = conn.execute(
+        """SELECT price_pct FROM call_events
+            WHERE call_id = ?
+              AND event_type IN ('exit', 'trim', 'resolve')
+              AND price_pct IS NOT NULL
+            ORDER BY timestamp_sec DESC, id DESC
+            LIMIT 1""",
+        (call_id,),
+    ).fetchone()
+    if not row:
         return None
+    try:
+        return float(row["price_pct"])
+    except (TypeError, ValueError):
+        return None
+
+
+def _realized_pct(side: str, entry_cents: float, close_cents: float) -> float:
+    """Return percentage given a YES-side price for entry + close."""
     s = (side or "").strip().lower()
-    r = (resolution or "").strip().lower()
-    if not s or not r:
-        return None
-    # Common resolution encodings: "yes"/"no", "Yes"/"No", "YES"/"NO", "1"/"0"
-    truthy = {"yes", "1", "true", "won", "over"}
-    falsy = {"no", "0", "false", "lost", "under"}
-    if s in {"yes", "over"}:
-        if r in truthy: return True
-        if r in falsy: return False
-    if s in {"no", "under"}:
-        if r in falsy: return True
-        if r in truthy: return False
-    # If the resolution string literally matches the side
-    if r == s:
-        return True
-    return None
+    if s in ("yes", "over"):
+        if entry_cents <= 0:
+            return 0.0
+        return (close_cents - entry_cents) / entry_cents * 100.0
+    if s in ("no", "under"):
+        cost = 100.0 - entry_cents
+        payout = 100.0 - close_cents
+        if cost <= 0:
+            return 0.0
+        return (payout - cost) / cost * 100.0
+    return 0.0
 
 
-def _score_calls(conn) -> int:
-    """Iterate unscored calls whose market is resolved, write realized_pct.
-    Returns # of calls newly scored."""
-    rows = list(
-        conn.execute(
-            """SELECT c.id, c.side, m.resolution
-                 FROM calls c
-                 JOIN markets m ON m.id = c.market_id
-                WHERE c.status != 'resolved'
-                  AND m.resolved = 1"""
-        )
-    )
-    scored = 0
-    for r in rows:
-        cid, side, resolution = r["id"], r["side"], r["resolution"]
+def _score_calls(conn) -> dict:
+    """Walk every call and assign realized_pct via hard- or soft-resolve.
+    Idempotent — recomputes on every run."""
+    stats = {"hard": 0, "soft": 0, "skipped_no_entry": 0, "skipped_other": 0}
+    calls = conn.execute(
+        """SELECT c.id, c.side, c.market_id, m.resolved, m.resolution
+             FROM calls c
+        LEFT JOIN markets m ON m.id = c.market_id"""
+    ).fetchall()
+    for c in calls:
+        cid = c["id"]
         entry_cents = _entry_price_cents(conn, cid)
         if entry_cents is None or entry_cents <= 0:
-            # No entry-price data — leave open; nothing to score against.
+            stats["skipped_no_entry"] += 1
             continue
-        hit = _side_hits(side, resolution)
-        if hit is None:
-            # Resolved but unclear which side won — leave for next run.
+
+        # HARD: market is resolved with a clear yes/no winner
+        if c["resolved"] == 1 and c["resolution"] in ("yes", "no"):
+            close_cents = 100.0 if c["resolution"] == "yes" else 0.0
+            realized = _realized_pct(c["side"], entry_cents, close_cents)
+            conn.execute(
+                "UPDATE calls SET status = 'resolved', realized_pct = ? WHERE id = ?",
+                (realized, cid),
+            )
+            stats["hard"] += 1
             continue
-        if hit:
-            realized = ((100.0 - entry_cents) / entry_cents) * 100.0
-        else:
-            realized = -100.0
-        conn.execute(
-            "UPDATE calls SET status = 'resolved', realized_pct = ? WHERE id = ?",
-            (realized, cid),
-        )
-        scored += 1
-    return scored
+
+        # SOFT: Stu noted an exit/trim/resolve himself
+        close_cents = _close_event_price_cents(conn, cid)
+        if close_cents is not None:
+            realized = _realized_pct(c["side"], entry_cents, close_cents)
+            conn.execute(
+                "UPDATE calls SET status = 'closed', realized_pct = ? WHERE id = ?",
+                (realized, cid),
+            )
+            stats["soft"] += 1
+            continue
+
+        stats["skipped_other"] += 1
+    return stats
 
 
 def _snapshot_scoreboard(conn) -> dict:
-    """Compute today's totals + breakdowns, upsert into scoreboard_snapshots."""
+    """Both 'resolved' (hard) and 'closed' (soft) count toward the scoreboard."""
     totals = conn.execute(
         """SELECT
               COUNT(*) AS total,
-              SUM(CASE WHEN status = 'resolved' THEN 1 ELSE 0 END) AS resolved,
-              SUM(CASE WHEN status = 'resolved' AND realized_pct > 0 THEN 1 ELSE 0 END) AS hits
+              SUM(CASE WHEN status IN ('resolved','closed') THEN 1 ELSE 0 END) AS resolved,
+              SUM(CASE WHEN status IN ('resolved','closed') AND realized_pct > 0 THEN 1 ELSE 0 END) AS hits
              FROM calls"""
     ).fetchone()
     total = totals["total"] or 0
@@ -117,8 +137,9 @@ def _snapshot_scoreboard(conn) -> dict:
     by_tier: dict[str, dict] = {}
     for row in conn.execute(
         """SELECT conviction, COUNT(*) AS total,
-                  SUM(CASE WHEN status='resolved' THEN 1 ELSE 0 END) AS resolved,
-                  SUM(CASE WHEN status='resolved' AND realized_pct>0 THEN 1 ELSE 0 END) AS hits
+                  SUM(CASE WHEN status IN ('resolved','closed') THEN 1 ELSE 0 END) AS resolved,
+                  SUM(CASE WHEN status IN ('resolved','closed') AND realized_pct>0 THEN 1 ELSE 0 END) AS hits,
+                  AVG(CASE WHEN status IN ('resolved','closed') THEN realized_pct END) AS avg_return_pct
              FROM calls GROUP BY conviction"""
     ):
         by_tier[row["conviction"] or "unknown"] = {
@@ -126,13 +147,14 @@ def _snapshot_scoreboard(conn) -> dict:
             "resolved": row["resolved"],
             "hits": row["hits"],
             "hit_rate": (row["hits"] / row["resolved"]) if row["resolved"] else 0.0,
+            "avg_return_pct": row["avg_return_pct"],
         }
 
     by_category: dict[str, dict] = {}
     for row in conn.execute(
         """SELECT m.category AS category, COUNT(*) AS total,
-                  SUM(CASE WHEN c.status='resolved' THEN 1 ELSE 0 END) AS resolved,
-                  SUM(CASE WHEN c.status='resolved' AND c.realized_pct>0 THEN 1 ELSE 0 END) AS hits
+                  SUM(CASE WHEN c.status IN ('resolved','closed') THEN 1 ELSE 0 END) AS resolved,
+                  SUM(CASE WHEN c.status IN ('resolved','closed') AND c.realized_pct>0 THEN 1 ELSE 0 END) AS hits
              FROM calls c
         LEFT JOIN markets m ON m.id = c.market_id
             GROUP BY m.category"""
@@ -164,7 +186,7 @@ def _snapshot_scoreboard(conn) -> dict:
             resolved,
             hits,
             hit_rate,
-            None,  # bankroll_pct — not yet computed in v1
+            None,
             json.dumps(by_tier),
             json.dumps(by_category),
         ),
@@ -179,12 +201,12 @@ def _snapshot_scoreboard(conn) -> dict:
 
 
 def score_all() -> dict:
-    from pipeline.db import connect  # local import keeps module light
+    from pipeline.db import connect
     with connect() as conn:
-        scored = _score_calls(conn)
+        stats = _score_calls(conn)
         snap = _snapshot_scoreboard(conn)
-    return {"newly_scored": scored, "scoreboard": snap}
+    return {"scoring": stats, "scoreboard": snap}
 
 
 if __name__ == "__main__":
-    print(score_all())
+    print(json.dumps(score_all(), indent=2))
