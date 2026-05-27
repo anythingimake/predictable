@@ -26,7 +26,7 @@ function UnofficialBadge() {
       }}
       title="Unofficial fan project — not affiliated with the show"
     >
-      Unofficial
+      Unofficial!
     </span>
   );
 }

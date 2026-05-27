@@ -54,17 +54,25 @@ export default function App() {
       >
         <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between gap-6">
           <Wordmark />
-          <nav className="flex items-center gap-0.5 text-sm overflow-x-auto no-scrollbar">
-            {NAV.map((n) => (
+          <nav
+            className="flex items-stretch text-sm overflow-x-auto no-scrollbar h-10 rounded-md"
+            style={{
+              border: "1px solid var(--color-border)",
+              background: "rgba(13, 17, 38, 0.4)",
+            }}
+          >
+            {NAV.map((n, i) => (
               <NavLink
                 key={n.to}
                 to={n.to}
                 end={n.end}
                 className={({ isActive }) =>
-                  `relative px-3 py-1.5 font-medium tracking-[0.01em] transition-all duration-150 whitespace-nowrap ${
+                  `relative flex items-center px-3.5 font-medium tracking-[0.01em] transition-all duration-150 whitespace-nowrap ${
+                    i > 0 ? "border-l border-[var(--color-border)]" : ""
+                  } ${
                     isActive
-                      ? "text-[var(--color-text)]"
-                      : "text-[var(--color-text-muted)] hover:text-[var(--color-text)]"
+                      ? "text-[var(--color-text)] bg-[rgba(91,141,246,0.08)]"
+                      : "text-[var(--color-text-muted)] hover:text-[var(--color-text)] hover:bg-[rgba(255,255,255,0.02)]"
                   }`
                 }
               >
@@ -73,7 +81,7 @@ export default function App() {
                     <span>{n.label}</span>
                     {isActive && (
                       <span
-                        className="absolute left-3 right-3 -bottom-[1px] h-[2px] rounded-full"
+                        className="absolute left-2 right-2 -bottom-[1px] h-[2px] rounded-full"
                         style={{
                           background: "linear-gradient(90deg, var(--color-accent), var(--color-mark))",
                           boxShadow: "0 0 8px var(--color-accent-glow)",
