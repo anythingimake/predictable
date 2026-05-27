@@ -29,6 +29,12 @@ const EVENT_LABEL: Record<string, string> = {
   clarify: "Clarification",
 };
 
+const STATUS_LABEL: Record<string, string> = {
+  open: "Open",
+  closed: "Closed (Stu exit)",
+  resolved: "Resolved",
+};
+
 export function CallDetail() {
   const { id } = useParams<{ id: string }>();
   const [data, setData] = useState<CallDetailData | null>(null);
@@ -78,7 +84,7 @@ export function CallDetail() {
       <section className="grid grid-cols-2 md:grid-cols-4 gap-3">
         <Stat label="Realized" value={data.realized_pct != null ? formatPct(data.realized_pct, 1) : "—"} accent={data.realized_pct != null && data.realized_pct > 0 ? "var(--color-tier-play)" : undefined} />
         <Stat label="Stu claimed" value={data.stu_claimed_pct != null ? formatPct(data.stu_claimed_pct, 1) : "—"} />
-        <Stat label="Status" value={data.status} />
+        <Stat label="Status" value={STATUS_LABEL[data.status] ?? data.status} />
         <Stat label="Events" value={data.events.length} />
       </section>
 

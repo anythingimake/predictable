@@ -5,6 +5,12 @@ import type { Episode } from "../types";
 import { formatSec } from "../lib/format";
 import { ErrorBanner, Loading } from "./Scoreboard";
 
+function formatPubDate(iso: string): string {
+  const d = new Date(`${iso}T12:00:00Z`);
+  if (Number.isNaN(d.getTime())) return iso;
+  return d.toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" });
+}
+
 export function Episodes() {
   const [eps, setEps] = useState<Episode[] | null>(null);
   const [err, setErr] = useState<string | null>(null);
@@ -42,7 +48,7 @@ export function Episodes() {
             )}
             <div className="flex-1 min-w-0">
               <div className="flex items-center gap-1.5 text-xs text-[var(--color-text-muted)] flex-wrap">
-                <span>{e.publish_date}</span>
+                <span>{formatPubDate(e.publish_date)}</span>
                 <span>·</span>
                 <span>{formatSec(e.duration_sec)}</span>
                 <span>·</span>

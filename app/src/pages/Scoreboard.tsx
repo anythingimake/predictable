@@ -42,7 +42,12 @@ export function Scoreboard() {
         <StatCard label="Total calls" value={data.total_calls} />
         <StatCard label="Resolved" value={data.resolved_calls ?? 0} />
         <StatCard label="Hits" value={data.hit_count ?? 0} accent="var(--color-tier-play)" />
-        <StatCard label="Hit rate" value={formatPct(data.hit_rate * 100)} accent="var(--color-accent)" />
+        <StatCard
+          label="Hit rate"
+          value={formatPct(data.hit_rate * 100)}
+          hint={(data.resolved_calls ?? 0) > 0 ? `${data.hit_count ?? 0} of ${data.resolved_calls ?? 0} resolved` : undefined}
+          accent="var(--color-accent)"
+        />
       </section>
 
       {data.by_tier.length > 0 && (
@@ -72,7 +77,10 @@ export function Scoreboard() {
 
       {data.recent_wins.length > 0 && (
         <section>
-          <h2 className="text-base md:text-lg font-medium mb-3">Top winners</h2>
+          <h2 className="text-base md:text-lg font-medium mb-1">Top wins</h2>
+          <p className="text-xs text-[var(--color-text-muted)] mb-3">
+            Resolved positions and exits Stu took at a profit, sorted by return.
+          </p>
           <div className="space-y-2">
             {data.recent_wins.map((w) => (
               <Link
@@ -83,7 +91,7 @@ export function Scoreboard() {
                 <div className="min-w-0 flex-1">
                   <div className="font-medium truncate">{w.market_hint}</div>
                   <div className="text-xs text-[var(--color-text-muted)] truncate">
-                    {w.publish_date} · {w.episode_title} · {CONVICTION_LABELS[w.conviction]}
+                    {formatShortDate(w.publish_date)} · {w.episode_title} · {CONVICTION_LABELS[w.conviction]}
                   </div>
                 </div>
                 <div className="text-right flex-shrink-0">
@@ -115,7 +123,7 @@ export function Scoreboard() {
                 <div className="min-w-0 flex-1">
                   <div className="font-medium truncate">{l.market_hint}</div>
                   <div className="text-xs text-[var(--color-text-muted)] truncate">
-                    {l.publish_date} · {l.episode_title} · {CONVICTION_LABELS[l.conviction]}
+                    {formatShortDate(l.publish_date)} · {l.episode_title} · {CONVICTION_LABELS[l.conviction]}
                   </div>
                 </div>
                 <div className="text-right flex-shrink-0">
@@ -132,13 +140,16 @@ export function Scoreboard() {
   );
 }
 
-function StatCard({ label, value, accent }: { label: string; value: number | string; accent?: string }) {
+function StatCard({ label, value, accent, hint }: { label: string; value: number | string; accent?: string; hint?: string }) {
   return (
     <div className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-elev)] p-4">
       <div className="text-xs uppercase tracking-wide text-[var(--color-text-muted)]">{label}</div>
       <div className="text-2xl font-semibold mt-1" style={{ color: accent }}>
         {value}
       </div>
+      {hint && (
+        <div className="text-[11px] text-[var(--color-text-faint)] mt-1">{hint}</div>
+      )}
     </div>
   );
 }
@@ -154,6 +165,13 @@ function Cell({ label, value }: { label: string; value: number | string }) {
 
 export function Loading() {
   return <div className="text-[var(--color-text-muted)]">Loading…</div>;
+}
+
+// "2026-05-27" → "May 27" (no year — we're showing recent activity, year is implied by context).
+function formatShortDate(iso: string): string {
+  const d = new Date(`${iso}T12:00:00Z`);
+  if (Number.isNaN(d.getTime())) return iso;
+  return d.toLocaleDateString(undefined, { month: "short", day: "numeric" });
 }
 
 export function ErrorBanner({ message }: { message: string }) {

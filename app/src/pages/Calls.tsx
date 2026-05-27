@@ -63,7 +63,7 @@ export function Calls() {
       </div>
 
       <FilterRow label="Status" options={STATUSES} value={filter.status ?? ""} onChange={(v) => setFilter({ ...filter, status: v || undefined })} />
-      <FilterRow label="Source" options={SOURCES} value={(filter as any).market_source ?? ""} onChange={(v) => setFilter({ ...filter, market_source: v || undefined } as any)} />
+      <FilterRow label="Source" options={SOURCES} value={filter.market_source ?? ""} onChange={(v) => setFilter({ ...filter, market_source: v || undefined })} />
 
       <div className="flex flex-wrap gap-1.5 sm:gap-2">
         {TIERS.map((t) => (
@@ -89,7 +89,7 @@ export function Calls() {
 
       {grouped.map(([date, dayCalls]) => (
         <section key={date}>
-          <h3 className="text-sm font-medium text-[var(--color-text-muted)] mb-2">{date}</h3>
+          <h3 className="text-sm font-medium text-[var(--color-text-muted)] mb-2">{formatGroupDate(date)}</h3>
           <div className="space-y-2">
             {dayCalls.map((c) => (
               <Link
@@ -134,6 +134,20 @@ export function Calls() {
       ))}
     </div>
   );
+}
+
+// "2026-05-27" → "Wed, May 27, 2026". Group keys are ISO dates from the API.
+function formatGroupDate(iso: string): string {
+  // Parse as UTC then format in local TZ — these are publish_date only (no time component),
+  // so anchoring to UTC avoids off-by-one shifts in negative-offset timezones.
+  const d = new Date(`${iso}T12:00:00Z`);
+  if (Number.isNaN(d.getTime())) return iso;
+  return d.toLocaleDateString(undefined, {
+    weekday: "short",
+    month: "short",
+    day: "numeric",
+    year: "numeric",
+  });
 }
 
 function FilterRow({ label, options, value, onChange }: {

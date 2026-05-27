@@ -7,15 +7,21 @@ export function Calculator() {
   const [feeBps, setFeeBps] = useState(7);
 
   const m = useMemo(() => {
-    const p = price / 100; // price in dollars (0..1)
-    const q = trueProb / 100; // your believed probability
-    const fee = feeBps / 10000;
+    // Clamp to defensible ranges so a stray paste like 105 or a NaN doesn't blow up Kelly.
+    const safePrice = clampNum(price, 1, 99);
+    const safeProb = clampNum(trueProb, 0, 100);
+    const safeBankroll = Math.max(0, Number.isFinite(bankroll) ? bankroll : 0);
+    const safeFee = clampNum(feeBps, 0, 10_000);
+
+    const p = safePrice / 100; // price in dollars (0..1)
+    const q = safeProb / 100; // your believed probability
+    const fee = safeFee / 10000;
     const ev = q * (1 - p - fee) - (1 - q) * p; // per $1 staked
     const edge = q - p;
     // Kelly: f* = (b*q - (1-q)) / b, where b = (1-p)/p (decimal odds minus 1)
     const b = (1 - p) / p;
     const kelly = b > 0 ? (b * q - (1 - q)) / b : 0;
-    const kellySize = Math.max(0, kelly) * bankroll;
+    const kellySize = Math.max(0, kelly) * safeBankroll;
     const halfKellySize = kellySize / 2;
     return { ev, edge, kelly, kellySize, halfKellySize, p, q };
   }, [price, trueProb, bankroll, feeBps]);
@@ -90,6 +96,13 @@ export function Calculator() {
   );
 }
 
+function clampNum(n: number, lo: number, hi: number): number {
+  if (!Number.isFinite(n)) return lo;
+  if (n < lo) return lo;
+  if (n > hi) return hi;
+  return n;
+}
+
 function Field({
   label,
   help,
@@ -114,7 +127,15 @@ function Field({
         value={value}
         min={min}
         max={max}
-        onChange={(e) => onChange(Number(e.target.value))}
+        onChange={(e) => {
+          const raw = e.target.value;
+          if (raw === "") {
+            onChange(min);
+            return;
+          }
+          const n = Number(raw);
+          onChange(Number.isFinite(n) ? n : min);
+        }}
         className="mt-1 w-full bg-[var(--color-bg-elev)] border border-[var(--color-border)] rounded px-3 py-2 text-base text-[var(--color-text)] focus:outline-none focus:border-[var(--color-accent)]"
       />
       <div className="text-xs text-[var(--color-text-faint)] mt-1">{help}</div>

@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { api } from "../api";
-import type { EpisodeDetail as EpisodeDetailData } from "../types";
+import type { Comment, EpisodeDetail as EpisodeDetailData } from "../types";
 import { ConvictionBadge } from "../components/ConvictionBadge";
 import { formatSec, substackUrlAt, youtubeUrlAt } from "../lib/format";
 import { ErrorBanner, Loading } from "./Scoreboard";
@@ -72,9 +72,11 @@ export function EpisodeDetail() {
                   <span className="font-medium truncate">{c.market_hint}</span>
                   <span className="text-xs text-[var(--color-text-faint)]">{c.side.toUpperCase()}</span>
                 </div>
-                <span className="text-xs text-[var(--color-text-muted)] whitespace-nowrap ml-3 flex-shrink-0">
-                  @ {formatSec(c.first_event_ts ?? null)}
-                </span>
+                {c.first_event_ts != null && (
+                  <span className="text-xs text-[var(--color-text-muted)] whitespace-nowrap ml-3 flex-shrink-0">
+                    @ {formatSec(c.first_event_ts)}
+                  </span>
+                )}
               </Link>
             ))}
           </div>
@@ -119,27 +121,69 @@ export function EpisodeDetail() {
         </section>
       )}
 
-      {ep.comments.length > 0 && (
-        <section>
-          <h2 className="text-lg font-medium mb-3">Discussion ({ep.comments.length})</h2>
-          <div className="space-y-2">
-            {ep.comments.map((c) => (
-              <div
-                key={c.id}
-                className={`rounded border p-3 text-sm ${
-                  c.is_stu ? "border-[var(--color-tier-play)]" : "border-[var(--color-border)]"
-                } bg-[var(--color-bg-elev)]`}
-              >
-                <div className="text-xs text-[var(--color-text-muted)] mb-1">
-                  {c.is_stu && "★ "}
-                  {c.author} · {new Date(c.posted_at).toLocaleDateString()}
-                </div>
-                <div>{c.body}</div>
-              </div>
-            ))}
-          </div>
-        </section>
-      )}
+      {ep.comments.length > 0 && <CommentThread comments={ep.comments} />}
     </article>
+  );
+}
+
+function CommentThread({ comments }: { comments: Comment[] }) {
+  // Group replies under their parents. Substack threads we've seen are shallow (1–2 deep),
+  // so we render a single indented tier — anything orphaned (parent off this page) becomes top-level.
+  const { roots, childrenByParent } = useMemo(() => {
+    const byId = new Map(comments.map((c) => [c.id, c]));
+    const children = new Map<string, Comment[]>();
+    const top: Comment[] = [];
+    for (const c of comments) {
+      if (c.parent_id && byId.has(c.parent_id)) {
+        const arr = children.get(c.parent_id) ?? [];
+        arr.push(c);
+        children.set(c.parent_id, arr);
+      } else {
+        top.push(c);
+      }
+    }
+    return { roots: top, childrenByParent: children };
+  }, [comments]);
+
+  return (
+    <section>
+      <h2 className="text-lg font-medium mb-3">Discussion ({comments.length})</h2>
+      <div className="space-y-2">
+        {roots.map((c) => (
+          <CommentNode key={c.id} comment={c} replies={childrenByParent.get(c.id) ?? []} />
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function CommentNode({ comment: c, replies }: { comment: Comment; replies: Comment[] }) {
+  return (
+    <div className="space-y-2">
+      <CommentBubble comment={c} />
+      {replies.length > 0 && (
+        <div className="ml-4 sm:ml-6 pl-3 border-l border-[var(--color-border)] space-y-2">
+          {replies.map((r) => (
+            <CommentBubble key={r.id} comment={r} />
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+function CommentBubble({ comment: c }: { comment: Comment }) {
+  return (
+    <div
+      className={`rounded border p-3 text-sm ${
+        c.is_stu ? "border-[var(--color-tier-play)]" : "border-[var(--color-border)]"
+      } bg-[var(--color-bg-elev)]`}
+    >
+      <div className="text-xs text-[var(--color-text-muted)] mb-1">
+        {c.is_stu ? "★ " : ""}
+        {c.author} · {new Date(c.posted_at).toLocaleDateString()}
+      </div>
+      <div className="whitespace-pre-wrap break-words">{c.body}</div>
+    </div>
   );
 }
