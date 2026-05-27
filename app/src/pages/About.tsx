@@ -105,10 +105,8 @@ export function About() {
   return (
     <div className="space-y-12">
       <Hero />
-      <HowItWorks />
       <WhereToFind />
       <NotSection />
-      <BuiltWith />
       <ReachOut />
     </div>
   );
@@ -134,16 +132,20 @@ function Hero() {
         and conviction tiers in his own vocabulary. Listeners have no good way to verify the
         results or browse the full track record. This site does exactly that, automatically.
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-3 pt-2">
+      <p
+        className="text-sm md:text-base font-semibold tracking-wide uppercase pt-1"
+        style={{
+          color: "var(--color-mark)",
+          textShadow: "0 0 12px var(--color-mark-glow)",
+        }}
+      >
+        Conservanerds Unite!
+      </p>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 pt-2">
         <AudienceCard
           glyph="🎯"
           title="For fans of the show"
           detail="Browse every tracked call, sort by hit rate, and jump straight to the moment Stu said it."
-        />
-        <AudienceCard
-          glyph="🛠"
-          title="For Benjamin's own use"
-          detail="Built first as a personal tool to keep an honest scoreboard. Then opened up because others wanted it too."
         />
         <AudienceCard
           glyph="📊"
@@ -256,10 +258,10 @@ function prettyHost(url: string): string {
 
 function NotSection() {
   const items: string[] = [
-    "Not affiliated with Stu Burguiere or Predictable in any way.",
+    "Not affiliated with Stu Burguiere or Predictable in any way. Yet.",
     "Not investment advice. Prediction markets carry real financial risk.",
     "Not paywall-evading — only publicly available Substack episodes are processed.",
-    "Not a leaderboard for fans — no accounts, no trade submissions, no fantasy league.",
+    "Not a leaderboard for fans — no accounts, no trade submissions, no fantasy league. Possibly in Version 2.",
   ];
   return (
     <section>
