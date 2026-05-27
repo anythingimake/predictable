@@ -54,7 +54,7 @@ export default function App() {
       >
         <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between gap-6">
           <Wordmark />
-          <nav className="flex items-center gap-0.5 text-sm overflow-x-auto">
+          <nav className="flex items-center gap-0.5 text-sm overflow-x-auto no-scrollbar">
             {NAV.map((n) => (
               <NavLink
                 key={n.to}

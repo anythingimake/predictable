@@ -70,3 +70,12 @@ a:hover { color: var(--color-text); }
 .pulse-dot {
   animation: pulse-dot 2.4s ease-in-out infinite;
 }
+
+/* Hide scrollbar but keep scrolling functional (used on the nav for small screens) */
+.no-scrollbar {
+  scrollbar-width: none;          /* Firefox */
+  -ms-overflow-style: none;       /* IE / legacy Edge */
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;                  /* Chrome / Safari / Edge */
+}
