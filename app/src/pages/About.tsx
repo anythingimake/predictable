@@ -56,51 +56,6 @@ const PLATFORMS: PlatformLink[] = [
   },
 ];
 
-type PipelineStep = {
-  glyph: string;
-  title: string;
-  detail: string;
-};
-
-const PIPELINE: PipelineStep[] = [
-  {
-    glyph: "🎧",
-    title: "Megaphone audio",
-    detail: "Nightly RSS check for new episodes; download fresh MP3s only.",
-  },
-  {
-    glyph: "📝",
-    title: "Whisper transcript",
-    detail: "Local two-pass Whisper (small → large-v3 on shaky segments) — no cloud audio upload.",
-  },
-  {
-    glyph: "🤖",
-    title: "Claude extraction",
-    detail: "Each transcript becomes structured calls: market, side, conviction tier, entry price, quotes.",
-  },
-  {
-    glyph: "💾",
-    title: "SQLite store",
-    detail: "Calls, events, clarifications, and price history land in one local SQLite file.",
-  },
-  {
-    glyph: "🌐",
-    title: "Website",
-    detail: "This site reads from a tiny read-only API. Daily refresh, fully hands-off.",
-  },
-];
-
-type StackItem = { name: string; role: string };
-
-const STACK: StackItem[] = [
-  { name: "React + Vite + TypeScript", role: "Frontend" },
-  { name: "Tailwind v4", role: "Styling" },
-  { name: "Node + Express + better-sqlite3", role: "Read-only API" },
-  { name: "faster-whisper", role: "Local transcription" },
-  { name: "Claude (Anthropic)", role: "Structured extraction" },
-  { name: "Kalshi · Polymarket · PredictIt", role: "Market price data" },
-];
-
 export function About() {
   return (
     <div className="space-y-12">
@@ -164,47 +119,6 @@ function AudienceCard({ glyph, title, detail }: { glyph: string; title: string; 
       <div className="font-medium mb-1">{title}</div>
       <div className="text-sm text-[var(--color-text-muted)] leading-relaxed">{detail}</div>
     </div>
-  );
-}
-
-function HowItWorks() {
-  return (
-    <section>
-      <h2 className="text-2xl font-semibold mb-1">How it works</h2>
-      <p className="text-sm text-[var(--color-text-muted)] mb-5">
-        One nightly pipeline. Everything else is just reading the database.
-      </p>
-      <div className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-elev)] p-5">
-        <ol className="flex flex-col md:flex-row md:items-stretch gap-3 md:gap-2">
-          {PIPELINE.map((step, i) => (
-            <li
-              key={step.title}
-              className="flex-1 flex md:flex-col md:items-start items-start gap-3 md:gap-2 relative"
-            >
-              <div className="rounded-md border border-[var(--color-border-strong)] bg-[var(--color-surface)] px-3 py-2 flex items-center gap-2 w-full">
-                <span className="text-lg" aria-hidden="true">{step.glyph}</span>
-                <span className="font-medium text-sm">{step.title}</span>
-              </div>
-              <p className="text-xs text-[var(--color-text-muted)] leading-relaxed pl-1 md:pl-1">
-                {step.detail}
-              </p>
-              {i < PIPELINE.length - 1 && (
-                <span
-                  aria-hidden="true"
-                  className="hidden md:block absolute top-3 -right-2 text-[var(--color-text-faint)] text-xs"
-                >
-                  →
-                </span>
-              )}
-            </li>
-          ))}
-        </ol>
-        <div className="mt-5 pt-4 border-t border-[var(--color-border)] text-xs text-[var(--color-text-faint)]">
-          Audio transcription runs locally — nothing is sent to a cloud STT provider. The only
-          outbound call is to Claude for structured extraction.
-        </div>
-      </div>
-    </section>
   );
 }
 
@@ -277,45 +191,6 @@ function NotSection() {
           </li>
         ))}
       </ul>
-    </section>
-  );
-}
-
-function BuiltWith() {
-  return (
-    <section>
-      <h2 className="text-2xl font-semibold mb-1">Built with</h2>
-      <p className="text-sm text-[var(--color-text-muted)] mb-4">
-        Boring, well-loved tools. Source is open under the MIT license.
-      </p>
-      <div className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-elev)] p-5">
-        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-6 text-sm">
-          {STACK.map((s) => (
-            <li key={s.name} className="flex items-baseline justify-between gap-3">
-              <span className="text-[var(--color-text)]">{s.name}</span>
-              <span className="text-xs text-[var(--color-text-muted)]">{s.role}</span>
-            </li>
-          ))}
-        </ul>
-        <div className="mt-5 pt-4 border-t border-[var(--color-border)] flex flex-wrap items-center gap-3 text-sm">
-          <a
-            href="https://github.com/anythingimake/predictable"
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded border border-[var(--color-border-strong)] bg-[var(--color-surface)] px-3 py-1.5 hover:border-[var(--color-accent)] transition-colors"
-          >
-            <span aria-hidden="true">⌥</span>
-            github.com/anythingimake/predictable
-          </a>
-          <span className="text-xs text-[var(--color-text-faint)]">
-            MIT licensed · built by Benjamin (
-            <a href="https://github.com/anythingimake" target="_blank" rel="noreferrer">
-              @anythingimake
-            </a>
-            )
-          </span>
-        </div>
-      </div>
     </section>
   );
 }
