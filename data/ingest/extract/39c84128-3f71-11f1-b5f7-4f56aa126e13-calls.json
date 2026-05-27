@@ -1,0 +1,38 @@
+{
+  "calls": [
+    {
+      "market_source": "unknown",
+      "market_hint": "A.J. Brown to be an Eagle next season",
+      "side": "no",
+      "conviction": "solid",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 1652,
+          "event_type": "entry",
+          "price_pct": null,
+          "size_pct_of_pos": null,
+          "raw_quote": "I have a position on this full disclosure. Will A.J. Brown be an eagle next season? I wish I could say yes. But I am not feeling good about it. It's not looking good. Unfortunately, that is the position I have.",
+          "cleaned_quote": "I have a position on this, full disclosure. Will A.J. Brown be an Eagle next season? I wish I could say yes, but I am not feeling good about it. It's not looking good. Unfortunately, that is the position I have."
+        }
+      ]
+    }
+  ],
+  "mentions": [
+    {
+      "market_source": "unknown",
+      "market_hint": "Philadelphia Eagles game outcomes (hedging use case)",
+      "directional": "explainer",
+      "timestamp_sec": 1188,
+      "cleaned_quote": "As a person who watches the Eagles every single year, my day is good or bad based on the result. There is social value to me to hedge whether the Eagles are going to win or not. I have actually done that on these markets."
+    },
+    {
+      "market_source": "unknown",
+      "market_hint": "Avatar (movie) box office receipts",
+      "directional": "bearish",
+      "timestamp_sec": 1541,
+      "cleaned_quote": "I have a long text chain with a friend on whether Avatar sucks or not. I looked for a market to bet against him that they would underperform the box office receipts, but I was unable to find one. We don't have box office contracts in the U.S."
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "calls": [
+    {
+      "market_source": "unknown",
+      "market_hint": "Cooper Flagg NBA Rookie of the Year",
+      "side": "yes",
+      "conviction": "solid",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 1263,
+          "event_type": "entry",
+          "price_pct": 30.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "our position was hey, we think cooper flags winning this here's why And we gave you that um, basically from about with cooper flag having about a 30 percent chance all the way up into the 70s That entire range we thought was a buy. We thought 70 percent was still a bargain",
+          "cleaned_quote": "Our position was: we think Cooper Flagg is winning this. We gave you that from about a 30 percent chance all the way up into the 70s. That entire range we thought was a buy. We thought 70 percent was still a bargain. At 70 percent you're making 43 percent on your money in a few weeks."
+        },
+        {
+          "timestamp_sec": 1219,
+          "event_type": "resolve",
+          "price_pct": 100.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "We just had a big A big payout actually for a bunch of people who watch predictable This one happened to do in the sports happened to be in the sports arena with cooper flag winning rookie of the year",
+          "cleaned_quote": "We just had a big payout for a bunch of people who watch Predictable. This one was in the sports arena with Cooper Flagg winning Rookie of the Year."
+        }
+      ]
+    },
+    {
+      "market_source": "unknown",
+      "market_hint": "Democrats win the House in 2026 midterms",
+      "side": "yes",
+      "conviction": "solid",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 1340,
+          "event_type": "entry",
+          "price_pct": 55.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "Democrats at about 60 55 60 chance to win before the election... The jump in about november is that election day where democrats went from about a 55 percent chance to win To about a 70 percent chance to win in that particular area We consider this a strong buy in that area We continue to accumulate through the 70s up until about 85 percent",
+          "cleaned_quote": "Democrats were at about a 55-60 percent chance to win before the election. The jump in November is that election day where Democrats went from about a 55 percent chance to about 70 percent. We consider this a strong buy in that area. We continued to accumulate through the 70s up until about 85 percent."
+        },
+        {
+          "timestamp_sec": 1378,
+          "event_type": "trim",
+          "price_pct": 86.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "currently right now It is at 86 percent. I think that's about correctly priced for democrats. I think they're about a 85 86 percent favorite I think that's I'm not necessarily buying a lot right now because I don't think there's that much value I do think it will go to 100",
+          "cleaned_quote": "Right now it is at 86 percent. I think that's about correctly priced — Democrats are about an 85-86 percent favorite. I'm not buying a lot right now because I don't think there's that much value. I do think it will go to 100."
+        }
+      ]
+    },
+    {
+      "market_source": "unknown",
+      "market_hint": "Republicans win the Senate in 2026 midterms",
+      "side": "yes",
+      "conviction": "opinion",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 1507,
+          "event_type": "entry",
+          "price_pct": 50.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "The senate According to Polymarket is basically a 50 50 proposition. The democrats are actually slightly favored on Polymarket I believe cal. She has republicans as slight favorites... I think republicans are are more of a favorite than that I think this is a little bit underpriced for republicans and I think if you have any value here I think the value is on the republican side right now If you were to invest and republican shares to win the senate at 50 percent",
+          "cleaned_quote": "The Senate, according to Polymarket, is basically a 50/50 proposition. Democrats are slightly favored on Polymarket; Kalshi has Republicans as slight favorites. I think Republicans are more of a favorite than that. The value is on the Republican side right now. If you invest in Republican shares to win the Senate at 50 percent, you're doubling your money over six months — a really nice return."
+        }
+      ]
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "Roy Cooper wins NC Senate 2026",
+      "side": "yes",
+      "conviction": "solid",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 1600,
+          "event_type": "entry",
+          "price_pct": 75.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "North carolina Is a race that i think the democrats are going to win I don't think this is media bs. I think that roi cooper is going to win this race This is not a personal guarantee of such things. We're a little too far out But I do have some shares in roi cooper at in the 80s And in the 70s Um, as we are right now roi cooper has an 87 chance to win",
+          "cleaned_quote": "North Carolina is a race I think Democrats will win. Roy Cooper is going to win this. I have some shares in Roy Cooper in the 80s and in the 70s. Right now Roy Cooper has an 87 percent chance. I don't think Michael Whatley can win that race."
+        }
+      ]
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "James Talarico wins TX Senate 2026 (Stu is bearish/Republican-favored)",
+      "side": "no",
+      "conviction": "opinion",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 1689,
+          "event_type": "entry",
+          "price_pct": 46.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "Talorico I think has not really been exposed to republican voters yet and independent voters right now He's sort of an online meme success. He has seen here as a 46 chance of winning according to this is calishe I think that number is considerably too high I think as we get closer to the election, you will see republicans in texas come back home... James talorico is I think a little bit of a worm and will be exposed... cornon probably has a slightly better chance of actually winning And I think though both of those candidates will wind up winning This is not a guarantee. I will say there is some risk here I would say it's more like a 75 25 risk a race for republicans",
+          "cleaned_quote": "Talarico is sort of an online meme success. He's at 46 percent on Kalshi — that number is considerably too high. As we get closer to the election, Republicans in Texas will come home. Talarico is a worm and will be exposed. I'd rather have Paxton than Cornyn; Cornyn probably has a slightly better chance of winning. I'd call it a 75/25 race for Republicans."
+        }
+      ]
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "Republicans win IA Senate 2026 (Iowa)",
+      "side": "yes",
+      "conviction": "solid",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 1882,
+          "event_type": "entry",
+          "price_pct": 59.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "this is probably my one of my favorite races to invest in Right now, which is iowa Iowa, I don't think the democrats have a very good chance of winning in iowa... I think iowa is going to go to the republicans and right now they are only shown to be a 59 chance to win 59 chance again, that means you'd be winning you'd invest let's say second just to make the numbers easier You're investing 60 cents to win a dollar That gets you a 67 profit That's nice a 67 profit is nice Uh, do I think this one's going to come back to republicans when we get closer to the election? I do",
+          "cleaned_quote": "This is one of my favorite races to invest in right now: Iowa. I don't think Democrats have a good chance of winning in Iowa. Republicans are shown to be only a 59 percent chance to win. You're investing 60 cents to win a dollar — that's a 67 percent profit. I think this comes back to Republicans as we get closer to the election."
+        }
+      ]
+    }
+  ],
+  "mentions": [
+    {
+      "market_source": "unknown",
+      "market_hint": "Jimmy Kimmel fired by end of May",
+      "directional": "explainer",
+      "timestamp_sec": 111,
+      "cleaned_quote": "There's an 8 percent chance Jimmy Kimmel will get fired before the end of May. If he's going to be fired over this controversy, you'd think it would definitely be by the end of May."
+    },
+    {
+      "market_source": "unknown",
+      "market_hint": "Jimmy Kimmel fired by end of year",
+      "directional": "explainer",
+      "timestamp_sec": 127,
+      "cleaned_quote": "The market for 'will Jimmy Kimmel be fired by the end of the year' is at 39 percent. The markets are pricing in a very large percentage chance that Jimmy Kimmel will survive this controversy but later say something stupid that gets him fired."
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "OH Senate 2026 — Sherrod Brown vs Republican (Stu: toss-up)",
+      "directional": "neutral",
+      "timestamp_sec": 1755,
+      "cleaned_quote": "Ohio is a really interesting market. We don't know what's going to happen yet. People really like Sherrod Brown running here again. In a strong Democrat year, he's got a real chance. I would say this race is a 50/50 right now. Kalshi has it 58/42. Ohio should not be a loss — that would be catastrophic for Republicans."
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "AK Senate 2026 — Mary Peltola vs Dan Sullivan (Stu: toss-up)",
+      "directional": "neutral",
+      "timestamp_sec": 1797,
+      "cleaned_quote": "Alaska is a race Republicans should just win, but Mary Peltola is the favorite right now over Dan Sullivan. Sullivan's approval ratings are pretty low. Peltola relates well to Alaska. I don't know she'd win in any other state, but she does well there. I have this as a toss-up."
+    }
+  ]
+}

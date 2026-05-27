@@ -1,0 +1,150 @@
+{
+  "calls": [
+    {
+      "market_source": "unknown",
+      "market_hint": "Democrats win the House in 2026 midterms (updated post-SCOTUS VRA ruling)",
+      "side": "yes",
+      "conviction": "solid",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 983,
+          "event_type": "clarify",
+          "price_pct": 82.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "It's ticked down a little bit. It's gone from about 85 to 82 Bouncing between 82 and 83 today. So a very slight difference But a notable one in a market that has not really moved for a couple of months... The democrats are heavy favorites in the house and were heavy favorites in the house. The markets are saying, you know what? We don't buy it's that it's enough to change this election... they're still north of an 80 favorite",
+          "cleaned_quote": "The market ticked down from about 85 to 82, bouncing between 82 and 83 today after the Supreme Court VRA ruling. Notable in a market that hadn't moved for a couple of months. Democrats are still heavy favorites — north of an 80 percent chance — to win the House. The markets are saying the GOP redistricting upside isn't enough to flip this."
+        }
+      ]
+    },
+    {
+      "market_source": "unknown",
+      "market_hint": "Katie Porter wins CA Senate jungle primary",
+      "side": "no",
+      "conviction": "solid",
+      "speaker": "stu",
+      "size_disclosed": "small",
+      "events": [
+        {
+          "timestamp_sec": 1333,
+          "event_type": "entry",
+          "price_pct": 10.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "katie porter is a good example of this This is a position that I have currently which is I just don't believe they're going to pick katie porter I think she's terrible. She's a terrible candidate. She nobody likes her Uh, you know, she's that like I think a 10 chance to win The uh the election right now. I don't think she's going to do that So I would say no on uh on katie porter and I would buy the no I'd have about a 10 cent 10 percentage point profit range there That's not a huge gain... it I think it's I'm pretty sure about that one",
+          "cleaned_quote": "Katie Porter is a position I have currently. I just don't believe they're going to pick her. She's a terrible candidate, nobody likes her. She's at about a 10 percent chance to win. I'd say no on Katie Porter and buy the no — about a 10 percentage point profit range. Not a huge gain, but I'm pretty sure about that one."
+        }
+      ]
+    },
+    {
+      "market_source": "unknown",
+      "market_hint": "Eric Swalwell wins CA Senate jungle primary (historical, resolved)",
+      "side": "no",
+      "conviction": "solid",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 1387,
+          "event_type": "entry",
+          "price_pct": 60.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "Eric swallowing was seen as the favorite for a long time and I said wait a minute eric swallowell is going to win this race No, so I always know on eric swallowell when he was at like 60 so that the profit margin on that one was You know, gosh, I made 60 cents for every 40 that I invested so, you know, 150 percent ish Profit on that one because he lost and he dropped out of the race",
+          "cleaned_quote": "Eric Swalwell was seen as the favorite for a long time. I said, wait a minute, Eric Swalwell is going to win this race? No. I bought no on Swalwell when he was at like 60. The profit margin was 60 cents for every 40 cents invested — about 150 percent profit, because he lost and dropped out of the race."
+        },
+        {
+          "timestamp_sec": 1396,
+          "event_type": "resolve",
+          "price_pct": 0.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "150 percent ish Profit on that one because he lost and he dropped out of the race because he kept touching People in a staff",
+          "cleaned_quote": "Resolved: Swalwell dropped out of the race. About 150 percent profit on the no-position."
+        }
+      ]
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "James Talarico wins TX Senate 2026 (Stu: bearish, R wins)",
+      "side": "no",
+      "conviction": "solid",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 1841,
+          "event_type": "entry",
+          "price_pct": 59.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "Matchups talerico versus Paxton. It's a 59 chance. That is how this plays out talerico versus cornyn A 41 chance what I like to where do I like to go in this one is not necessarily the matchup here Which is kind of trying to predict cornyn versus Paxton I'd probably make Paxton a slight favorite there... in a race though between talerico and either one of these candidates I think you have a strong situation where The republican candidate is gonna wind up being the favorite by around october... You probably have a window here to get in if you're looking to try to go in on the republican side here",
+          "cleaned_quote": "Talarico vs Paxton: it's a 59 percent chance for Talarico. Talarico vs Cornyn: 41 percent. The Republican candidate is going to wind up being the favorite by around October. You have a window here to get in on the Republican side before the primary plays out and the Talarico glow starts fading away."
+        }
+      ]
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "Mike Vrabel coaches Patriots Week 1",
+      "side": "yes",
+      "conviction": "solid",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 2484,
+          "event_type": "entry",
+          "price_pct": 72.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "This is a who coaches week one From cal. She for the new england patriots right now. The favorite is Mike Vrable at 72 I don't think there's huge value there. I think probably it's more like 85 90 percent Maybe there's more that comes out here Uh, but they're wiping out a super bowl coach that turned their franchise around in one year The bar is going to be really high to fire that guy",
+          "cleaned_quote": "On Kalshi for who coaches Week 1 for the Patriots, the favorite is Mike Vrabel at 72. I don't think there's huge value, but I think it's more like 85-90 percent. They're not going to fire a Super Bowl coach who turned their franchise around in one year. The bar is going to be really high."
+        }
+      ]
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "Mike Tomlin coaches Patriots Week 1",
+      "side": "no",
+      "conviction": "solid",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 2565,
+          "event_type": "entry",
+          "price_pct": 10.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "Another person available on this contract is mike tomlin Tomlin was the pittsburgh steelers coach who left the Steelers and is going into broadcasting The chances of him coaching week one for the new england patriots I would say are zero. I don't think there's any chance that happens I think it's about 10 right now. So again another one you can kind of trickle away I love having these these eight these 10 gains just build it in the background",
+          "cleaned_quote": "Another person on this contract is Mike Tomlin — the Steelers coach who left for broadcasting. The chances of him coaching Week 1 for the Patriots I'd say are zero. It's at about 10 percent right now — another one you can kind of trickle away. I love these 8-10 percent gains just building in the background."
+        }
+      ]
+    }
+  ],
+  "mentions": [
+    {
+      "market_source": "polymarket",
+      "market_hint": "CA Senate jungle primary — Tom Steyer (currently leading prediction market at 47%)",
+      "directional": "bearish",
+      "timestamp_sec": 1529,
+      "cleaned_quote": "I don't think California really likes Steyer all that much. I would not be surprised if he is not the winner. Polymarket has Tom Steyer as the favorite at 47 percent, but Becerra is now leading in polls — coming out of nowhere."
+    },
+    {
+      "market_source": "polymarket",
+      "market_hint": "CA Senate jungle primary — Becerra (polling first)",
+      "directional": "bullish",
+      "timestamp_sec": 1475,
+      "cleaned_quote": "In first place for the first time is Becerra at 21 percent. He seems like the type of guy who would win this race. He's been kind of a bottom-of-the-polls guy for a while but is now in second place on Polymarket behind Steyer."
+    },
+    {
+      "market_source": "polymarket",
+      "market_hint": "CA Senate jungle primary — Steve Hilton / Chad Bianco (Republicans)",
+      "directional": "bearish",
+      "timestamp_sec": 1549,
+      "cleaned_quote": "Becerra 21, Hilton 20, Steyer 17, Bianco 15. There is a small chance the top two could be Hilton and Bianco, making the general Republican vs Republican. Hilton at 7.7 percent on Polymarket. If it's Becerra vs Hilton, Hilton is a major underdog because if voters have a Democrat choice, they'll take it."
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "Josh McDaniels coaches Patriots Week 1",
+      "directional": "explainer",
+      "timestamp_sec": 2551,
+      "cleaned_quote": "The second choice on this contract is Josh McDaniels. He's been a coach in other places in the NFL and is on the staff as the offensive coordinator — the obvious replacement if Vrabel is out."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "calls": [],
+  "mentions": [
+    {
+      "market_source": "unknown",
+      "market_hint": "Nicolas Maduro ouster (referenced as past event with insider-trading incident)",
+      "directional": "explainer",
+      "timestamp_sec": 1050,
+      "cleaned_quote": "We talked about the Venezuela situation where a soldier involved in the interaction regarding the removal of Maduro wound up profiting around $400,000. He was on a non-regulated overseas market, was still caught, and is going to have massive legal trouble."
+    }
+  ]
+}
