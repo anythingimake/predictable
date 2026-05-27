@@ -1,0 +1,217 @@
+{
+  "calls": [
+    {
+      "market_source": "unknown",
+      "market_hint": "Virginia redistricts before midterms (Stu: NO, sold at 94 for 114% profit)",
+      "side": "no",
+      "conviction": "play",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 269,
+          "event_type": "entry",
+          "price_pct": 44.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "and I had bought in on the no market on virginia redistricting at 44 So I was like, okay 44 and then we got the the ruling. I believe the correct ruling for multiple reasons by the Uh, virginia supreme court",
+          "cleaned_quote": "I bought in on the no market on Virginia redistricting at 44 cents. The Virginia Supreme Court ruled — correctly, I believe, because Virginia held the first vote three days before the election when 40 percent of voters had already voted, denying them the chance to vote the bums out."
+        },
+        {
+          "timestamp_sec": 354,
+          "event_type": "exit",
+          "price_pct": 94.0,
+          "size_pct_of_pos": 100,
+          "raw_quote": "And sold At 94 cents. Yes, it actually happened for once. This never occurs... I entered the no market in virginia redistricting at 44 cents with the belief that the court would likely overturn it After it happened yesterday, I sold out of my position today at 94 cents No need to stick around for the last six cents of profit with whatever uncertainty is out there Overall 114 percent profit",
+          "cleaned_quote": "Sold at 94 cents. I actually bailed on a market on time for once. No need to stick around for the last 6 cents of profit with all the legal uncertainty. Overall 114 percent profit and a good result — both for my account and the right outcome for the universe."
+        }
+      ],
+      "referenced_media": [
+        {"source_type": "court_ruling", "title": "Virginia Supreme Court overturns redistricting", "outlet": "VA Supreme Court"}
+      ]
+    },
+    {
+      "market_source": "unknown",
+      "market_hint": "Democrats win the House in 2026 midterms",
+      "side": "yes",
+      "conviction": "watch",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 1264,
+          "event_type": "trim",
+          "price_pct": 75.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "We had been talking about this for weeks Democrats had about an 85 chance to win the house in november Now we're looking at about a 75 chance... I bought pretty much up there until around 70 to 75 We're back now at 75 cents at some point. I think this becomes a value again if you're in these markets... I think it's probably High 60s low 70s is where I've been saying around 70 cents. I'll consider getting back in if it gets into the 60s",
+          "cleaned_quote": "Democrats House market slid from 85 to about 75 percent. I had been buying since 55-58 cents up through 70-75. Back at 75 now — becomes a value again. High 60s low 70s is where I've been saying. Around 70 cents I'll consider getting back in; in the 60s I'll consider it more."
+        }
+      ]
+    },
+    {
+      "market_source": "polymarket",
+      "market_hint": "Marco Rubio wins 2028 GOP presidential nomination (Stu: NO)",
+      "side": "no",
+      "conviction": "opinion",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 1947,
+          "event_type": "entry",
+          "price_pct": 21.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "I'm going to say no on that on Mine he's only 13 percent on Polymarket. Is that right 13 percent? I don't know why these usually these things are much closer Closer to line 21 percent right now on calcium. Okay, so 21 percent. It was down from 23 I I like that there. I don't think he's going to be the nominee He is a really solid candidate. He has said however if vance runs he probably will not run",
+          "cleaned_quote": "I'm going no on Marco Rubio at 21 percent on Kalshi. He's a really solid candidate, but he's said if Vance runs he probably will not run. Echoes Dan's Vance pick — there are multiple ways to play the same choice."
+        }
+      ]
+    },
+    {
+      "market_source": "polymarket",
+      "market_hint": "Donald Trump Jr. wins 2028 GOP presidential nomination (Stu: YES long-shot)",
+      "side": "yes",
+      "conviction": "flyer",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 2399,
+          "event_type": "entry",
+          "price_pct": 1.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "I'm going to take this is at 1% Right now on uh on Polymarket. I don't know what is on calcium, but I'm taking donald trump jr As the next nominee... I think there is a real possibility that donald trump attempts to hand down the legacy of his situation The same way he's tried to hand down his business Which is to say hey, I hear somebody I can trust here's someone I believe in he's my son... I will go donald trump jr with my second pick",
+          "cleaned_quote": "Donald Trump Jr at 1 percent on Polymarket. Trump may try to hand down the legacy the same way he handed down his business. He'll say here's someone I can trust — my son. He polls higher than you'd picture and could pop from 1 to 5 or 6 on a news cycle — 5-6x your money."
+        }
+      ]
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "AOC wins 2028 Democratic presidential nomination (Stu: YES long-shot challenger to Dan)",
+      "side": "yes",
+      "conviction": "flyer",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 2876,
+          "event_type": "entry",
+          "price_pct": 4.9,
+          "size_pct_of_pos": null,
+          "raw_quote": "Just to take you on directly though. I will take AOC Yes, I will I will go on you're going. No, I'm going to challenge your pick. I'm going to go AOC. Yes Part of it is the upside right like there's not as much, you know to gain on a no You're only getting 5% there Um, but there I think there is upside and I think there's a chance if she runs She will show up in the top few when it comes to polling I think until she gets on that debate stage or has a couple of interviews that go awry She will have some buzz",
+          "cleaned_quote": "I'm going AOC yes — challenging Dan's pick. There's upside if she runs — she'll show up in the top few in polling. Until she gets on a debate stage or has interviews go awry she'll have buzz, great social media videos, a Spencer Pratt-style run. I do not put it past this country at this point."
+        }
+      ]
+    },
+    {
+      "market_source": "polymarket",
+      "market_hint": "JD Vance wins 2028 presidential election (Dan: YES — Round 1 pick)",
+      "side": "yes",
+      "conviction": "solid",
+      "speaker": "guest:Dan Andros",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 1629,
+          "event_type": "entry",
+          "price_pct": 18.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "I am Going jd vance. This is something that I've noted a while back and it's kind of bullish on that because For the historical reasons. I mean you look back at Kind of how these previous administrations have gone and whenever there is a viable vice president in line At somebody at their last term or the end of the second term They're usually the ones that if they want to run are going to get that nomination... I do think jd vance At 19 percent or 18 percent You know if you couldn't again stick around and wait I think you're going to see at some point because we all know how good he is in debates as well",
+          "cleaned_quote": "I'm going JD Vance at 18-19 percent. Historically a viable VP at the end of the term gets the nomination if they want it. People are comfortable with him. He's good in debates — at the very least he'll get a good primary debate performance and separate from the field."
+        }
+      ]
+    },
+    {
+      "market_source": "polymarket",
+      "market_hint": "Josh Shapiro wins 2028 Democratic nomination (Dan: YES — Round 2 pick)",
+      "side": "yes",
+      "conviction": "flyer",
+      "speaker": "guest:Dan Andros",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 2097,
+          "event_type": "entry",
+          "price_pct": 3.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "I am going with josh Shapiro Because if you remember there was a lot of noise Last time around about him and how the democrats wanted him to run because they just felt like he was much more polished He's in pennsylvania Which is obviously a huge state and There was just a lot of noise and his name was the one that kind of bubbled up... So I do think at some point Now again, this is I mean I know you're laughing because democrats like trying to go the normal route is typically not what they end up doing",
+          "cleaned_quote": "Going Josh Shapiro. Last time there was lots of noise about Democrats wanting him to run — much more polished, Pennsylvania is huge. They didn't go that route but his name will be in the mix. Stu: a rational Democratic party would seriously consider him, but the Hamas wing makes it hard."
+        }
+      ]
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "AOC wins 2028 Democratic nomination (Dan: NO — Round 3 pick)",
+      "side": "no",
+      "conviction": "flyer",
+      "speaker": "guest:Dan Andros",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 2649,
+          "event_type": "entry",
+          "price_pct": 4.9,
+          "size_pct_of_pos": null,
+          "raw_quote": "I am going with alexandria Ocasio-cortez at 4.9 percent on Calci as a no As I'm going as a no though No, this is why I'm saying this clip could live in infamy because I'm going to be one of those people that she can't win... Given the performances I have seen in the public eye I just don't see if she were to run How that would end in a presidential win Again crazier things, you know, we've seen a lot of crazy things. So who knows but I feel like at 5% you can Stack a no here and stack a win",
+          "cleaned_quote": "I'm going AOC no at 4.9 percent on Kalshi as the Democratic nominee. This clip could live in infamy. Given her performances in the public eye I don't see how it ends in a presidential win. At 5 percent you can stack a no and stack a win."
+        }
+      ]
+    }
+  ],
+  "mentions": [
+    {
+      "market_source": "kalshi",
+      "market_hint": "Republicans build redistricting advantage — total seat gain estimate",
+      "directional": "bullish",
+      "timestamp_sec": 1141,
+      "cleaned_quote": "NYT: Florida redistrict gives Republicans 1.4 percent. Tennessee 1.8. Virginia 2.5. If Alabama, Louisiana, South Carolina also redistrict, up to 3.9 percent. At 3.9, Republicans can lose the generic congressional vote by 2-3 points and still have a really good chance at winning the House."
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "JD Vance wins 2028 GOP presidential nomination",
+      "directional": "bullish",
+      "timestamp_sec": 1430,
+      "cleaned_quote": "JD Vance leads the GOP nomination at 37 percent. Marco Rubio 25 percent. Tucker Carlson third at 6 percent. Ron DeSantis 3.5 percent — interesting that an accomplished governor is at 3.5 while Tucker is double that."
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "Gavin Newsom wins 2028 Democratic nomination",
+      "directional": "bullish",
+      "timestamp_sec": 1486,
+      "cleaned_quote": "Gavin Newsom number one for Democratic nomination at 24 percent. Kamala Harris 9 percent. AOC 8.3 percent. Jon Ossoff 6.4 percent."
+    },
+    {
+      "market_source": "polymarket",
+      "market_hint": "Marco Rubio wins 2028 presidential election (Polymarket sees him #1)",
+      "directional": "bullish",
+      "timestamp_sec": 1567,
+      "cleaned_quote": "On Polymarket, Marco Rubio actually first at 21 percent for 2028 presidential election winner. Vance at 18 percent. Newsom third at 17 percent. Rubio recently overtook Vance on Kalshi too — good press conferences, explains things well."
+    },
+    {
+      "market_source": "polymarket",
+      "market_hint": "Tim Walz wins 2028 Democratic nomination (long-shot territory)",
+      "directional": "bearish",
+      "timestamp_sec": 2292,
+      "cleaned_quote": "Tim Walz at 1 percent on Polymarket. Currently next to LeBron James who's also at 1 percent, and Zohran Mamdani who isn't even eligible. On Kalshi he's at 0.3 percent."
+    },
+    {
+      "market_source": "polymarket",
+      "market_hint": "Donald Trump wins 2028 presidential election (constitutional question)",
+      "directional": "bearish",
+      "timestamp_sec": 2780,
+      "cleaned_quote": "Trump senior at 2.3 percent on Polymarket, 3 percent on Kalshi. A little high for a guy not constitutionally eligible. If he was at 0.5 percent I'd pick it — if midterms go well and there's a court ruling, could 10x. He controls every news cycle."
+    },
+    {
+      "market_source": "polymarket",
+      "market_hint": "AOC wins 2028 presidential election",
+      "directional": "explainer",
+      "timestamp_sec": 1437,
+      "cleaned_quote": "AOC at 5.3 percent on Polymarket for presidential election winner. Fourth on Kalshi for 2028 presidential. Good heavens."
+    },
+    {
+      "market_source": "polymarket",
+      "market_hint": "Tucker Carlson wins 2028 GOP nomination",
+      "directional": "bearish",
+      "timestamp_sec": 1451,
+      "cleaned_quote": "Tucker Carlson third for GOP nomination at 6 percent. No political experience, taking positions that aren't widely held. Almost double Ron DeSantis."
+    }
+  ]
+}

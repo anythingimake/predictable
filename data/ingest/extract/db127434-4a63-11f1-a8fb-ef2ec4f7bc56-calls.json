@@ -1,0 +1,153 @@
+{
+  "calls": [
+    {
+      "market_source": "unknown",
+      "market_hint": "Javier Becerra wins CA gubernatorial jungle primary (Stu's position)",
+      "side": "yes",
+      "conviction": "solid",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 1135,
+          "event_type": "entry",
+          "price_pct": 44.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "That's why we have taken a position on javier basera. Now. I don't think he'll be a good governor He was the hhs secretary for a while there Um, I don't think he'll be do a good job at all. In fact, I think he'll be he'll do a terrible job But I do think that there's a good chance and it has happened so far that people will run to basera basera is one of these guys who's kind of seen as a very boring dull government official And frankly coming out of eric swall well and katie porter if you're a california democrat That sounds delicious to you right now somebody who's going to make no news",
+          "cleaned_quote": "We've taken a position on Javier Becerra. I don't think he'll be a good governor — he was HHS Secretary. But there's a good chance people will run to him. Becerra is seen as a boring, dull government official, and coming out of Swalwell and Katie Porter, that sounds delicious to California Democrats. Someone who'll make no news."
+        },
+        {
+          "timestamp_sec": 1207,
+          "event_type": "clarify",
+          "price_pct": 45.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "basera now leaves at 40 the updated numbers 45 styret 40 hilton at 9 Bianco 3 mayhem 3 and porter 1",
+          "cleaned_quote": "Becerra now leads at 45 percent. Steyer at 40, Hilton 9, Bianco 3, Mayhem 3, Porter 1."
+        }
+      ]
+    },
+    {
+      "market_source": "unknown",
+      "market_hint": "Katie Porter wins CA gubernatorial jungle primary (Stu: NO, now 1%)",
+      "side": "no",
+      "conviction": "solid",
+      "speaker": "stu",
+      "size_disclosed": "small",
+      "events": [
+        {
+          "timestamp_sec": 1053,
+          "event_type": "clarify",
+          "price_pct": 1.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "katie porter. Did you come up with a number? Did you come up with a number before when you're watching all those clips? What's katie porter's chance of winning this? 1% Now that's kind of the lowest it goes",
+          "cleaned_quote": "Katie Porter is at 1 percent — about as low as it goes. She was the headliner of this race at one point. Things have changed dramatically — get-out-of-my-shot, taxpayer-funded healthcare for illegal immigrants, and the Bianco mom comeback all hurt her."
+        }
+      ]
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "CA gubernatorial general — Bianco vs Hilton (R-vs-R) matchup (Stu: NO)",
+      "side": "no",
+      "conviction": "flyer",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 1483,
+          "event_type": "entry",
+          "price_pct": 7.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "if you go in here and you see a matchup of like Well, I don't think it's going to be tom steyer versus katie porter You can go know on that and uh and and clean up your one percent Honestly, a lot of those are pretty small Outcomes, but there are some there like I think there's some interest honestly I have in saying no To the republican versus republican situation",
+          "cleaned_quote": "There's interest in saying no to the Republican-vs-Republican final scenario. The markets say about 7 percent for a Bianco-vs-Hilton matchup. If you go no on the R-vs-R first-and-two, that's about an 8 percent gain over a couple weeks."
+        }
+      ]
+    },
+    {
+      "market_source": "unknown",
+      "market_hint": "Spencer Pratt wins LA Mayor (Stu likes NO at 24% gain)",
+      "side": "no",
+      "conviction": "watch",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 2146,
+          "event_type": "entry",
+          "price_pct": 24.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "I kind of like the idea that I could go know there and get 24 profit 24 percentage point profit And um, again, it's easier to say no what's not going to happen than what is going to happen I kind of like the idea of that plus if I lose that one I'm going to be happy for at least the people of los angeles I don't have a position in this particular market, but that's the way I'm thinking about it right now",
+          "cleaned_quote": "I kind of like the idea of going no on Spencer Pratt as LA Mayor and getting a 24 percentage point profit. Easier to say what won't happen than what will. Plus, if I lose, I'm happy for the people of LA. I don't have a position yet, but that's the way I'm thinking about it."
+        }
+      ]
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "US/Iran nuclear deal before 2027 (Stu: bearish, but caution rules favor YES)",
+      "side": "no",
+      "conviction": "opinion",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 2500,
+          "event_type": "entry",
+          "price_pct": 59.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "is there going to be a u.s. Iran nuclear deal is sitting up? This year at 59 percent is going to happen before september 48 percent before august 40 percent Now of course when you think about the mechanics of a deal like that they take a long time to negotiate... My kind of current stance on all these are Iran markets straight-of-hormuz... is kind of think whatever the whatever seems to be happening go the other way",
+          "cleaned_quote": "US-Iran nuclear deal this year is at 59 percent. Before September 48 percent, before August 40 percent. My current stance on all Iran markets — Strait of Hormuz, etc. — is whatever seems to be happening, go the other way. But beware: rules say public agreement counts, signing not required. Could resolve yes easily."
+        }
+      ]
+    }
+  ],
+  "mentions": [
+    {
+      "market_source": "unknown",
+      "market_hint": "Tom Steyer wins CA gubernatorial jungle primary",
+      "directional": "neutral",
+      "timestamp_sec": 1031,
+      "cleaned_quote": "Tom Steyer at 37 percent when we pulled this. Updated: 40 percent. Bubbling around the top with Becerra."
+    },
+    {
+      "market_source": "unknown",
+      "market_hint": "Steve Hilton wins CA gubernatorial jungle primary",
+      "directional": "bullish",
+      "timestamp_sec": 1036,
+      "cleaned_quote": "Steve Hilton at about 9 percent. Pretty good candidate frankly — partially won over by the British accent. Not the extreme type Republican California might hate. Possible path to the final two."
+    },
+    {
+      "market_source": "unknown",
+      "market_hint": "Chad Bianco wins CA gubernatorial jungle primary",
+      "directional": "neutral",
+      "timestamp_sec": 1039,
+      "cleaned_quote": "Chad Bianco at 3 percent. Had the standout debate moment with the mother lecture comeback to Katie Porter."
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "Republican wins CA gubernatorial general (combined paths)",
+      "directional": "bearish",
+      "timestamp_sec": 1296,
+      "cleaned_quote": "Markets believe there's an 11 percent chance of a Republican winning the CA governor race. That encompasses both the one-two Republican scenario and a Republican winning a one-on-one against a Democrat."
+    },
+    {
+      "market_source": "unknown",
+      "market_hint": "Karen Bass vs Spencer Pratt LA Mayor matchup",
+      "directional": "bullish",
+      "timestamp_sec": 1980,
+      "cleaned_quote": "Most likely matchup is Karen Bass vs Spencer Pratt — 50 percent chance per markets. Steep recent incline — Pratt's ads are landing. People like the ads. Karen Bass at the top to actually win, but anti-Bass sentiment is strong."
+    },
+    {
+      "market_source": "unknown",
+      "market_hint": "Karen Bass wins LA Mayor",
+      "directional": "bullish",
+      "timestamp_sec": 2041,
+      "cleaned_quote": "Markets believe it's going to be Karen Bass to actually win. Got a strong Republican challenger (Pratt around 25 percent) and a weak Democratic challenger in Ramon — Pratt called her a 'random city councilman' at the debate."
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "US/Iran nuclear deal before September 2026",
+      "directional": "explainer",
+      "timestamp_sec": 2500,
+      "cleaned_quote": "Before September: 48 percent. Before August: 40 percent. Note rules: 'agreed, signed or accepted' — and publicly agreeing counts even without signing. A surrender wouldn't trigger yes because it must lift sanctions too."
+    }
+  ]
+}

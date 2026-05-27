@@ -1,0 +1,183 @@
+{
+  "calls": [
+    {
+      "market_source": "unknown",
+      "market_hint": "Brad Meyer wins NC-09 Democratic primary (live in-show trade)",
+      "side": "yes",
+      "conviction": "play",
+      "speaker": "stu",
+      "size_disclosed": "large",
+      "events": [
+        {
+          "timestamp_sec": 1089,
+          "event_type": "entry",
+          "price_pct": 87.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "There are still shares out there for him at eighty seven percent. I got to say, I think I'm going to dive in there a little bit. Honestly, right now and take a position. I mean, it's not going to make me a lot of money, but taking a position right now and Brad Meyer, I'm kind of convinced I'm on the Meyer train a little bit. I'm on the Meyer train.",
+          "cleaned_quote": "There are still shares out there for Brad Meyer at 87 percent. I think I'm going to dive in and take a position. I'm on the Meyer train."
+        },
+        {
+          "timestamp_sec": 1236,
+          "event_type": "add",
+          "price_pct": 72.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "we shouldn't be able to be buying in the 80s and we bought even lower than 87 as well. I was buying it after that video was buying in the 70, 72% chance to win. And again, if you're new to this 72% chance to win, basically for every 72 cents you invest, you get a 28% profit... And I was loading up on shares for the next couple of hours after that at those levels because it was over. I could see it was over.",
+          "cleaned_quote": "I was buying after that video — even at 72 percent. For every 72 cents you invest, you get a 28 percent profit, about a 33 percent turnaround. I loaded up for the next couple of hours because it was over. There weren't enough votes in Clark County to flip it."
+        },
+        {
+          "timestamp_sec": 1280,
+          "event_type": "resolve",
+          "price_pct": 100.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "We caught about a 30 some odd percent profit there on Bradmeyer Mania. And we were able to do that because we saw the change happening. We didn't get involved too early in a race we weren't sure about. When we became sure we went in and we had a conviction and we kept going.",
+          "cleaned_quote": "Resolved: about 30-some percent profit on Bradmeyer Mania. We saw the change happening, didn't get in too early, became sure and went in with conviction."
+        }
+      ]
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "Mike Vrabel coaches Patriots Week 1 (Stu: exit, taking 20pt profit)",
+      "side": "yes",
+      "conviction": "solid",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 2272,
+          "event_type": "entry",
+          "price_pct": 50.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "I'm going no on this he was at the time let's see the time Vrable was I want to say something like close to 50-50 basically when we got into that market and we went no that Vrable would we'd say basically Vrable would still be the coach we got that in that around 50 or so",
+          "cleaned_quote": "We got into Vrabel still being the head coach around 50-50. The NFL puts up with a lot — an affair isn't usually firing-level for a successful coach. The owner himself had similar issues. So we went yes Vrabel at around 50."
+        },
+        {
+          "timestamp_sec": 2467,
+          "event_type": "exit",
+          "price_pct": 76.0,
+          "size_pct_of_pos": 100,
+          "raw_quote": "basically my long story here is to tell you I'm now out of that market I sold out of it I still would be surprised if they fired him but honestly I don't think the risk is there anymore we've made 20 percentage points or so on the market already I'm pulling my money out",
+          "cleaned_quote": "I'm now out of that market — sold out. I'd still be surprised if they fired him, but the risk isn't there anymore. The reporting suggests Diana Rossini may go scorched earth, and if she does, who knows what else is hidden. Made about 20 percentage points already. Pulling money out."
+        }
+      ],
+      "referenced_media": [
+        {"source_type": "article", "title": "Vrabel-Rossini affair reporting", "outlet": "NYT"}
+      ]
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "Mike Tomlin coaches Patriots Week 1 (Stu: NO holding to resolution)",
+      "side": "no",
+      "conviction": "solid",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 2537,
+          "event_type": "entry",
+          "price_pct": 12.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "we have a no on Mike Tomlin again when you say this over and over again it's easier to predict what won't happen and Mike Tomlin is not going to be the coach of the New England Patriots in week one this would be a completely insane thing he just left a long-term coaching job this would be an overhaul of their entire staff he's already got a job as a broadcaster for this year it makes no sense that Tomlin would be the guy even though he'd be a great candidate for the job if they really wanted to 4% I think is even too high I think we got in at a no at about 12% and I've written that down to 4% and I'm just going to keep holding it probably until the end",
+          "cleaned_quote": "We have a no on Mike Tomlin coaching Patriots Week 1. It would be completely insane — he just left long-term coaching, already has a broadcasting job. Even 4 percent is too high. Got in no at about 12 percent, written it down to 4 percent, going to keep holding until the end."
+        }
+      ]
+    },
+    {
+      "market_source": "unknown",
+      "market_hint": "Members of Congress banned from trading stocks before 2027 (Stu: NO)",
+      "side": "no",
+      "conviction": "flyer",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 2078,
+          "event_type": "entry",
+          "price_pct": 9.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "will members of congress be banned from trading stocks? We have a prediction market that looks at it before 2027 so will it happen this year only a 9% chance it'll happen this year honestly you could probably go against that one and get a few percent because I doubt it's going to happen",
+          "cleaned_quote": "Will Congress be banned from trading stocks before 2027? Only a 9 percent chance. You could probably go against that one and get a few percent — I doubt it's going to happen."
+        }
+      ]
+    },
+    {
+      "market_source": "unknown",
+      "market_hint": "Vivek Ramaswamy wins OH general gubernatorial election (vs Amy Acton)",
+      "side": "yes",
+      "conviction": "watch",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 720,
+          "event_type": "entry",
+          "price_pct": 46.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "Ohio Governor, the winner. Right now it is a slight favorite for Amy Acton. 55-46 percentage chance to win. That's not a voting percentage. We don't expect her to win by nine points, but who will win the race? Right now Amy Acton is favored. Again, I kind of like Rama Swami in that one, frankly. That's something I might start building a little bit of a position.",
+          "cleaned_quote": "Ohio Governor general — Amy Acton slight favorite 55-46. I kind of like Ramaswamy in that one. Something I might start building a little position in."
+        }
+      ]
+    },
+    {
+      "market_source": "unknown",
+      "market_hint": "Husted wins OH Senate general (vs Sherrod Brown)",
+      "side": "yes",
+      "conviction": "opinion",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 745,
+          "event_type": "entry",
+          "price_pct": 43.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "And the Ohio Senate race kind of looks the same way. Sherrod Brown as the favorite 57-43. I do think Rama Swami will probably wind up winning that. Houston, I'm not as sure about. Sherrod Brown, I think, is a much more formidable challenger.",
+          "cleaned_quote": "Ohio Senate looks the same way — Sherrod Brown favored 57-43. I'm not as sure about Husted. Sherrod Brown is a much more formidable challenger."
+        }
+      ]
+    }
+  ],
+  "mentions": [
+    {
+      "market_source": "kalshi",
+      "market_hint": "Tim Peck wins NC-09 Democratic primary (defeated, market mispricing)",
+      "directional": "explainer",
+      "timestamp_sec": 939,
+      "cleaned_quote": "At 3:54 PM Tim Peck had a 96.1 percent chance to win NC-09. In second place Jim Graham at 7 percent. Brad Meyer at 4 percent — and that was high for Brad. Adds up to more than 100 percent because it wasn't a particularly big market."
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "Closest US Senate race of 2026 — Texas leading",
+      "directional": "explainer",
+      "timestamp_sec": 768,
+      "cleaned_quote": "Texas is the leading candidate for the closest Senate race of the year right now. If Texas is the closest, that's a very bad sign for Republicans. Alaska is second, Ohio third."
+    },
+    {
+      "market_source": "unknown",
+      "market_hint": "Members of Congress banned from trading stocks before 2029",
+      "directional": "explainer",
+      "timestamp_sec": 2088,
+      "cleaned_quote": "Before 2029, a 58 percent chance Congress is banned from trading stocks. Markets believe eventually this will be blocked — much public support, a 2028 candidate will likely make it a central platform issue."
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "Vivek Ramaswamy OH Republican governor primary vote percentage tiers (multi-strike)",
+      "directional": "explainer",
+      "timestamp_sec": 482,
+      "cleaned_quote": "We placed positions: Ramaswamy not under 50 (won), over 60 (won), over 70 (won), then took those gains to fund a free ticket on over 80 — break even worst case, over 100 percent if it hits. Free ticket strategy."
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "Indiana redistricts before midterms (Stu's earlier flyer, still tracking)",
+      "directional": "bullish",
+      "timestamp_sec": 331,
+      "cleaned_quote": "Indiana redistricting was 7 percent when we talked about it. With Trump's primary challengers beating five of seven incumbents who bucked him, redistricting becomes more likely. Long shot we expect to lose, but at 7 percent of something we think is 30-40 percent, there's real value."
+    },
+    {
+      "market_source": "polymarket",
+      "market_hint": "Nicolas Maduro out as Venezuela leader (historical insider-trading concern)",
+      "directional": "explainer",
+      "timestamp_sec": 1685,
+      "cleaned_quote": "A person involved in the Maduro operation supposedly went on Polymarket overseas and won $400,000 on the Maduro ouster. That could have endangered the operation — should be prosecuted. Though a part of me thinks maybe the soldiers who pulled that off deserve a $400K bonus."
+    }
+  ]
+}

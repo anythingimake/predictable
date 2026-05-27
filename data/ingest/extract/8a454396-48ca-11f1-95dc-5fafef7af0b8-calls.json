@@ -1,0 +1,209 @@
+{
+  "calls": [
+    {
+      "market_source": "kalshi",
+      "market_hint": "Marlin Stutzman wins IN-03 primary (sure-thing bonding play)",
+      "side": "yes",
+      "conviction": "solid",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 954,
+          "event_type": "entry",
+          "price_pct": 95.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "stutzman's gonna win his race. Okay, that's gonna happen tonight I I would tell you I'm I would invest on that and I have okay I and you might say well, wait a minute. We were talking about this like 96 chance. What's the point? Well, it's happening tonight If you can get four percent in a day, it's pretty good",
+          "cleaned_quote": "Stutzman's going to win his race tonight. I'd invest on that — and I have. You might say, we're talking 96 percent — what's the point? Well, it's happening tonight. If you can get 4 percent in a day, that's pretty good. This is the bonding play: stack very small gains in very short periods to beat a checking account."
+        }
+      ]
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "Vivek Ramaswamy clears 80% in OH Republican gubernatorial primary",
+      "side": "over",
+      "conviction": "opinion",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 1238,
+          "event_type": "entry",
+          "price_pct": 50.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "Will Vivek Ramaswamy clear 80 percent It's about a 50-50 chance I think it's now rising a little bit above that most people think he may Actually clear 80 percent in this uh in this particular election The projection from everybody putting their positions in has him at about 75 percent chance Or 75 percent of the vote Will he get over 80 if he does a little bit better if you think he's going to do a little bit better than people think Then you go over 80 and you could actually double your money Today",
+          "cleaned_quote": "Will Vivek Ramaswamy clear 80 percent? It's about a 50-50 chance — rising a little above that. Most people think he may actually clear 80 percent. Projection is 75 percent of the vote. If you think he does a little better than people think, go over 80 and you could double your money today."
+        }
+      ]
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "Vivek Ramaswamy under 50% in OH Republican gubernatorial primary (Stu: NO)",
+      "side": "no",
+      "conviction": "solid",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 1178,
+          "event_type": "entry",
+          "price_pct": null,
+          "size_pct_of_pos": null,
+          "raw_quote": "There is a position for um for Vivek Ramaswamy to win under 50 percent Now if he wins under 50 percent, there's a chance he's going to lose that election, of course... The bottom line here is to say that there's more value in his under 50 percent To say no, he won't be under 50 percent Then there is whether he will win and I think there's almost no chance he's going to be under 50 percent",
+          "cleaned_quote": "There's a position for Vivek Ramaswamy to win under 50 percent. There's more value in saying no, he won't be under 50, than in betting whether he wins overall. I think there's almost no chance he's under 50 percent."
+        }
+      ]
+    },
+    {
+      "market_source": "unknown",
+      "market_hint": "Democrats win the House in 2026 midterms",
+      "side": "yes",
+      "conviction": "watch",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 1377,
+          "event_type": "trim",
+          "price_pct": 80.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "and honestly, you know democrats start getting into the 70s I'm going to start looking at you know potentially increasing my position again because I don't I don't think it's that You know, I think probably low 70s. I'm back in I was buying back in the 50s and 60s quite a bit It's been up to to 85 it continues to fall I'd be at least interested to look at it on the other side",
+          "cleaned_quote": "Democrats House market slid from 85 down to about 80 since the Supreme Court ruling. I think it's appropriately priced. If Democrats get into the 70s I'm going to look at increasing my position again. I was buying back in the 50s and 60s. In low 70s I'm back in."
+        }
+      ]
+    },
+    {
+      "market_source": "polymarket",
+      "market_hint": "US/Iran permanent peace deal by June 30 (Stu: NO)",
+      "side": "no",
+      "conviction": "solid",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 1780,
+          "event_type": "entry",
+          "price_pct": 37.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "June 30th for a 37 chance like I do not think there's a 37 chance of a permanent peace deal being done in the next six weeks Like I think that's really unlikely... I would put that more at like five percent... So I like both of those no markets at june 30th and then december 31st particularly and honestly 14 percent by the end of may kind of sounds delicious as well So I'd be no on pretty much all of these markets",
+          "cleaned_quote": "June 30 for a 37 percent chance of a US/Iran permanent peace deal — I do not think there's a 37 percent chance in the next six weeks. I'd put it more at 5 percent. I like the no on June 30 and December 31 particularly. 14 percent by end of May sounds delicious too. I'd be no on pretty much all these markets."
+        }
+      ]
+    },
+    {
+      "market_source": "polymarket",
+      "market_hint": "US/Iran permanent peace deal by December 31 (Stu: NO)",
+      "side": "no",
+      "conviction": "solid",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 1800,
+          "event_type": "entry",
+          "price_pct": 65.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "and then when it comes to the end of you know, you're talking december 31st end of the year a permanent peace deal again This isn't a standoff where we all kind of just say that we won and people stop firing at each other We're talking about a permanent peace deal. I don't think there's a 65 chance of that by the end of the year I think that might be 25 percent",
+          "cleaned_quote": "December 31 for a 65 percent chance of a permanent peace deal. This isn't a standoff — we're talking permanent peace. I don't think it's 65 percent. I think it might be 25 percent."
+        }
+      ]
+    },
+    {
+      "market_source": "polymarket",
+      "market_hint": "US/Iran permanent peace deal by May 31 (Stu: NO)",
+      "side": "no",
+      "conviction": "solid",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 1631,
+          "event_type": "entry",
+          "price_pct": 14.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "Good chunk of me thinking I might go on that market and go no On that one. I don't know. I'm not that optimistic... 14 percent by the end of may kind of sounds delicious as well",
+          "cleaned_quote": "14 percent by end of May for a US/Iran permanent peace deal sounds delicious. Good chunk of me thinking I might go no — I'm not that optimistic."
+        }
+      ]
+    },
+    {
+      "market_source": "unknown",
+      "market_hint": "GameStop acquires eBay this year (Stu: NO)",
+      "side": "no",
+      "conviction": "solid",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 2143,
+          "event_type": "entry",
+          "price_pct": 22.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "I do have a position on this market. This is one I kind of like... I don't think they're getting this done by the end of the year That's what I'm gonna say. So, uh, here's one. I kind of like will game stop acquire ebay this year I'm gonna go with no Which would be a 22 22 percent chance of that happening. So, uh, you'd be getting a 22 cent gain on every 78 cents you invest Well worth it. I would say uh, and I think a return on I'm Pretty confident after seeing that interview",
+          "cleaned_quote": "Will GameStop acquire eBay this year? I'm going no — at 22 percent, you'd get a 22 cent gain on every 78 cents. The GameStop CEO interview was a great answer, but their entire value is $11 billion, plus $9 billion cash, plus a non-locked $20 billion financing letter — still $16 billion short. Won't get done by year-end."
+        }
+      ],
+      "referenced_media": [
+        {"source_type": "other", "title": "GameStop CEO interview on eBay acquisition bid", "outlet": "CNBC"}
+      ]
+    }
+  ],
+  "mentions": [
+    {
+      "market_source": "kalshi",
+      "market_hint": "Victoria Spartz wins IN-05 primary",
+      "directional": "bullish",
+      "timestamp_sec": 804,
+      "cleaned_quote": "Victoria Spartz running again in the mid 90s when it comes to her chance to win IN-05."
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "Patrick McCally wins IN-07 primary",
+      "directional": "bullish",
+      "timestamp_sec": 811,
+      "cleaned_quote": "Indiana 07 is a 95.6 percent chance for Patrick McCally to win."
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "Vivek Ramaswamy wins OH Republican governor primary",
+      "directional": "bullish",
+      "timestamp_sec": 828,
+      "cleaned_quote": "Vivek Ramaswamy is going to cruise to victory tonight — 99.3 percent chance to win OH Republican gubernatorial primary."
+    },
+    {
+      "market_source": "unknown",
+      "market_hint": "Republicans win Senate 2026",
+      "directional": "bullish",
+      "timestamp_sec": 1402,
+      "cleaned_quote": "Senate was at 75-80 percent Republicans, dropped to 60 percent, then narrowed to a tie at the beginning of the year. Republicans now at 54-46 chance to win the Senate. Important if Republicans are going to hold."
+    },
+    {
+      "market_source": "polymarket",
+      "market_hint": "US/Iran permanent peace deal by May 15",
+      "directional": "explainer",
+      "timestamp_sec": 1612,
+      "cleaned_quote": "US and Iran permanent peace deal by May 15 — only a 4 percent chance, about a week and a half away. Not very likely according to these markets."
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "Crude oil drops to $95/barrel in May 2026",
+      "directional": "neutral",
+      "timestamp_sec": 1869,
+      "cleaned_quote": "Crude oil currently between $95 and $100. A 77 percent chance it drops to $95 a barrel this month. 60 percent chance it drops to $90. Only 22 percent chance it gets to $80."
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "Crude oil hits $110/barrel in May 2026",
+      "directional": "neutral",
+      "timestamp_sec": 1909,
+      "cleaned_quote": "Will oil get to $110 a barrel? Only a 70 percent chance of that. Real spike at $120 — only a 36 percent chance. Markets don't expect a solution or a massive inflammation in the next several weeks."
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "Ohio Republican governor primary — Vivek vote share (over/under markets)",
+      "directional": "explainer",
+      "timestamp_sec": 1144,
+      "cleaned_quote": "Polls show Vivek in the high 60s to low 70s. There are markets for whether he gets over 60, 70, 80 percent of the vote — multiple ways to slice the same race."
+    }
+  ]
+}
