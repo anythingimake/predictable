@@ -1,0 +1,2861 @@
+{
+  "audio_file": "C:\\Users\\NoahYaffe\\Documents\\GitHub\\anythingimake\\predictable\\data\\audio\\39c84128-3f71-11f1-b5f7-4f56aa126e13.mp3",
+  "language": "en",
+  "duration": 2017.306125,
+  "pass1_model": "small",
+  "pass2_model": null,
+  "pass2_rescued_count": 0,
+  "pass1_segment_count": 407,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 4.88,
+      "text": "We are live from Feddy's house. Guests are gathering around the TV even with a big storm",
+      "source": "pass1",
+      "avg_logprob": -0.139569314462798
+    },
+    {
+      "start": 4.88,
+      "end": 8.72,
+      "text": "outside. Are we worried about the fee? Nope, they have Xfinity Wi-Fi. Get reliable",
+      "source": "pass1",
+      "avg_logprob": -0.139569314462798
+    },
+    {
+      "start": 8.72,
+      "end": 12.32,
+      "text": "fiber-powered Gig Wi-Fi with Peacock included to stream the beautiful game this summer.",
+      "source": "pass1",
+      "avg_logprob": -0.139569314462798
+    },
+    {
+      "start": 12.32,
+      "end": 15.36,
+      "text": "Xfinity. Imagine that. Restrictions apply. New Gig Internet customers only.",
+      "source": "pass1",
+      "avg_logprob": -0.139569314462798
+    },
+    {
+      "start": 15.36,
+      "end": 18.4,
+      "text": "Actual speeds vary. Offer for Peacock Premium with ads currently at $10.99 a month value",
+      "source": "pass1",
+      "avg_logprob": -0.139569314462798
+    },
+    {
+      "start": 18.4,
+      "end": 21.36,
+      "text": "and limited to Xfinity Internet members with newer upgraded Gig Speed or faster service.",
+      "source": "pass1",
+      "avg_logprob": -0.139569314462798
+    },
+    {
+      "start": 21.36,
+      "end": 24.32,
+      "text": "Activation required to access content. Peacock must be activated within first 90 days.",
+      "source": "pass1",
+      "avg_logprob": -0.139569314462798
+    },
+    {
+      "start": 24.32,
+      "end": 27.28,
+      "text": "Management of existing subscriptions may be required to avoid multiple subscriptions",
+      "source": "pass1",
+      "avg_logprob": -0.139569314462798
+    },
+    {
+      "start": 27.28,
+      "end": 29.92,
+      "text": "and duplicate charges. Third-party build subscriptions continue until canceled.",
+      "source": "pass1",
+      "avg_logprob": -0.45540718361735344
+    },
+    {
+      "start": 57.28,
+      "end": 64.08,
+      "text": "I thought it was important while we're in DC to bring in the guy behind the markets.",
+      "source": "pass1",
+      "avg_logprob": -0.2644459261842396
+    },
+    {
+      "start": 64.08,
+      "end": 71.28,
+      "text": "This is the person who oversees as part of the organization, the CFTC. All these prediction",
+      "source": "pass1",
+      "avg_logprob": -0.2644459261842396
+    },
+    {
+      "start": 71.28,
+      "end": 77.52,
+      "text": "markets along with a lot more. I want to bring them in now. CFTC chair, Michael Selig. Michael,",
+      "source": "pass1",
+      "avg_logprob": -0.2644459261842396
+    },
+    {
+      "start": 77.52,
+      "end": 83.52,
+      "text": "welcome. You just started this. It was December. You got sworn in, right?",
+      "source": "pass1",
+      "avg_logprob": -0.2644459261842396
+    },
+    {
+      "start": 83.52,
+      "end": 85.92,
+      "text": "That's right. I've been in just over 100 days now.",
+      "source": "pass1",
+      "avg_logprob": -0.13916628185762178
+    },
+    {
+      "start": 85.92,
+      "end": 87.84,
+      "text": "Yeah. How has it been for 100 days?",
+      "source": "pass1",
+      "avg_logprob": -0.13916628185762178
+    },
+    {
+      "start": 87.84,
+      "end": 93.92,
+      "text": "It's been exciting. We, of course, have this prediction markets issue that has been",
+      "source": "pass1",
+      "avg_logprob": -0.13916628185762178
+    },
+    {
+      "start": 93.92,
+      "end": 101.68,
+      "text": "festering, lingering, and really taking off in the recent months. Of course, we oversea",
+      "source": "pass1",
+      "avg_logprob": -0.13916628185762178
+    },
+    {
+      "start": 101.68,
+      "end": 106.24,
+      "text": "over $500 trillion in ocean derivatives markets. There's a lot on our plate,",
+      "source": "pass1",
+      "avg_logprob": -0.13916628185762178
+    },
+    {
+      "start": 106.24,
+      "end": 111.2,
+      "text": "but we're really excited to be handling prediction markets, crypto, and all the",
+      "source": "pass1",
+      "avg_logprob": -0.13916628185762178
+    },
+    {
+      "start": 111.2,
+      "end": 113.44,
+      "text": "novel financial instruments that are now in our markets.",
+      "source": "pass1",
+      "avg_logprob": -0.08599741272325438
+    },
+    {
+      "start": 113.44,
+      "end": 117.76,
+      "text": "It really is interesting when you think about this because I think when you hear the CFTC,",
+      "source": "pass1",
+      "avg_logprob": -0.08599741272325438
+    },
+    {
+      "start": 117.76,
+      "end": 121.2,
+      "text": "you think of a lot of people think about something like prediction markets. It's been",
+      "source": "pass1",
+      "avg_logprob": -0.08599741272325438
+    },
+    {
+      "start": 121.2,
+      "end": 126.4,
+      "text": "on the news quite a bit. Very small slice as to what you do on a day-to-day basis.",
+      "source": "pass1",
+      "avg_logprob": -0.08599741272325438
+    },
+    {
+      "start": 127.36,
+      "end": 134.0,
+      "text": "I want to talk about just the entire perspective on where these things are going and what",
+      "source": "pass1",
+      "avg_logprob": -0.08599741272325438
+    },
+    {
+      "start": 134.0,
+      "end": 139.36,
+      "text": "the status of them is. This is a new thing to most people. Give us a quick overview as to",
+      "source": "pass1",
+      "avg_logprob": -0.08599741272325438
+    },
+    {
+      "start": 139.36,
+      "end": 146.08,
+      "text": "how the CFTC came under control of these markets and why all of a sudden they seem to be everywhere.",
+      "source": "pass1",
+      "avg_logprob": -0.13337782300684764
+    },
+    {
+      "start": 146.72,
+      "end": 151.76,
+      "text": "Well, the CFTC was established in the 70s and it was established to oversee our derivatives",
+      "source": "pass1",
+      "avg_logprob": -0.13337782300684764
+    },
+    {
+      "start": 151.76,
+      "end": 159.76,
+      "text": "markets. These markets until around the turn of around the 70s, 80s, 90s, really have been",
+      "source": "pass1",
+      "avg_logprob": -0.13337782300684764
+    },
+    {
+      "start": 159.76,
+      "end": 165.92,
+      "text": "agricultural markets first and foremost. Farmers, ranchers, producers use them to manage risk",
+      "source": "pass1",
+      "avg_logprob": -0.13337782300684764
+    },
+    {
+      "start": 165.92,
+      "end": 171.84,
+      "text": "in whether it's weather or their crop risk or the input cost, energy, that sort of thing.",
+      "source": "pass1",
+      "avg_logprob": -0.13114650442142678
+    },
+    {
+      "start": 171.84,
+      "end": 177.2,
+      "text": "Primarily catering to our commercial end users, but over the years we started to see that in",
+      "source": "pass1",
+      "avg_logprob": -0.13114650442142678
+    },
+    {
+      "start": 177.2,
+      "end": 183.6,
+      "text": "financial products. We saw interest rate derivatives, we saw currency derivatives, and",
+      "source": "pass1",
+      "avg_logprob": -0.13114650442142678
+    },
+    {
+      "start": 183.6,
+      "end": 188.64,
+      "text": "in the 90s we started to see political prediction markets start to emerge. We saw markets like",
+      "source": "pass1",
+      "avg_logprob": -0.13114650442142678
+    },
+    {
+      "start": 188.64,
+      "end": 193.92,
+      "text": "the Iowa electronic market that offered trading in potential election outcomes.",
+      "source": "pass1",
+      "avg_logprob": -0.13114650442142678
+    },
+    {
+      "start": 194.0,
+      "end": 198.32,
+      "text": "And the Democrats didn't like that a whole lot and so you started to see",
+      "source": "pass1",
+      "avg_logprob": -0.13920832903761612
+    },
+    {
+      "start": 198.88,
+      "end": 203.52,
+      "text": "pushback against many of the other exchanges that wanted to start to offer these on a broader,",
+      "source": "pass1",
+      "avg_logprob": -0.13920832903761612
+    },
+    {
+      "start": 203.52,
+      "end": 208.56,
+      "text": "more commercial basis. So the Iowa electronic market was for educational purposes. These",
+      "source": "pass1",
+      "avg_logprob": -0.13920832903761612
+    },
+    {
+      "start": 208.56,
+      "end": 214.8,
+      "text": "commercial markets like Colchee and Polymarket were actually in litigation with the CFTC",
+      "source": "pass1",
+      "avg_logprob": -0.13920832903761612
+    },
+    {
+      "start": 214.8,
+      "end": 220.56,
+      "text": "under the prior administration and Polymarket was driven offshore. Colchee was actually",
+      "source": "pass1",
+      "avg_logprob": -0.13920832903761612
+    },
+    {
+      "start": 220.56,
+      "end": 224.96,
+      "text": "won their litigation with the CFTC and was able to start offering these products.",
+      "source": "pass1",
+      "avg_logprob": -0.1112022944859096
+    },
+    {
+      "start": 224.96,
+      "end": 229.52,
+      "text": "And when I came into the seat just over 100 days ago, many of these novel prediction",
+      "source": "pass1",
+      "avg_logprob": -0.1112022944859096
+    },
+    {
+      "start": 229.52,
+      "end": 234.96,
+      "text": "market products were now out in trading and it's become a real interesting use case for",
+      "source": "pass1",
+      "avg_logprob": -0.1112022944859096
+    },
+    {
+      "start": 234.96,
+      "end": 239.12,
+      "text": "financial markets. Yeah, I mean, it's been fascinating to watch all of that happen. Of",
+      "source": "pass1",
+      "avg_logprob": -0.1112022944859096
+    },
+    {
+      "start": 239.12,
+      "end": 246.4,
+      "text": "course, the CFTC legal situation with Colchee, if I understand that very well, it ended in",
+      "source": "pass1",
+      "avg_logprob": -0.1112022944859096
+    },
+    {
+      "start": 246.4,
+      "end": 251.44,
+      "text": "like October 2024. So a few weeks before that election, that election, and in my view,",
+      "source": "pass1",
+      "avg_logprob": -0.14121682836551858
+    },
+    {
+      "start": 251.44,
+      "end": 256.56,
+      "text": "thankfully, Donald Trump won. Now we have, I think, a totally different approach",
+      "source": "pass1",
+      "avg_logprob": -0.14121682836551858
+    },
+    {
+      "start": 257.28,
+      "end": 264.32,
+      "text": "to these financial innovations. One that is not, I think, adversarial. Can you describe what you",
+      "source": "pass1",
+      "avg_logprob": -0.14121682836551858
+    },
+    {
+      "start": 264.32,
+      "end": 267.52,
+      "text": "think, what is your approach and what is the approach of the administration?",
+      "source": "pass1",
+      "avg_logprob": -0.14121682836551858
+    },
+    {
+      "start": 267.52,
+      "end": 272.48,
+      "text": "Well, prediction markets offer event contract derivatives. These are instruments that we",
+      "source": "pass1",
+      "avg_logprob": -0.14121682836551858
+    },
+    {
+      "start": 272.48,
+      "end": 277.6,
+      "text": "have the exclusive regulatory authority over. And although the prior administration really tried",
+      "source": "pass1",
+      "avg_logprob": -0.0754326939906763
+    },
+    {
+      "start": 277.6,
+      "end": 282.88,
+      "text": "to draw them offshore, we're setting up rules and regulations that accommodate these novel",
+      "source": "pass1",
+      "avg_logprob": -0.0754326939906763
+    },
+    {
+      "start": 282.88,
+      "end": 288.08,
+      "text": "markets because we believe that these markets have proven more reliable than the news media",
+      "source": "pass1",
+      "avg_logprob": -0.0754326939906763
+    },
+    {
+      "start": 288.08,
+      "end": 293.2,
+      "text": "in many cases. And they offer, unlike gambling and casinos and all of that, which are focused",
+      "source": "pass1",
+      "avg_logprob": -0.0754326939906763
+    },
+    {
+      "start": 293.2,
+      "end": 297.84,
+      "text": "on entertainment, they offer really positive externalities for our society because they",
+      "source": "pass1",
+      "avg_logprob": -0.0754326939906763
+    },
+    {
+      "start": 297.84,
+      "end": 303.12,
+      "text": "help check these fake stories in the news and the media. And they're a financial product",
+      "source": "pass1",
+      "avg_logprob": -0.07962860368393562
+    },
+    {
+      "start": 303.12,
+      "end": 308.48,
+      "text": "like anything else. Our statute was set up with a very broad definition of the term commodity.",
+      "source": "pass1",
+      "avg_logprob": -0.07962860368393562
+    },
+    {
+      "start": 308.48,
+      "end": 312.96,
+      "text": "So we are the commodity futures trading commission, but Congress rightfully anticipated",
+      "source": "pass1",
+      "avg_logprob": -0.07962860368393562
+    },
+    {
+      "start": 312.96,
+      "end": 317.2,
+      "text": "that you'd have derivatives on virtually anything and everything. They're financial",
+      "source": "pass1",
+      "avg_logprob": -0.07962860368393562
+    },
+    {
+      "start": 317.2,
+      "end": 321.36,
+      "text": "instruments that derive their value from another asset. And that asset could be",
+      "source": "pass1",
+      "avg_logprob": -0.07962860368393562
+    },
+    {
+      "start": 321.36,
+      "end": 326.0,
+      "text": "a sports event, a political event, the price of corn or grain or anything else.",
+      "source": "pass1",
+      "avg_logprob": -0.07962860368393562
+    },
+    {
+      "start": 326.0,
+      "end": 330.8,
+      "text": "And so we will affirmatively take that jurisdiction, we'll set up rules and regulations",
+      "source": "pass1",
+      "avg_logprob": -0.09752977186670671
+    },
+    {
+      "start": 330.8,
+      "end": 335.12,
+      "text": "for the market, but we will make sure that these markets are here in the United States",
+      "source": "pass1",
+      "avg_logprob": -0.09752977186670671
+    },
+    {
+      "start": 335.12,
+      "end": 341.68,
+      "text": "and they're here to stay. I'm curious as to how you view the utility, the public utility",
+      "source": "pass1",
+      "avg_logprob": -0.09752977186670671
+    },
+    {
+      "start": 341.68,
+      "end": 345.36,
+      "text": "of these markets, because first of all, a lot of times they're just fun. And I don't first",
+      "source": "pass1",
+      "avg_logprob": -0.09752977186670671
+    },
+    {
+      "start": 345.36,
+      "end": 348.56,
+      "text": "of all think that's the worst thing in the world that people actually enjoy their lives.",
+      "source": "pass1",
+      "avg_logprob": -0.09752977186670671
+    },
+    {
+      "start": 348.56,
+      "end": 354.96,
+      "text": "But the left, certainly Elizabeth Warren thinks that when I look at this, I was talking to",
+      "source": "pass1",
+      "avg_logprob": -0.09752977186670671
+    },
+    {
+      "start": 354.96,
+      "end": 359.28,
+      "text": "a friend of mine, he's in, I'm in Texas and he runs an air conditioning company.",
+      "source": "pass1",
+      "avg_logprob": -0.0844498760998249
+    },
+    {
+      "start": 359.92,
+      "end": 366.48,
+      "text": "And the difference in his bottom line between a month that is 90 degrees and 100 degrees on",
+      "source": "pass1",
+      "avg_logprob": -0.0844498760998249
+    },
+    {
+      "start": 366.48,
+      "end": 373.12,
+      "text": "average or 85 and 95 is massive. It could turn his entire year. And now these markets are",
+      "source": "pass1",
+      "avg_logprob": -0.0844498760998249
+    },
+    {
+      "start": 373.12,
+      "end": 377.28,
+      "text": "available for him to go in and he can hedge that temperature, right? Like he can now protect",
+      "source": "pass1",
+      "avg_logprob": -0.0844498760998249
+    },
+    {
+      "start": 377.28,
+      "end": 382.48,
+      "text": "his business against a potentially bad year. This is something he couldn't do before.",
+      "source": "pass1",
+      "avg_logprob": -0.0844498760998249
+    },
+    {
+      "start": 382.48,
+      "end": 387.04,
+      "text": "I see use cases like that. Is small business a big part of this picture?",
+      "source": "pass1",
+      "avg_logprob": -0.09892128760527287
+    },
+    {
+      "start": 387.68,
+      "end": 393.36,
+      "text": "How can this actually benefit the economy? We are seeing a real explosion of retail interests in",
+      "source": "pass1",
+      "avg_logprob": -0.09892128760527287
+    },
+    {
+      "start": 393.36,
+      "end": 398.32,
+      "text": "our derivatives markets and that's something we did not have before. Traditionally, these",
+      "source": "pass1",
+      "avg_logprob": -0.09892128760527287
+    },
+    {
+      "start": 398.32,
+      "end": 402.8,
+      "text": "markets, as I mentioned, were for commercial end users, farmers, ranchers, producers.",
+      "source": "pass1",
+      "avg_logprob": -0.09892128760527287
+    },
+    {
+      "start": 402.8,
+      "end": 406.4,
+      "text": "The financial institutions started to get involved and the contracts were expensive to",
+      "source": "pass1",
+      "avg_logprob": -0.09892128760527287
+    },
+    {
+      "start": 406.4,
+      "end": 410.88,
+      "text": "purchase. A typical derivatives contract requires you to put up significant money to",
+      "source": "pass1",
+      "avg_logprob": -0.09892128760527287
+    },
+    {
+      "start": 410.88,
+      "end": 416.24,
+      "text": "take a position. With these contracts, they're dollar contracts. Typically the outcome is going to",
+      "source": "pass1",
+      "avg_logprob": -0.1060427407855573
+    },
+    {
+      "start": 416.24,
+      "end": 421.92,
+      "text": "pay out based on an event. So it's 50, 50 odds. You pay 50 cents for your contract and you earn",
+      "source": "pass1",
+      "avg_logprob": -0.1060427407855573
+    },
+    {
+      "start": 421.92,
+      "end": 428.16,
+      "text": "a dollar. And that's really retail focus, but that works very well for, to your point, somebody",
+      "source": "pass1",
+      "avg_logprob": -0.1060427407855573
+    },
+    {
+      "start": 428.16,
+      "end": 432.88,
+      "text": "who just wants to purchase a little bit of additional insurance. And I will say there's many",
+      "source": "pass1",
+      "avg_logprob": -0.1060427407855573
+    },
+    {
+      "start": 432.88,
+      "end": 437.52,
+      "text": "of the farmers and ranchers out there that were not able to access hedging tools because",
+      "source": "pass1",
+      "avg_logprob": -0.1060427407855573
+    },
+    {
+      "start": 437.6,
+      "end": 441.84,
+      "text": "the big exchanges don't want to offer certain contracts and the prediction markets have been",
+      "source": "pass1",
+      "avg_logprob": -0.0798908738065357
+    },
+    {
+      "start": 441.84,
+      "end": 446.8,
+      "text": "really willing to offer a wide range of things because go figure in a free market, people",
+      "source": "pass1",
+      "avg_logprob": -0.0798908738065357
+    },
+    {
+      "start": 446.8,
+      "end": 452.24,
+      "text": "are willing to experiment and trade different products. Is this part of the reason the left",
+      "source": "pass1",
+      "avg_logprob": -0.0798908738065357
+    },
+    {
+      "start": 452.24,
+      "end": 457.44,
+      "text": "seems to be pushing back against them so much? It seems like they're totally fine when giant",
+      "source": "pass1",
+      "avg_logprob": -0.0798908738065357
+    },
+    {
+      "start": 457.44,
+      "end": 461.6,
+      "text": "corporations and everybody were able to hedge their risk, but when it comes down to some",
+      "source": "pass1",
+      "avg_logprob": -0.0798908738065357
+    },
+    {
+      "start": 461.6,
+      "end": 466.24,
+      "text": "regular person able to do that, they seem to be very upset about that. I do think that",
+      "source": "pass1",
+      "avg_logprob": -0.0798908738065357
+    },
+    {
+      "start": 466.32,
+      "end": 471.92,
+      "text": "could be part of it for sure. I mean, I think there is this concern that we're letting more",
+      "source": "pass1",
+      "avg_logprob": -0.08209708435278312
+    },
+    {
+      "start": 471.92,
+      "end": 476.56,
+      "text": "people participate in our financial markets. And for some reason the left thinks that's a bad",
+      "source": "pass1",
+      "avg_logprob": -0.08209708435278312
+    },
+    {
+      "start": 476.56,
+      "end": 482.08,
+      "text": "thing because they could lose their money or they're not responsible enough with their funds.",
+      "source": "pass1",
+      "avg_logprob": -0.08209708435278312
+    },
+    {
+      "start": 482.08,
+      "end": 486.88,
+      "text": "But I do think to the extent you're going to allow a big institution into the markets,",
+      "source": "pass1",
+      "avg_logprob": -0.08209708435278312
+    },
+    {
+      "start": 486.88,
+      "end": 490.88,
+      "text": "should allow everybody who wants to participate. And there's no reason that",
+      "source": "pass1",
+      "avg_logprob": -0.08209708435278312
+    },
+    {
+      "start": 491.04,
+      "end": 496.72,
+      "text": "big institutions can have better knowledge on the markets than an individual who maybe knows what",
+      "source": "pass1",
+      "avg_logprob": -0.08933631910218133
+    },
+    {
+      "start": 496.72,
+      "end": 502.48,
+      "text": "the weather is going to be because they're able to see what's happening in their local community.",
+      "source": "pass1",
+      "avg_logprob": -0.08933631910218133
+    },
+    {
+      "start": 502.48,
+      "end": 506.96,
+      "text": "So I do think it's important to allow more participation in our markets and make sure",
+      "source": "pass1",
+      "avg_logprob": -0.08933631910218133
+    },
+    {
+      "start": 506.96,
+      "end": 510.24,
+      "text": "we have rules and regulations around that activity. Can we talk a little bit about",
+      "source": "pass1",
+      "avg_logprob": -0.08933631910218133
+    },
+    {
+      "start": 510.24,
+      "end": 515.92,
+      "text": "some of the criticism? AOC has come out and she said, this is just the",
+      "source": "pass1",
+      "avg_logprob": -0.08933631910218133
+    },
+    {
+      "start": 516.0,
+      "end": 520.56,
+      "text": "casinoization of everything in our lives. We're now betting on everything.",
+      "source": "pass1",
+      "avg_logprob": -0.07748688044755356
+    },
+    {
+      "start": 521.44,
+      "end": 524.08,
+      "text": "When you hear criticism like that, how do you react to it?",
+      "source": "pass1",
+      "avg_logprob": -0.07748688044755356
+    },
+    {
+      "start": 525.36,
+      "end": 530.4,
+      "text": "I don't think this is turning our markets into casinos. And I think that criticism is really",
+      "source": "pass1",
+      "avg_logprob": -0.07748688044755356
+    },
+    {
+      "start": 530.4,
+      "end": 536.0,
+      "text": "unfair. What we're doing with these markets is setting clear guardrails and rules around",
+      "source": "pass1",
+      "avg_logprob": -0.07748688044755356
+    },
+    {
+      "start": 536.0,
+      "end": 541.28,
+      "text": "novel financial products. And these derivatives contracts are clearly within our regulatory",
+      "source": "pass1",
+      "avg_logprob": -0.07748688044755356
+    },
+    {
+      "start": 541.28,
+      "end": 546.24,
+      "text": "authority. They're no different than anything else that we trade in terms of you set up a",
+      "source": "pass1",
+      "avg_logprob": -0.08585357498899798
+    },
+    {
+      "start": 546.24,
+      "end": 550.48,
+      "text": "derivative. The underlying or the subject of that derivative can be virtually anything.",
+      "source": "pass1",
+      "avg_logprob": -0.08585357498899798
+    },
+    {
+      "start": 550.48,
+      "end": 555.76,
+      "text": "It can be a stock. It can be a corn. It could be grain. It could be sports or politics.",
+      "source": "pass1",
+      "avg_logprob": -0.08585357498899798
+    },
+    {
+      "start": 555.76,
+      "end": 560.24,
+      "text": "And so we can't discriminate. We're not merit based regulators where we say, okay,",
+      "source": "pass1",
+      "avg_logprob": -0.08585357498899798
+    },
+    {
+      "start": 560.24,
+      "end": 566.64,
+      "text": "it's acceptable for you to trade on agricultural products, but not on sports or politics.",
+      "source": "pass1",
+      "avg_logprob": -0.08585357498899798
+    },
+    {
+      "start": 566.64,
+      "end": 571.92,
+      "text": "So we want to set merit neutral rules and regulations and this protects investors. This",
+      "source": "pass1",
+      "avg_logprob": -0.09230089926144533
+    },
+    {
+      "start": 571.92,
+      "end": 576.64,
+      "text": "protects consumers. It protects people using the markets. It doesn't turn them into casinos.",
+      "source": "pass1",
+      "avg_logprob": -0.09230089926144533
+    },
+    {
+      "start": 576.64,
+      "end": 581.12,
+      "text": "These aren't designed for entertainment. They're designed for financial positions.",
+      "source": "pass1",
+      "avg_logprob": -0.09230089926144533
+    },
+    {
+      "start": 581.12,
+      "end": 588.16,
+      "text": "And it's not my job as a regulator to say you're investing in agricultural products or",
+      "source": "pass1",
+      "avg_logprob": -0.09230089926144533
+    },
+    {
+      "start": 588.16,
+      "end": 592.24,
+      "text": "stocks, and that's better for your portfolio and you'll be more successful there because",
+      "source": "pass1",
+      "avg_logprob": -0.09230089926144533
+    },
+    {
+      "start": 592.24,
+      "end": 596.16,
+      "text": "frankly, a lot of Americans don't have any specialized knowledge and they're going",
+      "source": "pass1",
+      "avg_logprob": -0.09230089926144533
+    },
+    {
+      "start": 596.24,
+      "end": 601.2,
+      "text": "to lose their money in those products. So I think that kind of criticism is very much",
+      "source": "pass1",
+      "avg_logprob": -0.14770918091138205
+    },
+    {
+      "start": 601.2,
+      "end": 606.96,
+      "text": "a merit based criticism. And that's really not what our regulatory agency was designed to do.",
+      "source": "pass1",
+      "avg_logprob": -0.14770918091138205
+    },
+    {
+      "start": 606.96,
+      "end": 611.92,
+      "text": "We're not a merit regulator. I love I think you use the term at one point merit policing,",
+      "source": "pass1",
+      "avg_logprob": -0.14770918091138205
+    },
+    {
+      "start": 611.92,
+      "end": 615.52,
+      "text": "which is like it's kind of shouldn't be what we're doing in these markets. We should let",
+      "source": "pass1",
+      "avg_logprob": -0.14770918091138205
+    },
+    {
+      "start": 615.52,
+      "end": 619.84,
+      "text": "people make their own decisions, at least in my view. Some people say though you're",
+      "source": "pass1",
+      "avg_logprob": -0.14770918091138205
+    },
+    {
+      "start": 619.84,
+      "end": 623.2,
+      "text": "acting very hands off here, right? You're like, hey, we know we're not merit policing",
+      "source": "pass1",
+      "avg_logprob": -0.14770918091138205
+    },
+    {
+      "start": 623.2,
+      "end": 631.44,
+      "text": "any of this. At the same time, you're allowing things like insider trading. I can't tell you",
+      "source": "pass1",
+      "avg_logprob": -0.10579624119259062
+    },
+    {
+      "start": 631.44,
+      "end": 636.72,
+      "text": "how many times, Michael, that I've heard that exact thing. People are able to just,",
+      "source": "pass1",
+      "avg_logprob": -0.10579624119259062
+    },
+    {
+      "start": 636.72,
+      "end": 642.08,
+      "text": "Mr. Beast is able to, his producers are able to go on there and make all this money",
+      "source": "pass1",
+      "avg_logprob": -0.10579624119259062
+    },
+    {
+      "start": 642.08,
+      "end": 645.28,
+      "text": "and steal other people's money because they know what's going to happen in a video.",
+      "source": "pass1",
+      "avg_logprob": -0.10579624119259062
+    },
+    {
+      "start": 645.28,
+      "end": 649.28,
+      "text": "Can you set the record straight here? Is insider trading legal?",
+      "source": "pass1",
+      "avg_logprob": -0.10579624119259062
+    },
+    {
+      "start": 649.36,
+      "end": 655.84,
+      "text": "Absolutely not. And that criticism is completely unfounded. Our statute expressly prohibits fraud,",
+      "source": "pass1",
+      "avg_logprob": -0.0994531036881001
+    },
+    {
+      "start": 655.84,
+      "end": 660.72,
+      "text": "manipulation, insider trading and abusive trading practices. And we police that.",
+      "source": "pass1",
+      "avg_logprob": -0.0994531036881001
+    },
+    {
+      "start": 660.72,
+      "end": 666.48,
+      "text": "But more than us policing it, the exchanges themselves are self regulatory organizations,",
+      "source": "pass1",
+      "avg_logprob": -0.0994531036881001
+    },
+    {
+      "start": 666.48,
+      "end": 671.44,
+      "text": "which means they have quasi government authority to police traders in their markets.",
+      "source": "pass1",
+      "avg_logprob": -0.0994531036881001
+    },
+    {
+      "start": 671.44,
+      "end": 676.16,
+      "text": "And we've seen exchanges take action against traders in the markets. They can find them,",
+      "source": "pass1",
+      "avg_logprob": -0.0994531036881001
+    },
+    {
+      "start": 676.16,
+      "end": 681.92,
+      "text": "they can kick them out of their markets. And then they refer those persons to us at the agency.",
+      "source": "pass1",
+      "avg_logprob": -0.07924559330940247
+    },
+    {
+      "start": 681.92,
+      "end": 686.32,
+      "text": "And we can take further action. We can refer to the DOJ to take criminal action as well.",
+      "source": "pass1",
+      "avg_logprob": -0.07924559330940247
+    },
+    {
+      "start": 686.32,
+      "end": 690.16,
+      "text": "So we are a cop on the beat and we are very much policing the markets. And of course,",
+      "source": "pass1",
+      "avg_logprob": -0.07924559330940247
+    },
+    {
+      "start": 690.16,
+      "end": 694.48,
+      "text": "it takes some time to build a case and bring an investigation. But people should not engage",
+      "source": "pass1",
+      "avg_logprob": -0.07924559330940247
+    },
+    {
+      "start": 694.48,
+      "end": 700.56,
+      "text": "in insider trading because they will be quickly dispensed with through the legal process.",
+      "source": "pass1",
+      "avg_logprob": -0.07924559330940247
+    },
+    {
+      "start": 700.56,
+      "end": 703.84,
+      "text": "The number one conversation I have with people about prediction markets is like,",
+      "source": "pass1",
+      "avg_logprob": -0.07924559330940247
+    },
+    {
+      "start": 703.84,
+      "end": 707.36,
+      "text": "well, what I'm doing wouldn't be insider trading, right? Like they're thinking like,",
+      "source": "pass1",
+      "avg_logprob": -0.08036063816569267
+    },
+    {
+      "start": 707.92,
+      "end": 713.6,
+      "text": "what if I know this? Can I do this? It is a somewhat difficult thing to figure out,",
+      "source": "pass1",
+      "avg_logprob": -0.08036063816569267
+    },
+    {
+      "start": 713.6,
+      "end": 719.44,
+      "text": "right? Because if you happen to just be really engaged in a process, you probably do know things",
+      "source": "pass1",
+      "avg_logprob": -0.08036063816569267
+    },
+    {
+      "start": 719.44,
+      "end": 722.96,
+      "text": "that maybe others don't. What is the line when it comes to insider trading?",
+      "source": "pass1",
+      "avg_logprob": -0.08036063816569267
+    },
+    {
+      "start": 722.96,
+      "end": 729.92,
+      "text": "So the insider trading case law articulates a pretty clear test. If you are a person that",
+      "source": "pass1",
+      "avg_logprob": -0.08036063816569267
+    },
+    {
+      "start": 729.92,
+      "end": 735.68,
+      "text": "obtained non-public information and you trade on that information in breach of a duty, whether it's",
+      "source": "pass1",
+      "avg_logprob": -0.10037012862270339
+    },
+    {
+      "start": 735.68,
+      "end": 742.64,
+      "text": "your employer or to, for example, you're a doctor, you've got a physician, privilege or confidentiality",
+      "source": "pass1",
+      "avg_logprob": -0.10037012862270339
+    },
+    {
+      "start": 742.64,
+      "end": 748.24,
+      "text": "with your patient, you're a lawyer, you trade on something that's confidential from your client.",
+      "source": "pass1",
+      "avg_logprob": -0.10037012862270339
+    },
+    {
+      "start": 748.24,
+      "end": 751.36,
+      "text": "Any of that, when you're breaching a duty and you trade on that information,",
+      "source": "pass1",
+      "avg_logprob": -0.10037012862270339
+    },
+    {
+      "start": 751.36,
+      "end": 756.64,
+      "text": "that's insider trading. It could be, for example, the doctor that's taken care of an",
+      "source": "pass1",
+      "avg_logprob": -0.10037012862270339
+    },
+    {
+      "start": 756.64,
+      "end": 761.28,
+      "text": "athlete and the athlete has an injury, the doctor knows that the athlete won't plan a game and so",
+      "source": "pass1",
+      "avg_logprob": -0.08137788685089951
+    },
+    {
+      "start": 761.28,
+      "end": 767.36,
+      "text": "they trade ahead of that. That's illegal. And we police that. And there's many such cases. You",
+      "source": "pass1",
+      "avg_logprob": -0.08137788685089951
+    },
+    {
+      "start": 767.36,
+      "end": 772.72,
+      "text": "can imagine lots of different stories of somebody had a duty to their employer and traded on it.",
+      "source": "pass1",
+      "avg_logprob": -0.08137788685089951
+    },
+    {
+      "start": 772.72,
+      "end": 778.16,
+      "text": "All of that's not allowed in our markets. And going beyond that, we also have standards",
+      "source": "pass1",
+      "avg_logprob": -0.08137788685089951
+    },
+    {
+      "start": 778.16,
+      "end": 782.56,
+      "text": "for contracts not being readily susceptible to manipulation. So even if something's not",
+      "source": "pass1",
+      "avg_logprob": -0.08137788685089951
+    },
+    {
+      "start": 783.12,
+      "end": 788.4,
+      "text": "insider tradeable or there's not this risk of insider trading, if the contract is easily",
+      "source": "pass1",
+      "avg_logprob": -0.08564856371928736
+    },
+    {
+      "start": 788.4,
+      "end": 795.12,
+      "text": "manipulable, so somebody could, for example, injure a player to win on a contract,",
+      "source": "pass1",
+      "avg_logprob": -0.08564856371928736
+    },
+    {
+      "start": 795.12,
+      "end": 797.68,
+      "text": "that sort of thing shouldn't be listed in our markets.",
+      "source": "pass1",
+      "avg_logprob": -0.08564856371928736
+    },
+    {
+      "start": 800.96,
+      "end": 806.24,
+      "text": "A lot of times, we hear these stories, the media loves stories, these outlier",
+      "source": "pass1",
+      "avg_logprob": -0.08564856371928736
+    },
+    {
+      "start": 806.24,
+      "end": 809.6,
+      "text": "kind of stories when it comes to prediction markets. Most of them are not even",
+      "source": "pass1",
+      "avg_logprob": -0.08564856371928736
+    },
+    {
+      "start": 809.6,
+      "end": 815.36,
+      "text": "occurring here in the United States. We hear these things about war, about death,",
+      "source": "pass1",
+      "avg_logprob": -0.07439157602810624
+    },
+    {
+      "start": 815.36,
+      "end": 820.48,
+      "text": "about assassination, all these markets. Are those markets legal here in the United States?",
+      "source": "pass1",
+      "avg_logprob": -0.07439157602810624
+    },
+    {
+      "start": 820.48,
+      "end": 827.12,
+      "text": "Those markets are also prohibited. Our statute includes a provision that states contracts on war,",
+      "source": "pass1",
+      "avg_logprob": -0.07439157602810624
+    },
+    {
+      "start": 827.12,
+      "end": 833.2,
+      "text": "assassination, terrorism, illegal activity, gaming, which is undefined, these are within",
+      "source": "pass1",
+      "avg_logprob": -0.07439157602810624
+    },
+    {
+      "start": 833.2,
+      "end": 838.88,
+      "text": "the agency's discretion to prohibit. And so we have not allowed and we can reject contracts.",
+      "source": "pass1",
+      "avg_logprob": -0.07439157602810624
+    },
+    {
+      "start": 838.88,
+      "end": 845.2,
+      "text": "We have not allowed any exchanges to list war, terrorism, assassination, and various other sorts",
+      "source": "pass1",
+      "avg_logprob": -0.09784582354755045
+    },
+    {
+      "start": 845.2,
+      "end": 851.44,
+      "text": "of contracts that are illegal offshore. We do not oversee the listing of contracts. So there are",
+      "source": "pass1",
+      "avg_logprob": -0.09784582354755045
+    },
+    {
+      "start": 851.44,
+      "end": 856.56,
+      "text": "some exchanges that list these things offshore and to the extent U.S. persons are accessing that",
+      "source": "pass1",
+      "avg_logprob": -0.09784582354755045
+    },
+    {
+      "start": 856.56,
+      "end": 861.6,
+      "text": "somehow, we have authority to the extent it's extraterritorial, but we don't oversee the",
+      "source": "pass1",
+      "avg_logprob": -0.09784582354755045
+    },
+    {
+      "start": 861.6,
+      "end": 867.36,
+      "text": "exchanges as their primary regulator. And that's where, I mean, all of these stories",
+      "source": "pass1",
+      "avg_logprob": -0.09784582354755045
+    },
+    {
+      "start": 867.36,
+      "end": 871.52,
+      "text": "seem to come from. Are these overseas exchanges that are not regulated by you?",
+      "source": "pass1",
+      "avg_logprob": -0.09867824074714932
+    },
+    {
+      "start": 871.52,
+      "end": 874.56,
+      "text": "That's right. You would not allow that to happen, right? That's not a thing that can occur.",
+      "source": "pass1",
+      "avg_logprob": -0.09867824074714932
+    },
+    {
+      "start": 874.56,
+      "end": 880.96,
+      "text": "That's right. Okay. Because I can't believe how many people don't understand that. One of the",
+      "source": "pass1",
+      "avg_logprob": -0.09867824074714932
+    },
+    {
+      "start": 880.96,
+      "end": 884.88,
+      "text": "big things I hear from people and including some conservatives and people that I agree with",
+      "source": "pass1",
+      "avg_logprob": -0.09867824074714932
+    },
+    {
+      "start": 884.88,
+      "end": 889.6,
+      "text": "on a lot of things, like we just can't let these things be the Wild West. It's not the Wild West,",
+      "source": "pass1",
+      "avg_logprob": -0.09867824074714932
+    },
+    {
+      "start": 889.6,
+      "end": 894.72,
+      "text": "right? You have regulatory authority over this and you're helping shape this as we go",
+      "source": "pass1",
+      "avg_logprob": -0.09867824074714932
+    },
+    {
+      "start": 895.52,
+      "end": 900.64,
+      "text": "with the attention, at least in my understanding, of allowing these markets and innovations to",
+      "source": "pass1",
+      "avg_logprob": -0.09617447590827942
+    },
+    {
+      "start": 900.64,
+      "end": 904.96,
+      "text": "flourish. Right. It's really an unfair criticism because if you think about, for example, our",
+      "source": "pass1",
+      "avg_logprob": -0.09617447590827942
+    },
+    {
+      "start": 904.96,
+      "end": 909.76,
+      "text": "regulation around food and drinks and all of that here in the United States, we allow certain things.",
+      "source": "pass1",
+      "avg_logprob": -0.09617447590827942
+    },
+    {
+      "start": 910.64,
+      "end": 913.68,
+      "text": "Other countries allow much more things, right? We have different standards. Some",
+      "source": "pass1",
+      "avg_logprob": -0.09617447590827942
+    },
+    {
+      "start": 913.68,
+      "end": 917.44,
+      "text": "countries have some more stringent standards. In the U.S., we have very stringent standards",
+      "source": "pass1",
+      "avg_logprob": -0.09617447590827942
+    },
+    {
+      "start": 917.44,
+      "end": 921.36,
+      "text": "around the listing of these contracts, but that's not to say that they can't be listed",
+      "source": "pass1",
+      "avg_logprob": -0.09617447590827942
+    },
+    {
+      "start": 921.36,
+      "end": 924.4,
+      "text": "offshore in a different exchange under different laws and regulations.",
+      "source": "pass1",
+      "avg_logprob": -0.12559359788894653
+    },
+    {
+      "start": 924.4,
+      "end": 927.76,
+      "text": "Right. I mean, I've eaten in some of these countries and did not work out well. I will tell",
+      "source": "pass1",
+      "avg_logprob": -0.12559359788894653
+    },
+    {
+      "start": 927.76,
+      "end": 930.72,
+      "text": "you. I'm glad we have some of those rules. Okay. Let me ask you another one. This is",
+      "source": "pass1",
+      "avg_logprob": -0.12559359788894653
+    },
+    {
+      "start": 930.72,
+      "end": 936.32,
+      "text": "the one I hear often actually from conservatives who say, we're federalists. We believe in",
+      "source": "pass1",
+      "avg_logprob": -0.12559359788894653
+    },
+    {
+      "start": 936.32,
+      "end": 942.8,
+      "text": "states' rights. We believe in the democracy laboratory that we've talked about since the",
+      "source": "pass1",
+      "avg_logprob": -0.12559359788894653
+    },
+    {
+      "start": 942.8,
+      "end": 949.04,
+      "text": "time of our founders. These states have gone out of their way to stop sports gambling.",
+      "source": "pass1",
+      "avg_logprob": -0.12559359788894653
+    },
+    {
+      "start": 949.6,
+      "end": 955.84,
+      "text": "You look at a state, Utah wants to say, hey, we don't want sports gambling. Why all of a sudden",
+      "source": "pass1",
+      "avg_logprob": -0.12919777340215186
+    },
+    {
+      "start": 955.84,
+      "end": 961.04,
+      "text": "can someone who wants to bet on sports now go on Cal State or Polymarket or one of these other",
+      "source": "pass1",
+      "avg_logprob": -0.12919777340215186
+    },
+    {
+      "start": 961.04,
+      "end": 968.88,
+      "text": "exchanges and bet on sports? Why can't they prevent these markets from appearing in their",
+      "source": "pass1",
+      "avg_logprob": -0.12919777340215186
+    },
+    {
+      "start": 968.88,
+      "end": 974.8,
+      "text": "states? Well, for over 100 years, we've had these futures markets, derivatives markets,",
+      "source": "pass1",
+      "avg_logprob": -0.12919777340215186
+    },
+    {
+      "start": 974.88,
+      "end": 981.2,
+      "text": "operating in parallel with the bucket shops, casinos, sports books, that sort of thing.",
+      "source": "pass1",
+      "avg_logprob": -0.08892195496936234
+    },
+    {
+      "start": 981.2,
+      "end": 985.2,
+      "text": "And they're different products and services. You have very different standards. And over the",
+      "source": "pass1",
+      "avg_logprob": -0.08892195496936234
+    },
+    {
+      "start": 985.2,
+      "end": 991.28,
+      "text": "years, we've had legal frameworks develop around derivatives and state frameworks develop around",
+      "source": "pass1",
+      "avg_logprob": -0.08892195496936234
+    },
+    {
+      "start": 992.0,
+      "end": 996.4,
+      "text": "gambling and casinos and bucket shops. And they've continued to exist in parallel.",
+      "source": "pass1",
+      "avg_logprob": -0.08892195496936234
+    },
+    {
+      "start": 996.4,
+      "end": 1003.12,
+      "text": "The fact that you can have a bet on the price of virtually anything or you can have",
+      "source": "pass1",
+      "avg_logprob": -0.08892195496936234
+    },
+    {
+      "start": 1003.12,
+      "end": 1007.76,
+      "text": "a derivative instrument, there's different legal treatment. We have insurance contracts that also",
+      "source": "pass1",
+      "avg_logprob": -0.07106374792362515
+    },
+    {
+      "start": 1007.76,
+      "end": 1013.92,
+      "text": "look similar to derivatives contracts or securities that can look similar. So we've had parallel legal",
+      "source": "pass1",
+      "avg_logprob": -0.07106374792362515
+    },
+    {
+      "start": 1013.92,
+      "end": 1018.88,
+      "text": "frameworks for very different products. And the standards are different. Going back to the",
+      "source": "pass1",
+      "avg_logprob": -0.07106374792362515
+    },
+    {
+      "start": 1018.88,
+      "end": 1023.84,
+      "text": "example of food and beverage and all of that, one country can set different standards for",
+      "source": "pass1",
+      "avg_logprob": -0.07106374792362515
+    },
+    {
+      "start": 1023.84,
+      "end": 1027.68,
+      "text": "theirs. The United States sets their standards. Well, the states do have some authorities",
+      "source": "pass1",
+      "avg_logprob": -0.07106374792362515
+    },
+    {
+      "start": 1027.68,
+      "end": 1032.16,
+      "text": "that standards around gambling and entertainment and casinos. But when you get into financial",
+      "source": "pass1",
+      "avg_logprob": -0.07106374792362515
+    },
+    {
+      "start": 1032.24,
+      "end": 1036.88,
+      "text": "markets, when you get into structuring derivatives products, regardless of the underlying can be",
+      "source": "pass1",
+      "avg_logprob": -0.08736320344420771
+    },
+    {
+      "start": 1036.88,
+      "end": 1042.24,
+      "text": "sports, politics, corn grains, whatever it is, that falls within our exclusive regulatory",
+      "source": "pass1",
+      "avg_logprob": -0.08736320344420771
+    },
+    {
+      "start": 1042.24,
+      "end": 1048.48,
+      "text": "authority. So we have had a number of states bring legal actions, some criminal against",
+      "source": "pass1",
+      "avg_logprob": -0.08736320344420771
+    },
+    {
+      "start": 1048.48,
+      "end": 1053.44,
+      "text": "our exchanges for complying with federal law. And the federal law allows them to offer",
+      "source": "pass1",
+      "avg_logprob": -0.08736320344420771
+    },
+    {
+      "start": 1053.44,
+      "end": 1058.08,
+      "text": "derivatives contracts across state lines. You can't do entertainment, you can't offer",
+      "source": "pass1",
+      "avg_logprob": -0.08736320344420771
+    },
+    {
+      "start": 1058.08,
+      "end": 1063.52,
+      "text": "drinks, you can't do a house model where you kick people out of the casino if they win too much.",
+      "source": "pass1",
+      "avg_logprob": -0.09406180578963201
+    },
+    {
+      "start": 1063.52,
+      "end": 1068.16,
+      "text": "It's a different product and once for entertainment and that's great. And states have a lot of",
+      "source": "pass1",
+      "avg_logprob": -0.09406180578963201
+    },
+    {
+      "start": 1068.16,
+      "end": 1071.52,
+      "text": "authority. I believe in states' rights. I think it's really important for states to have the",
+      "source": "pass1",
+      "avg_logprob": -0.09406180578963201
+    },
+    {
+      "start": 1071.52,
+      "end": 1076.56,
+      "text": "authority to ban true gambling casinos and all of that. If they want to have that outside",
+      "source": "pass1",
+      "avg_logprob": -0.09406180578963201
+    },
+    {
+      "start": 1076.56,
+      "end": 1082.08,
+      "text": "their state and not allow it in their state, that's great. But the federal regime for financial",
+      "source": "pass1",
+      "avg_logprob": -0.09406180578963201
+    },
+    {
+      "start": 1082.08,
+      "end": 1087.2,
+      "text": "markets crosses state lines and we have to enforce our statute. It's interesting because,",
+      "source": "pass1",
+      "avg_logprob": -0.09406180578963201
+    },
+    {
+      "start": 1087.52,
+      "end": 1092.72,
+      "text": "as a conservative, as a person who is very much in favor of states being able to do what they",
+      "source": "pass1",
+      "avg_logprob": -0.08836471244044926
+    },
+    {
+      "start": 1092.72,
+      "end": 1099.28,
+      "text": "want to do in almost all cases, I am a massive opponent of the way the commerce clause has",
+      "source": "pass1",
+      "avg_logprob": -0.08836471244044926
+    },
+    {
+      "start": 1099.28,
+      "end": 1103.68,
+      "text": "been utilized over the years. I think it's been a catastrophe for a million different reasons.",
+      "source": "pass1",
+      "avg_logprob": -0.08836471244044926
+    },
+    {
+      "start": 1103.68,
+      "end": 1110.56,
+      "text": "But fundamentally, this is the type of thing it was designed for in the real world. It would be",
+      "source": "pass1",
+      "avg_logprob": -0.08836471244044926
+    },
+    {
+      "start": 1110.56,
+      "end": 1115.84,
+      "text": "wrong for us to go to someone in Utah and say, hey, you can't purchase Walmart stock. You",
+      "source": "pass1",
+      "avg_logprob": -0.08836471244044926
+    },
+    {
+      "start": 1116.48,
+      "end": 1120.96,
+      "text": "can't participate in the New York Stock Exchange or the NASDAQ because your state has decided to ban",
+      "source": "pass1",
+      "avg_logprob": -0.09337174552162801
+    },
+    {
+      "start": 1120.96,
+      "end": 1124.24,
+      "text": "you. Is that the right way to look at what's happening with these prediction markets?",
+      "source": "pass1",
+      "avg_logprob": -0.09337174552162801
+    },
+    {
+      "start": 1124.24,
+      "end": 1129.04,
+      "text": "That's the concern I have. If you think about a farmer, rancher, producer in the state of Utah,",
+      "source": "pass1",
+      "avg_logprob": -0.09337174552162801
+    },
+    {
+      "start": 1129.04,
+      "end": 1133.76,
+      "text": "if Utah is able to say you can't hedge your risk in your commercial business,",
+      "source": "pass1",
+      "avg_logprob": -0.09337174552162801
+    },
+    {
+      "start": 1133.76,
+      "end": 1139.04,
+      "text": "how is that any different than Utah saying, well, if there's this local sports team",
+      "source": "pass1",
+      "avg_logprob": -0.09337174552162801
+    },
+    {
+      "start": 1139.04,
+      "end": 1142.72,
+      "text": "or a local election and people can't hedge their risk related to that because",
+      "source": "pass1",
+      "avg_logprob": -0.09337174552162801
+    },
+    {
+      "start": 1142.72,
+      "end": 1146.32,
+      "text": "people are hedging that risk and people are speculating on it, and that's how we have markets.",
+      "source": "pass1",
+      "avg_logprob": -0.09949151376136263
+    },
+    {
+      "start": 1146.32,
+      "end": 1153.12,
+      "text": "So to me, anytime you start looking at, oh, well, this market is merit-based. We allow for this",
+      "source": "pass1",
+      "avg_logprob": -0.09949151376136263
+    },
+    {
+      "start": 1153.12,
+      "end": 1157.92,
+      "text": "and not allow for that. It really questions whether we truly are a free market economy and",
+      "source": "pass1",
+      "avg_logprob": -0.09949151376136263
+    },
+    {
+      "start": 1157.92,
+      "end": 1161.2,
+      "text": "we're going to allow for our markets to flourish here in the United States.",
+      "source": "pass1",
+      "avg_logprob": -0.09949151376136263
+    },
+    {
+      "start": 1162.16,
+      "end": 1166.0,
+      "text": "I like your approach to a lot of this. By far, my favorite thing about you is that",
+      "source": "pass1",
+      "avg_logprob": -0.09949151376136263
+    },
+    {
+      "start": 1166.0,
+      "end": 1170.32,
+      "text": "you're a Philadelphia Eagles fan. And it's interesting because I've talked to so many",
+      "source": "pass1",
+      "avg_logprob": -0.09949151376136263
+    },
+    {
+      "start": 1170.32,
+      "end": 1177.6,
+      "text": "people who bring up, there's no, yeah, sure, grain futures. Yeah, okay, I can see why you'd",
+      "source": "pass1",
+      "avg_logprob": -0.12508698465923468
+    },
+    {
+      "start": 1177.6,
+      "end": 1183.28,
+      "text": "need that weather. Maybe sure, but sports, the winner of American Idol, these things aren't",
+      "source": "pass1",
+      "avg_logprob": -0.12508698465923468
+    },
+    {
+      "start": 1183.28,
+      "end": 1188.88,
+      "text": "valuable to anyone. And my answer to this is, I will tell you, as a person who watches the",
+      "source": "pass1",
+      "avg_logprob": -0.12508698465923468
+    },
+    {
+      "start": 1188.88,
+      "end": 1195.28,
+      "text": "Eagles every single year, my day is good or bad, but based on the result. And there",
+      "source": "pass1",
+      "avg_logprob": -0.12508698465923468
+    },
+    {
+      "start": 1195.28,
+      "end": 1199.84,
+      "text": "is social value to me to hedge whether the Eagles are going to win or not. And I have actually",
+      "source": "pass1",
+      "avg_logprob": -0.12508698465923468
+    },
+    {
+      "start": 1200.4,
+      "end": 1203.76,
+      "text": "done that on these markets. It might make me a psychopath, but it is something that I do.",
+      "source": "pass1",
+      "avg_logprob": -0.11056019898837174
+    },
+    {
+      "start": 1204.48,
+      "end": 1208.08,
+      "text": "You're just nodding. That's making me, you understand as an Eagles fan.",
+      "source": "pass1",
+      "avg_logprob": -0.11056019898837174
+    },
+    {
+      "start": 1209.44,
+      "end": 1214.24,
+      "text": "You mentioned the merit policing thing. Do you don't have to judge it all,",
+      "source": "pass1",
+      "avg_logprob": -0.11056019898837174
+    },
+    {
+      "start": 1214.24,
+      "end": 1218.64,
+      "text": "whether there's a social value to this? Or is it something that you do see down the line",
+      "source": "pass1",
+      "avg_logprob": -0.11056019898837174
+    },
+    {
+      "start": 1218.64,
+      "end": 1222.96,
+      "text": "problems legally from maybe a different approach from Congress, where they say,",
+      "source": "pass1",
+      "avg_logprob": -0.11056019898837174
+    },
+    {
+      "start": 1222.96,
+      "end": 1228.16,
+      "text": "hey, we're going to sift out some of these sports contracts and reality show contracts?",
+      "source": "pass1",
+      "avg_logprob": -0.11056019898837174
+    },
+    {
+      "start": 1228.16,
+      "end": 1233.2,
+      "text": "Well, that's why we're engaging in rulemaking. So we do want all participants in the markets and",
+      "source": "pass1",
+      "avg_logprob": -0.06413625016456515
+    },
+    {
+      "start": 1233.2,
+      "end": 1237.92,
+      "text": "stakeholders and states to come engage with us to help us get the rules right. And there are",
+      "source": "pass1",
+      "avg_logprob": -0.06413625016456515
+    },
+    {
+      "start": 1237.92,
+      "end": 1243.36,
+      "text": "certain contracts that do raise concerns. I mentioned injury contracts earlier on. We don't",
+      "source": "pass1",
+      "avg_logprob": -0.06413625016456515
+    },
+    {
+      "start": 1243.36,
+      "end": 1247.28,
+      "text": "want to create perverse incentives for players to go injure other players. And there's also a",
+      "source": "pass1",
+      "avg_logprob": -0.06413625016456515
+    },
+    {
+      "start": 1247.28,
+      "end": 1253.04,
+      "text": "risk that that contract could easily be manipulated. So we are setting clear standards. And",
+      "source": "pass1",
+      "avg_logprob": -0.06413625016456515
+    },
+    {
+      "start": 1253.04,
+      "end": 1257.12,
+      "text": "that's critical in these markets. We can't have anything goes. But what's important",
+      "source": "pass1",
+      "avg_logprob": -0.06413625016456515
+    },
+    {
+      "start": 1257.12,
+      "end": 1262.72,
+      "text": "is that we set the gold standard here in the United States, because if we don't create a regulatory",
+      "source": "pass1",
+      "avg_logprob": -0.0772314474113986
+    },
+    {
+      "start": 1262.72,
+      "end": 1266.72,
+      "text": "infrastructure for these products here in the US, they just go offshore. We've seen that. And with",
+      "source": "pass1",
+      "avg_logprob": -0.0772314474113986
+    },
+    {
+      "start": 1266.72,
+      "end": 1272.0,
+      "text": "blockchain technology, you can offer this stuff on a global basis. And it's very hard to keep people",
+      "source": "pass1",
+      "avg_logprob": -0.0772314474113986
+    },
+    {
+      "start": 1272.0,
+      "end": 1277.6,
+      "text": "out of any sort of blockchain based application. You can't really censor the internet and",
+      "source": "pass1",
+      "avg_logprob": -0.0772314474113986
+    },
+    {
+      "start": 1277.6,
+      "end": 1282.24,
+      "text": "people's access to things. So we want to set a model that's a no brainer. If you think back",
+      "source": "pass1",
+      "avg_logprob": -0.0772314474113986
+    },
+    {
+      "start": 1282.24,
+      "end": 1288.96,
+      "text": "to the years of Napster and the illegal file sharing music, Spotify, iTunes, that all won out.",
+      "source": "pass1",
+      "avg_logprob": -0.08926539458045664
+    },
+    {
+      "start": 1288.96,
+      "end": 1292.88,
+      "text": "And we'll see the same in my view with prediction markets if we get it right here in the United",
+      "source": "pass1",
+      "avg_logprob": -0.08926539458045664
+    },
+    {
+      "start": 1292.88,
+      "end": 1297.36,
+      "text": "States. But if we create black markets and just push it offshore, it's not going to benefit",
+      "source": "pass1",
+      "avg_logprob": -0.08926539458045664
+    },
+    {
+      "start": 1297.36,
+      "end": 1301.6,
+      "text": "Americans. It'll just create, you know, offshore markets and people are going to get hurt.",
+      "source": "pass1",
+      "avg_logprob": -0.08926539458045664
+    },
+    {
+      "start": 1301.6,
+      "end": 1307.36,
+      "text": "Do we need new legislation on prediction markets or is the current sort of structure",
+      "source": "pass1",
+      "avg_logprob": -0.08926539458045664
+    },
+    {
+      "start": 1307.36,
+      "end": 1311.36,
+      "text": "enough? The commodity exchange act is one of the best pieces of legislation out there.",
+      "source": "pass1",
+      "avg_logprob": -0.08926539458045664
+    },
+    {
+      "start": 1311.36,
+      "end": 1316.8,
+      "text": "I mean, I'm biased because I implement it, but it has a lot of really interesting provisions that",
+      "source": "pass1",
+      "avg_logprob": -0.12963900331294897
+    },
+    {
+      "start": 1316.8,
+      "end": 1321.36,
+      "text": "are designed for fostering innovation. And actually one of our mandates as an agency is to",
+      "source": "pass1",
+      "avg_logprob": -0.12963900331294897
+    },
+    {
+      "start": 1321.36,
+      "end": 1325.76,
+      "text": "promote responsible innovation. But the statute has this very broad definition of commodity.",
+      "source": "pass1",
+      "avg_logprob": -0.12963900331294897
+    },
+    {
+      "start": 1325.76,
+      "end": 1329.28,
+      "text": "It includes everything except for onions and motion picture box office receipts",
+      "source": "pass1",
+      "avg_logprob": -0.12963900331294897
+    },
+    {
+      "start": 1330.4,
+      "end": 1337.92,
+      "text": "excluded for historical reasons and for lobbying by Mr. Dodd. But the statute is very broad.",
+      "source": "pass1",
+      "avg_logprob": -0.12963900331294897
+    },
+    {
+      "start": 1337.92,
+      "end": 1344.0,
+      "text": "So it covers a wide range of products and the definition of a swap post Dodd Frank prior to",
+      "source": "pass1",
+      "avg_logprob": -0.08990452380156984
+    },
+    {
+      "start": 1344.0,
+      "end": 1349.76,
+      "text": "Dodd Frank, we had very broad authority over options and futures, but swaps were included",
+      "source": "pass1",
+      "avg_logprob": -0.08990452380156984
+    },
+    {
+      "start": 1349.76,
+      "end": 1353.76,
+      "text": "under Dodd Frank. And so now we've even broader authority over different types of creative",
+      "source": "pass1",
+      "avg_logprob": -0.08990452380156984
+    },
+    {
+      "start": 1353.76,
+      "end": 1358.56,
+      "text": "financial instruments. So we really cover the waterfront when it comes to these products.",
+      "source": "pass1",
+      "avg_logprob": -0.08990452380156984
+    },
+    {
+      "start": 1358.56,
+      "end": 1363.52,
+      "text": "And we have a self certification process that allows the exchanges to quickly list products.",
+      "source": "pass1",
+      "avg_logprob": -0.08990452380156984
+    },
+    {
+      "start": 1363.52,
+      "end": 1368.56,
+      "text": "The SEC actually doesn't have this. So it's a it's a really helpful tool because in exchange",
+      "source": "pass1",
+      "avg_logprob": -0.09638072876259685
+    },
+    {
+      "start": 1368.56,
+      "end": 1373.84,
+      "text": "to come to market very quickly with new contracts and we have 24 hours to reject or approve.",
+      "source": "pass1",
+      "avg_logprob": -0.09638072876259685
+    },
+    {
+      "start": 1373.84,
+      "end": 1378.16,
+      "text": "Whereas if you're dealing with the SEC, you have to actually register your security and it takes",
+      "source": "pass1",
+      "avg_logprob": -0.09638072876259685
+    },
+    {
+      "start": 1378.16,
+      "end": 1383.6,
+      "text": "a very long time to come to market. You mentioned blockchain crypto. I know you've worked on",
+      "source": "pass1",
+      "avg_logprob": -0.09638072876259685
+    },
+    {
+      "start": 1383.6,
+      "end": 1389.2,
+      "text": "this before. Are we going to get new legislation? How important is it? I think it's very",
+      "source": "pass1",
+      "avg_logprob": -0.09638072876259685
+    },
+    {
+      "start": 1389.2,
+      "end": 1393.6,
+      "text": "important to future proof crypto markets here in the United States. We saw under the last",
+      "source": "pass1",
+      "avg_logprob": -0.08432193325375612
+    },
+    {
+      "start": 1393.6,
+      "end": 1400.48,
+      "text": "administration, Gary Gensler, who is the SEC chairman, regulate by enforcement and sue every",
+      "source": "pass1",
+      "avg_logprob": -0.08432193325375612
+    },
+    {
+      "start": 1400.48,
+      "end": 1405.84,
+      "text": "one of the major crypto companies in the United States. And the states are picking that up now.",
+      "source": "pass1",
+      "avg_logprob": -0.08432193325375612
+    },
+    {
+      "start": 1405.84,
+      "end": 1410.96,
+      "text": "So we're starting to see that again. And it's really important to have a federal framework where",
+      "source": "pass1",
+      "avg_logprob": -0.08432193325375612
+    },
+    {
+      "start": 1410.96,
+      "end": 1415.04,
+      "text": "you can opt into federal standards. And I think it's the same for prediction markets because",
+      "source": "pass1",
+      "avg_logprob": -0.08432193325375612
+    },
+    {
+      "start": 1415.04,
+      "end": 1421.36,
+      "text": "states can easily man things. And we want this technology here in the United States under a",
+      "source": "pass1",
+      "avg_logprob": -0.08255202571551006
+    },
+    {
+      "start": 1421.36,
+      "end": 1426.56,
+      "text": "federal framework similar with AI where if you have different standards across states,",
+      "source": "pass1",
+      "avg_logprob": -0.08255202571551006
+    },
+    {
+      "start": 1426.56,
+      "end": 1429.92,
+      "text": "the commerce class to your point was really designed to protect this stuff and make sure that",
+      "source": "pass1",
+      "avg_logprob": -0.08255202571551006
+    },
+    {
+      "start": 1429.92,
+      "end": 1435.84,
+      "text": "you don't have to move to California or move to Texas or move to Utah to be able to develop",
+      "source": "pass1",
+      "avg_logprob": -0.08255202571551006
+    },
+    {
+      "start": 1435.84,
+      "end": 1440.0,
+      "text": "your new technology or offer your markets. So I do think the legislation can help future",
+      "source": "pass1",
+      "avg_logprob": -0.08255202571551006
+    },
+    {
+      "start": 1440.0,
+      "end": 1445.2,
+      "text": "proof that make sure that future administrations can't take our crypto away from us. And I think",
+      "source": "pass1",
+      "avg_logprob": -0.07602858233451844
+    },
+    {
+      "start": 1445.2,
+      "end": 1450.96,
+      "text": "this is a very much American values based technology. Holding your own assets is really",
+      "source": "pass1",
+      "avg_logprob": -0.07602858233451844
+    },
+    {
+      "start": 1450.96,
+      "end": 1457.52,
+      "text": "critical. The Revolutionary War was fought very much for private property. And to have",
+      "source": "pass1",
+      "avg_logprob": -0.07602858233451844
+    },
+    {
+      "start": 1457.52,
+      "end": 1461.76,
+      "text": "a blockchain where no matter what you can't be censored and your assets can't be taken away",
+      "source": "pass1",
+      "avg_logprob": -0.07602858233451844
+    },
+    {
+      "start": 1461.76,
+      "end": 1464.64,
+      "text": "from you, I think that's really something we need to protect here in the United States.",
+      "source": "pass1",
+      "avg_logprob": -0.07602858233451844
+    },
+    {
+      "start": 1464.64,
+      "end": 1467.12,
+      "text": "There's a lot of opposition to it though. They don't like crypto. They don't",
+      "source": "pass1",
+      "avg_logprob": -0.07602858233451844
+    },
+    {
+      "start": 1467.12,
+      "end": 1473.28,
+      "text": "like prediction markets. There's a lot of pushback. Do we need on top of the crypto",
+      "source": "pass1",
+      "avg_logprob": -0.08639884567647069
+    },
+    {
+      "start": 1473.28,
+      "end": 1476.96,
+      "text": "legislation anything on top of the prediction markets to do the same thing to future proof",
+      "source": "pass1",
+      "avg_logprob": -0.08639884567647069
+    },
+    {
+      "start": 1477.76,
+      "end": 1482.64,
+      "text": "the industry? Well, unlike crypto, our statute's very clear that these are within our authority.",
+      "source": "pass1",
+      "avg_logprob": -0.08639884567647069
+    },
+    {
+      "start": 1482.64,
+      "end": 1487.12,
+      "text": "I think you're going to see pushback from the other side where there's an effort to try",
+      "source": "pass1",
+      "avg_logprob": -0.08639884567647069
+    },
+    {
+      "start": 1487.12,
+      "end": 1492.48,
+      "text": "to take away from us. So that I am concerned about on the Hill to the extent people want",
+      "source": "pass1",
+      "avg_logprob": -0.08639884567647069
+    },
+    {
+      "start": 1492.8,
+      "end": 1497.76,
+      "text": "undermine the CPC's authority. But of course, there's always things you can add to add more",
+      "source": "pass1",
+      "avg_logprob": -0.12194947647420984
+    },
+    {
+      "start": 1497.76,
+      "end": 1503.12,
+      "text": "clarity within our statute. And we're talking to folks on the Hill on a regular basis providing",
+      "source": "pass1",
+      "avg_logprob": -0.12194947647420984
+    },
+    {
+      "start": 1503.12,
+      "end": 1508.32,
+      "text": "technical assistance because we are subject matters experts when it comes to our statute.",
+      "source": "pass1",
+      "avg_logprob": -0.12194947647420984
+    },
+    {
+      "start": 1508.32,
+      "end": 1514.0,
+      "text": "But I do think there's a lot of parallel between the two technologies crypto and",
+      "source": "pass1",
+      "avg_logprob": -0.12194947647420984
+    },
+    {
+      "start": 1514.0,
+      "end": 1519.52,
+      "text": "prediction markets because one is really democratizing our information systems and",
+      "source": "pass1",
+      "avg_logprob": -0.12194947647420984
+    },
+    {
+      "start": 1519.52,
+      "end": 1525.6,
+      "text": "checking the news media and crypto is a check on the debanking and the financial institutions",
+      "source": "pass1",
+      "avg_logprob": -0.10123840317714448
+    },
+    {
+      "start": 1525.6,
+      "end": 1530.0,
+      "text": "that have centralized control over our assets and both should be protected here in the United",
+      "source": "pass1",
+      "avg_logprob": -0.10123840317714448
+    },
+    {
+      "start": 1530.0,
+      "end": 1535.6,
+      "text": "States if we want to really preserve our American values. Two more for you before I know you",
+      "source": "pass1",
+      "avg_logprob": -0.10123840317714448
+    },
+    {
+      "start": 1535.6,
+      "end": 1541.76,
+      "text": "have to go. Number one, would you I have a very long text chain battle going back and",
+      "source": "pass1",
+      "avg_logprob": -0.10123840317714448
+    },
+    {
+      "start": 1541.76,
+      "end": 1546.72,
+      "text": "forth with a friend of mine on the subject of whether avatar sucks or not the movie.",
+      "source": "pass1",
+      "avg_logprob": -0.10123840317714448
+    },
+    {
+      "start": 1546.72,
+      "end": 1553.6,
+      "text": "I looked for a market to try to go against him and say that he was they were going to",
+      "source": "pass1",
+      "avg_logprob": -0.14698542891261734
+    },
+    {
+      "start": 1553.6,
+      "end": 1557.92,
+      "text": "underperform the box office receipts. I was unable to find one. I had no idea until",
+      "source": "pass1",
+      "avg_logprob": -0.14698542891261734
+    },
+    {
+      "start": 1557.92,
+      "end": 1562.88,
+      "text": "I heard from you onions and box office receipts. Do we need to include in this",
+      "source": "pass1",
+      "avg_logprob": -0.14698542891261734
+    },
+    {
+      "start": 1562.88,
+      "end": 1566.8,
+      "text": "legislation to the clearance so I can just I can go out there and I can invest in my",
+      "source": "pass1",
+      "avg_logprob": -0.14698542891261734
+    },
+    {
+      "start": 1566.8,
+      "end": 1571.76,
+      "text": "onions because I like onion investment. Well, maybe the times come to revisit the Dodd",
+      "source": "pass1",
+      "avg_logprob": -0.14698542891261734
+    },
+    {
+      "start": 1571.76,
+      "end": 1576.72,
+      "text": "Frank language that the prohibited motion picture box office seats. And it's an",
+      "source": "pass1",
+      "avg_logprob": -0.16128851616002143
+    },
+    {
+      "start": 1576.72,
+      "end": 1582.64,
+      "text": "interesting history, right? Because cancer actually tried to launch a motion picture",
+      "source": "pass1",
+      "avg_logprob": -0.16128851616002143
+    },
+    {
+      "start": 1582.64,
+      "end": 1588.24,
+      "text": "box office sheets exchange and they were very far along. I don't know if it actually",
+      "source": "pass1",
+      "avg_logprob": -0.16128851616002143
+    },
+    {
+      "start": 1588.24,
+      "end": 1593.68,
+      "text": "ever launched. But then there was an effort from the motion picture box office association",
+      "source": "pass1",
+      "avg_logprob": -0.16128851616002143
+    },
+    {
+      "start": 1594.56,
+      "end": 1599.44,
+      "text": "to prohibit that. And lo and behold, we have a carve out in our statute.",
+      "source": "pass1",
+      "avg_logprob": -0.16128851616002143
+    },
+    {
+      "start": 1599.52,
+      "end": 1605.36,
+      "text": "This also demonstrates the fact that the framers of our statute thought very broadly",
+      "source": "pass1",
+      "avg_logprob": -0.15526911616325378
+    },
+    {
+      "start": 1605.36,
+      "end": 1610.72,
+      "text": "about what's a commodity. It's meant to include right beyond agricultural products,",
+      "source": "pass1",
+      "avg_logprob": -0.15526911616325378
+    },
+    {
+      "start": 1610.72,
+      "end": 1616.72,
+      "text": "things like movie receipts, sports, politics, all of it. And I think that really creates a lot",
+      "source": "pass1",
+      "avg_logprob": -0.15526911616325378
+    },
+    {
+      "start": 1616.72,
+      "end": 1621.04,
+      "text": "of space for novel financial instruments. But I think maybe the time has come we",
+      "source": "pass1",
+      "avg_logprob": -0.15526911616325378
+    },
+    {
+      "start": 1621.04,
+      "end": 1624.88,
+      "text": "would be visit motion picture box office receipts. And the onions one is crazy.",
+      "source": "pass1",
+      "avg_logprob": -0.15526911616325378
+    },
+    {
+      "start": 1624.88,
+      "end": 1629.76,
+      "text": "A couple of traders basically cornered the market on onions. Is that true? I read",
+      "source": "pass1",
+      "avg_logprob": -0.14231804313678895
+    },
+    {
+      "start": 1629.76,
+      "end": 1635.6,
+      "text": "they somehow were able to control 98 percent of all onions. Is that actually a real thing?",
+      "source": "pass1",
+      "avg_logprob": -0.14231804313678895
+    },
+    {
+      "start": 1635.6,
+      "end": 1641.6,
+      "text": "That's a real story. And it's interesting also because we've seen manipulation over the years",
+      "source": "pass1",
+      "avg_logprob": -0.14231804313678895
+    },
+    {
+      "start": 1641.6,
+      "end": 1646.48,
+      "text": "and in lots of different commodities and we police that. But there was a lot of lobbying,",
+      "source": "pass1",
+      "avg_logprob": -0.14231804313678895
+    },
+    {
+      "start": 1646.48,
+      "end": 1649.36,
+      "text": "I guess, to make sure that it never happens again with onions.",
+      "source": "pass1",
+      "avg_logprob": -0.14231804313678895
+    },
+    {
+      "start": 1649.36,
+      "end": 1652.16,
+      "text": "With onions. Okay. Last one for you. This is the most important one. The only thing I",
+      "source": "pass1",
+      "avg_logprob": -0.14231804313678895
+    },
+    {
+      "start": 1652.16,
+      "end": 1656.72,
+      "text": "really care about in this entire conversation, Michael, I'm sorry. I have a position on this",
+      "source": "pass1",
+      "avg_logprob": -0.149205765257711
+    },
+    {
+      "start": 1656.72,
+      "end": 1664.16,
+      "text": "full disclosure. Will A.J. Brown be an eagle next season? I wish I could say yes. But I am",
+      "source": "pass1",
+      "avg_logprob": -0.149205765257711
+    },
+    {
+      "start": 1664.88,
+      "end": 1669.52,
+      "text": "not feeling good about it. It's not looking good. Unfortunately, that is the position I have.",
+      "source": "pass1",
+      "avg_logprob": -0.149205765257711
+    },
+    {
+      "start": 1669.52,
+      "end": 1675.44,
+      "text": "Unfortunately, Michael Sealeck, CFTC chair. I'm fascinated by all this. And I think,",
+      "source": "pass1",
+      "avg_logprob": -0.149205765257711
+    },
+    {
+      "start": 1675.44,
+      "end": 1680.64,
+      "text": "you know, your approach here to protect these markets and make sure this innovation",
+      "source": "pass1",
+      "avg_logprob": -0.149205765257711
+    },
+    {
+      "start": 1680.64,
+      "end": 1684.72,
+      "text": "lasts longer than just a fad. You know, turning this into something where people can actually",
+      "source": "pass1",
+      "avg_logprob": -0.12422595468778459
+    },
+    {
+      "start": 1685.44,
+      "end": 1689.36,
+      "text": "go in there and improve their lives through these markets. I think it's really,",
+      "source": "pass1",
+      "avg_logprob": -0.12422595468778459
+    },
+    {
+      "start": 1689.36,
+      "end": 1692.48,
+      "text": "really important. And thank you for your work on it. I appreciate that. Thank you.",
+      "source": "pass1",
+      "avg_logprob": -0.12422595468778459
+    },
+    {
+      "start": 1692.48,
+      "end": 1697.68,
+      "text": "All right. That's our interview with Michael Sealeck, a CFTC chair. He's the guy that",
+      "source": "pass1",
+      "avg_logprob": -0.12422595468778459
+    },
+    {
+      "start": 1698.32,
+      "end": 1702.4,
+      "text": "had the organization that oversees all prediction markets. As you mentioned,",
+      "source": "pass1",
+      "avg_logprob": -0.12422595468778459
+    },
+    {
+      "start": 1702.4,
+      "end": 1709.44,
+      "text": "with a couple of other things involved, $500 trillion. Just that and the $500 trillion.",
+      "source": "pass1",
+      "avg_logprob": -0.12422595468778459
+    },
+    {
+      "start": 1709.52,
+      "end": 1712.8,
+      "text": "I can't imagine how much of his time is spent actually dealing with",
+      "source": "pass1",
+      "avg_logprob": -0.0969221396446228
+    },
+    {
+      "start": 1713.52,
+      "end": 1717.84,
+      "text": "prediction markets, which is the tiniest, tiniest slice of this, but I really appreciate him",
+      "source": "pass1",
+      "avg_logprob": -0.0969221396446228
+    },
+    {
+      "start": 1717.84,
+      "end": 1721.52,
+      "text": "taking the time. One of the things I wanted to get to with him and we were able to cover",
+      "source": "pass1",
+      "avg_logprob": -0.0969221396446228
+    },
+    {
+      "start": 1722.4,
+      "end": 1727.36,
+      "text": "was, you know, this idea that, you know, you can just be an insider trading. You",
+      "source": "pass1",
+      "avg_logprob": -0.0969221396446228
+    },
+    {
+      "start": 1727.36,
+      "end": 1730.48,
+      "text": "can do insider trading. You can be an insider trader. You can go and you can,",
+      "source": "pass1",
+      "avg_logprob": -0.0969221396446228
+    },
+    {
+      "start": 1732.16,
+      "end": 1736.4,
+      "text": "you know, manipulate these markets. And this is just a casino.",
+      "source": "pass1",
+      "avg_logprob": -0.0969221396446228
+    },
+    {
+      "start": 1736.4,
+      "end": 1740.0,
+      "text": "All of these criticisms, you see kind of, I mean, it's mostly the left. Honestly,",
+      "source": "pass1",
+      "avg_logprob": -0.10576173630978564
+    },
+    {
+      "start": 1740.0,
+      "end": 1743.44,
+      "text": "there's some though on the right as well who are looking at this and just, you know,",
+      "source": "pass1",
+      "avg_logprob": -0.10576173630978564
+    },
+    {
+      "start": 1743.44,
+      "end": 1748.24,
+      "text": "frankly, don't understand. I was talking to a journalist last night and she was asking,",
+      "source": "pass1",
+      "avg_logprob": -0.10576173630978564
+    },
+    {
+      "start": 1748.24,
+      "end": 1753.36,
+      "text": "she's like, I don't, I kind of feel like there would be almost more pushback from people",
+      "source": "pass1",
+      "avg_logprob": -0.10576173630978564
+    },
+    {
+      "start": 1753.36,
+      "end": 1759.36,
+      "text": "on these prediction markets than we've seen so far. And I said, I think honestly, the reason",
+      "source": "pass1",
+      "avg_logprob": -0.10576173630978564
+    },
+    {
+      "start": 1760.16,
+      "end": 1763.76,
+      "text": "we haven't seen that yet is because I think it's early. You know, I think people are still",
+      "source": "pass1",
+      "avg_logprob": -0.10576173630978564
+    },
+    {
+      "start": 1763.84,
+      "end": 1768.24,
+      "text": "kind of understanding what these things are. There's going to be a lot of school marms",
+      "source": "pass1",
+      "avg_logprob": -0.09394091393863946
+    },
+    {
+      "start": 1768.24,
+      "end": 1771.36,
+      "text": "that are going to come in here and try to convince you that you're not allowed to do this,",
+      "source": "pass1",
+      "avg_logprob": -0.09394091393863946
+    },
+    {
+      "start": 1771.36,
+      "end": 1777.44,
+      "text": "that it's a bad thing, the wrong thing. And there are outlier cases, as we talked about",
+      "source": "pass1",
+      "avg_logprob": -0.09394091393863946
+    },
+    {
+      "start": 1777.44,
+      "end": 1782.0,
+      "text": "though there, and he said this quite clearly, the things, the problems, the concerns that",
+      "source": "pass1",
+      "avg_logprob": -0.09394091393863946
+    },
+    {
+      "start": 1782.0,
+      "end": 1789.28,
+      "text": "people have, these are crimes. These are illegal. And yeah, sure, you can try it.",
+      "source": "pass1",
+      "avg_logprob": -0.09394091393863946
+    },
+    {
+      "start": 1789.92,
+      "end": 1793.84,
+      "text": "Good luck. You might wind up in prison over it. And that's the case with",
+      "source": "pass1",
+      "avg_logprob": -0.11192877547775242
+    },
+    {
+      "start": 1794.56,
+      "end": 1799.68,
+      "text": "everything in our lives, right? You can go in and start swiping stuff from Walgreens and",
+      "source": "pass1",
+      "avg_logprob": -0.11192877547775242
+    },
+    {
+      "start": 1800.4,
+      "end": 1805.36,
+      "text": "you might, you can do it. But then of course, what happens? You pay a consequence for that.",
+      "source": "pass1",
+      "avg_logprob": -0.11192877547775242
+    },
+    {
+      "start": 1805.36,
+      "end": 1809.04,
+      "text": "These things are illegal. If you're thinking about trying to do something like that,",
+      "source": "pass1",
+      "avg_logprob": -0.11192877547775242
+    },
+    {
+      "start": 1809.04,
+      "end": 1813.84,
+      "text": "do not do it. Stay away from it. Stay away from the line on it. I mean, I think, you know,",
+      "source": "pass1",
+      "avg_logprob": -0.11192877547775242
+    },
+    {
+      "start": 1813.84,
+      "end": 1818.4,
+      "text": "as conservatives, we're rule followers that away, right? Like we want to make sure that",
+      "source": "pass1",
+      "avg_logprob": -0.11192877547775242
+    },
+    {
+      "start": 1818.4,
+      "end": 1823.52,
+      "text": "there is order to our society. And these are new and people don't really understand what the",
+      "source": "pass1",
+      "avg_logprob": -0.11405211175146278
+    },
+    {
+      "start": 1823.52,
+      "end": 1827.28,
+      "text": "rules are. It's always important to make sure that you know that the rules are there. But more",
+      "source": "pass1",
+      "avg_logprob": -0.11405211175146278
+    },
+    {
+      "start": 1827.28,
+      "end": 1830.88,
+      "text": "importantly, from this particular discussion is a lot of the criticisms you're going to hear in",
+      "source": "pass1",
+      "avg_logprob": -0.11405211175146278
+    },
+    {
+      "start": 1830.88,
+      "end": 1835.04,
+      "text": "the news just frankly aren't real. Like they are, these are points that they are making. Oh,",
+      "source": "pass1",
+      "avg_logprob": -0.11405211175146278
+    },
+    {
+      "start": 1835.04,
+      "end": 1838.64,
+      "text": "this is the Wild West. It is not, did that guy sound like the Wild West? Did that guy sound",
+      "source": "pass1",
+      "avg_logprob": -0.11405211175146278
+    },
+    {
+      "start": 1838.64,
+      "end": 1844.08,
+      "text": "like he just went into a saloon? No, that is not what this is. There are real regulations.",
+      "source": "pass1",
+      "avg_logprob": -0.11405211175146278
+    },
+    {
+      "start": 1844.08,
+      "end": 1847.44,
+      "text": "These guys are on top of them. They're looking at them, but they're looking at them from",
+      "source": "pass1",
+      "avg_logprob": -0.11405211175146278
+    },
+    {
+      "start": 1847.44,
+      "end": 1852.8,
+      "text": "the perspective that these innovations can actually help the economy, help the country,",
+      "source": "pass1",
+      "avg_logprob": -0.07069763412933476
+    },
+    {
+      "start": 1852.8,
+      "end": 1857.76,
+      "text": "help you as a small business person. And that is really there. And of course,",
+      "source": "pass1",
+      "avg_logprob": -0.07069763412933476
+    },
+    {
+      "start": 1857.76,
+      "end": 1862.96,
+      "text": "also it can help you as an Eagles fan, which is, as I would say, probably more important to me",
+      "source": "pass1",
+      "avg_logprob": -0.07069763412933476
+    },
+    {
+      "start": 1863.76,
+      "end": 1866.88,
+      "text": "particularly. But there's a lot of this we're going to be covering over the coming weeks.",
+      "source": "pass1",
+      "avg_logprob": -0.07069763412933476
+    },
+    {
+      "start": 1866.88,
+      "end": 1870.24,
+      "text": "As I said, just to give you a kind of outline is where we're going from here.",
+      "source": "pass1",
+      "avg_logprob": -0.07069763412933476
+    },
+    {
+      "start": 1870.24,
+      "end": 1873.36,
+      "text": "We'll be back in Dallas. We've got a new studio being built. There's more pictures",
+      "source": "pass1",
+      "avg_logprob": -0.07069763412933476
+    },
+    {
+      "start": 1873.36,
+      "end": 1876.32,
+      "text": "starting to leak out about that on the social media. You can go check those out if you",
+      "source": "pass1",
+      "avg_logprob": -0.07069763412933476
+    },
+    {
+      "start": 1876.32,
+      "end": 1879.92,
+      "text": "want, but it's going to be pretty cool. We got a studio, they're building it next week.",
+      "source": "pass1",
+      "avg_logprob": -0.11799296704671716
+    },
+    {
+      "start": 1879.92,
+      "end": 1883.52,
+      "text": "We're going to be in Dallas, we'll be doing more content for you. We weren't, you know,",
+      "source": "pass1",
+      "avg_logprob": -0.11799296704671716
+    },
+    {
+      "start": 1883.52,
+      "end": 1887.12,
+      "text": "we're kind of just ramping up, honestly. And we're like, oh, should we wait until we have",
+      "source": "pass1",
+      "avg_logprob": -0.11799296704671716
+    },
+    {
+      "start": 1887.12,
+      "end": 1890.4,
+      "text": "the studio ready and all the graphics ready and everything ready? How much is like, no,",
+      "source": "pass1",
+      "avg_logprob": -0.11799296704671716
+    },
+    {
+      "start": 1890.4,
+      "end": 1894.4,
+      "text": "we'll just go, we'll just talk about these things and start feeling it out. I'd love",
+      "source": "pass1",
+      "avg_logprob": -0.11799296704671716
+    },
+    {
+      "start": 1894.4,
+      "end": 1898.64,
+      "text": "to know your questions and comments. If you got them, drop them below. If you have",
+      "source": "pass1",
+      "avg_logprob": -0.11799296704671716
+    },
+    {
+      "start": 1898.64,
+      "end": 1901.12,
+      "text": "any things that you're thinking about like, wait a minute, what about this when it",
+      "source": "pass1",
+      "avg_logprob": -0.11799296704671716
+    },
+    {
+      "start": 1901.12,
+      "end": 1904.48,
+      "text": "comes to prediction markets? That's the type of stuff I'd love to talk about and see if",
+      "source": "pass1",
+      "avg_logprob": -0.11799296704671716
+    },
+    {
+      "start": 1904.48,
+      "end": 1909.92,
+      "text": "we can clear up. And honestly, anything else that you have, if there's a certain market",
+      "source": "pass1",
+      "avg_logprob": -0.06951066378889413
+    },
+    {
+      "start": 1909.92,
+      "end": 1913.04,
+      "text": "that you're looking at, you're like, wait a minute, this, I know this one. I would love",
+      "source": "pass1",
+      "avg_logprob": -0.06951066378889413
+    },
+    {
+      "start": 1913.04,
+      "end": 1916.64,
+      "text": "to hear that. If you go on these things and you put a few bucks down and you wind up",
+      "source": "pass1",
+      "avg_logprob": -0.06951066378889413
+    },
+    {
+      "start": 1916.64,
+      "end": 1921.52,
+      "text": "making a profit, tell me your story because I find them to be fascinating. It's unlike",
+      "source": "pass1",
+      "avg_logprob": -0.06951066378889413
+    },
+    {
+      "start": 1921.52,
+      "end": 1925.04,
+      "text": "when people tell you stories about your fantasy football weekends. These are",
+      "source": "pass1",
+      "avg_logprob": -0.06951066378889413
+    },
+    {
+      "start": 1925.04,
+      "end": 1928.8,
+      "text": "actually interesting because I usually bug people with how I got screwed out of",
+      "source": "pass1",
+      "avg_logprob": -0.06951066378889413
+    },
+    {
+      "start": 1928.8,
+      "end": 1933.36,
+      "text": "a fantasy football victory. That's very common for me to do. But in reality,",
+      "source": "pass1",
+      "avg_logprob": -0.06951066378889413
+    },
+    {
+      "start": 1933.92,
+      "end": 1938.48,
+      "text": "I love hearing how people work through them. A lot of you have sent me messages or",
+      "source": "pass1",
+      "avg_logprob": -0.1024633812216612
+    },
+    {
+      "start": 1938.48,
+      "end": 1943.12,
+      "text": "emails or whatever where like, hey, I took this position on this market and this is",
+      "source": "pass1",
+      "avg_logprob": -0.1024633812216612
+    },
+    {
+      "start": 1943.12,
+      "end": 1948.4,
+      "text": "why I did it and this is why it worked or it didn't work. These are new for a lot",
+      "source": "pass1",
+      "avg_logprob": -0.1024633812216612
+    },
+    {
+      "start": 1948.4,
+      "end": 1952.72,
+      "text": "of people. It's kind of fun to be able to learn from each other. So drop us a",
+      "source": "pass1",
+      "avg_logprob": -0.1024633812216612
+    },
+    {
+      "start": 1952.72,
+      "end": 1957.84,
+      "text": "comment. You can email us as well and go to predictableshow.com. That is the",
+      "source": "pass1",
+      "avg_logprob": -0.1024633812216612
+    },
+    {
+      "start": 1957.84,
+      "end": 1960.48,
+      "text": "place where we have a sub stack going. We're going to have a lot of written",
+      "source": "pass1",
+      "avg_logprob": -0.1024633812216612
+    },
+    {
+      "start": 1960.48,
+      "end": 1963.2,
+      "text": "articles going to feature markets that maybe you want to get involved in. Maybe",
+      "source": "pass1",
+      "avg_logprob": -0.13165613355343803
+    },
+    {
+      "start": 1963.2,
+      "end": 1966.96,
+      "text": "you might find interesting. We'll have live streams and stuff there and also",
+      "source": "pass1",
+      "avg_logprob": -0.13165613355343803
+    },
+    {
+      "start": 1967.84,
+      "end": 1973.6,
+      "text": "youtube.com slash at predictable show. That is up and running now. And the",
+      "source": "pass1",
+      "avg_logprob": -0.13165613355343803
+    },
+    {
+      "start": 1973.6,
+      "end": 1977.6,
+      "text": "podcast as well. You want to just listen, go to the podcast feed, search for",
+      "source": "pass1",
+      "avg_logprob": -0.13165613355343803
+    },
+    {
+      "start": 1977.6,
+      "end": 1982.24,
+      "text": "predictable with stew. I'm pretty sure it'll come up, at least in theory.",
+      "source": "pass1",
+      "avg_logprob": -0.13165613355343803
+    },
+    {
+      "start": 1982.24,
+      "end": 1986.0,
+      "text": "So join us there and we will see you next week. Have a great weekend.",
+      "source": "pass1",
+      "avg_logprob": -0.13165613355343803
+    },
+    {
+      "start": 1986.96,
+      "end": 1991.2,
+      "text": "I knew about investing, but I really didn't know how to go about it. Meet Corey,",
+      "source": "pass1",
+      "avg_logprob": -0.14981771002010424
+    },
+    {
+      "start": 1991.2,
+      "end": 1994.96,
+      "text": "a Wealthfront client. With Wealthfront, it could put money in and it would automatically",
+      "source": "pass1",
+      "avg_logprob": -0.14981771002010424
+    },
+    {
+      "start": 1994.96,
+      "end": 1998.56,
+      "text": "distribute it into a diversified portfolio. Then it starts to compound. The",
+      "source": "pass1",
+      "avg_logprob": -0.14981771002010424
+    },
+    {
+      "start": 1998.56,
+      "end": 2001.84,
+      "text": "compounding compounds on the compounding. Just let it run and it's great. Over",
+      "source": "pass1",
+      "avg_logprob": -0.14981771002010424
+    },
+    {
+      "start": 2001.84,
+      "end": 2005.6,
+      "text": "one million clients trust Wealthfront. Get started at Wealthfront.com.",
+      "source": "pass1",
+      "avg_logprob": -0.14981771002010424
+    },
+    {
+      "start": 2005.6,
+      "end": 2008.08,
+      "text": "Client was paid $1,000 for their testimonial, creating a conflict of",
+      "source": "pass1",
+      "avg_logprob": -0.14981771002010424
+    },
+    {
+      "start": 2008.08,
+      "end": 2010.32,
+      "text": "interest outcomes vary. Investment management and advisory services",
+      "source": "pass1",
+      "avg_logprob": -0.14981771002010424
+    },
+    {
+      "start": 2010.32,
+      "end": 2013.28,
+      "text": "provided by Wealthfront advisors LLC and SEC registered investment advisor.",
+      "source": "pass1",
+      "avg_logprob": -0.14981771002010424
+    },
+    {
+      "start": 2013.28,
+      "end": 2015.52,
+      "text": "Investing involves risk to principle regardless of the strategy used.",
+      "source": "pass1",
+      "avg_logprob": -0.28471879005432127
+    },
+    {
+      "start": 2015.52,
+      "end": 2017.28,
+      "text": "Has performance does not guarantee future results.",
+      "source": "pass1",
+      "avg_logprob": -0.28471879005432127
+    }
+  ],
+  "full_text": "We are live from Feddy's house. Guests are gathering around the TV even with a big storm outside. Are we worried about the fee? Nope, they have Xfinity Wi-Fi. Get reliable fiber-powered Gig Wi-Fi with Peacock included to stream the beautiful game this summer. Xfinity. Imagine that. Restrictions apply. New Gig Internet customers only. Actual speeds vary. Offer for Peacock Premium with ads currently at $10.99 a month value and limited to Xfinity Internet members with newer upgraded Gig Speed or faster service. Activation required to access content. Peacock must be activated within first 90 days. Management of existing subscriptions may be required to avoid multiple subscriptions and duplicate charges. Third-party build subscriptions continue until canceled. I thought it was important while we're in DC to bring in the guy behind the markets. This is the person who oversees as part of the organization, the CFTC. All these prediction markets along with a lot more. I want to bring them in now. CFTC chair, Michael Selig. Michael, welcome. You just started this. It was December. You got sworn in, right? That's right. I've been in just over 100 days now. Yeah. How has it been for 100 days? It's been exciting. We, of course, have this prediction markets issue that has been festering, lingering, and really taking off in the recent months. Of course, we oversea over $500 trillion in ocean derivatives markets. There's a lot on our plate, but we're really excited to be handling prediction markets, crypto, and all the novel financial instruments that are now in our markets. It really is interesting when you think about this because I think when you hear the CFTC, you think of a lot of people think about something like prediction markets. It's been on the news quite a bit. Very small slice as to what you do on a day-to-day basis. I want to talk about just the entire perspective on where these things are going and what the status of them is. This is a new thing to most people. Give us a quick overview as to how the CFTC came under control of these markets and why all of a sudden they seem to be everywhere. Well, the CFTC was established in the 70s and it was established to oversee our derivatives markets. These markets until around the turn of around the 70s, 80s, 90s, really have been agricultural markets first and foremost. Farmers, ranchers, producers use them to manage risk in whether it's weather or their crop risk or the input cost, energy, that sort of thing. Primarily catering to our commercial end users, but over the years we started to see that in financial products. We saw interest rate derivatives, we saw currency derivatives, and in the 90s we started to see political prediction markets start to emerge. We saw markets like the Iowa electronic market that offered trading in potential election outcomes. And the Democrats didn't like that a whole lot and so you started to see pushback against many of the other exchanges that wanted to start to offer these on a broader, more commercial basis. So the Iowa electronic market was for educational purposes. These commercial markets like Colchee and Polymarket were actually in litigation with the CFTC under the prior administration and Polymarket was driven offshore. Colchee was actually won their litigation with the CFTC and was able to start offering these products. And when I came into the seat just over 100 days ago, many of these novel prediction market products were now out in trading and it's become a real interesting use case for financial markets. Yeah, I mean, it's been fascinating to watch all of that happen. Of course, the CFTC legal situation with Colchee, if I understand that very well, it ended in like October 2024. So a few weeks before that election, that election, and in my view, thankfully, Donald Trump won. Now we have, I think, a totally different approach to these financial innovations. One that is not, I think, adversarial. Can you describe what you think, what is your approach and what is the approach of the administration? Well, prediction markets offer event contract derivatives. These are instruments that we have the exclusive regulatory authority over. And although the prior administration really tried to draw them offshore, we're setting up rules and regulations that accommodate these novel markets because we believe that these markets have proven more reliable than the news media in many cases. And they offer, unlike gambling and casinos and all of that, which are focused on entertainment, they offer really positive externalities for our society because they help check these fake stories in the news and the media. And they're a financial product like anything else. Our statute was set up with a very broad definition of the term commodity. So we are the commodity futures trading commission, but Congress rightfully anticipated that you'd have derivatives on virtually anything and everything. They're financial instruments that derive their value from another asset. And that asset could be a sports event, a political event, the price of corn or grain or anything else. And so we will affirmatively take that jurisdiction, we'll set up rules and regulations for the market, but we will make sure that these markets are here in the United States and they're here to stay. I'm curious as to how you view the utility, the public utility of these markets, because first of all, a lot of times they're just fun. And I don't first of all think that's the worst thing in the world that people actually enjoy their lives. But the left, certainly Elizabeth Warren thinks that when I look at this, I was talking to a friend of mine, he's in, I'm in Texas and he runs an air conditioning company. And the difference in his bottom line between a month that is 90 degrees and 100 degrees on average or 85 and 95 is massive. It could turn his entire year. And now these markets are available for him to go in and he can hedge that temperature, right? Like he can now protect his business against a potentially bad year. This is something he couldn't do before. I see use cases like that. Is small business a big part of this picture? How can this actually benefit the economy? We are seeing a real explosion of retail interests in our derivatives markets and that's something we did not have before. Traditionally, these markets, as I mentioned, were for commercial end users, farmers, ranchers, producers. The financial institutions started to get involved and the contracts were expensive to purchase. A typical derivatives contract requires you to put up significant money to take a position. With these contracts, they're dollar contracts. Typically the outcome is going to pay out based on an event. So it's 50, 50 odds. You pay 50 cents for your contract and you earn a dollar. And that's really retail focus, but that works very well for, to your point, somebody who just wants to purchase a little bit of additional insurance. And I will say there's many of the farmers and ranchers out there that were not able to access hedging tools because the big exchanges don't want to offer certain contracts and the prediction markets have been really willing to offer a wide range of things because go figure in a free market, people are willing to experiment and trade different products. Is this part of the reason the left seems to be pushing back against them so much? It seems like they're totally fine when giant corporations and everybody were able to hedge their risk, but when it comes down to some regular person able to do that, they seem to be very upset about that. I do think that could be part of it for sure. I mean, I think there is this concern that we're letting more people participate in our financial markets. And for some reason the left thinks that's a bad thing because they could lose their money or they're not responsible enough with their funds. But I do think to the extent you're going to allow a big institution into the markets, should allow everybody who wants to participate. And there's no reason that big institutions can have better knowledge on the markets than an individual who maybe knows what the weather is going to be because they're able to see what's happening in their local community. So I do think it's important to allow more participation in our markets and make sure we have rules and regulations around that activity. Can we talk a little bit about some of the criticism? AOC has come out and she said, this is just the casinoization of everything in our lives. We're now betting on everything. When you hear criticism like that, how do you react to it? I don't think this is turning our markets into casinos. And I think that criticism is really unfair. What we're doing with these markets is setting clear guardrails and rules around novel financial products. And these derivatives contracts are clearly within our regulatory authority. They're no different than anything else that we trade in terms of you set up a derivative. The underlying or the subject of that derivative can be virtually anything. It can be a stock. It can be a corn. It could be grain. It could be sports or politics. And so we can't discriminate. We're not merit based regulators where we say, okay, it's acceptable for you to trade on agricultural products, but not on sports or politics. So we want to set merit neutral rules and regulations and this protects investors. This protects consumers. It protects people using the markets. It doesn't turn them into casinos. These aren't designed for entertainment. They're designed for financial positions. And it's not my job as a regulator to say you're investing in agricultural products or stocks, and that's better for your portfolio and you'll be more successful there because frankly, a lot of Americans don't have any specialized knowledge and they're going to lose their money in those products. So I think that kind of criticism is very much a merit based criticism. And that's really not what our regulatory agency was designed to do. We're not a merit regulator. I love I think you use the term at one point merit policing, which is like it's kind of shouldn't be what we're doing in these markets. We should let people make their own decisions, at least in my view. Some people say though you're acting very hands off here, right? You're like, hey, we know we're not merit policing any of this. At the same time, you're allowing things like insider trading. I can't tell you how many times, Michael, that I've heard that exact thing. People are able to just, Mr. Beast is able to, his producers are able to go on there and make all this money and steal other people's money because they know what's going to happen in a video. Can you set the record straight here? Is insider trading legal? Absolutely not. And that criticism is completely unfounded. Our statute expressly prohibits fraud, manipulation, insider trading and abusive trading practices. And we police that. But more than us policing it, the exchanges themselves are self regulatory organizations, which means they have quasi government authority to police traders in their markets. And we've seen exchanges take action against traders in the markets. They can find them, they can kick them out of their markets. And then they refer those persons to us at the agency. And we can take further action. We can refer to the DOJ to take criminal action as well. So we are a cop on the beat and we are very much policing the markets. And of course, it takes some time to build a case and bring an investigation. But people should not engage in insider trading because they will be quickly dispensed with through the legal process. The number one conversation I have with people about prediction markets is like, well, what I'm doing wouldn't be insider trading, right? Like they're thinking like, what if I know this? Can I do this? It is a somewhat difficult thing to figure out, right? Because if you happen to just be really engaged in a process, you probably do know things that maybe others don't. What is the line when it comes to insider trading? So the insider trading case law articulates a pretty clear test. If you are a person that obtained non-public information and you trade on that information in breach of a duty, whether it's your employer or to, for example, you're a doctor, you've got a physician, privilege or confidentiality with your patient, you're a lawyer, you trade on something that's confidential from your client. Any of that, when you're breaching a duty and you trade on that information, that's insider trading. It could be, for example, the doctor that's taken care of an athlete and the athlete has an injury, the doctor knows that the athlete won't plan a game and so they trade ahead of that. That's illegal. And we police that. And there's many such cases. You can imagine lots of different stories of somebody had a duty to their employer and traded on it. All of that's not allowed in our markets. And going beyond that, we also have standards for contracts not being readily susceptible to manipulation. So even if something's not insider tradeable or there's not this risk of insider trading, if the contract is easily manipulable, so somebody could, for example, injure a player to win on a contract, that sort of thing shouldn't be listed in our markets. A lot of times, we hear these stories, the media loves stories, these outlier kind of stories when it comes to prediction markets. Most of them are not even occurring here in the United States. We hear these things about war, about death, about assassination, all these markets. Are those markets legal here in the United States? Those markets are also prohibited. Our statute includes a provision that states contracts on war, assassination, terrorism, illegal activity, gaming, which is undefined, these are within the agency's discretion to prohibit. And so we have not allowed and we can reject contracts. We have not allowed any exchanges to list war, terrorism, assassination, and various other sorts of contracts that are illegal offshore. We do not oversee the listing of contracts. So there are some exchanges that list these things offshore and to the extent U.S. persons are accessing that somehow, we have authority to the extent it's extraterritorial, but we don't oversee the exchanges as their primary regulator. And that's where, I mean, all of these stories seem to come from. Are these overseas exchanges that are not regulated by you? That's right. You would not allow that to happen, right? That's not a thing that can occur. That's right. Okay. Because I can't believe how many people don't understand that. One of the big things I hear from people and including some conservatives and people that I agree with on a lot of things, like we just can't let these things be the Wild West. It's not the Wild West, right? You have regulatory authority over this and you're helping shape this as we go with the attention, at least in my understanding, of allowing these markets and innovations to flourish. Right. It's really an unfair criticism because if you think about, for example, our regulation around food and drinks and all of that here in the United States, we allow certain things. Other countries allow much more things, right? We have different standards. Some countries have some more stringent standards. In the U.S., we have very stringent standards around the listing of these contracts, but that's not to say that they can't be listed offshore in a different exchange under different laws and regulations. Right. I mean, I've eaten in some of these countries and did not work out well. I will tell you. I'm glad we have some of those rules. Okay. Let me ask you another one. This is the one I hear often actually from conservatives who say, we're federalists. We believe in states' rights. We believe in the democracy laboratory that we've talked about since the time of our founders. These states have gone out of their way to stop sports gambling. You look at a state, Utah wants to say, hey, we don't want sports gambling. Why all of a sudden can someone who wants to bet on sports now go on Cal State or Polymarket or one of these other exchanges and bet on sports? Why can't they prevent these markets from appearing in their states? Well, for over 100 years, we've had these futures markets, derivatives markets, operating in parallel with the bucket shops, casinos, sports books, that sort of thing. And they're different products and services. You have very different standards. And over the years, we've had legal frameworks develop around derivatives and state frameworks develop around gambling and casinos and bucket shops. And they've continued to exist in parallel. The fact that you can have a bet on the price of virtually anything or you can have a derivative instrument, there's different legal treatment. We have insurance contracts that also look similar to derivatives contracts or securities that can look similar. So we've had parallel legal frameworks for very different products. And the standards are different. Going back to the example of food and beverage and all of that, one country can set different standards for theirs. The United States sets their standards. Well, the states do have some authorities that standards around gambling and entertainment and casinos. But when you get into financial markets, when you get into structuring derivatives products, regardless of the underlying can be sports, politics, corn grains, whatever it is, that falls within our exclusive regulatory authority. So we have had a number of states bring legal actions, some criminal against our exchanges for complying with federal law. And the federal law allows them to offer derivatives contracts across state lines. You can't do entertainment, you can't offer drinks, you can't do a house model where you kick people out of the casino if they win too much. It's a different product and once for entertainment and that's great. And states have a lot of authority. I believe in states' rights. I think it's really important for states to have the authority to ban true gambling casinos and all of that. If they want to have that outside their state and not allow it in their state, that's great. But the federal regime for financial markets crosses state lines and we have to enforce our statute. It's interesting because, as a conservative, as a person who is very much in favor of states being able to do what they want to do in almost all cases, I am a massive opponent of the way the commerce clause has been utilized over the years. I think it's been a catastrophe for a million different reasons. But fundamentally, this is the type of thing it was designed for in the real world. It would be wrong for us to go to someone in Utah and say, hey, you can't purchase Walmart stock. You can't participate in the New York Stock Exchange or the NASDAQ because your state has decided to ban you. Is that the right way to look at what's happening with these prediction markets? That's the concern I have. If you think about a farmer, rancher, producer in the state of Utah, if Utah is able to say you can't hedge your risk in your commercial business, how is that any different than Utah saying, well, if there's this local sports team or a local election and people can't hedge their risk related to that because people are hedging that risk and people are speculating on it, and that's how we have markets. So to me, anytime you start looking at, oh, well, this market is merit-based. We allow for this and not allow for that. It really questions whether we truly are a free market economy and we're going to allow for our markets to flourish here in the United States. I like your approach to a lot of this. By far, my favorite thing about you is that you're a Philadelphia Eagles fan. And it's interesting because I've talked to so many people who bring up, there's no, yeah, sure, grain futures. Yeah, okay, I can see why you'd need that weather. Maybe sure, but sports, the winner of American Idol, these things aren't valuable to anyone. And my answer to this is, I will tell you, as a person who watches the Eagles every single year, my day is good or bad, but based on the result. And there is social value to me to hedge whether the Eagles are going to win or not. And I have actually done that on these markets. It might make me a psychopath, but it is something that I do. You're just nodding. That's making me, you understand as an Eagles fan. You mentioned the merit policing thing. Do you don't have to judge it all, whether there's a social value to this? Or is it something that you do see down the line problems legally from maybe a different approach from Congress, where they say, hey, we're going to sift out some of these sports contracts and reality show contracts? Well, that's why we're engaging in rulemaking. So we do want all participants in the markets and stakeholders and states to come engage with us to help us get the rules right. And there are certain contracts that do raise concerns. I mentioned injury contracts earlier on. We don't want to create perverse incentives for players to go injure other players. And there's also a risk that that contract could easily be manipulated. So we are setting clear standards. And that's critical in these markets. We can't have anything goes. But what's important is that we set the gold standard here in the United States, because if we don't create a regulatory infrastructure for these products here in the US, they just go offshore. We've seen that. And with blockchain technology, you can offer this stuff on a global basis. And it's very hard to keep people out of any sort of blockchain based application. You can't really censor the internet and people's access to things. So we want to set a model that's a no brainer. If you think back to the years of Napster and the illegal file sharing music, Spotify, iTunes, that all won out. And we'll see the same in my view with prediction markets if we get it right here in the United States. But if we create black markets and just push it offshore, it's not going to benefit Americans. It'll just create, you know, offshore markets and people are going to get hurt. Do we need new legislation on prediction markets or is the current sort of structure enough? The commodity exchange act is one of the best pieces of legislation out there. I mean, I'm biased because I implement it, but it has a lot of really interesting provisions that are designed for fostering innovation. And actually one of our mandates as an agency is to promote responsible innovation. But the statute has this very broad definition of commodity. It includes everything except for onions and motion picture box office receipts excluded for historical reasons and for lobbying by Mr. Dodd. But the statute is very broad. So it covers a wide range of products and the definition of a swap post Dodd Frank prior to Dodd Frank, we had very broad authority over options and futures, but swaps were included under Dodd Frank. And so now we've even broader authority over different types of creative financial instruments. So we really cover the waterfront when it comes to these products. And we have a self certification process that allows the exchanges to quickly list products. The SEC actually doesn't have this. So it's a it's a really helpful tool because in exchange to come to market very quickly with new contracts and we have 24 hours to reject or approve. Whereas if you're dealing with the SEC, you have to actually register your security and it takes a very long time to come to market. You mentioned blockchain crypto. I know you've worked on this before. Are we going to get new legislation? How important is it? I think it's very important to future proof crypto markets here in the United States. We saw under the last administration, Gary Gensler, who is the SEC chairman, regulate by enforcement and sue every one of the major crypto companies in the United States. And the states are picking that up now. So we're starting to see that again. And it's really important to have a federal framework where you can opt into federal standards. And I think it's the same for prediction markets because states can easily man things. And we want this technology here in the United States under a federal framework similar with AI where if you have different standards across states, the commerce class to your point was really designed to protect this stuff and make sure that you don't have to move to California or move to Texas or move to Utah to be able to develop your new technology or offer your markets. So I do think the legislation can help future proof that make sure that future administrations can't take our crypto away from us. And I think this is a very much American values based technology. Holding your own assets is really critical. The Revolutionary War was fought very much for private property. And to have a blockchain where no matter what you can't be censored and your assets can't be taken away from you, I think that's really something we need to protect here in the United States. There's a lot of opposition to it though. They don't like crypto. They don't like prediction markets. There's a lot of pushback. Do we need on top of the crypto legislation anything on top of the prediction markets to do the same thing to future proof the industry? Well, unlike crypto, our statute's very clear that these are within our authority. I think you're going to see pushback from the other side where there's an effort to try to take away from us. So that I am concerned about on the Hill to the extent people want undermine the CPC's authority. But of course, there's always things you can add to add more clarity within our statute. And we're talking to folks on the Hill on a regular basis providing technical assistance because we are subject matters experts when it comes to our statute. But I do think there's a lot of parallel between the two technologies crypto and prediction markets because one is really democratizing our information systems and checking the news media and crypto is a check on the debanking and the financial institutions that have centralized control over our assets and both should be protected here in the United States if we want to really preserve our American values. Two more for you before I know you have to go. Number one, would you I have a very long text chain battle going back and forth with a friend of mine on the subject of whether avatar sucks or not the movie. I looked for a market to try to go against him and say that he was they were going to underperform the box office receipts. I was unable to find one. I had no idea until I heard from you onions and box office receipts. Do we need to include in this legislation to the clearance so I can just I can go out there and I can invest in my onions because I like onion investment. Well, maybe the times come to revisit the Dodd Frank language that the prohibited motion picture box office seats. And it's an interesting history, right? Because cancer actually tried to launch a motion picture box office sheets exchange and they were very far along. I don't know if it actually ever launched. But then there was an effort from the motion picture box office association to prohibit that. And lo and behold, we have a carve out in our statute. This also demonstrates the fact that the framers of our statute thought very broadly about what's a commodity. It's meant to include right beyond agricultural products, things like movie receipts, sports, politics, all of it. And I think that really creates a lot of space for novel financial instruments. But I think maybe the time has come we would be visit motion picture box office receipts. And the onions one is crazy. A couple of traders basically cornered the market on onions. Is that true? I read they somehow were able to control 98 percent of all onions. Is that actually a real thing? That's a real story. And it's interesting also because we've seen manipulation over the years and in lots of different commodities and we police that. But there was a lot of lobbying, I guess, to make sure that it never happens again with onions. With onions. Okay. Last one for you. This is the most important one. The only thing I really care about in this entire conversation, Michael, I'm sorry. I have a position on this full disclosure. Will A.J. Brown be an eagle next season? I wish I could say yes. But I am not feeling good about it. It's not looking good. Unfortunately, that is the position I have. Unfortunately, Michael Sealeck, CFTC chair. I'm fascinated by all this. And I think, you know, your approach here to protect these markets and make sure this innovation lasts longer than just a fad. You know, turning this into something where people can actually go in there and improve their lives through these markets. I think it's really, really important. And thank you for your work on it. I appreciate that. Thank you. All right. That's our interview with Michael Sealeck, a CFTC chair. He's the guy that had the organization that oversees all prediction markets. As you mentioned, with a couple of other things involved, $500 trillion. Just that and the $500 trillion. I can't imagine how much of his time is spent actually dealing with prediction markets, which is the tiniest, tiniest slice of this, but I really appreciate him taking the time. One of the things I wanted to get to with him and we were able to cover was, you know, this idea that, you know, you can just be an insider trading. You can do insider trading. You can be an insider trader. You can go and you can, you know, manipulate these markets. And this is just a casino. All of these criticisms, you see kind of, I mean, it's mostly the left. Honestly, there's some though on the right as well who are looking at this and just, you know, frankly, don't understand. I was talking to a journalist last night and she was asking, she's like, I don't, I kind of feel like there would be almost more pushback from people on these prediction markets than we've seen so far. And I said, I think honestly, the reason we haven't seen that yet is because I think it's early. You know, I think people are still kind of understanding what these things are. There's going to be a lot of school marms that are going to come in here and try to convince you that you're not allowed to do this, that it's a bad thing, the wrong thing. And there are outlier cases, as we talked about though there, and he said this quite clearly, the things, the problems, the concerns that people have, these are crimes. These are illegal. And yeah, sure, you can try it. Good luck. You might wind up in prison over it. And that's the case with everything in our lives, right? You can go in and start swiping stuff from Walgreens and you might, you can do it. But then of course, what happens? You pay a consequence for that. These things are illegal. If you're thinking about trying to do something like that, do not do it. Stay away from it. Stay away from the line on it. I mean, I think, you know, as conservatives, we're rule followers that away, right? Like we want to make sure that there is order to our society. And these are new and people don't really understand what the rules are. It's always important to make sure that you know that the rules are there. But more importantly, from this particular discussion is a lot of the criticisms you're going to hear in the news just frankly aren't real. Like they are, these are points that they are making. Oh, this is the Wild West. It is not, did that guy sound like the Wild West? Did that guy sound like he just went into a saloon? No, that is not what this is. There are real regulations. These guys are on top of them. They're looking at them, but they're looking at them from the perspective that these innovations can actually help the economy, help the country, help you as a small business person. And that is really there. And of course, also it can help you as an Eagles fan, which is, as I would say, probably more important to me particularly. But there's a lot of this we're going to be covering over the coming weeks. As I said, just to give you a kind of outline is where we're going from here. We'll be back in Dallas. We've got a new studio being built. There's more pictures starting to leak out about that on the social media. You can go check those out if you want, but it's going to be pretty cool. We got a studio, they're building it next week. We're going to be in Dallas, we'll be doing more content for you. We weren't, you know, we're kind of just ramping up, honestly. And we're like, oh, should we wait until we have the studio ready and all the graphics ready and everything ready? How much is like, no, we'll just go, we'll just talk about these things and start feeling it out. I'd love to know your questions and comments. If you got them, drop them below. If you have any things that you're thinking about like, wait a minute, what about this when it comes to prediction markets? That's the type of stuff I'd love to talk about and see if we can clear up. And honestly, anything else that you have, if there's a certain market that you're looking at, you're like, wait a minute, this, I know this one. I would love to hear that. If you go on these things and you put a few bucks down and you wind up making a profit, tell me your story because I find them to be fascinating. It's unlike when people tell you stories about your fantasy football weekends. These are actually interesting because I usually bug people with how I got screwed out of a fantasy football victory. That's very common for me to do. But in reality, I love hearing how people work through them. A lot of you have sent me messages or emails or whatever where like, hey, I took this position on this market and this is why I did it and this is why it worked or it didn't work. These are new for a lot of people. It's kind of fun to be able to learn from each other. So drop us a comment. You can email us as well and go to predictableshow.com. That is the place where we have a sub stack going. We're going to have a lot of written articles going to feature markets that maybe you want to get involved in. Maybe you might find interesting. We'll have live streams and stuff there and also youtube.com slash at predictable show. That is up and running now. And the podcast as well. You want to just listen, go to the podcast feed, search for predictable with stew. I'm pretty sure it'll come up, at least in theory. So join us there and we will see you next week. Have a great weekend. I knew about investing, but I really didn't know how to go about it. Meet Corey, a Wealthfront client. With Wealthfront, it could put money in and it would automatically distribute it into a diversified portfolio. Then it starts to compound. The compounding compounds on the compounding. Just let it run and it's great. Over one million clients trust Wealthfront. Get started at Wealthfront.com. Client was paid $1,000 for their testimonial, creating a conflict of interest outcomes vary. Investment management and advisory services provided by Wealthfront advisors LLC and SEC registered investment advisor. Investing involves risk to principle regardless of the strategy used. Has performance does not guarantee future results."
+}

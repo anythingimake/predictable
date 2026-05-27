@@ -1,0 +1,4506 @@
+{
+  "audio_file": "C:\\Users\\NoahYaffe\\Documents\\GitHub\\anythingimake\\predictable\\data\\audio\\22a640e0-3eb7-11f1-a050-cf575dadba0c.mp3",
+  "language": "en",
+  "duration": 1771.88575,
+  "pass1_model": "small",
+  "pass2_model": null,
+  "pass2_rescued_count": 0,
+  "pass1_segment_count": 642,
+  "segments": [
+    {
+      "start": 0.14,
+      "end": 8.14,
+      "text": "Welcome to Predictable, the show about prediction markets and the news through the lens of prediction markets.",
+      "source": "pass1",
+      "avg_logprob": -0.1512133943407159
+    },
+    {
+      "start": 8.14,
+      "end": 11.14,
+      "text": "Why are we in Washington D.C. to do this?",
+      "source": "pass1",
+      "avg_logprob": -0.1512133943407159
+    },
+    {
+      "start": 11.14,
+      "end": 18.14,
+      "text": "Well, it is Earth Day and so this week I'm flying all over the country just to punish the planet because that's what I do.",
+      "source": "pass1",
+      "avg_logprob": -0.1512133943407159
+    },
+    {
+      "start": 18.14,
+      "end": 20.14,
+      "text": "Punish the planet.",
+      "source": "pass1",
+      "avg_logprob": -0.1512133943407159
+    },
+    {
+      "start": 20.14,
+      "end": 26.14,
+      "text": "We actually were kind of set to start next week with the actual show.",
+      "source": "pass1",
+      "avg_logprob": -0.1512133943407159
+    },
+    {
+      "start": 26.14,
+      "end": 31.14,
+      "text": "And it'll be a show that you're going to be getting Monday through Thursday, you know, every week.",
+      "source": "pass1",
+      "avg_logprob": -0.10466588327178249
+    },
+    {
+      "start": 31.14,
+      "end": 33.14,
+      "text": "And we're going to start next week.",
+      "source": "pass1",
+      "avg_logprob": -0.10466588327178249
+    },
+    {
+      "start": 33.14,
+      "end": 36.14,
+      "text": "They're in the middle of building the studios down in the blaze in Dallas.",
+      "source": "pass1",
+      "avg_logprob": -0.10466588327178249
+    },
+    {
+      "start": 36.14,
+      "end": 41.14,
+      "text": "I'm up in D.C. right now, but we kind of had this D.C. opportunity pop up.",
+      "source": "pass1",
+      "avg_logprob": -0.10466588327178249
+    },
+    {
+      "start": 41.14,
+      "end": 46.14,
+      "text": "And, you know, we wanted to kind of get up here and take advantage of it honestly.",
+      "source": "pass1",
+      "avg_logprob": -0.10466588327178249
+    },
+    {
+      "start": 46.14,
+      "end": 48.14,
+      "text": "We get to meet a bunch of people.",
+      "source": "pass1",
+      "avg_logprob": -0.10466588327178249
+    },
+    {
+      "start": 48.14,
+      "end": 51.14,
+      "text": "We've been doing a bunch of meetings kind of behind the scenes as well.",
+      "source": "pass1",
+      "avg_logprob": -0.10466588327178249
+    },
+    {
+      "start": 51.14,
+      "end": 55.14,
+      "text": "And since we had this opportunity, we thought maybe we just could bring you some content this week.",
+      "source": "pass1",
+      "avg_logprob": -0.11550029098582106
+    },
+    {
+      "start": 55.14,
+      "end": 58.14,
+      "text": "The full show is going to start next week.",
+      "source": "pass1",
+      "avg_logprob": -0.11550029098582106
+    },
+    {
+      "start": 58.14,
+      "end": 64.14,
+      "text": "We think, you know, assuming there's not like a giant fire at the studios, you never know when, you know,",
+      "source": "pass1",
+      "avg_logprob": -0.11550029098582106
+    },
+    {
+      "start": 64.14,
+      "end": 67.14,
+      "text": "some protesters will break in and light it all on fire.",
+      "source": "pass1",
+      "avg_logprob": -0.11550029098582106
+    },
+    {
+      "start": 67.14,
+      "end": 70.14,
+      "text": "But for the time being, we think it's going to be done next week.",
+      "source": "pass1",
+      "avg_logprob": -0.11550029098582106
+    },
+    {
+      "start": 70.14,
+      "end": 73.14,
+      "text": "And we'll have content, you know, for you leading up to that no matter what.",
+      "source": "pass1",
+      "avg_logprob": -0.11550029098582106
+    },
+    {
+      "start": 73.14,
+      "end": 74.14,
+      "text": "Right?",
+      "source": "pass1",
+      "avg_logprob": -0.11550029098582106
+    },
+    {
+      "start": 74.14,
+      "end": 80.14,
+      "text": "Like some live streams, ask me anything, all sorts of stuff leading up to next week when the show actually starts",
+      "source": "pass1",
+      "avg_logprob": -0.11550029098582106
+    },
+    {
+      "start": 80.14,
+      "end": 82.14,
+      "text": "from its home base in Dallas.",
+      "source": "pass1",
+      "avg_logprob": -0.08895229714588054
+    },
+    {
+      "start": 82.14,
+      "end": 88.14,
+      "text": "What I wanted to do today kind of has a, I don't know, it's a pseudo first episode,",
+      "source": "pass1",
+      "avg_logprob": -0.08895229714588054
+    },
+    {
+      "start": 88.14,
+      "end": 95.14,
+      "text": "is to talk to you about kind of the way that I wanted to bridge the old stuff to the new stuff.",
+      "source": "pass1",
+      "avg_logprob": -0.08895229714588054
+    },
+    {
+      "start": 95.14,
+      "end": 101.14,
+      "text": "Because, you know, you might, you know, we kind of start this show predictable with a pretty tight group.",
+      "source": "pass1",
+      "avg_logprob": -0.08895229714588054
+    },
+    {
+      "start": 101.14,
+      "end": 105.14,
+      "text": "I know there are people who are really active in the prediction market,",
+      "source": "pass1",
+      "avg_logprob": -0.08895229714588054
+    },
+    {
+      "start": 105.14,
+      "end": 109.14,
+      "text": "a world that are following the show, or they're following closely what we're doing.",
+      "source": "pass1",
+      "avg_logprob": -0.12939775838620132
+    },
+    {
+      "start": 109.14,
+      "end": 111.14,
+      "text": "And that's great. We're excited about that.",
+      "source": "pass1",
+      "avg_logprob": -0.12939775838620132
+    },
+    {
+      "start": 111.14,
+      "end": 114.14,
+      "text": "But we're going to start mostly with a pretty tight group.",
+      "source": "pass1",
+      "avg_logprob": -0.12939775838620132
+    },
+    {
+      "start": 114.14,
+      "end": 118.14,
+      "text": "And, you know, if you're in that group, you've probably been around for a long time.",
+      "source": "pass1",
+      "avg_logprob": -0.12939775838620132
+    },
+    {
+      "start": 118.14,
+      "end": 122.14,
+      "text": "You may have been listening for a decade, two, maybe almost three decades",
+      "source": "pass1",
+      "avg_logprob": -0.12939775838620132
+    },
+    {
+      "start": 122.14,
+      "end": 127.14,
+      "text": "when it comes back to Stude's America, Wonderful World of Stude before that.",
+      "source": "pass1",
+      "avg_logprob": -0.12939775838620132
+    },
+    {
+      "start": 127.14,
+      "end": 130.14,
+      "text": "Pat and Stu, Glenn Beck program, of course.",
+      "source": "pass1",
+      "avg_logprob": -0.12939775838620132
+    },
+    {
+      "start": 130.14,
+      "end": 134.14,
+      "text": "All the things that we've done kind of together over a very long period of time.",
+      "source": "pass1",
+      "avg_logprob": -0.12939775838620132
+    },
+    {
+      "start": 134.14,
+      "end": 141.14,
+      "text": "And we've been together through a million different news cycles, a million different politicians.",
+      "source": "pass1",
+      "avg_logprob": -0.06473987925369128
+    },
+    {
+      "start": 141.14,
+      "end": 147.14,
+      "text": "I will say when I look back at old footage, I've also realized you've gone on a million different weight fluctuations with me.",
+      "source": "pass1",
+      "avg_logprob": -0.06473987925369128
+    },
+    {
+      "start": 147.14,
+      "end": 150.14,
+      "text": "And I appreciate you sticking through each and every one of those.",
+      "source": "pass1",
+      "avg_logprob": -0.06473987925369128
+    },
+    {
+      "start": 150.14,
+      "end": 157.14,
+      "text": "My closet is not large enough to hold all the clothing, but I'm glad you're still here.",
+      "source": "pass1",
+      "avg_logprob": -0.06473987925369128
+    },
+    {
+      "start": 157.14,
+      "end": 160.14,
+      "text": "This is a bit of a different thing.",
+      "source": "pass1",
+      "avg_logprob": -0.06473987925369128
+    },
+    {
+      "start": 160.14,
+      "end": 163.14,
+      "text": "I mean, change here is a little weird, right?",
+      "source": "pass1",
+      "avg_logprob": -0.06473987925369128
+    },
+    {
+      "start": 163.14,
+      "end": 170.14,
+      "text": "Change can be odd and it can be unsettling and it can be, you know, when you're taken out of what you expect on a day-to-day basis,",
+      "source": "pass1",
+      "avg_logprob": -0.05533863760638928
+    },
+    {
+      "start": 170.14,
+      "end": 172.14,
+      "text": "I know that can be strange.",
+      "source": "pass1",
+      "avg_logprob": -0.05533863760638928
+    },
+    {
+      "start": 172.14,
+      "end": 178.14,
+      "text": "And while this is a new show, it is about the news still through the lens of prediction markets.",
+      "source": "pass1",
+      "avg_logprob": -0.05533863760638928
+    },
+    {
+      "start": 178.14,
+      "end": 180.14,
+      "text": "But it's about the news.",
+      "source": "pass1",
+      "avg_logprob": -0.05533863760638928
+    },
+    {
+      "start": 180.14,
+      "end": 182.14,
+      "text": "We're going to be analyzing the news.",
+      "source": "pass1",
+      "avg_logprob": -0.05533863760638928
+    },
+    {
+      "start": 182.14,
+      "end": 185.14,
+      "text": "You might not know anything about prediction markets.",
+      "source": "pass1",
+      "avg_logprob": -0.05533863760638928
+    },
+    {
+      "start": 185.14,
+      "end": 187.14,
+      "text": "And honestly, that's totally fine.",
+      "source": "pass1",
+      "avg_logprob": -0.05533863760638928
+    },
+    {
+      "start": 187.14,
+      "end": 191.14,
+      "text": "I still think you're going to get a lot out of the show on a day-to-day basis.",
+      "source": "pass1",
+      "avg_logprob": -0.05533863760638928
+    },
+    {
+      "start": 192.14,
+      "end": 201.14,
+      "text": "You know, the media is kind of now trying to figure out what prediction markets are and how they're going to handle them.",
+      "source": "pass1",
+      "avg_logprob": -0.08279482578183268
+    },
+    {
+      "start": 201.14,
+      "end": 203.14,
+      "text": "You know, it's interesting to watch.",
+      "source": "pass1",
+      "avg_logprob": -0.08279482578183268
+    },
+    {
+      "start": 203.14,
+      "end": 209.14,
+      "text": "You'll see all these sort of like reports that are almost like grandmotherly.",
+      "source": "pass1",
+      "avg_logprob": -0.08279482578183268
+    },
+    {
+      "start": 209.14,
+      "end": 218.14,
+      "text": "Like there's a scolding you for all of the, you know, all the people that go on prediction markets and do things that are bad.",
+      "source": "pass1",
+      "avg_logprob": -0.08279482578183268
+    },
+    {
+      "start": 219.14,
+      "end": 221.14,
+      "text": "That's important to talk about.",
+      "source": "pass1",
+      "avg_logprob": -0.0727451066672802
+    },
+    {
+      "start": 221.14,
+      "end": 225.14,
+      "text": "You want to make sure that these things are on the up and up as much as possible.",
+      "source": "pass1",
+      "avg_logprob": -0.0727451066672802
+    },
+    {
+      "start": 225.14,
+      "end": 228.14,
+      "text": "But it's also like a really small part of the story here.",
+      "source": "pass1",
+      "avg_logprob": -0.0727451066672802
+    },
+    {
+      "start": 228.14,
+      "end": 234.14,
+      "text": "And, you know, it is important to understand exactly why those things happen.",
+      "source": "pass1",
+      "avg_logprob": -0.0727451066672802
+    },
+    {
+      "start": 234.14,
+      "end": 242.14,
+      "text": "And, you know, it's funny to watch them at the same time they're scolding you or scolding the world about the casinoization of America.",
+      "source": "pass1",
+      "avg_logprob": -0.0727451066672802
+    },
+    {
+      "start": 242.14,
+      "end": 248.14,
+      "text": "Half of these networks are all taking money from these prediction markets because, you know, they're sponsoring stuff.",
+      "source": "pass1",
+      "avg_logprob": -0.06473930711512799
+    },
+    {
+      "start": 248.14,
+      "end": 250.14,
+      "text": "There is real value there.",
+      "source": "pass1",
+      "avg_logprob": -0.06473930711512799
+    },
+    {
+      "start": 250.14,
+      "end": 255.14,
+      "text": "And if you don't know anything about prediction markets, that's totally fine.",
+      "source": "pass1",
+      "avg_logprob": -0.06473930711512799
+    },
+    {
+      "start": 255.14,
+      "end": 259.14,
+      "text": "Like it's, you're still going to get something out of this program, I think.",
+      "source": "pass1",
+      "avg_logprob": -0.06473930711512799
+    },
+    {
+      "start": 259.14,
+      "end": 261.14,
+      "text": "Now, you might hear it's all about gambling.",
+      "source": "pass1",
+      "avg_logprob": -0.06473930711512799
+    },
+    {
+      "start": 261.14,
+      "end": 262.14,
+      "text": "I don't think that's true.",
+      "source": "pass1",
+      "avg_logprob": -0.06473930711512799
+    },
+    {
+      "start": 262.14,
+      "end": 264.14,
+      "text": "We'll talk about that and I'll explain why I don't think that's true.",
+      "source": "pass1",
+      "avg_logprob": -0.06473930711512799
+    },
+    {
+      "start": 264.14,
+      "end": 270.14,
+      "text": "I think, you know, just like anything else, you can approach all sorts of stuff as you can approach stock market investing",
+      "source": "pass1",
+      "avg_logprob": -0.06473930711512799
+    },
+    {
+      "start": 270.14,
+      "end": 274.14,
+      "text": "as meme stocks and penny stocks and it might feel a lot like gambling.",
+      "source": "pass1",
+      "avg_logprob": -0.07872256283406857
+    },
+    {
+      "start": 274.14,
+      "end": 276.14,
+      "text": "You could do the same thing in prediction markets.",
+      "source": "pass1",
+      "avg_logprob": -0.07872256283406857
+    },
+    {
+      "start": 276.14,
+      "end": 279.14,
+      "text": "You could throw crazy bets all over the place if you want.",
+      "source": "pass1",
+      "avg_logprob": -0.07872256283406857
+    },
+    {
+      "start": 279.14,
+      "end": 280.14,
+      "text": "That's not what we're going to do here.",
+      "source": "pass1",
+      "avg_logprob": -0.07872256283406857
+    },
+    {
+      "start": 280.14,
+      "end": 282.14,
+      "text": "Like that's not our interest.",
+      "source": "pass1",
+      "avg_logprob": -0.07872256283406857
+    },
+    {
+      "start": 282.14,
+      "end": 283.14,
+      "text": "I don't want to do it that way.",
+      "source": "pass1",
+      "avg_logprob": -0.07872256283406857
+    },
+    {
+      "start": 283.14,
+      "end": 285.14,
+      "text": "I think there's real utility to these markets.",
+      "source": "pass1",
+      "avg_logprob": -0.07872256283406857
+    },
+    {
+      "start": 285.14,
+      "end": 293.14,
+      "text": "And I think not only will it help us and maybe make some money together, but also, you know, inform us as to what the world,",
+      "source": "pass1",
+      "avg_logprob": -0.07872256283406857
+    },
+    {
+      "start": 293.14,
+      "end": 295.14,
+      "text": "what in the world is actually going on.",
+      "source": "pass1",
+      "avg_logprob": -0.07872256283406857
+    },
+    {
+      "start": 295.14,
+      "end": 300.14,
+      "text": "You may never invest the dollar in a prediction market.",
+      "source": "pass1",
+      "avg_logprob": -0.08585591526288125
+    },
+    {
+      "start": 300.14,
+      "end": 301.14,
+      "text": "That's totally fine.",
+      "source": "pass1",
+      "avg_logprob": -0.08585591526288125
+    },
+    {
+      "start": 301.14,
+      "end": 304.14,
+      "text": "You may have no interest in investing a dollar in a prediction market.",
+      "source": "pass1",
+      "avg_logprob": -0.08585591526288125
+    },
+    {
+      "start": 304.14,
+      "end": 306.14,
+      "text": "That's totally fine as well.",
+      "source": "pass1",
+      "avg_logprob": -0.08585591526288125
+    },
+    {
+      "start": 306.14,
+      "end": 312.14,
+      "text": "There's going to be a ton of overlap between, you know, Student of America and, you know, what I did on the Glenn Beck program.",
+      "source": "pass1",
+      "avg_logprob": -0.08585591526288125
+    },
+    {
+      "start": 312.14,
+      "end": 316.14,
+      "text": "I will still be calling AOC a moron, probably multiple times per show.",
+      "source": "pass1",
+      "avg_logprob": -0.08585591526288125
+    },
+    {
+      "start": 316.14,
+      "end": 317.14,
+      "text": "I wish I could stop that.",
+      "source": "pass1",
+      "avg_logprob": -0.08585591526288125
+    },
+    {
+      "start": 317.14,
+      "end": 321.14,
+      "text": "I feel bad about it at times because she's, you know, she's got the brain of a mouse.",
+      "source": "pass1",
+      "avg_logprob": -0.08585591526288125
+    },
+    {
+      "start": 321.14,
+      "end": 324.14,
+      "text": "But I will still continue to do that.",
+      "source": "pass1",
+      "avg_logprob": -0.08585591526288125
+    },
+    {
+      "start": 324.14,
+      "end": 326.14,
+      "text": "You know, I'm still a conservative.",
+      "source": "pass1",
+      "avg_logprob": -0.05728249217188636
+    },
+    {
+      "start": 326.14,
+      "end": 328.14,
+      "text": "I'm still a nerd.",
+      "source": "pass1",
+      "avg_logprob": -0.05728249217188636
+    },
+    {
+      "start": 328.14,
+      "end": 333.14,
+      "text": "And I will still, you know, taunt Dallas Cowboys fans whenever possible.",
+      "source": "pass1",
+      "avg_logprob": -0.05728249217188636
+    },
+    {
+      "start": 333.14,
+      "end": 336.14,
+      "text": "These are all things that are going to be central parts of this program.",
+      "source": "pass1",
+      "avg_logprob": -0.05728249217188636
+    },
+    {
+      "start": 336.14,
+      "end": 338.14,
+      "text": "And I will be analyzing the news.",
+      "source": "pass1",
+      "avg_logprob": -0.05728249217188636
+    },
+    {
+      "start": 338.14,
+      "end": 343.14,
+      "text": "I will be analyzing elections and the events that are important to you,",
+      "source": "pass1",
+      "avg_logprob": -0.05728249217188636
+    },
+    {
+      "start": 343.14,
+      "end": 345.14,
+      "text": "the events that affect you the most.",
+      "source": "pass1",
+      "avg_logprob": -0.05728249217188636
+    },
+    {
+      "start": 345.14,
+      "end": 349.14,
+      "text": "Obviously in this time period, elections are going to be a big focus.",
+      "source": "pass1",
+      "avg_logprob": -0.05728249217188636
+    },
+    {
+      "start": 349.14,
+      "end": 353.14,
+      "text": "And if you follow what I did on Student of America on the Glenn Beck program,",
+      "source": "pass1",
+      "avg_logprob": -0.05728249217188636
+    },
+    {
+      "start": 353.14,
+      "end": 355.14,
+      "text": "you know, that was kind of my beat, right?",
+      "source": "pass1",
+      "avg_logprob": -0.06772325828205794
+    },
+    {
+      "start": 355.14,
+      "end": 360.14,
+      "text": "I mean, I built election models to try to predict what was going to happen.",
+      "source": "pass1",
+      "avg_logprob": -0.06772325828205794
+    },
+    {
+      "start": 360.14,
+      "end": 363.14,
+      "text": "We used all this data.",
+      "source": "pass1",
+      "avg_logprob": -0.06772325828205794
+    },
+    {
+      "start": 363.14,
+      "end": 367.14,
+      "text": "We analyzed the elections over the years for, you know,",
+      "source": "pass1",
+      "avg_logprob": -0.06772325828205794
+    },
+    {
+      "start": 367.14,
+      "end": 370.14,
+      "text": "for show after show after show, election after election after election.",
+      "source": "pass1",
+      "avg_logprob": -0.06772325828205794
+    },
+    {
+      "start": 370.14,
+      "end": 373.14,
+      "text": "It's one of the things that, you know, I just became known for",
+      "source": "pass1",
+      "avg_logprob": -0.06772325828205794
+    },
+    {
+      "start": 373.14,
+      "end": 377.14,
+      "text": "because honestly, I'm a loser and I like spreadsheets.",
+      "source": "pass1",
+      "avg_logprob": -0.06772325828205794
+    },
+    {
+      "start": 377.14,
+      "end": 381.14,
+      "text": "So, you know, we wound up really kind of digging into that over a long period of time.",
+      "source": "pass1",
+      "avg_logprob": -0.06772325828205794
+    },
+    {
+      "start": 381.14,
+      "end": 383.14,
+      "text": "So, I'll be analyzing the news here.",
+      "source": "pass1",
+      "avg_logprob": -0.04482563667218475
+    },
+    {
+      "start": 383.14,
+      "end": 384.14,
+      "text": "You'll still get that.",
+      "source": "pass1",
+      "avg_logprob": -0.04482563667218475
+    },
+    {
+      "start": 384.14,
+      "end": 388.14,
+      "text": "You'll still get all the elections analysis that you kind of expect",
+      "source": "pass1",
+      "avg_logprob": -0.04482563667218475
+    },
+    {
+      "start": 388.14,
+      "end": 390.14,
+      "text": "from the stuff that I've been doing on previous shows.",
+      "source": "pass1",
+      "avg_logprob": -0.04482563667218475
+    },
+    {
+      "start": 390.14,
+      "end": 395.14,
+      "text": "The difference here, though, is we are implementing a whole new data set",
+      "source": "pass1",
+      "avg_logprob": -0.04482563667218475
+    },
+    {
+      "start": 395.14,
+      "end": 397.14,
+      "text": "in a much more serious way with prediction markets.",
+      "source": "pass1",
+      "avg_logprob": -0.04482563667218475
+    },
+    {
+      "start": 397.14,
+      "end": 401.14,
+      "text": "And I've always used prediction markets as part of my analysis",
+      "source": "pass1",
+      "avg_logprob": -0.04482563667218475
+    },
+    {
+      "start": 401.14,
+      "end": 403.14,
+      "text": "when it comes to breaking down elections.",
+      "source": "pass1",
+      "avg_logprob": -0.04482563667218475
+    },
+    {
+      "start": 403.14,
+      "end": 405.14,
+      "text": "I think it's a really good way to think about them.",
+      "source": "pass1",
+      "avg_logprob": -0.04482563667218475
+    },
+    {
+      "start": 405.14,
+      "end": 409.14,
+      "text": "It's a good way to understand, you know, what's coming next",
+      "source": "pass1",
+      "avg_logprob": -0.04482563667218475
+    },
+    {
+      "start": 409.14,
+      "end": 414.14,
+      "text": "because they are able to synthesize tons and tons and tons of data points",
+      "source": "pass1",
+      "avg_logprob": -0.06668298443158467
+    },
+    {
+      "start": 414.14,
+      "end": 417.14,
+      "text": "into one thing so you can really get it.",
+      "source": "pass1",
+      "avg_logprob": -0.06668298443158467
+    },
+    {
+      "start": 417.14,
+      "end": 418.14,
+      "text": "You can understand it.",
+      "source": "pass1",
+      "avg_logprob": -0.06668298443158467
+    },
+    {
+      "start": 418.14,
+      "end": 420.14,
+      "text": "You can see, hey, wait a minute, I think that's too high.",
+      "source": "pass1",
+      "avg_logprob": -0.06668298443158467
+    },
+    {
+      "start": 420.14,
+      "end": 421.14,
+      "text": "I think that's too low.",
+      "source": "pass1",
+      "avg_logprob": -0.06668298443158467
+    },
+    {
+      "start": 421.14,
+      "end": 423.14,
+      "text": "But it gives you something to really work off of.",
+      "source": "pass1",
+      "avg_logprob": -0.06668298443158467
+    },
+    {
+      "start": 423.14,
+      "end": 428.14,
+      "text": "A lot of times we have problems in the media where hosts and shows",
+      "source": "pass1",
+      "avg_logprob": -0.06668298443158467
+    },
+    {
+      "start": 428.14,
+      "end": 433.14,
+      "text": "and all of these things wind up throwing in a lot of what they want to happen",
+      "source": "pass1",
+      "avg_logprob": -0.06668298443158467
+    },
+    {
+      "start": 433.14,
+      "end": 438.14,
+      "text": "of what they're hoping will happen as opposed to talking about the real world as it is.",
+      "source": "pass1",
+      "avg_logprob": -0.06668298443158467
+    },
+    {
+      "start": 438.14,
+      "end": 443.14,
+      "text": "And there will be times the real world as it is sucks.",
+      "source": "pass1",
+      "avg_logprob": -0.054009357833715736
+    },
+    {
+      "start": 443.14,
+      "end": 445.14,
+      "text": "We want you to know about that.",
+      "source": "pass1",
+      "avg_logprob": -0.054009357833715736
+    },
+    {
+      "start": 445.14,
+      "end": 446.14,
+      "text": "The same thing on the other side.",
+      "source": "pass1",
+      "avg_logprob": -0.054009357833715736
+    },
+    {
+      "start": 446.14,
+      "end": 447.14,
+      "text": "There can be times where it's great.",
+      "source": "pass1",
+      "avg_logprob": -0.054009357833715736
+    },
+    {
+      "start": 447.14,
+      "end": 449.14,
+      "text": "I don't want the media to beat you down on that.",
+      "source": "pass1",
+      "avg_logprob": -0.054009357833715736
+    },
+    {
+      "start": 449.14,
+      "end": 453.14,
+      "text": "I want you to know as much as we can possibly know about what's coming around the corner",
+      "source": "pass1",
+      "avg_logprob": -0.054009357833715736
+    },
+    {
+      "start": 453.14,
+      "end": 455.14,
+      "text": "so you can prepare for it.",
+      "source": "pass1",
+      "avg_logprob": -0.054009357833715736
+    },
+    {
+      "start": 455.14,
+      "end": 461.14,
+      "text": "As we kind of implement these prediction markets into our analysis,",
+      "source": "pass1",
+      "avg_logprob": -0.054009357833715736
+    },
+    {
+      "start": 461.14,
+      "end": 465.14,
+      "text": "you should know a few things about why we're doing it.",
+      "source": "pass1",
+      "avg_logprob": -0.054009357833715736
+    },
+    {
+      "start": 465.14,
+      "end": 467.14,
+      "text": "Now, prediction markets have been around for a long time.",
+      "source": "pass1",
+      "avg_logprob": -0.09655539795267777
+    },
+    {
+      "start": 467.14,
+      "end": 472.14,
+      "text": "Despite the efforts of Elizabeth Warren and all of the Elizabeth Warrens",
+      "source": "pass1",
+      "avg_logprob": -0.09655539795267777
+    },
+    {
+      "start": 472.14,
+      "end": 477.14,
+      "text": "that exist here in this wonderful city of Washington, D.C.,",
+      "source": "pass1",
+      "avg_logprob": -0.09655539795267777
+    },
+    {
+      "start": 477.14,
+      "end": 480.14,
+      "text": "prediction markets are going to come under attack from those people.",
+      "source": "pass1",
+      "avg_logprob": -0.09655539795267777
+    },
+    {
+      "start": 480.14,
+      "end": 482.14,
+      "text": "They're already out there doing it.",
+      "source": "pass1",
+      "avg_logprob": -0.09655539795267777
+    },
+    {
+      "start": 482.14,
+      "end": 485.14,
+      "text": "They're already attacking them because, of course, they have interest into,",
+      "source": "pass1",
+      "avg_logprob": -0.09655539795267777
+    },
+    {
+      "start": 485.14,
+      "end": 490.14,
+      "text": "like their whole job is to fool you into not knowing what the truth is.",
+      "source": "pass1",
+      "avg_logprob": -0.09655539795267777
+    },
+    {
+      "start": 490.14,
+      "end": 492.14,
+      "text": "So, of course, they don't like these things, right?",
+      "source": "pass1",
+      "avg_logprob": -0.09655539795267777
+    },
+    {
+      "start": 492.14,
+      "end": 495.14,
+      "text": "That is quite obvious.",
+      "source": "pass1",
+      "avg_logprob": -0.07244812255188571
+    },
+    {
+      "start": 495.14,
+      "end": 500.14,
+      "text": "When you hear people talk about how bad they are and how horrible they are,",
+      "source": "pass1",
+      "avg_logprob": -0.07244812255188571
+    },
+    {
+      "start": 500.14,
+      "end": 504.14,
+      "text": "understand that for at least some of them, that's a big motivation.",
+      "source": "pass1",
+      "avg_logprob": -0.07244812255188571
+    },
+    {
+      "start": 504.14,
+      "end": 508.14,
+      "text": "I do think that there are groups of people who are concerned about some of the effects on them",
+      "source": "pass1",
+      "avg_logprob": -0.07244812255188571
+    },
+    {
+      "start": 508.14,
+      "end": 511.14,
+      "text": "that are much more genuine, more earnest.",
+      "source": "pass1",
+      "avg_logprob": -0.07244812255188571
+    },
+    {
+      "start": 511.14,
+      "end": 515.14,
+      "text": "That's different with Elizabeth Warren and AOC and those types.",
+      "source": "pass1",
+      "avg_logprob": -0.07244812255188571
+    },
+    {
+      "start": 515.14,
+      "end": 517.14,
+      "text": "John Oliver is another one.",
+      "source": "pass1",
+      "avg_logprob": -0.07244812255188571
+    },
+    {
+      "start": 517.14,
+      "end": 520.14,
+      "text": "You know what they're doing there.",
+      "source": "pass1",
+      "avg_logprob": -0.07244812255188571
+    },
+    {
+      "start": 520.14,
+      "end": 521.14,
+      "text": "And we'll talk about that.",
+      "source": "pass1",
+      "avg_logprob": -0.07244812255188571
+    },
+    {
+      "start": 521.14,
+      "end": 526.14,
+      "text": "I want to make sure that people understand where those people, those criticisms are coming from",
+      "source": "pass1",
+      "avg_logprob": -0.09236874768608495
+    },
+    {
+      "start": 526.14,
+      "end": 534.14,
+      "text": "because they're not from a natural and normal and from a place that is, I would say,",
+      "source": "pass1",
+      "avg_logprob": -0.09236874768608495
+    },
+    {
+      "start": 534.14,
+      "end": 537.14,
+      "text": "has the best interests at heart.",
+      "source": "pass1",
+      "avg_logprob": -0.09236874768608495
+    },
+    {
+      "start": 537.14,
+      "end": 539.14,
+      "text": "That's a problem.",
+      "source": "pass1",
+      "avg_logprob": -0.09236874768608495
+    },
+    {
+      "start": 539.14,
+      "end": 544.14,
+      "text": "That's what a lot of the big nice buildings in this city are built around.",
+      "source": "pass1",
+      "avg_logprob": -0.09236874768608495
+    },
+    {
+      "start": 544.14,
+      "end": 547.14,
+      "text": "And we, of course, are going to be pushing back against that.",
+      "source": "pass1",
+      "avg_logprob": -0.09236874768608495
+    },
+    {
+      "start": 547.14,
+      "end": 553.14,
+      "text": "The person who knows the most about how these things will develop in the future,",
+      "source": "pass1",
+      "avg_logprob": -0.07644979405192147
+    },
+    {
+      "start": 553.14,
+      "end": 560.14,
+      "text": "really across the US and how global markets can play into this if they're going to come here as well,",
+      "source": "pass1",
+      "avg_logprob": -0.07644979405192147
+    },
+    {
+      "start": 560.14,
+      "end": 567.14,
+      "text": "and honestly, not to mention about how they will develop and what they can offer the economy",
+      "source": "pass1",
+      "avg_logprob": -0.07644979405192147
+    },
+    {
+      "start": 567.14,
+      "end": 569.14,
+      "text": "is a guy named Michael Selig.",
+      "source": "pass1",
+      "avg_logprob": -0.07644979405192147
+    },
+    {
+      "start": 569.14,
+      "end": 572.14,
+      "text": "Now, he is the 16th chairman of the CFTC.",
+      "source": "pass1",
+      "avg_logprob": -0.07644979405192147
+    },
+    {
+      "start": 572.14,
+      "end": 574.14,
+      "text": "He's appointed by Donald Trump.",
+      "source": "pass1",
+      "avg_logprob": -0.07644979405192147
+    },
+    {
+      "start": 574.14,
+      "end": 576.14,
+      "text": "He was sworn in a few months ago, I think December.",
+      "source": "pass1",
+      "avg_logprob": -0.07644979405192147
+    },
+    {
+      "start": 576.14,
+      "end": 582.14,
+      "text": "The CFTC is the, you know, one of these nine zillion organizations,",
+      "source": "pass1",
+      "avg_logprob": -0.08416666075436756
+    },
+    {
+      "start": 582.14,
+      "end": 585.14,
+      "text": "the regulatory organizations here in Washington.",
+      "source": "pass1",
+      "avg_logprob": -0.08416666075436756
+    },
+    {
+      "start": 585.14,
+      "end": 589.14,
+      "text": "They oversee prediction markets and a lot more than that, right?",
+      "source": "pass1",
+      "avg_logprob": -0.08416666075436756
+    },
+    {
+      "start": 589.14,
+      "end": 592.14,
+      "text": "They were created a long time ago to oversee agriculture,",
+      "source": "pass1",
+      "avg_logprob": -0.08416666075436756
+    },
+    {
+      "start": 592.14,
+      "end": 599.14,
+      "text": "and it's grown into this where the CFTC has oversight of all of these prediction markets.",
+      "source": "pass1",
+      "avg_logprob": -0.08416666075436756
+    },
+    {
+      "start": 599.14,
+      "end": 603.14,
+      "text": "He's the head of the CFTC, the big cheese, the head honcho,",
+      "source": "pass1",
+      "avg_logprob": -0.08416666075436756
+    },
+    {
+      "start": 603.14,
+      "end": 606.14,
+      "text": "and also, not going to be on the top of his resume,",
+      "source": "pass1",
+      "avg_logprob": -0.06216945772369702
+    },
+    {
+      "start": 606.14,
+      "end": 611.14,
+      "text": "but also our first guest on Predictable on tomorrow's program.",
+      "source": "pass1",
+      "avg_logprob": -0.06216945772369702
+    },
+    {
+      "start": 611.14,
+      "end": 614.14,
+      "text": "We'll talk to the head of the CFTC, Michael Selig,",
+      "source": "pass1",
+      "avg_logprob": -0.06216945772369702
+    },
+    {
+      "start": 614.14,
+      "end": 618.14,
+      "text": "who can talk to us about pretty much everything when it comes down to prediction markets,",
+      "source": "pass1",
+      "avg_logprob": -0.06216945772369702
+    },
+    {
+      "start": 618.14,
+      "end": 623.14,
+      "text": "how they're looked at, if they have a future, do they bring any utility to our world?",
+      "source": "pass1",
+      "avg_logprob": -0.06216945772369702
+    },
+    {
+      "start": 623.14,
+      "end": 625.14,
+      "text": "Do they help? Do they hurt?",
+      "source": "pass1",
+      "avg_logprob": -0.06216945772369702
+    },
+    {
+      "start": 625.14,
+      "end": 628.14,
+      "text": "You know, what about all the criticisms that you keep hearing in the media?",
+      "source": "pass1",
+      "avg_logprob": -0.06216945772369702
+    },
+    {
+      "start": 628.14,
+      "end": 629.14,
+      "text": "I'm going to ask him all that stuff.",
+      "source": "pass1",
+      "avg_logprob": -0.06216945772369702
+    },
+    {
+      "start": 629.14,
+      "end": 632.14,
+      "text": "On tomorrow's program, he's the first guest on Predictable.",
+      "source": "pass1",
+      "avg_logprob": -0.06216945772369702
+    },
+    {
+      "start": 632.14,
+      "end": 636.14,
+      "text": "Michael Selig, chairman of the CFTC.",
+      "source": "pass1",
+      "avg_logprob": -0.08750951750313535
+    },
+    {
+      "start": 636.14,
+      "end": 639.14,
+      "text": "Now, next week, when the studio is finished, we'll start having full episodes.",
+      "source": "pass1",
+      "avg_logprob": -0.08750951750313535
+    },
+    {
+      "start": 639.14,
+      "end": 644.14,
+      "text": "It'll feel more like a real show than what we're doing here today, just kind of talking.",
+      "source": "pass1",
+      "avg_logprob": -0.08750951750313535
+    },
+    {
+      "start": 644.14,
+      "end": 648.14,
+      "text": "We're going to have multiple goals.",
+      "source": "pass1",
+      "avg_logprob": -0.08750951750313535
+    },
+    {
+      "start": 648.14,
+      "end": 653.14,
+      "text": "When I had done the same type of thing for a long time,",
+      "source": "pass1",
+      "avg_logprob": -0.08750951750313535
+    },
+    {
+      "start": 653.14,
+      "end": 658.14,
+      "text": "which was look at the news every day and try to figure out what it means,",
+      "source": "pass1",
+      "avg_logprob": -0.08750951750313535
+    },
+    {
+      "start": 658.14,
+      "end": 662.14,
+      "text": "we would analyze it, we'd look at how to try to make the world a better place",
+      "source": "pass1",
+      "avg_logprob": -0.11607124874333166
+    },
+    {
+      "start": 662.14,
+      "end": 664.14,
+      "text": "and try to prepare you for what was coming.",
+      "source": "pass1",
+      "avg_logprob": -0.11607124874333166
+    },
+    {
+      "start": 664.14,
+      "end": 668.14,
+      "text": "And I think we did a pretty good job doing that.",
+      "source": "pass1",
+      "avg_logprob": -0.11607124874333166
+    },
+    {
+      "start": 668.14,
+      "end": 671.14,
+      "text": "I hope you enjoyed it. You're here for a reason, I assume.",
+      "source": "pass1",
+      "avg_logprob": -0.11607124874333166
+    },
+    {
+      "start": 671.14,
+      "end": 678.14,
+      "text": "But, you know, there's a lot of surrounding stuff really",
+      "source": "pass1",
+      "avg_logprob": -0.11607124874333166
+    },
+    {
+      "start": 678.14,
+      "end": 683.14,
+      "text": "in conservative media, mainstream media, and left-wing media.",
+      "source": "pass1",
+      "avg_logprob": -0.11607124874333166
+    },
+    {
+      "start": 683.14,
+      "end": 684.14,
+      "text": "There's a lot going on.",
+      "source": "pass1",
+      "avg_logprob": -0.11607124874333166
+    },
+    {
+      "start": 684.14,
+      "end": 688.14,
+      "text": "And I will say, like, we are on this show, Predictable.",
+      "source": "pass1",
+      "avg_logprob": -0.06485463535718325
+    },
+    {
+      "start": 688.14,
+      "end": 692.14,
+      "text": "We are going to look for ways for you and I to make some money.",
+      "source": "pass1",
+      "avg_logprob": -0.06485463535718325
+    },
+    {
+      "start": 692.14,
+      "end": 694.14,
+      "text": "I'm being quite honest about that.",
+      "source": "pass1",
+      "avg_logprob": -0.06485463535718325
+    },
+    {
+      "start": 694.14,
+      "end": 696.14,
+      "text": "I want to make sure you understand that.",
+      "source": "pass1",
+      "avg_logprob": -0.06485463535718325
+    },
+    {
+      "start": 696.14,
+      "end": 698.14,
+      "text": "Are we going to look for ways to make you some money?",
+      "source": "pass1",
+      "avg_logprob": -0.06485463535718325
+    },
+    {
+      "start": 698.14,
+      "end": 699.14,
+      "text": "Oh, yeah.",
+      "source": "pass1",
+      "avg_logprob": -0.06485463535718325
+    },
+    {
+      "start": 699.14,
+      "end": 702.14,
+      "text": "I mean, I think it's ridiculous that you're paying for your own vacations.",
+      "source": "pass1",
+      "avg_logprob": -0.06485463535718325
+    },
+    {
+      "start": 702.14,
+      "end": 704.14,
+      "text": "That's crazy. That's not the way this world is supposed to work.",
+      "source": "pass1",
+      "avg_logprob": -0.06485463535718325
+    },
+    {
+      "start": 704.14,
+      "end": 705.14,
+      "text": "Let's figure that out together.",
+      "source": "pass1",
+      "avg_logprob": -0.06485463535718325
+    },
+    {
+      "start": 705.14,
+      "end": 706.14,
+      "text": "I think we can do that.",
+      "source": "pass1",
+      "avg_logprob": -0.06485463535718325
+    },
+    {
+      "start": 706.14,
+      "end": 708.14,
+      "text": "Or at least make a good dent into it.",
+      "source": "pass1",
+      "avg_logprob": -0.06485463535718325
+    },
+    {
+      "start": 708.14,
+      "end": 711.14,
+      "text": "Maybe, you know, it'll just be a few dinners out.",
+      "source": "pass1",
+      "avg_logprob": -0.06485463535718325
+    },
+    {
+      "start": 711.14,
+      "end": 713.14,
+      "text": "Maybe, who knows what it could be?",
+      "source": "pass1",
+      "avg_logprob": -0.06485463535718325
+    },
+    {
+      "start": 713.14,
+      "end": 715.14,
+      "text": "I will say there are opportunities out there.",
+      "source": "pass1",
+      "avg_logprob": -0.07459448468416258
+    },
+    {
+      "start": 715.14,
+      "end": 717.14,
+      "text": "I'm looking for them all the time.",
+      "source": "pass1",
+      "avg_logprob": -0.07459448468416258
+    },
+    {
+      "start": 717.14,
+      "end": 720.14,
+      "text": "We have a bunch of people behind the scenes also looking for them all the time.",
+      "source": "pass1",
+      "avg_logprob": -0.07459448468416258
+    },
+    {
+      "start": 720.14,
+      "end": 724.14,
+      "text": "This company was built with that in mind to make sure that we could actually help people",
+      "source": "pass1",
+      "avg_logprob": -0.07459448468416258
+    },
+    {
+      "start": 724.14,
+      "end": 727.14,
+      "text": "make a little bit of a profit.",
+      "source": "pass1",
+      "avg_logprob": -0.07459448468416258
+    },
+    {
+      "start": 727.14,
+      "end": 730.14,
+      "text": "Turn the knowledge that you have about the news.",
+      "source": "pass1",
+      "avg_logprob": -0.07459448468416258
+    },
+    {
+      "start": 730.14,
+      "end": 733.14,
+      "text": "Turn the knowledge that you have about the world around you.",
+      "source": "pass1",
+      "avg_logprob": -0.07459448468416258
+    },
+    {
+      "start": 733.14,
+      "end": 737.14,
+      "text": "You know, I always think of an example of, like, you know, you watch the, you know,",
+      "source": "pass1",
+      "avg_logprob": -0.07459448468416258
+    },
+    {
+      "start": 737.14,
+      "end": 740.14,
+      "text": "one of the typical cable news channels.",
+      "source": "pass1",
+      "avg_logprob": -0.07459448468416258
+    },
+    {
+      "start": 740.14,
+      "end": 743.14,
+      "text": "And what you might see is, oh gosh, which way is this guy going to vote?",
+      "source": "pass1",
+      "avg_logprob": -0.0671596356673155
+    },
+    {
+      "start": 743.14,
+      "end": 744.14,
+      "text": "He's going to vote this way.",
+      "source": "pass1",
+      "avg_logprob": -0.0671596356673155
+    },
+    {
+      "start": 744.14,
+      "end": 745.14,
+      "text": "He's going to go vote this way.",
+      "source": "pass1",
+      "avg_logprob": -0.0671596356673155
+    },
+    {
+      "start": 745.14,
+      "end": 747.14,
+      "text": "You may very well know that guy, right?",
+      "source": "pass1",
+      "avg_logprob": -0.0671596356673155
+    },
+    {
+      "start": 747.14,
+      "end": 748.14,
+      "text": "You know that.",
+      "source": "pass1",
+      "avg_logprob": -0.0671596356673155
+    },
+    {
+      "start": 748.14,
+      "end": 749.14,
+      "text": "I'm not saying you go out to dinner with him.",
+      "source": "pass1",
+      "avg_logprob": -0.0671596356673155
+    },
+    {
+      "start": 749.14,
+      "end": 752.14,
+      "text": "I'm saying you've watched him over and over and over again.",
+      "source": "pass1",
+      "avg_logprob": -0.0671596356673155
+    },
+    {
+      "start": 752.14,
+      "end": 755.14,
+      "text": "And you've seen him over and over and over again.",
+      "source": "pass1",
+      "avg_logprob": -0.0671596356673155
+    },
+    {
+      "start": 755.14,
+      "end": 756.14,
+      "text": "Let you down.",
+      "source": "pass1",
+      "avg_logprob": -0.0671596356673155
+    },
+    {
+      "start": 756.14,
+      "end": 758.14,
+      "text": "You've seen him over and over and over again.",
+      "source": "pass1",
+      "avg_logprob": -0.0671596356673155
+    },
+    {
+      "start": 758.14,
+      "end": 759.14,
+      "text": "Fold to the last second.",
+      "source": "pass1",
+      "avg_logprob": -0.0671596356673155
+    },
+    {
+      "start": 759.14,
+      "end": 762.14,
+      "text": "Some special interest group comes in and makes them change their vote.",
+      "source": "pass1",
+      "avg_logprob": -0.0671596356673155
+    },
+    {
+      "start": 762.14,
+      "end": 767.14,
+      "text": "If you know that's coming, you should be paid for the pain, right?",
+      "source": "pass1",
+      "avg_logprob": -0.0671596356673155
+    },
+    {
+      "start": 767.14,
+      "end": 773.14,
+      "text": "And I do, this is a central part of why we're doing this show is we really do think",
+      "source": "pass1",
+      "avg_logprob": -0.0886039731502533
+    },
+    {
+      "start": 773.14,
+      "end": 777.14,
+      "text": "those examples are out there where we can actually profit off of these events",
+      "source": "pass1",
+      "avg_logprob": -0.0886039731502533
+    },
+    {
+      "start": 777.14,
+      "end": 782.14,
+      "text": "and give you access to, for a way to make money that is, you know,",
+      "source": "pass1",
+      "avg_logprob": -0.0886039731502533
+    },
+    {
+      "start": 782.14,
+      "end": 787.14,
+      "text": "a lot more difficult than, like a lot of times what you have access to now",
+      "source": "pass1",
+      "avg_logprob": -0.0886039731502533
+    },
+    {
+      "start": 787.14,
+      "end": 791.14,
+      "text": "is a lot more difficult than what I think prediction markets can provide.",
+      "source": "pass1",
+      "avg_logprob": -0.0886039731502533
+    },
+    {
+      "start": 791.14,
+      "end": 793.14,
+      "text": "If you are an idiot, you will lose a lot of money.",
+      "source": "pass1",
+      "avg_logprob": -0.0886039731502533
+    },
+    {
+      "start": 793.14,
+      "end": 796.14,
+      "text": "You can lose a lot of money on prediction markets.",
+      "source": "pass1",
+      "avg_logprob": -0.0886039731502533
+    },
+    {
+      "start": 796.14,
+      "end": 800.14,
+      "text": "If you make massive bets on things you're not, you know,",
+      "source": "pass1",
+      "avg_logprob": -0.07087620209542013
+    },
+    {
+      "start": 800.14,
+      "end": 802.14,
+      "text": "and I use that word intentionally.",
+      "source": "pass1",
+      "avg_logprob": -0.07087620209542013
+    },
+    {
+      "start": 802.14,
+      "end": 805.14,
+      "text": "If you're making bets, then you're gambling.",
+      "source": "pass1",
+      "avg_logprob": -0.07087620209542013
+    },
+    {
+      "start": 805.14,
+      "end": 808.14,
+      "text": "If you're trying to invest your money, you can actually grow it.",
+      "source": "pass1",
+      "avg_logprob": -0.07087620209542013
+    },
+    {
+      "start": 808.14,
+      "end": 809.14,
+      "text": "And I think we can do that together.",
+      "source": "pass1",
+      "avg_logprob": -0.07087620209542013
+    },
+    {
+      "start": 809.14,
+      "end": 814.14,
+      "text": "You know, I've been able to do this over a long period of time successfully",
+      "source": "pass1",
+      "avg_logprob": -0.07087620209542013
+    },
+    {
+      "start": 814.14,
+      "end": 817.14,
+      "text": "and I think we can continue that together.",
+      "source": "pass1",
+      "avg_logprob": -0.07087620209542013
+    },
+    {
+      "start": 817.14,
+      "end": 821.14,
+      "text": "But more importantly than that, more importantly than, you know,",
+      "source": "pass1",
+      "avg_logprob": -0.07087620209542013
+    },
+    {
+      "start": 821.14,
+      "end": 823.14,
+      "text": "paying for your dinners or vacations,",
+      "source": "pass1",
+      "avg_logprob": -0.07087620209542013
+    },
+    {
+      "start": 823.14,
+      "end": 827.14,
+      "text": "we're going to soon be launching into the meat of a very important election season.",
+      "source": "pass1",
+      "avg_logprob": -0.060873210878300485
+    },
+    {
+      "start": 827.14,
+      "end": 831.14,
+      "text": "And, you know, the news and commentary space, the way it is right now,",
+      "source": "pass1",
+      "avg_logprob": -0.060873210878300485
+    },
+    {
+      "start": 831.14,
+      "end": 834.14,
+      "text": "you know, while there's still certainly a lot of people I really like in it,",
+      "source": "pass1",
+      "avg_logprob": -0.060873210878300485
+    },
+    {
+      "start": 834.14,
+      "end": 838.14,
+      "text": "like there's a lot of commentators I really like and are super reliable.",
+      "source": "pass1",
+      "avg_logprob": -0.060873210878300485
+    },
+    {
+      "start": 838.14,
+      "end": 843.14,
+      "text": "It's also kind of become unhinged a little bit at times.",
+      "source": "pass1",
+      "avg_logprob": -0.060873210878300485
+    },
+    {
+      "start": 843.14,
+      "end": 844.14,
+      "text": "I don't know if you've noticed this.",
+      "source": "pass1",
+      "avg_logprob": -0.060873210878300485
+    },
+    {
+      "start": 844.14,
+      "end": 847.14,
+      "text": "You watched the mainstream media.",
+      "source": "pass1",
+      "avg_logprob": -0.060873210878300485
+    },
+    {
+      "start": 847.14,
+      "end": 852.14,
+      "text": "Do you have any thought that they're trying to give you the truth?",
+      "source": "pass1",
+      "avg_logprob": -0.060873210878300485
+    },
+    {
+      "start": 852.14,
+      "end": 853.14,
+      "text": "Are they trying to give you the truth?",
+      "source": "pass1",
+      "avg_logprob": -0.07081376755466828
+    },
+    {
+      "start": 853.14,
+      "end": 856.14,
+      "text": "Are they trying to push you toward an agenda?",
+      "source": "pass1",
+      "avg_logprob": -0.07081376755466828
+    },
+    {
+      "start": 856.14,
+      "end": 857.14,
+      "text": "Now, you can go back.",
+      "source": "pass1",
+      "avg_logprob": -0.07081376755466828
+    },
+    {
+      "start": 857.14,
+      "end": 861.14,
+      "text": "I mean, I started listening to Rush Limbaugh back in the 90s, right?",
+      "source": "pass1",
+      "avg_logprob": -0.07081376755466828
+    },
+    {
+      "start": 861.14,
+      "end": 864.14,
+      "text": "And I remember learning a lot of things from Rush",
+      "source": "pass1",
+      "avg_logprob": -0.07081376755466828
+    },
+    {
+      "start": 864.14,
+      "end": 866.14,
+      "text": "and he was bringing up points like this back in the day.",
+      "source": "pass1",
+      "avg_logprob": -0.07081376755466828
+    },
+    {
+      "start": 866.14,
+      "end": 868.14,
+      "text": "Like this is not a new problem.",
+      "source": "pass1",
+      "avg_logprob": -0.07081376755466828
+    },
+    {
+      "start": 868.14,
+      "end": 871.14,
+      "text": "The media has always been against you in that way.",
+      "source": "pass1",
+      "avg_logprob": -0.07081376755466828
+    },
+    {
+      "start": 871.14,
+      "end": 872.14,
+      "text": "You add on to that.",
+      "source": "pass1",
+      "avg_logprob": -0.07081376755466828
+    },
+    {
+      "start": 872.14,
+      "end": 878.14,
+      "text": "Right now we have campaigns that are constantly trying to mislead you.",
+      "source": "pass1",
+      "avg_logprob": -0.07081376755466828
+    },
+    {
+      "start": 879.14,
+      "end": 882.14,
+      "text": "You have social media that is out there.",
+      "source": "pass1",
+      "avg_logprob": -0.08276635758489011
+    },
+    {
+      "start": 882.14,
+      "end": 884.14,
+      "text": "You know, it's much more systematic now.",
+      "source": "pass1",
+      "avg_logprob": -0.08276635758489011
+    },
+    {
+      "start": 884.14,
+      "end": 887.14,
+      "text": "I mean, if you go back to the 90s when Rush was talking about it,",
+      "source": "pass1",
+      "avg_logprob": -0.08276635758489011
+    },
+    {
+      "start": 887.14,
+      "end": 890.14,
+      "text": "he was talking, I remember Rush reading like NYT op-eds",
+      "source": "pass1",
+      "avg_logprob": -0.08276635758489011
+    },
+    {
+      "start": 890.14,
+      "end": 892.14,
+      "text": "like beginning to end and picking them apart.",
+      "source": "pass1",
+      "avg_logprob": -0.08276635758489011
+    },
+    {
+      "start": 892.14,
+      "end": 894.14,
+      "text": "And, you know, you think about those now.",
+      "source": "pass1",
+      "avg_logprob": -0.08276635758489011
+    },
+    {
+      "start": 894.14,
+      "end": 896.14,
+      "text": "I feel like a lot of those just kind of come and go.",
+      "source": "pass1",
+      "avg_logprob": -0.08276635758489011
+    },
+    {
+      "start": 896.14,
+      "end": 897.14,
+      "text": "People don't even notice them.",
+      "source": "pass1",
+      "avg_logprob": -0.08276635758489011
+    },
+    {
+      "start": 897.14,
+      "end": 899.14,
+      "text": "Back then they were really important.",
+      "source": "pass1",
+      "avg_logprob": -0.08276635758489011
+    },
+    {
+      "start": 899.14,
+      "end": 901.14,
+      "text": "There was this big statement made and it was important",
+      "source": "pass1",
+      "avg_logprob": -0.08276635758489011
+    },
+    {
+      "start": 901.14,
+      "end": 903.14,
+      "text": "that Rush was there to push back against it.",
+      "source": "pass1",
+      "avg_logprob": -0.08276635758489011
+    },
+    {
+      "start": 903.14,
+      "end": 905.14,
+      "text": "Now there's so much crap and trash everywhere.",
+      "source": "pass1",
+      "avg_logprob": -0.08276635758489011
+    },
+    {
+      "start": 905.14,
+      "end": 907.14,
+      "text": "It's impossible to unwind it.",
+      "source": "pass1",
+      "avg_logprob": -0.08276635758489011
+    },
+    {
+      "start": 907.14,
+      "end": 909.14,
+      "text": "I want to help unwind it.",
+      "source": "pass1",
+      "avg_logprob": -0.0996227494130532
+    },
+    {
+      "start": 909.14,
+      "end": 912.14,
+      "text": "Each side is trying to basically out meme the other.",
+      "source": "pass1",
+      "avg_logprob": -0.0996227494130532
+    },
+    {
+      "start": 912.14,
+      "end": 916.14,
+      "text": "And there's honestly very little reliable information",
+      "source": "pass1",
+      "avg_logprob": -0.0996227494130532
+    },
+    {
+      "start": 916.14,
+      "end": 921.14,
+      "text": "because people are incentivized to get you to do something.",
+      "source": "pass1",
+      "avg_logprob": -0.0996227494130532
+    },
+    {
+      "start": 921.14,
+      "end": 923.14,
+      "text": "If there's a good result for you,",
+      "source": "pass1",
+      "avg_logprob": -0.0996227494130532
+    },
+    {
+      "start": 923.14,
+      "end": 925.14,
+      "text": "and this goes to even our side sometimes, right?",
+      "source": "pass1",
+      "avg_logprob": -0.0996227494130532
+    },
+    {
+      "start": 925.14,
+      "end": 928.14,
+      "text": "Like a lot of this is motivated by good things",
+      "source": "pass1",
+      "avg_logprob": -0.0996227494130532
+    },
+    {
+      "start": 928.14,
+      "end": 933.14,
+      "text": "because they want a certain candidate to win.",
+      "source": "pass1",
+      "avg_logprob": -0.0996227494130532
+    },
+    {
+      "start": 933.14,
+      "end": 935.14,
+      "text": "They know it's really important to the country.",
+      "source": "pass1",
+      "avg_logprob": -0.0996227494130532
+    },
+    {
+      "start": 935.14,
+      "end": 939.14,
+      "text": "And they don't want you to be sort of demoralized, right?",
+      "source": "pass1",
+      "avg_logprob": -0.08046977383315942
+    },
+    {
+      "start": 939.14,
+      "end": 941.14,
+      "text": "Oh gosh, it looks like this person is going to win or lose.",
+      "source": "pass1",
+      "avg_logprob": -0.08046977383315942
+    },
+    {
+      "start": 941.14,
+      "end": 946.14,
+      "text": "I am of the opinion that I want to trust you with the information.",
+      "source": "pass1",
+      "avg_logprob": -0.08046977383315942
+    },
+    {
+      "start": 946.14,
+      "end": 948.14,
+      "text": "I want you to get the correct information",
+      "source": "pass1",
+      "avg_logprob": -0.08046977383315942
+    },
+    {
+      "start": 948.14,
+      "end": 949.14,
+      "text": "and I want to trust you with it.",
+      "source": "pass1",
+      "avg_logprob": -0.08046977383315942
+    },
+    {
+      "start": 949.14,
+      "end": 952.14,
+      "text": "And I want you to maybe invest some of your money or not,",
+      "source": "pass1",
+      "avg_logprob": -0.08046977383315942
+    },
+    {
+      "start": 952.14,
+      "end": 954.14,
+      "text": "but I want you to know what's coming.",
+      "source": "pass1",
+      "avg_logprob": -0.08046977383315942
+    },
+    {
+      "start": 954.14,
+      "end": 957.14,
+      "text": "And, you know, a lot of people ask me, like,",
+      "source": "pass1",
+      "avg_logprob": -0.08046977383315942
+    },
+    {
+      "start": 957.14,
+      "end": 959.14,
+      "text": "well, why, you know, you talk about prediction markets",
+      "source": "pass1",
+      "avg_logprob": -0.08046977383315942
+    },
+    {
+      "start": 959.14,
+      "end": 961.14,
+      "text": "and why they're accurate, but like, what does that mean?",
+      "source": "pass1",
+      "avg_logprob": -0.08046977383315942
+    },
+    {
+      "start": 961.14,
+      "end": 964.14,
+      "text": "Why do prediction markets work?",
+      "source": "pass1",
+      "avg_logprob": -0.08046977383315942
+    },
+    {
+      "start": 964.14,
+      "end": 965.14,
+      "text": "It's funny.",
+      "source": "pass1",
+      "avg_logprob": -0.10202033957466483
+    },
+    {
+      "start": 965.14,
+      "end": 967.14,
+      "text": "As conservatives, we know this inherently.",
+      "source": "pass1",
+      "avg_logprob": -0.10202033957466483
+    },
+    {
+      "start": 967.14,
+      "end": 970.14,
+      "text": "And this is one of the things that drew me to this show,",
+      "source": "pass1",
+      "avg_logprob": -0.10202033957466483
+    },
+    {
+      "start": 970.14,
+      "end": 974.14,
+      "text": "to do this for the first time, to kind of make a big change, right?",
+      "source": "pass1",
+      "avg_logprob": -0.10202033957466483
+    },
+    {
+      "start": 974.14,
+      "end": 975.14,
+      "text": "In my life.",
+      "source": "pass1",
+      "avg_logprob": -0.10202033957466483
+    },
+    {
+      "start": 975.14,
+      "end": 978.14,
+      "text": "And if you're, you know, a longtime viewer or listener,",
+      "source": "pass1",
+      "avg_logprob": -0.10202033957466483
+    },
+    {
+      "start": 978.14,
+      "end": 979.14,
+      "text": "kind of in your life too,",
+      "source": "pass1",
+      "avg_logprob": -0.10202033957466483
+    },
+    {
+      "start": 979.14,
+      "end": 982.14,
+      "text": "if I was part of your daily diet of shows, like, hey,",
+      "source": "pass1",
+      "avg_logprob": -0.10202033957466483
+    },
+    {
+      "start": 982.14,
+      "end": 984.14,
+      "text": "you know, this is a big difference, right?",
+      "source": "pass1",
+      "avg_logprob": -0.10202033957466483
+    },
+    {
+      "start": 984.14,
+      "end": 986.14,
+      "text": "Why did I want to make this change?",
+      "source": "pass1",
+      "avg_logprob": -0.10202033957466483
+    },
+    {
+      "start": 986.14,
+      "end": 987.14,
+      "text": "Why do prediction markets work?",
+      "source": "pass1",
+      "avg_logprob": -0.10202033957466483
+    },
+    {
+      "start": 987.14,
+      "end": 992.14,
+      "text": "Well, we know this as conservatives.",
+      "source": "pass1",
+      "avg_logprob": -0.10202033957466483
+    },
+    {
+      "start": 992.14,
+      "end": 994.14,
+      "text": "Markets make things better,",
+      "source": "pass1",
+      "avg_logprob": -0.09450254694256983
+    },
+    {
+      "start": 994.14,
+      "end": 998.14,
+      "text": "because they honestly force you into a place of truth.",
+      "source": "pass1",
+      "avg_logprob": -0.09450254694256983
+    },
+    {
+      "start": 998.14,
+      "end": 1001.14,
+      "text": "If the government tried to, you know,",
+      "source": "pass1",
+      "avg_logprob": -0.09450254694256983
+    },
+    {
+      "start": 1001.14,
+      "end": 1003.14,
+      "text": "we know this is wrong.",
+      "source": "pass1",
+      "avg_logprob": -0.09450254694256983
+    },
+    {
+      "start": 1003.14,
+      "end": 1005.14,
+      "text": "If the government tries to basically, like,",
+      "source": "pass1",
+      "avg_logprob": -0.09450254694256983
+    },
+    {
+      "start": 1005.14,
+      "end": 1007.14,
+      "text": "set the price of bananas, right?",
+      "source": "pass1",
+      "avg_logprob": -0.09450254694256983
+    },
+    {
+      "start": 1007.14,
+      "end": 1009.14,
+      "text": "If the government comes in and does that,",
+      "source": "pass1",
+      "avg_logprob": -0.09450254694256983
+    },
+    {
+      "start": 1009.14,
+      "end": 1011.14,
+      "text": "we know that there will be, you know,",
+      "source": "pass1",
+      "avg_logprob": -0.09450254694256983
+    },
+    {
+      "start": 1011.14,
+      "end": 1014.14,
+      "text": "activists and special interests and they'll all rush in",
+      "source": "pass1",
+      "avg_logprob": -0.09450254694256983
+    },
+    {
+      "start": 1014.14,
+      "end": 1016.14,
+      "text": "and they'll tell you why it actually has to be $10",
+      "source": "pass1",
+      "avg_logprob": -0.09450254694256983
+    },
+    {
+      "start": 1016.14,
+      "end": 1019.14,
+      "text": "and then it'll be $20 and by the end of it,",
+      "source": "pass1",
+      "avg_logprob": -0.09450254694256983
+    },
+    {
+      "start": 1019.14,
+      "end": 1021.14,
+      "text": "a loaf of banana bread is more than a mortgage.",
+      "source": "pass1",
+      "avg_logprob": -0.09450254694256983
+    },
+    {
+      "start": 1021.14,
+      "end": 1024.14,
+      "text": "Like, this is what happens with the government.",
+      "source": "pass1",
+      "avg_logprob": -0.0646729233181652
+    },
+    {
+      "start": 1024.14,
+      "end": 1025.14,
+      "text": "We know this, right?",
+      "source": "pass1",
+      "avg_logprob": -0.0646729233181652
+    },
+    {
+      "start": 1025.14,
+      "end": 1026.14,
+      "text": "We've seen this.",
+      "source": "pass1",
+      "avg_logprob": -0.0646729233181652
+    },
+    {
+      "start": 1026.14,
+      "end": 1027.14,
+      "text": "Think about cars.",
+      "source": "pass1",
+      "avg_logprob": -0.0646729233181652
+    },
+    {
+      "start": 1027.14,
+      "end": 1031.14,
+      "text": "Go back to the Soviet Union and the cars that they produced, right?",
+      "source": "pass1",
+      "avg_logprob": -0.0646729233181652
+    },
+    {
+      "start": 1031.14,
+      "end": 1033.14,
+      "text": "Total crap boxes, right?",
+      "source": "pass1",
+      "avg_logprob": -0.0646729233181652
+    },
+    {
+      "start": 1033.14,
+      "end": 1034.14,
+      "text": "And these cars, they look terrible.",
+      "source": "pass1",
+      "avg_logprob": -0.0646729233181652
+    },
+    {
+      "start": 1034.14,
+      "end": 1035.14,
+      "text": "They didn't run.",
+      "source": "pass1",
+      "avg_logprob": -0.0646729233181652
+    },
+    {
+      "start": 1035.14,
+      "end": 1037.14,
+      "text": "There was no parts for them when you needed them,",
+      "source": "pass1",
+      "avg_logprob": -0.0646729233181652
+    },
+    {
+      "start": 1037.14,
+      "end": 1040.14,
+      "text": "because this was a top-down government system.",
+      "source": "pass1",
+      "avg_logprob": -0.0646729233181652
+    },
+    {
+      "start": 1040.14,
+      "end": 1042.14,
+      "text": "We were able to dismantle that system,",
+      "source": "pass1",
+      "avg_logprob": -0.0646729233181652
+    },
+    {
+      "start": 1042.14,
+      "end": 1044.14,
+      "text": "you know, certainly not the only part of this,",
+      "source": "pass1",
+      "avg_logprob": -0.0646729233181652
+    },
+    {
+      "start": 1044.14,
+      "end": 1048.14,
+      "text": "but the reason why capitalism has largely won",
+      "source": "pass1",
+      "avg_logprob": -0.0646729233181652
+    },
+    {
+      "start": 1048.14,
+      "end": 1051.14,
+      "text": "around the world is because people understand",
+      "source": "pass1",
+      "avg_logprob": -0.0642534891764323
+    },
+    {
+      "start": 1051.14,
+      "end": 1055.14,
+      "text": "that markets wind up doing a better job at these things",
+      "source": "pass1",
+      "avg_logprob": -0.0642534891764323
+    },
+    {
+      "start": 1055.14,
+      "end": 1057.14,
+      "text": "than individuals can,",
+      "source": "pass1",
+      "avg_logprob": -0.0642534891764323
+    },
+    {
+      "start": 1057.14,
+      "end": 1060.14,
+      "text": "than powerful people at central governments can.",
+      "source": "pass1",
+      "avg_logprob": -0.0642534891764323
+    },
+    {
+      "start": 1060.14,
+      "end": 1063.14,
+      "text": "I mean, even China has been forced to embrace",
+      "source": "pass1",
+      "avg_logprob": -0.0642534891764323
+    },
+    {
+      "start": 1063.14,
+      "end": 1066.14,
+      "text": "large swaths of capitalism",
+      "source": "pass1",
+      "avg_logprob": -0.0642534891764323
+    },
+    {
+      "start": 1066.14,
+      "end": 1069.14,
+      "text": "to try to make their system work better",
+      "source": "pass1",
+      "avg_logprob": -0.0642534891764323
+    },
+    {
+      "start": 1069.14,
+      "end": 1071.14,
+      "text": "so it wouldn't fail every 10 or 15 years",
+      "source": "pass1",
+      "avg_logprob": -0.0642534891764323
+    },
+    {
+      "start": 1071.14,
+      "end": 1075.14,
+      "text": "after every five to 10-year plan.",
+      "source": "pass1",
+      "avg_logprob": -0.0642534891764323
+    },
+    {
+      "start": 1075.14,
+      "end": 1080.14,
+      "text": "If you think about news and information,",
+      "source": "pass1",
+      "avg_logprob": -0.05811924418223273
+    },
+    {
+      "start": 1080.14,
+      "end": 1085.14,
+      "text": "we almost have a system where it's more top-down.",
+      "source": "pass1",
+      "avg_logprob": -0.05811924418223273
+    },
+    {
+      "start": 1085.14,
+      "end": 1089.14,
+      "text": "What we see is the CBS and the NBC and the ABC",
+      "source": "pass1",
+      "avg_logprob": -0.05811924418223273
+    },
+    {
+      "start": 1089.14,
+      "end": 1091.14,
+      "text": "and the NYT all getting together",
+      "source": "pass1",
+      "avg_logprob": -0.05811924418223273
+    },
+    {
+      "start": 1091.14,
+      "end": 1094.14,
+      "text": "and having their spin on what is supposed to happen.",
+      "source": "pass1",
+      "avg_logprob": -0.05811924418223273
+    },
+    {
+      "start": 1094.14,
+      "end": 1097.14,
+      "text": "And, you know, even commentators on both sides",
+      "source": "pass1",
+      "avg_logprob": -0.05811924418223273
+    },
+    {
+      "start": 1097.14,
+      "end": 1099.14,
+      "text": "and campaigns in the middle",
+      "source": "pass1",
+      "avg_logprob": -0.05811924418223273
+    },
+    {
+      "start": 1099.14,
+      "end": 1101.14,
+      "text": "all trying to tell you what they want to happen.",
+      "source": "pass1",
+      "avg_logprob": -0.05811924418223273
+    },
+    {
+      "start": 1101.14,
+      "end": 1104.14,
+      "text": "And their incentive,",
+      "source": "pass1",
+      "avg_logprob": -0.10167336326186396
+    },
+    {
+      "start": 1104.14,
+      "end": 1106.14,
+      "text": "incentives almost always work,",
+      "source": "pass1",
+      "avg_logprob": -0.10167336326186396
+    },
+    {
+      "start": 1106.14,
+      "end": 1107.14,
+      "text": "their incentive, though,",
+      "source": "pass1",
+      "avg_logprob": -0.10167336326186396
+    },
+    {
+      "start": 1107.14,
+      "end": 1109.14,
+      "text": "is to push you in one direction or the other.",
+      "source": "pass1",
+      "avg_logprob": -0.10167336326186396
+    },
+    {
+      "start": 1109.14,
+      "end": 1112.14,
+      "text": "Their incentives are not aligned",
+      "source": "pass1",
+      "avg_logprob": -0.10167336326186396
+    },
+    {
+      "start": 1112.14,
+      "end": 1115.14,
+      "text": "with getting you the best information possible.",
+      "source": "pass1",
+      "avg_logprob": -0.10167336326186396
+    },
+    {
+      "start": 1115.14,
+      "end": 1118.14,
+      "text": "And that is, you know, a lot of times,",
+      "source": "pass1",
+      "avg_logprob": -0.10167336326186396
+    },
+    {
+      "start": 1118.14,
+      "end": 1121.14,
+      "text": "you know, commentary and information,",
+      "source": "pass1",
+      "avg_logprob": -0.10167336326186396
+    },
+    {
+      "start": 1121.14,
+      "end": 1123.14,
+      "text": "there are different incentives.",
+      "source": "pass1",
+      "avg_logprob": -0.10167336326186396
+    },
+    {
+      "start": 1123.14,
+      "end": 1125.14,
+      "text": "There are, you know, it can be click-baity.",
+      "source": "pass1",
+      "avg_logprob": -0.10167336326186396
+    },
+    {
+      "start": 1125.14,
+      "end": 1129.14,
+      "text": "It can be, you know, engagement farming.",
+      "source": "pass1",
+      "avg_logprob": -0.10167336326186396
+    },
+    {
+      "start": 1129.14,
+      "end": 1130.14,
+      "text": "It can be all of this.",
+      "source": "pass1",
+      "avg_logprob": -0.10167336326186396
+    },
+    {
+      "start": 1130.14,
+      "end": 1133.14,
+      "text": "It can be the equivalent of government-priced bananas.",
+      "source": "pass1",
+      "avg_logprob": -0.039011073147727025
+    },
+    {
+      "start": 1133.14,
+      "end": 1134.14,
+      "text": "It can be overvalued.",
+      "source": "pass1",
+      "avg_logprob": -0.039011073147727025
+    },
+    {
+      "start": 1134.14,
+      "end": 1135.14,
+      "text": "It can be propped up.",
+      "source": "pass1",
+      "avg_logprob": -0.039011073147727025
+    },
+    {
+      "start": 1135.14,
+      "end": 1138.14,
+      "text": "It can be ultimately not worth what you're paying.",
+      "source": "pass1",
+      "avg_logprob": -0.039011073147727025
+    },
+    {
+      "start": 1138.14,
+      "end": 1140.14,
+      "text": "In this case, we all understand",
+      "source": "pass1",
+      "avg_logprob": -0.039011073147727025
+    },
+    {
+      "start": 1140.14,
+      "end": 1142.14,
+      "text": "when there's a free market, you know,",
+      "source": "pass1",
+      "avg_logprob": -0.039011073147727025
+    },
+    {
+      "start": 1142.14,
+      "end": 1144.14,
+      "text": "whether it comes to cars or bananas,",
+      "source": "pass1",
+      "avg_logprob": -0.039011073147727025
+    },
+    {
+      "start": 1144.14,
+      "end": 1147.14,
+      "text": "you're going to be able to get a better price",
+      "source": "pass1",
+      "avg_logprob": -0.039011073147727025
+    },
+    {
+      "start": 1147.14,
+      "end": 1150.14,
+      "text": "and eventually a better product.",
+      "source": "pass1",
+      "avg_logprob": -0.039011073147727025
+    },
+    {
+      "start": 1150.14,
+      "end": 1153.14,
+      "text": "And it's funny that we just have kind of taken that",
+      "source": "pass1",
+      "avg_logprob": -0.039011073147727025
+    },
+    {
+      "start": 1153.14,
+      "end": 1154.14,
+      "text": "as conservatives.",
+      "source": "pass1",
+      "avg_logprob": -0.039011073147727025
+    },
+    {
+      "start": 1154.14,
+      "end": 1157.14,
+      "text": "We've decided, hey, well, this is the way it is.",
+      "source": "pass1",
+      "avg_logprob": -0.039011073147727025
+    },
+    {
+      "start": 1157.14,
+      "end": 1159.14,
+      "text": "Let's try to get some other sources of information",
+      "source": "pass1",
+      "avg_logprob": -0.039011073147727025
+    },
+    {
+      "start": 1159.14,
+      "end": 1161.14,
+      "text": "and, you know, certainly there are market forces",
+      "source": "pass1",
+      "avg_logprob": -0.06980760707411655
+    },
+    {
+      "start": 1161.14,
+      "end": 1163.14,
+      "text": "on the side of that, right, where there, you know,",
+      "source": "pass1",
+      "avg_logprob": -0.06980760707411655
+    },
+    {
+      "start": 1163.14,
+      "end": 1166.14,
+      "text": "some will succeed, some will fail because of market forces.",
+      "source": "pass1",
+      "avg_logprob": -0.06980760707411655
+    },
+    {
+      "start": 1166.14,
+      "end": 1168.14,
+      "text": "But when it comes to actually delivering the truth,",
+      "source": "pass1",
+      "avg_logprob": -0.06980760707411655
+    },
+    {
+      "start": 1168.14,
+      "end": 1172.14,
+      "text": "that part of it is something true or not.",
+      "source": "pass1",
+      "avg_logprob": -0.06980760707411655
+    },
+    {
+      "start": 1172.14,
+      "end": 1174.14,
+      "text": "The incentives aren't always aligned",
+      "source": "pass1",
+      "avg_logprob": -0.06980760707411655
+    },
+    {
+      "start": 1174.14,
+      "end": 1176.14,
+      "text": "with what's best for you.",
+      "source": "pass1",
+      "avg_logprob": -0.06980760707411655
+    },
+    {
+      "start": 1176.14,
+      "end": 1178.14,
+      "text": "So how do we get better information?",
+      "source": "pass1",
+      "avg_logprob": -0.06980760707411655
+    },
+    {
+      "start": 1178.14,
+      "end": 1181.14,
+      "text": "At Predictable, we're going to implement",
+      "source": "pass1",
+      "avg_logprob": -0.06980760707411655
+    },
+    {
+      "start": 1181.14,
+      "end": 1183.14,
+      "text": "prediction markets into that information feed",
+      "source": "pass1",
+      "avg_logprob": -0.06980760707411655
+    },
+    {
+      "start": 1183.14,
+      "end": 1187.14,
+      "text": "because when we do, we wind up with superior information.",
+      "source": "pass1",
+      "avg_logprob": -0.06980760707411655
+    },
+    {
+      "start": 1187.14,
+      "end": 1191.14,
+      "text": "We know these things long before others do.",
+      "source": "pass1",
+      "avg_logprob": -0.06712008162781044
+    },
+    {
+      "start": 1191.14,
+      "end": 1194.14,
+      "text": "That's really important because it gets you,",
+      "source": "pass1",
+      "avg_logprob": -0.06712008162781044
+    },
+    {
+      "start": 1194.14,
+      "end": 1196.14,
+      "text": "puts you in a place where you're able to prepare",
+      "source": "pass1",
+      "avg_logprob": -0.06712008162781044
+    },
+    {
+      "start": 1196.14,
+      "end": 1197.14,
+      "text": "for what's coming.",
+      "source": "pass1",
+      "avg_logprob": -0.06712008162781044
+    },
+    {
+      "start": 1197.14,
+      "end": 1199.14,
+      "text": "We're still going to analyze the news.",
+      "source": "pass1",
+      "avg_logprob": -0.06712008162781044
+    },
+    {
+      "start": 1199.14,
+      "end": 1201.14,
+      "text": "We're still going to break stuff down as always.",
+      "source": "pass1",
+      "avg_logprob": -0.06712008162781044
+    },
+    {
+      "start": 1201.14,
+      "end": 1203.14,
+      "text": "But I think using these markets as a better way",
+      "source": "pass1",
+      "avg_logprob": -0.06712008162781044
+    },
+    {
+      "start": 1203.14,
+      "end": 1205.14,
+      "text": "to get you information and analysis",
+      "source": "pass1",
+      "avg_logprob": -0.06712008162781044
+    },
+    {
+      "start": 1205.14,
+      "end": 1207.14,
+      "text": "is really going to help that process.",
+      "source": "pass1",
+      "avg_logprob": -0.06712008162781044
+    },
+    {
+      "start": 1207.14,
+      "end": 1209.14,
+      "text": "We're not going away from news and analysis.",
+      "source": "pass1",
+      "avg_logprob": -0.06712008162781044
+    },
+    {
+      "start": 1209.14,
+      "end": 1211.14,
+      "text": "We're trying to do it in a better way.",
+      "source": "pass1",
+      "avg_logprob": -0.06712008162781044
+    },
+    {
+      "start": 1211.14,
+      "end": 1214.14,
+      "text": "And it's amazing how many people I talk to",
+      "source": "pass1",
+      "avg_logprob": -0.06712008162781044
+    },
+    {
+      "start": 1214.14,
+      "end": 1217.14,
+      "text": "on a day-to-day basis that are surprised",
+      "source": "pass1",
+      "avg_logprob": -0.09105435366393956
+    },
+    {
+      "start": 1217.14,
+      "end": 1219.14,
+      "text": "about what's happening in the world.",
+      "source": "pass1",
+      "avg_logprob": -0.09105435366393956
+    },
+    {
+      "start": 1219.14,
+      "end": 1222.14,
+      "text": "Wow, this thing happened and it's a shock.",
+      "source": "pass1",
+      "avg_logprob": -0.09105435366393956
+    },
+    {
+      "start": 1222.14,
+      "end": 1226.14,
+      "text": "This election we had the other night in Virginia.",
+      "source": "pass1",
+      "avg_logprob": -0.09105435366393956
+    },
+    {
+      "start": 1226.14,
+      "end": 1228.14,
+      "text": "Can you believe they're doing that?",
+      "source": "pass1",
+      "avg_logprob": -0.09105435366393956
+    },
+    {
+      "start": 1228.14,
+      "end": 1230.14,
+      "text": "Yeah, kind of.",
+      "source": "pass1",
+      "avg_logprob": -0.09105435366393956
+    },
+    {
+      "start": 1230.14,
+      "end": 1232.14,
+      "text": "Frankly, yes, kind of I can.",
+      "source": "pass1",
+      "avg_logprob": -0.09105435366393956
+    },
+    {
+      "start": 1232.14,
+      "end": 1235.14,
+      "text": "These are people that I talk to often",
+      "source": "pass1",
+      "avg_logprob": -0.09105435366393956
+    },
+    {
+      "start": 1235.14,
+      "end": 1236.14,
+      "text": "who are good people.",
+      "source": "pass1",
+      "avg_logprob": -0.09105435366393956
+    },
+    {
+      "start": 1236.14,
+      "end": 1237.14,
+      "text": "They're productive people.",
+      "source": "pass1",
+      "avg_logprob": -0.09105435366393956
+    },
+    {
+      "start": 1237.14,
+      "end": 1239.14,
+      "text": "And that's kind of the important part.",
+      "source": "pass1",
+      "avg_logprob": -0.09105435366393956
+    },
+    {
+      "start": 1239.14,
+      "end": 1241.14,
+      "text": "They're people unlike me that are actually",
+      "source": "pass1",
+      "avg_logprob": -0.09105435366393956
+    },
+    {
+      "start": 1241.14,
+      "end": 1243.14,
+      "text": "adding something to the economy,",
+      "source": "pass1",
+      "avg_logprob": -0.09105435366393956
+    },
+    {
+      "start": 1243.14,
+      "end": 1245.14,
+      "text": "building things, helping people,",
+      "source": "pass1",
+      "avg_logprob": -0.049897361687864315
+    },
+    {
+      "start": 1245.14,
+      "end": 1247.14,
+      "text": "doing real jobs unlike talking",
+      "source": "pass1",
+      "avg_logprob": -0.049897361687864315
+    },
+    {
+      "start": 1247.14,
+      "end": 1249.14,
+      "text": "into a stupid camera over and over again.",
+      "source": "pass1",
+      "avg_logprob": -0.049897361687864315
+    },
+    {
+      "start": 1249.14,
+      "end": 1252.14,
+      "text": "And this is on the left and the right, by the way.",
+      "source": "pass1",
+      "avg_logprob": -0.049897361687864315
+    },
+    {
+      "start": 1252.14,
+      "end": 1254.14,
+      "text": "You know, millions and millions and millions",
+      "source": "pass1",
+      "avg_logprob": -0.049897361687864315
+    },
+    {
+      "start": 1254.14,
+      "end": 1256.14,
+      "text": "and millions of people were shocked",
+      "source": "pass1",
+      "avg_logprob": -0.049897361687864315
+    },
+    {
+      "start": 1256.14,
+      "end": 1259.14,
+      "text": "by Donald Trump winning in 2024.",
+      "source": "pass1",
+      "avg_logprob": -0.049897361687864315
+    },
+    {
+      "start": 1259.14,
+      "end": 1261.14,
+      "text": "Why? Why did that happen?",
+      "source": "pass1",
+      "avg_logprob": -0.049897361687864315
+    },
+    {
+      "start": 1261.14,
+      "end": 1263.14,
+      "text": "Why were they shocked?",
+      "source": "pass1",
+      "avg_logprob": -0.049897361687864315
+    },
+    {
+      "start": 1263.14,
+      "end": 1264.14,
+      "text": "You might not have been shocked.",
+      "source": "pass1",
+      "avg_logprob": -0.049897361687864315
+    },
+    {
+      "start": 1264.14,
+      "end": 1265.14,
+      "text": "I wasn't shocked.",
+      "source": "pass1",
+      "avg_logprob": -0.049897361687864315
+    },
+    {
+      "start": 1265.14,
+      "end": 1267.14,
+      "text": "We weren't shocked at all here.",
+      "source": "pass1",
+      "avg_logprob": -0.049897361687864315
+    },
+    {
+      "start": 1267.14,
+      "end": 1269.14,
+      "text": "We made money on that election",
+      "source": "pass1",
+      "avg_logprob": -0.049897361687864315
+    },
+    {
+      "start": 1269.14,
+      "end": 1271.14,
+      "text": "because we thought there was a really good chance",
+      "source": "pass1",
+      "avg_logprob": -0.049897361687864315
+    },
+    {
+      "start": 1271.14,
+      "end": 1272.14,
+      "text": "Donald Trump was going to win.",
+      "source": "pass1",
+      "avg_logprob": -0.08379827542720657
+    },
+    {
+      "start": 1272.14,
+      "end": 1273.14,
+      "text": "Thought it would be close,",
+      "source": "pass1",
+      "avg_logprob": -0.08379827542720657
+    },
+    {
+      "start": 1273.14,
+      "end": 1275.14,
+      "text": "but we thought Donald Trump would win.",
+      "source": "pass1",
+      "avg_logprob": -0.08379827542720657
+    },
+    {
+      "start": 1275.14,
+      "end": 1277.14,
+      "text": "We weren't shocked by that outcome,",
+      "source": "pass1",
+      "avg_logprob": -0.08379827542720657
+    },
+    {
+      "start": 1277.14,
+      "end": 1278.14,
+      "text": "and we made money.",
+      "source": "pass1",
+      "avg_logprob": -0.08379827542720657
+    },
+    {
+      "start": 1278.14,
+      "end": 1280.14,
+      "text": "Millions and millions of people were also shocked",
+      "source": "pass1",
+      "avg_logprob": -0.08379827542720657
+    },
+    {
+      "start": 1280.14,
+      "end": 1282.14,
+      "text": "by Joe Biden winning in 2020.",
+      "source": "pass1",
+      "avg_logprob": -0.08379827542720657
+    },
+    {
+      "start": 1282.14,
+      "end": 1284.14,
+      "text": "Now, I was shocked that we could be that stupid.",
+      "source": "pass1",
+      "avg_logprob": -0.08379827542720657
+    },
+    {
+      "start": 1284.14,
+      "end": 1286.14,
+      "text": "I mean, that was shocking",
+      "source": "pass1",
+      "avg_logprob": -0.08379827542720657
+    },
+    {
+      "start": 1286.14,
+      "end": 1288.14,
+      "text": "and kind of shook me to my core.",
+      "source": "pass1",
+      "avg_logprob": -0.08379827542720657
+    },
+    {
+      "start": 1288.14,
+      "end": 1291.14,
+      "text": "But regardless of what you think about,",
+      "source": "pass1",
+      "avg_logprob": -0.08379827542720657
+    },
+    {
+      "start": 1291.14,
+      "end": 1293.14,
+      "text": "you know, how that election went down,",
+      "source": "pass1",
+      "avg_logprob": -0.08379827542720657
+    },
+    {
+      "start": 1293.14,
+      "end": 1296.14,
+      "text": "we weren't shocked by the result, honestly.",
+      "source": "pass1",
+      "avg_logprob": -0.08379827542720657
+    },
+    {
+      "start": 1296.14,
+      "end": 1298.14,
+      "text": "You know, I talked about this",
+      "source": "pass1",
+      "avg_logprob": -0.08379827542720657
+    },
+    {
+      "start": 1298.14,
+      "end": 1300.14,
+      "text": "on the Glenn Beck program at the time.",
+      "source": "pass1",
+      "avg_logprob": -0.08379827542720657
+    },
+    {
+      "start": 1300.14,
+      "end": 1302.14,
+      "text": "What I thought was going to happen.",
+      "source": "pass1",
+      "avg_logprob": -0.06361909096932593
+    },
+    {
+      "start": 1302.14,
+      "end": 1305.14,
+      "text": "In fact, we wound up calling the electoral count exactly.",
+      "source": "pass1",
+      "avg_logprob": -0.06361909096932593
+    },
+    {
+      "start": 1305.14,
+      "end": 1307.14,
+      "text": "And, you know, because of that,",
+      "source": "pass1",
+      "avg_logprob": -0.06361909096932593
+    },
+    {
+      "start": 1307.14,
+      "end": 1309.14,
+      "text": "we were able to do very, very well on that election.",
+      "source": "pass1",
+      "avg_logprob": -0.06361909096932593
+    },
+    {
+      "start": 1309.14,
+      "end": 1311.14,
+      "text": "We made money off of that,",
+      "source": "pass1",
+      "avg_logprob": -0.06361909096932593
+    },
+    {
+      "start": 1311.14,
+      "end": 1313.14,
+      "text": "at least until Biden destroyed the economy",
+      "source": "pass1",
+      "avg_logprob": -0.06361909096932593
+    },
+    {
+      "start": 1313.14,
+      "end": 1315.14,
+      "text": "and then we lost it again.",
+      "source": "pass1",
+      "avg_logprob": -0.06361909096932593
+    },
+    {
+      "start": 1315.14,
+      "end": 1317.14,
+      "text": "But that's secondary.",
+      "source": "pass1",
+      "avg_logprob": -0.06361909096932593
+    },
+    {
+      "start": 1317.14,
+      "end": 1320.14,
+      "text": "At least we had that money to lose.",
+      "source": "pass1",
+      "avg_logprob": -0.06361909096932593
+    },
+    {
+      "start": 1320.14,
+      "end": 1324.14,
+      "text": "I wasn't happy about that victory for Joe Biden,",
+      "source": "pass1",
+      "avg_logprob": -0.06361909096932593
+    },
+    {
+      "start": 1324.14,
+      "end": 1326.14,
+      "text": "whatever type of victory you want to call it,",
+      "source": "pass1",
+      "avg_logprob": -0.06361909096932593
+    },
+    {
+      "start": 1326.14,
+      "end": 1329.14,
+      "text": "but I will say it was something",
+      "source": "pass1",
+      "avg_logprob": -0.06361909096932593
+    },
+    {
+      "start": 1329.14,
+      "end": 1332.14,
+      "text": "that we did see coming pretty clearly.",
+      "source": "pass1",
+      "avg_logprob": -0.06461505661500949
+    },
+    {
+      "start": 1332.14,
+      "end": 1334.14,
+      "text": "And I will say this as well.",
+      "source": "pass1",
+      "avg_logprob": -0.06461505661500949
+    },
+    {
+      "start": 1334.14,
+      "end": 1336.14,
+      "text": "Importantly, I think,",
+      "source": "pass1",
+      "avg_logprob": -0.06461505661500949
+    },
+    {
+      "start": 1336.14,
+      "end": 1339.14,
+      "text": "I was among those who was pretty shocked",
+      "source": "pass1",
+      "avg_logprob": -0.06461505661500949
+    },
+    {
+      "start": 1339.14,
+      "end": 1341.14,
+      "text": "by Trump's win in 2016.",
+      "source": "pass1",
+      "avg_logprob": -0.06461505661500949
+    },
+    {
+      "start": 1341.14,
+      "end": 1343.14,
+      "text": "Like, I didn't necessarily see that one coming.",
+      "source": "pass1",
+      "avg_logprob": -0.06461505661500949
+    },
+    {
+      "start": 1343.14,
+      "end": 1345.14,
+      "text": "But the important part of that story",
+      "source": "pass1",
+      "avg_logprob": -0.06461505661500949
+    },
+    {
+      "start": 1345.14,
+      "end": 1349.14,
+      "text": "is that we also made money in 2016 on these elections.",
+      "source": "pass1",
+      "avg_logprob": -0.06461505661500949
+    },
+    {
+      "start": 1349.14,
+      "end": 1353.14,
+      "text": "You don't have to know everything about the future",
+      "source": "pass1",
+      "avg_logprob": -0.06461505661500949
+    },
+    {
+      "start": 1353.14,
+      "end": 1356.14,
+      "text": "to be able to profit in prediction markets",
+      "source": "pass1",
+      "avg_logprob": -0.06461505661500949
+    },
+    {
+      "start": 1356.14,
+      "end": 1358.14,
+      "text": "and to know more about the news",
+      "source": "pass1",
+      "avg_logprob": -0.09306524921622542
+    },
+    {
+      "start": 1358.14,
+      "end": 1360.14,
+      "text": "and what's coming down the line.",
+      "source": "pass1",
+      "avg_logprob": -0.09306524921622542
+    },
+    {
+      "start": 1360.14,
+      "end": 1362.14,
+      "text": "We were focused on finding value.",
+      "source": "pass1",
+      "avg_logprob": -0.09306524921622542
+    },
+    {
+      "start": 1362.14,
+      "end": 1364.14,
+      "text": "I was looking at that and saying, wait a minute.",
+      "source": "pass1",
+      "avg_logprob": -0.09306524921622542
+    },
+    {
+      "start": 1364.14,
+      "end": 1367.14,
+      "text": "I don't think Donald Trump's going to win this election,",
+      "source": "pass1",
+      "avg_logprob": -0.09306524921622542
+    },
+    {
+      "start": 1367.14,
+      "end": 1371.14,
+      "text": "but he's got a way better chance than 15%,",
+      "source": "pass1",
+      "avg_logprob": -0.09306524921622542
+    },
+    {
+      "start": 1371.14,
+      "end": 1373.14,
+      "text": "which is what the media was telling you,",
+      "source": "pass1",
+      "avg_logprob": -0.09306524921622542
+    },
+    {
+      "start": 1373.14,
+      "end": 1374.14,
+      "text": "or even lower.",
+      "source": "pass1",
+      "avg_logprob": -0.09306524921622542
+    },
+    {
+      "start": 1374.14,
+      "end": 1376.14,
+      "text": "I mean, I was buying shares",
+      "source": "pass1",
+      "avg_logprob": -0.09306524921622542
+    },
+    {
+      "start": 1376.14,
+      "end": 1378.14,
+      "text": "and the way the prediction markets work",
+      "source": "pass1",
+      "avg_logprob": -0.09306524921622542
+    },
+    {
+      "start": 1378.14,
+      "end": 1380.14,
+      "text": "is basically think of it as a, you know,",
+      "source": "pass1",
+      "avg_logprob": -0.09306524921622542
+    },
+    {
+      "start": 1380.14,
+      "end": 1382.14,
+      "text": "if you have a dollar, right?",
+      "source": "pass1",
+      "avg_logprob": -0.09306524921622542
+    },
+    {
+      "start": 1382.14,
+      "end": 1385.14,
+      "text": "And you think of it as like a percentage, right?",
+      "source": "pass1",
+      "avg_logprob": -0.09306524921622542
+    },
+    {
+      "start": 1385.14,
+      "end": 1387.14,
+      "text": "If there's a 10% chance of something happened,",
+      "source": "pass1",
+      "avg_logprob": -0.07651415522638205
+    },
+    {
+      "start": 1387.14,
+      "end": 1389.14,
+      "text": "you can buy a share of this at 10 cents.",
+      "source": "pass1",
+      "avg_logprob": -0.07651415522638205
+    },
+    {
+      "start": 1389.14,
+      "end": 1391.14,
+      "text": "And if you're right, it will go to a dollar.",
+      "source": "pass1",
+      "avg_logprob": -0.07651415522638205
+    },
+    {
+      "start": 1391.14,
+      "end": 1393.14,
+      "text": "So for every 10 cents you invest,",
+      "source": "pass1",
+      "avg_logprob": -0.07651415522638205
+    },
+    {
+      "start": 1393.14,
+      "end": 1395.14,
+      "text": "you get a dollar return.",
+      "source": "pass1",
+      "avg_logprob": -0.07651415522638205
+    },
+    {
+      "start": 1395.14,
+      "end": 1399.14,
+      "text": "And I can remember on the night of the election in 2016,",
+      "source": "pass1",
+      "avg_logprob": -0.07651415522638205
+    },
+    {
+      "start": 1399.14,
+      "end": 1401.14,
+      "text": "buying shares of Donald Trump to become president",
+      "source": "pass1",
+      "avg_logprob": -0.07651415522638205
+    },
+    {
+      "start": 1401.14,
+      "end": 1404.14,
+      "text": "of the United States on that night at 9%,",
+      "source": "pass1",
+      "avg_logprob": -0.07651415522638205
+    },
+    {
+      "start": 1404.14,
+      "end": 1406.14,
+      "text": "which was able to give me, you know,",
+      "source": "pass1",
+      "avg_logprob": -0.07651415522638205
+    },
+    {
+      "start": 1406.14,
+      "end": 1409.14,
+      "text": "about 11 times plus my money in that market.",
+      "source": "pass1",
+      "avg_logprob": -0.07651415522638205
+    },
+    {
+      "start": 1409.14,
+      "end": 1412.14,
+      "text": "Now we realized that he had a much better chance to win.",
+      "source": "pass1",
+      "avg_logprob": -0.07651415522638205
+    },
+    {
+      "start": 1412.14,
+      "end": 1414.14,
+      "text": "We recognized that there was a chance to,",
+      "source": "pass1",
+      "avg_logprob": -0.07651415522638205
+    },
+    {
+      "start": 1414.14,
+      "end": 1417.14,
+      "text": "I thought it was over 50% that he was not going to win.",
+      "source": "pass1",
+      "avg_logprob": -0.050868052859894104
+    },
+    {
+      "start": 1417.14,
+      "end": 1419.14,
+      "text": "But when you do this methodically,",
+      "source": "pass1",
+      "avg_logprob": -0.050868052859894104
+    },
+    {
+      "start": 1419.14,
+      "end": 1422.14,
+      "text": "when you look at these markets over a long period of time,",
+      "source": "pass1",
+      "avg_logprob": -0.050868052859894104
+    },
+    {
+      "start": 1422.14,
+      "end": 1424.14,
+      "text": "you can find edges.",
+      "source": "pass1",
+      "avg_logprob": -0.050868052859894104
+    },
+    {
+      "start": 1424.14,
+      "end": 1427.14,
+      "text": "And if you continually search for a value",
+      "source": "pass1",
+      "avg_logprob": -0.050868052859894104
+    },
+    {
+      "start": 1427.14,
+      "end": 1429.14,
+      "text": "over a long period of time,",
+      "source": "pass1",
+      "avg_logprob": -0.050868052859894104
+    },
+    {
+      "start": 1429.14,
+      "end": 1431.14,
+      "text": "you wind up coming out way ahead.",
+      "source": "pass1",
+      "avg_logprob": -0.050868052859894104
+    },
+    {
+      "start": 1431.14,
+      "end": 1434.14,
+      "text": "And that's what we've been able to do for a long period of time.",
+      "source": "pass1",
+      "avg_logprob": -0.050868052859894104
+    },
+    {
+      "start": 1434.14,
+      "end": 1436.14,
+      "text": "This isn't something I'm jumping into",
+      "source": "pass1",
+      "avg_logprob": -0.050868052859894104
+    },
+    {
+      "start": 1436.14,
+      "end": 1438.14,
+      "text": "because all of a sudden there are commercials on TV",
+      "source": "pass1",
+      "avg_logprob": -0.050868052859894104
+    },
+    {
+      "start": 1438.14,
+      "end": 1440.14,
+      "text": "for Calcium Polymarket.",
+      "source": "pass1",
+      "avg_logprob": -0.050868052859894104
+    },
+    {
+      "start": 1440.14,
+      "end": 1442.14,
+      "text": "You know, I'm glad that they're launching these things.",
+      "source": "pass1",
+      "avg_logprob": -0.050868052859894104
+    },
+    {
+      "start": 1442.14,
+      "end": 1444.14,
+      "text": "I'm glad, you know, them predicted.",
+      "source": "pass1",
+      "avg_logprob": -0.07820473562571265
+    },
+    {
+      "start": 1444.14,
+      "end": 1446.14,
+      "text": "All these guys are coming into this field.",
+      "source": "pass1",
+      "avg_logprob": -0.07820473562571265
+    },
+    {
+      "start": 1446.14,
+      "end": 1448.14,
+      "text": "There's going to be, there's rumors of 10 to 20 more",
+      "source": "pass1",
+      "avg_logprob": -0.07820473562571265
+    },
+    {
+      "start": 1448.14,
+      "end": 1450.14,
+      "text": "prediction markets coming in,",
+      "source": "pass1",
+      "avg_logprob": -0.07820473562571265
+    },
+    {
+      "start": 1450.14,
+      "end": 1452.14,
+      "text": "and all of them will give us different data points",
+      "source": "pass1",
+      "avg_logprob": -0.07820473562571265
+    },
+    {
+      "start": 1452.14,
+      "end": 1454.14,
+      "text": "and opportunities to try to do better.",
+      "source": "pass1",
+      "avg_logprob": -0.07820473562571265
+    },
+    {
+      "start": 1454.14,
+      "end": 1456.14,
+      "text": "But this is not a new thing to me.",
+      "source": "pass1",
+      "avg_logprob": -0.07820473562571265
+    },
+    {
+      "start": 1456.14,
+      "end": 1458.14,
+      "text": "I've been doing this for a very long time.",
+      "source": "pass1",
+      "avg_logprob": -0.07820473562571265
+    },
+    {
+      "start": 1458.14,
+      "end": 1461.14,
+      "text": "I, you know, I think the first election",
+      "source": "pass1",
+      "avg_logprob": -0.07820473562571265
+    },
+    {
+      "start": 1461.14,
+      "end": 1463.14,
+      "text": "I was really active in prediction markets here",
+      "source": "pass1",
+      "avg_logprob": -0.07820473562571265
+    },
+    {
+      "start": 1463.14,
+      "end": 1465.14,
+      "text": "was 2014.",
+      "source": "pass1",
+      "avg_logprob": -0.07820473562571265
+    },
+    {
+      "start": 1465.14,
+      "end": 1467.14,
+      "text": "So going back quite a long way,",
+      "source": "pass1",
+      "avg_logprob": -0.07820473562571265
+    },
+    {
+      "start": 1467.14,
+      "end": 1468.14,
+      "text": "it might have been 2012.",
+      "source": "pass1",
+      "avg_logprob": -0.07820473562571265
+    },
+    {
+      "start": 1468.14,
+      "end": 1469.14,
+      "text": "I have to go back and look at that honestly.",
+      "source": "pass1",
+      "avg_logprob": -0.07820473562571265
+    },
+    {
+      "start": 1469.14,
+      "end": 1471.14,
+      "text": "It might have been 2012, but I think it was 2014.",
+      "source": "pass1",
+      "avg_logprob": -0.07820473562571265
+    },
+    {
+      "start": 1472.14,
+      "end": 1475.14,
+      "text": "We met a couple of guys I worked with at the Blaze,",
+      "source": "pass1",
+      "avg_logprob": -0.10270180959593166
+    },
+    {
+      "start": 1475.14,
+      "end": 1478.14,
+      "text": "met with a guy who was on one of the very first",
+      "source": "pass1",
+      "avg_logprob": -0.10270180959593166
+    },
+    {
+      "start": 1478.14,
+      "end": 1480.14,
+      "text": "prediction markets.",
+      "source": "pass1",
+      "avg_logprob": -0.10270180959593166
+    },
+    {
+      "start": 1480.14,
+      "end": 1482.14,
+      "text": "When we talked about how these things worked",
+      "source": "pass1",
+      "avg_logprob": -0.10270180959593166
+    },
+    {
+      "start": 1482.14,
+      "end": 1484.14,
+      "text": "and why they were interesting, why they're important,",
+      "source": "pass1",
+      "avg_logprob": -0.10270180959593166
+    },
+    {
+      "start": 1484.14,
+      "end": 1486.14,
+      "text": "back in 2005.",
+      "source": "pass1",
+      "avg_logprob": -0.10270180959593166
+    },
+    {
+      "start": 1486.14,
+      "end": 1488.14,
+      "text": "So that is over 20 years ago now,",
+      "source": "pass1",
+      "avg_logprob": -0.10270180959593166
+    },
+    {
+      "start": 1488.14,
+      "end": 1490.14,
+      "text": "which makes me feel incredibly old",
+      "source": "pass1",
+      "avg_logprob": -0.10270180959593166
+    },
+    {
+      "start": 1490.14,
+      "end": 1492.14,
+      "text": "now that I say that out loud.",
+      "source": "pass1",
+      "avg_logprob": -0.10270180959593166
+    },
+    {
+      "start": 1492.14,
+      "end": 1494.14,
+      "text": "But the point is, you know,",
+      "source": "pass1",
+      "avg_logprob": -0.10270180959593166
+    },
+    {
+      "start": 1494.14,
+      "end": 1496.14,
+      "text": "this is something that we've been thinking about",
+      "source": "pass1",
+      "avg_logprob": -0.10270180959593166
+    },
+    {
+      "start": 1496.14,
+      "end": 1497.14,
+      "text": "for a long time.",
+      "source": "pass1",
+      "avg_logprob": -0.10270180959593166
+    },
+    {
+      "start": 1497.14,
+      "end": 1499.14,
+      "text": "I've been implementing slowly into the way",
+      "source": "pass1",
+      "avg_logprob": -0.10270180959593166
+    },
+    {
+      "start": 1499.14,
+      "end": 1501.14,
+      "text": "we look at the world and we're going to go",
+      "source": "pass1",
+      "avg_logprob": -0.10556433299506032
+    },
+    {
+      "start": 1501.14,
+      "end": 1503.14,
+      "text": "even farther now.",
+      "source": "pass1",
+      "avg_logprob": -0.10556433299506032
+    },
+    {
+      "start": 1503.14,
+      "end": 1505.14,
+      "text": "We have opportunities with much, much more data",
+      "source": "pass1",
+      "avg_logprob": -0.10556433299506032
+    },
+    {
+      "start": 1505.14,
+      "end": 1507.14,
+      "text": "with more people in these markets than ever before,",
+      "source": "pass1",
+      "avg_logprob": -0.10556433299506032
+    },
+    {
+      "start": 1507.14,
+      "end": 1509.14,
+      "text": "with more smart people in these markets",
+      "source": "pass1",
+      "avg_logprob": -0.10556433299506032
+    },
+    {
+      "start": 1509.14,
+      "end": 1510.14,
+      "text": "than ever before.",
+      "source": "pass1",
+      "avg_logprob": -0.10556433299506032
+    },
+    {
+      "start": 1510.14,
+      "end": 1511.14,
+      "text": "We have an opportunity to look at these,",
+      "source": "pass1",
+      "avg_logprob": -0.10556433299506032
+    },
+    {
+      "start": 1511.14,
+      "end": 1513.14,
+      "text": "get incredible information",
+      "source": "pass1",
+      "avg_logprob": -0.10556433299506032
+    },
+    {
+      "start": 1513.14,
+      "end": 1515.14,
+      "text": "as to what is coming next",
+      "source": "pass1",
+      "avg_logprob": -0.10556433299506032
+    },
+    {
+      "start": 1515.14,
+      "end": 1518.14,
+      "text": "and also get some incredible opportunities",
+      "source": "pass1",
+      "avg_logprob": -0.10556433299506032
+    },
+    {
+      "start": 1518.14,
+      "end": 1519.14,
+      "text": "as well.",
+      "source": "pass1",
+      "avg_logprob": -0.10556433299506032
+    },
+    {
+      "start": 1519.14,
+      "end": 1521.14,
+      "text": "The point is, you shouldn't be shocked",
+      "source": "pass1",
+      "avg_logprob": -0.10556433299506032
+    },
+    {
+      "start": 1521.14,
+      "end": 1522.14,
+      "text": "by what's coming.",
+      "source": "pass1",
+      "avg_logprob": -0.10556433299506032
+    },
+    {
+      "start": 1522.14,
+      "end": 1524.14,
+      "text": "You might have been shocked by a previous election.",
+      "source": "pass1",
+      "avg_logprob": -0.10556433299506032
+    },
+    {
+      "start": 1524.14,
+      "end": 1526.14,
+      "text": "You might have been shocked by what's something that,",
+      "source": "pass1",
+      "avg_logprob": -0.10556433299506032
+    },
+    {
+      "start": 1526.14,
+      "end": 1527.14,
+      "text": "and one of these politicians did,",
+      "source": "pass1",
+      "avg_logprob": -0.10556433299506032
+    },
+    {
+      "start": 1527.14,
+      "end": 1529.14,
+      "text": "you shouldn't be shocked at what the outcome is.",
+      "source": "pass1",
+      "avg_logprob": -0.06835398117475437
+    },
+    {
+      "start": 1529.14,
+      "end": 1531.14,
+      "text": "You know, no one knows the future,",
+      "source": "pass1",
+      "avg_logprob": -0.06835398117475437
+    },
+    {
+      "start": 1531.14,
+      "end": 1533.14,
+      "text": "but we can get a lot closer",
+      "source": "pass1",
+      "avg_logprob": -0.06835398117475437
+    },
+    {
+      "start": 1533.14,
+      "end": 1536.14,
+      "text": "than the disaster of a media that we have right now.",
+      "source": "pass1",
+      "avg_logprob": -0.06835398117475437
+    },
+    {
+      "start": 1536.14,
+      "end": 1538.14,
+      "text": "The name of the show,",
+      "source": "pass1",
+      "avg_logprob": -0.06835398117475437
+    },
+    {
+      "start": 1538.14,
+      "end": 1540.14,
+      "text": "you'll be seeing it on this channel,",
+      "source": "pass1",
+      "avg_logprob": -0.06835398117475437
+    },
+    {
+      "start": 1540.14,
+      "end": 1541.14,
+      "text": "is Predictable.",
+      "source": "pass1",
+      "avg_logprob": -0.06835398117475437
+    },
+    {
+      "start": 1541.14,
+      "end": 1543.14,
+      "text": "And that is because",
+      "source": "pass1",
+      "avg_logprob": -0.06835398117475437
+    },
+    {
+      "start": 1543.14,
+      "end": 1545.14,
+      "text": "that's what the world should be.",
+      "source": "pass1",
+      "avg_logprob": -0.06835398117475437
+    },
+    {
+      "start": 1545.14,
+      "end": 1548.14,
+      "text": "It should be a little bit more predictable.",
+      "source": "pass1",
+      "avg_logprob": -0.06835398117475437
+    },
+    {
+      "start": 1548.14,
+      "end": 1550.14,
+      "text": "We're going to be doing our best",
+      "source": "pass1",
+      "avg_logprob": -0.06835398117475437
+    },
+    {
+      "start": 1550.14,
+      "end": 1552.14,
+      "text": "to get you closer to a predictable world",
+      "source": "pass1",
+      "avg_logprob": -0.06835398117475437
+    },
+    {
+      "start": 1552.14,
+      "end": 1555.14,
+      "text": "in what feels like completely unpredictable times.",
+      "source": "pass1",
+      "avg_logprob": -0.06835398117475437
+    },
+    {
+      "start": 1555.14,
+      "end": 1558.14,
+      "text": "So I ask you to tell somebody about this.",
+      "source": "pass1",
+      "avg_logprob": -0.0887714730841773
+    },
+    {
+      "start": 1558.14,
+      "end": 1559.14,
+      "text": "If you think they might be interested in,",
+      "source": "pass1",
+      "avg_logprob": -0.0887714730841773
+    },
+    {
+      "start": 1559.14,
+      "end": 1561.14,
+      "text": "you know, serious election content",
+      "source": "pass1",
+      "avg_logprob": -0.0887714730841773
+    },
+    {
+      "start": 1561.14,
+      "end": 1563.14,
+      "text": "and understanding the world",
+      "source": "pass1",
+      "avg_logprob": -0.0887714730841773
+    },
+    {
+      "start": 1563.14,
+      "end": 1565.14,
+      "text": "and look, we're going to have fun too.",
+      "source": "pass1",
+      "avg_logprob": -0.0887714730841773
+    },
+    {
+      "start": 1565.14,
+      "end": 1566.14,
+      "text": "We'll have election content.",
+      "source": "pass1",
+      "avg_logprob": -0.0887714730841773
+    },
+    {
+      "start": 1566.14,
+      "end": 1568.14,
+      "text": "We will have stuff on sports.",
+      "source": "pass1",
+      "avg_logprob": -0.0887714730841773
+    },
+    {
+      "start": 1568.14,
+      "end": 1570.14,
+      "text": "We'll have stuff on culture.",
+      "source": "pass1",
+      "avg_logprob": -0.0887714730841773
+    },
+    {
+      "start": 1570.14,
+      "end": 1572.14,
+      "text": "There's all sorts of different markets.",
+      "source": "pass1",
+      "avg_logprob": -0.0887714730841773
+    },
+    {
+      "start": 1572.14,
+      "end": 1574.14,
+      "text": "Really, you can almost anything",
+      "source": "pass1",
+      "avg_logprob": -0.0887714730841773
+    },
+    {
+      "start": 1574.14,
+      "end": 1576.14,
+      "text": "you can find a market on",
+      "source": "pass1",
+      "avg_logprob": -0.0887714730841773
+    },
+    {
+      "start": 1576.14,
+      "end": 1579.14,
+      "text": "to try to understand what's going on in that world.",
+      "source": "pass1",
+      "avg_logprob": -0.0887714730841773
+    },
+    {
+      "start": 1579.14,
+      "end": 1581.14,
+      "text": "Sometimes it'll just be opportunities to say,",
+      "source": "pass1",
+      "avg_logprob": -0.0887714730841773
+    },
+    {
+      "start": 1581.14,
+      "end": 1582.14,
+      "text": "hey, wait a minute.",
+      "source": "pass1",
+      "avg_logprob": -0.0887714730841773
+    },
+    {
+      "start": 1582.14,
+      "end": 1583.14,
+      "text": "This is what I kind of like.",
+      "source": "pass1",
+      "avg_logprob": -0.0887714730841773
+    },
+    {
+      "start": 1583.14,
+      "end": 1585.14,
+      "text": "Maybe we should look into this one a little bit further.",
+      "source": "pass1",
+      "avg_logprob": -0.07760671747141872
+    },
+    {
+      "start": 1585.14,
+      "end": 1588.14,
+      "text": "Sometimes it will be really important things",
+      "source": "pass1",
+      "avg_logprob": -0.07760671747141872
+    },
+    {
+      "start": 1588.14,
+      "end": 1590.14,
+      "text": "that are affecting your day-to-day life.",
+      "source": "pass1",
+      "avg_logprob": -0.07760671747141872
+    },
+    {
+      "start": 1590.14,
+      "end": 1592.14,
+      "text": "So if you have anyone that you know,",
+      "source": "pass1",
+      "avg_logprob": -0.07760671747141872
+    },
+    {
+      "start": 1592.14,
+      "end": 1593.14,
+      "text": "please share this with them.",
+      "source": "pass1",
+      "avg_logprob": -0.07760671747141872
+    },
+    {
+      "start": 1593.14,
+      "end": 1594.14,
+      "text": "Let them know.",
+      "source": "pass1",
+      "avg_logprob": -0.07760671747141872
+    },
+    {
+      "start": 1594.14,
+      "end": 1597.14,
+      "text": "We're going to be right here on YouTube.com",
+      "source": "pass1",
+      "avg_logprob": -0.07760671747141872
+    },
+    {
+      "start": 1597.14,
+      "end": 1599.14,
+      "text": "at Predictable Show.",
+      "source": "pass1",
+      "avg_logprob": -0.07760671747141872
+    },
+    {
+      "start": 1599.14,
+      "end": 1600.14,
+      "text": "We will be all over the place.",
+      "source": "pass1",
+      "avg_logprob": -0.07760671747141872
+    },
+    {
+      "start": 1600.14,
+      "end": 1602.14,
+      "text": "You'll be on your podcast feed",
+      "source": "pass1",
+      "avg_logprob": -0.07760671747141872
+    },
+    {
+      "start": 1602.14,
+      "end": 1604.14,
+      "text": "and everything as well.",
+      "source": "pass1",
+      "avg_logprob": -0.07760671747141872
+    },
+    {
+      "start": 1604.14,
+      "end": 1606.14,
+      "text": "And tomorrow we will be talking to",
+      "source": "pass1",
+      "avg_logprob": -0.07760671747141872
+    },
+    {
+      "start": 1606.14,
+      "end": 1607.14,
+      "text": "Chairman Michael Selig",
+      "source": "pass1",
+      "avg_logprob": -0.07760671747141872
+    },
+    {
+      "start": 1607.14,
+      "end": 1610.14,
+      "text": "on tomorrow's program of the CFTC,",
+      "source": "pass1",
+      "avg_logprob": -0.07760671747141872
+    },
+    {
+      "start": 1610.14,
+      "end": 1612.14,
+      "text": "kind of the way that they oversee",
+      "source": "pass1",
+      "avg_logprob": -0.07760671747141872
+    },
+    {
+      "start": 1612.14,
+      "end": 1616.14,
+      "text": "this whole new world.",
+      "source": "pass1",
+      "avg_logprob": -0.0796698092630035
+    },
+    {
+      "start": 1616.14,
+      "end": 1618.14,
+      "text": "How are they going to deal with the threats?",
+      "source": "pass1",
+      "avg_logprob": -0.0796698092630035
+    },
+    {
+      "start": 1618.14,
+      "end": 1621.14,
+      "text": "How are they going to deal with the benefits",
+      "source": "pass1",
+      "avg_logprob": -0.0796698092630035
+    },
+    {
+      "start": 1621.14,
+      "end": 1622.14,
+      "text": "of prediction markets?",
+      "source": "pass1",
+      "avg_logprob": -0.0796698092630035
+    },
+    {
+      "start": 1622.14,
+      "end": 1624.14,
+      "text": "We'll get into all of that with him tomorrow",
+      "source": "pass1",
+      "avg_logprob": -0.0796698092630035
+    },
+    {
+      "start": 1624.14,
+      "end": 1626.14,
+      "text": "on the show for our first guest,",
+      "source": "pass1",
+      "avg_logprob": -0.0796698092630035
+    },
+    {
+      "start": 1626.14,
+      "end": 1629.14,
+      "text": "Michael Selig, Chairman of the CFTC.",
+      "source": "pass1",
+      "avg_logprob": -0.0796698092630035
+    },
+    {
+      "start": 1629.14,
+      "end": 1632.14,
+      "text": "Another thing just to throw your way,",
+      "source": "pass1",
+      "avg_logprob": -0.0796698092630035
+    },
+    {
+      "start": 1632.14,
+      "end": 1636.14,
+      "text": "if you're maybe already kind of interested in this stuff,",
+      "source": "pass1",
+      "avg_logprob": -0.0796698092630035
+    },
+    {
+      "start": 1636.14,
+      "end": 1638.14,
+      "text": "if you think this is something",
+      "source": "pass1",
+      "avg_logprob": -0.0796698092630035
+    },
+    {
+      "start": 1638.14,
+      "end": 1640.14,
+      "text": "that you're going to want to follow",
+      "source": "pass1",
+      "avg_logprob": -0.0796698092630035
+    },
+    {
+      "start": 1640.14,
+      "end": 1643.14,
+      "text": "for really good election breakdowns",
+      "source": "pass1",
+      "avg_logprob": -0.11654927297981817
+    },
+    {
+      "start": 1643.14,
+      "end": 1648.14,
+      "text": "and also opportunities in this world,",
+      "source": "pass1",
+      "avg_logprob": -0.11654927297981817
+    },
+    {
+      "start": 1648.14,
+      "end": 1652.14,
+      "text": "we have a sub-stack that is at PredictableShow.com.",
+      "source": "pass1",
+      "avg_logprob": -0.11654927297981817
+    },
+    {
+      "start": 1652.14,
+      "end": 1654.14,
+      "text": "It's Predictable.substack.com.",
+      "source": "pass1",
+      "avg_logprob": -0.11654927297981817
+    },
+    {
+      "start": 1654.14,
+      "end": 1656.14,
+      "text": "If you go to PredictableShow.com,",
+      "source": "pass1",
+      "avg_logprob": -0.11654927297981817
+    },
+    {
+      "start": 1656.14,
+      "end": 1657.14,
+      "text": "it'll send you right there.",
+      "source": "pass1",
+      "avg_logprob": -0.11654927297981817
+    },
+    {
+      "start": 1657.14,
+      "end": 1661.14,
+      "text": "There you'll be able to check out the show there.",
+      "source": "pass1",
+      "avg_logprob": -0.11654927297981817
+    },
+    {
+      "start": 1661.14,
+      "end": 1663.14,
+      "text": "You'll be able to check out a bunch of different live streams",
+      "source": "pass1",
+      "avg_logprob": -0.11654927297981817
+    },
+    {
+      "start": 1663.14,
+      "end": 1666.14,
+      "text": "and additional broadcasts that we do.",
+      "source": "pass1",
+      "avg_logprob": -0.11654927297981817
+    },
+    {
+      "start": 1666.14,
+      "end": 1668.14,
+      "text": "And on top of that,",
+      "source": "pass1",
+      "avg_logprob": -0.11654927297981817
+    },
+    {
+      "start": 1668.14,
+      "end": 1669.14,
+      "text": "there's going to be a lot of written stuff,",
+      "source": "pass1",
+      "avg_logprob": -0.11654927297981817
+    },
+    {
+      "start": 1669.14,
+      "end": 1673.14,
+      "text": "like articles, certain market breakdowns.",
+      "source": "pass1",
+      "avg_logprob": -0.09281503995332648
+    },
+    {
+      "start": 1673.14,
+      "end": 1675.14,
+      "text": "We'll try to keep it entertaining, too.",
+      "source": "pass1",
+      "avg_logprob": -0.09281503995332648
+    },
+    {
+      "start": 1675.14,
+      "end": 1677.14,
+      "text": "I wanted to kind of break down",
+      "source": "pass1",
+      "avg_logprob": -0.09281503995332648
+    },
+    {
+      "start": 1677.14,
+      "end": 1679.14,
+      "text": "the more high-minded things we're trying to do here,",
+      "source": "pass1",
+      "avg_logprob": -0.09281503995332648
+    },
+    {
+      "start": 1679.14,
+      "end": 1681.14,
+      "text": "but we're also going to screw around a lot",
+      "source": "pass1",
+      "avg_logprob": -0.09281503995332648
+    },
+    {
+      "start": 1681.14,
+      "end": 1682.14,
+      "text": "because honestly, I can't deal with the world",
+      "source": "pass1",
+      "avg_logprob": -0.09281503995332648
+    },
+    {
+      "start": 1682.14,
+      "end": 1683.14,
+      "text": "without doing that.",
+      "source": "pass1",
+      "avg_logprob": -0.09281503995332648
+    },
+    {
+      "start": 1683.14,
+      "end": 1688.14,
+      "text": "So we will give you articles, breakdowns",
+      "source": "pass1",
+      "avg_logprob": -0.09281503995332648
+    },
+    {
+      "start": 1688.14,
+      "end": 1690.14,
+      "text": "with the edge, I think, that you're used to",
+      "source": "pass1",
+      "avg_logprob": -0.09281503995332648
+    },
+    {
+      "start": 1690.14,
+      "end": 1694.14,
+      "text": "from content that I've been involved in.",
+      "source": "pass1",
+      "avg_logprob": -0.09281503995332648
+    },
+    {
+      "start": 1694.14,
+      "end": 1697.14,
+      "text": "And we will kind of bring that to you",
+      "source": "pass1",
+      "avg_logprob": -0.09281503995332648
+    },
+    {
+      "start": 1697.14,
+      "end": 1698.14,
+      "text": "on a day-to-day basis.",
+      "source": "pass1",
+      "avg_logprob": -0.09281503995332648
+    },
+    {
+      "start": 1698.14,
+      "end": 1700.14,
+      "text": "So that's a really important place to go.",
+      "source": "pass1",
+      "avg_logprob": -0.08442565212026239
+    },
+    {
+      "start": 1700.14,
+      "end": 1701.14,
+      "text": "Go there, PredictableShow.com.",
+      "source": "pass1",
+      "avg_logprob": -0.08442565212026239
+    },
+    {
+      "start": 1701.14,
+      "end": 1702.14,
+      "text": "Just use your emails.",
+      "source": "pass1",
+      "avg_logprob": -0.08442565212026239
+    },
+    {
+      "start": 1702.14,
+      "end": 1704.14,
+      "text": "It's free to sign up,",
+      "source": "pass1",
+      "avg_logprob": -0.08442565212026239
+    },
+    {
+      "start": 1704.14,
+      "end": 1705.14,
+      "text": "and you'll get all this breakdown.",
+      "source": "pass1",
+      "avg_logprob": -0.08442565212026239
+    },
+    {
+      "start": 1705.14,
+      "end": 1708.14,
+      "text": "I want to make sure you get this information",
+      "source": "pass1",
+      "avg_logprob": -0.08442565212026239
+    },
+    {
+      "start": 1708.14,
+      "end": 1709.14,
+      "text": "in all the different ways",
+      "source": "pass1",
+      "avg_logprob": -0.08442565212026239
+    },
+    {
+      "start": 1709.14,
+      "end": 1712.14,
+      "text": "that we are trying to supply it to you.",
+      "source": "pass1",
+      "avg_logprob": -0.08442565212026239
+    },
+    {
+      "start": 1712.14,
+      "end": 1714.14,
+      "text": "So it's kind of a brave new world out there.",
+      "source": "pass1",
+      "avg_logprob": -0.08442565212026239
+    },
+    {
+      "start": 1714.14,
+      "end": 1716.14,
+      "text": "I hope you'll join us on the journey through it.",
+      "source": "pass1",
+      "avg_logprob": -0.08442565212026239
+    },
+    {
+      "start": 1716.14,
+      "end": 1718.14,
+      "text": "It is PredictableShow.com,",
+      "source": "pass1",
+      "avg_logprob": -0.08442565212026239
+    },
+    {
+      "start": 1718.14,
+      "end": 1721.14,
+      "text": "YouTube.com.slash, at PredictableShow.",
+      "source": "pass1",
+      "avg_logprob": -0.08442565212026239
+    },
+    {
+      "start": 1721.14,
+      "end": 1723.14,
+      "text": "Of course, all the social media out there,",
+      "source": "pass1",
+      "avg_logprob": -0.08442565212026239
+    },
+    {
+      "start": 1723.14,
+      "end": 1726.14,
+      "text": "as well, where we can kind of direct you",
+      "source": "pass1",
+      "avg_logprob": -0.08442565212026239
+    },
+    {
+      "start": 1726.14,
+      "end": 1730.14,
+      "text": "to be able to get the access to the information",
+      "source": "pass1",
+      "avg_logprob": -0.0988369871546903
+    },
+    {
+      "start": 1730.14,
+      "end": 1732.14,
+      "text": "that I think you honestly need and deserve.",
+      "source": "pass1",
+      "avg_logprob": -0.0988369871546903
+    },
+    {
+      "start": 1732.14,
+      "end": 1735.14,
+      "text": "So join us, PredictableShow.com.",
+      "source": "pass1",
+      "avg_logprob": -0.0988369871546903
+    },
+    {
+      "start": 1735.14,
+      "end": 1738.14,
+      "text": "And we will see you with Chairman of the CFTC,",
+      "source": "pass1",
+      "avg_logprob": -0.0988369871546903
+    },
+    {
+      "start": 1738.14,
+      "end": 1741.14,
+      "text": "Michael Selig, tomorrow.",
+      "source": "pass1",
+      "avg_logprob": -0.0988369871546903
+    },
+    {
+      "start": 1741.14,
+      "end": 1745.14,
+      "text": "Hi, I'm Katie, your friend and jeweler at Shane Company.",
+      "source": "pass1",
+      "avg_logprob": -0.0988369871546903
+    },
+    {
+      "start": 1745.14,
+      "end": 1747.14,
+      "text": "Daydreaming about bringing your engagement ring",
+      "source": "pass1",
+      "avg_logprob": -0.0988369871546903
+    },
+    {
+      "start": 1747.14,
+      "end": 1748.14,
+      "text": "vision to life?",
+      "source": "pass1",
+      "avg_logprob": -0.0988369871546903
+    },
+    {
+      "start": 1748.14,
+      "end": 1751.14,
+      "text": "As a jewelry consultant, I'm here to help.",
+      "source": "pass1",
+      "avg_logprob": -0.0988369871546903
+    },
+    {
+      "start": 1751.14,
+      "end": 1753.14,
+      "text": "Compare ring styles side by side.",
+      "source": "pass1",
+      "avg_logprob": -0.0988369871546903
+    },
+    {
+      "start": 1753.14,
+      "end": 1755.14,
+      "text": "They're in stock and ready to try on.",
+      "source": "pass1",
+      "avg_logprob": -0.0988369871546903
+    },
+    {
+      "start": 1755.14,
+      "end": 1758.14,
+      "text": "Then customize it with an engraving or decorative crown.",
+      "source": "pass1",
+      "avg_logprob": -0.07281186500270116
+    },
+    {
+      "start": 1758.14,
+      "end": 1760.14,
+      "text": "At Shane Company, there are so many ways",
+      "source": "pass1",
+      "avg_logprob": -0.07281186500270116
+    },
+    {
+      "start": 1760.14,
+      "end": 1763.14,
+      "text": "to create your dream ring at your dream price.",
+      "source": "pass1",
+      "avg_logprob": -0.07281186500270116
+    },
+    {
+      "start": 1763.14,
+      "end": 1766.14,
+      "text": "Visit us in-store or at ShaneCo.com,",
+      "source": "pass1",
+      "avg_logprob": -0.07281186500270116
+    },
+    {
+      "start": 1766.14,
+      "end": 1769.14,
+      "text": "because a friend wants you to get exactly what you want.",
+      "source": "pass1",
+      "avg_logprob": -0.07281186500270116
+    },
+    {
+      "start": 1769.14,
+      "end": 1772.14,
+      "text": "Shane Company, your friend and jeweler.",
+      "source": "pass1",
+      "avg_logprob": -0.07281186500270116
+    }
+  ],
+  "full_text": "Welcome to Predictable, the show about prediction markets and the news through the lens of prediction markets. Why are we in Washington D.C. to do this? Well, it is Earth Day and so this week I'm flying all over the country just to punish the planet because that's what I do. Punish the planet. We actually were kind of set to start next week with the actual show. And it'll be a show that you're going to be getting Monday through Thursday, you know, every week. And we're going to start next week. They're in the middle of building the studios down in the blaze in Dallas. I'm up in D.C. right now, but we kind of had this D.C. opportunity pop up. And, you know, we wanted to kind of get up here and take advantage of it honestly. We get to meet a bunch of people. We've been doing a bunch of meetings kind of behind the scenes as well. And since we had this opportunity, we thought maybe we just could bring you some content this week. The full show is going to start next week. We think, you know, assuming there's not like a giant fire at the studios, you never know when, you know, some protesters will break in and light it all on fire. But for the time being, we think it's going to be done next week. And we'll have content, you know, for you leading up to that no matter what. Right? Like some live streams, ask me anything, all sorts of stuff leading up to next week when the show actually starts from its home base in Dallas. What I wanted to do today kind of has a, I don't know, it's a pseudo first episode, is to talk to you about kind of the way that I wanted to bridge the old stuff to the new stuff. Because, you know, you might, you know, we kind of start this show predictable with a pretty tight group. I know there are people who are really active in the prediction market, a world that are following the show, or they're following closely what we're doing. And that's great. We're excited about that. But we're going to start mostly with a pretty tight group. And, you know, if you're in that group, you've probably been around for a long time. You may have been listening for a decade, two, maybe almost three decades when it comes back to Stude's America, Wonderful World of Stude before that. Pat and Stu, Glenn Beck program, of course. All the things that we've done kind of together over a very long period of time. And we've been together through a million different news cycles, a million different politicians. I will say when I look back at old footage, I've also realized you've gone on a million different weight fluctuations with me. And I appreciate you sticking through each and every one of those. My closet is not large enough to hold all the clothing, but I'm glad you're still here. This is a bit of a different thing. I mean, change here is a little weird, right? Change can be odd and it can be unsettling and it can be, you know, when you're taken out of what you expect on a day-to-day basis, I know that can be strange. And while this is a new show, it is about the news still through the lens of prediction markets. But it's about the news. We're going to be analyzing the news. You might not know anything about prediction markets. And honestly, that's totally fine. I still think you're going to get a lot out of the show on a day-to-day basis. You know, the media is kind of now trying to figure out what prediction markets are and how they're going to handle them. You know, it's interesting to watch. You'll see all these sort of like reports that are almost like grandmotherly. Like there's a scolding you for all of the, you know, all the people that go on prediction markets and do things that are bad. That's important to talk about. You want to make sure that these things are on the up and up as much as possible. But it's also like a really small part of the story here. And, you know, it is important to understand exactly why those things happen. And, you know, it's funny to watch them at the same time they're scolding you or scolding the world about the casinoization of America. Half of these networks are all taking money from these prediction markets because, you know, they're sponsoring stuff. There is real value there. And if you don't know anything about prediction markets, that's totally fine. Like it's, you're still going to get something out of this program, I think. Now, you might hear it's all about gambling. I don't think that's true. We'll talk about that and I'll explain why I don't think that's true. I think, you know, just like anything else, you can approach all sorts of stuff as you can approach stock market investing as meme stocks and penny stocks and it might feel a lot like gambling. You could do the same thing in prediction markets. You could throw crazy bets all over the place if you want. That's not what we're going to do here. Like that's not our interest. I don't want to do it that way. I think there's real utility to these markets. And I think not only will it help us and maybe make some money together, but also, you know, inform us as to what the world, what in the world is actually going on. You may never invest the dollar in a prediction market. That's totally fine. You may have no interest in investing a dollar in a prediction market. That's totally fine as well. There's going to be a ton of overlap between, you know, Student of America and, you know, what I did on the Glenn Beck program. I will still be calling AOC a moron, probably multiple times per show. I wish I could stop that. I feel bad about it at times because she's, you know, she's got the brain of a mouse. But I will still continue to do that. You know, I'm still a conservative. I'm still a nerd. And I will still, you know, taunt Dallas Cowboys fans whenever possible. These are all things that are going to be central parts of this program. And I will be analyzing the news. I will be analyzing elections and the events that are important to you, the events that affect you the most. Obviously in this time period, elections are going to be a big focus. And if you follow what I did on Student of America on the Glenn Beck program, you know, that was kind of my beat, right? I mean, I built election models to try to predict what was going to happen. We used all this data. We analyzed the elections over the years for, you know, for show after show after show, election after election after election. It's one of the things that, you know, I just became known for because honestly, I'm a loser and I like spreadsheets. So, you know, we wound up really kind of digging into that over a long period of time. So, I'll be analyzing the news here. You'll still get that. You'll still get all the elections analysis that you kind of expect from the stuff that I've been doing on previous shows. The difference here, though, is we are implementing a whole new data set in a much more serious way with prediction markets. And I've always used prediction markets as part of my analysis when it comes to breaking down elections. I think it's a really good way to think about them. It's a good way to understand, you know, what's coming next because they are able to synthesize tons and tons and tons of data points into one thing so you can really get it. You can understand it. You can see, hey, wait a minute, I think that's too high. I think that's too low. But it gives you something to really work off of. A lot of times we have problems in the media where hosts and shows and all of these things wind up throwing in a lot of what they want to happen of what they're hoping will happen as opposed to talking about the real world as it is. And there will be times the real world as it is sucks. We want you to know about that. The same thing on the other side. There can be times where it's great. I don't want the media to beat you down on that. I want you to know as much as we can possibly know about what's coming around the corner so you can prepare for it. As we kind of implement these prediction markets into our analysis, you should know a few things about why we're doing it. Now, prediction markets have been around for a long time. Despite the efforts of Elizabeth Warren and all of the Elizabeth Warrens that exist here in this wonderful city of Washington, D.C., prediction markets are going to come under attack from those people. They're already out there doing it. They're already attacking them because, of course, they have interest into, like their whole job is to fool you into not knowing what the truth is. So, of course, they don't like these things, right? That is quite obvious. When you hear people talk about how bad they are and how horrible they are, understand that for at least some of them, that's a big motivation. I do think that there are groups of people who are concerned about some of the effects on them that are much more genuine, more earnest. That's different with Elizabeth Warren and AOC and those types. John Oliver is another one. You know what they're doing there. And we'll talk about that. I want to make sure that people understand where those people, those criticisms are coming from because they're not from a natural and normal and from a place that is, I would say, has the best interests at heart. That's a problem. That's what a lot of the big nice buildings in this city are built around. And we, of course, are going to be pushing back against that. The person who knows the most about how these things will develop in the future, really across the US and how global markets can play into this if they're going to come here as well, and honestly, not to mention about how they will develop and what they can offer the economy is a guy named Michael Selig. Now, he is the 16th chairman of the CFTC. He's appointed by Donald Trump. He was sworn in a few months ago, I think December. The CFTC is the, you know, one of these nine zillion organizations, the regulatory organizations here in Washington. They oversee prediction markets and a lot more than that, right? They were created a long time ago to oversee agriculture, and it's grown into this where the CFTC has oversight of all of these prediction markets. He's the head of the CFTC, the big cheese, the head honcho, and also, not going to be on the top of his resume, but also our first guest on Predictable on tomorrow's program. We'll talk to the head of the CFTC, Michael Selig, who can talk to us about pretty much everything when it comes down to prediction markets, how they're looked at, if they have a future, do they bring any utility to our world? Do they help? Do they hurt? You know, what about all the criticisms that you keep hearing in the media? I'm going to ask him all that stuff. On tomorrow's program, he's the first guest on Predictable. Michael Selig, chairman of the CFTC. Now, next week, when the studio is finished, we'll start having full episodes. It'll feel more like a real show than what we're doing here today, just kind of talking. We're going to have multiple goals. When I had done the same type of thing for a long time, which was look at the news every day and try to figure out what it means, we would analyze it, we'd look at how to try to make the world a better place and try to prepare you for what was coming. And I think we did a pretty good job doing that. I hope you enjoyed it. You're here for a reason, I assume. But, you know, there's a lot of surrounding stuff really in conservative media, mainstream media, and left-wing media. There's a lot going on. And I will say, like, we are on this show, Predictable. We are going to look for ways for you and I to make some money. I'm being quite honest about that. I want to make sure you understand that. Are we going to look for ways to make you some money? Oh, yeah. I mean, I think it's ridiculous that you're paying for your own vacations. That's crazy. That's not the way this world is supposed to work. Let's figure that out together. I think we can do that. Or at least make a good dent into it. Maybe, you know, it'll just be a few dinners out. Maybe, who knows what it could be? I will say there are opportunities out there. I'm looking for them all the time. We have a bunch of people behind the scenes also looking for them all the time. This company was built with that in mind to make sure that we could actually help people make a little bit of a profit. Turn the knowledge that you have about the news. Turn the knowledge that you have about the world around you. You know, I always think of an example of, like, you know, you watch the, you know, one of the typical cable news channels. And what you might see is, oh gosh, which way is this guy going to vote? He's going to vote this way. He's going to go vote this way. You may very well know that guy, right? You know that. I'm not saying you go out to dinner with him. I'm saying you've watched him over and over and over again. And you've seen him over and over and over again. Let you down. You've seen him over and over and over again. Fold to the last second. Some special interest group comes in and makes them change their vote. If you know that's coming, you should be paid for the pain, right? And I do, this is a central part of why we're doing this show is we really do think those examples are out there where we can actually profit off of these events and give you access to, for a way to make money that is, you know, a lot more difficult than, like a lot of times what you have access to now is a lot more difficult than what I think prediction markets can provide. If you are an idiot, you will lose a lot of money. You can lose a lot of money on prediction markets. If you make massive bets on things you're not, you know, and I use that word intentionally. If you're making bets, then you're gambling. If you're trying to invest your money, you can actually grow it. And I think we can do that together. You know, I've been able to do this over a long period of time successfully and I think we can continue that together. But more importantly than that, more importantly than, you know, paying for your dinners or vacations, we're going to soon be launching into the meat of a very important election season. And, you know, the news and commentary space, the way it is right now, you know, while there's still certainly a lot of people I really like in it, like there's a lot of commentators I really like and are super reliable. It's also kind of become unhinged a little bit at times. I don't know if you've noticed this. You watched the mainstream media. Do you have any thought that they're trying to give you the truth? Are they trying to give you the truth? Are they trying to push you toward an agenda? Now, you can go back. I mean, I started listening to Rush Limbaugh back in the 90s, right? And I remember learning a lot of things from Rush and he was bringing up points like this back in the day. Like this is not a new problem. The media has always been against you in that way. You add on to that. Right now we have campaigns that are constantly trying to mislead you. You have social media that is out there. You know, it's much more systematic now. I mean, if you go back to the 90s when Rush was talking about it, he was talking, I remember Rush reading like NYT op-eds like beginning to end and picking them apart. And, you know, you think about those now. I feel like a lot of those just kind of come and go. People don't even notice them. Back then they were really important. There was this big statement made and it was important that Rush was there to push back against it. Now there's so much crap and trash everywhere. It's impossible to unwind it. I want to help unwind it. Each side is trying to basically out meme the other. And there's honestly very little reliable information because people are incentivized to get you to do something. If there's a good result for you, and this goes to even our side sometimes, right? Like a lot of this is motivated by good things because they want a certain candidate to win. They know it's really important to the country. And they don't want you to be sort of demoralized, right? Oh gosh, it looks like this person is going to win or lose. I am of the opinion that I want to trust you with the information. I want you to get the correct information and I want to trust you with it. And I want you to maybe invest some of your money or not, but I want you to know what's coming. And, you know, a lot of people ask me, like, well, why, you know, you talk about prediction markets and why they're accurate, but like, what does that mean? Why do prediction markets work? It's funny. As conservatives, we know this inherently. And this is one of the things that drew me to this show, to do this for the first time, to kind of make a big change, right? In my life. And if you're, you know, a longtime viewer or listener, kind of in your life too, if I was part of your daily diet of shows, like, hey, you know, this is a big difference, right? Why did I want to make this change? Why do prediction markets work? Well, we know this as conservatives. Markets make things better, because they honestly force you into a place of truth. If the government tried to, you know, we know this is wrong. If the government tries to basically, like, set the price of bananas, right? If the government comes in and does that, we know that there will be, you know, activists and special interests and they'll all rush in and they'll tell you why it actually has to be $10 and then it'll be $20 and by the end of it, a loaf of banana bread is more than a mortgage. Like, this is what happens with the government. We know this, right? We've seen this. Think about cars. Go back to the Soviet Union and the cars that they produced, right? Total crap boxes, right? And these cars, they look terrible. They didn't run. There was no parts for them when you needed them, because this was a top-down government system. We were able to dismantle that system, you know, certainly not the only part of this, but the reason why capitalism has largely won around the world is because people understand that markets wind up doing a better job at these things than individuals can, than powerful people at central governments can. I mean, even China has been forced to embrace large swaths of capitalism to try to make their system work better so it wouldn't fail every 10 or 15 years after every five to 10-year plan. If you think about news and information, we almost have a system where it's more top-down. What we see is the CBS and the NBC and the ABC and the NYT all getting together and having their spin on what is supposed to happen. And, you know, even commentators on both sides and campaigns in the middle all trying to tell you what they want to happen. And their incentive, incentives almost always work, their incentive, though, is to push you in one direction or the other. Their incentives are not aligned with getting you the best information possible. And that is, you know, a lot of times, you know, commentary and information, there are different incentives. There are, you know, it can be click-baity. It can be, you know, engagement farming. It can be all of this. It can be the equivalent of government-priced bananas. It can be overvalued. It can be propped up. It can be ultimately not worth what you're paying. In this case, we all understand when there's a free market, you know, whether it comes to cars or bananas, you're going to be able to get a better price and eventually a better product. And it's funny that we just have kind of taken that as conservatives. We've decided, hey, well, this is the way it is. Let's try to get some other sources of information and, you know, certainly there are market forces on the side of that, right, where there, you know, some will succeed, some will fail because of market forces. But when it comes to actually delivering the truth, that part of it is something true or not. The incentives aren't always aligned with what's best for you. So how do we get better information? At Predictable, we're going to implement prediction markets into that information feed because when we do, we wind up with superior information. We know these things long before others do. That's really important because it gets you, puts you in a place where you're able to prepare for what's coming. We're still going to analyze the news. We're still going to break stuff down as always. But I think using these markets as a better way to get you information and analysis is really going to help that process. We're not going away from news and analysis. We're trying to do it in a better way. And it's amazing how many people I talk to on a day-to-day basis that are surprised about what's happening in the world. Wow, this thing happened and it's a shock. This election we had the other night in Virginia. Can you believe they're doing that? Yeah, kind of. Frankly, yes, kind of I can. These are people that I talk to often who are good people. They're productive people. And that's kind of the important part. They're people unlike me that are actually adding something to the economy, building things, helping people, doing real jobs unlike talking into a stupid camera over and over again. And this is on the left and the right, by the way. You know, millions and millions and millions and millions of people were shocked by Donald Trump winning in 2024. Why? Why did that happen? Why were they shocked? You might not have been shocked. I wasn't shocked. We weren't shocked at all here. We made money on that election because we thought there was a really good chance Donald Trump was going to win. Thought it would be close, but we thought Donald Trump would win. We weren't shocked by that outcome, and we made money. Millions and millions of people were also shocked by Joe Biden winning in 2020. Now, I was shocked that we could be that stupid. I mean, that was shocking and kind of shook me to my core. But regardless of what you think about, you know, how that election went down, we weren't shocked by the result, honestly. You know, I talked about this on the Glenn Beck program at the time. What I thought was going to happen. In fact, we wound up calling the electoral count exactly. And, you know, because of that, we were able to do very, very well on that election. We made money off of that, at least until Biden destroyed the economy and then we lost it again. But that's secondary. At least we had that money to lose. I wasn't happy about that victory for Joe Biden, whatever type of victory you want to call it, but I will say it was something that we did see coming pretty clearly. And I will say this as well. Importantly, I think, I was among those who was pretty shocked by Trump's win in 2016. Like, I didn't necessarily see that one coming. But the important part of that story is that we also made money in 2016 on these elections. You don't have to know everything about the future to be able to profit in prediction markets and to know more about the news and what's coming down the line. We were focused on finding value. I was looking at that and saying, wait a minute. I don't think Donald Trump's going to win this election, but he's got a way better chance than 15%, which is what the media was telling you, or even lower. I mean, I was buying shares and the way the prediction markets work is basically think of it as a, you know, if you have a dollar, right? And you think of it as like a percentage, right? If there's a 10% chance of something happened, you can buy a share of this at 10 cents. And if you're right, it will go to a dollar. So for every 10 cents you invest, you get a dollar return. And I can remember on the night of the election in 2016, buying shares of Donald Trump to become president of the United States on that night at 9%, which was able to give me, you know, about 11 times plus my money in that market. Now we realized that he had a much better chance to win. We recognized that there was a chance to, I thought it was over 50% that he was not going to win. But when you do this methodically, when you look at these markets over a long period of time, you can find edges. And if you continually search for a value over a long period of time, you wind up coming out way ahead. And that's what we've been able to do for a long period of time. This isn't something I'm jumping into because all of a sudden there are commercials on TV for Calcium Polymarket. You know, I'm glad that they're launching these things. I'm glad, you know, them predicted. All these guys are coming into this field. There's going to be, there's rumors of 10 to 20 more prediction markets coming in, and all of them will give us different data points and opportunities to try to do better. But this is not a new thing to me. I've been doing this for a very long time. I, you know, I think the first election I was really active in prediction markets here was 2014. So going back quite a long way, it might have been 2012. I have to go back and look at that honestly. It might have been 2012, but I think it was 2014. We met a couple of guys I worked with at the Blaze, met with a guy who was on one of the very first prediction markets. When we talked about how these things worked and why they were interesting, why they're important, back in 2005. So that is over 20 years ago now, which makes me feel incredibly old now that I say that out loud. But the point is, you know, this is something that we've been thinking about for a long time. I've been implementing slowly into the way we look at the world and we're going to go even farther now. We have opportunities with much, much more data with more people in these markets than ever before, with more smart people in these markets than ever before. We have an opportunity to look at these, get incredible information as to what is coming next and also get some incredible opportunities as well. The point is, you shouldn't be shocked by what's coming. You might have been shocked by a previous election. You might have been shocked by what's something that, and one of these politicians did, you shouldn't be shocked at what the outcome is. You know, no one knows the future, but we can get a lot closer than the disaster of a media that we have right now. The name of the show, you'll be seeing it on this channel, is Predictable. And that is because that's what the world should be. It should be a little bit more predictable. We're going to be doing our best to get you closer to a predictable world in what feels like completely unpredictable times. So I ask you to tell somebody about this. If you think they might be interested in, you know, serious election content and understanding the world and look, we're going to have fun too. We'll have election content. We will have stuff on sports. We'll have stuff on culture. There's all sorts of different markets. Really, you can almost anything you can find a market on to try to understand what's going on in that world. Sometimes it'll just be opportunities to say, hey, wait a minute. This is what I kind of like. Maybe we should look into this one a little bit further. Sometimes it will be really important things that are affecting your day-to-day life. So if you have anyone that you know, please share this with them. Let them know. We're going to be right here on YouTube.com at Predictable Show. We will be all over the place. You'll be on your podcast feed and everything as well. And tomorrow we will be talking to Chairman Michael Selig on tomorrow's program of the CFTC, kind of the way that they oversee this whole new world. How are they going to deal with the threats? How are they going to deal with the benefits of prediction markets? We'll get into all of that with him tomorrow on the show for our first guest, Michael Selig, Chairman of the CFTC. Another thing just to throw your way, if you're maybe already kind of interested in this stuff, if you think this is something that you're going to want to follow for really good election breakdowns and also opportunities in this world, we have a sub-stack that is at PredictableShow.com. It's Predictable.substack.com. If you go to PredictableShow.com, it'll send you right there. There you'll be able to check out the show there. You'll be able to check out a bunch of different live streams and additional broadcasts that we do. And on top of that, there's going to be a lot of written stuff, like articles, certain market breakdowns. We'll try to keep it entertaining, too. I wanted to kind of break down the more high-minded things we're trying to do here, but we're also going to screw around a lot because honestly, I can't deal with the world without doing that. So we will give you articles, breakdowns with the edge, I think, that you're used to from content that I've been involved in. And we will kind of bring that to you on a day-to-day basis. So that's a really important place to go. Go there, PredictableShow.com. Just use your emails. It's free to sign up, and you'll get all this breakdown. I want to make sure you get this information in all the different ways that we are trying to supply it to you. So it's kind of a brave new world out there. I hope you'll join us on the journey through it. It is PredictableShow.com, YouTube.com.slash, at PredictableShow. Of course, all the social media out there, as well, where we can kind of direct you to be able to get the access to the information that I think you honestly need and deserve. So join us, PredictableShow.com. And we will see you with Chairman of the CFTC, Michael Selig, tomorrow. Hi, I'm Katie, your friend and jeweler at Shane Company. Daydreaming about bringing your engagement ring vision to life? As a jewelry consultant, I'm here to help. Compare ring styles side by side. They're in stock and ready to try on. Then customize it with an engraving or decorative crown. At Shane Company, there are so many ways to create your dream ring at your dream price. Visit us in-store or at ShaneCo.com, because a friend wants you to get exactly what you want. Shane Company, your friend and jeweler."
+}
