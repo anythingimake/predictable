@@ -91,21 +91,54 @@ _KALSHI_EVENTS_CACHE: list[dict] | None = None
 
 
 def _kalshi_events() -> list[dict]:
+    """Pull BOTH open and recently-settled events, paginated. Stu's calls
+    routinely target markets that have already moved to 'settled' by the time
+    we run; the old open-only path was a real gap (missed the Paxton +20%
+    margin market that was the headline of the May 27 episode)."""
     global _KALSHI_EVENTS_CACHE
-    if _KALSHI_EVENTS_CACHE is None:
-        try:
-            _KALSHI_EVENTS_CACHE = kalshi.events(status="open", limit=200) or []
-        except requests.RequestException:
-            _KALSHI_EVENTS_CACHE = []
-    return _KALSHI_EVENTS_CACHE
+    if _KALSHI_EVENTS_CACHE is not None:
+        return _KALSHI_EVENTS_CACHE
+    out: list[dict] = []
+    seen: set[str] = set()
+    for status in ("open", "settled", "closed"):
+        cursor: str | None = None
+        for _ in range(8):  # ≤ 1600 events per status — enough for v1
+            params: dict = {"status": status, "limit": 200}
+            if cursor:
+                params["cursor"] = cursor
+            try:
+                r = requests.get(
+                    "https://api.elections.kalshi.com/trade-api/v2/events",
+                    params=params,
+                    headers={"User-Agent": "predictable-pipeline/1.0"},
+                    timeout=20,
+                )
+                if not r.ok:
+                    break
+                data = r.json()
+            except requests.RequestException:
+                break
+            for e in data.get("events", []) or []:
+                tk = e.get("event_ticker")
+                if tk and tk not in seen:
+                    seen.add(tk)
+                    out.append(e)
+            cursor = data.get("cursor")
+            if not cursor:
+                break
+    _KALSHI_EVENTS_CACHE = out
+    return out
 
 
-def _kalshi_candidates(hint: str, max_events: int = 5, max_markets: int = 4) -> list[dict]:
-    """Pull open Kalshi events (cached), fuzzy-pick top N by title overlap, then their markets.
+def _kalshi_candidates(hint: str, max_events: int = 8, max_markets: int = 12) -> list[dict]:
+    """Pull cached Kalshi events (open + settled), fuzzy-pick top N by title
+    overlap, then expand each to its markets so the matcher can pick the right
+    contract within an event (e.g., the +20% margin variant within a margin-of-
+    victory event).
 
-    Conservative caps (5 events × 4 markets) keep the per-hint cost at ≤5 HTTP
-    calls beyond the one-time events fetch — important when running across many
-    distinct hints in a single pipeline pass.
+    Conservative caps (8 events × 12 markets) — wide enough to catch the actual
+    market in events like KXTXRSENRUNOFFMOV (10 brackets), tight enough to keep
+    per-hint cost bounded.
     """
     evts = _kalshi_events()
     if not evts:
@@ -121,28 +154,54 @@ def _kalshi_candidates(hint: str, max_events: int = 5, max_markets: int = 4) -> 
         ticker = evt.get("event_ticker")
         if not ticker:
             continue
-        try:
-            ms = kalshi.search_markets(event_ticker=ticker, status="open", limit=max_markets)
-        except requests.RequestException:
-            continue
-        for m in ms:
-            out.append(_normalize_kalshi(m, evt))
-        if len(out) >= 30:
+        # Pull markets in this event regardless of status — Stu's calls often
+        # land on contracts that have already settled.
+        for status in (None, "settled"):
+            try:
+                params: dict = {"event_ticker": ticker, "limit": max_markets}
+                if status:
+                    params["status"] = status
+                ms = kalshi.search_markets(**{k: v for k, v in params.items() if k in {"event_ticker", "status"}}, limit=max_markets)
+            except (requests.RequestException, TypeError):
+                continue
+            for m in ms:
+                out.append(_normalize_kalshi(m, evt))
+            if ms:
+                break
+        if len(out) >= 60:
             break
     return out
 
 
 def _normalize_kalshi(m: dict, evt: dict | None = None) -> dict:
     """Reduce a Kalshi market dict to the dict shape `upsert_market` expects + a
-    `_title` field used by the matcher."""
-    title = m.get("title") or m.get("yes_sub_title") or ""
-    if evt and evt.get("title"):
-        # event title tends to be more human-readable than the contract sub-title
-        title = f"{evt['title']} — {title}" if title else evt["title"]
+    `_title` field used by the matcher.
+
+    For margin-of-victory events the contract title carries the discriminating
+    info (e.g., "...by between 20% and 100%"), so we keep the contract title
+    primary and append the event context, not the other way around.
+    """
+    contract_title = m.get("title") or m.get("yes_sub_title") or ""
+    evt_title = (evt or {}).get("title", "")
+    title = contract_title or evt_title
+    # Build a `_title` for matching that includes both the contract specifics
+    # AND the event context — gives the matcher the most signal.
+    match_title = " — ".join(t for t in (evt_title, contract_title) if t)
+    last_price = m.get("last_price_dollars")
     try:
-        price = float(m.get("yes_ask_dollars") or m.get("last_price_dollars") or 0.0)
+        price = float(last_price if last_price not in (None, "") else (m.get("yes_ask_dollars") or 0.0))
     except (TypeError, ValueError):
         price = None
+    # Resolution inference: if status is settled OR last_price is near 0 or 100
+    # (binary contracts settle at $0 or $1), trust that as the resolution signal.
+    status = (m.get("status") or "").lower()
+    resolved = status in {"settled", "closed", "finalized"}
+    resolution = (m.get("result") or "").lower() or None
+    if not resolution and price is not None:
+        if price >= 0.95:
+            resolution = "yes"; resolved = True
+        elif price <= 0.05:
+            resolution = "no"; resolved = True
     return {
         "source": "kalshi",
         "ticker": m["ticker"],
@@ -150,11 +209,11 @@ def _normalize_kalshi(m: dict, evt: dict | None = None) -> dict:
         "category": (evt or {}).get("category") or m.get("category"),
         "subject_tags": None,
         "resolution_date": (m.get("close_time") or "")[:10] or None,
-        "resolved": (m.get("status") in {"settled", "closed", "finalized"}),
-        "resolution": m.get("result") or None,
+        "resolved": resolved,
+        "resolution": resolution,
         "current_price": price,
-        "meta_json": {"event_ticker": m.get("event_ticker"), "status": m.get("status")},
-        "_title": title,
+        "meta_json": {"event_ticker": m.get("event_ticker"), "status": status},
+        "_title": match_title or title,
         "_end": m.get("close_time"),
     }
 
