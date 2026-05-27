@@ -55,7 +55,7 @@ cd api && npm run build && rsync -avz dist/ root@5.78.89.136:/opt/predictable-ap
 3. **Pass 2:** `large-v3` re-transcribes ONLY flagged `[start-1s, end+1s]` windows; merge back
 4. **Glossary substitution:** canonicalize known terms (Kalshi, Polymarket, candidates) after stitching
 
-This is the user's established pattern — see `~/.claude/projects/C--Users-NoahYaffe/memory/feedback_two_pass_whisper.md`.
+Established pattern — see `pipeline/transcribe/` for the implementation.
 
 ## Secrets
 
