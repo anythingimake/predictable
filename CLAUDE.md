@@ -19,14 +19,15 @@ cd app && npm run dev                # http://localhost:5173
 # API dev
 cd api && npm run dev                # http://localhost:3001
 
-# Pipeline (full nightly)
-python pipeline/main.py
+# Pipeline — local transcription (Loop 1)
+python -m pipeline.backfill --skip-pass2
 
-# Pipeline (one-off backfill)
-python pipeline/main.py --backfill
+# Pipeline — extraction backlog (Loop 2); --list-pending needs no API key
+python -m pipeline.extract.run --list-pending
+python -m pipeline.extract.run                 # extract pending (needs ANTHROPIC_API_KEY)
 
-# Pipeline (dry-run, no writes)
-python pipeline/main.py --dry-run
+# Pipeline — load JSON into SQLite, then enrich (Loop 3 steps)
+python -m pipeline.load && python -m pipeline.enrich.run_all
 
 # Build + deploy
 cd app && npm run build && scp -r dist/* root@5.78.89.136:/var/www/predictable/

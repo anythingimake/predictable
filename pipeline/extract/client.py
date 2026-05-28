@@ -19,6 +19,15 @@ from anthropic import Anthropic
 DEFAULT_MODEL = "claude-sonnet-4-6"
 HARD_MODEL = "claude-opus-4-7"
 
+# A batch extraction run makes one create() call per episode per extractor, so a
+# single transient 429/529/connection blip would otherwise abort the whole run
+# mid-batch. The SDK retries 408/409/429/5xx (incl. 529 overloaded) with
+# exponential backoff + jitter and honors Retry-After; the default of 2 is too
+# shallow for a sustained overload, so we raise it and give long generations
+# room with a generous per-request timeout.
+MAX_RETRIES = 8
+TIMEOUT_SECONDS = 600.0
+
 
 def _client() -> Anthropic:
     api_key = os.environ.get("ANTHROPIC_API_KEY")
@@ -34,7 +43,7 @@ def _client() -> Anthropic:
         raise RuntimeError(
             "ANTHROPIC_API_KEY not set. Export it or place in ~/.secrets/anthropic.env"
         )
-    return Anthropic(api_key=api_key)
+    return Anthropic(api_key=api_key, max_retries=MAX_RETRIES, timeout=TIMEOUT_SECONDS)
 
 
 def extract_with_tool(

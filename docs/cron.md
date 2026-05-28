@@ -52,12 +52,44 @@ one-time setup; this file is what you read when something looks stale or wrong.
 - **Source:** Clones https://github.com/anythingimake/predictable
 - **Tools:** Bash, Read, Write, Edit, Glob, Grep (no MCP).
 - **Steps:**
-  1. List `data/transcripts/*.json`; identify those without matching `data/ingest/extract/{stem}-*.json` files.
-  2. For each pending transcript, run all four extractors (calls, principles, strategies, qa) via in-thread tool-use against the prompts in `pipeline/prompts/`.
-  3. Run `python -m pipeline.extract.sagas` (deterministic — no LLM needed) to refresh `_sagas.json`.
-  4. Commit JSON outputs as `anythingimake`, push.
+  1. `python -m pipeline.extract.run --list-pending` — prints the exact backlog, checking each output **type** (calls/principles/strategies/qa) independently. Deterministic; needs no API key.
+  2. For each pending `(episode, extractor)` pair, produce the output **in-thread** (your own tool-use against `pipeline/prompts/extract_{kind}.md` + the transcript; qa runs against the episode's Substack comments) and write `data/ingest/extract/{guid}-{kind}.json`. Extraction stays on the subscription — do **not** call the Python `extract_*` functions, which would spend API credits.
+  3. **Commit + push after each episode**, not once at the end, so a mid-run API error never discards completed work.
+  4. If one extraction errors (overload/429/529), **log it and continue** to the next — never abort the whole run. Whatever stays pending is picked up next run.
+  5. Run `python -m pipeline.extract.sagas` (deterministic — no LLM needed) to refresh `_sagas.json`; commit.
 - **Manage at:** https://claude.ai/code/routines/trig_01QbCvat28v7JNWYCKcAUPyv
 - **Force-run now:** visit the routine URL → "Run now"
+
+> **Resume-safety — why the steps above changed.** The routine used to treat a
+> transcript as "done" if **any** `{stem}-*.json` existed. After a run wrote every
+> episode's `-calls.json` but died on an API error before principles/strategies,
+> every transcript looked "done" → a plain re-run skipped all of them and the
+> missing types were never produced (the site silently lost all principles/
+> strategies/qa). `pipeline/extract/run.py --list-pending` replaces that heuristic
+> with a per-type check; commit-per-episode + continue-on-error make a mid-run
+> failure recoverable. **Paste the block below as the routine's prompt:**
+
+```text
+You maintain the Predictable extraction step. The repo is already cloned.
+
+1. Run:  python -m pipeline.extract.run --list-pending
+   It prints, per episode, which extractor outputs are missing (calls,
+   principles, strategies, qa) — checked per TYPE, so a transcript that already
+   has -calls.json but is missing -principles.json still shows as pending.
+2. For each pending (episode, extractor), produce the JSON yourself via in-thread
+   tool-use: read pipeline/prompts/extract_{kind}.md and the transcript at
+   data/transcripts/{guid}.json (for qa, read the episode's Substack comments at
+   data/ingest/substack/comments/{slug}.json instead), then Write
+   data/ingest/extract/{guid}-{kind}.json matching that extractor's schema.
+   Do NOT run the Python extract_* functions — they use API credits; your
+   in-thread extraction uses the subscription.
+3. git add the file(s) and commit + push AFTER EACH EPISODE (as anythingimake).
+   Never batch the commit to the end — a mid-run failure must not lose work.
+4. If any single extraction errors (overload/429/529/etc.), log it and CONTINUE
+   to the next episode. Never abort the whole run.
+5. When the per-type backlog is empty, run:  python -m pipeline.extract.sagas
+   and commit the refreshed data/ingest/extract/_sagas.json.
+```
 
 ## Loop 3 — Server refresh
 
@@ -131,7 +163,8 @@ so the next person can pick up cleanly.
 
 **Loop 2 (cloud Claude routine):**
 - Visit https://claude.ai/code/routines/trig_01QbCvat28v7JNWYCKcAUPyv → look at the most recent run.
-- If a single transcript fails extraction, the routine commits what it has and moves on. Re-run manually to retry just that one.
+- **First, see what's actually missing:** `python -m pipeline.extract.run --list-pending` (no API key needed) prints the per-type backlog and flags any present-but-empty `-calls.json`. A clean re-run ("Run now") resumes exactly that backlog — per-type, so a partially-extracted episode is finished, not skipped.
+- If a single extraction fails, the routine logs it and moves on (commit-per-episode), so completed episodes are safe; the next run retries whatever stayed pending.
 - If the routine itself is gated/disabled, no JSON gets pushed → Loop 3 sees nothing new → site appears frozen.
 
 **Loop 3 (server refresh):**
