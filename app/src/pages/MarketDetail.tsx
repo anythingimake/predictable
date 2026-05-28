@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { api } from "../api";
 import type { Call, Market } from "../types";
 import { ConvictionBadge } from "../components/ConvictionBadge";
-import { formatCents, formatPct, stuSideCents } from "../lib/format";
+import { formatCents, formatPct, marketUrl, stuSideCents } from "../lib/format";
 import { ErrorBanner, Loading } from "./Scoreboard";
 
 type MarketDetailData = Market & {
@@ -42,6 +42,16 @@ export function MarketDetail() {
           {data.source} · <code className="font-mono">{data.ticker}</code>
         </div>
         <h1 className="text-xl md:text-2xl font-semibold mt-1">{data.question}</h1>
+        {marketUrl(data.source, data.ticker) && (
+          <a
+            href={marketUrl(data.source, data.ticker)!}
+            target="_blank"
+            rel="noreferrer"
+            className="tap mt-2 inline-flex items-center gap-1 text-sm text-[var(--color-accent)]"
+          >
+            View on {data.source === "polymarket" ? "Polymarket" : data.source === "kalshi" ? "Kalshi" : data.source} ↗
+          </a>
+        )}
         <div className="flex flex-wrap gap-x-4 gap-y-1 mt-2 text-sm text-[var(--color-text-muted)]">
           {data.category && <span>{data.category}</span>}
           {data.resolution_date && <span>resolves {data.resolution_date}</span>}

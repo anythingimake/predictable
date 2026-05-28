@@ -4,7 +4,7 @@ import { api } from "../api";
 import type { CallDetail as CallDetailData } from "../types";
 import { ConvictionBadge } from "../components/ConvictionBadge";
 import { TagChips } from "../components/TagChips";
-import { formatCents, formatDateSafe, formatPct, formatSec, stuSideCents, unrealizedPct } from "../lib/format";
+import { formatCents, formatDateSafe, formatPct, formatSec, marketUrl, stuSideCents, unrealizedPct } from "../lib/format";
 import { ErrorBanner, Loading } from "./Scoreboard";
 
 // Recharts is ~120 KB gzipped — defer it past first paint of CallDetail.
@@ -76,10 +76,29 @@ export function CallDetail() {
           · {data.publish_date}
           {data.market_source && data.market_ticker && (
             <>
-              {" "}· {data.market_source} <code className="text-xs">{data.market_ticker}</code>
+              {" "}·{" "}
+              {data.market_id ? (
+                <Link to={`/markets/${encodeURIComponent(data.market_id)}`} className="underline">
+                  {data.market_source} <code className="text-xs">{data.market_ticker}</code>
+                </Link>
+              ) : (
+                <>
+                  {data.market_source} <code className="text-xs">{data.market_ticker}</code>
+                </>
+              )}
             </>
           )}
         </p>
+        {marketUrl(data.market_source, data.market_ticker) && (
+          <a
+            href={marketUrl(data.market_source, data.market_ticker)!}
+            target="_blank"
+            rel="noreferrer"
+            className="tap mt-2 inline-flex items-center gap-1 text-sm text-[var(--color-accent)]"
+          >
+            View on {data.market_source === "polymarket" ? "Polymarket" : data.market_source === "kalshi" ? "Kalshi" : data.market_source} ↗
+          </a>
+        )}
         {data.tags && data.tags.length > 0 && <TagChips tags={data.tags} className="mt-2" />}
       </header>
 

@@ -47,6 +47,28 @@ export function formatCents(n: number | null | undefined, digits = 0): string {
 }
 
 /**
+ * Public URL for a market on its source exchange so users can go place/inspect
+ * the bet themselves.
+ *   - Polymarket: ticker IS the event slug → polymarket.com/event/{slug}
+ *   - Kalshi: deep per-market URLs are unstable; link to the series page
+ *     (first dash-delimited segment of the ticker, e.g. KXTXRSENRUNOFFMOV).
+ *   - PredictIt: no clean per-market slug we capture → null.
+ */
+export function marketUrl(
+  source: string | null | undefined,
+  ticker: string | null | undefined,
+): string | null {
+  if (!source || !ticker) return null;
+  const s = source.trim().toLowerCase();
+  if (s === "polymarket") return `https://polymarket.com/event/${ticker}`;
+  if (s === "kalshi") {
+    const series = ticker.split("-")[0].toLowerCase();
+    return series ? `https://kalshi.com/markets/${series}` : null;
+  }
+  return null;
+}
+
+/**
  * Markets return a YES-side price in cents. For a NO/UNDER position, Stu's
  * contract price is the inverse: 100 - yesCents. For YES/OVER it's the YES
  * price unchanged. Use this to render "current mark" on the contract Stu

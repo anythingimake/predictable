@@ -6,7 +6,10 @@ const router = Router();
 router.get("/", (_req, res) => {
   const rows = db().prepare(`
     SELECT id, publish_date, type,
-           COALESCE(substack_title, megaphone_title, youtube_title) AS title,
+           -- Megaphone title is canonical (one per episode). Substack titles are
+           -- SEO-rewritten and collide when two same-day episodes fuzzy-match the
+           -- same post by date, so prefer megaphone first.
+           COALESCE(megaphone_title, youtube_title, substack_title) AS title,
            megaphone_title, youtube_title, substack_title,
            youtube_id, substack_slug, audio_url,
            duration_sec, view_count, like_count, comment_count,
