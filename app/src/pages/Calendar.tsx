@@ -35,6 +35,15 @@ function sourceLabel(source: string): string {
   return source;
 }
 
+const AGED_OUT_COLOR = "#f59e0b"; // amber
+
+// Calendar dots are colored by status when settled/stalled, else by source.
+function entryColor(e: CalendarEntry): string {
+  if (e.status === "resolved") return "var(--color-tier-play)";
+  if (e.status === "aged_out") return AGED_OUT_COLOR;
+  return sourceColor(e.source);
+}
+
 export function Calendar() {
   const [entries, setEntries] = useState<CalendarEntry[] | null>(null);
   const [err, setErr] = useState<string | null>(null);
@@ -242,7 +251,7 @@ function DayCell({
             <span
               key={e.market_id}
               className="inline-block w-1.5 h-1.5 rounded-full"
-              style={{ background: sourceColor(e.source) }}
+              style={{ background: entryColor(e) }}
               title={`${sourceLabel(e.source)}: ${e.question}`}
             />
           ))}
@@ -271,6 +280,7 @@ function PanelList({ entries }: { entries: CalendarEntry[] }) {
       {entries.map((e) => {
         const days = differenceInCalendarDays(parseISO(e.resolution_date), today);
         const dayLabel = days > 0 ? `in ${days}d` : days === 0 ? "today" : `${-days}d ago`;
+        const count = e.call_count ?? e.open_call_count;
         return (
           <div
             key={e.market_id}
@@ -279,21 +289,28 @@ function PanelList({ entries }: { entries: CalendarEntry[] }) {
             <div className="flex items-start gap-2">
               <span
                 className="inline-block w-2 h-2 rounded-full mt-1.5 shrink-0"
-                style={{ background: sourceColor(e.source) }}
+                style={{ background: entryColor(e) }}
                 aria-hidden
               />
               <div className="min-w-0 flex-1">
-                <div className="text-sm font-medium leading-snug break-words">{e.question}</div>
+                <div className="flex items-start justify-between gap-2">
+                  <div className="text-sm font-medium leading-snug break-words">{e.question}</div>
+                  <StatusBadge entry={e} />
+                </div>
                 <div className="text-xs text-[var(--color-text-muted)] mt-1 flex flex-wrap gap-x-2">
                   <span>{sourceLabel(e.source)}</span>
                   <span>·</span>
                   <span>
-                    {e.open_call_count} open call{e.open_call_count === 1 ? "" : "s"}
+                    {count} call{count === 1 ? "" : "s"}
                   </span>
                   <span>·</span>
                   <span>{format(parseISO(e.resolution_date), "MMM d, yyyy")}</span>
-                  <span>·</span>
-                  <span>{dayLabel}</span>
+                  {e.status !== "resolved" && (
+                    <>
+                      <span>·</span>
+                      <span>{dayLabel}</span>
+                    </>
+                  )}
                 </div>
               </div>
             </div>
@@ -304,9 +321,36 @@ function PanelList({ entries }: { entries: CalendarEntry[] }) {
   );
 }
 
+function StatusBadge({ entry }: { entry: CalendarEntry }) {
+  if (entry.status === "resolved") {
+    const r = (entry.resolution || "").toLowerCase();
+    const label = r === "yes" || r === "no" ? `Settled ${r.toUpperCase()}` : "Settled";
+    return (
+      <span className="shrink-0 rounded-sm px-1.5 py-0.5 text-[10px] font-medium uppercase tracking-wide bg-[var(--color-tier-play)]/15 text-[var(--color-tier-play)]">
+        {label}
+      </span>
+    );
+  }
+  if (entry.status === "aged_out") {
+    return (
+      <span
+        className="shrink-0 rounded-sm px-1.5 py-0.5 text-[10px] font-medium uppercase tracking-wide"
+        style={{ background: "rgba(245,158,11,0.15)", color: AGED_OUT_COLOR }}
+        title="The resolution date passed without a clean settlement on record."
+      >
+        Clock ran out
+      </span>
+    );
+  }
+  return null;
+}
+
 function Legend() {
   return (
-    <div className="flex items-center gap-3 text-[10px] uppercase tracking-wide text-[var(--color-text-muted)]">
+    <div className="flex items-center gap-3 text-[10px] uppercase tracking-wide text-[var(--color-text-muted)] flex-wrap">
+      <LegendDot color="var(--color-tier-play)" label="Settled" />
+      <LegendDot color={AGED_OUT_COLOR} label="Clock ran out" />
+      <span className="text-[var(--color-text-faint)]">upcoming:</span>
       <LegendDot color="var(--color-accent)" label="Kalshi" />
       <LegendDot color="#8b5cf6" label="Polymarket" />
       <LegendDot color="var(--color-mark)" label="PredictIt" />

@@ -58,7 +58,19 @@ router.get("/:id", (req, res) => {
     related_article_id = rel?.id ?? null;
   }
 
-  res.json({ ...ep, calls, mentions, comments, related_episode_id, related_article_id });
+  // transcript_text is ~50KB — strip it from the payload (the page never
+  // renders it) and expose a boolean instead. has_transcript lets the UI tell
+  // "analyzed, no calls" apart from "transcribed but not yet analyzed".
+  const { transcript_text, ...rest } = ep;
+  res.json({
+    ...rest,
+    has_transcript: !!transcript_text,
+    calls,
+    mentions,
+    comments,
+    related_episode_id,
+    related_article_id,
+  });
 });
 
 export default router;

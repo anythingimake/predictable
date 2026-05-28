@@ -77,14 +77,25 @@ router.get("/sagas/:id", (req, res) => {
   res.json({ ...saga, episodes });
 });
 
-// /api/calendar — upcoming market resolutions for active calls
+// /api/calendar — market resolutions for any market Stu has a call on.
+// status: 'upcoming' (future date, unresolved), 'aged_out' (the date passed but
+// the market never reported a clean resolution — the clock ran out), or
+// 'resolved' (settled). Returning resolved markets too keeps the calendar from
+// looking dead in the stretch before the next election.
 router.get("/calendar", (_req, res) => {
   const rows = db().prepare(`
-    SELECT DISTINCT m.id AS market_id, m.question, m.resolution_date, m.source,
-           (SELECT COUNT(*) FROM calls WHERE market_id = m.id AND status = 'open') AS open_call_count
+    SELECT m.id AS market_id, m.question, m.resolution_date, m.source,
+           m.resolved, m.resolution,
+           (SELECT COUNT(*) FROM calls WHERE market_id = m.id AND status = 'open') AS open_call_count,
+           (SELECT COUNT(*) FROM calls WHERE market_id = m.id) AS call_count,
+           CASE
+             WHEN m.resolved = 1 THEN 'resolved'
+             WHEN m.resolution_date < date('now') THEN 'aged_out'
+             ELSE 'upcoming'
+           END AS status
     FROM markets m
-    WHERE m.resolved = 0 AND m.resolution_date IS NOT NULL
-      AND m.id IN (SELECT DISTINCT market_id FROM calls WHERE status = 'open' AND market_id IS NOT NULL)
+    WHERE m.resolution_date IS NOT NULL
+      AND EXISTS (SELECT 1 FROM calls WHERE market_id = m.id AND market_id IS NOT NULL)
     ORDER BY m.resolution_date
   `).all();
   res.json(rows);

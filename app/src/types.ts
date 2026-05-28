@@ -115,7 +115,8 @@ export interface Comment {
 }
 
 export interface EpisodeDetail extends Episode {
-  transcript_text?: string | null;
+  /** True if the episode has a stitched transcript (text itself isn't sent). */
+  has_transcript?: boolean;
   substack_body?: string | null;
   chapter_json?: string | null;
   /** Same-date podcast episode this article writes up (set when type==='article'). */
@@ -184,6 +185,10 @@ export interface CalendarEntry {
   resolution_date: string;
   source: string;
   open_call_count: number;
+  call_count?: number;
+  resolved?: number;
+  resolution?: string | null;
+  status?: "upcoming" | "aged_out" | "resolved";
 }
 
 export interface Saga {

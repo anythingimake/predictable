@@ -81,6 +81,14 @@ export function EpisodeDetail() {
         </div>
       </header>
 
+      {ep.type !== "article" && ep.calls.length === 0 && ep.has_transcript && (
+        <section>
+          <div className="rounded-lg border border-dashed border-[var(--color-border)] bg-[var(--color-bg-elev)] p-4 text-sm text-[var(--color-text-muted)]">
+            Transcript captured — calls from this episode are still being analyzed. Check back shortly.
+          </div>
+        </section>
+      )}
+
       {ep.calls.length > 0 && (
         <section>
           <h2 className="text-base md:text-lg font-medium mb-3">Calls in this episode ({ep.calls.length})</h2>
