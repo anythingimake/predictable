@@ -45,14 +45,16 @@ def _entry_price_cents(conn, call_id: int) -> Optional[float]:
 
 
 def _close_event(conn, call_id: int) -> Optional[tuple[float, str]]:
-    """Latest exit/trim/resolve event with a price_pct, as (price_cents, event_type).
+    """Latest exit/resolve event with a price_pct. `trim` is intentionally
+    excluded — a trim is a partial close and shouldn't flip status to closed.
+
     The event_type matters because the extraction stores `resolve` events with
-    YES-side prices (binary settlement framed on the YES axis) while `exit`/`trim`
+    YES-side prices (binary settlement framed on the YES axis) while `exit`
     events store the price Stu actually said on his own side."""
     row = conn.execute(
         """SELECT price_pct, event_type FROM call_events
             WHERE call_id = ?
-              AND event_type IN ('exit', 'trim', 'resolve')
+              AND event_type IN ('exit', 'resolve')
               AND price_pct IS NOT NULL
             ORDER BY timestamp_sec DESC, id DESC
             LIMIT 1""",
@@ -97,12 +99,27 @@ def _hard_close_cents(side: str, resolution: str) -> float:
     return 100.0 if won else 0.0
 
 
+def _infer_yes_no(resolution: str | None, current_price: float | None) -> str | None:
+    """Polymarket sometimes stores `resolution='resolved'` (literal) instead of yes/no.
+    Fall back to current_price (cents): >=95 => yes, <=5 => no."""
+    r = (resolution or "").strip().lower()
+    if r in ("yes", "no"):
+        return r
+    if current_price is None:
+        return None
+    if current_price >= 95.0:
+        return "yes"
+    if current_price <= 5.0:
+        return "no"
+    return None
+
+
 def _score_calls(conn) -> dict:
     """Walk every call and assign realized_pct via hard- or soft-resolve.
     Idempotent — recomputes on every run."""
     stats = {"hard": 0, "soft": 0, "skipped_no_entry": 0, "skipped_other": 0}
     calls = conn.execute(
-        """SELECT c.id, c.side, c.market_id, m.resolved, m.resolution
+        """SELECT c.id, c.side, c.market_id, m.resolved, m.resolution, m.current_price
              FROM calls c
         LEFT JOIN markets m ON m.id = c.market_id"""
     ).fetchall()
@@ -113,18 +130,23 @@ def _score_calls(conn) -> dict:
             stats["skipped_no_entry"] += 1
             continue
 
-        # HARD: market is resolved with a clear yes/no winner
-        if c["resolved"] == 1 and c["resolution"] in ("yes", "no"):
-            close_cents = _hard_close_cents(c["side"], c["resolution"])
-            realized = _realized_pct(c["side"], entry_cents, close_cents)
-            conn.execute(
-                "UPDATE calls SET status = 'resolved', realized_pct = ? WHERE id = ?",
-                (realized, cid),
-            )
-            stats["hard"] += 1
-            continue
+        # HARD: market is resolved. Polymarket sometimes stores resolution as the
+        # literal string "resolved" — fall back to current_price to infer winner.
+        if c["resolved"] == 1:
+            inferred = _infer_yes_no(c["resolution"], c["current_price"])
+            if inferred is not None:
+                close_cents = _hard_close_cents(c["side"], inferred)
+                realized = _realized_pct(c["side"], entry_cents, close_cents)
+                conn.execute(
+                    "UPDATE calls SET status = 'resolved', realized_pct = ? WHERE id = ?",
+                    (realized, cid),
+                )
+                stats["hard"] += 1
+                continue
 
-        # SOFT: Stu noted an exit/trim/resolve himself
+        # SOFT: Stu noted an exit/resolve himself. `trim` is intentionally
+        # excluded — it's a partial close, not a status change. The lifecycle
+        # chart still shows the trim event for context.
         close = _close_event(conn, cid)
         if close is not None:
             close_cents, event_type = close
@@ -142,13 +164,16 @@ def _score_calls(conn) -> dict:
 
 
 def _snapshot_scoreboard(conn) -> dict:
-    """Both 'resolved' (hard) and 'closed' (soft) count toward the scoreboard."""
+    """Both 'resolved' (hard) and 'closed' (soft) count toward the scoreboard.
+    Totals are restricted to ACTIONABLE tiers (play/solid/flyer) to match the
+    live /api/scoreboard endpoint — opinion/watch/pass are commentary, not bets."""
     totals = conn.execute(
         """SELECT
               COUNT(*) AS total,
               SUM(CASE WHEN status IN ('resolved','closed') THEN 1 ELSE 0 END) AS resolved,
               SUM(CASE WHEN status IN ('resolved','closed') AND realized_pct > 0 THEN 1 ELSE 0 END) AS hits
-             FROM calls"""
+             FROM calls
+            WHERE conviction IN ('play','solid','flyer')"""
     ).fetchone()
     total = totals["total"] or 0
     resolved = totals["resolved"] or 0

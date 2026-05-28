@@ -15,4 +15,7 @@ DB=/var/lib/predictable/predictable.sqlite
 cd "$REPO"
 echo "[$(date -Is)] price poll start"
 PREDICTABLE_DB="$DB" python3 -m pipeline.enrich.price_poll
+# Truncate WAL so the readonly API reader sees the fresh prices and the WAL
+# doesn't grow unbounded between refreshes.
+sqlite3 "$DB" "PRAGMA wal_checkpoint(TRUNCATE);" >/dev/null 2>&1 || true
 echo "[$(date -Is)] price poll done"

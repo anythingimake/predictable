@@ -81,4 +81,6 @@ PREDICTABLE_DB="$DB" python3 -m pipeline.enrich.scoring 2>&1 || echo "scoring fa
 # Bounce the API so better-sqlite3 reopens the file
 $PM2 restart predictable-api --update-env >/dev/null 2>&1 || $PM2 restart predictable-api >/dev/null 2>&1
 
+sqlite3 "$DB" "PRAGMA wal_checkpoint(TRUNCATE);" >/dev/null 2>&1 || echo "wal_checkpoint failed"
+
 echo "[$(date -Is)] refresh done (commits: $LOCAL -> $REMOTE)"

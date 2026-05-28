@@ -61,7 +61,7 @@ router.get("/:id", (req, res) => {
 
   const events = db().prepare(`
     SELECT id, timestamp_sec, event_type, price_pct, size_pct_of_pos, quote, raw_quote
-    FROM call_events WHERE call_id = ? ORDER BY timestamp_sec
+    FROM call_events WHERE call_id = ? ORDER BY timestamp_sec, id
   `).all(req.params.id);
 
   const media = db().prepare(`

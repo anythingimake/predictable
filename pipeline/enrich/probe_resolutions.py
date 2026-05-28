@@ -75,7 +75,7 @@ def probe_all() -> dict:
                     current = None
                     if outcomes and prices:
                         prices_f = [float(p) for p in prices]
-                        current = prices_f[0]  # YES side
+                        current = prices_f[0] * 100.0  # YES side, dollars→cents
                         if closed:
                             # Winner: outcome with price closest to 1.0
                             win_idx = max(range(len(prices_f)), key=lambda i: prices_f[i])
@@ -109,7 +109,7 @@ def probe_all() -> dict:
                     try:
                         ya = m.get("yes_ask_dollars")
                         if ya is not None:
-                            current = float(ya)
+                            current = float(ya) * 100.0  # dollars→cents
                     except (TypeError, ValueError):
                         pass
                     prev_resolved = bool(r["resolved"])
