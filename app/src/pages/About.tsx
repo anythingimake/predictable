@@ -70,37 +70,38 @@ export function About() {
 
 function ConservanerdsBanner() {
   return (
-    <section
-      className="relative overflow-hidden rounded-xl border text-center py-7 md:py-9 px-5 max-w-2xl mx-auto"
-      style={{
-        borderColor: "var(--color-mark)",
-        background:
-          "radial-gradient(ellipse at 50% 50%, rgba(34,197,94,0.15), rgba(7,9,26,0.6) 70%), linear-gradient(180deg, #0a1a0e 0%, #0f2b1c 100%)",
-        boxShadow: "0 0 32px var(--color-mark-glow), inset 0 0 24px rgba(34,197,94,0.06)",
-      }}
-    >
+    <section className="relative text-center pt-2 pb-4 -mt-2">
+      {/* Soft radial wash behind the words — no border, no box, just glow */}
+      <div
+        aria-hidden
+        className="absolute inset-x-0 top-0 h-40 pointer-events-none"
+        style={{
+          background:
+            "radial-gradient(ellipse 60% 100% at 50% 0%, rgba(34,197,94,0.18), transparent 70%)",
+        }}
+      />
       <h2
-        className="font-black uppercase leading-none tracking-tight"
+        className="relative font-black uppercase leading-none tracking-tight"
         style={{
           fontFamily: '"Space Grotesk", "Inter", system-ui, sans-serif',
           fontSize: "clamp(1.5rem, 5vw, 2.5rem)",
           color: "#eef1ff",
-          textShadow: "0 0 12px var(--color-mark-glow), 0 2px 0 rgba(0,0,0,0.4)",
+          textShadow: "0 0 14px rgba(34,197,94,0.35)",
         }}
       >
         Conservanerds{" "}
         <span
           style={{
             color: "var(--color-mark)",
-            textShadow: "0 0 18px var(--color-mark), 0 2px 0 rgba(0,0,0,0.5)",
+            textShadow: "0 0 18px var(--color-mark), 0 0 32px rgba(34,197,94,0.5)",
           }}
         >
           Unite!
         </span>
       </h2>
       <p
-        className="mt-3 text-[10px] md:text-xs uppercase tracking-[0.3em] font-medium"
-        style={{ color: "rgba(238,241,255,0.6)" }}
+        className="relative mt-2 text-[10px] md:text-xs uppercase tracking-[0.3em] font-medium"
+        style={{ color: "rgba(238,241,255,0.5)" }}
       >
         For nerds · for numbers · for the show
       </p>
