@@ -44,10 +44,13 @@ def _entry_price_cents(conn, call_id: int) -> Optional[float]:
         return None
 
 
-def _close_event_price_cents(conn, call_id: int) -> Optional[float]:
-    """Latest exit/trim/resolve event with a price_pct — Stu's soft close."""
+def _close_event(conn, call_id: int) -> Optional[tuple[float, str]]:
+    """Latest exit/trim/resolve event with a price_pct, as (price_cents, event_type).
+    The event_type matters because the extraction stores `resolve` events with
+    YES-side prices (binary settlement framed on the YES axis) while `exit`/`trim`
+    events store the price Stu actually said on his own side."""
     row = conn.execute(
-        """SELECT price_pct FROM call_events
+        """SELECT price_pct, event_type FROM call_events
             WHERE call_id = ?
               AND event_type IN ('exit', 'trim', 'resolve')
               AND price_pct IS NOT NULL
@@ -58,9 +61,22 @@ def _close_event_price_cents(conn, call_id: int) -> Optional[float]:
     if not row:
         return None
     try:
-        return float(row["price_pct"])
+        return float(row["price_pct"]), row["event_type"]
     except (TypeError, ValueError):
         return None
+
+
+def _close_cents_for_event(side: str, event_type: str, price_cents: float) -> float:
+    """Normalize a close event's price into Stu's-side cents.
+
+    `exit`/`trim`: Stu said "I sold at X" — already on his side.
+    `resolve`: extractor stores the YES-side settlement (0 = YES lost, 100 = YES won).
+       For a NO position, flip to Stu's side."""
+    if event_type == "resolve":
+        s = (side or "").strip().lower()
+        if s in ("no", "under"):
+            return 100.0 - price_cents
+    return price_cents
 
 
 def _realized_pct(side: str, entry_cents: float, close_cents: float) -> float:
@@ -109,8 +125,10 @@ def _score_calls(conn) -> dict:
             continue
 
         # SOFT: Stu noted an exit/trim/resolve himself
-        close_cents = _close_event_price_cents(conn, cid)
-        if close_cents is not None:
+        close = _close_event(conn, cid)
+        if close is not None:
+            close_cents, event_type = close
+            close_cents = _close_cents_for_event(c["side"], event_type, close_cents)
             realized = _realized_pct(c["side"], entry_cents, close_cents)
             conn.execute(
                 "UPDATE calls SET status = 'closed', realized_pct = ? WHERE id = ?",
