@@ -47,6 +47,18 @@ const RESULTS = [
   { value: "loss", label: "Losses" },
 ];
 
+// ─── "Stu's positions" vs "All discussed" view toggle ───────────────────────
+// Isolated + reversible by design: this is purely client-side (the data already
+// carries `conviction` and `speaker`), so nothing in the API/DB changes. To pull
+// the feature entirely, flip POSITIONS_TOGGLE_ENABLED to false — the toggle stops
+// rendering and the extra filter no-ops, restoring the prior show-everything page
+// exactly. Default view is "all" (the opt-in clean view is one tap away).
+const POSITIONS_TOGGLE_ENABLED = true;
+type ViewMode = "all" | "positions";
+// Actual money-down bets, per Stu's own vocabulary. watch/opinion/pass are
+// directional reads or explicit skips — not positions.
+const ACTIONABLE_TIERS = new Set<Conviction>(["play", "solid", "flyer"]);
+
 // Broad tags appear at the top of the Tag dropdown in this exact order
 // (matches BROAD_TAGS in pipeline/extract/tag_taxonomy.py). Specific tags
 // follow, alphabetized, separated by an em-dash hairline.
@@ -66,6 +78,8 @@ export function Calls() {
   const [calls, setCalls] = useState<Call[] | null>(null);
   const [err, setErr] = useState<string | null>(null);
   const [query, setQuery] = useState("");
+  const [viewMode, setViewMode] = useState<ViewMode>("all");
+  const effectiveMode: ViewMode = POSITIONS_TOGGLE_ENABLED ? viewMode : "all";
 
   // Pull every call once. All filtering happens client-side so multi-select
   // checkboxes don't have to round-trip the API per click.
@@ -87,6 +101,12 @@ export function Calls() {
     const tagsFilter = filter.tags ?? [];
 
     return calls.filter((c) => {
+      // "Stu's positions" = only his actual money-down bets, excluding
+      // watch/opinion/pass and any non-Stu speaker (Dan / guests).
+      if (effectiveMode === "positions") {
+        if (c.speaker !== "stu") return false;
+        if (!ACTIONABLE_TIERS.has(c.conviction)) return false;
+      }
       if (statuses.length > 0 && !statuses.includes(c.status)) return false;
       if (sources.length > 0 && !sources.includes(c.market_source ?? "")) return false;
       if (sides.length > 0 && !sides.includes(c.side)) return false;
@@ -119,7 +139,7 @@ export function Calls() {
       }
       return true;
     });
-  }, [calls, query, filter]);
+  }, [calls, query, filter, effectiveMode]);
 
   // Tag filter shows ONLY the broad categories (political/event/sports/…) —
   // the per-market specific tags (cooper-flagg-nba-…) are far too granular to
@@ -184,6 +204,37 @@ export function Calls() {
           )}
         </p>
       </div>
+
+      {POSITIONS_TOGGLE_ENABLED && (
+        <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5">
+          <div className="inline-flex rounded-md border border-[var(--color-border)] bg-[var(--color-bg)] p-0.5 text-xs">
+            {([
+              ["all", "All discussed"],
+              ["positions", "Stu's positions"],
+            ] as const).map(([m, label]) => (
+              <button
+                key={m}
+                type="button"
+                onClick={() => setViewMode(m)}
+                aria-pressed={viewMode === m}
+                className="tap rounded px-3 py-1.5 font-medium transition-colors"
+                style={
+                  viewMode === m
+                    ? { background: "var(--color-accent)", color: "var(--color-bg)" }
+                    : { color: "var(--color-text-muted)" }
+                }
+              >
+                {label}
+              </button>
+            ))}
+          </div>
+          <span className="text-xs text-[var(--color-text-faint)]">
+            {viewMode === "positions"
+              ? "Only Stu's actual bets — play / solid / flyer"
+              : "Everything Stu covered — bets, watches, and passes"}
+          </span>
+        </div>
+      )}
 
       <div className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-elev)] p-3 sm:p-4 space-y-3">
         <div className="flex items-center gap-2">
