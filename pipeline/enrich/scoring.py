@@ -44,21 +44,17 @@ def _entry_price_cents(conn, call_id: int) -> Optional[float]:
         return None
 
 
-def _close_event(conn, call_id: int) -> Optional[tuple[float, str]]:
-    """Latest exit/resolve event with a price_pct. `trim` is intentionally
-    excluded — a trim is a partial close and shouldn't flip status to closed.
-
-    The event_type matters because the extraction stores `resolve` events with
-    YES-side prices (binary settlement framed on the YES axis) while `exit`
-    events store the price Stu actually said on his own side."""
+def _event_of_types(conn, call_id: int, types: tuple[str, ...]) -> Optional[tuple[float, str]]:
+    """Latest event of the given types with a price_pct → (price, event_type)."""
+    placeholders = ", ".join("?" for _ in types)
     row = conn.execute(
-        """SELECT price_pct, event_type FROM call_events
+        f"""SELECT price_pct, event_type FROM call_events
             WHERE call_id = ?
-              AND event_type IN ('exit', 'resolve')
+              AND event_type IN ({placeholders})
               AND price_pct IS NOT NULL
             ORDER BY timestamp_sec DESC, id DESC
             LIMIT 1""",
-        (call_id,),
+        (call_id, *types),
     ).fetchone()
     if not row:
         return None
@@ -66,6 +62,18 @@ def _close_event(conn, call_id: int) -> Optional[tuple[float, str]]:
         return float(row["price_pct"]), row["event_type"]
     except (TypeError, ValueError):
         return None
+
+
+def _infer_winner(current_price: float | None) -> str | None:
+    """Infer a settled market's winner from current_price. Only valid for
+    markets already marked resolved — the price has snapped to its terminal
+    value (~0 or ~100). Normalize units first (some rows are dollars 0..1,
+    some cents 0..100) THEN threshold at 50. Reading 1.0 as 1¢ instead of
+    $1.00 was the bug that flipped Vrabel/Cooper Flagg into fake losses."""
+    if current_price is None:
+        return None
+    cents = current_price * 100.0 if current_price <= 1.5 else current_price
+    return "yes" if cents >= 50.0 else "no"
 
 
 def _close_cents_for_event(side: str, event_type: str, price_cents: float) -> float:
@@ -119,7 +127,7 @@ def _score_calls(conn) -> dict:
     # status/realized_pct; market_id (the link) is owned by the resolver.
     conn.execute("UPDATE calls SET status = 'open', realized_pct = NULL")
     calls = conn.execute(
-        """SELECT c.id, c.side, c.market_id, m.resolved, m.resolution
+        """SELECT c.id, c.side, c.market_id, m.resolved, m.resolution, m.current_price
              FROM calls c
         LEFT JOIN markets m ON m.id = c.market_id"""
     ).fetchall()
@@ -130,12 +138,11 @@ def _score_calls(conn) -> dict:
             stats["skipped_no_entry"] += 1
             continue
 
-        # SOFT first: Stu noted an exit/resolve himself. `trim` is intentionally
-        # excluded — it's a partial close, not a status change.
-        close = _close_event(conn, cid)
-        if close is not None:
-            close_cents, event_type = close
-            close_cents = _close_cents_for_event(c["side"], event_type, close_cents)
+        # 1. Stu sold it himself (exit/trim) — his actual realized return wins.
+        ev = _event_of_types(conn, cid, ("exit", "trim"))
+        if ev is not None:
+            close_cents, et = ev
+            close_cents = _close_cents_for_event(c["side"], et, close_cents)
             realized = _realized_pct(c["side"], entry_cents, close_cents)
             conn.execute(
                 "UPDATE calls SET status = 'closed', realized_pct = ? WHERE id = ?",
@@ -144,16 +151,33 @@ def _score_calls(conn) -> dict:
             stats["soft"] += 1
             continue
 
-        # HARD: market settled with a clean yes/no winner (the literal
-        # "resolved" string Polymarket sometimes stores is NOT trustworthy).
-        if c["resolved"] == 1 and (c["resolution"] or "").strip().lower() in ("yes", "no"):
-            close_cents = _hard_close_cents(c["side"], c["resolution"])
+        # 2. Market settled. Trust an explicit yes/no resolution; otherwise infer
+        #    the winner from the (settled) current_price with unit-normalization.
+        if c["resolved"] == 1:
+            res = (c["resolution"] or "").strip().lower()
+            if res not in ("yes", "no"):
+                res = _infer_winner(c["current_price"])
+            if res in ("yes", "no"):
+                close_cents = _hard_close_cents(c["side"], res)
+                realized = _realized_pct(c["side"], entry_cents, close_cents)
+                conn.execute(
+                    "UPDATE calls SET status = 'resolved', realized_pct = ? WHERE id = ?",
+                    (realized, cid),
+                )
+                stats["hard"] += 1
+                continue
+
+        # 3. Stu narrated the resolution (a `resolve` event) without a market link.
+        ev = _event_of_types(conn, cid, ("resolve",))
+        if ev is not None:
+            close_cents, et = ev
+            close_cents = _close_cents_for_event(c["side"], et, close_cents)
             realized = _realized_pct(c["side"], entry_cents, close_cents)
             conn.execute(
-                "UPDATE calls SET status = 'resolved', realized_pct = ? WHERE id = ?",
+                "UPDATE calls SET status = 'closed', realized_pct = ? WHERE id = ?",
                 (realized, cid),
             )
-            stats["hard"] += 1
+            stats["soft"] += 1
             continue
 
         stats["skipped_other"] += 1

@@ -121,16 +121,16 @@ export function CallDetail() {
         const stuClaimed = data.stu_claimed_pct;
 
         return (
-          <section className="grid grid-cols-2 md:grid-cols-4 gap-3">
+          <section className="grid grid-cols-2 md:grid-cols-5 gap-3">
             <Stat
-              label="Realized"
-              value={realized != null ? formatPct(realized, 1) : "—"}
-              accent={realized != null && realized > 0 ? "var(--color-tier-play)" : undefined}
-              sublabel={stuClaimed != null ? `Stu: ${formatPct(stuClaimed, 0)}` : undefined}
+              label="Entry"
+              value={entryCents != null ? formatCents(entryCents) : "—"}
+              sublabel={entryCents != null ? `Stu's ${data.side.toUpperCase()} cost` : undefined}
             />
             <Stat
               label="Stu Exit"
               value={stuExitCents != null ? formatCents(stuExitCents) : "—"}
+              sublabel={stuExitCents != null ? "sold here" : "still holding"}
             />
             <Stat
               label="Current"
@@ -149,6 +149,12 @@ export function CallDetail() {
                     : undefined
                   : undefined
               }
+            />
+            <Stat
+              label="Realized"
+              value={realized != null ? formatPct(realized, 1) : "—"}
+              accent={realized != null && realized > 0 ? "var(--color-tier-play)" : realized != null && realized < 0 ? "var(--color-tier-pass)" : undefined}
+              sublabel={stuClaimed != null ? `Stu: ${formatPct(stuClaimed, 0)}` : undefined}
             />
             <Stat label="Status" value={STATUS_LABEL[data.status] ?? data.status} />
           </section>

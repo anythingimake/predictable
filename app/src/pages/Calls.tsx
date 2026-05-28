@@ -59,7 +59,6 @@ const BROAD_TAG_LABEL: Record<string, string> = {
   social: "Social",
   fun: "Fun",
 };
-const BROAD_TAG_SET = new Set<string>(BROAD_TAG_ORDER);
 
 export function Calls() {
   const filter = useStore((s) => s.callsFilter);
@@ -122,26 +121,33 @@ export function Calls() {
     });
   }, [calls, query, filter]);
 
-  // Build the tag-dropdown option list from the union of tags on currently
-  // loaded calls — this way new specific tags surface automatically as the
-  // pipeline writes them. Broad tags first (fixed order), then alphabetized
-  // specific tags. A "separator" sentinel splits them so the dropdown can
-  // render a visual divider.
+  // Tag filter shows ONLY the broad categories (political/event/sports/…) —
+  // the per-market specific tags (cooper-flagg-nba-…) are far too granular to
+  // be useful as filter options, though they still render as chips on calls.
   const tagOptions = useMemo(() => {
     const present = new Set<string>();
     for (const c of calls ?? []) {
       for (const t of c.tags ?? []) present.add(t);
     }
-    const broad = BROAD_TAG_ORDER.filter((t) => present.has(t)).map((t) => ({
+    return BROAD_TAG_ORDER.filter((t) => present.has(t)).map((t) => ({
       value: t,
       label: BROAD_TAG_LABEL[t] ?? t,
     }));
-    const specific = Array.from(present)
-      .filter((t) => !BROAD_TAG_SET.has(t))
-      .sort((a, b) => a.localeCompare(b))
-      .map((t) => ({ value: t, label: t }));
-    return [...broad, ...specific];
   }, [calls]);
+
+  // Only offer filter options that actually exist in the data — no point
+  // showing "Over/Under" when Stu has never taken an over/under, etc.
+  const presentValues = useMemo(() => {
+    const sides = new Set<string>();
+    const sources = new Set<string>();
+    for (const c of calls ?? []) {
+      if (c.side) sides.add(c.side);
+      if (c.market_source) sources.add(c.market_source);
+    }
+    return { sides, sources };
+  }, [calls]);
+  const sideOptions = SIDES.filter((o) => presentValues.sides.has(o.value));
+  const sourceOptions = SOURCES.filter((o) => presentValues.sources.has(o.value));
 
   const grouped = useMemo(() => {
     if (!filtered) return [];
@@ -204,19 +210,23 @@ export function Calls() {
             selected={filter.status ?? []}
             onChange={(v) => setFilter({ ...filter, status: v.length ? v : undefined })}
           />
-          <MultiSelect
-            label="Source"
-            options={SOURCES}
-            selected={filter.market_source ?? []}
-            onChange={(v) => setFilter({ ...filter, market_source: v.length ? v : undefined })}
-          />
-          <MultiSelect
-            label="Side"
-            options={SIDES}
-            selected={filter.side ?? []}
-            onChange={(v) => setFilter({ ...filter, side: v.length ? v : undefined })}
-            emptyLabel="Any"
-          />
+          {sourceOptions.length > 0 && (
+            <MultiSelect
+              label="Source"
+              options={sourceOptions}
+              selected={filter.market_source ?? []}
+              onChange={(v) => setFilter({ ...filter, market_source: v.length ? v : undefined })}
+            />
+          )}
+          {sideOptions.length > 0 && (
+            <MultiSelect
+              label="Side"
+              options={sideOptions}
+              selected={filter.side ?? []}
+              onChange={(v) => setFilter({ ...filter, side: v.length ? v : undefined })}
+              emptyLabel="Any"
+            />
+          )}
           <MultiSelect
             label="Tier"
             options={TIERS}

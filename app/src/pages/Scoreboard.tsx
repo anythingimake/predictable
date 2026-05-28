@@ -38,6 +38,7 @@ export function Scoreboard() {
   if (!data) return <Loading />;
 
   const empty = data.total_calls === 0;
+  const misses = Math.max(0, (data.resolved_calls ?? 0) - (data.hit_count ?? 0));
 
   return (
     <div className="space-y-8">
@@ -58,7 +59,7 @@ export function Scoreboard() {
         </div>
       )}
 
-      <section className="grid grid-cols-2 md:grid-cols-4 gap-3">
+      <section className="grid grid-cols-2 md:grid-cols-5 gap-3">
         <StatCard
           label="Actionable calls"
           value={data.total_calls}
@@ -77,9 +78,15 @@ export function Scoreboard() {
           onClick={() => goToCalls({ conviction: ACTIONABLE, status: RESOLVED_STATUSES, result: ["win"] })}
         />
         <StatCard
+          label="Misses"
+          value={misses}
+          accent={misses > 0 ? "var(--color-tier-pass)" : undefined}
+          onClick={() => goToCalls({ conviction: ACTIONABLE, status: RESOLVED_STATUSES, result: ["loss"] })}
+        />
+        <StatCard
           label="Hit rate"
           value={formatPct(data.hit_rate * 100)}
-          hint={(data.resolved_calls ?? 0) > 0 ? `${data.hit_count ?? 0} of ${data.resolved_calls ?? 0} resolved` : undefined}
+          hint={(data.resolved_calls ?? 0) > 0 ? `${data.hit_count ?? 0}-${misses} record` : undefined}
           accent="var(--color-accent)"
           sparkline={history && history.length > 1 ? history.map((h) => h.hit_rate) : undefined}
           onClick={() => goToCalls({ conviction: ACTIONABLE, status: RESOLVED_STATUSES })}
