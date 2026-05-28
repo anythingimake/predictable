@@ -1,0 +1,104 @@
+{
+  "principles": [
+    {
+      "rule": "Never trade with borrowed money",
+      "rationale": "Stu flags taking out a loan to trade as the foundational mistake — before you even pick a market, if the money isn't yours you've already lost the game. A variable-rate loan compounds the problem because the cost of capital can rise mid-trade.",
+      "citations": [
+        {
+          "timestamp_sec": 379,
+          "quote": "I would argue perhaps use money you have, okay? That would be maybe place number one I would start — try to use money that's actually your money. If you're taking out giant loans to use to even invest — but 'bet' as the term he used — I would advise you at least get a fixed rate loan."
+        },
+        {
+          "timestamp_sec": 409,
+          "quote": "Variable rate loan — that's problem number two, because betting would be problem number one."
+        }
+      ]
+    },
+    {
+      "rule": "Excise the word 'betting' from your vocabulary",
+      "rationale": "The mental frame of 'betting' invites reckless behavior. Stu argues that treating prediction-market positions as investments changes how you size, select, and exit — and that the gambling mindset is the root cause of most losses.",
+      "citations": [
+        {
+          "timestamp_sec": 341,
+          "quote": "The first thing you should do when you think about going into a prediction market like this is to excise the word 'betting' from your life. Because if you're doing it in a way that you consider to be betting, you'll likely lose — because as you know, gambling isn't normally all that profitable."
+        }
+      ]
+    },
+    {
+      "rule": "Never go all-in on a single position — betting your whole bankroll guarantees eventual ruin",
+      "rationale": "If you concentrate 100% of your capital on any one outcome, you only need to be wrong once. Stu calls this a mathematical certainty: no edge is perfect, so full-wallet bets will eventually wipe you out.",
+      "citations": [
+        {
+          "timestamp_sec": 734,
+          "quote": "You're definitely gonna wind up losing eventually, because when you're betting — quote-unquote betting — your entire wallet on one particular wager, eventually you're going to lose once and then it all is gone. That's just a certainty. It's math. Don't do that."
+        }
+      ]
+    },
+    {
+      "rule": "Only enter markets where you have a genuine knowledge edge",
+      "rationale": "Prediction markets are populated by domain experts — meteorologists on weather, sportsbooks on sports, quant firms on crypto. An amateur venturing into those deep-liquidity markets competes against pros. The edge comes from trading what you actually know better than the crowd.",
+      "citations": [
+        {
+          "timestamp_sec": 455,
+          "quote": "There are real experts out there on the weather — people on Kalshi and Polymarket making money predicting snowfall in various cities. There are meteorologists studying this stuff. If you are a line cook from Outback Steakhouse, you're probably not the guy that's gonna go into daily snowfall markets in Detroit and win long-term."
+        },
+        {
+          "timestamp_sec": 1027,
+          "quote": "If you don't think you're like, hey, I know politics better than most people I know — you probably don't want to go huge in these markets."
+        }
+      ]
+    },
+    {
+      "rule": "Don't try to out-flash the algorithmic traders — play the long-horizon information edge instead",
+      "rationale": "High-frequency quant shops execute tens of thousands of trades a day and pay $200K+ for data feeds. Competing with them on speed is hopeless. Stu's approach is to find a market mispriced over months because you understand the underlying event better, and hold it there — a completely different game.",
+      "citations": [
+        {
+          "timestamp_sec": 1367,
+          "quote": "That's not how I look at this stuff at all. I look at something that says, hey, in three months something's going to happen, and it says there's a 40 percent chance — I think it's an 80 percent chance. So I'm going to go in there."
+        },
+        {
+          "timestamp_sec": 1385,
+          "quote": "Flash trading — very quick, incredibly high technology levels — that's the game they are playing. If you're trying to beat them at that game, it's going to be really difficult. When you're looking long term, you're taking investments and positions on things that make sense over a long period of time with deeper knowledge."
+        }
+      ]
+    },
+    {
+      "rule": "Prediction markets offer cleaner yes/no questions than stocks — use that specificity",
+      "rationale": "With stocks, being right on one variable (e.g., unit sales) still loses if another variable (CEO scandal, supply chain) tanks the stock. Prediction markets isolate the exact question you have an opinion on, making your edge more directly monetizable.",
+      "citations": [
+        {
+          "timestamp_sec": 1196,
+          "quote": "When it comes to prediction markets, it's a simple yes or no question — and if you know something about a particular topic, if there's something you're really invested in, something you want to study and read and think about, these are great markets to get in because you're answering a very specific question."
+        },
+        {
+          "timestamp_sec": 1244,
+          "quote": "You can get a yes or a no, where if you just invest in the stock there's a lot of other variables. Maybe one of their other products fails, maybe there's a supply chain issue, maybe their CEO is in the Epstein files — and all of a sudden your stock's down 40 percent even though you were right on how many they would sell."
+        }
+      ]
+    },
+    {
+      "rule": "Hedge your life — take the other side of outcomes you care about emotionally",
+      "rationale": "When the outcome of a game or event matters to you personally, the market price on the other side is real money. If your team loses, you at least collect on the hedge. Stu explicitly rejects the label 'emotional hedge' and calls it rational: it converts a pure-loss scenario into a financial cushion.",
+      "citations": [
+        {
+          "timestamp_sec": 2248,
+          "quote": "Was there a thought at all for you to do something that I do often — hedge your life — and take some investment dollars and invest them in hedging your happiness, going with the other side, the Sixers, to try to make yourself feel a little bit better when the horrible thing happened?"
+        },
+        {
+          "timestamp_sec": 2349,
+          "quote": "Some people call it an emotional hedge. I don't like that term. I like 'hedging your life.' It's not emotions — it's reason. Because sometimes the most important thing to you is a stupid game, and when that happens it's important to be able to hedge yourself."
+        }
+      ]
+    },
+    {
+      "rule": "A 13% near-certainty beats your checking account — boring near-certainties compound",
+      "rationale": "Stu explicitly compares a near-certain 'no' paying 13% over seven months against a savings account at 0.3%. Small, reliable gains on well-understood outcomes stack into meaningful returns without the variance of long-shot bets.",
+      "citations": [
+        {
+          "timestamp_sec": 2566,
+          "quote": "It's only 13 percent. Although — what are we in May? 13 percent in seven months? That's certainly not a bad take-home. Think about your checking account — it's giving you probably 0.3 percent. So 13 percent in seven months: not bad."
+        }
+      ]
+    }
+  ]
+}

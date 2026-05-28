@@ -1,0 +1,62 @@
+{
+  "principles": [
+    {
+      "rule": "Stack small near-certain gains — 8-10% returns compound fast",
+      "rationale": "Stu's core bankroll philosophy: don't chase big wins, instead load up on near-certainties priced at 90-92 cents. At 8-10% per contract and 3-4 contract cycles per year, you can hit 30-40% annual returns. This is explicitly contrasted with gambling.",
+      "citations": [
+        {
+          "timestamp_sec": 2583,
+          "quote": "I love having these these eight these 10 gains just build it in the background. They're just there generating cash until they get contract ends for me. We're constantly just pocketing pocketing pocketing from those eight to ten percent gains."
+        },
+        {
+          "timestamp_sec": 2601,
+          "quote": "It's eight to ten percent you might be able to do that three or four times during a year and wind up with 30 or 40 percent your money. So that's the way we think about things at Predictable."
+        }
+      ]
+    },
+    {
+      "rule": "Find who won't win — the 'no' side of an overvalued candidate is often the easy money",
+      "rationale": "Rather than picking the winner in a crowded race, identify the candidate the market is overrating and buy the no. Swalwell at 60% was wrong on the fundamentals; Porter at 10% is still a no. The market over-weights name recognition and media presence.",
+      "citations": [
+        {
+          "timestamp_sec": 1387,
+          "quote": "Eric Swalwell was seen as the favorite for a long time and I said wait a minute, Eric Swalwell is going to win this race? No. I bought no on Swalwell when he was at like 60. The profit margin was 60 cents for every 40 cents invested — about 150 percent profit."
+        },
+        {
+          "timestamp_sec": 1440,
+          "quote": "Part of this is looking at a market and saying well, wait a minute the market's hyping this too much. He wasn't even leading the polls in some of the polls. But people look at it and say well, he's a known name, he's on MSNBC all the time, and so people looked at him as the favorite in this race."
+        }
+      ]
+    },
+    {
+      "rule": "Read the contract rules every single time — exact resolution conditions matter",
+      "rationale": "A market's headline can mislead; the 2-3 paragraph resolution criteria can change everything. Stu uses the Vrabel 'Week 1' contract as the illustration: Vrabel could remain the coach but miss Week 1 via a leave of absence, and that would flip the trade.",
+      "citations": [
+        {
+          "timestamp_sec": 2526,
+          "quote": "That's one of the most important things you'll learn about prediction markets if you get into them. You got to read those rules here. It's right in the headline. It's Week 1. But there's a two or three paragraph description of what the rules are of every contract — read it every single time. Sometimes it's really boring, do it anyway."
+        }
+      ]
+    },
+    {
+      "rule": "Enter before the primary resolves — that's the window",
+      "rationale": "When a race has an unresolved primary on one side and a unified opponent, the market reflects maximum uncertainty. Once the primary settles and the challenger's 'glow' fades, the market reprices quickly. Getting in during the split is the play.",
+      "citations": [
+        {
+          "timestamp_sec": 1877,
+          "quote": "The Republican candidate is gonna wind up being the favorite by around October. You probably have a window here to get in if you're looking to try to go in on the Republican side here before all of this stuff turns out. As soon as that primary process plays out for the Republicans, you're gonna wind up in a situation where the Talarico glow probably starts fading away slowly."
+        }
+      ]
+    },
+    {
+      "rule": "Prediction markets reveal truths that polls miss — when they diverge, dig in",
+      "rationale": "Polls measure stated preference; prediction markets price real money on outcomes. When a candidate leads polls but lags the market (or vice versa), that gap is signal. Stu uses Steyer vs Becerra in the CA jungle primary as the example.",
+      "citations": [
+        {
+          "timestamp_sec": 1648,
+          "quote": "When it comes to prediction markets, this is how it's different. This is how you wind up revealing a new truth. Steve Hilton is ahead of Tom Steyer when it comes to polling — he is 40 points behind — but when it comes to prediction markets, this is how it revealed a new truth."
+        }
+      ]
+    }
+  ]
+}

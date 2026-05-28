@@ -1,0 +1,84 @@
+{
+  "principles": [
+    {
+      "rule": "Take the underdog when the race is genuinely uncertain",
+      "rationale": "When Stu genuinely can't call a winner, he takes the lower-priced side because the payout multiplier compensates for the lower win probability. A 19% shot pays four-to-one; a 9% shot pays ten-to-one. If the market is wrong about the probability, the math strongly favors the longshot.",
+      "citations": [
+        {
+          "timestamp_sec": 2646,
+          "quote": "While I think there's a lot there that can kind of make me think of this is sort of a toss-up and who really knows what's going to happen, you take the person who's at 19 percent because you're going to be getting four times your money."
+        },
+        {
+          "timestamp_sec": 1499,
+          "quote": "If you're looking at something that's nine percent you are expecting to lose most of the time. If you think maybe there's a 30 chance of that happening, there's value there because in that 30 win is a 10 times your money type of victory."
+        }
+      ]
+    },
+    {
+      "rule": "Trump-endorsed candidates win primaries — bet with the endorsement",
+      "rationale": "Stu treats a Trump endorsement in a Republican primary as a near-certain signal: his picks win the primary almost always. This is separate from the general election, where Trump-endorsed candidates sometimes lose. The pattern also works in reverse: when Trump actively targets someone for defeat, those people generally don't win.",
+      "citations": [
+        {
+          "timestamp_sec": 1277,
+          "quote": "When he endorses people in these Republican primaries, they win. That does not mean they win the election by the way. But when they can, they win the primaries almost always. Donald Trump's picks win these primaries."
+        },
+        {
+          "timestamp_sec": 1358,
+          "quote": "When someone comes out and Donald Trump comes out and says I don't want this guy in, it's a central part of what I want — generally speaking those people don't win."
+        }
+      ]
+    },
+    {
+      "rule": "Skip overpriced certainties — no value means no trade",
+      "rationale": "Even when Stu is confident about the direction of a market, he passes if the price has already moved to reflect that view. A 2% chance to win means the market has fully priced in the loss; betting 'no' at 98 cents offers almost no return relative to the risk of being wrong. Finding value, not just being right about direction, is the edge.",
+      "citations": [
+        {
+          "timestamp_sec": 1313,
+          "quote": "Even if you're pretty sure about this, honestly there's not a lot of value in saying no on Cassidy — that's already been priced in."
+        },
+        {
+          "timestamp_sec": 2153,
+          "quote": "If you're buying that at a lower price — if you're saying I'm only spending 10 cents on what I think is a 50 cent investment — you found a good chunk of value right there."
+        }
+      ]
+    },
+    {
+      "rule": "Start slow, size up only as understanding grows",
+      "rationale": "Prediction markets can take money fast from people who oversize early. Stu's standing rule is to start with tiny positions — a dollar, one share, five shares — and increase only as you learn the pitfalls. Make sure you're never holding your mortgage in your hand.",
+      "citations": [
+        {
+          "timestamp_sec": 1813,
+          "quote": "Start slow, ramp up slowly, go a little slower than you feel like you should. Make sure when it happens you're not holding your mortgage in your hand and you have to hand it over. You want to start slow and ramp it up as you understand it."
+        },
+        {
+          "timestamp_sec": 1864,
+          "quote": "Great idea to when you get on here start small. Don't be afraid to throw a dollar, buy one share, buy five shares. Keep it small at first so you understand what the pitfalls are for you."
+        }
+      ]
+    },
+    {
+      "rule": "Use multiple apps to get the best price for your side",
+      "rationale": "The same market can trade at meaningfully different prices on Polymarket, Kalshi, and PredictIt. If you're a yes, go to whichever app has the lowest yes price; if you're a no, go to whichever has the best no price. Serious traders should have accounts on all major platforms.",
+      "citations": [
+        {
+          "timestamp_sec": 1574,
+          "quote": "This is a great example of when the answer is yes — if you're going to be doing this in a serious way, I would say get on Polymarket, get on Kalshi, get on PredictIt, get on all of them. If you're a yes on Davis, you want to go to Polymarket and get more value there. If you're a no on Davis, you may want to go to Kalshi and get more value on that side."
+        }
+      ]
+    },
+    {
+      "rule": "Quality over volume — don't chase a trade-count quota",
+      "rationale": "Stu does not set a weekly trade target. Chasing volume forces trades outside your area of expertise and is where you get burned. He prefers to find fewer high-conviction positions and size them meaningfully, rather than spreading thin across many marginal plays. It's not the number of trades you make; it's the value of the wins.",
+      "citations": [
+        {
+          "timestamp_sec": 2219,
+          "quote": "I find it to be much much better to look for the right position. Where can you find the most value? I don't look for a super high number of trades as far as volume goes."
+        },
+        {
+          "timestamp_sec": 2294,
+          "quote": "It's not the number of trades you make, it's how many times you win and what the value is of those victories. If you try to expand that to include a certain amount of things just to make your sort of weekly trading quota, a lot of times you'll wind up making trades that are outside of your expertise — that's the place that you get burned."
+        }
+      ]
+    }
+  ]
+}

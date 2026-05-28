@@ -1,0 +1,13 @@
+{
+  "strategies": [
+    {
+      "name": "Vance Thesis Two-Way",
+      "pattern_type": "pair",
+      "description": "Stu explicitly frames his Rubio NO as the complementary angle to Dan's Vance YES. If Vance runs and wins the nomination, Rubio (who has said he won't run if Vance does) resolves no. Two markets, same underlying conviction — letting you express the same thesis at whichever price is more attractive.",
+      "call_market_hints": [
+        "JD Vance wins 2028 presidential election (Dan: YES — Round 1 pick)",
+        "Marco Rubio wins 2028 GOP presidential nomination (Stu: NO)"
+      ]
+    }
+  ]
+}

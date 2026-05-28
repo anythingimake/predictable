@@ -1,0 +1,74 @@
+{
+  "principles": [
+    {
+      "rule": "Boring is the alpha — stack small sure-thing gains to beat your checking account",
+      "rationale": "Near-certain markets resolving tonight can return 1-4% in a single day, which annualizes far above a savings account. The key is stacking these 'bonding' plays repeatedly rather than chasing flashy long-shots.",
+      "citations": [
+        {
+          "timestamp_sec": 868,
+          "quote": "Some of the best financial decisions you make are boring. Warren Buffett is like a really boring guy. He's doing it the boring way and that's his charm."
+        },
+        {
+          "timestamp_sec": 968,
+          "quote": "If you can get four percent in a day, it's pretty good."
+        },
+        {
+          "timestamp_sec": 1099,
+          "quote": "You can stack those gains over a year if you're doing that once a week — kind of looks a lot better than a checking account, doesn't it?"
+        }
+      ]
+    },
+    {
+      "rule": "Use the bonding play: buy near-certainties resolving today, not months from now",
+      "rationale": "The 'bonding' mechanism lets you step in at 96-99% and take the last 1-4% from holders who want liquidity. A 4% return in one evening is real yield, but only works because the event is imminent — don't apply it to races that resolve in November.",
+      "citations": [
+        {
+          "timestamp_sec": 1051,
+          "quote": "One of the terms you'll hear used in prediction market talk is called bonding — basically people will invest in something early on, it will go up to 98-99 percent when it's sure that it's going to happen, and people who have those positions want access to that cash. So they will sell out at 99 and a lot of people will say, this is a sure thing, I'm happy to come in at 99 and take that 1 off your hands."
+        },
+        {
+          "timestamp_sec": 1000,
+          "quote": "A lot of times the smarter play is to keep it on the sidelines and pop it into races like this, where you are in a sure-thing environment."
+        }
+      ]
+    },
+    {
+      "rule": "Scan related markets for the best-value expression of the same thesis",
+      "rationale": "Multiple markets often price the same underlying conviction differently. The under-50% NO for Vivek offered better odds than betting he wins outright, because the market mispriced that outcome. Always shop across related contracts before entering.",
+      "citations": [
+        {
+          "timestamp_sec": 1171,
+          "quote": "Now one interesting thing — this is something that you'll learn looking around these markets — there is a position for Vivek Ramaswamy to win under 50 percent. The bottom line is there's more value in his under-50 percent — to say no, he won't be under 50 — than in whether he will win. I think there's almost no chance he's going to be under 50 percent."
+        },
+        {
+          "timestamp_sec": 1217,
+          "quote": "A lot of times you can look around and find multiple markets looking at the same thing and find a slightly better advantage there than in other places."
+        }
+      ]
+    },
+    {
+      "rule": "Hedge your life — a position where losing money means a good outcome for you is worth a bonus",
+      "rationale": "When your directional opinion on a market coincides with wanting the other outcome to happen in real life, that overlap is a valid extra reason to take the trade. It is not the primary reason to enter, but it tilts the personal calculus in your favor.",
+      "citations": [
+        {
+          "timestamp_sec": 1712,
+          "quote": "One thing I love when it comes to prediction markets is when my opinion, my vibe, my position on a market coincides with me being able to hedge my life. Hedge my life is a very central part of my life — you'll hear it a million times here on Predictable."
+        },
+        {
+          "timestamp_sec": 1831,
+          "quote": "The other thing I like about this — just to give me a little added push — is the fact that if I'm wrong and I lose this money, we've ended a war, and I'm going to be pretty happy about a war being over. So there's a little bit of a hedging-your-life thing there."
+        }
+      ]
+    },
+    {
+      "rule": "Read the resolution rules before sizing — 'permanent peace deal' is a much higher bar than a ceasefire",
+      "rationale": "Markets can resolve on announcements that feel like victory but don't legally satisfy the contract. Always read the resolution criteria; a 37% priced market might be even more mispriced once you understand exactly what triggers a YES.",
+      "citations": [
+        {
+          "timestamp_sec": 1655,
+          "quote": "I want to read those rules specifically to see what ticks that off, because you never know — sometimes it's just people saying they've got a permanent peace deal and that will check the box. This isn't a standoff where we all just say we won and people stop firing. We're talking about a permanent peace deal."
+        }
+      ]
+    }
+  ]
+}

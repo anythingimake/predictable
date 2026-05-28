@@ -1,0 +1,28 @@
+{
+  "strategies": [
+    {
+      "name": "Paxton Margin Ladder",
+      "pattern_type": "tier-ladder",
+      "description": "Stu held a large YES on Paxton winning the nomination outright, then layered four additional margin-market positions on the same race: NO on a 0-5 point Paxton win, NO on a 5-10 point win, and YES on a 20+ point blowout (the Pantheon-of-Victory flyer bought at 8 cents). Together they express a single thesis — Paxton wins big — using stacked tiers that pay out at different conviction levels, with the longshot tier (20+ margin) providing the massive upside.",
+      "call_market_hints": [
+        "Ken Paxton wins Texas GOP Senate runoff 2026 (Stu: large position, won)",
+        "Ken Paxton wins Texas GOP Senate runoff by 0-5 points (Stu: NO, won)",
+        "Ken Paxton wins Texas GOP Senate runoff by 5-10 points (Stu: NO, won)",
+        "Ken Paxton wins by over 20 points in Texas GOP Senate runoff 2026 (Stu: 1,013% Pantheon-of-Victory win)"
+      ]
+    },
+    {
+      "name": "Texas May 26 Primary Night Basket",
+      "pattern_type": "basket",
+      "description": "Stu ran six calls across the same Texas primary/runoff night (May 26, 2026), all sharing the thesis that favorites and rational Democratic voters would prevail. The calls span the Senate nomination, two Democratic House primaries, the AG runoff, and a drop-out side-market, all resolving the same evening. Stu recapped them as a unified scorecard.",
+      "call_market_hints": [
+        "Maureen Galindo wins Texas HD-35 Democratic runoff 2026 (Stu: NO, won — anti-semitism backlash)",
+        "Colin Allred wins Texas HD-33 Democratic primary 2026 (Stu: YES, won)",
+        "Mayes Middleton wins Texas Attorney General GOP runoff 2026 (Stu: YES over Chip Roy, won)",
+        "Shepard wins Texas HD-17 Democratic runoff 2026 (Stu: YES, won)",
+        "Menafee wins Texas HD-18 Democratic runoff 2026 (Stu: YES over Al Green, won)",
+        "John Cornyn drops out of the Texas Senate race (Stu: NO — he won't drop out, won)"
+      ]
+    }
+  ]
+}

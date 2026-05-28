@@ -1,0 +1,102 @@
+{
+  "principles": [
+    {
+      "rule": "Trump wins Republican primaries — ride the thesis until it dies",
+      "rationale": "When Trump endorses in a Republican primary he basically gets what he wants with very few exceptions. Stu frames this as an active, repeatable thesis he will keep playing until the electorate actually votes against a Trump-endorsed candidate.",
+      "citations": [
+        {
+          "timestamp_sec": 437,
+          "quote": "This is an active thesis that we have on this program. We've won with you on this thesis multiple times already in this primary season, which is when Donald Trump won something in a Republican primary, not a general election, at a Republican primary, he basically gets what he wants with very few exceptions. And we are writing that thesis into the freaking ground until it dies."
+        },
+        {
+          "timestamp_sec": 470,
+          "quote": "We've already won four or five times on it and we're going to continue to win on it, I think."
+        }
+      ]
+    },
+    {
+      "rule": "Suck the emotion out — no political favorites in a trade",
+      "rationale": "Stu separates his personal political preferences from trade decisions entirely. He explicitly says he would have flipped to Cornyn if Trump had endorsed Cornyn, even though he personally preferred Paxton. Emotional attachment clouds judgment on market outcomes.",
+      "citations": [
+        {
+          "timestamp_sec": 380,
+          "quote": "If Trump endorsed Cornyn, I would have gone the other way. We don't have favorites here. We don't play favorites. There's no loyalty games here. When we're looking at these markets, we can root for what we want to win. We can hope. But when we're talking about these markets, we suck the emotion out."
+        },
+        {
+          "timestamp_sec": 1473,
+          "quote": "Maybe Middleton will be great too. I don't know. But we, again, we put our heart to the side. And we went with Middleton and we hit that one as a yes."
+        }
+      ]
+    },
+    {
+      "rule": "Stack small gains to build toward the big event",
+      "rationale": "The primary season is framed as a bankroll-building exercise ahead of November's larger markets. Small, near-certain wins compound the war chest for higher-conviction later plays.",
+      "citations": [
+        {
+          "timestamp_sec": 178,
+          "quote": "We will focus on trying to find you little opportunities, gains, maybe a different way to build your bankroll to November, because that's where we're kind of building toward here in this off-year."
+        },
+        {
+          "timestamp_sec": 208,
+          "quote": "I can tell you all about little, tiny things, and we'll pack them, we'll stack those gains over and over again, trying to build toward November."
+        }
+      ]
+    },
+    {
+      "rule": "Think in percentage returns, not dollar amounts",
+      "rationale": "Stu consistently avoids talking raw dollar sizes and instead quotes percentage gains. This keeps the framework universal — whether a listener has $5 or $5,000, a 1,013% return means the same thing proportionally.",
+      "citations": [
+        {
+          "timestamp_sec": 2499,
+          "quote": "Think about it in a percentage gain way — that's why I don't talk about amounts a lot on the show. When you talk about percentages it can relate to you and any of your situations. You don't need to have millions of dollars on the line. You can have five bucks on the line and you turn that five to six."
+        },
+        {
+          "timestamp_sec": 793,
+          "quote": "40 cents on a 60-cent investment is a 67% return — a really, really nice return. Especially in a short period of time."
+        }
+      ]
+    },
+    {
+      "rule": "Start small; don't dump your bankroll into early or unclear positions",
+      "rationale": "Stu repeatedly tells new traders to start small and size up only when conviction is high. He also self-critiques for going in 'too small' on Paxton at 60 cents, but affirms the principle: don't over-commit before the story is clear.",
+      "citations": [
+        {
+          "timestamp_sec": 1799,
+          "quote": "Start small, make sure you understand what you're doing — try to walk you through all the details as we go."
+        },
+        {
+          "timestamp_sec": 720,
+          "quote": "In retrospect I really wish I went harder when it was a 60-40 race. 60% for Paxton had value. I should have been in heavier."
+        }
+      ]
+    },
+    {
+      "rule": "Every day Trump stays silent on an endorsement is a signal he may go the other way",
+      "rationale": "Stu identifies Trump's delay in endorsing as actionable information. The longer an incumbent ally goes unendorsed, the more likely Trump is either staying out or planning to endorse the challenger. He applies this directly to the Cornyn vs. Paxton race.",
+      "citations": [
+        {
+          "timestamp_sec": 680,
+          "quote": "Every day he doesn't endorse John Cornyn, I wonder if he's going to stay out of this and maybe go the other way. She was totally right. You see the fade? We'll call it the Sarah Gonzalez fade."
+        },
+        {
+          "timestamp_sec": 308,
+          "quote": "Because if he wanted to pass it into win, he probably would have gone in earlier, it was kind of the thought at the time."
+        }
+      ]
+    },
+    {
+      "rule": "When you believe in a blowout, layer the margin markets on top of the win bet",
+      "rationale": "Once the win side is covered and priced high, further upside can be captured by betting the margin: shorting the narrow-win tiers (e.g. NO on 0-5, NO on 5-10) and longing the wide blowout tier. These markets often misprice because the crowd anchors around polling averages rather than endorsement effects.",
+      "citations": [
+        {
+          "timestamp_sec": 822,
+          "quote": "These are the margin markets. Another way to invest on Kalshi — look at not only who's going to win but how much are they going to win by. I was no on Paxton 0-to-5 margin, no on Paxton 5-to-10 margin, and then we went even bigger — Paxton over a 20-point margin — this was our big pick of the day."
+        },
+        {
+          "timestamp_sec": 888,
+          "quote": "My thesis was this was actually going to be a blowout. The market thought the thing might land between 5 and 15 percent in that general vicinity. I thought it could easily get to 60-40 — that's another 5 percent of people listening to that Trump endorsement."
+        }
+      ]
+    }
+  ]
+}

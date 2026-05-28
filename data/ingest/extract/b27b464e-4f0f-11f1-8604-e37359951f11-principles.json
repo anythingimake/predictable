@@ -1,0 +1,84 @@
+{
+  "principles": [
+    {
+      "rule": "One poll doesn't move a liquid market — don't trade on a single data point",
+      "rationale": "A market with tens of millions of dollars and years of runway has already priced in multiple data streams. When smart money sees a single poll — even from a top pollster — and doesn't move the needle, that tells you how seriously the market takes it. Chasing one poll is how you lose money.",
+      "citations": [
+        {
+          "timestamp_sec": 1050,
+          "quote": "One poll isn't moving these markets that much anymore, especially a market that has $36 million in it. A lot of money in this market — one poll not going to move it as much as it used to."
+        },
+        {
+          "timestamp_sec": 1348,
+          "quote": "The fact that the market is looking at a poll where AOC is winning by a decent amount and they're actually selling some of her position off tells you something about how seriously people with hundreds of thousands of millions of dollars in these markets are taking this one poll."
+        }
+      ]
+    },
+    {
+      "rule": "Cross-check a poll's sample using the generic congressional ballot before trusting topline numbers",
+      "rationale": "Every poll embeds a partisan lean in its sample. If the same poll's generic congressional ballot shows a +14 Democrat margin when the real-world average is +7, the presidential toplines are inflated toward left-wing candidates. This internal consistency check is faster and more reliable than unskewing by hand.",
+      "citations": [
+        {
+          "timestamp_sec": 1196,
+          "quote": "The congressional generic vote for the poll sample that has AOC and Marco Rubio way ahead was a plus-14 for Democrats. That's not reality. It's one poll — probably a bit of an outlier. If you think about a Democratic-plus-14 sample, you're more likely to get more left-wing candidates that are approved of. Makes sense that maybe AOC leads a poll like that."
+        },
+        {
+          "timestamp_sec": 1207,
+          "quote": "This is why we combine a bunch of polls. We combine a bunch of polls and we look at a bunch of different data points instead of just looking at one."
+        }
+      ]
+    },
+    {
+      "rule": "Update your priors when data accumulates — refusing to adjust is how you lose",
+      "rationale": "Confirmation bias is expensive in prediction markets. If one poll surprises you and you dismiss it, that's fine. But if you keep seeing the same signal week after week and keep explaining it away, you're reverse-engineering data to fit your preferences. Stu frames ongoing prior adjustment as a non-optional discipline.",
+      "citations": [
+        {
+          "timestamp_sec": 1265,
+          "quote": "If we start seeing that routinely, instead of just denying it and saying well, that's not reality, we have to start adjusting our thinking and saying maybe the electorate's changing a little bit. That's okay. We want to do that constantly here because when you don't do that you lose. You not only lose elections, but you also lose money on prediction markets when you do that."
+        },
+        {
+          "timestamp_sec": 942,
+          "quote": "I'm not trying to say, oh gosh, what I think is going to happen is AOC isn't as popular, so I'm going to look at it for a reason to reverse-engineer this data into something that I prefer. That's not what I'm doing here."
+        }
+      ]
+    },
+    {
+      "rule": "Shop across platforms — buy where the price is cheapest",
+      "rationale": "Two platforms will often price the same market a couple of percent apart. You don't need to be a flash trader to exploit this; just check both before buying and take the cheaper side. A few cents of extra margin per contract compounds meaningfully over time.",
+      "citations": [
+        {
+          "timestamp_sec": 2087,
+          "quote": "If I see 73 and I want to buy on one site and I see 75 on the other — 73 is cheaper and I'll take a couple cents extra profit if I can get it. There's no reason why you can't use both of them and buy the one where the best price exists."
+        }
+      ]
+    },
+    {
+      "rule": "Low-probability candidates bounce on good news — buy before the catalyst, sell the spike",
+      "rationale": "A candidate sitting at a very low probability has nowhere to go but up after a standout moment. Buy a small position in anticipation, wait for the media bump, then cash out before reality reasserts itself. The pattern is replicable as long as the candidate still has meaningful upside room and a credible catalyst.",
+      "citations": [
+        {
+          "timestamp_sec": 2256,
+          "quote": "You can replicate it. The idea of the small guy getting a bounce out of some big news and then cashing out is what I was talking about."
+        },
+        {
+          "timestamp_sec": 2293,
+          "quote": "Donald Trump Jr. as a candidate — very low percentage chance to win. But I will not be surprised if at the very least there's a bunch of buzz about him running once we get past the midterms. Does he go from 0.5 to 5 percent? Nice big bump there if that happens."
+        },
+        {
+          "timestamp_sec": 2260,
+          "quote": "When you find a system like this, one thing you have to be worried about is opening it up in your mind a little bit too much — are you looking for opportunities that you think you can replicate the same thing when that opportunity is not there?"
+        }
+      ]
+    },
+    {
+      "rule": "Primaries are more surprise-prone than generals — size your conviction accordingly",
+      "rationale": "General elections have large, predictable electorates and months of polling. Primaries involve lower turnout, more volatile preferences, and less polling data. The same confidence level that earns you a solid position in a general should translate to a smaller, more cautious position in a primary.",
+      "citations": [
+        {
+          "timestamp_sec": 1605,
+          "quote": "Primary elections are more vulnerable to surprises than a general, so it's not as easy to look at this stuff and say, oh, I know what's going to happen here. That race looks pretty close. There's been some new polling coming out. I do think Thomas is in some trouble."
+        }
+      ]
+    }
+  ]
+}

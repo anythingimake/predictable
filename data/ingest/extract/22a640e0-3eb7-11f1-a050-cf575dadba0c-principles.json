@@ -1,0 +1,62 @@
+{
+  "principles": [
+    {
+      "rule": "Invest, don't bet — betting loses, investing grows",
+      "rationale": "Stu explicitly distinguishes between treating prediction markets as gambling (throwing money at random outcomes) versus investing (methodical, value-driven positions). Making massive, undisciplined bets is the path to losing money; treating each position as an investment with a reasoned edge is how you grow a bankroll over time.",
+      "citations": [
+        {
+          "timestamp_sec": 791,
+          "quote": "If you are an idiot, you will lose a lot of money. You can lose a lot of money on prediction markets. If you make massive bets on things you're not — and I use that word intentionally — if you're making bets, then you're gambling. If you're trying to invest your money, you can actually grow it."
+        }
+      ]
+    },
+    {
+      "rule": "Prediction markets aggregate truth better than top-down media — use them as your information edge",
+      "rationale": "Stu frames prediction markets as the free-market equivalent of price discovery: because participants put real money on outcomes, incentives are aligned with accuracy rather than persuasion or engagement. The media, campaigns, and commentators are all pushing agendas; markets force honest pricing. This is the foundational reason he built the show around them.",
+      "citations": [
+        {
+          "timestamp_sec": 992,
+          "quote": "Markets make things better, because they honestly force you into a place of truth."
+        },
+        {
+          "timestamp_sec": 1109,
+          "quote": "Their incentives are not aligned with getting you the best information possible. So how do we get better information? At Predictable, we're going to implement prediction markets into that information feed because when we do, we wind up with superior information. We know these things long before others do."
+        }
+      ]
+    },
+    {
+      "rule": "You don't need to pick the winner — find mispriced probability",
+      "rationale": "Stu made money on the 2016 election even though he did not think Trump would win, because the market had Trump priced at 9% when Stu judged his real chances much higher. The edge is not in predicting the outcome with certainty but in spotting a market price that is significantly wrong relative to your assessment.",
+      "citations": [
+        {
+          "timestamp_sec": 1349,
+          "quote": "You don't have to know everything about the future to be able to profit in prediction markets and to know more about the news and what's coming down the line. We were focused on finding value."
+        },
+        {
+          "timestamp_sec": 1364,
+          "quote": "I don't think Donald Trump's going to win this election, but he's got a way better chance than 15%, which is what the media was telling you, or even lower. I mean, I was buying shares... on the night of the election in 2016, buying shares of Donald Trump to become president of the United States on that night at 9%, which was able to give me about 11 times plus my money in that market."
+        }
+      ]
+    },
+    {
+      "rule": "Methodical, consistent value-hunting compounds into outsized gains over time",
+      "rationale": "A single correct call is luck; a repeatable process of searching for mispriced markets across many cycles is how you stay ahead. Stu emphasizes doing this 'methodically' and 'over a long period of time' as the reason his track record holds up across multiple elections and cycles.",
+      "citations": [
+        {
+          "timestamp_sec": 1417,
+          "quote": "When you do this methodically, when you look at these markets over a long period of time, you can find edges. And if you continually search for a value over a long period of time, you wind up coming out way ahead. And that's what we've been able to do for a long period of time."
+        }
+      ]
+    },
+    {
+      "rule": "Turn knowledge of predictably-weak actors into profit — get paid for the pain",
+      "rationale": "Viewers and listeners already have deep pattern-recognition about politicians and public figures they've followed for years. When you know a senator always folds to special interests at the last second, that predictability is a tradeable edge — the market may not price in that behavioral tendency as accurately as someone who has watched it repeatedly.",
+      "citations": [
+        {
+          "timestamp_sec": 749,
+          "quote": "You've watched him over and over and over again. And you've seen him over and over and over again let you down. You've seen him over and over and over again fold to the last second. Some special interest group comes in and makes them change their vote. If you know that's coming, you should be paid for the pain."
+        }
+      ]
+    }
+  ]
+}

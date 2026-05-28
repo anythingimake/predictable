@@ -1,0 +1,66 @@
+{
+  "principles": [
+    {
+      "rule": "Sell into certainty — don't wait for the last few cents",
+      "rationale": "When a market has moved strongly in your favor, the remaining upside (a few cents to resolution) rarely justifies the residual risk from ongoing legal challenges or reversals. Locking in a large gain before the final close is the disciplined move, even if it feels premature.",
+      "citations": [
+        {
+          "timestamp_sec": 354,
+          "quote": "No need to stick around for the last six cents of profit with whatever uncertainty is out there. Overall 114 percent profit and a good result."
+        },
+        {
+          "timestamp_sec": 387,
+          "quote": "This is why you sell. This is why you get out of the market. This is why you do what I never do."
+        }
+      ]
+    },
+    {
+      "rule": "It's easier to predict what won't happen than what will",
+      "rationale": "In crowded multi-candidate markets, identifying who is definitively out — due to scandals, structural weaknesses, or stated intentions not to run — is far more reliable than picking the ultimate winner. Betting against clear losers compounds into meaningful gains.",
+      "citations": [
+        {
+          "timestamp_sec": 2043,
+          "quote": "A lot of times in big markets like this, one of the things I say all the time is it's easier to predict what would not happen than what will."
+        },
+        {
+          "timestamp_sec": 2963,
+          "quote": "Like is there a scenario here where you — you've talked about stacking the wins like the small gains — like is there a scenario where you just stack up a bunch of these? Yeah, I mean we know Buttigieg is not going to win. Tucker Carlson he's probably not gonna run, not gonna win. Stephen A. Smith not gonna win. Anyway, is there a scenario where you can cobble a strategy together stacking some noes?"
+        }
+      ]
+    },
+    {
+      "rule": "Fade the overpriced favorite in a wide-open field",
+      "rationale": "When a candidate is priced as a heavy favorite in a race with lots of unknowns or known negatives, betting against them offers asymmetric value. The market overweights name recognition and underweights scandal risk or structural obstacles.",
+      "citations": [
+        {
+          "timestamp_sec": 2062,
+          "quote": "What I did know is that Eric Swalwell has lots of problems, lots of scandals, lots of things that can go wrong. There was no reason to believe he was a 60 favorite. Fading those favorites in a big market like this when things are uncertain is not a bad approach."
+        }
+      ]
+    },
+    {
+      "rule": "Long shots carry option value — price in the news-cycle bump",
+      "rationale": "A candidate sitting at 1-2 percent doesn't need to win; they only need one news cycle of buzz to jump to 5-6 percent. That's a 5-6x return on a small position. The key is identifying who is likely to generate news, not who is likely to win.",
+      "citations": [
+        {
+          "timestamp_sec": 2496,
+          "quote": "I think there is a chance maybe that he runs. There is a chance that we get a couple news cycles saying hey, he might be the guy — that might pop up from one to five or six. That's five or six times your money. A big gain even if he doesn't wind up being the winner."
+        },
+        {
+          "timestamp_sec": 2763,
+          "quote": "I think he is likely to run and if he gets into the race he's likely to go from two percent to five percent, right? Just one good poll, you know, might get him a bump like that."
+        }
+      ]
+    },
+    {
+      "rule": "One thesis, multiple angles — look for the complementary play",
+      "rationale": "When you form a conviction about who will win, you can often express that same view through a different candidate's market at better odds. Betting the front-runner at 18 percent or betting a conditional dropout at 21 percent against them can be equivalent positions with different risk profiles.",
+      "citations": [
+        {
+          "timestamp_sec": 1927,
+          "quote": "There are oftentimes a bunch of different ways to play a particular choice. If you think JD Vance is the favorite, another thing you can do is what I'm going to do here in the first round and say Marco Rubio no."
+        }
+      ]
+    }
+  ]
+}

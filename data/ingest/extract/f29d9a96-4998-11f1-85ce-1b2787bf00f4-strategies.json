@@ -1,0 +1,13 @@
+{
+  "strategies": [
+    {
+      "name": "Patriots Week 1 Coach Pair",
+      "pattern_type": "pair",
+      "description": "Stu entered YES on Vrabel coaching Patriots Week 1 (around 50%) and simultaneously holds NO on Tomlin coaching Patriots Week 1 (entered at ~12%). He discusses both positions together as complementary views on the same market — the Vrabel YES was exited for ~20pt profit after new reporting introduced tail risk, while the Tomlin NO is held to resolution. Two opposing bets on the same underlying question.",
+      "call_market_hints": [
+        "Mike Vrabel coaches Patriots Week 1 (Stu: exit, taking 20pt profit)",
+        "Mike Tomlin coaches Patriots Week 1 (Stu: NO holding to resolution)"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "principles": [
+    {
+      "rule": "Insider trading on prediction markets has no sweet spot — small gains aren't worth the legal risk, big gains guarantee you'll be caught",
+      "rationale": "KYC rules mean regulated exchanges know exactly who you are. Small insider bets risk your job and freedom for trivial payoff; large bets trigger anomaly detection by both the platforms and the CFTC. Even offshore blockchain markets are transparent — a cottage industry of analysts watches for suspicious timing. The math never works out in the insider's favor.",
+      "citations": [
+        {
+          "timestamp_sec": 1269,
+          "quote": "There's not really a sweet spot here. This isn't me even discouraging you from committing crimes. This is me telling you, hey, the crime just doesn't pay here. Because either you're only going to make a few bucks with a lot of risk, or you can make a lot of money, but the risk is going to be so high, you're almost definitely going to get caught."
+        },
+        {
+          "timestamp_sec": 1043,
+          "quote": "You're making a little bit of extra cash, a little extra scratch for what? You're putting your job on the line. You're putting your freedom on the line. You could go to prison for this."
+        }
+      ]
+    },
+    {
+      "rule": "If you feel like a position might be insider trading, stay away — there are plenty of profitable markets you know nothing about",
+      "rationale": "Stu frames this as the simple decision rule for new participants who may have incidental knowledge about specific events. The solution isn't to exploit that knowledge — it's to move to markets where you have no privileged information and compete on analysis and judgment alone. The show will help you find those.",
+      "citations": [
+        {
+          "timestamp_sec": 842,
+          "quote": "If you feel like you're on the line, if you're asking yourself, gosh, I don't know, this, is this going to be a problem with insider trading? If I'm ever asked about it, just stay away from it. There's plenty of markets out there that you know nothing about. Absolutely nothing about. And you could still wind up being profitable there."
+        }
+      ]
+    },
+    {
+      "rule": "Prediction markets are real, regulated financial markets — treat them with the same legal seriousness as stock trading",
+      "rationale": "Because prediction markets are fun and topical (elections, sports, pop culture), people let their guard down and treat them as play money. Stu insists this is a mistake. The CFTC oversees these exchanges, KYC rules apply, and violations carry the same consequences as securities fraud. The fun subject matter doesn't change the legal framework.",
+      "citations": [
+        {
+          "timestamp_sec": 833,
+          "quote": "I understand that, but just remember, these are actual financial markets. They actually have a regulator. This is something, if you feel like you're on the line, if you're asking yourself, gosh, I don't know, this, is this going to be a problem with insider trading? If I'm ever asked about it, just stay away from it."
+        },
+        {
+          "timestamp_sec": 1406,
+          "quote": "Be freaking careful. These are real markets. They treat them as real things. It's not just a fun play money thing. This is a real financial market."
+        }
+      ]
+    },
+    {
+      "rule": "Media criticism of prediction markets is motivated, not factual — understand the actual rules before accepting the narrative",
+      "rationale": "Stu's view is that press coverage focuses on outlier horror stories from overseas, unregulated markets and misrepresents them as the norm for U.S.-regulated platforms. The same media ignored far larger financial abuses (Pelosi stock trades, COVID fraud). Being a sophisticated participant means knowing what is and isn't legal in regulated U.S. markets and not letting media panic affect your understanding.",
+      "citations": [
+        {
+          "timestamp_sec": 958,
+          "quote": "Where were you when Nancy freaking Pelosi somehow became the single most clairvoyant stock investor in American history? Where were you? No one said anything about it. So spare me your real concern. There's no real concern over this. It's just a sexy story and they've got a new target. And the new target is prediction markets."
+        },
+        {
+          "timestamp_sec": 121,
+          "quote": "The media is doing everything they can to try to paint these markets as some evil, terrible thing for people without giving anybody the facts. And I think it's important to understand what the facts are around this."
+        }
+      ]
+    }
+  ]
+}

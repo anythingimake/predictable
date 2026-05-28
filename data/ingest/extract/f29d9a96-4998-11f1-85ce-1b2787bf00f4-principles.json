@@ -1,0 +1,86 @@
+{
+  "principles": [
+    {
+      "rule": "Predict what won't happen — it's easier than picking the winner",
+      "rationale": "When faced with a list of possible outcomes, it's often easier to eliminate clear non-starters than to identify the winner outright. Ruling out what definitely won't happen narrows the field and gives you a profitable edge with less uncertainty.",
+      "citations": [
+        {
+          "timestamp_sec": 797,
+          "quote": "It's like a constitutional amendment on this program — it's easier to select things and predict things that will not happen rather than predict the ones that will in a list like that. You might be able to take two of them and say, there's no way those are going to be the closest of the year. That's a lot easier to do, frankly, than the opposite way."
+        },
+        {
+          "timestamp_sec": 2516,
+          "quote": "We have a no on Mike Tomlin — again, when you say this over and over again, it's easier to predict what won't happen. And Mike Tomlin is not going to be the coach of the New England Patriots in week one. This would be a completely insane thing."
+        }
+      ]
+    },
+    {
+      "rule": "Stack small gains — boring is the alpha",
+      "rationale": "Small percentage gains on near-certainties compound into meaningful returns over an election season. You don't need home runs; consistently banking 1–4% on high-confidence positions builds the bankroll for larger plays later.",
+      "citations": [
+        {
+          "timestamp_sec": 399,
+          "quote": "We talked about this yesterday as kind of an approach, stacking small gains. You're not always going to get a 40% gain. When you're talking about banking a 4% profit in a couple of days, that return over an entire election season is going to look pretty darn good."
+        },
+        {
+          "timestamp_sec": 441,
+          "quote": "If you can just stack a little bit of a gain here and there and add them up over time, it really does turn into something more. And it builds your bankroll for the larger investments we're going to make when we get closer to the actual election."
+        }
+      ]
+    },
+    {
+      "rule": "Use sure-thing gains to fund longshots (free-roll)",
+      "rationale": "Take profits from high-confidence positions and roll them into a longer-shot market on the same underlying event. Worst case you break even; best case you're up over 100%. This creates asymmetric upside with no new capital at risk.",
+      "citations": [
+        {
+          "timestamp_sec": 548,
+          "quote": "What we did was we took those smaller markets and we took the gains from those markets to basically pay for a free ticket in that 80% market — because worst comes to worst, we break even. If we lose that 80%, if we win, we're up probably over 100%."
+        },
+        {
+          "timestamp_sec": 579,
+          "quote": "Take those sure things, stack the gains from the sure things, roll those into something that's a little bit of a longer shot. If you hit all of them, great. If not, you break even, you can deal with that."
+        }
+      ]
+    },
+    {
+      "rule": "Wait for conviction — don't enter before you're sure",
+      "rationale": "Getting in too early on an uncertain race wastes capital on noise. Wait until the evidence clearly shifts, then move in with size. The Brad Meyer trade showed that patience until the outcome was obvious still yielded a 30%+ return.",
+      "citations": [
+        {
+          "timestamp_sec": 1280,
+          "quote": "We caught about a 30-some percent profit on Bradmeyer Mania. We were able to do that because we saw the change happening. We didn't get involved too early in a race we weren't sure about. When we became sure we went in and we had a conviction and we kept going."
+        }
+      ]
+    },
+    {
+      "rule": "Low-profile elections have more edge — less attention means mispriced markets",
+      "rationale": "Everyone focuses on presidential and high-profile races, which are efficiently priced. Smaller primaries and off-cycle elections attract less money and scrutiny, so markets are more likely to be wrong — and you can find an edge if you're paying attention.",
+      "citations": [
+        {
+          "timestamp_sec": 57,
+          "quote": "In some ways there's more profitable opportunities than some of the bigger ones because everyone's focusing on the big boys. Everyone's focusing on presidential election. It's hard to find an edge in an election like that. Some other elections you can find an edge if you're watching closely."
+        }
+      ]
+    },
+    {
+      "rule": "A 96% probability is not a certainty — size positions accordingly",
+      "rationale": "Small, low-polling races have thin markets and unreliable data. A 96% favorite in such a race can still lose. Don't blindly stack high-confidence purchases in every obscure primary; reserve larger positions for candidates and races where you have real information.",
+      "citations": [
+        {
+          "timestamp_sec": 899,
+          "quote": "Saying something is a 95 percent chance of happening can be a little shaky — when you're talking about some small congressional primary in a district that's going to go the opposite way anyway, there's not a lot of polling, not a lot of interest, not a lot of fact to go into these things."
+        }
+      ]
+    },
+    {
+      "rule": "Course-correct when new information changes your view — don't be afraid to exit",
+      "rationale": "Prediction markets reward updating. If a new development materially increases risk on an open position, take your profit and get out — even if the original thesis still feels mostly correct. Locking in 20 points of gain and removing tail risk is better than riding it to an uncertain resolution.",
+      "citations": [
+        {
+          "timestamp_sec": 2467,
+          "quote": "I'm now out of that market — sold out. I'd still be surprised if they fired him, but honestly I don't think the risk is there anymore. The reporting suggests Diana Rossini may go scorched earth, and if she does, who knows what else is hidden. Made about 20 percentage points already. Pulling money out."
+        }
+      ]
+    }
+  ]
+}

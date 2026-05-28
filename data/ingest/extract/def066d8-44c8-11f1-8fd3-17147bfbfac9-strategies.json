@@ -1,0 +1,13 @@
+{
+  "strategies": [
+    {
+      "name": "Danny Longshots Redistricting Pair",
+      "pattern_type": "pair",
+      "description": "Stu groups Indiana and Illinois together as twin long-shot redistricting flyers under the same thesis: if Republicans push redistricting aggressively enough in red/purple states, heavily blue states like Illinois may retaliate and redistrict back, and fence-sitting states like Indiana may be pressured to join in. Both are at 7% — 13-14x payout — and Stu explicitly names them as a duo, saying 'those are two if you want to get playful, I would go there.'",
+      "call_market_hints": [
+        "Indiana redistricts before midterms (long-shot flyer)",
+        "Illinois redistricts before midterms (long-shot flyer)"
+      ]
+    }
+  ]
+}

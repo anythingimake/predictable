@@ -1,0 +1,110 @@
+{
+  "principles": [
+    {
+      "rule": "Think APY, not total return",
+      "rationale": "A multi-year market that pays 21% looks attractive until you annualize it to ~7% APY. Conversely, a 3% gain that closes in three days is ~365% APY. Stu frames APY as the universal unit of comparison across all prediction-market investments, regardless of timeframe.",
+      "citations": [
+        {
+          "timestamp_sec": 2524,
+          "quote": "Because in reality, what you're saying is an APY, an annual percentage yield of 7% over three years, right? You have to look at, and I will say this a zillion times, APY, you gotta think APY every single time."
+        },
+        {
+          "timestamp_sec": 2603,
+          "quote": "If you can pocket 3% in three days, that's about a 365% APY. That APY calculation has to be part of your day-to-day thinking on this. It's not just how much you will make, it's how much you will make and how much time."
+        },
+        {
+          "timestamp_sec": 2640,
+          "quote": "Will Jesus come back by 2030? You get 10%. It's 10% free money spread out over five years. That's not that great. You have to think about that timeframe."
+        }
+      ]
+    },
+    {
+      "rule": "Value = the gap between your probability estimate and the market price",
+      "rationale": "Stu defines a good investment not as 'I think this will happen' but as 'I think the true probability is meaningfully higher or lower than what the market is pricing.' He illustrates with the 2016 Trump trade: market said 15–20%, he estimated 40%, so he saw value regardless of whether Trump ultimately won.",
+      "citations": [
+        {
+          "timestamp_sec": 2143,
+          "quote": "The way I use value in prediction markets is the gap between what I think the price should be and what the price is. If I think it's a 50-50 shot of something happening, I expect to lose that half the time. But if I'm buying it at 10% and looking at a potential of nine or ten times my money, I'm fine with a 50-50 chance of winning nine times my money."
+        },
+        {
+          "timestamp_sec": 2200,
+          "quote": "If I'm looking at this and it says there's a 30% chance, but I only think there's a 10% chance, maybe I should be no on that market. Maybe there's some room for me to gain some currency."
+        }
+      ]
+    },
+    {
+      "rule": "Price in uncertainty — every market has someone with more information than you",
+      "rationale": "Stu argues that lamenting insider trading or unexpected news misses the point: uncertainty is baked into every position you take. You should enter markets already knowing that unseen information, insider moves, or surprise events exist. If you can't stomach that, the price you paid should have reflected it.",
+      "citations": [
+        {
+          "timestamp_sec": 1619,
+          "quote": "Every market you enter has someone in it that has more knowledge than you. Don't be so cocky about yourself. I am never that cocky. I know that there are crazy things that can happen and you have to price that in."
+        },
+        {
+          "timestamp_sec": 1679,
+          "quote": "You should price that in when you're thinking about getting into a market. You have to enter this with the knowledge of these things — the unforeseen can occur, that's how you're pricing it in."
+        },
+        {
+          "timestamp_sec": 1512,
+          "quote": "When you place an investment, when you gather a position on something, you have to assume you might not have all the information. Part of your investment is the uncertainty."
+        }
+      ]
+    },
+    {
+      "rule": "Stack small short-term gains to build the bankroll",
+      "rationale": "Rather than swinging for large multi-year payouts, Stu's core strategy is to hunt near-certainty markets that close quickly, collect a few percentage points repeatedly, and let compounding do the work. 'Foundational' reliable plays keep the bankroll growing even when longshots miss.",
+      "citations": [
+        {
+          "timestamp_sec": 2688,
+          "quote": "That's why we look for these shorter term ones that we can kind of hit, take a few percent here or there, and then build the gains over time. We're stacking, we're stacking, we're stacking. That's what we wanna do here."
+        },
+        {
+          "timestamp_sec": 2703,
+          "quote": "Even when we miss, you'll have a bunch of foundational stuff that's always helping you move in the right direction."
+        }
+      ]
+    },
+    {
+      "rule": "In long-horizon presidential markets, alpha is in the long shots, not the frontrunner",
+      "rationale": "Fading the frontrunner in a 3-year market yields only modest APY for full capital risk. Real upside comes from low-probability candidates who could surge if they announce or build buzz — because a small probability at low cost multiplies dramatically on good news.",
+      "citations": [
+        {
+          "timestamp_sec": 2738,
+          "quote": "The only way you can really get there as far as a really good investment is when you're looking for real long shots. Like a Donald Trump Jr. I mentioned yesterday — a guy who might very well pop up if he announces or starts making whispers of announcing, there could be some money there potentially."
+        },
+        {
+          "timestamp_sec": 2713,
+          "quote": "It's actually not all that wise to fade Marco Rubio hard. Your upside is only 7% a year — fading a three-year investment for 21% over three years, I mean, it's just not exciting enough, honestly, to be dumping a bunch of money in."
+        }
+      ]
+    },
+    {
+      "rule": "Hedge real-world costs with a corresponding prediction market long",
+      "rationale": "Stu's gas-price hedge exemplifies a broader principle: when you face a real-world expense tied to a measurable outcome, buy the 'yes' on that outcome in a prediction market. If the bad outcome (high gas) happens, the market pays you and offsets the cost; if it doesn't happen, you were fine anyway. The hedge neutralizes the pain of the bad scenario.",
+      "citations": [
+        {
+          "timestamp_sec": 1959,
+          "quote": "Basically what I do is I will invest in a prediction market. Will gas get over $5, $6, $7 on average? If it goes up to these really high levels and it ticks off that prediction market, you're gonna get paid on your investment. The prediction market's gonna send you a bunch of cash and that cash will make up the difference for the higher priced gas."
+        },
+        {
+          "timestamp_sec": 2022,
+          "quote": "There are ways to do this with funds — DBO is one of the traditional things that just matches the oil price. If you invest money in that, the oil prices go up, your money goes up and you have extra money to pay for the gas. You're trying to keep yourself around the same level."
+        }
+      ]
+    },
+    {
+      "rule": "Prediction markets surface real information faster than polls or pundits",
+      "rationale": "Stu repeatedly cites prediction markets as superior information aggregators — they reprice immediately on observable events (a debate performance, breaking news) before polls are fielded or pundits weigh in. This makes them useful not just for profit but as a faster signal on what's actually happening.",
+      "citations": [
+        {
+          "timestamp_sec": 1388,
+          "quote": "Before there was a poll, before there was all the punditry, prediction markets were able to quantify what we all saw with our own eyes in that debate — Spencer Pratt did well and the leading candidate sank like 40 points. Part of the job of prediction markets is to bring information to you and make the world a little bit easier to see."
+        },
+        {
+          "timestamp_sec": 194,
+          "quote": "Prediction markets help us get to the truth faster. And that's important. The media at this point I think is doing the opposite quite often."
+        }
+      ]
+    }
+  ]
+}

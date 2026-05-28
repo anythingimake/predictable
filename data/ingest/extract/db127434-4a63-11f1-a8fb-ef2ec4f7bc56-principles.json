@@ -1,0 +1,58 @@
+{
+  "principles": [
+    {
+      "rule": "It's easier to predict what won't happen than what will",
+      "rationale": "In a crowded field you may not know who will win, but you can often identify who clearly won't. Betting NO on overpriced losers captures the same edge with less uncertainty than picking the winner.",
+      "citations": [
+        {
+          "timestamp_sec": 1019,
+          "quote": "It is easier to predict what won't happen than what will happen."
+        },
+        {
+          "timestamp_sec": 2153,
+          "quote": "Again, it's easier to say no — what's not going to happen — than what is going to happen."
+        }
+      ]
+    },
+    {
+      "rule": "After a scandal, voters flee to the safest, most boring option",
+      "rationale": "When a high-profile candidate exits under scandal, their former supporters don't automatically shift to the next exciting name — they want the exact opposite. The dullest, lowest-drama candidate on the ballot becomes the beneficiary.",
+      "citations": [
+        {
+          "timestamp_sec": 1130,
+          "quote": "We have this scandal thing that didn't work out. Let's go somewhere safe. That's why we have taken a position on Javier Becerra. Becerra is one of these guys who's kind of seen as a very boring, dull government official, and frankly coming out of Swalwell and Katie Porter, if you're a California Democrat, that sounds delicious to you right now — somebody who's going to make no news."
+        }
+      ]
+    },
+    {
+      "rule": "Predict the prediction before you look — use the gap as a buy/sell signal",
+      "rationale": "Before pulling up a market, form your own probability estimate from what you know about the candidate or event. If the market price diverges significantly from your estimate, that divergence is a potential value opportunity — either a buy (market too low) or a sell (market too high).",
+      "citations": [
+        {
+          "timestamp_sec": 415,
+          "quote": "Basically, what you do is you hear about a market before you've looked at it and in your mind you sort of predict what that market might be. If you think there's an 80% chance Katie Porter is gonna win and you go on the market and it says 20%, well, that's a way of identifying value."
+        }
+      ]
+    },
+    {
+      "rule": "Always read the market rules before entering — resolution language can surprise you",
+      "rationale": "The exact wording of resolution criteria often has broader or narrower scope than the plain-English headline implies. A market that seems safe to bet NO can resolve YES on a technicality you missed (e.g., a public announcement without a formal signing counts as resolution).",
+      "citations": [
+        {
+          "timestamp_sec": 2524,
+          "quote": "You need to make sure when you're in a prediction market you take the extra few seconds to actually read what you're investing in. All they have to do is announce they've agreed, and you've lost if you're a no on that market. So be careful and always know what are the rules."
+        }
+      ]
+    },
+    {
+      "rule": "On volatile geopolitical markets, fade the prevailing narrative",
+      "rationale": "Diplomatic announcements — especially from a negotiation-by-headline administration — frequently don't stick. When a peace deal or ceasefire appears imminent, the market moves toward YES, but these deals break down constantly. Going the other way from whatever seems to be happening has empirically been the better side.",
+      "citations": [
+        {
+          "timestamp_sec": 2451,
+          "quote": "My current stance on all these Iran markets — Strait of Hormuz — is kind of: whatever seems to be happening, go the other way. It feels like the right thing to do is probably just go the opposite, because these things break down so often."
+        }
+      ]
+    }
+  ]
+}

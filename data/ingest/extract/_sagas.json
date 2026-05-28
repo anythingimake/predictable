@@ -1,19 +1,70 @@
 {
   "sagas": [
     {
-      "name": "Democrats win the House in 2026 midterms (updated post-SCOTUS VRA ruling)",
-      "market_hint": "Democrats win the House in 2026 midterms (updated post-SCOTUS VRA ruling)",
+      "name": "Democrats win the House in 2026 midterms",
+      "market_hint": "Democrats win the House in 2026 midterms",
+      "episode_ids": [
+        "3e368e74-4d66-11f1-b9fb-7b0a4ee53b8c",
+        "78addc38-4410-11f1-b266-7b41bdbbde27",
+        "8a454396-48ca-11f1-95dc-5fafef7af0b8",
+        "cbfa6092-4347-11f1-842f-2bc8d66d7ed7"
+      ]
+    },
+    {
+      "name": "Eric Swalwell wins CA Senate jungle primary (historical, resolved)",
+      "market_hint": "Eric Swalwell wins CA Senate jungle primary (historical, resolved)",
+      "episode_ids": [
+        "78addc38-4410-11f1-b266-7b41bdbbde27",
+        "def066d8-44c8-11f1-8fd3-17147bfbfac9"
+      ]
+    },
+    {
+      "name": "James Talarico wins TX Senate 2026 (Stu is bearish/Republican-favored)",
+      "market_hint": "James Talarico wins TX Senate 2026 (Stu is bearish/Republican-favored)",
       "episode_ids": [
         "78addc38-4410-11f1-b266-7b41bdbbde27",
         "cbfa6092-4347-11f1-842f-2bc8d66d7ed7"
       ]
     },
     {
-      "name": "James Talarico wins TX Senate 2026 (Stu: bearish, R wins)",
-      "market_hint": "James Talarico wins TX Senate 2026 (Stu: bearish, R wins)",
+      "name": "Julia Letlow wins Louisiana GOP Senate primary outright (over 50%, no runoff) 2026 (Stu: lost, didn't reach 50%)",
+      "market_hint": "Julia Letlow wins Louisiana GOP Senate primary outright (over 50%, no runoff) 2026 (Stu: lost, didn't reach 50%)",
+      "episode_ids": [
+        "472c5fb8-4fe6-11f1-95d0-dfd98a405ccc",
+        "79498646-5307-11f1-b09b-bfd8c2086890"
+      ]
+    },
+    {
+      "name": "Mandalorian & Grogu Rotten Tomatoes score under 65%",
+      "market_hint": "Mandalorian & Grogu Rotten Tomatoes score under 65%",
+      "episode_ids": [
+        "261406be-4802-11f1-9cc7-878cc4635768",
+        "79498646-5307-11f1-b09b-bfd8c2086890",
+        "d97ddde8-5a1c-11f1-b984-470072903e12"
+      ]
+    },
+    {
+      "name": "Mike Tomlin coaches Patriots Week 1 (Stu: NO holding to resolution)",
+      "market_hint": "Mike Tomlin coaches Patriots Week 1 (Stu: NO holding to resolution)",
       "episode_ids": [
         "78addc38-4410-11f1-b266-7b41bdbbde27",
-        "cbfa6092-4347-11f1-842f-2bc8d66d7ed7"
+        "f29d9a96-4998-11f1-85ce-1b2787bf00f4"
+      ]
+    },
+    {
+      "name": "Mike Vrabel coaches Patriots Week 1",
+      "market_hint": "Mike Vrabel coaches Patriots Week 1",
+      "episode_ids": [
+        "78addc38-4410-11f1-b266-7b41bdbbde27",
+        "f29d9a96-4998-11f1-85ce-1b2787bf00f4"
+      ]
+    },
+    {
+      "name": "Virginia redistricts before midterms (Stu: NO, sold at 94 for 114% profit)",
+      "market_hint": "Virginia redistricts before midterms (Stu: NO, sold at 94 for 114% profit)",
+      "episode_ids": [
+        "3e368e74-4d66-11f1-b9fb-7b0a4ee53b8c",
+        "def066d8-44c8-11f1-8fd3-17147bfbfac9"
       ]
     }
   ]

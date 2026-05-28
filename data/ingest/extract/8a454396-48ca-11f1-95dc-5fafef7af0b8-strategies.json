@@ -1,0 +1,14 @@
+{
+  "strategies": [
+    {
+      "name": "US/Iran Peace Deal NO Basket",
+      "pattern_type": "basket",
+      "description": "Stu takes the NO side on all three US/Iran permanent peace deal deadlines (May 31, June 30, December 31) as a single thesis: he believes the market is pricing a 5-37% probability when the true probability is far lower. He explicitly says 'I'd be no on pretty much all of these markets' after walking through each deadline in sequence.",
+      "call_market_hints": [
+        "US/Iran permanent peace deal by May 31 (Stu: NO)",
+        "US/Iran permanent peace deal by June 30 (Stu: NO)",
+        "US/Iran permanent peace deal by December 31 (Stu: NO)"
+      ]
+    }
+  ]
+}

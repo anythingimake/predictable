@@ -1,0 +1,64 @@
+{
+  "principles": [
+    {
+      "rule": "Hedge your life — use prediction markets as personal insurance",
+      "rationale": "Stu argues that prediction markets let ordinary people hedge real-world financial exposure — gas prices, crypto holdings, inflation shocks — the same way professionals use futures, but more directly and accessibly. A small position in a high-upside 'yes' contract can offset the cost of a bad outcome even if you never wanted to trade for profit.",
+      "citations": [
+        {
+          "timestamp_sec": 704,
+          "quote": "Doing things like that will make your financial life better. They're not always easy to find. I'm a big believer in hedging your life when you can because you know weird things happen, black swans swim by, and when you have those situations going on it's nice to know that you don't have to worry about it that much."
+        },
+        {
+          "timestamp_sec": 1015,
+          "quote": "If you're worried about gas prices going up you can hedge your life here. You can go into these markets right now."
+        },
+        {
+          "timestamp_sec": 1088,
+          "quote": "If you go in there and say will it hit seven dollars a gallon — yes — you can hedge your risk on that personally, getting an insurance contract essentially at 12 cents on the dollar. If it hits seven dollars you're talking about eight to ten times your money. So that can offset all of your gas prices."
+        }
+      ]
+    },
+    {
+      "rule": "Prediction markets beat polls and pundits — but only when mispriced",
+      "rationale": "Stu frames prediction markets as the best available signal on political and economic outcomes, but emphasizes that their value to a trader comes specifically from finding moments when the crowd is wrong. If markets priced everything perfectly there would be no profit; the game is identifying mispricings.",
+      "citations": [
+        {
+          "timestamp_sec": 1801,
+          "quote": "The results of their predictions are often much more accurate than anywhere else — better than polling, better than prognosticators, certainly better than pundits. But they don't hit everything, and that's good. What we're looking for are times when we think that they are mispriced."
+        },
+        {
+          "timestamp_sec": 1843,
+          "quote": "And if they're all perfect, then you're not going to make money. What we're looking for are times when we think that they are mispriced — and this is an example of one that was."
+        }
+      ]
+    },
+    {
+      "rule": "Longshots are worth a flyer when the multiple is large enough",
+      "rationale": "Stu explicitly frames low-probability markets (7%, 12%, 16%) as viable small positions when the payout multiple justifies the risk — 13-14x on a 7% contract is structurally attractive even if you expect to lose. He consistently advocates sizing these as 'a few dollars' or 'playful' rather than serious bankroll.",
+      "citations": [
+        {
+          "timestamp_sec": 2458,
+          "quote": "You're at seven percent. So you're talking for every seven cents you invest you get a 93 cent return. Big time stuff, right? You're looking at 13-14 times your money. That's a big time return. It's a long shot, you'll probably lose it. But is there value there? I think there's a little bit of value there."
+        },
+        {
+          "timestamp_sec": 2380,
+          "quote": "You are basically investing 32 cents to win 68 cents. Okay, so basically you're talking about 200 type profits here. It's more of a long shot, but that's a really fun one if you hit it. Going no on Virginia is something I might put a few dollars into."
+        }
+      ]
+    },
+    {
+      "rule": "Redistricting overreach backfires — don't chase maximum seats",
+      "rationale": "When drawing new maps, concentrating the opposing party's voters into fewer districts necessarily dilutes your own safe seats, creating more vulnerable ones. Stu frames this as a generalizable principle: aggressive gerrymanders tend to overcorrect and produce net losses in a bad environment.",
+      "citations": [
+        {
+          "timestamp_sec": 2135,
+          "quote": "This is the problem when you redistrict — you weaken otherwise strong areas. That can be a problem. You could lose seats doing this as well. So they may not go all the way because they're worried about that, and I think rightly so."
+        },
+        {
+          "timestamp_sec": 2152,
+          "quote": "I don't expect it to be a good election for Republicans. If you try to bend these districts too much to gain extra ground, you might wind up losing ground."
+        }
+      ]
+    }
+  ]
+}

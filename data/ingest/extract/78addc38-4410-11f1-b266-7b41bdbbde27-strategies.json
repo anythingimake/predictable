@@ -1,0 +1,13 @@
+{
+  "strategies": [
+    {
+      "name": "Patriots Coaching Pair",
+      "pattern_type": "pair",
+      "description": "On the same Kalshi 'who coaches Week 1' contract, Stu plays yes on Vrabel (underpriced at 72%, he estimates true probability at 85-90%) and no on Tomlin (overpriced at 10%, Stu says true probability is zero). Together they cover the contract from both ends, collecting the near-certain no on Tomlin while holding a positive-expected-value yes on Vrabel.",
+      "call_market_hints": [
+        "Mike Vrabel coaches Patriots Week 1",
+        "Mike Tomlin coaches Patriots Week 1"
+      ]
+    }
+  ]
+}

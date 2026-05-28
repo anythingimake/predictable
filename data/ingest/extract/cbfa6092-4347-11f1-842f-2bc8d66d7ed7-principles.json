@@ -1,0 +1,74 @@
+{
+  "principles": [
+    {
+      "rule": "Target reliable 20-50% gains — don't hunt for 100x",
+      "rationale": "Stu's strategy is to find high-confidence markets where the price still leaves 20-50% upside rather than searching for longshots. He frames this as compounding reliable wins — 'things that are really reliable that can bring extra money to you and do a heck of a lot better than you're doing in your bank account.' Even a 70% market paying 43% is still worth taking.",
+      "citations": [
+        {
+          "timestamp_sec": 1287,
+          "quote": "I am not the type of person who's out there searching for a hundred times my money. Generally speaking what I'm looking for is those 30, those 40, those 20 percent type gains — 50 percent gains maybe more — trying to lock you in for things that are really reliable."
+        },
+        {
+          "timestamp_sec": 1275,
+          "quote": "We thought 70 percent was still a bargain. At 70 percent you're making 43 percent on your money give or take in a few weeks. That's the type of stuff we look for here."
+        }
+      ]
+    },
+    {
+      "rule": "Party in power loses midterms — use it as your default baseline",
+      "rationale": "Stu treats the historical midterm pattern as the starting null hypothesis before any market analysis. If nothing unusual happens, the president's party loses seats and likely the House. This baseline anchors which side has the burden of proof when evaluating individual markets.",
+      "citations": [
+        {
+          "timestamp_sec": 320,
+          "quote": "History tells us over and over and over and over again that the party in power in a midterm election is probably gonna lose. They're probably gonna lose at least seats and probably power. That's usually what happens."
+        },
+        {
+          "timestamp_sec": 338,
+          "quote": "If nothing changes, if everything is absolutely normal — no big catastrophes, no big huge wins — we would expect President Trump's party, the Republican Party, to lose seats and probably lose the House."
+        }
+      ]
+    },
+    {
+      "rule": "Economy and inflation stick; daily controversies fade — price accordingly",
+      "rationale": "Voters remember tangible economic pain long after a news cycle controversy fades. Stu uses this to discount market moves driven by political drama while weighting persistent economic conditions heavily. You can't spin your way out of inflation — the markets eventually price the underlying reality.",
+      "citations": [
+        {
+          "timestamp_sec": 297,
+          "quote": "What tends to stick around are memories of inflation, the high gas prices, ongoing war. Those types of things are dangerous to any candidate in any party in power. Controversies pop up and they go away and they pop up and they go away."
+        },
+        {
+          "timestamp_sec": 432,
+          "quote": "You can't spin your way out of the inflation problem. You can't say actually Bidenomics is working when everyone in their own experience knows it's not."
+        }
+      ]
+    },
+    {
+      "rule": "Don't buy a market that spiked on a single outlier poll",
+      "rationale": "A lone poll that moves a market is often noise — it creates a buying opportunity for the other side, not confirmation of a trend. Stu explicitly passed on a Harris-favored Iowa spike before the 2024 election because it rested on one poll that turned out to be a sham. Wait for corroborating evidence before chasing a spike.",
+      "citations": [
+        {
+          "timestamp_sec": 1980,
+          "quote": "I never believed that was a great opportunity to buy on prediction markets because of the one poll, which went up being a total sham. There was not a close race at all when it came down to it."
+        },
+        {
+          "timestamp_sec": 1994,
+          "quote": "We'll get a poll that will shake the markets and we'll say: I don't believe that poll, it's going to come back — and we'll try to show you places to jump in."
+        }
+      ]
+    },
+    {
+      "rule": "Hedge your politics — be paid for the pain of a bad outcome",
+      "rationale": "Conservative investors can hold contracts on Democratic wins not because they want those outcomes but to profit from what they believe is likely. Stu frames this as rational hedging: if the painful outcome happens, you're compensated financially; if Republicans defy the odds, losing the contract is a relief you can celebrate.",
+      "citations": [
+        {
+          "timestamp_sec": 1418,
+          "quote": "I am looking for value here and I do feel like I want to be paid for pain. If I'm going to be tortured with Democrats winning the House, I want to be paid for that pain."
+        },
+        {
+          "timestamp_sec": 1454,
+          "quote": "If you happen to buy some contracts in a Democrat House victory and somehow Republicans win, you probably won't be that miserable about it. You'll probably be like: fine, I'm glad I lost that money."
+        }
+      ]
+    }
+  ]
+}

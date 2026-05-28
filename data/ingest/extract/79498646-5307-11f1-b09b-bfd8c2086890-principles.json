@@ -1,0 +1,70 @@
+{
+  "principles": [
+    {
+      "rule": "Expect long-shots to lose — that's the math",
+      "rationale": "When you buy a 10-to-1 or 15-to-1 shot, losing is the statistically expected outcome. The edge comes from catching enough of them over time that the occasional winner more than covers the losses. Stu says this discomfort took him a long time to internalize, and he explicitly normalizes the loss to his audience after the Louisiana 50% trade failed.",
+      "citations": [
+        {
+          "timestamp_sec": 364,
+          "quote": "That's what you expect to happen when you make a 10 or 15 to 1 long shot. You expect to lose that position and that's hard for people to deal with frankly. It was hard for me to deal with for a really long time until I started catching enough value over a long period of time where I became comfortable with small risks for big-time gains."
+        }
+      ]
+    },
+    {
+      "rule": "Trump's stated will in a primary is underpriced — bet with him",
+      "rationale": "When Trump publicly demands a specific outcome in a Republican primary, voters follow. Stu frames this as a repeatable thesis he'll keep applying until it stops working, backed by both Louisiana (Letlow's 11-12 point surge) and his conviction on Gallrein in Kentucky.",
+      "citations": [
+        {
+          "timestamp_sec": 249,
+          "quote": "Our thesis was basically Donald Trump has a certain power especially over primaries — when he says he wants something to happen, typically it does. We expected to see massive movement on this particular race."
+        },
+        {
+          "timestamp_sec": 1558,
+          "quote": "Sort of the central thesis of these primaries and I'm gonna kind of keep sticking this way until I see it defeated: when Donald Trump really wants something, he usually gets it. That's basically where I am."
+        }
+      ]
+    },
+    {
+      "rule": "Buy value early — late entry eats your edge",
+      "rationale": "Stu explicitly regrets missing Gallrein in the 20s and entering in the 40s instead, framing it as a lesson about timing. A position that was 'very very good value' in the 20s and 40s becomes only 'slight value' once the market has repriced to 63.",
+      "citations": [
+        {
+          "timestamp_sec": 1454,
+          "quote": "I was probably a little bit late on that honestly. I probably started purchasing some Gallrein shares when he was more in the 40s rather than the 20s. I would have rather had it in the 20s, but I got it at more in the 40s."
+        },
+        {
+          "timestamp_sec": 1515,
+          "quote": "Back in the 20s and 40s I think it was very very good value. Now I think there might be slight value here — not enough that I'm willing to dump a bunch of money in at 63 percent."
+        }
+      ]
+    },
+    {
+      "rule": "A directionally correct loss is still useful information — mine it for the next trade",
+      "rationale": "Stu distinguishes between being wrong on the thesis versus being wrong on the specific contract threshold. Louisiana validated his Trump-primary-power thesis even though the 50% market lost, and he uses that confirmed thesis to size up his Kentucky position.",
+      "citations": [
+        {
+          "timestamp_sec": 148,
+          "quote": "There's not really a moral victory, but there is I think a good loss — a loss that brings you new information, a loss that can help you understand what might be coming right around the corner."
+        },
+        {
+          "timestamp_sec": 1568,
+          "quote": "We were I think totally right directionally in Louisiana — didn't quite get to that 50% barrier. But having Letlow separately just to win, I think we're in a really good position and we'll cover all of the small losses on the 50% market quite easily."
+        }
+      ]
+    },
+    {
+      "rule": "Stay out of markets outside your lane — don't let sentiment override lack of edge",
+      "rationale": "Stu explicitly declined to take a position on the Rousey-Carano fight because MMA is not his domain, even though he had a personal rooting interest. He treats domain ignorance as a hard stop, and when he does make a small adjacent play (Mandalorian RT score) he keeps it tiny and acknowledges it's essentially a coin flip.",
+      "citations": [
+        {
+          "timestamp_sec": 2496,
+          "quote": "The decision of striker versus grappler — that's why I stayed away from any position on the actual fight."
+        },
+        {
+          "timestamp_sec": 2551,
+          "quote": "Since MMA isn't my lane, I'm taking the Mandalorian under 65 percent on Rotten Tomatoes instead, mostly just to honor Gina Carano. It's a 50-50 market so I don't know if I'm going to win on this one or not. Again, it was a very small position."
+        }
+      ]
+    }
+  ]
+}
