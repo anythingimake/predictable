@@ -60,7 +60,7 @@ export default function App() {
         <div className="max-w-6xl mx-auto px-4 h-12 md:h-16 flex items-center justify-between gap-6">
           <Wordmark />
           <nav
-            className="hidden md:flex items-stretch text-sm overflow-x-auto no-scrollbar h-10 rounded-md"
+            className="hidden lg:flex items-stretch text-sm overflow-x-auto no-scrollbar h-10 rounded-md"
             style={{
               border: "1px solid var(--color-border)",
               background: "rgba(13, 17, 38, 0.4)",
@@ -101,7 +101,7 @@ export default function App() {
         </div>
       </header>
 
-      <main className="flex-1 max-w-6xl w-full mx-auto px-4 py-6 pb-24 md:pb-6">
+      <main className="flex-1 max-w-6xl w-full mx-auto px-4 py-6 pb-24 lg:pb-6">
         <Routes>
           <Route path="/" element={<Scoreboard />} />
           <Route path="/calls" element={<Calls />} />

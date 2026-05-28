@@ -131,18 +131,28 @@ export function CallDetail() {
             <Stat
               label="Stu Exit"
               value={stuExitCents != null ? formatCents(stuExitCents) : "—"}
-              sublabel={stuExitCents != null ? "sold here" : "still holding"}
+              sublabel={
+                stuExitCents != null
+                  ? "sold here"
+                  : data.status === "open"
+                  ? "still holding"
+                  : "held to settlement"
+              }
             />
             <Stat
               label="Current"
               value={currentStuCents != null ? formatCents(currentStuCents) : "—"}
               sublabel={
-                currentReturn != null
-                  ? `${currentReturn >= 0 ? "+" : ""}${currentReturn.toFixed(1)}% live`
+                // "live" only makes sense for an open position; a settled
+                // market's "current" is just its terminal 0/100.
+                data.status === "resolved"
+                  ? "settled"
+                  : currentReturn != null
+                  ? `${currentReturn >= 0 ? "+" : ""}${currentReturn.toFixed(1)}% ${data.status === "open" ? "live" : "vs entry"}`
                   : undefined
               }
               accent={
-                currentReturn != null
+                data.status !== "resolved" && currentReturn != null
                   ? currentReturn > 0
                     ? "var(--color-tier-play)"
                     : currentReturn < 0

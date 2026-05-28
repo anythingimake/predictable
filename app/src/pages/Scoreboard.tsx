@@ -93,11 +93,14 @@ export function Scoreboard() {
         />
       </section>
 
-      {data.by_tier.length > 0 && (
+      {data.by_tier.some((t) => t.is_actionable) && (
         <section>
-          <h2 className="text-base md:text-lg font-medium mb-3">By conviction tier</h2>
+          <h2 className="text-base md:text-lg font-medium mb-1">By conviction tier</h2>
+          <p className="text-xs text-[var(--color-text-muted)] mb-3">
+            Actionable positions only. Watch / opinion / pass are commentary, not bets — filter for them on the Calls page.
+          </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-            {data.by_tier.map((t) => (
+            {data.by_tier.filter((t) => t.is_actionable).map((t) => (
               <button
                 key={t.conviction}
                 onClick={() => goToCalls({ conviction: [t.conviction] })}

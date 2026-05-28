@@ -62,7 +62,7 @@ export function MarketDetail() {
           )}
           {isResolved && (
             <span className="text-[var(--color-tier-play)] font-semibold uppercase">
-              Resolved {data.resolution ?? ""}
+              {data.resolution === "yes" || data.resolution === "no" ? `Settled ${data.resolution}` : "Settled"}
             </span>
           )}
         </div>

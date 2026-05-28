@@ -62,7 +62,11 @@ export function Markets() {
                 {m.category && <span>{m.category}</span>}
                 {m.resolution_date && <span>resolves {m.resolution_date}</span>}
                 {m.current_price != null && <span>@ {formatCents(stuSideCents("yes", m.current_price))}</span>}
-                {m.resolved === 1 && <span className="text-[var(--color-tier-play)]">RESOLVED {m.resolution}</span>}
+                {m.resolved === 1 && (
+                  <span className="text-[var(--color-tier-play)] uppercase">
+                    {m.resolution === "yes" || m.resolution === "no" ? `Settled ${m.resolution}` : "Settled"}
+                  </span>
+                )}
               </div>
             </Link>
           ))}

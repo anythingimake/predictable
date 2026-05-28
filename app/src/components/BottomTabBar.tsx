@@ -104,7 +104,7 @@ export function BottomTabBar() {
   return (
     <>
       <nav
-        className="md:hidden fixed bottom-0 inset-x-0 z-20 backdrop-blur-md"
+        className="lg:hidden fixed bottom-0 inset-x-0 z-20 backdrop-blur-md"
         style={{
           background: "rgba(7, 9, 26, 0.92)",
           borderTop: "1px solid var(--color-border)",
@@ -152,7 +152,7 @@ export function BottomTabBar() {
       </nav>
 
       {drawerOpen && (
-        <div className="md:hidden fixed inset-0 z-30 flex items-end" role="dialog" aria-modal="true" aria-label="More navigation">
+        <div className="lg:hidden fixed inset-0 z-30 flex items-end" role="dialog" aria-modal="true" aria-label="More navigation">
           <button
             type="button"
             aria-label="Close menu"
