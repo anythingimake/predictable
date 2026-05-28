@@ -57,7 +57,10 @@ app.use((err: Error, _req: express.Request, res: express.Response, _next: expres
   res.status(500).json({ error: "internal", message: err.message });
 });
 
-const port = Number(process.env.PORT ?? 3001);
+// Default to 3801 (the nginx upstream). Port 3001 on the prod box is
+// permanently held by another tenant's docker-proxy, so defaulting there
+// would crash-loop on EADDRINUSE if pm2 ever resurrected without PORT set.
+const port = Number(process.env.PORT ?? 3801);
 app.listen(port, () => {
   console.log(`predictable-api listening on http://localhost:${port}`);
 });
