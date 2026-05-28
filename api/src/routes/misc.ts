@@ -84,8 +84,17 @@ router.get("/sagas/:id", (req, res) => {
 // looking dead in the stretch before the next election.
 router.get("/calendar", (_req, res) => {
   const rows = db().prepare(`
-    SELECT m.id AS market_id, m.question, m.resolution_date, m.source,
-           m.resolved, m.resolution,
+    SELECT m.id AS market_id, m.question, m.source, m.resolved,
+           -- Display/sort by the real event date when research supplied one
+           -- (fixes Kalshi's bogus far-future MOV close dates) else stored date.
+           COALESCE(m.effective_event_date, m.resolution_date) AS resolution_date,
+           -- Outcome to show: a real exchange settlement, else a cited researched
+           -- outcome, else a terminal-price inference for past-dated markets.
+           COALESCE(m.resolution, m.effective_resolution,
+             CASE WHEN m.resolution_date < date('now') AND m.current_price >= 99 THEN 'yes'
+                  WHEN m.resolution_date < date('now') AND m.current_price <= 1  THEN 'no'
+                  ELSE NULL END) AS resolution,
+           m.effective_confidence, m.effective_source,
            (SELECT COUNT(*) FROM calls WHERE market_id = m.id AND status = 'open') AS open_call_count,
            (SELECT COUNT(*) FROM calls WHERE market_id = m.id) AS call_count,
            -- Representative call so the calendar can deep-link: a single-call
@@ -93,14 +102,22 @@ router.get("/calendar", (_req, res) => {
            (SELECT id FROM calls WHERE market_id = m.id
               ORDER BY first_event_ts DESC, id DESC LIMIT 1) AS call_id,
            CASE
+             -- Exchange has formally settled.
              WHEN m.resolved = 1 THEN 'resolved'
-             WHEN m.resolution_date < date('now') THEN 'aged_out'
+             -- Event is over with a known outcome (cited research, or a past-dated
+             -- market parked at a terminal price) but not officially settled yet.
+             WHEN m.effective_resolution IN ('yes','no') THEN 'effective'
+             WHEN m.resolution_date < date('now')
+                  AND m.current_price IS NOT NULL
+                  AND (m.current_price >= 99 OR m.current_price <= 1) THEN 'effective'
+             -- Event date passed but the exchange hasn't posted a result yet.
+             WHEN m.resolution_date < date('now') THEN 'awaiting'
              ELSE 'upcoming'
            END AS status
     FROM markets m
-    WHERE m.resolution_date IS NOT NULL
+    WHERE COALESCE(m.effective_event_date, m.resolution_date) IS NOT NULL
       AND EXISTS (SELECT 1 FROM calls WHERE market_id = m.id AND market_id IS NOT NULL)
-    ORDER BY m.resolution_date
+    ORDER BY COALESCE(m.effective_event_date, m.resolution_date)
   `).all();
   res.json(rows);
 });

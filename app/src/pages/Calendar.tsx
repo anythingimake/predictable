@@ -36,12 +36,14 @@ function sourceLabel(source: string): string {
   return source;
 }
 
-const AGED_OUT_COLOR = "#f59e0b"; // amber
+const AWAITING_COLOR = "#f59e0b"; // amber — event passed, exchange hasn't settled
+const EFFECTIVE_COLOR = "#2dd4bf"; // teal — decided (researched/terminal), awaiting official settlement
 
-// Calendar dots are colored by status when settled/stalled, else by source.
+// Calendar dots are colored by status when settled/decided/stalled, else by source.
 function entryColor(e: CalendarEntry): string {
   if (e.status === "resolved") return "var(--color-tier-play)";
-  if (e.status === "aged_out") return AGED_OUT_COLOR;
+  if (e.status === "effective") return EFFECTIVE_COLOR;
+  if (e.status === "awaiting") return AWAITING_COLOR;
   return sourceColor(e.source);
 }
 
@@ -338,14 +340,30 @@ function StatusBadge({ entry }: { entry: CalendarEntry }) {
       </span>
     );
   }
-  if (entry.status === "aged_out") {
+  if (entry.status === "effective") {
+    const r = (entry.resolution || "").toUpperCase();
+    const label = r === "YES" || r === "NO" ? `${r} · awaiting settlement` : "Decided · awaiting settlement";
+    const src = sourceLabel(entry.source);
+    const cite = entry.effective_source ? " Source on file." : "";
     return (
       <span
         className="shrink-0 rounded-sm px-1.5 py-0.5 text-[10px] font-medium uppercase tracking-wide"
-        style={{ background: "rgba(245,158,11,0.15)", color: AGED_OUT_COLOR }}
-        title="The resolution date passed without a clean settlement on record."
+        style={{ background: "rgba(45,212,191,0.15)", color: EFFECTIVE_COLOR }}
+        title={`The event is over and the outcome is known, but ${src} hasn't posted an official settlement yet.${cite}`}
       >
-        Clock ran out
+        {label}
+      </span>
+    );
+  }
+  if (entry.status === "awaiting") {
+    const src = sourceLabel(entry.source);
+    return (
+      <span
+        className="shrink-0 rounded-sm px-1.5 py-0.5 text-[10px] font-medium uppercase tracking-wide"
+        style={{ background: "rgba(245,158,11,0.15)", color: AWAITING_COLOR }}
+        title={`The event date passed, but ${src} hasn't posted an official settlement yet.`}
+      >
+        Awaiting {src} Settlement
       </span>
     );
   }
@@ -356,7 +374,8 @@ function Legend() {
   return (
     <div className="flex items-center gap-3 text-[10px] uppercase tracking-wide text-[var(--color-text-muted)] flex-wrap">
       <LegendDot color="var(--color-tier-play)" label="Settled" />
-      <LegendDot color={AGED_OUT_COLOR} label="Clock ran out" />
+      <LegendDot color={EFFECTIVE_COLOR} label="Decided · awaiting settlement" />
+      <LegendDot color={AWAITING_COLOR} label="Awaiting settlement" />
       <span className="text-[var(--color-text-faint)]">upcoming:</span>
       <LegendDot color="var(--color-accent)" label="Kalshi" />
       <LegendDot color="#8b5cf6" label="Polymarket" />

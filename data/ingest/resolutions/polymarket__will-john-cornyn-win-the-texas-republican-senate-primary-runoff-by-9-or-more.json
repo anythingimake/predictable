@@ -1,0 +1,10 @@
+{
+  "market_id": "polymarket:will-john-cornyn-win-the-texas-republican-senate-primary-runoff-by-9-or-more",
+  "resolution": "no",
+  "outcome_detail": "Ken Paxton defeated incumbent John Cornyn in the 2026 Texas Republican U.S. Senate primary runoff, winning approximately 63.8% to Cornyn's ~36% (margin ~28 points). Cornyn LOST.",
+  "event_date": "2026-05-26",
+  "source_url": "https://www.texastribune.org/2026/05/26/texas-john-cornyn-ken-paxton-us-senate-republican-primary-runoff/",
+  "source_label": "The Texas Tribune - 'Ken Paxton defeats John Cornyn in Texas U.S. Senate GOP runoff' (also corroborated by NBC News, CNN, CNBC, Houston Public Media, Al Jazeera)",
+  "confidence": "high",
+  "reasoning": "The market resolves YES only if Cornyn WON by >= 9 points. Multiple major outlets (Texas Tribune, NBC News, CNN, CNBC, Houston Public Media, Al Jazeera) called the May 26, 2026 runoff for Ken Paxton, who won roughly 63.8% of ~1.38M votes vs. Cornyn's ~36% (a ~28-point Paxton margin). Cornyn lost; he was the first Texas incumbent senator to lose renomination since 1970. Since Cornyn did not win at all, the >=9-point Cornyn-victory bracket is not met. Resolution: NO."
+}

@@ -39,6 +39,16 @@ CREATE TABLE IF NOT EXISTS markets (
   resolution      TEXT,
   current_price   REAL,
   meta_json       TEXT,
+  -- Researched "effective" resolution: the real-world event is over and we have
+  -- a cited outcome, even though the exchange hasn't formally settled (or set a
+  -- bogus far-future close date). Populated by pipeline.enrich.resolve_events
+  -- (LLM + web research) and loaded from data/ingest/resolutions/. Distinct from
+  -- `resolved`/`resolution`, which are reserved for an actual exchange settlement.
+  effective_resolution TEXT,                     -- 'yes' | 'no'
+  effective_detail     TEXT,                     -- e.g. 'Paxton def. Cornyn 63.8%-36.2%, +27.6 pts'
+  effective_event_date TEXT,                     -- real event date (YYYY-MM-DD)
+  effective_source     TEXT,                     -- citation URL
+  effective_confidence TEXT,                     -- 'high' | 'medium' | 'low'
   updated_at      DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 

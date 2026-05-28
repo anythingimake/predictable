@@ -281,13 +281,24 @@ def load_calls(conn) -> int:
             ).fetchall()
         }
         # Wipe this episode's existing rows so re-loading from JSON doesn't dup.
-        # FK order: call_events + source_media first, then calls, then mentions.
+        # FK order: every table that references calls.id must be cleared BEFORE
+        # the calls delete, or the DELETE fails the FK check. That includes
+        # strategy_calls and call_clarifications (populated by load_strategies /
+        # load_qa) — re-created later in this same load run.
         conn.execute(
             "DELETE FROM call_events WHERE call_id IN (SELECT id FROM calls WHERE episode_id = ?)",
             (guid,),
         )
         conn.execute(
             "DELETE FROM source_media WHERE call_id IN (SELECT id FROM calls WHERE episode_id = ?)",
+            (guid,),
+        )
+        conn.execute(
+            "DELETE FROM strategy_calls WHERE call_id IN (SELECT id FROM calls WHERE episode_id = ?)",
+            (guid,),
+        )
+        conn.execute(
+            "DELETE FROM call_clarifications WHERE call_id IN (SELECT id FROM calls WHERE episode_id = ?)",
             (guid,),
         )
         conn.execute("DELETE FROM calls WHERE episode_id = ?", (guid,))
@@ -397,6 +408,72 @@ def load_calls(conn) -> int:
                 },
             )
     return total_calls
+
+
+_EFFECTIVE_COLS = {
+    "effective_resolution": "TEXT",
+    "effective_detail": "TEXT",
+    "effective_event_date": "TEXT",
+    "effective_source": "TEXT",
+    "effective_confidence": "TEXT",
+}
+
+
+def _ensure_effective_columns(conn) -> None:
+    """Self-migrate: add markets.effective_* to pre-existing DBs. schema.sql
+    carries them for fresh builds; CREATE TABLE IF NOT EXISTS won't alter an
+    already-created table, so add any missing column here. Idempotent."""
+    existing = {r["name"] for r in conn.execute("PRAGMA table_info(markets)")}
+    for col, typ in _EFFECTIVE_COLS.items():
+        if col not in existing:
+            conn.execute(f"ALTER TABLE markets ADD COLUMN {col} {typ}")
+
+
+def load_resolutions(conn) -> int:
+    """Load researched 'effective' resolutions (LLM + web research, with a cited
+    source) from data/ingest/resolutions/*.json into markets.effective_*.
+
+    Each file resolves ONE market's real-world outcome for the case where the
+    event is clearly over but the exchange hasn't formally settled — or set a
+    bogus far-future close date (e.g. Kalshi's +1-year margin-of-victory
+    markets). Applied only when the resolution is a clean 'yes'/'no'; a
+    null/pending file is skipped (an honest unknown beats a fabricated result).
+    Distinct from `resolved`/`resolution`, which stay reserved for an actual
+    exchange settlement. Idempotent — re-running overwrites with file content.
+    """
+    res_dir = INGEST_RAW / "resolutions"
+    if not res_dir.exists():
+        return 0
+    _ensure_effective_columns(conn)
+    applied = 0
+    for fp in sorted(res_dir.glob("*.json")):
+        try:
+            d = json.loads(fp.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            continue
+        mid = d.get("market_id")
+        res = (d.get("resolution") or "").strip().lower()
+        if not mid or res not in ("yes", "no"):
+            continue  # pending / malformed → leave the market unresolved
+        if not conn.execute("SELECT 1 FROM markets WHERE id = ?", (mid,)).fetchone():
+            continue  # market not present yet (created later by resolver) → next cycle
+        conn.execute(
+            """UPDATE markets SET
+                 effective_resolution = ?, effective_detail = ?,
+                 effective_event_date = ?, effective_source = ?,
+                 effective_confidence = ?, updated_at = CURRENT_TIMESTAMP
+               WHERE id = ?""",
+            (
+                res,
+                d.get("outcome_detail"),
+                d.get("event_date"),
+                d.get("source_url"),
+                d.get("confidence"),
+                mid,
+            ),
+        )
+        applied += 1
+    return applied
 
 
 def recompute_first_event_ts(conn) -> int:
@@ -563,6 +640,14 @@ def load_strategies(conn) -> int:
     total = 0
     for fp in files:
         guid = fp.stem.replace("-strategies", "")
+        # Idempotent per-episode: drop this episode's prior strategies (and their
+        # strategy_calls links) before re-inserting, so repeated loads don't
+        # accumulate duplicate strategy rows.
+        for old in conn.execute(
+            "SELECT id FROM strategies WHERE episode_id = ?", (guid,)
+        ).fetchall():
+            conn.execute("DELETE FROM strategy_calls WHERE strategy_id = ?", (old["id"],))
+        conn.execute("DELETE FROM strategies WHERE episode_id = ?", (guid,))
         data = json.loads(fp.read_text(encoding="utf-8"))
         for s in data.get("strategies", []):
             name = (s.get("name") or "").strip()
@@ -675,6 +760,8 @@ def main() -> int:
         if not args.episodes_only:
             n_calls = load_calls(conn)
             print(f"[load] calls inserted: {n_calls}")
+            n_res = load_resolutions(conn)
+            print(f"[load] effective resolutions applied: {n_res}")
             n_bodies, n_comments = load_substack_bodies_and_comments(conn)
             print(f"[load] substack bodies updated: {n_bodies}")
             print(f"[load] substack comments upserted: {n_comments}")

@@ -1,0 +1,10 @@
+{
+  "market_id": "kalshi:KXLARSENMOV-26MAY16-BCAS-P7",
+  "resolution": "no",
+  "outcome_detail": "In the May 16, 2026 Louisiana Republican U.S. Senate primary (a partisan party primary, NOT the old jungle primary — Louisiana switched to closed/partisan primaries for Congress in 2026 via HB17), Bill Cassidy finished THIRD with 24.8% (99,496 votes), behind John Fleming 28.3% (113,437, 2nd) and Julia Letlow 44.8% (179,903, 1st); Mark Spencer got 2.1%. Cassidy LOST and was eliminated. Letlow and Fleming advanced to the June 27 runoff.",
+  "event_date": "2026-05-16",
+  "source_url": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Louisiana",
+  "source_label": "Wikipedia - '2026 United States Senate election in Louisiana' (results table; corroborated by CNN, NPR, NBC News, Ballotpedia)",
+  "confidence": "high",
+  "reasoning": "Market needs Cassidy's first-round MARGIN OF VICTORY to be in [6,9]. Cassidy did not lead at all — he finished 3rd at 24.8%, about 3.5 points behind 2nd-place Fleming (28.3%) and ~19.9 points behind 1st-place Letlow (44.8%). With no margin of victory (he was defeated and eliminated), the [6,9] bracket cannot be met. Per the rules, 'he didn't lead' resolves NO. Resolution: NO."
+}

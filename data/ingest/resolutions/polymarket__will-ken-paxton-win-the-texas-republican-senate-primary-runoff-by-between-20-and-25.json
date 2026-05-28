@@ -1,0 +1,10 @@
+{
+  "market_id": "polymarket:will-ken-paxton-win-the-texas-republican-senate-primary-runoff-by-between-20-and-25",
+  "resolution": "no",
+  "outcome_detail": "Paxton def. Cornyn 63.8%-36.2%, margin ~27.6 pts (outside 20-25)",
+  "event_date": "2026-05-26",
+  "source_url": "https://www.ksat.com/news/local/2026/05/26/election-results-texas-senate-race-between-sen-john-cornyn-ag-ken-paxton-in-may-26-primary-runoff/",
+  "source_label": "KSAT (county results, 100% precincts 9,534/9,534): Paxton 885,949 / Cornyn 501,725; corroborated by Texas Tribune (63.8%), Wikipedia, NBC News",
+  "confidence": "high",
+  "reasoning": "AP called the May 26, 2026 runoff for Ken Paxton shortly after polls closed. Final tally (100% precincts reporting): Paxton 885,949 votes (63.8%) vs Cornyn 501,725 votes (36.2%) = margin of ~27.6 points (885,949 minus 501,725 over 1,387,674 total = 27.68 pts). Market requires Paxton win AND margin between 20 and 25 points. Paxton won, but the ~27.6-pt margin is ABOVE the 25-pt ceiling, so the bracket condition fails. Resolution = no. Multiple independent outlets agree on 63.8%."
+}

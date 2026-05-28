@@ -189,7 +189,9 @@ export interface CalendarEntry {
   call_id?: number | null;
   resolved?: number;
   resolution?: string | null;
-  status?: "upcoming" | "aged_out" | "resolved";
+  status?: "upcoming" | "awaiting" | "effective" | "resolved";
+  effective_confidence?: string | null;
+  effective_source?: string | null;
 }
 
 export interface Saga {

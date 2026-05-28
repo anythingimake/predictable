@@ -1,0 +1,10 @@
+{
+  "market_id": "kalshi:KXTXRSENRUNOFFMOV-26MAY26-KPAX-P60",
+  "resolution": "yes",
+  "outcome_detail": "Ken Paxton won the 2026 Texas Republican U.S. Senate primary runoff with 63.8% of the vote vs. John Cornyn's ~36.2% (of ~1.38M votes cast), a margin of victory of approximately 27.6 percentage points. The AP called the race for Paxton shortly after 8 p.m. on May 26, 2026.",
+  "event_date": "2026-05-26",
+  "source_url": "https://www.houstonpublicmedia.org/articles/news/politics/election-2026/2026/05/26/552722/paxton-cornyn-runoff-election-results-texas-senate-republican-primary/",
+  "source_label": "Houston Public Media (AP) — Ken Paxton cruises to big win against incumbent Sen. John Cornyn in Texas GOP primary runoff (May 26, 2026)",
+  "confidence": "high",
+  "reasoning": "Paxton won at 63.8% to Cornyn's ~36.2%, a margin of ~27.6 points. The market YES requires Paxton win AND margin >= 20 (bracket 20-100). 27.6 >= 20, so YES. Margin corroborated across Texas Tribune, NBC News, CNN, Ballotpedia, Al Jazeera, PBS, and Wikipedia, all citing Paxton 63.8% / ~64% of the vote."
+}

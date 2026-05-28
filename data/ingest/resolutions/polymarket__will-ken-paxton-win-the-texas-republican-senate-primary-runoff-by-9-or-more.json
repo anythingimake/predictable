@@ -1,0 +1,10 @@
+{
+  "market_id": "polymarket:will-ken-paxton-win-the-texas-republican-senate-primary-runoff-by-9-or-more",
+  "resolution": "yes",
+  "outcome_detail": "Paxton def. Cornyn 63.8%-36.2%, margin ~27.6 pts",
+  "event_date": "2026-05-26",
+  "source_url": "https://www.texastribune.org/2026/05/26/texas-john-cornyn-ken-paxton-us-senate-republican-primary-runoff/",
+  "source_label": "Texas Tribune (AP call); corroborated by Wikipedia, NBC News, Al Jazeera, Houston Public Media",
+  "confidence": "high",
+  "reasoning": "AP called the runoff for Ken Paxton shortly after polls closed on May 26, 2026. Paxton won with 63.8% of more than 1.38M votes vs Cornyn's ~36.2%, a margin of ~27.6 percentage points. Market requires Paxton win AND margin >= 9 pts: both conditions met (won, and 27.6 >= 9), so resolution = yes. Multiple independent outlets agree on the 63.8% figure."
+}

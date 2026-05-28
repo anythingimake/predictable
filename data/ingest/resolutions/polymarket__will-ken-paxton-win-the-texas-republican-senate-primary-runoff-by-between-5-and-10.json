@@ -1,0 +1,10 @@
+{
+  "market_id": "polymarket:will-ken-paxton-win-the-texas-republican-senate-primary-runoff-by-between-5-and-10",
+  "resolution": "no",
+  "outcome_detail": "Ken Paxton defeated incumbent Sen. John Cornyn in the May 26, 2026 Texas Republican U.S. Senate primary runoff, winning approximately 64% to approximately 36% (per AP results), a margin of roughly 28 percentage points.",
+  "event_date": "2026-05-26",
+  "source_url": "https://www.aljazeera.com/news/2026/5/27/ken-paxton-wins-texas-primary-election-results-and-key-takeaways",
+  "source_label": "Al Jazeera (citing Associated Press results), May 27, 2026",
+  "confidence": "high",
+  "reasoning": "Paxton won ~63.8% vs Cornyn ~36%, a margin of ~28 percentage points. The market resolves YES only if Paxton's winning margin is BETWEEN 5 and 10 points. A ~28-point margin is far outside [5,10], so resolution is NO. Margin is large enough that exact decimals do not affect the bracket. Confirmed across multiple independent outlets (Al Jazeera/AP, NBC News, Houston Public Media, Roll Call, Ballotpedia)."
+}

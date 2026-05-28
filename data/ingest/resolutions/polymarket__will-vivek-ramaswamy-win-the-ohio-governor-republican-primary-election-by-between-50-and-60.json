@@ -1,0 +1,10 @@
+{
+  "market_id": "polymarket:will-vivek-ramaswamy-win-the-ohio-governor-republican-primary-election-by-between-50-and-60",
+  "resolution": "no",
+  "outcome_detail": "Vivek Ramaswamy WON the May 5, 2026 Ohio Republican gubernatorial primary with 82.47% (673,902 votes) vs Casey Putsch 17.53% (143,257 votes). Margin = 64.94 points, which is ABOVE the 50-60 bracket, so this market resolves NO.",
+  "event_date": "2026-05-05",
+  "source_url": "https://www.nbcnews.com/politics/2026-election/vivek-ramaswamy-wins-gop-primary-governor-ohio-amy-acton-rcna343048",
+  "source_label": "NBC News / Ohio Statehouse News Bureau (statewide unofficial returns)",
+  "confidence": "high",
+  "reasoning": "Ramaswamy 82.47% - Putsch 17.53% = 64.94 point margin. The 50-60 bracket requires margin BETWEEN 50 and 60 points; 64.94 > 60, so it falls OUTSIDE the bracket. Ramaswamy won (multiple outlets call the race), but by too large a margin for this bucket -> NO. Two independent outlets (NBC News, Statehouse News Bureau) report 'more than 82%' for Ramaswamy, corroborating the 82.47%/17.53% statewide split. Margin is well clear of the 60-point boundary, so bracket assignment is unambiguous."
+}

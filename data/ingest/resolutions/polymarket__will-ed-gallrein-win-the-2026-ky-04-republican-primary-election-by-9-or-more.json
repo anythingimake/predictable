@@ -1,0 +1,10 @@
+{
+  "market_id": "polymarket:will-ed-gallrein-win-the-2026-ky-04-republican-primary-election-by-9-or-more",
+  "resolution": "yes",
+  "outcome_detail": "Ed Gallrein won the 2026 KY-04 Republican primary, defeating incumbent Rep. Thomas Massie 57,822 votes (54.9%) to 47,539 (45.1%) of 105,361 total, a margin of 10,280 votes / ~9.8 points. (Election-night snapshot at ~72% reporting showed a narrower 54.4-45.6, 8.8-pt gap; certified/near-final totals widened to ~9.8.)",
+  "event_date": "2026-05-19",
+  "source_url": "https://ballotpedia.org/Kentucky's_4th_Congressional_District_election,_2026_(May_19_Republican_primary)",
+  "source_label": "Ballotpedia / NBC News / Kentucky Lantern (May 19, 2026 KY-04 GOP primary results)",
+  "confidence": "high",
+  "reasoning": "Final/certified totals: Gallrein 57,822 (54.88%) vs Massie 47,539 (45.12%), summing exactly to 105,361 two-candidate votes. Margin = 10,280 votes = 9.76 points. 9.76 >= 9, so the >=9-point bracket resolves YES. Multiple outlets (NBC, Kentucky Lantern, CNN, Washington Examiner) confirm Gallrein's win; raw counts cross-check to the cited 54.9/45.1 split. The only sub-9 figure (8.8) was a partial-count election-night snapshot, not the final result."
+}

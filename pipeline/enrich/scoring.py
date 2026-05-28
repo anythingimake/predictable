@@ -120,17 +120,25 @@ def _score_calls(conn) -> dict:
       3. Otherwise leave the call OPEN — an honest "not yet scorable" beats a
          fabricated win or loss.
     Idempotent — recomputes on every run."""
-    stats = {"hard": 0, "soft": 0, "skipped_no_entry": 0, "skipped_other": 0}
+    stats = {"hard": 0, "soft": 0, "effective": 0, "skipped_no_entry": 0, "skipped_other": 0}
     # Reset first so a call that no longer scores (e.g. a market that stopped
     # reporting a clean yes/no) drops back to open instead of keeping a stale
     # realized_pct from a prior run. Scoring is the sole authority on
     # status/realized_pct; market_id (the link) is owned by the resolver.
     conn.execute("UPDATE calls SET status = 'open', realized_pct = NULL")
+    # Defensive: scoring may run against a DB created before the effective_*
+    # columns existed (load.py self-migrates, but scoring can run standalone).
+    have_eff = "effective_resolution" in {
+        r["name"] for r in conn.execute("PRAGMA table_info(markets)")
+    }
+    eff_select = "m.effective_resolution" if have_eff else "NULL AS effective_resolution"
     calls = conn.execute(
-        """SELECT c.id, c.side, c.market_id, m.resolved, m.resolution, m.current_price
+        f"""SELECT c.id, c.side, c.market_id, m.resolved, m.resolution,
+                  m.current_price, m.resolution_date, {eff_select}
              FROM calls c
         LEFT JOIN markets m ON m.id = c.market_id"""
     ).fetchall()
+    today_iso = date.today().isoformat()
     for c in calls:
         cid = c["id"]
         entry_cents = _entry_price_cents(conn, cid)
@@ -181,6 +189,50 @@ def _score_calls(conn) -> dict:
             )
             stats["soft"] += 1
             continue
+
+        # 3.5 RESEARCHED resolution — a cited, web-verified real-world outcome
+        #     (pipeline.enrich.resolve_events -> markets.effective_*, loaded from
+        #     data/ingest/resolutions/). Higher authority than the price
+        #     heuristic below: it's a sourced fact (incl. the exact margin for
+        #     bracket markets), not a price inference. Still recorded 'closed'
+        #     (effective), never 'resolved' — that's reserved for an actual
+        #     exchange settlement.
+        eff_res = (c["effective_resolution"] or "").strip().lower()
+        if eff_res in ("yes", "no"):
+            close_cents = _hard_close_cents(c["side"], eff_res)
+            realized = _realized_pct(c["side"], entry_cents, close_cents)
+            conn.execute(
+                "UPDATE calls SET status = 'closed', realized_pct = ? WHERE id = ?",
+                (realized, cid),
+            )
+            stats["effective"] += 1
+            continue
+
+        # 4. EFFECTIVE resolution — the exchange hasn't posted a settlement, but
+        #    the event is clearly over and the market has snapped to a terminal
+        #    price. Gate is deliberately strict on BOTH axes:
+        #      - the resolution_date must be in the PAST (the real-world event
+        #        has happened — this is what makes it safe), AND
+        #      - current_price (YES-side cents) must be at a hard extreme:
+        #        >= 99 (YES won) or <= 1 (NO won).
+        #    Price alone is NOT enough: a still-OPEN longshot routinely sits at
+        #    1-5c for weeks before news pops it, so a loose threshold would
+        #    fabricate losses. 99/1 + a passed date is the conservative call.
+        #    Recorded as 'closed' (an effective close), never 'resolved' — that
+        #    status is reserved for an actual exchange settlement.
+        rd = c["resolution_date"]
+        cp = c["current_price"]
+        if rd and rd < today_iso and cp is not None:
+            eff = "yes" if cp >= 99.0 else ("no" if cp <= 1.0 else None)
+            if eff is not None:
+                close_cents = _hard_close_cents(c["side"], eff)
+                realized = _realized_pct(c["side"], entry_cents, close_cents)
+                conn.execute(
+                    "UPDATE calls SET status = 'closed', realized_pct = ? WHERE id = ?",
+                    (realized, cid),
+                )
+                stats["effective"] += 1
+                continue
 
         stats["skipped_other"] += 1
     return stats
