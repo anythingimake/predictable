@@ -26,7 +26,7 @@ set -e
 
 REPO=/opt/predictable-repo
 DB=/var/lib/predictable/predictable.sqlite
-PM2=/usr/local/bin/pm2
+PM2=/usr/bin/pm2
 
 cd "$REPO"
 
@@ -79,7 +79,7 @@ PREDICTABLE_DB="$DB" python3 -m pipeline.enrich.price_snapshot 2>&1 || echo "pri
 PREDICTABLE_DB="$DB" python3 -m pipeline.enrich.scoring 2>&1 || echo "scoring failed"
 
 # Bounce the API so better-sqlite3 reopens the file
-$PM2 restart predictable-api --update-env >/dev/null 2>&1 || $PM2 restart predictable-api >/dev/null 2>&1
+$PM2 restart predictable-api --update-env >/dev/null 2>&1 || $PM2 restart predictable-api >/dev/null 2>&1 || echo "pm2 restart failed"
 
 sqlite3 "$DB" "PRAGMA wal_checkpoint(TRUNCATE);" >/dev/null 2>&1 || echo "wal_checkpoint failed"
 
