@@ -269,9 +269,13 @@ def load_calls(conn) -> int:
                 "status": r["status"],
                 "realized_pct": r["realized_pct"],
                 "stu_claimed_pct": r["stu_claimed_pct"],
+                # `notes` carries human pins like 'pin:no-auto-link' (a verified
+                # false-match correction). Must survive reload or the cron's
+                # resolver would re-link the bad market.
+                "notes": r["notes"],
             }
             for r in conn.execute(
-                """SELECT id, market_id, status, realized_pct, stu_claimed_pct
+                """SELECT id, market_id, status, realized_pct, stu_claimed_pct, notes
                      FROM calls WHERE episode_id = ?""",
                 (guid,),
             ).fetchall()
@@ -339,6 +343,7 @@ def load_calls(conn) -> int:
                 "size_disclosed": call.get("size_disclosed"),
                 "speaker": call.get("speaker", "stu"),
                 "status": prev["status"] if prev else "open",
+                "notes": prev["notes"] if prev else None,
                 "tags": tags,
             }
             call_id = insert_call(conn, row)

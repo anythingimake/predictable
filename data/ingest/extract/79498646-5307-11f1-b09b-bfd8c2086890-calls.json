@@ -19,14 +19,18 @@
         {
           "timestamp_sec": 356,
           "event_type": "resolve",
-          "price_pct": null,
+          "price_pct": 0,
           "size_pct_of_pos": 100,
           "raw_quote": "She didn't quite get to 50% our 10 to 1 15 to 1 shot did not wind up coming through That's what you expect to happen when you make a 10 or 15 to 1 long shot You expect to lose that position... let low went up by about 11 or 12 points",
           "cleaned_quote": "Letlow finished at 45, up about 11-12 points from her low-30s polling, but didn't quite get to 50 percent — so our 10-to-1, 15-to-1 shot did not come through. That's what you expect when you make a long shot. The thesis was right directionally; she just missed the 50 percent barrier."
         }
       ],
       "referenced_media": [
-        {"source_type": "article", "title": "Bill Cassidy's fall is a warning sign for other Trump enemies", "outlet": "Politico"}
+        {
+          "source_type": "article",
+          "title": "Bill Cassidy's fall is a warning sign for other Trump enemies",
+          "outlet": "Politico"
+        }
       ]
     },
     {
@@ -73,7 +77,11 @@
         }
       ],
       "referenced_media": [
-        {"source_type": "tweet", "title": "Massie must be thrown out — endorsement of Captain Ed Gallrein", "outlet": "Truth Social (Trump)"}
+        {
+          "source_type": "tweet",
+          "title": "Massie must be thrown out — endorsement of Captain Ed Gallrein",
+          "outlet": "Truth Social (Trump)"
+        }
       ]
     },
     {

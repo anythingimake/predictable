@@ -690,9 +690,16 @@ def resolve_all() -> dict:
     seen_hints: dict[str, dict | None] = {}
 
     with connect() as conn:
+        # Skip human-pinned calls (notes 'pin:no-auto-link') — these are
+        # verified false-match corrections (e.g. Letlow "wins outright" must
+        # NOT relink to the "finish first" market; Talarico general-election
+        # calls must stay open until Nov). Auto-matching keeps re-making these
+        # because the hints share strong tokens with the wrong markets.
         rows = list(
             conn.execute(
-                "SELECT id, market_hint, episode_id FROM calls WHERE market_id IS NULL"
+                """SELECT id, market_hint, episode_id FROM calls
+                    WHERE market_id IS NULL
+                      AND (notes IS NULL OR notes NOT LIKE 'pin:no-auto-link%')"""
             )
         )
         for i, row in enumerate(rows, 1):

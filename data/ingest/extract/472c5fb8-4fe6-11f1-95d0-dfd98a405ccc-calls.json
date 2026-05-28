@@ -15,10 +15,22 @@
           "size_pct_of_pos": null,
           "raw_quote": "She might be able to squeak over 50 percent that one is kind of interesting me at only nine percent because Yeah, again, I would assume This is something that we talk about often when it comes to value in these markets If you're looking at something that's nine percent you are expecting to lose most of the time If you think maybe there's a 30 chance of that happening That means you're expecting to lose 70 of the time However, there's value there because in that 30 win is a 10 times your money type of victory... So there's some interest there again as a flyer It's a bit of a lottery ticket. It's a bit of a long shot But I do think there might be some value in her getting to 50 percent",
           "cleaned_quote": "Letlow winning outright is interesting at only 9 percent. If you think there's a 30 percent chance of it happening, there's value — that's 10 times your money. As a flyer, a bit of a lottery ticket, a long shot, but I think there might be some value in her getting to 50 percent. Some Fleming voters might just want it over so they don't have to show up for a runoff."
+        },
+        {
+          "timestamp_sec": 1487,
+          "event_type": "resolve",
+          "price_pct": 0,
+          "size_pct_of_pos": null,
+          "raw_quote": "Letlow forced to a runoff (finished ~45%, did not clear 50%); the outright bet did not come through.",
+          "cleaned_quote": "Letlow forced to a runoff — the outright 'wins primary' bet lost."
         }
       ],
       "referenced_media": [
-        {"source_type": "article", "title": "Bill Cassidy sold his soul to the devil and he didn't get anything for it", "outlet": "NYT"}
+        {
+          "source_type": "article",
+          "title": "Bill Cassidy sold his soul to the devil and he didn't get anything for it",
+          "outlet": "NYT"
+        }
       ]
     },
     {
