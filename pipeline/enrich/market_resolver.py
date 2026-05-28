@@ -65,6 +65,10 @@ _WEAK_TOKENS = frozenset(
        "after", "before", "during", "by", "until", "since", "between",
        "become", "becomes", "becoming", "control", "controls", "following",
        "head", "leader", "leaders",
+       # Generic disposition verbs — too common to carry a match on their own
+       # (e.g. "Congress banned from trading stocks" must NOT match "clavicular
+       # banned from Kick" just because both say "banned").
+       "ban", "banned", "bans", "declare", "declares", "declared",
        }
     # Party names are NOT weak — "Democrats win House" needs `democrats` to
     # count as a strong signal so it matches "Democratic Party control House".
@@ -219,6 +223,20 @@ _BUCKET_DISPOSITION: dict[str, str] = {
 }
 _CONFLICT_BUCKETS.append(_BUCKET_DISPOSITION)
 _CONFLICT_BUCKETS.append(_BUCKET_PARTY)
+
+# Geopolitical-event bucket: "war" / "peace" / "deal" / "sanctions" are
+# DIFFERENT propositions about the same countries. Stops the US/Iran
+# "nuclear deal" and "permanent peace deal" calls from both latching onto the
+# unrelated "US/Iran declare war before March?" market just because they share
+# the country token "iran".
+_BUCKET_GEO_EVENT: dict[str, str] = {
+    "war": "war", "invade": "war", "invades": "war", "invasion": "war",
+    "attack": "war", "attacks": "war", "strike": "war", "strikes": "war",
+    "peace": "peace", "ceasefire": "peace", "truce": "peace", "armistice": "peace",
+    "deal": "deal", "agreement": "deal", "treaty": "deal", "accord": "deal",
+    "sanctions": "sanctions", "sanction": "sanctions",
+}
+_CONFLICT_BUCKETS.append(_BUCKET_GEO_EVENT)
 
 
 # Common stem collapses — "democrats" / "democratic" / "democrat" all mean the
