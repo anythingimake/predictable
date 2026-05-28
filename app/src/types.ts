@@ -43,6 +43,8 @@ export interface Call {
   market_source?: string | null;
   market_ticker?: string | null;
   market_question?: string | null;
+  /** YES-side market price in cents (0-100) from latest price snapshot. */
+  market_current_price?: number | null;
 }
 
 export interface CallEvent {

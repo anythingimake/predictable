@@ -4,7 +4,7 @@ import { api } from "../api";
 import type { CallDetail as CallDetailData } from "../types";
 import { ConvictionBadge } from "../components/ConvictionBadge";
 import { TagChips } from "../components/TagChips";
-import { formatDateSafe, formatPct, formatSec } from "../lib/format";
+import { formatCents, formatDateSafe, formatPct, formatSec, stuSideCents, unrealizedPct } from "../lib/format";
 import { ErrorBanner, Loading } from "./Scoreboard";
 
 // Recharts is ~120 KB gzipped — defer it past first paint of CallDetail.
@@ -83,15 +83,66 @@ export function CallDetail() {
         {data.tags && data.tags.length > 0 && <TagChips tags={data.tags} className="mt-2" />}
       </header>
 
-      <section className="grid grid-cols-2 md:grid-cols-4 gap-3">
-        <Stat label="Realized" value={data.realized_pct != null ? formatPct(data.realized_pct, 1) : "—"} accent={data.realized_pct != null && data.realized_pct > 0 ? "var(--color-tier-play)" : undefined} />
-        <Stat label="Stu claimed" value={data.stu_claimed_pct != null ? formatPct(data.stu_claimed_pct, 1) : "—"} />
-        <Stat label="Status" value={STATUS_LABEL[data.status] ?? data.status} />
-        <Stat label="Events" value={data.events.length} />
-      </section>
+      {(() => {
+        // Stu's exit cents = latest exit/trim event's price_pct on his side.
+        // (Resolve events are market settlements, not Stu's action.)
+        const exitEvent = [...data.events]
+          .reverse()
+          .find((e) => (e.event_type === "exit" || e.event_type === "trim") && e.price_pct != null);
+        const stuExitCents = exitEvent?.price_pct ?? null;
+
+        // Current mark on Stu's side. The market table holds YES-side cents;
+        // for a NO position we flip to 100 - mark.
+        const currentStuCents = stuSideCents(data.side, data.market_current_price);
+        const entryEvent = data.events.find((e) => e.event_type === "entry");
+        const entryCents = entryEvent?.price_pct ?? null;
+        const currentReturn = unrealizedPct(entryCents, currentStuCents);
+
+        const realized = data.realized_pct;
+        const stuClaimed = data.stu_claimed_pct;
+
+        return (
+          <section className="grid grid-cols-2 md:grid-cols-4 gap-3">
+            <Stat
+              label="Realized"
+              value={realized != null ? formatPct(realized, 1) : "—"}
+              accent={realized != null && realized > 0 ? "var(--color-tier-play)" : undefined}
+              sublabel={stuClaimed != null ? `Stu: ${formatPct(stuClaimed, 0)}` : undefined}
+            />
+            <Stat
+              label="Stu Exit"
+              value={stuExitCents != null ? formatCents(stuExitCents) : "—"}
+            />
+            <Stat
+              label="Current"
+              value={currentStuCents != null ? formatCents(currentStuCents) : "—"}
+              sublabel={
+                currentReturn != null
+                  ? `${currentReturn >= 0 ? "+" : ""}${currentReturn.toFixed(1)}% live`
+                  : undefined
+              }
+              accent={
+                currentReturn != null
+                  ? currentReturn > 0
+                    ? "var(--color-tier-play)"
+                    : currentReturn < 0
+                    ? "var(--color-tier-pass)"
+                    : undefined
+                  : undefined
+              }
+            />
+            <Stat label="Status" value={STATUS_LABEL[data.status] ?? data.status} />
+          </section>
+        );
+      })()}
 
       <section>
-        <h2 className="text-base md:text-lg font-medium mb-3">Lifecycle</h2>
+        <h2 className="text-base md:text-lg font-medium mb-3">
+          Lifecycle
+          <span className="ml-2 text-xs font-normal text-[var(--color-text-faint)]">
+            · {data.events.length} {data.events.length === 1 ? "event" : "events"}
+          </span>
+        </h2>
         <div className="space-y-3">
           {data.events.map((e) => (
             <div
@@ -207,13 +258,26 @@ export function CallDetail() {
   );
 }
 
-function Stat({ label, value, accent }: { label: string; value: string | number; accent?: string }) {
+function Stat({
+  label,
+  value,
+  accent,
+  sublabel,
+}: {
+  label: string;
+  value: string | number;
+  accent?: string;
+  sublabel?: string;
+}) {
   return (
     <div className="rounded border border-[var(--color-border)] bg-[var(--color-bg-elev)] p-3">
       <div className="text-xs uppercase text-[var(--color-text-muted)]">{label}</div>
       <div className="text-lg font-semibold mt-1" style={{ color: accent }}>
         {value}
       </div>
+      {sublabel && (
+        <div className="text-xs text-[var(--color-text-faint)] mt-0.5">{sublabel}</div>
+      )}
     </div>
   );
 }

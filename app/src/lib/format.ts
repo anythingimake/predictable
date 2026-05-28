@@ -41,6 +41,36 @@ export function formatPct(n: number | null | undefined, digits = 1): string {
   return `${n.toFixed(digits)}%`;
 }
 
+export function formatCents(n: number | null | undefined, digits = 0): string {
+  if (n == null) return "—";
+  return `${n.toFixed(digits)}¢`;
+}
+
+/**
+ * Markets return a YES-side price in cents. For a NO/UNDER position, Stu's
+ * contract price is the inverse: 100 - yesCents. For YES/OVER it's the YES
+ * price unchanged. Use this to render "current mark" on the contract Stu
+ * actually held, not the YES-side number from the order book.
+ */
+export function stuSideCents(
+  side: string | null | undefined,
+  yesCents: number | null | undefined,
+): number | null {
+  if (yesCents == null) return null;
+  const s = (side ?? "").toLowerCase();
+  if (s === "no" || s === "under") return 100 - yesCents;
+  return yesCents;
+}
+
+/** Unrealized return % from entry to current market mark, both on Stu's side. */
+export function unrealizedPct(
+  entryStuCents: number | null | undefined,
+  currentStuCents: number | null | undefined,
+): number | null {
+  if (entryStuCents == null || currentStuCents == null || entryStuCents <= 0) return null;
+  return ((currentStuCents - entryStuCents) / entryStuCents) * 100;
+}
+
 export function youtubeUrlAt(videoId: string, sec: number | null | undefined): string {
   const base = `https://www.youtube.com/watch?v=${videoId}`;
   if (sec == null) return base;
