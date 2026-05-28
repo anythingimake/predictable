@@ -120,18 +120,32 @@ export function CallDetail() {
         const realized = data.realized_pct;
         const stuClaimed = data.stu_claimed_pct;
 
+        // Did Stu actually put money in? play/solid/flyer are his "I'm in"
+        // vocabulary; watch/opinion/pass are directional reads where he never
+        // placed an order — so position framing ("held to settlement", "cost")
+        // is wrong for those. Show N/A instead.
+        const placedOrder = ["play", "solid", "flyer"].includes(data.conviction);
+
         return (
           <section className="grid grid-cols-2 md:grid-cols-5 gap-3">
             <Stat
               label="Entry"
               value={entryCents != null ? formatCents(entryCents) : "—"}
-              sublabel={entryCents != null ? `Stu's ${data.side.toUpperCase()} cost` : undefined}
+              sublabel={
+                entryCents != null
+                  ? placedOrder
+                    ? `Stu's ${data.side.toUpperCase()} cost`
+                    : `flagged ${data.side.toUpperCase()} here`
+                  : undefined
+              }
             />
             <Stat
               label="Stu Exit"
-              value={stuExitCents != null ? formatCents(stuExitCents) : "—"}
+              value={!placedOrder ? "N/A" : stuExitCents != null ? formatCents(stuExitCents) : "—"}
               sublabel={
-                stuExitCents != null
+                !placedOrder
+                  ? "no position taken"
+                  : stuExitCents != null
                   ? "sold here"
                   : data.status === "open"
                   ? "still holding"
