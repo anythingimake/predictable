@@ -41,7 +41,8 @@ def _polymarket_price(slug: str) -> float | None:
         prices = items[0].get("outcomePrices") or "[]"
         if isinstance(prices, str):
             prices = json.loads(prices)
-        return float(prices[0]) if prices else None
+        # Polymarket returns dollars (0..1). Schema stores cents (0..100).
+        return float(prices[0]) * 100.0 if prices else None
     except (requests.RequestException, ValueError, KeyError):
         return None
 
@@ -57,7 +58,8 @@ def _kalshi_price(ticker: str) -> float | None:
             return None
         m = r.json().get("market") or {}
         last = m.get("last_price_dollars") or m.get("yes_ask_dollars")
-        return float(last) if last is not None else None
+        # Kalshi `*_dollars` fields are dollars (0..1). Convert to cents.
+        return float(last) * 100.0 if last is not None else None
     except (requests.RequestException, ValueError, KeyError):
         return None
 

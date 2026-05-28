@@ -57,9 +57,12 @@ export function stuSideCents(
   yesCents: number | null | undefined,
 ): number | null {
   if (yesCents == null) return null;
+  // Defensive: some data is stored as dollars (0..1) instead of cents (0..100).
+  // Normalize to cents so the rest of the math is consistent.
+  const cents = yesCents <= 1.5 ? yesCents * 100 : yesCents;
   const s = (side ?? "").toLowerCase();
-  if (s === "no" || s === "under") return 100 - yesCents;
-  return yesCents;
+  if (s === "no" || s === "under") return 100 - cents;
+  return cents;
 }
 
 /** Unrealized return % from entry to current market mark, both on Stu's side. */
