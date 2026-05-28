@@ -101,7 +101,9 @@ def upsert_market(conn: sqlite3.Connection, m: dict) -> str:
 
 
 def insert_call(conn: sqlite3.Connection, call: dict) -> int:
-    """Insert a Call (no upsert — extraction creates fresh; manual edits via /admin).
+    """Insert a Call. If `call['id']` is provided, insert with that explicit id
+    (the loader passes a deterministic stable id so /calls/{id} URLs survive
+    re-loads); otherwise fall back to auto-increment.
 
     `tags` is a JSON-encoded array of strings. If the caller passes a list,
     we json.dumps it; if a string, we trust it's already JSON; if missing,
@@ -112,6 +114,30 @@ def insert_call(conn: sqlite3.Connection, call: dict) -> int:
         tags_json = json.dumps(list(raw_tags))
     else:
         tags_json = raw_tags or "[]"
+
+    explicit_id = call.get("id")
+    if explicit_id is not None:
+        conn.execute(
+            """INSERT INTO calls (id, market_id, market_hint, episode_id, first_event_ts,
+                                  side, conviction, size_disclosed, speaker, status, notes, tags)
+               VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+            (
+                explicit_id,
+                call.get("market_id"),
+                call["market_hint"],
+                call["episode_id"],
+                call.get("first_event_ts"),
+                call["side"],
+                call["conviction"],
+                call.get("size_disclosed"),
+                call.get("speaker", "stu"),
+                call.get("status", "open"),
+                call.get("notes"),
+                tags_json,
+            ),
+        )
+        return explicit_id
+
     cur = conn.execute(
         """INSERT INTO calls (market_id, market_hint, episode_id, first_event_ts,
                               side, conviction, size_disclosed, speaker, status, notes, tags)

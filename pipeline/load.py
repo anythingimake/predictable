@@ -18,6 +18,7 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import re
 from datetime import datetime, timezone
@@ -51,6 +52,18 @@ def _latest_snapshot(source: str, prefix: str = "") -> Path | None:
 
 def _safe_guid(s: str) -> str:
     return re.sub(r"[^A-Za-z0-9_-]", "_", s)[:120]
+
+
+def _stable_call_id(episode_id: str, market_hint: str, side: str, ordinal: int) -> int:
+    """Deterministic call id from a natural key so /calls/{id} URLs survive the
+    DELETE+reinsert that load_calls does every run.
+
+    Key = episode_id | normalized hint | side | ordinal (ordinal disambiguates
+    two calls on the same market+side within one episode). Truncated to 52 bits
+    so it stays inside JS Number.MAX_SAFE_INTEGER (the frontend types id as
+    number). Collision risk across ~hundreds of calls is negligible."""
+    key = f"{episode_id}|{_normalize_hint(market_hint)}|{(side or '').strip().lower()}|{ordinal}"
+    return int(hashlib.sha1(key.encode("utf-8")).hexdigest()[:13], 16)
 
 
 def _transcript_for(guid: str) -> dict | None:
@@ -140,10 +153,20 @@ def load_calls(conn) -> int:
             "SELECT megaphone_title FROM episodes WHERE id = ?", (guid,)
         ).fetchone()
         ep_title = (ep_row["megaphone_title"] if ep_row else "") or ""
+        # Track (hint, side) repeats within the episode so two calls on the same
+        # market+side get distinct stable ids via an ordinal suffix.
+        key_ordinals: dict[tuple[str, str], int] = {}
         for call in data.get("calls", []):
             # Find earliest event timestamp
             events = sorted(call.get("events", []), key=lambda e: e.get("timestamp_sec", 0))
             first_ts = events[0].get("timestamp_sec") if events else None
+
+            hint = call.get("market_hint", "")
+            side = call.get("side", "yes")
+            base_key = (_normalize_hint(hint), (side or "").strip().lower())
+            ordinal = key_ordinals.get(base_key, 0)
+            key_ordinals[base_key] = ordinal + 1
+            stable_id = _stable_call_id(guid, hint, side, ordinal)
 
             # If the source JSON already declared tags, honor it; else derive.
             existing_tags = call.get("tags")
@@ -162,11 +185,12 @@ def load_calls(conn) -> int:
                 )
 
             row = {
+                "id": stable_id,
                 "market_id": None,  # set later by enrich/market_resolver.py
-                "market_hint": call.get("market_hint", ""),
+                "market_hint": hint,
                 "episode_id": guid,
                 "first_event_ts": first_ts,
-                "side": call.get("side", "yes"),
+                "side": side,
                 "conviction": call.get("conviction", "opinion"),
                 "size_disclosed": call.get("size_disclosed"),
                 "speaker": call.get("speaker", "stu"),
