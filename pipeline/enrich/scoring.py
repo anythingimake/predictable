@@ -138,8 +138,10 @@ def _score_calls(conn) -> dict:
             stats["skipped_no_entry"] += 1
             continue
 
-        # 1. Stu sold it himself (exit/trim) — his actual realized return wins.
-        ev = _event_of_types(conn, cid, ("exit", "trim"))
+        # 1. Stu fully exited it himself — his actual realized return wins.
+        #    `trim` is excluded: a partial trim doesn't close the position, so
+        #    the call stays open (e.g. Dems-House where Stu trimmed but holds).
+        ev = _event_of_types(conn, cid, ("exit",))
         if ev is not None:
             close_cents, et = ev
             close_cents = _close_cents_for_event(c["side"], et, close_cents)

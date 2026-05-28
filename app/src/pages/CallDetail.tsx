@@ -103,11 +103,12 @@ export function CallDetail() {
       </header>
 
       {(() => {
-        // Stu's exit cents = latest exit/trim event's price_pct on his side.
-        // (Resolve events are market settlements, not Stu's action.)
+        // Stu's exit cents = latest full `exit` event's price on his side.
+        // `trim` is excluded — a partial trim isn't leaving the position (the
+        // trim still shows in the Lifecycle list below).
         const exitEvent = [...data.events]
           .reverse()
-          .find((e) => (e.event_type === "exit" || e.event_type === "trim") && e.price_pct != null);
+          .find((e) => e.event_type === "exit" && e.price_pct != null);
         const stuExitCents = exitEvent?.price_pct ?? null;
 
         // Current mark on Stu's side. The market table holds YES-side cents;
