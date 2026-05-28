@@ -49,10 +49,21 @@ export function Episodes() {
             <div className="flex-1 min-w-0">
               <div className="flex items-center gap-1.5 text-xs text-[var(--color-text-muted)] flex-wrap">
                 <span>{formatPubDate(e.publish_date)}</span>
+                {/* Articles are text-only — no audio duration to show. */}
+                {e.type !== "article" && (
+                  <>
+                    <span>·</span>
+                    <span>{formatSec(e.duration_sec)}</span>
+                  </>
+                )}
                 <span>·</span>
-                <span>{formatSec(e.duration_sec)}</span>
-                <span>·</span>
-                <span className="uppercase">{e.type}</span>
+                {e.type === "article" ? (
+                  <span className="inline-flex items-center rounded-sm bg-[var(--color-accent)]/15 px-1.5 py-0.5 font-medium uppercase tracking-wide text-[var(--color-accent)]">
+                    Article
+                  </span>
+                ) : (
+                  <span className="uppercase">{e.type}</span>
+                )}
               </div>
               <h3 className="font-medium mt-1 text-[var(--color-text)] text-sm md:text-base">{e.title}</h3>
               {e.megaphone_title && e.megaphone_title !== e.title && (

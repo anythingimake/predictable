@@ -40,11 +40,27 @@ export function EpisodeDetail() {
         )}
         <div className="min-w-0">
           <div className="text-xs text-[var(--color-text-muted)] uppercase">
-            {ep.publish_date} · {formatSec(ep.duration_sec)} · {ep.type}
+            {ep.publish_date}
+            {ep.type !== "article" && <> · {formatSec(ep.duration_sec)}</>}
+            {" · "}
+            {ep.type === "article" ? "Article" : ep.type}
           </div>
           <h1 className="text-xl md:text-2xl font-semibold mt-1">
             {ep.title || ep.megaphone_title || ep.youtube_title || ep.substack_title || "(untitled episode)"}
           </h1>
+          {(ep.related_episode_id || ep.related_article_id) && (
+            <div className="mt-2 text-sm">
+              {ep.type === "article" && ep.related_episode_id ? (
+                <Link to={`/episodes/${ep.related_episode_id}`} className="tap inline-flex items-center text-[var(--color-accent)]">
+                  Related episode →
+                </Link>
+              ) : ep.related_article_id ? (
+                <Link to={`/episodes/${ep.related_article_id}`} className="tap inline-flex items-center text-[var(--color-accent)]">
+                  Related writeup →
+                </Link>
+              ) : null}
+            </div>
+          )}
           <div className="flex flex-wrap gap-x-4 gap-y-2 mt-2 text-sm">
             {/* Prefer YouTube; fall back to Substack; never link raw MP3. */}
             {ep.youtube_id ? (

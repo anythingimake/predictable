@@ -8,7 +8,7 @@ export type EventType = "entry" | "add" | "trim" | "exit" | "resolve" | "clarify
 export interface Episode {
   id: string;
   publish_date: string;
-  type: "episode" | "livestream" | "short" | "guest";
+  type: "episode" | "livestream" | "short" | "guest" | "article";
   title: string;
   megaphone_title?: string | null;
   youtube_title?: string | null;
@@ -118,6 +118,10 @@ export interface EpisodeDetail extends Episode {
   transcript_text?: string | null;
   substack_body?: string | null;
   chapter_json?: string | null;
+  /** Same-date podcast episode this article writes up (set when type==='article'). */
+  related_episode_id?: string | null;
+  /** Same-date newsletter article about this episode (set when type!=='article'). */
+  related_article_id?: string | null;
   calls: Array<Pick<Call, "id" | "market_hint" | "side" | "conviction" | "speaker" | "status" | "realized_pct" | "first_event_ts">>;
   mentions: Mention[];
   comments: Comment[];

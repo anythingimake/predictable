@@ -8,7 +8,7 @@ PRAGMA journal_mode = WAL;
 CREATE TABLE IF NOT EXISTS episodes (
   id              TEXT PRIMARY KEY,            -- megaphone guid
   publish_date    DATE NOT NULL,
-  type            TEXT NOT NULL DEFAULT 'episode',  -- episode | livestream | short | guest
+  type            TEXT NOT NULL DEFAULT 'episode',  -- episode | livestream | short | guest | article
   megaphone_title TEXT,
   youtube_title   TEXT,
   substack_title  TEXT,

@@ -35,7 +35,30 @@ router.get("/:id", (req, res) => {
     SELECT id, author, body, posted_at, is_stu, parent_id
     FROM comments WHERE episode_id = ? ORDER BY posted_at
   `).all(req.params.id);
-  res.json({ ...ep, calls, mentions, comments });
+
+  // Cross-link articles ↔ podcast episodes that cover the same day. A newsletter
+  // article exposes the same-date podcast episode it's writing up; a podcast
+  // episode exposes the same-date article. One id each way (nearest by date —
+  // here exact same date, lowest id as a stable tiebreak).
+  let related_episode_id: string | null = null;
+  let related_article_id: string | null = null;
+  if (ep.type === "article") {
+    const rel = db().prepare(`
+      SELECT id FROM episodes
+      WHERE publish_date = ? AND type != 'article' AND id != ?
+      ORDER BY id LIMIT 1
+    `).get(ep.publish_date, ep.id) as { id: string } | undefined;
+    related_episode_id = rel?.id ?? null;
+  } else {
+    const rel = db().prepare(`
+      SELECT id FROM episodes
+      WHERE publish_date = ? AND type = 'article' AND id != ?
+      ORDER BY id LIMIT 1
+    `).get(ep.publish_date, ep.id) as { id: string } | undefined;
+    related_article_id = rel?.id ?? null;
+  }
+
+  res.json({ ...ep, calls, mentions, comments, related_episode_id, related_article_id });
 });
 
 export default router;

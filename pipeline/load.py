@@ -73,35 +73,117 @@ def _transcript_for(guid: str) -> dict | None:
     return json.loads(p.read_text(encoding="utf-8"))
 
 
+def _title_overlap(a: str, b: str) -> float:
+    """Crude title-similarity score in [0,1]: Jaccard over lowercased word sets,
+    ignoring short stopword-ish tokens. Used to pick which same-day Megaphone
+    episode a Substack podcast post belongs to."""
+    def toks(s: str) -> set[str]:
+        return {w for w in re.findall(r"[a-z0-9]+", (s or "").lower()) if len(w) > 2}
+
+    ta, tb = toks(a), toks(b)
+    if not ta or not tb:
+        return 0.0
+    return len(ta & tb) / len(ta | tb)
+
+
+def _assign_podcast_posts(
+    eps: list[dict], sub_by_date: dict[str, list[dict]]
+) -> dict[str, dict]:
+    """Assign each Substack PODCAST post to at most one Megaphone episode, 1:1.
+
+    For each publish-date, consider all (episode, podcast-post) pairs and assign
+    greedily in descending title-overlap order, so the strongest title match
+    wins the post — independent of the order episodes appear in the snapshot.
+    This fixes the old date-prefix join where two same-day episodes both grabbed
+    the same post (and the prior greedy-first variant where whichever episode was
+    listed first claimed it regardless of title fit).
+
+    Returns {episode_guid: post} for episodes that got a podcast post.
+    """
+    by_guid: dict[str, dict] = {}
+    # Group episodes by date alongside the posts.
+    eps_by_date: dict[str, list[dict]] = {}
+    for ep in eps:
+        eps_by_date.setdefault(ep["pub_date"][:10], []).append(ep)
+
+    for date, day_eps in eps_by_date.items():
+        posts = [
+            p
+            for p in sub_by_date.get(date, [])
+            if p.get("type") == "podcast" and p.get("slug")
+        ]
+        if not posts:
+            continue
+        # All candidate pairs, best overlap first. Ties fall back to snapshot
+        # order, which is deterministic.
+        pairs = [
+            (_title_overlap(ep["title"], p.get("title") or ""), ei, pi, ep, p)
+            for ei, ep in enumerate(day_eps)
+            for pi, p in enumerate(posts)
+        ]
+        pairs.sort(key=lambda t: (-t[0], t[1], t[2]))
+        taken_eps: set[str] = set()
+        taken_posts: set[str] = set()
+        for _score, _ei, _pi, ep, p in pairs:
+            if ep["guid"] in taken_eps or p["slug"] in taken_posts:
+                continue
+            by_guid[ep["guid"]] = p
+            taken_eps.add(ep["guid"])
+            taken_posts.add(p["slug"])
+    return by_guid
+
+
 def load_episodes(conn) -> int:
-    """Load Megaphone snapshot + matching Substack posts + transcripts into episodes table."""
+    """Load Megaphone episodes + matching Substack podcast posts, then create
+    standalone 'article' episodes for newsletter posts that have no audio twin.
+
+    Matching rules:
+    - A Megaphone episode attaches the same-date Substack post whose
+      type == 'podcast' (the audio version of the same content). Each post
+      attaches to at most ONE episode (tracked via `used_slugs`); when several
+      same-date podcast posts exist, the closest title match wins.
+    - Newsletter posts (type == 'newsletter') whose slug was NOT attached to a
+      Megaphone episode become standalone articles (id 'substack:{slug}',
+      type 'article') so text-only writeups are first-class.
+    """
     mega = _latest_snapshot("megaphone")
     if not mega:
         print("[load] no megaphone snapshot found — run pipeline.ingest.megaphone first")
         return 0
     eps = json.loads(mega.read_text(encoding="utf-8"))
 
-    # Build Substack lookup by publish-date prefix (YYYY-MM-DD) for fuzzy join
-    sub_by_date: dict[str, dict] = {}
+    # Group Substack posts by publish-date prefix (YYYY-MM-DD). We keep the full
+    # list per date (not just the first) so 1:1 matching can pick the right one
+    # when two episodes/posts share a day.
+    sub_by_date: dict[str, list[dict]] = {}
     sub_snap = _latest_snapshot("substack", prefix="archive-")
     if sub_snap:
         for post in json.loads(sub_snap.read_text(encoding="utf-8")):
             d = (post.get("post_date") or "")[:10]
             if d:
-                sub_by_date.setdefault(d, post)
+                sub_by_date.setdefault(d, []).append(post)
+
+    # 1:1 assignment of podcast posts to episodes (order-independent, best
+    # title match wins). Tracks which slugs are spoken for so the article pass
+    # below only creates standalone rows for genuinely unattached newsletters.
+    assigned = _assign_podcast_posts(eps, sub_by_date)
+    used_slugs: set[str] = {p["slug"] for p in assigned.values()}
 
     count = 0
     for ep in eps:
         guid = ep["guid"]
         pub_date_iso = ep["pub_date"][:10]
-        sub = sub_by_date.get(pub_date_iso)
+        mega_title = ep["title"]
+
+        sub = assigned.get(guid)
+
         transcript = _transcript_for(guid)
 
         row = {
             "id": guid,
             "publish_date": pub_date_iso,
             "type": "episode",
-            "megaphone_title": ep["title"],
+            "megaphone_title": mega_title,
             "youtube_title": None,  # filled later by enrich/cross_reference.py
             "substack_title": sub.get("title") if sub else None,
             "youtube_id": None,
@@ -118,6 +200,43 @@ def load_episodes(conn) -> int:
         }
         upsert_episode(conn, row)
         count += 1
+
+    # Standalone articles: every newsletter post whose slug wasn't claimed by a
+    # Megaphone episode. Podcast posts that simply lacked a Megaphone twin are
+    # intentionally skipped — articles are text-only writeups, not audio.
+    articles = 0
+    for posts in sub_by_date.values():
+        for post in posts:
+            slug = post.get("slug")
+            if not slug or slug in used_slugs:
+                continue
+            if post.get("type") != "newsletter":
+                continue
+            used_slugs.add(slug)
+            row = {
+                "id": f"substack:{slug}",
+                "publish_date": (post.get("post_date") or "")[:10],
+                "type": "article",
+                "megaphone_title": None,
+                "youtube_title": None,
+                "substack_title": post.get("title"),
+                "youtube_id": None,
+                "substack_slug": slug,
+                "audio_url": None,
+                "duration_sec": None,
+                "view_count": None,
+                "like_count": None,
+                "comment_count": None,
+                "transcript_text": None,
+                "substack_body": None,  # filled by Substack body pull
+                "chapter_json": None,
+                "cover_image_url": post.get("cover_image"),
+            }
+            upsert_episode(conn, row)
+            articles += 1
+            count += 1
+    if articles:
+        print(f"[load]   ({articles} standalone newsletter articles)")
     return count
 
 
