@@ -168,18 +168,16 @@ def _snapshot_polymarket(conn, market_id: str, slug_or_id: str, since_iso: str |
     except (TypeError, ValueError, json.JSONDecodeError):
         pass
 
-    # Backfill via CLOB prices-history on the YES token. For markets that have
-    # been closed for a while, `interval=1d` returns an empty series — the
-    # CLOB only seems to keep the rolling 30/60-day window for fine intervals.
-    # `interval=all` returns the full lifetime series for closed markets.
+    # Backfill via CLOB prices-history on the YES token. `interval` is the time
+    # RANGE not the candle width — interval='max' + fidelity=1440 returns the
+    # full lifetime daily series (the old interval='1d' only fetched the last
+    # 24h, which is why charts were a flat 2-3 day stub).
     token_ids = polymarket.token_ids_for_market(market)
     if not token_ids:
         return written
     yes_token = token_ids[0]
     try:
-        hist = polymarket.prices_history(yes_token, interval="1d")
-        if not hist:
-            hist = polymarket.prices_history(yes_token, interval="all")
+        hist = polymarket.prices_history(yes_token, interval="max", fidelity=1440)
     except requests.RequestException:
         hist = []
     seen_days: set[str] = set()

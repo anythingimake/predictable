@@ -76,9 +76,14 @@ def token_ids_for_market(market: dict) -> list[str]:
     return list(raw)
 
 
-def prices_history(token_id: str, *, interval: str = "1d") -> list[dict]:
-    """Daily/hourly price history for one CLOB token. Returns [{t: unix_sec, p: 0..1}]."""
-    data = _get(CLOB, "/prices-history", {"market": token_id, "interval": interval})
+def prices_history(token_id: str, *, interval: str = "max", fidelity: int = 1440) -> list[dict]:
+    """Price history for one CLOB token. Returns [{t: unix_sec, p: 0..1}].
+
+    NOTE on params: `interval` is the time RANGE (1d/1w/1m/max), NOT the candle
+    width — `interval='1d'` means "last 24h" and yields ~1 point. `fidelity` is
+    the candle width in minutes (1440 = daily). For the full daily series use
+    interval='max', fidelity=1440 (confirmed ~296 points on a 10-month market)."""
+    data = _get(CLOB, "/prices-history", {"market": token_id, "interval": interval, "fidelity": fidelity})
     return data.get("history") if isinstance(data, dict) else (data or [])
 
 
