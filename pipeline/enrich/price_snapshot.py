@@ -70,7 +70,7 @@ def _snapshot_kalshi(conn, market_id: str, ticker: str, since_iso: str | None) -
             market.get("yes_ask_dollars")
             or market.get("last_price_dollars")
             or 0.0
-        )
+        ) * 100.0  # dollars (0..1) -> cents (0..100)
         vol = float(market.get("volume_fp") or 0.0) or None
         record_price_snapshot(conn, market_id, _today_iso(), price, vol)
         written += 1
@@ -131,9 +131,9 @@ def _snapshot_kalshi(conn, market_id: str, ticker: str, since_iso: str | None) -
                 cprice = float(cprice)
                 # Kalshi candle prices come as cents OR dollars depending on
                 # which field we picked. The `_dollars` fields are 0..1
-                # strings; the bare fields are 0..100 ints. Normalize.
-                if cprice > 1.5:
-                    cprice = cprice / 100.0
+                # strings; the bare fields are 0..100 ints. Normalize to cents.
+                if cprice <= 1.5:
+                    cprice = cprice * 100.0
                 vol = c.get("volume")
                 vol = float(vol) if vol is not None else None
                 record_price_snapshot(conn, market_id, day, cprice, vol)
@@ -159,7 +159,7 @@ def _snapshot_polymarket(conn, market_id: str, slug_or_id: str, since_iso: str |
         prices = market.get("outcomePrices")
         if isinstance(prices, str):
             prices = json.loads(prices)
-        cur_price = float(prices[0]) if prices else None
+        cur_price = float(prices[0]) * 100.0 if prices else None  # dollars -> cents
         vol = market.get("volume24hr") or market.get("volume")
         vol = float(vol) if vol is not None else None
         if cur_price is not None:
@@ -195,7 +195,7 @@ def _snapshot_polymarket(conn, market_id: str, slug_or_id: str, since_iso: str |
             continue
         seen_days.add(day)
         try:
-            record_price_snapshot(conn, market_id, day, float(p), None)
+            record_price_snapshot(conn, market_id, day, float(p) * 100.0, None)  # dollars -> cents
             written += 1
         except (TypeError, ValueError):
             continue
