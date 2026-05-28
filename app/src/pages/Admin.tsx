@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { useStore } from "../store";
 import { formatDateTimeSafe } from "../lib/format";
 
@@ -11,6 +12,14 @@ interface Note {
   updated_at: string;
 }
 
+interface UnresolvedMarket {
+  call_id: number | null;
+  episode_id: string | null;
+  market_hint: string;
+  reason: string;
+  logged_on: string;
+}
+
 export function Admin() {
   const token = useStore((s) => s.adminToken);
   const setToken = useStore((s) => s.setAdminToken);
@@ -18,6 +27,7 @@ export function Admin() {
 
   const [tokenInput, setTokenInput] = useState("");
   const [notes, setNotes] = useState<Note[] | null>(null);
+  const [unresolved, setUnresolved] = useState<UnresolvedMarket[] | null>(null);
   const [err, setErr] = useState<string | null>(null);
   const [body, setBody] = useState("");
   const [scopeType, setScopeType] = useState("general");
@@ -35,6 +45,11 @@ export function Admin() {
         setErr(String(e));
         if (String(e).includes("Bad token")) clearToken();
       });
+    // Unresolved markets — non-fatal if it 404s on older deploys.
+    fetch("/api/admin/unresolved-markets", { headers: { authorization: `Bearer ${token}` } })
+      .then((r) => (r.ok ? r.json() : []))
+      .then(setUnresolved)
+      .catch(() => setUnresolved([]));
   }, [token, clearToken]);
 
   async function saveNote() {
@@ -133,6 +148,40 @@ export function Admin() {
           Save note
         </button>
       </div>
+
+      {unresolved && unresolved.length > 0 && (
+        <section className="rounded border border-[var(--color-border)] bg-[var(--color-bg-elev)] p-4 space-y-2">
+          <div className="flex items-center justify-between">
+            <h2 className="text-base font-medium">
+              Unresolved markets <span className="text-xs text-[var(--color-text-muted)] ml-2">({unresolved.length})</span>
+            </h2>
+            <span className="text-[11px] text-[var(--color-text-faint)]">
+              Calls whose market_hint didn't match any candidate above the conservative-match threshold.
+              Re-run `python -m pipeline.enrich.market_resolver` after editing the hint.
+            </span>
+          </div>
+          <ul className="space-y-1 text-sm">
+            {unresolved.slice(0, 50).map((u) => (
+              <li key={`${u.call_id ?? "?"}-${u.market_hint}`} className="flex items-start justify-between gap-3 py-1 border-b border-[var(--color-border)] last:border-b-0">
+                <div className="min-w-0 flex-1">
+                  <div className="truncate">
+                    {u.call_id ? (
+                      <Link to={`/calls/${u.call_id}`} className="text-[var(--color-text)] hover:underline">
+                        {u.market_hint || "(empty hint)"}
+                      </Link>
+                    ) : (
+                      <span>{u.market_hint || "(empty hint)"}</span>
+                    )}
+                  </div>
+                  <div className="text-[11px] text-[var(--color-text-faint)] truncate">
+                    {u.reason} · logged {u.logged_on}
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       <div className="space-y-2">
         {(notes ?? []).map((n) => (

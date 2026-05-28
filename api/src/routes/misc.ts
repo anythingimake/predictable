@@ -44,12 +44,37 @@ router.get("/strategies", (_req, res) => {
 router.get("/sagas", (_req, res) => {
   const rows = db().prepare(`
     SELECT s.id, s.name, s.market_id, s.status,
-           m.question AS market_question,
+           m.question AS market_question, m.source AS market_source,
            (SELECT COUNT(*) FROM saga_episodes WHERE saga_id = s.id) AS episode_count
     FROM sagas s LEFT JOIN markets m ON m.id = s.market_id
     ORDER BY s.status, s.name
   `).all();
   res.json(rows);
+});
+
+// /api/sagas/:id — saga detail with episodes
+router.get("/sagas/:id", (req, res) => {
+  const saga = db().prepare(`
+    SELECT s.id, s.name, s.market_id, s.status,
+           m.question AS market_question, m.source AS market_source,
+           m.current_price, m.resolved, m.resolution
+      FROM sagas s LEFT JOIN markets m ON m.id = s.market_id
+     WHERE s.id = ?
+  `).get(req.params.id) as any;
+  if (!saga) {
+    res.status(404).json({ error: "not_found" });
+    return;
+  }
+  const episodes = db().prepare(`
+    SELECT e.id, e.publish_date,
+           COALESCE(e.substack_title, e.megaphone_title) AS episode_title,
+           e.youtube_id, e.substack_slug
+      FROM saga_episodes se
+      JOIN episodes e ON e.id = se.episode_id
+     WHERE se.saga_id = ?
+     ORDER BY e.publish_date
+  `).all(req.params.id);
+  res.json({ ...saga, episodes });
 });
 
 // /api/calendar — upcoming market resolutions for active calls

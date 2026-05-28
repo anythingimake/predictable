@@ -7,7 +7,10 @@ import type {
   Market,
   Principle,
   PrincipleDetail,
+  Saga,
+  SagaDetail,
   Scoreboard,
+  ScoreboardHistoryPoint,
 } from "./types";
 
 const BASE = "/api";
@@ -59,13 +62,14 @@ export const api = {
   market: (id: string) => get<Market & { calls: Call[]; price_history: { snapshot_date: string; price: number }[] }>(`/markets/${encodeURIComponent(id)}`),
 
   scoreboard: () => get<Scoreboard>("/scoreboard"),
-  scoreboardHistory: () => get<Array<{ snapshot_date: string; hit_rate: number; bankroll_pct: number }>>("/scoreboard/history"),
+  scoreboardHistory: () => get<ScoreboardHistoryPoint[]>("/scoreboard/history"),
 
   principles: () => get<Principle[]>("/principles"),
   principle: (id: number) => get<PrincipleDetail>(`/principles/${id}`),
 
   strategies: () => get<any[]>("/strategies"),
-  sagas: () => get<any[]>("/sagas"),
+  sagas: () => get<Saga[]>("/sagas"),
+  saga: (id: number | string) => get<SagaDetail>(`/sagas/${id}`),
   calendar: () => get<CalendarEntry[]>("/calendar"),
   mediaVsMarkets: () => get<any[]>("/media-vs-markets"),
   glossary: () => get<Array<{ term: string; definition: string }>>("/glossary"),

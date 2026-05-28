@@ -6,6 +6,8 @@ import { Episodes } from "./pages/Episodes";
 import { EpisodeDetail } from "./pages/EpisodeDetail";
 import { Markets } from "./pages/Markets";
 import { Principles } from "./pages/Principles";
+import { Sagas } from "./pages/Sagas";
+import { SagaDetail } from "./pages/SagaDetail";
 import { Calendar } from "./pages/Calendar";
 import { Calculator } from "./pages/Calculator";
 import { Guide } from "./pages/Guide";
@@ -18,6 +20,7 @@ const NAV = [
   { to: "/", label: "Scoreboard", end: true },
   { to: "/calls", label: "Calls" },
   { to: "/episodes", label: "Episodes" },
+  { to: "/sagas", label: "Sagas" },
   { to: "/calendar", label: "Calendar" },
   { to: "/calculator", label: "Calculator" },
   { to: "/guide", label: "Guide" },
@@ -106,6 +109,8 @@ export default function App() {
           <Route path="/episodes/:id" element={<EpisodeDetail />} />
           <Route path="/markets" element={<Markets />} />
           <Route path="/principles" element={<Principles />} />
+          <Route path="/sagas" element={<Sagas />} />
+          <Route path="/sagas/:id" element={<SagaDetail />} />
           <Route path="/calendar" element={<Calendar />} />
           <Route path="/calculator" element={<Calculator />} />
           <Route path="/guide" element={<Guide />} />

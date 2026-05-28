@@ -21,6 +21,7 @@ from __future__ import annotations
 
 import json
 import re
+import sqlite3
 from datetime import date, datetime, timezone
 from difflib import SequenceMatcher
 from typing import Optional
@@ -57,14 +58,197 @@ _STOPWORDS = frozenset(
 _WEAK_TOKENS = frozenset(
     {str(y) for y in range(2018, 2036)}
     | {"win", "wins", "won", "loss", "lose", "lost", "winner", "race",
-       "primary", "election", "elections", "midterm", "midterms"}
+       "primary", "election", "elections", "midterm", "midterms",
+       "next", "first", "second", "third", "general",
+       # Generic time/order/control filler — these recur across every market
+       # title regardless of topic.
+       "after", "before", "during", "by", "until", "since", "between",
+       "become", "becomes", "becoming", "control", "controls", "following",
+       "head", "leader", "leaders",
+       }
+    # Party names are NOT weak — "Democrats win House" needs `democrats` to
+    # count as a strong signal so it matches "Democratic Party control House".
+    # The conflict-bucket approach handles the cross-party rejection (D vs R).
 )
+
+# Countries that show up in non-US prediction markets. If a title mentions one
+# of these and the hint doesn't (or vice versa), they're about different
+# political systems — reject. The Thailand House of Representatives election
+# is a different "house" than the U.S. House of Representatives.
+_FOREIGN_COUNTRIES = {
+    "thailand", "hungary", "israel", "germany", "france", "uk", "britain",
+    "england", "scotland", "wales", "ireland", "italy", "spain", "portugal",
+    "japan", "china", "russia", "ukraine", "india", "pakistan", "brazil",
+    "mexico", "canada", "australia", "korea", "philippines", "indonesia",
+    "vietnam", "argentina", "chile", "venezuela", "colombia", "peru",
+    "turkey", "iran", "iraq", "syria", "lebanon", "egypt", "saudi",
+    "afghanistan", "bangladesh", "nigeria", "kenya", "ethiopia", "morocco",
+    "poland", "netherlands", "belgium", "sweden", "norway", "denmark",
+    "finland", "greece", "austria", "switzerland", "hungary", "romania",
+}
+
+# Party bucket: a hint about Democrats can't match a title about Republicans.
+_BUCKET_PARTY: dict[str, str] = {
+    "democrat": "democrat", "democrats": "democrat", "democratic": "democrat",
+    "republican": "republican", "republicans": "republican", "gop": "republican",
+}
+
+# ----- Categorical / disambiguation gates -----
+#
+# These are the false-match patterns we keep hitting:
+#   - AJ Brown to Eagles  ↔ AJ Brown to Patriots  (different teams)
+#   - Roy Cooper NC Senate ↔ Jon Cooper NHL Jack Adams  (different leagues/people)
+#   - Tomlin coaches Patriots ↔ Tomlin fired by Feb 28  (different question)
+#   - Republicans win Iowa Senate ↔ Republicans win Utah Senate  (different state)
+#   - Republicans win Senate (national) ↔ Republicans win Ohio Senate  (national vs single-state)
+#   - Vivek Ramaswamy OH gubernatorial ↔ Vivek Ramaswamy popular vote 2024  (different race / year)
+#   - Porter / Swalwell CA Senate ↔ CA Governor  (different office)
+#
+# Strategy: build small "category buckets" of mutually-exclusive tokens. If a
+# hint contains a token from one bucket and the candidate title contains a
+# DIFFERENT token from the SAME bucket, that's a conflict and we reject.
+
+# US state names + 2-letter codes (lowercased). Includes the few district/
+# territory tokens that legitimately appear in markets.
+_US_STATES = {
+    "alabama": "al", "alaska": "ak", "arizona": "az", "arkansas": "ar",
+    "california": "ca", "colorado": "co", "connecticut": "ct", "delaware": "de",
+    "florida": "fl", "georgia": "ga", "hawaii": "hi", "idaho": "id",
+    "illinois": "il", "indiana": "in", "iowa": "ia", "kansas": "ks",
+    "kentucky": "ky", "louisiana": "la", "maine": "me", "maryland": "md",
+    "massachusetts": "ma", "michigan": "mi", "minnesota": "mn", "mississippi": "ms",
+    "missouri": "mo", "montana": "mt", "nebraska": "ne", "nevada": "nv",
+    "ohio": "oh", "oklahoma": "ok", "oregon": "or", "pennsylvania": "pa",
+    "tennessee": "tn", "texas": "tx", "utah": "ut", "vermont": "vt",
+    "virginia": "va", "washington": "wa", "wisconsin": "wi", "wyoming": "wy",
+    # multi-word states get their distinctive first word as well
+    "carolina": None,  # NC/SC — code disambiguation requires "north"/"south"
+    "dakota": None,    # ND/SD — same
+    "jersey": None,    # NJ
+    "hampshire": None, # NH
+    "mexico": None,    # NM (also a country — fine, gate is symmetric)
+}
+# Map code -> state token
+_STATE_CODES = {v: k for k, v in _US_STATES.items() if v}
+# Special-case "north/south" prefix tokens are NOT state markers on their own.
+# We treat the discriminator as the *combination*. For matcher simplicity we
+# treat NC/SC/ND/SD as opaque codes when present.
+_TWO_LETTER_STATE_CODES = set(_STATE_CODES.keys()) | {"nc", "sc", "nd", "sd", "nj", "nh", "nm", "wv", "ri"}
+
+# Categories where tokens compete: hint says one, title says another → reject.
+# Each bucket is `{token: canonical}` so synonyms (gubernatorial ↔ governor,
+# presidential ↔ president, eagle ↔ eagles) don't false-conflict.
+_BUCKET_OFFICE: dict[str, str] = {
+    "senate": "senate", "senator": "senate", "senatorial": "senate",
+    "house": "house", "congress": "house", "congressional": "house",
+    "governor": "governor", "gubernatorial": "governor",
+    "mayor": "mayor", "mayoral": "mayor",
+    "president": "president", "presidential": "president", "presidency": "president",
+    "attorney": "attorney",
+}
+_BUCKET_SPORT_LEAGUE: dict[str, str] = {
+    t: t for t in ("nfl", "nba", "nhl", "mlb", "mls", "pga", "ufc", "wnba", "ncaa")
+}
+# NFL teams (lowercased). Singular / plural / common short-forms map to the
+# canonical team token so "Eagle" → eagles and "Niners" → 49ers don't
+# false-conflict with their own canonical.
+_NFL_TEAMS: dict[str, str] = {}
+for canonical, aliases in {
+    "patriots": ("patriot", "pats"),
+    "eagles": ("eagle",),
+    "cowboys": ("cowboy",),
+    "giants": ("giant",),
+    "jets": ("jet",),
+    "bills": ("bill",),
+    "dolphins": ("dolphin",),
+    "ravens": ("raven",),
+    "bengals": ("bengal",),
+    "browns": ("brown",),  # NOTE: collides with surname Brown — handled below
+    "steelers": ("steeler",),
+    "texans": ("texan",),
+    "colts": ("colt",),
+    "jaguars": ("jaguar", "jags"),
+    "titans": ("titan",),
+    "broncos": ("bronco",),
+    "chiefs": ("chief",),
+    "raiders": ("raider",),
+    "chargers": ("charger",),
+    "commanders": ("commander",),
+    "vikings": ("viking",),
+    "packers": ("packer",),
+    "bears": ("bear",),
+    "lions": ("lion",),
+    "saints": ("saint",),
+    "buccaneers": ("buccaneer", "bucs"),
+    "falcons": ("falcon",),
+    "panthers": ("panther",),
+    "seahawks": ("seahawk",),
+    "49ers": ("niners",),
+    "rams": ("ram",),
+    "cardinals": ("cardinal",),
+}.items():
+    _NFL_TEAMS[canonical] = canonical
+    for a in aliases:
+        _NFL_TEAMS[a] = canonical
+
+# The bare "brown" alias collides with people whose surname is Brown. Drop it
+# from the NFL bucket so "A.J. Brown" doesn't trip a Browns conflict.
+_NFL_TEAMS.pop("brown", None)
+
+# Combine into one list of buckets the matcher iterates. Each bucket is a
+# `{token: canonical}` dict.
+_CONFLICT_BUCKETS: list[dict[str, str]] = [
+    _BUCKET_OFFICE,
+    _BUCKET_SPORT_LEAGUE,
+    _NFL_TEAMS,
+]
+
+# Disposition tokens — e.g., "fired" vs "coaches" vs "hired" all describe
+# DIFFERENT events about the same person. If the hint says one and the title
+# says another, the question isn't the same even if names overlap.
+_BUCKET_DISPOSITION: dict[str, str] = {
+    "fired": "fired", "fires": "fired",
+    "hired": "hired", "hires": "hired",
+    "coaches": "coach", "coach": "coach", "coaching": "coach",
+    "traded": "traded", "trades": "traded",
+    "resign": "resign", "resigns": "resign", "resignation": "resign",
+    "indicted": "indicted", "indictment": "indicted",
+    "convicted": "convicted", "acquitted": "acquitted",
+    "released": "released",
+    "popular": "popular",  # "popular vote" is its own kind of question
+}
+_CONFLICT_BUCKETS.append(_BUCKET_DISPOSITION)
+_CONFLICT_BUCKETS.append(_BUCKET_PARTY)
+
+
+# Common stem collapses — "democrats" / "democratic" / "democrat" all mean the
+# same political party for matching purposes. Applied before the weak-token
+# filter so a hint and title with the same root party reference can match.
+_STEM_MAP: dict[str, str] = {
+    "democrats": "democrat", "democratic": "democrat",
+    "republicans": "republican",
+    "midterms": "midterm",
+    "primaries": "primary",
+    "elections": "election",
+    "governors": "governor", "gubernatorial": "governor",
+    "presidential": "president", "presidency": "president",
+    "senatorial": "senate", "senator": "senate", "senators": "senate",
+    "congressional": "congress",
+    "patriot": "patriots",  # singular -> plural for NFL team
+    "eagle": "eagles",
+    "winners": "winner", "winning": "winner",
+}
 
 
 def _tokens(s: str) -> set[str]:
     s = (s or "").lower()
     parts = re.findall(r"[a-z0-9]+", s)
-    return {p for p in parts if p and p not in _STOPWORDS and len(p) > 1}
+    out: set[str] = set()
+    for p in parts:
+        if not p or len(p) <= 1 or p in _STOPWORDS:
+            continue
+        out.add(_STEM_MAP.get(p, p))
+    return out
 
 
 def _strong_tokens(s: str) -> set[str]:
@@ -72,6 +256,96 @@ def _strong_tokens(s: str) -> set[str]:
     nouns. Used to make sure a 'match' actually shares meaningful content,
     not just generic year + verb."""
     return _tokens(s) - _WEAK_TOKENS
+
+
+def _states_in(s: str) -> set[str]:
+    """All distinct US states referenced in a string, normalized to the full
+    state name (so "TX" and "Texas" collapse to the same token)."""
+    toks = _tokens(s)
+    found: set[str] = set()
+    for t in toks:
+        if t in _US_STATES and _US_STATES[t]:  # full name → keep
+            found.add(t)
+        elif t in _STATE_CODES:                  # code → expand
+            found.add(_STATE_CODES[t])
+    return found
+
+
+def _years_in(s: str) -> set[str]:
+    return {t for t in _tokens(s) if t.isdigit() and len(t) == 4 and 2018 <= int(t) <= 2035}
+
+
+def _bucket_canonicals(tokens: set[str], bucket: dict[str, str]) -> set[str]:
+    return {bucket[t] for t in tokens if t in bucket}
+
+
+def _foreign_countries_in(s: str) -> set[str]:
+    return _tokens(s) & _FOREIGN_COUNTRIES
+
+
+def _conflict(hint: str, title: str) -> str | None:
+    """Return a short conflict reason if hint and title both mention competing
+    tokens in the same bucket (different state, different office, different
+    team), else None. Tokens shared (after canonical-collapse) don't conflict.
+
+    The check is symmetric: a hint that says nothing about state can still
+    match a title that does (and vice-versa); only an explicit difference
+    triggers rejection. Synonyms like gubernatorial/governor or eagle/eagles
+    collapse to one canonical so they don't false-conflict.
+    """
+    h_tokens = _tokens(hint)
+    t_tokens = _tokens(title)
+
+    # Foreign-country conflict — Thailand PM ≠ U.S. House. If one side
+    # mentions a non-US country and the other doesn't, reject.
+    h_foreign = _foreign_countries_in(hint)
+    t_foreign = _foreign_countries_in(title)
+    if h_foreign and not t_foreign:
+        return f"hint mentions {sorted(h_foreign)} but title is US-scope"
+    if t_foreign and not h_foreign:
+        return f"title mentions {sorted(t_foreign)} but hint is US-scope"
+    if h_foreign and t_foreign and not (h_foreign & t_foreign):
+        return f"country mismatch ({sorted(h_foreign)} vs {sorted(t_foreign)})"
+
+    # State conflict
+    h_states = _states_in(hint)
+    t_states = _states_in(title)
+    if h_states and t_states and not (h_states & t_states):
+        return f"state mismatch ({sorted(h_states)} vs {sorted(t_states)})"
+    # Specificity mismatch: title is about a single state, hint is not — this
+    # is the "Republicans win Senate (national)" → "Republicans win Ohio Senate"
+    # false-match guard. The reverse (hint mentions state, title doesn't) is
+    # also rejected because a state-specific call shouldn't latch onto a
+    # national-level market.
+    #
+    # Override: when hint and title share 3+ strong tokens (a candidate name
+    # plus a distinctive descriptor like "margin" / "runoff" / a numeric
+    # threshold), specificity mismatch alone shouldn't reject. The Paxton +20%
+    # margin call ("Ken Paxton +20% margin (Kalshi/Politicon live market)") is
+    # the canonical case — it doesn't say "Texas" but shares paxton+ken+margin
+    # +20 with the actual market.
+    h_strong = _strong_tokens(hint)
+    t_strong = _strong_tokens(title)
+    shared_strong = h_strong & t_strong
+    if len(shared_strong) < 3:
+        if h_states and not t_states:
+            return f"hint mentions state(s) {sorted(h_states)} but title is national-scope"
+        if t_states and not h_states:
+            return f"title mentions state(s) {sorted(t_states)} but hint is national-scope"
+
+    # Year conflict (e.g., 2024 in hint, 2026 in title for the same candidate)
+    h_years = _years_in(hint)
+    t_years = _years_in(title)
+    if h_years and t_years and not (h_years & t_years):
+        return f"year mismatch ({sorted(h_years)} vs {sorted(t_years)})"
+
+    # Bucket conflict (canonicalized)
+    for bucket in _CONFLICT_BUCKETS:
+        h_b = _bucket_canonicals(h_tokens, bucket)
+        t_b = _bucket_canonicals(t_tokens, bucket)
+        if h_b and t_b and not (h_b & t_b):
+            return f"bucket mismatch ({sorted(h_b)} vs {sorted(t_b)})"
+    return None
 
 
 def _title_overlap(hint: str, title: str) -> float:
@@ -309,28 +583,39 @@ def match_market(market_hint: str, candidates: list[dict]) -> Optional[dict]:
 
     Acceptance gate (intentionally conservative — false positives are worse than
     leaving a call unresolved for human review):
-      - score >= 0.20  (raw similarity)
-      - AND at least 2 shared STRONG tokens (names/places/distinctive nouns),
-        OR 1 strong token if the raw score is >= 0.45 (i.e. one strong token
-        plus a lot of structural overlap).
-    Year tokens, generic words like "election" / "wins", and source names are
-    classified as weak so they can't carry a match on their own.
+      1. Reject any candidate whose title `_conflict`s with the hint on a
+         categorical bucket (state, year, office, league, NFL team).
+      2. Require `score >= 0.25`.
+      3. Require at least 2 shared STRONG tokens (names/places/distinctive nouns),
+         OR 1 strong token if raw score is >= 0.45.
 
-    Was: required `score >= 0.20` and any one shared informative token. That
-    let "Roy Cooper wins NC Senate 2026" latch onto "Jon Cooper Jack Adams
-    Award" because both shared `cooper` + `2026` (one weak, one weak).
+    The conflict check is what stops the famous false matches:
+      - Roy Cooper NC Senate ↔ Jon Cooper NHL (no shared state/league, NHL bucket trips)
+      - AJ Brown to Eagles ↔ AJ Brown to Patriots (NFL team mismatch)
+      - Republicans win IA Senate ↔ Republicans win UT Senate (state mismatch)
+      - Porter / Swalwell CA Senate ↔ CA Governor (office mismatch)
+      - Vivek OH gubernatorial 2026 ↔ Vivek popular vote 2024 (year mismatch)
+      - Tomlin coaches Patriots Week 1 ↔ Tomlin fired by Feb 28 (no shared strong
+        tokens once "patriots" / "fired" / "week" diverge)
     """
     if not market_hint or not candidates:
         return None
+    # Pre-filter: drop conflicting candidates entirely so a bad-but-high-score
+    # candidate doesn't shadow a good-but-lower-score one.
+    safe = [c for c in candidates
+            if not _conflict(market_hint, c.get("_title") or c.get("question") or "")]
+    if not safe:
+        return None
     best, best_score = None, 0.0
-    for c in candidates:
+    for c in safe:
         score = _title_overlap(market_hint, c.get("_title") or c.get("question") or "")
         score += _recency_bonus(c.get("_end") or c.get("resolution_date"))
         if score > best_score:
             best, best_score = c, score
     if not best:
         return None
-    if best_score < 0.20:
+    # Threshold bumped 0.20 → 0.25 after the false-match audit on 2026-05-27.
+    if best_score < 0.25:
         return None
     hint_strong = _strong_tokens(market_hint)
     title_strong = _strong_tokens(best.get("_title") or best.get("question") or "")
@@ -338,18 +623,9 @@ def match_market(market_hint: str, candidates: list[dict]) -> Optional[dict]:
     # 2+ shared strong tokens = solid.
     if len(shared_strong) >= 2:
         return best
-    # 1 shared strong token: require strong structural overlap. Bumped from
-    # 0.45 → 0.30 after empirical tuning showed legitimate "Democrats win the
-    # House" / "Democratic Party control the House" only shares `house`
-    # (different word stems for democrats), but the rest of the structure
-    # matches and the score lands ~0.24–0.32.
-    if len(shared_strong) == 1 and best_score >= 0.30:
+    # 1 shared strong token: require strong structural overlap.
+    if len(shared_strong) == 1 and best_score >= 0.45:
         return best
-    # 0 shared strong tokens: never accept, regardless of score (this is the
-    # Roy Cooper / Jon Cooper guard — sharing only year + name surname between
-    # totally unrelated domains should not match).
-    if len(shared_strong) == 0:
-        return None
     return None
 
 
@@ -358,6 +634,33 @@ def match_market(market_hint: str, candidates: list[dict]) -> Optional[dict]:
 
 def _strip_internals(c: dict) -> dict:
     return {k: v for k, v in c.items() if not k.startswith("_")}
+
+
+def _find_sibling(match: dict, hint: str) -> dict | None:
+    """Given a matched market on one exchange, look for its sibling on the
+    OTHER exchange (Kalshi → Polymarket and vice versa). Returns a normalized
+    market dict (with _title) or None.
+
+    Same matching gate as the primary `match_market`. We use the matched
+    market's _title as the search hint (more specific than the user's free-
+    text hint, so the sibling search has better signal).
+    """
+    primary_source = match.get("source")
+    title = match.get("_title") or match.get("question") or ""
+    if not title or not primary_source:
+        return None
+    if primary_source == "kalshi":
+        other = _polymarket_candidates(title)
+    elif primary_source == "polymarket":
+        other = _kalshi_candidates(title)
+    else:
+        return None
+    if not other:
+        return None
+    sibling = match_market(title, other)
+    if sibling and sibling.get("source") == primary_source:
+        return None  # paranoia — shouldn't happen but guard against re-finding self
+    return sibling
 
 
 def resolve_all() -> dict:
@@ -396,6 +699,42 @@ def resolve_all() -> dict:
 
             if match:
                 payload = _strip_internals(match)
+                # Look for a sibling market on the other exchange (e.g., the
+                # Texas Senate runoff is on both Kalshi and Polymarket).
+                # Store the sibling id in meta_json so the UI can surface it.
+                sibling = _find_sibling(match, hint)
+                if sibling:
+                    sibling_id = f"{sibling['source']}:{sibling['ticker']}"
+                    sibling_meta = payload.get("meta_json") or {}
+                    if isinstance(sibling_meta, str):
+                        try:
+                            sibling_meta = json.loads(sibling_meta)
+                        except json.JSONDecodeError:
+                            sibling_meta = {}
+                    sibling_meta["sibling_market_id"] = sibling_id
+                    payload["meta_json"] = sibling_meta
+                    # Also upsert the sibling so /api/markets/{sibling_id} works.
+                    upsert_market(conn, _strip_internals(sibling))
+                    # Symmetric back-link on the sibling.
+                    try:
+                        sib_row = conn.execute(
+                            "SELECT meta_json FROM markets WHERE id = ?",
+                            (sibling_id,),
+                        ).fetchone()
+                        sib_meta = {}
+                        if sib_row and sib_row["meta_json"]:
+                            try:
+                                sib_meta = json.loads(sib_row["meta_json"]) or {}
+                            except json.JSONDecodeError:
+                                sib_meta = {}
+                        sib_meta["sibling_market_id"] = f"{match['source']}:{match['ticker']}"
+                        conn.execute(
+                            "UPDATE markets SET meta_json = ? WHERE id = ?",
+                            (json.dumps(sib_meta), sibling_id),
+                        )
+                    except sqlite3.Error:
+                        pass
+                    print(f"[resolver]   sibling: {sibling_id}", flush=True)
                 mid = upsert_market(conn, payload)
                 conn.execute("UPDATE calls SET market_id = ? WHERE id = ?", (mid, cid))
                 resolved_n += 1

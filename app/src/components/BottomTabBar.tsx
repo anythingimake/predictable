@@ -15,6 +15,7 @@ const PRIMARY: NavItem[] = [
 ];
 
 const MORE: NavItem[] = [
+  { to: "/sagas", label: "Sagas" },
   { to: "/calculator", label: "Calculator" },
   { to: "/guide", label: "Guide" },
   { to: "/about", label: "About" },

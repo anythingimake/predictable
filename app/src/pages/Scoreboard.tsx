@@ -1,17 +1,22 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { api } from "../api";
-import type { Scoreboard as ScoreboardData } from "../types";
+import type { Scoreboard as ScoreboardData, ScoreboardHistoryPoint } from "../types";
 import { ConvictionBadge } from "../components/ConvictionBadge";
 import { formatPct } from "../lib/format";
 import { CONVICTION_LABELS } from "../lib/format";
 
 export function Scoreboard() {
   const [data, setData] = useState<ScoreboardData | null>(null);
+  const [history, setHistory] = useState<ScoreboardHistoryPoint[] | null>(null);
   const [err, setErr] = useState<string | null>(null);
 
   useEffect(() => {
     api.scoreboard().then(setData).catch((e) => setErr(String(e)));
+    // History is optional — a fresh DB has only 1 row so the sparkline just
+    // renders nothing. Catch + swallow so a broken history endpoint doesn't
+    // blank the scoreboard.
+    api.scoreboardHistory().then(setHistory).catch(() => setHistory([]));
   }, []);
 
   if (err) return <ErrorBanner message={err} />;
@@ -47,6 +52,7 @@ export function Scoreboard() {
           value={formatPct(data.hit_rate * 100)}
           hint={(data.resolved_calls ?? 0) > 0 ? `${data.hit_count ?? 0} of ${data.resolved_calls ?? 0} resolved` : undefined}
           accent="var(--color-accent)"
+          sparkline={history && history.length > 1 ? history.map((h) => h.hit_rate) : undefined}
         />
       </section>
 
@@ -140,7 +146,7 @@ export function Scoreboard() {
   );
 }
 
-function StatCard({ label, value, accent, hint }: { label: string; value: number | string; accent?: string; hint?: string }) {
+function StatCard({ label, value, accent, hint, sparkline }: { label: string; value: number | string; accent?: string; hint?: string; sparkline?: number[] }) {
   return (
     <div className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-elev)] p-4">
       <div className="text-xs uppercase tracking-wide text-[var(--color-text-muted)]">{label}</div>
@@ -150,7 +156,52 @@ function StatCard({ label, value, accent, hint }: { label: string; value: number
       {hint && (
         <div className="text-[11px] text-[var(--color-text-faint)] mt-1">{hint}</div>
       )}
+      {sparkline && sparkline.length > 1 && (
+        <Sparkline values={sparkline} color={accent ?? "var(--color-accent)"} />
+      )}
     </div>
+  );
+}
+
+/**
+ * Tiny inline-SVG sparkline. Zero deps — we already lazy-load Recharts for
+ * the detail pages, but for a 4-card stat strip a hand-rolled SVG is faster
+ * and uses no extra bundle.
+ *
+ * `values` are 0..1 hit-rates (latest = rightmost). Auto-scales to the
+ * window's min/max with a tiny pad so a flat line is still visible.
+ */
+function Sparkline({ values, color }: { values: number[]; color: string }) {
+  if (values.length < 2) return null;
+  const w = 80;
+  const h = 18;
+  const min = Math.min(...values);
+  const max = Math.max(...values);
+  const span = Math.max(max - min, 0.01);
+  const points = values
+    .map((v, i) => {
+      const x = (i / (values.length - 1)) * w;
+      const y = h - ((v - min) / span) * h;
+      return `${x.toFixed(1)},${y.toFixed(1)}`;
+    })
+    .join(" ");
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox={`0 0 ${w} ${h}`}
+      className="mt-2 opacity-80"
+      aria-label="Hit-rate trend"
+    >
+      <polyline
+        points={points}
+        fill="none"
+        stroke={color}
+        strokeWidth={1.2}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
   );
 }
 

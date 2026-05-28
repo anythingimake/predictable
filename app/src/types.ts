@@ -179,3 +179,35 @@ export interface CalendarEntry {
   source: string;
   open_call_count: number;
 }
+
+export interface Saga {
+  id: number;
+  name: string;
+  market_id: string | null;
+  market_question: string | null;
+  market_source: string | null;
+  status: string;
+  episode_count: number;
+}
+
+export interface SagaDetail extends Saga {
+  current_price: number | null;
+  resolved: 0 | 1 | null;
+  resolution: string | null;
+  episodes: Array<{
+    id: string;
+    publish_date: string;
+    episode_title: string;
+    youtube_id: string | null;
+    substack_slug: string | null;
+  }>;
+}
+
+export interface ScoreboardHistoryPoint {
+  snapshot_date: string;
+  total_calls: number;
+  resolved_calls: number;
+  hit_count: number;
+  hit_rate: number;
+  bankroll_pct: number;
+}

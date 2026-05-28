@@ -1,96 +1,214 @@
 # Cron pipeline — what runs, when, where
 
-Three independent loops keep the site current. None need attention after
-one-time setup.
+Canonical doc. Three independent loops keep the site current. None need attention after
+one-time setup; this file is what you read when something looks stale or wrong.
 
 ```
-┌──────────────────────────────────┐
-│  Local Windows Task (2:05am)     │
-│  → Megaphone RSS                 │
-│  → faster-whisper (small + L-v3) │
-│  → git push transcripts          │
-└─────────────┬────────────────────┘
-              │
-              ▼
-┌──────────────────────────────────┐
-│  Anthropic scheduled routine     │
-│  (3:15am ET / 7:15 UTC, daily)   │
-│  → calls + principles + strategy │
-│    + qa + sagas extraction       │
-│  → git push extracted JSON       │
-└─────────────┬────────────────────┘
-              │
-              ▼
-┌──────────────────────────────────┐
-│  Server cron (every hour at :17) │
-│  → git pull                      │
-│  → pipeline.load                 │
-│  → pipeline.enrich.probe         │
-│  → pipeline.enrich.scoring       │
-│  → pm2 restart predictable-api   │
-└──────────────────────────────────┘
+┌──────────────────────────────────────┐
+│  Loop 1 — Local Whisper (2:05am ET)  │
+│  Windows Task Scheduler on Noah's PC │
+│  → Megaphone RSS                     │
+│  → faster-whisper small (+ optional L-v3) │
+│  → git push transcripts              │
+└──────────────┬───────────────────────┘
+               │
+               ▼
+┌──────────────────────────────────────┐
+│  Loop 2 — Cloud extraction (3:15am ET, daily) │
+│  Anthropic Routine `trig_01QbCvat...`        │
+│  → calls + principles + strategies + qa      │
+│  → deterministic sagas refresh               │
+│  → git push extraction JSON                  │
+└──────────────┬───────────────────────┘
+               │
+               ▼
+┌──────────────────────────────────────┐
+│  Loop 3 — Server refresh (hourly :17)│
+│  Hetzner VPS root@5.78.89.136 cron   │
+│  → git pull → sync_substack → load   │
+│  → market_resolver → yt cross-ref    │
+│  → probe_resolutions → price_snapshot│
+│  → scoring → pm2 restart             │
+└──────────────────────────────────────┘
 ```
 
-## Loop 1: local Whisper transcription
+## Loop 1 — Local Whisper transcription
 
-- **Where:** Windows Task Scheduler entry `Predictable_Nightly_Pipeline` on Noah's machine
-- **When:** Daily 2:05am local; uses `StartWhenAvailable` so a sleeping machine catches up
+- **Where:** Windows Task Scheduler entry `Predictable_Nightly_Pipeline` on Noah's machine.
+- **When:** Daily 2:05am local. `StartWhenAvailable` so a sleeping machine catches up.
 - **Script:** `deploy/nightly_local.ps1`
 - **Steps:**
   1. `git pull --ff-only origin main`
-  2. `python -m pipeline.backfill --skip-pass2` — pulls new Megaphone episodes, downloads MP3, two-pass Whisper (small first pass only by default to keep wall time short), saves transcripts to `data/transcripts/`
-  3. `git add data/transcripts/ data/ingest/`
-  4. Commit + push if anything changed
+  2. `python -m pipeline.backfill --skip-pass2` — pulls new Megaphone episodes, downloads MP3, runs `faster-whisper` small model (pass-2 large-v3 opt-in to keep wall time short), saves transcripts to `data/transcripts/{guid}.json`.
+  3. `git add data/transcripts/ data/ingest/` + commit + push if anything changed.
 - **Log:** `~/predictable-nightly.log`
-- **Why local?** Whisper runs on CPU here for free. Pass-1 small model is ~2 min/episode. Pass-2 large-v3 is opt-in.
+- **Why local?** Whisper runs on CPU for free. Pass-1 small model is ~2 min/episode.
+- **Force-run now:** `python -m pipeline.backfill --skip-pass2`
 
-## Loop 2: cloud Claude extraction
+## Loop 2 — Cloud Claude extraction
 
-- **Where:** Anthropic Routine `trig_01QbCvat28v7JNWYCKcAUPyv` — runs on Anthropic infra, uses Noah's Claude subscription (not API credits)
-- **When:** Daily 7:15 UTC = 3:15am ET
+- **Where:** Anthropic Routine `trig_01QbCvat28v7JNWYCKcAUPyv` — runs on Anthropic infra, uses Noah's Claude subscription (not API credits).
+- **When:** Daily 7:15 UTC = 3:15am ET.
 - **Source:** Clones https://github.com/anythingimake/predictable
-- **Tools:** Bash, Read, Write, Edit, Glob, Grep (no MCP)
+- **Tools:** Bash, Read, Write, Edit, Glob, Grep (no MCP).
 - **Steps:**
-  1. List `data/transcripts/*.json`; identify those without matching `data/ingest/extract/{stem}-*.json` files
-  2. For each pending transcript, run all four extractors (calls, principles, strategies, qa) via in-thread tool-use against the prompts in `pipeline/prompts/`
-  3. Run `python -m pipeline.extract.sagas` (deterministic — no LLM needed) to refresh `_sagas.json`
-  4. Commit JSON outputs as `anythingimake`, push
+  1. List `data/transcripts/*.json`; identify those without matching `data/ingest/extract/{stem}-*.json` files.
+  2. For each pending transcript, run all four extractors (calls, principles, strategies, qa) via in-thread tool-use against the prompts in `pipeline/prompts/`.
+  3. Run `python -m pipeline.extract.sagas` (deterministic — no LLM needed) to refresh `_sagas.json`.
+  4. Commit JSON outputs as `anythingimake`, push.
 - **Manage at:** https://claude.ai/code/routines/trig_01QbCvat28v7JNWYCKcAUPyv
+- **Force-run now:** visit the routine URL → "Run now"
 
-## Loop 3: server-side refresh
+## Loop 3 — Server refresh
 
-- **Where:** Hetzner VPS `5.78.89.136` cron table
-- **When:** Hourly at `:17`
+- **Where:** Hetzner VPS `5.78.89.136` cron table.
+- **When:** Hourly at `:17`.
 - **Script:** `/opt/predictable-repo/deploy/refresh.sh`
 - **Steps (in order):**
-  1. `git fetch && git pull --ff-only` if HEAD changed
-  2. `python3 -m pipeline.load` — loads new JSON into SQLite at `/var/lib/predictable/predictable.sqlite`. Idempotent per episode (wipes prior rows for the episode, re-inserts from JSON).
-  3. `python3 -m pipeline.enrich.probe_resolutions` — refreshes `markets.resolved`, `markets.resolution`, `markets.current_price` from Kalshi/Polymarket
-  4. `python3 -m pipeline.enrich.scoring` — recomputes `calls.realized_pct` (hard + soft resolve) and refreshes today's `scoreboard_snapshots` row
-  5. `pm2 restart predictable-api --update-env`
+  1. `git fetch && git pull --ff-only` if HEAD changed (else continue with the data-refresh subset).
+  2. `python3 -m pipeline.sync_substack` — pull Substack bodies + comments for every episode with a `substack_slug`. Skips slugs whose snapshot exists on disk.
+  3. `python3 -m pipeline.sync.repull_recent_comments` — force re-fetch comments for episodes < 14 days old so newly-posted Stu replies flow into the DB.
+  4. `python3 -m pipeline.load` — load every extracted JSON file into SQLite at `/var/lib/predictable/predictable.sqlite`. Idempotent per episode (wipes prior rows for the episode, re-inserts from JSON).
+  5. `python3 -m pipeline.enrich.market_resolver` — match every call with `market_id IS NULL` to a Kalshi or Polymarket market. Conservative gating (state/office/team/year/party buckets) means rejected candidates land in `data/logs/unresolved_markets-{date}.json` for human review. Also performs **multi-exchange sibling detection**: after matching, scans the other exchange for a sibling and stores its id in `markets.meta_json.sibling_market_id`.
+  6. `python3 -m pipeline.enrich.cross_reference_youtube` — match Megaphone episodes to YouTube videos by publish-date proximity (±2 days) + duration sanity check (±5 min, or ±90s when dates are unavailable). Populates `episodes.youtube_id` + `youtube_title` + `view_count` + `like_count`. Idempotent — claimed YouTube videos are not reassigned.
+  7. `python3 -m pipeline.enrich.probe_resolutions` — refresh `markets.resolved`, `markets.resolution`, `markets.current_price` from Kalshi/Polymarket for every market in the DB.
+  8. `python3 -m pipeline.enrich.price_snapshot` — daily candles for live markets (pass 1) and full-history backfill for newly-matched resolved markets that have no snapshots yet (pass 2). Idempotent — same-day rows get UPSERT'd with the latest price.
+  9. `python3 -m pipeline.enrich.scoring` — recompute `calls.realized_pct` (hard + soft resolve) and refresh today's `scoreboard_snapshots` row.
+  10. `pm2 restart predictable-api --update-env` — bounce the API so better-sqlite3 reopens the file.
 - **Log:** `/var/log/predictable-refresh.log`
+- **Force-run now:** `ssh root@5.78.89.136 '/opt/predictable-repo/deploy/refresh.sh'`
+
+Each pipeline step is wrapped in `|| echo "X failed"` so one bad source (YouTube IP-banned, Polymarket 5xx) doesn't kill the chain.
 
 ## What the cron does NOT yet do
 
-(Add these as needed.)
+Prioritized backlog. Each item lists priority, effort estimate, and why-it-matters
+so the next person can pick up cleanly.
 
-- [ ] **Market resolver for new calls.** `pipeline.enrich.market_resolver` exists but isn't called from `refresh.sh`. Reason: matching is slower (~minutes) and the heuristic still produces occasional false matches (Roy Cooper → Jon Cooper). Add as a manual run for now, or wire with a confidence threshold + "needs review" output to `/admin`.
-- [ ] **Price history backfill.** `pipeline.enrich.price_snapshot` exists but for newly-matched markets we only get today's price snapshot. Historical candlesticks need a separate one-shot run per new market.
-- [ ] **YouTube transcript fallback.** For livestreams + shorts that don't reach Megaphone, the local script doesn't yet pull from YouTube. The `youtube-transcript-api` wrapper exists in `pipeline/ingest/youtube.py` — needs wiring into `backfill.py`.
-- [ ] **Cross-referencing.** `episodes.youtube_id` is null for everything. The yt-dlp channel listing exists; needs a join-by-date step that populates `youtube_id` + `youtube_title` + `view_count`.
-- [ ] **Comment polling.** Substack comments are pulled once at episode-snapshot time. New comments posted later don't re-flow. Add a daily re-pull of comments for episodes < 14 days old.
-- [ ] **Failure pings.** On hard failure (3 consecutive nights), the plan called for a Telegram push to Noah. Not wired yet — pm2 + cron just log.
-- [ ] **Dedupe market_resolver false matches.** The Roy Cooper → Jon Cooper match exists in current data; needs either a manual override entry or a better matcher (e.g., LLM second-pass when fuzzy score is between 0.2 and 0.4).
+### Must (P0)
 
-## Force-run any loop now
+- ✅ **DONE 2026-05-27** — `market_resolver` in refresh.sh
+- ✅ **DONE 2026-05-27** — `sync_substack` in refresh.sh
+- ✅ **DONE 2026-05-27** — `cross_reference_youtube` in refresh.sh
+- ✅ **DONE 2026-05-27** — `price_snapshot` in refresh.sh
+- ✅ **DONE 2026-05-27** — daily comment re-pull (`repull_recent_comments`)
+- ✅ **DONE 2026-05-27** — multi-exchange sibling detection in `market_resolver`
+- ✅ **DONE 2026-05-27** — false-match audit: matcher tightened with state/office/team/year/party conflict buckets
+
+### Should (P1)
+
+- [ ] **Cron failure pings.** *(Effort: 30 min.)* If `refresh.sh` exits non-zero 3 consecutive times, no notification fires. Telegram bot creds are user-managed — check `~/.virtuous_creds.env` or the user's memory notes (`feedback_vrt_contactnote_fastfetch.md` mentions creds locations). Quickest path: write a tiny `notify.sh` wrapper that checks `/var/log/predictable-refresh.log` for the most-recent N-line failure streak and POSTs to a Telegram bot token. Block until Telegram creds are confirmed available on the server.
+
+- [ ] **YouTube transcript fallback for shorts/livestreams.** *(Effort: 1-2 hours.)* `pipeline/ingest/youtube.py` has `get_transcript()`. Local Loop 1 backfill should pull transcripts for any YouTube videos NOT in the Megaphone feed (shorts < ~10 min, livestreams). New module: `pipeline/ingest/youtube_transcripts.py` that walks `pull_channel_videos()` results, skips ones whose duration matches an existing episode, and pulls transcripts for the rest. Bypassed because IP-banning is a real risk (YT has rate-limited us before — see CLAUDE.md note). Recommend a per-day cap (e.g., 5 transcripts/day) and a 30-day in-disk cache.
+
+- [ ] **Audit unresolved markets weekly.** *(Effort: 15 min.)* `/api/admin/unresolved-markets` now surfaces the daily logs as a deduped list. A human (Noah) should glance at it weekly and either edit the call's `market_hint` to be more specific, or manually link it via the admin notes flow. Nothing to automate here — it's a workflow note.
+
+### Nice (P2)
+
+- [ ] **MP3 cleanup.** *(Effort: 15 min.)* Backfill currently keeps MP3s (`--keep-audio`). After extraction is verified, MP3s older than 7 days should be deleted to save disk. Add a `find data/audio/ -mtime +7 -name '*.mp3' -delete` step to the local `nightly_local.ps1`. Skipped this round — low disk pressure on Noah's machine and zero risk if extraction is good.
+
+- [ ] **Historical Polymarket candles for resolved-only markets.** *(Effort: 30 min.)* `price_snapshot.py` already has a pass-2 for resolved markets with no history, but if the matcher links a call to an already-resolved market mid-life, only one snapshot lands. The pass-2 query needs to trigger any time the snapshot count is < N (where N = days since first event) — not just when count = 0.
+
+- [ ] **Refresh YouTube view/like counts daily.** *(Effort: 5 min.)* `cross_reference_youtube` has a `--refresh-meta` flag that re-pulls per-video stats. Not wired into the hourly cron because it's expensive (~3-5s per video × 18 episodes). Add as a separate daily step in `refresh.sh` (e.g., a check `if [[ "$(date +%H)" == "06" ]]`).
+
+- [ ] **`pipeline_runs` housekeeping table is unused.** *(Effort: 1 hour.)* Schema has it; nothing writes to it. Worth wiring so the `/admin` page can show "last successful run", "rows added", etc.
+
+### Data quality: known gaps (always worth a quick eyeball before complaining)
+
+- **Calls still unlinked.** Some calls genuinely have no matching market because Stu mentions a market that doesn't exist on Kalshi/Polymarket (e.g., a prop bet, a Twitter poll, a custom platform). These will accumulate in `unresolved_markets-*.json` — Noah's call whether to add a market manually.
+- **YouTube view/like counts age.** Captured at link-time. Run `python3 -m pipeline.enrich.cross_reference_youtube --refresh-meta` to refresh, or wait for the daily wiring above to land.
+- **One episode has no YouTube match (`2026-05-18 — We Made a GREAT Investment on Cassidy`).** This may genuinely not be on the channel, or the duration may be way off. Check `data/ingest/youtube/channel-*.json` for the snapshot.
+- **Substack bodies > comments delta.** If `episodes.substack_body IS NOT NULL` count differs from comments count, that's expected — some posts have no comments yet.
+
+## Operational
+
+### What to do if a loop fails
+
+**Loop 1 (local Whisper):**
+- Check `~/predictable-nightly.log` for the last run.
+- Most common failure: out-of-disk on `data/audio/`. Free it or run with `--no-keep-audio`.
+- Second-most-common: a single bad MP3 chokes `faster-whisper`. Skip with `python -m pipeline.backfill --skip-pass2 --skip-guid {bad_guid}`.
+
+**Loop 2 (cloud Claude routine):**
+- Visit https://claude.ai/code/routines/trig_01QbCvat28v7JNWYCKcAUPyv → look at the most recent run.
+- If a single transcript fails extraction, the routine commits what it has and moves on. Re-run manually to retry just that one.
+- If the routine itself is gated/disabled, no JSON gets pushed → Loop 3 sees nothing new → site appears frozen.
+
+**Loop 3 (server refresh):**
+- `ssh root@5.78.89.136 'tail -200 /var/log/predictable-refresh.log'`
+- Common failures:
+  - `market_resolver failed` — usually Kalshi/Polymarket rate-limit or 5xx. Safe to ignore for one cycle; next cycle picks up new calls.
+  - `cross_reference_youtube failed` — yt-dlp IP-ban. Wait 30 min and re-run. If persistent, disable temporarily by commenting the line in `refresh.sh`.
+  - `pipeline.load` failures are serious — they mean a JSON file is malformed. Check the most recent extract `*.json` for invalid JSON.
+- After a hard failure, re-run manually: `ssh root@5.78.89.136 '/opt/predictable-repo/deploy/refresh.sh'`
+
+### How to force-run any loop now
 
 ```bash
-# Loop 1 (local)
+# Loop 1 (local Whisper)
 python -m pipeline.backfill --skip-pass2
 
-# Loop 2 (cloud) — run the routine ad-hoc
+# Loop 2 (cloud Claude routine) — manually trigger via web UI
 # Visit https://claude.ai/code/routines/trig_01QbCvat28v7JNWYCKcAUPyv → "Run now"
 
-# Loop 3 (server)
+# Loop 3 (server refresh)
 ssh root@5.78.89.136 '/opt/predictable-repo/deploy/refresh.sh'
+
+# Individual server steps (when you only want to redo one)
+ssh root@5.78.89.136 'cd /opt/predictable-repo && \
+  PREDICTABLE_DB=/var/lib/predictable/predictable.sqlite \
+  python3 -m pipeline.enrich.market_resolver'
+ssh root@5.78.89.136 'cd /opt/predictable-repo && \
+  PREDICTABLE_DB=/var/lib/predictable/predictable.sqlite \
+  python3 -m pipeline.enrich.cross_reference_youtube'
+```
+
+### How to check on health
+
+```bash
+# Counts
+ssh root@5.78.89.136 'sqlite3 /var/lib/predictable/predictable.sqlite \
+  "SELECT COUNT(*) AS calls, SUM(market_id IS NOT NULL) AS linked, \
+   SUM(market_id IS NULL) AS unlinked FROM calls;"'
+
+# Episodes with YouTube linked
+ssh root@5.78.89.136 'sqlite3 /var/lib/predictable/predictable.sqlite \
+  "SELECT COUNT(*) AS ep_total, SUM(youtube_id IS NOT NULL) AS ep_yt, \
+   SUM(substack_body IS NOT NULL) AS ep_sub FROM episodes;"'
+
+# Today's scoreboard snapshot
+ssh root@5.78.89.136 'sqlite3 /var/lib/predictable/predictable.sqlite \
+  "SELECT * FROM scoreboard_snapshots ORDER BY snapshot_date DESC LIMIT 1;"'
+```
+
+### Where things live on the server
+
+| Thing | Path |
+|---|---|
+| Repo clone | `/opt/predictable-repo` |
+| SQLite DB (prod) | `/var/lib/predictable/predictable.sqlite` |
+| Static frontend | `/var/www/predictable/` |
+| API code | `/opt/predictable-api/` |
+| pm2 service | `predictable-api` |
+| nginx vhost | `/etc/nginx/sites-enabled/predictable.anythingimake.com` |
+| Refresh log | `/var/log/predictable-refresh.log` |
+| Unresolved-markets logs | `/opt/predictable-repo/data/logs/unresolved_markets-{date}.json` |
+| Cron table | `sudo crontab -l` (the `17 * * * * /opt/predictable-repo/deploy/refresh.sh ...` line) |
+
+### Deploy paths (when you change code)
+
+```bash
+# Frontend
+cd app && npm run build
+scp -r dist/* root@5.78.89.136:/var/www/predictable/
+
+# API
+cd api && npm run build
+rsync -avz dist/ root@5.78.89.136:/opt/predictable-api/
+ssh root@5.78.89.136 "pm2 restart predictable-api"
+
+# refresh.sh / pipeline modules — already on the server via git pull
+# in refresh.sh. But the first time after a change, force a refresh:
+scp deploy/refresh.sh root@5.78.89.136:/opt/predictable-repo/deploy/
+ssh root@5.78.89.136 'chmod +x /opt/predictable-repo/deploy/refresh.sh'
 ```
