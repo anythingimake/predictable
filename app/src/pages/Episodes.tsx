@@ -11,9 +11,12 @@ function formatPubDate(iso: string): string {
   return d.toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" });
 }
 
+type EpisodeFilter = "all" | "episodes" | "posts";
+
 export function Episodes() {
   const [eps, setEps] = useState<Episode[] | null>(null);
   const [err, setErr] = useState<string | null>(null);
+  const [filter, setFilter] = useState<EpisodeFilter>("all");
 
   useEffect(() => {
     api.episodes().then(setEps).catch((e) => setErr(String(e)));
@@ -22,16 +25,49 @@ export function Episodes() {
   if (err) return <ErrorBanner message={err} />;
   if (!eps) return <Loading />;
 
+  const counts = {
+    all: eps.length,
+    episodes: eps.filter((e) => e.type !== "article").length,
+    posts: eps.filter((e) => e.type === "article").length,
+  };
+  const shown = eps.filter((e) =>
+    filter === "all" ? true : filter === "posts" ? e.type === "article" : e.type !== "article",
+  );
+
+  const TABS: { key: EpisodeFilter; label: string }[] = [
+    { key: "all", label: "All" },
+    { key: "episodes", label: "Episodes" },
+    { key: "posts", label: "Posts" },
+  ];
+
   return (
     <div className="space-y-5">
       <div>
         <h1 className="text-xl md:text-2xl font-semibold mb-1">Episodes</h1>
         <p className="text-sm text-[var(--color-text-muted)]">
-          {eps.length} episodes since Predictable launched.
+          {counts.episodes} podcast episodes · {counts.posts} written posts since Predictable launched.
         </p>
       </div>
+      <div className="flex flex-wrap gap-1.5 sm:gap-2">
+        {TABS.map((t) => (
+          <button
+            key={t.key}
+            onClick={() => setFilter(t.key)}
+            className={`tap inline-flex items-center px-3 py-2 sm:py-1 rounded-full text-sm sm:text-xs border transition-colors ${
+              filter === t.key
+                ? "border-[var(--color-accent)] text-[var(--color-text)] bg-[var(--color-surface)]"
+                : "border-[var(--color-border)] text-[var(--color-text-muted)] hover:text-[var(--color-text)]"
+            }`}
+          >
+            {t.label} <span className="ml-1 opacity-60">{counts[t.key]}</span>
+          </button>
+        ))}
+      </div>
+      {shown.length === 0 ? (
+        <p className="text-[var(--color-text-muted)]">No {filter === "posts" ? "posts" : "episodes"} yet.</p>
+      ) : (
       <div className="grid grid-cols-1 gap-2">
-        {eps.map((e) => (
+        {shown.map((e) => (
           <Link
             key={e.id}
             to={`/episodes/${e.id}`}
@@ -73,6 +109,7 @@ export function Episodes() {
           </Link>
         ))}
       </div>
+      )}
     </div>
   );
 }
