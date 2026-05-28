@@ -111,13 +111,13 @@ function ConservanerdsBanner() {
 
 function Hero() {
   return (
-    <section className="space-y-4">
-      <p className="text-base md:text-lg text-[var(--color-text-muted)] max-w-2xl leading-relaxed">
+    <section className="space-y-5 text-center">
+      <p className="text-base md:text-lg text-[var(--color-text-muted)] max-w-2xl mx-auto leading-relaxed">
         Stu Burguiere calls positions on air every weekday — markets, sides, entry prices,
         and conviction tiers in his own vocabulary. Listeners have no good way to verify the
         results or browse the full track record. This site does exactly that, automatically.
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 pt-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 pt-2 max-w-3xl mx-auto">
         <AudienceCard
           glyph="🎯"
           title="For fans of the show"
