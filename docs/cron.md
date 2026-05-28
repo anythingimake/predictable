@@ -96,6 +96,28 @@ You maintain the Predictable extraction step. The repo is already cloned.
    and commit the refreshed data/ingest/extract/_sagas.json.
 ```
 
+## Loop 2b — Event resolution research (cited)
+
+Same routine as Loop 2 (subscription, in-thread), but resolves Stu's calls from the
+REAL-WORLD outcome when the exchange is slow or wrong to settle — Polymarket parks
+decided markets at ~99¢ with `closed:false`; Kalshi leaves margin-of-victory markets
+`active` with a bogus +1-year close date. **Requires web search added to the routine's
+tool list.**
+
+- `python -m pipeline.enrich.resolve_events --list-pending` — deterministic worklist
+  (no web/LLM/key): called markets that aren't a hard exchange settlement and have no
+  resolution file yet.
+- Research each in-thread per `pipeline/prompts/resolve_event.md` (web search → winner
+  + **exact margin** → bracket math → cited source URL). Resolve only events that have
+  ACTUALLY happened; leave genuinely-future ones. If the result/margin can't be verified,
+  leave it pending (an honest unknown beats a fabricated win).
+- Write `data/ingest/resolutions/{market_id}.json` (source + confidence), commit + push.
+  `pipeline.load` folds it into `markets.effective_*`; scoring credits the call as
+  `closed` (effective), never faking `resolved` (reserved for a real exchange settlement).
+  `event_date` overrides the exchange's bogus close date for calendar display.
+- **Resolve-once:** a market with a resolution file is skipped next run; only re-check
+  ones genuinely still pending (e.g. an ongoing recount). Not "re-decide every run."
+
 ## Loop 3 — Server refresh
 
 - **Where:** Hetzner VPS `5.78.89.136` cron table.
