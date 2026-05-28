@@ -99,27 +99,27 @@ def _hard_close_cents(side: str, resolution: str) -> float:
     return 100.0 if won else 0.0
 
 
-def _infer_yes_no(resolution: str | None, current_price: float | None) -> str | None:
-    """Polymarket sometimes stores `resolution='resolved'` (literal) instead of yes/no.
-    Fall back to current_price (cents): >=95 => yes, <=5 => no."""
-    r = (resolution or "").strip().lower()
-    if r in ("yes", "no"):
-        return r
-    if current_price is None:
-        return None
-    if current_price >= 95.0:
-        return "yes"
-    if current_price <= 5.0:
-        return "no"
-    return None
-
-
 def _score_calls(conn) -> dict:
-    """Walk every call and assign realized_pct via hard- or soft-resolve.
+    """Walk every call and assign realized_pct.
+
+    Precedence (Stu's own words beat the market data):
+      1. SOFT — Stu's `exit`/`resolve` event with a price. This is what he
+         actually did/saw; his realized return. Highest authority.
+      2. HARD — the market settled with a clean `resolution` in (yes, no).
+         Only trust an explicit yes/no, never a guess from current_price:
+         a price of "1.0" is ambiguously dollars-or-cents and flipped known
+         wins (Vrabel, Cooper Flagg) into fake -100% losses.
+      3. Otherwise leave the call OPEN — an honest "not yet scorable" beats a
+         fabricated win or loss.
     Idempotent — recomputes on every run."""
     stats = {"hard": 0, "soft": 0, "skipped_no_entry": 0, "skipped_other": 0}
+    # Reset first so a call that no longer scores (e.g. a market that stopped
+    # reporting a clean yes/no) drops back to open instead of keeping a stale
+    # realized_pct from a prior run. Scoring is the sole authority on
+    # status/realized_pct; market_id (the link) is owned by the resolver.
+    conn.execute("UPDATE calls SET status = 'open', realized_pct = NULL")
     calls = conn.execute(
-        """SELECT c.id, c.side, c.market_id, m.resolved, m.resolution, m.current_price
+        """SELECT c.id, c.side, c.market_id, m.resolved, m.resolution
              FROM calls c
         LEFT JOIN markets m ON m.id = c.market_id"""
     ).fetchall()
@@ -130,23 +130,8 @@ def _score_calls(conn) -> dict:
             stats["skipped_no_entry"] += 1
             continue
 
-        # HARD: market is resolved. Polymarket sometimes stores resolution as the
-        # literal string "resolved" — fall back to current_price to infer winner.
-        if c["resolved"] == 1:
-            inferred = _infer_yes_no(c["resolution"], c["current_price"])
-            if inferred is not None:
-                close_cents = _hard_close_cents(c["side"], inferred)
-                realized = _realized_pct(c["side"], entry_cents, close_cents)
-                conn.execute(
-                    "UPDATE calls SET status = 'resolved', realized_pct = ? WHERE id = ?",
-                    (realized, cid),
-                )
-                stats["hard"] += 1
-                continue
-
-        # SOFT: Stu noted an exit/resolve himself. `trim` is intentionally
-        # excluded — it's a partial close, not a status change. The lifecycle
-        # chart still shows the trim event for context.
+        # SOFT first: Stu noted an exit/resolve himself. `trim` is intentionally
+        # excluded — it's a partial close, not a status change.
         close = _close_event(conn, cid)
         if close is not None:
             close_cents, event_type = close
@@ -157,6 +142,18 @@ def _score_calls(conn) -> dict:
                 (realized, cid),
             )
             stats["soft"] += 1
+            continue
+
+        # HARD: market settled with a clean yes/no winner (the literal
+        # "resolved" string Polymarket sometimes stores is NOT trustworthy).
+        if c["resolved"] == 1 and (c["resolution"] or "").strip().lower() in ("yes", "no"):
+            close_cents = _hard_close_cents(c["side"], c["resolution"])
+            realized = _realized_pct(c["side"], entry_cents, close_cents)
+            conn.execute(
+                "UPDATE calls SET status = 'resolved', realized_pct = ? WHERE id = ?",
+                (realized, cid),
+            )
+            stats["hard"] += 1
             continue
 
         stats["skipped_other"] += 1
