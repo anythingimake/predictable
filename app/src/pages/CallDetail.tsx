@@ -32,7 +32,10 @@ const EVENT_LABEL: Record<string, string> = {
 
 const STATUS_LABEL: Record<string, string> = {
   open: "Open",
-  closed: "Closed (Stu exit)",
+  // 'closed' covers both a Stu exit AND a Stu-noted resolution, so don't
+  // hard-code "(Stu exit)" — the STU EXIT card disambiguates ("sold here" vs
+  // "held to settlement").
+  closed: "Closed",
   resolved: "Resolved",
 };
 
