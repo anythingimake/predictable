@@ -13,7 +13,7 @@ interface Props {
  */
 export function TagChips({ tags, className = "" }: Props) {
   if (tags.length === 0) return null;
-  const broadSet = new Set(["political", "event", "sports", "social", "fun"]);
+  const broadSet = new Set(["political", "event", "sports", "entertainment", "social", "fun"]);
   return (
     <div className={`flex flex-wrap gap-1 ${className}`}>
       {tags.map((t) => {

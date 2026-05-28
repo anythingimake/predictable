@@ -22,6 +22,12 @@ export function EpisodeDetail() {
 
   return (
     <article className="space-y-6">
+      <Link
+        to="/episodes"
+        className="tap inline-flex items-center text-xs text-[var(--color-text-muted)] hover:text-[var(--color-text)] -mt-1"
+      >
+        ← All episodes
+      </Link>
       <header className="flex flex-col sm:flex-row items-start gap-3 sm:gap-4">
         {ep.cover_image_url && (
           <img

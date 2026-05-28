@@ -3,7 +3,7 @@ Tag taxonomy for Calls.
 
 Two layers, both multi-select, both non-mutually-exclusive:
 
-- BROAD_TAGS (fixed, 5): political | event | sports | social | fun
+- BROAD_TAGS (fixed, 6): political | event | sports | entertainment | social | fun
 - Specific tags (open vocabulary): kebab-case slugs derived from the market
   hint (e.g. "Texas Senate Republican Primary 2026" → "tx-senate-republican-primary-2026").
 
@@ -16,7 +16,7 @@ from __future__ import annotations
 import re
 
 # Fixed set. Displayed in this exact order in the frontend filter dropdown.
-BROAD_TAGS: tuple[str, ...] = ("political", "event", "sports", "social", "fun")
+BROAD_TAGS: tuple[str, ...] = ("political", "event", "sports", "entertainment", "social", "fun")
 
 # State name → 2-letter postal code. Used by normalize_specific to compact
 # "Texas Senate" → "tx-senate". Keys are lowercased.

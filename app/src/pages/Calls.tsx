@@ -43,11 +43,12 @@ const SIDES = [
 // Broad tags appear at the top of the Tag dropdown in this exact order
 // (matches BROAD_TAGS in pipeline/extract/tag_taxonomy.py). Specific tags
 // follow, alphabetized, separated by an em-dash hairline.
-const BROAD_TAG_ORDER = ["political", "event", "sports", "social", "fun"] as const;
+const BROAD_TAG_ORDER = ["political", "event", "sports", "entertainment", "social", "fun"] as const;
 const BROAD_TAG_LABEL: Record<string, string> = {
   political: "Political",
   event: "Event",
   sports: "Sports",
+  entertainment: "Entertainment",
   social: "Social",
   fun: "Fun",
 };

@@ -197,6 +197,7 @@ function NotSection() {
     "Not investment advice. Prediction markets carry real financial risk.",
     "Not paywall-evading — only publicly available Substack episodes are processed.",
     "Not a leaderboard for fans — no accounts, no trade submissions, no fantasy league. Possibly in Version 2.",
+    "Not covering the election predictions of Ernie Velveeta nor Harold Flemlaski.",
   ];
   return (
     <section>
@@ -232,6 +233,9 @@ function ReachOut() {
             github.com/anythingimake/predictable/issues
           </a>
           . PRs welcome too.
+        </p>
+        <p className="mt-3 text-xs italic text-[var(--color-text-muted)] leading-relaxed">
+          No longer taking suggestions from Wilfred in Sun City, Florida.
         </p>
       </div>
     </section>

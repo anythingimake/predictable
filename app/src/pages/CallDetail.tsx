@@ -4,7 +4,7 @@ import { api } from "../api";
 import type { CallDetail as CallDetailData } from "../types";
 import { ConvictionBadge } from "../components/ConvictionBadge";
 import { TagChips } from "../components/TagChips";
-import { formatDateSafe, formatPct, formatSec, substackUrlAt, youtubeUrlAt } from "../lib/format";
+import { formatDateSafe, formatPct, formatSec } from "../lib/format";
 import { ErrorBanner, Loading } from "./Scoreboard";
 
 // Recharts is ~120 KB gzipped — defer it past first paint of CallDetail.
@@ -54,7 +54,7 @@ export function CallDetail() {
     <article className="space-y-6">
       <Link
         to="/calls"
-        className="tap md:hidden inline-flex items-center text-xs text-[var(--color-text-muted)] hover:text-[var(--color-text)] -mt-1"
+        className="tap inline-flex items-center text-xs text-[var(--color-text-muted)] hover:text-[var(--color-text)] -mt-1"
       >
         ← All calls
       </Link>
@@ -111,27 +111,30 @@ export function CallDetail() {
                     </span>
                   )}
                 </div>
-                {data.youtube_id ? (
-                  <a
-                    href={youtubeUrlAt(data.youtube_id, e.timestamp_sec)}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="tap inline-flex items-center text-xs text-[var(--color-accent)] w-full sm:w-auto"
-                  >
-                    Jump to {formatSec(e.timestamp_sec)} ↗
-                  </a>
-                ) : data.substack_slug ? (
-                  <a
-                    href={substackUrlAt(data.substack_slug, e.timestamp_sec)}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="tap inline-flex items-center text-xs text-[var(--color-accent)] w-full sm:w-auto"
-                  >
-                    Open at {formatSec(e.timestamp_sec)} ↗
-                  </a>
-                ) : (
-                  <span className="text-xs text-[var(--color-text-faint)]">{formatSec(e.timestamp_sec)}</span>
-                )}
+                <div className="flex items-center gap-3 text-xs w-full sm:w-auto">
+                  <span className="text-[var(--color-text-faint)] tabular-nums">
+                    {formatSec(e.timestamp_sec)}
+                  </span>
+                  {data.youtube_id ? (
+                    <a
+                      href={`https://www.youtube.com/watch?v=${data.youtube_id}`}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="tap inline-flex items-center text-[var(--color-accent)]"
+                    >
+                      YouTube ↗
+                    </a>
+                  ) : data.substack_slug ? (
+                    <a
+                      href={`https://predictable.substack.com/p/${data.substack_slug}`}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="tap inline-flex items-center text-[var(--color-accent)]"
+                    >
+                      Substack ↗
+                    </a>
+                  ) : null}
+                </div>
               </div>
               {e.quote && (
                 <blockquote className="mt-2 pl-3 border-l-2 border-[var(--color-border-strong)] text-base md:text-sm text-[var(--color-text-muted)] italic leading-relaxed">

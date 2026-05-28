@@ -11,12 +11,13 @@ Two paths to a realized_pct:
     a price_pct, meaning Stu noted his close on the show. Use that close as
     the effective price. Status becomes 'closed' (vs 'resolved' for hard).
 
-Price math, expressed in cents (0-100) on the YES side of the order book:
-  - YES contract bought at P pays 100 on YES, 0 on NO.
-    Return = (close - P) / P * 100, where close ∈ [0, 100] is the YES price.
-  - NO contract bought at (100 - P) pays 100 on NO, 0 on YES.
-    cost = 100 - P; payout = 100 - close.
-    Return = (payout - cost) / cost * 100.
+Price math: every event's `price_pct` is the cents-per-contract Stu actually
+paid (or sold for) on whichever side he took. The extraction stores the
+quoted price verbatim — "bought NO at 44¢" → price_pct=44 on a NO-side
+event, NOT the YES-side equivalent (56¢). So return is a simple
+  (close - entry) / entry * 100
+regardless of side. For hard-resolve, "close" is 100 if Stu's side won the
+settlement (resolution matches his side) and 0 if he lost.
 
 Idempotent. Re-running recomputes fresh values.
 """
@@ -63,19 +64,21 @@ def _close_event_price_cents(conn, call_id: int) -> Optional[float]:
 
 
 def _realized_pct(side: str, entry_cents: float, close_cents: float) -> float:
-    """Return percentage given a YES-side price for entry + close."""
+    """Stu paid `entry_cents` per contract on his side and closed at
+    `close_cents`. Side is informational — the price is already on the
+    contract he actually held."""
+    _ = side  # accepted for future per-side adjustments (fees, etc.)
+    if entry_cents <= 0:
+        return 0.0
+    return (close_cents - entry_cents) / entry_cents * 100.0
+
+
+def _hard_close_cents(side: str, resolution: str) -> float:
+    """Final per-contract payout on hard-resolve: 100 if Stu's side won, 0 if lost."""
     s = (side or "").strip().lower()
-    if s in ("yes", "over"):
-        if entry_cents <= 0:
-            return 0.0
-        return (close_cents - entry_cents) / entry_cents * 100.0
-    if s in ("no", "under"):
-        cost = 100.0 - entry_cents
-        payout = 100.0 - close_cents
-        if cost <= 0:
-            return 0.0
-        return (payout - cost) / cost * 100.0
-    return 0.0
+    r = (resolution or "").strip().lower()
+    won = (r == "yes" and s in ("yes", "over")) or (r == "no" and s in ("no", "under"))
+    return 100.0 if won else 0.0
 
 
 def _score_calls(conn) -> dict:
@@ -96,7 +99,7 @@ def _score_calls(conn) -> dict:
 
         # HARD: market is resolved with a clear yes/no winner
         if c["resolved"] == 1 and c["resolution"] in ("yes", "no"):
-            close_cents = 100.0 if c["resolution"] == "yes" else 0.0
+            close_cents = _hard_close_cents(c["side"], c["resolution"])
             realized = _realized_pct(c["side"], entry_cents, close_cents)
             conn.execute(
                 "UPDATE calls SET status = 'resolved', realized_pct = ? WHERE id = ?",
