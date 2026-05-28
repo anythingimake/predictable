@@ -11,6 +11,9 @@ interface UIState {
     status?: string[];
     market_source?: string[];
     side?: string[];
+    // Result = derived win/loss among resolved/closed calls (realized_pct sign).
+    // Values: 'win' | 'loss'. Match-any.
+    result?: string[];
     // Tag multi-select (broad + specific tags mixed together — match-any).
     tags?: string[];
     // Single-value, range-style.

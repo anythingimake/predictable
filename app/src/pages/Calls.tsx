@@ -40,6 +40,13 @@ const SIDES = [
   { value: "under", label: "Under" },
 ];
 
+// Derived from realized_pct sign on resolved/closed calls. Lets the scoreboard
+// "Hits" stat link straight to the winning calls.
+const RESULTS = [
+  { value: "win", label: "Wins" },
+  { value: "loss", label: "Losses" },
+];
+
 // Broad tags appear at the top of the Tag dropdown in this exact order
 // (matches BROAD_TAGS in pipeline/extract/tag_taxonomy.py). Specific tags
 // follow, alphabetized, separated by an em-dash hairline.
@@ -77,6 +84,7 @@ export function Calls() {
     const sources = filter.market_source ?? [];
     const sides = filter.side ?? [];
     const tiers = filter.conviction ?? [];
+    const results = filter.result ?? [];
     const tagsFilter = filter.tags ?? [];
 
     return calls.filter((c) => {
@@ -84,6 +92,14 @@ export function Calls() {
       if (sources.length > 0 && !sources.includes(c.market_source ?? "")) return false;
       if (sides.length > 0 && !sides.includes(c.side)) return false;
       if (tiers.length > 0 && !tiers.includes(c.conviction)) return false;
+      // Win/loss is only meaningful once realized; an unrealized call passes
+      // neither 'win' nor 'loss', so it's filtered out when a result is selected.
+      if (results.length > 0) {
+        const rp = c.realized_pct;
+        const isWin = rp != null && rp > 0;
+        const isLoss = rp != null && rp <= 0;
+        if (!((results.includes("win") && isWin) || (results.includes("loss") && isLoss))) return false;
+      }
       // Tag filter is match-any: a call passes if at least one of its tags
       // is in the selected set. Matches the existing multi-select semantics
       // for status/source/side/tier.
@@ -143,6 +159,7 @@ export function Calls() {
     (filter.market_source?.length ?? 0) +
     (filter.side?.length ?? 0) +
     (filter.conviction?.length ?? 0) +
+    (filter.result?.length ?? 0) +
     (filter.tags?.length ?? 0) +
     (filter.date_from ? 1 : 0) +
     (filter.date_to ? 1 : 0) +
@@ -205,6 +222,13 @@ export function Calls() {
             options={TIERS}
             selected={filter.conviction ?? []}
             onChange={(v) => setFilter({ ...filter, conviction: v.length ? v : undefined })}
+          />
+          <MultiSelect
+            label="Result"
+            options={RESULTS}
+            selected={filter.result ?? []}
+            onChange={(v) => setFilter({ ...filter, result: v.length ? v : undefined })}
+            emptyLabel="Any"
           />
           <MultiSelect
             label="Tag"

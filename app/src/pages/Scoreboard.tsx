@@ -1,15 +1,30 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { api } from "../api";
 import type { Scoreboard as ScoreboardData, ScoreboardHistoryPoint } from "../types";
 import { ConvictionBadge } from "../components/ConvictionBadge";
+import { useStore } from "../store";
 import { formatPct } from "../lib/format";
 import { CONVICTION_LABELS } from "../lib/format";
+
+// The scoreboard counts only actionable tiers — keep this in sync with the
+// API's ACTIONABLE filter so click-through lands on the same set.
+const ACTIONABLE = ["play", "solid", "flyer"];
+const RESOLVED_STATUSES = ["resolved", "closed"];
 
 export function Scoreboard() {
   const [data, setData] = useState<ScoreboardData | null>(null);
   const [history, setHistory] = useState<ScoreboardHistoryPoint[] | null>(null);
   const [err, setErr] = useState<string | null>(null);
+  const navigate = useNavigate();
+  const setCallsFilter = useStore((s) => s.setCallsFilter);
+
+  // Set the shared Calls filter, then navigate there. The Calls page reads
+  // this from the store on render, so the list lands pre-filtered.
+  const goToCalls = (f: Parameters<typeof setCallsFilter>[0]) => {
+    setCallsFilter(f);
+    navigate("/calls");
+  };
 
   useEffect(() => {
     api.scoreboard().then(setData).catch((e) => setErr(String(e)));
@@ -44,15 +59,30 @@ export function Scoreboard() {
       )}
 
       <section className="grid grid-cols-2 md:grid-cols-4 gap-3">
-        <StatCard label="Actionable calls" value={data.total_calls} hint="play · solid · flyer" />
-        <StatCard label="Resolved" value={data.resolved_calls ?? 0} />
-        <StatCard label="Hits" value={data.hit_count ?? 0} accent="var(--color-tier-play)" />
+        <StatCard
+          label="Actionable calls"
+          value={data.total_calls}
+          hint="play · solid · flyer"
+          onClick={() => goToCalls({ conviction: ACTIONABLE })}
+        />
+        <StatCard
+          label="Resolved"
+          value={data.resolved_calls ?? 0}
+          onClick={() => goToCalls({ conviction: ACTIONABLE, status: RESOLVED_STATUSES })}
+        />
+        <StatCard
+          label="Hits"
+          value={data.hit_count ?? 0}
+          accent="var(--color-tier-play)"
+          onClick={() => goToCalls({ conviction: ACTIONABLE, status: RESOLVED_STATUSES, result: ["win"] })}
+        />
         <StatCard
           label="Hit rate"
           value={formatPct(data.hit_rate * 100)}
           hint={(data.resolved_calls ?? 0) > 0 ? `${data.hit_count ?? 0} of ${data.resolved_calls ?? 0} resolved` : undefined}
           accent="var(--color-accent)"
           sparkline={history && history.length > 1 ? history.map((h) => h.hit_rate) : undefined}
+          onClick={() => goToCalls({ conviction: ACTIONABLE, status: RESOLVED_STATUSES })}
         />
       </section>
 
@@ -61,9 +91,10 @@ export function Scoreboard() {
           <h2 className="text-base md:text-lg font-medium mb-3">By conviction tier</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
             {data.by_tier.map((t) => (
-              <div
+              <button
                 key={t.conviction}
-                className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-elev)] p-4"
+                onClick={() => goToCalls({ conviction: [t.conviction] })}
+                className="tap text-left rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-elev)] p-4 hover:border-[var(--color-accent)] transition-colors"
               >
                 <ConvictionBadge conviction={t.conviction} />
                 <div className="mt-3 grid grid-cols-3 gap-2 text-sm">
@@ -75,7 +106,7 @@ export function Scoreboard() {
                   Hit rate: {t.resolved > 0 ? formatPct((t.hits / t.resolved) * 100) : "—"} ·
                   Avg return: {t.avg_return_pct != null ? formatPct(t.avg_return_pct) : "—"}
                 </div>
-              </div>
+              </button>
             ))}
           </div>
         </section>
@@ -146,9 +177,9 @@ export function Scoreboard() {
   );
 }
 
-function StatCard({ label, value, accent, hint, sparkline }: { label: string; value: number | string; accent?: string; hint?: string; sparkline?: number[] }) {
-  return (
-    <div className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-elev)] p-4">
+function StatCard({ label, value, accent, hint, sparkline, onClick }: { label: string; value: number | string; accent?: string; hint?: string; sparkline?: number[]; onClick?: () => void }) {
+  const inner = (
+    <>
       <div className="text-xs uppercase tracking-wide text-[var(--color-text-muted)]">{label}</div>
       <div className="text-2xl font-semibold mt-1" style={{ color: accent }}>
         {value}
@@ -159,8 +190,17 @@ function StatCard({ label, value, accent, hint, sparkline }: { label: string; va
       {sparkline && sparkline.length > 1 && (
         <Sparkline values={sparkline} color={accent ?? "var(--color-accent)"} />
       )}
-    </div>
+    </>
   );
+  const base = "rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-elev)] p-4";
+  if (onClick) {
+    return (
+      <button onClick={onClick} className={`tap text-left ${base} hover:border-[var(--color-accent)] transition-colors`}>
+        {inner}
+      </button>
+    );
+  }
+  return <div className={base}>{inner}</div>;
 }
 
 /**
