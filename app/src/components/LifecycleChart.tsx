@@ -38,11 +38,12 @@ const EVENT_COLOR: Record<CallEvent["event_type"], string> = {
 export function LifecycleChart({ priceHistory, events, height }: Props) {
   const isMobile = useIsMobile();
   const chartHeight = height ?? (isMobile ? 180 : 240);
-  // Build the line series: convert snapshot prices (0..1) to cents 0..100
+  // Snapshots are stored in cents (0..100). Some legacy rows may still be in
+  // dollars (0..1); normalize defensively so the Y-axis can't blow up to 9999¢.
   const series = priceHistory.map((p) => ({
     date: p.snapshot_date,
     ts: new Date(p.snapshot_date).getTime(),
-    cents: p.price * 100,
+    cents: p.price <= 1.5 ? p.price * 100 : p.price,
   }));
 
   // Build event markers — match to the closest snapshot by date

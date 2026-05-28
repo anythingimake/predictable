@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { api } from "../api";
 import type { Market } from "../types";
 import { ErrorBanner, Loading } from "./Scoreboard";
+import { formatCents, stuSideCents } from "../lib/format";
 
 export function Markets() {
   const [markets, setMarkets] = useState<Market[] | null>(null);
@@ -45,9 +47,10 @@ export function Markets() {
       {markets && markets.length > 0 && (
         <div className="grid grid-cols-1 gap-2">
           {markets.map((m) => (
-            <div
+            <Link
               key={m.id}
-              className="rounded border border-[var(--color-border)] bg-[var(--color-bg-elev)] p-3 text-sm"
+              to={`/markets/${encodeURIComponent(m.id)}`}
+              className="tap block rounded border border-[var(--color-border)] bg-[var(--color-bg-elev)] p-3 text-sm hover:border-[var(--color-accent)] transition-colors"
             >
               <div className="flex items-start justify-between flex-wrap gap-2">
                 <div className="font-medium min-w-0 break-words">{m.question}</div>
@@ -58,10 +61,10 @@ export function Markets() {
               <div className="text-xs text-[var(--color-text-muted)] mt-1 flex gap-x-3 gap-y-1 flex-wrap">
                 {m.category && <span>{m.category}</span>}
                 {m.resolution_date && <span>resolves {m.resolution_date}</span>}
-                {m.current_price != null && <span>@ {(m.current_price * 100).toFixed(1)}¢</span>}
+                {m.current_price != null && <span>@ {formatCents(stuSideCents("yes", m.current_price))}</span>}
                 {m.resolved === 1 && <span className="text-[var(--color-tier-play)]">RESOLVED {m.resolution}</span>}
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       )}

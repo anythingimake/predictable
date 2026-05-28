@@ -44,7 +44,7 @@ export function Scoreboard() {
       )}
 
       <section className="grid grid-cols-2 md:grid-cols-4 gap-3">
-        <StatCard label="Total calls" value={data.total_calls} />
+        <StatCard label="Actionable calls" value={data.total_calls} hint="play · solid · flyer" />
         <StatCard label="Resolved" value={data.resolved_calls ?? 0} />
         <StatCard label="Hits" value={data.hit_count ?? 0} accent="var(--color-tier-play)" />
         <StatCard

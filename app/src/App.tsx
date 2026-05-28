@@ -5,6 +5,7 @@ import { CallDetail } from "./pages/CallDetail";
 import { Episodes } from "./pages/Episodes";
 import { EpisodeDetail } from "./pages/EpisodeDetail";
 import { Markets } from "./pages/Markets";
+import { MarketDetail } from "./pages/MarketDetail";
 import { Principles } from "./pages/Principles";
 import { Sagas } from "./pages/Sagas";
 import { SagaDetail } from "./pages/SagaDetail";
@@ -108,6 +109,7 @@ export default function App() {
           <Route path="/episodes" element={<Episodes />} />
           <Route path="/episodes/:id" element={<EpisodeDetail />} />
           <Route path="/markets" element={<Markets />} />
+          <Route path="/markets/:id" element={<MarketDetail />} />
           <Route path="/principles" element={<Principles />} />
           <Route path="/sagas" element={<Sagas />} />
           <Route path="/sagas/:id" element={<SagaDetail />} />
