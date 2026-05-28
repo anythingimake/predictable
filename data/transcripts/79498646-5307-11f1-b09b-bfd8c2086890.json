@@ -1,0 +1,4534 @@
+{
+  "audio_file": "C:\\Users\\NoahYaffe\\Documents\\GitHub\\anythingimake\\predictable\\data\\audio\\79498646-5307-11f1-b09b-bfd8c2086890.mp3",
+  "language": "en",
+  "duration": 2837.942875,
+  "pass1_model": "small",
+  "pass2_model": null,
+  "pass2_rescued_count": 0,
+  "pass1_segment_count": 646,
+  "segments": [
+    {
+      "start": 0.18,
+      "end": 5.9,
+      "text": "Ray-Ban Meta glasses take the friction out of travel move through the world with your hands free and your head up",
+      "source": "pass1",
+      "avg_logprob": -0.23771971294550392
+    },
+    {
+      "start": 5.9,
+      "end": 12.1,
+      "text": "Hey meta, where's the nearest metro station closest metro to you is Union Square about three blocks away. Hey meta text mom",
+      "source": "pass1",
+      "avg_logprob": -0.23771971294550392
+    },
+    {
+      "start": 12.1,
+      "end": 18.46,
+      "text": "I'm getting on the train now sending message juggle your itinerary take calls and listen to music with open-ear audio",
+      "source": "pass1",
+      "avg_logprob": -0.23771971294550392
+    },
+    {
+      "start": 18.46,
+      "end": 26.22,
+      "text": "No digging for your phone. No stopping for a map. Just you and your glasses Ray-Ban Meta iconic style meets Meta AI",
+      "source": "pass1",
+      "avg_logprob": -0.23771971294550392
+    },
+    {
+      "start": 26.78,
+      "end": 29.18,
+      "text": "available at Walmart and other authorized retailers",
+      "source": "pass1",
+      "avg_logprob": -0.23771971294550392
+    },
+    {
+      "start": 44.83,
+      "end": 49.95,
+      "text": "Welcome to predictable with stew. I appreciate you tuning in today lot to talk about",
+      "source": "pass1",
+      "avg_logprob": -0.2419003471084263
+    },
+    {
+      "start": 50.31,
+      "end": 57.15,
+      "text": "Want to tell you to go to predictable show comm join us in a great community over at sub-stack. We're talking about these issues each and every day",
+      "source": "pass1",
+      "avg_logprob": -0.2419003471084263
+    },
+    {
+      "start": 57.67,
+      "end": 61.55,
+      "text": "I'm trying to respond to a bunch of comments and doing everything there",
+      "source": "pass1",
+      "avg_logprob": -0.2419003471084263
+    },
+    {
+      "start": 61.55,
+      "end": 67.03,
+      "text": "So predictable show comm is the place to go. It's an interesting time ahead of us right now",
+      "source": "pass1",
+      "avg_logprob": -0.2419003471084263
+    },
+    {
+      "start": 67.63,
+      "end": 73.27,
+      "text": "we have a bunch of primaries that are going on on a week-to-week basis and",
+      "source": "pass1",
+      "avg_logprob": -0.2419003471084263
+    },
+    {
+      "start": 73.43,
+      "end": 74.59,
+      "text": "and",
+      "source": "pass1",
+      "avg_logprob": -0.25069192508045507
+    },
+    {
+      "start": 74.59,
+      "end": 76.59,
+      "text": "That gives us both",
+      "source": "pass1",
+      "avg_logprob": -0.25069192508045507
+    },
+    {
+      "start": 76.95,
+      "end": 81.87,
+      "text": "Opportunity to talk about something new and interesting and impactful to the country and to your life",
+      "source": "pass1",
+      "avg_logprob": -0.25069192508045507
+    },
+    {
+      "start": 82.07,
+      "end": 89.07,
+      "text": "But also opportunity after opportunity after to opportunity to hopefully add a little bit to your bank account",
+      "source": "pass1",
+      "avg_logprob": -0.25069192508045507
+    },
+    {
+      "start": 89.39,
+      "end": 95.51,
+      "text": "Through prediction markets. That's the show that we do here. We talk about prediction markets and what to look forward to in the future",
+      "source": "pass1",
+      "avg_logprob": -0.25069192508045507
+    },
+    {
+      "start": 96.23,
+      "end": 98.95,
+      "text": "Let me set this up first with a",
+      "source": "pass1",
+      "avg_logprob": -0.25069192508045507
+    },
+    {
+      "start": 99.87,
+      "end": 103.05,
+      "text": "bit of a look back to Saturday",
+      "source": "pass1",
+      "avg_logprob": -0.25069192508045507
+    },
+    {
+      "start": 103.67,
+      "end": 108.35,
+      "text": "Bill Cassidy who is the senator is currently the senator from Louisiana is",
+      "source": "pass1",
+      "avg_logprob": -0.2260923460878507
+    },
+    {
+      "start": 109.03,
+      "end": 112.71,
+      "text": "No longer going to be the senator from Louisiana come next year",
+      "source": "pass1",
+      "avg_logprob": -0.2260923460878507
+    },
+    {
+      "start": 112.71,
+      "end": 116.51,
+      "text": "Why because he was defeated in the primary we talked to you about this last week",
+      "source": "pass1",
+      "avg_logprob": -0.2260923460878507
+    },
+    {
+      "start": 116.51,
+      "end": 122.43,
+      "text": "Bill Cassidy's fall is a warning sign for other Trump enemies is the headline from Politico",
+      "source": "pass1",
+      "avg_logprob": -0.2260923460878507
+    },
+    {
+      "start": 123.15,
+      "end": 124.63,
+      "text": "and",
+      "source": "pass1",
+      "avg_logprob": -0.2260923460878507
+    },
+    {
+      "start": 124.63,
+      "end": 127.63,
+      "text": "This is something that I is I",
+      "source": "pass1",
+      "avg_logprob": -0.2260923460878507
+    },
+    {
+      "start": 128.83,
+      "end": 132.39,
+      "text": "Think one of the hardest things to get your arms around when you start",
+      "source": "pass1",
+      "avg_logprob": -0.2260923460878507
+    },
+    {
+      "start": 132.95,
+      "end": 135.15,
+      "text": "dealing with prediction markets on a day-to-day basis",
+      "source": "pass1",
+      "avg_logprob": -0.1811245105682163
+    },
+    {
+      "start": 135.91,
+      "end": 137.91,
+      "text": "because",
+      "source": "pass1",
+      "avg_logprob": -0.1811245105682163
+    },
+    {
+      "start": 137.95,
+      "end": 141.75,
+      "text": "It's difficult to see how a loss could be a good thing",
+      "source": "pass1",
+      "avg_logprob": -0.1811245105682163
+    },
+    {
+      "start": 142.51,
+      "end": 147.71,
+      "text": "How can how can is there such a thing as a good loss? What do they call it in sports a moral victory?",
+      "source": "pass1",
+      "avg_logprob": -0.1811245105682163
+    },
+    {
+      "start": 148.43,
+      "end": 154.67,
+      "text": "Not really a moral victory. There's not really one of those but there is I think a good loss a loss that brings you new information a",
+      "source": "pass1",
+      "avg_logprob": -0.1811245105682163
+    },
+    {
+      "start": 155.27,
+      "end": 161.03,
+      "text": "loss that can help you understand what might be coming right around the corner and",
+      "source": "pass1",
+      "avg_logprob": -0.1811245105682163
+    },
+    {
+      "start": 161.67,
+      "end": 165.67,
+      "text": "We did a segment last week where I talked about a bunch of different things about Louisiana",
+      "source": "pass1",
+      "avg_logprob": -0.16596342649376183
+    },
+    {
+      "start": 166.55,
+      "end": 169.55,
+      "text": "Cassidy would lose we were correct on that that",
+      "source": "pass1",
+      "avg_logprob": -0.16596342649376183
+    },
+    {
+      "start": 170.07,
+      "end": 174.07,
+      "text": "Lutland Lutland would be first and we were correct on that as well",
+      "source": "pass1",
+      "avg_logprob": -0.16596342649376183
+    },
+    {
+      "start": 174.95,
+      "end": 180.95,
+      "text": "We gave you a long shot however as well where we said we think this is a 10 times trade",
+      "source": "pass1",
+      "avg_logprob": -0.16596342649376183
+    },
+    {
+      "start": 180.95,
+      "end": 185.39,
+      "text": "That might be there for you and if you listen to the show or watch the show the other day",
+      "source": "pass1",
+      "avg_logprob": -0.16596342649376183
+    },
+    {
+      "start": 185.39,
+      "end": 190.15,
+      "text": "You heard me explain that basically when you have a I think this particular trade was",
+      "source": "pass1",
+      "avg_logprob": -0.16596342649376183
+    },
+    {
+      "start": 190.55,
+      "end": 192.55,
+      "text": "I want to picking up at six cents",
+      "source": "pass1",
+      "avg_logprob": -0.26246052109793333
+    },
+    {
+      "start": 193.99,
+      "end": 199.59,
+      "text": "The other day, but it was I think nine or ten cents when we were talking about it here at six cents",
+      "source": "pass1",
+      "avg_logprob": -0.26246052109793333
+    },
+    {
+      "start": 199.59,
+      "end": 202.31,
+      "text": "It was more like 16 or 17 times your",
+      "source": "pass1",
+      "avg_logprob": -0.26246052109793333
+    },
+    {
+      "start": 204.03,
+      "end": 208.07,
+      "text": "Profit which is even better obviously, but so ten cents",
+      "source": "pass1",
+      "avg_logprob": -0.26246052109793333
+    },
+    {
+      "start": 208.43,
+      "end": 210.43,
+      "text": "Let's just say call it ten cents for the ease of math",
+      "source": "pass1",
+      "avg_logprob": -0.26246052109793333
+    },
+    {
+      "start": 210.75,
+      "end": 213.31,
+      "text": "You had about a ten times and nine ten times",
+      "source": "pass1",
+      "avg_logprob": -0.26246052109793333
+    },
+    {
+      "start": 213.83,
+      "end": 219.71,
+      "text": "Chance for profit there and the and the the actual position was a position that we took on",
+      "source": "pass1",
+      "avg_logprob": -0.24611471623790507
+    },
+    {
+      "start": 220.35,
+      "end": 227.51,
+      "text": "That Louisiana senatorial campaign and the primary and it was basically would Julia Lettland get to",
+      "source": "pass1",
+      "avg_logprob": -0.24611471623790507
+    },
+    {
+      "start": 228.07,
+      "end": 233.27,
+      "text": "50% or not would she avoid a runoff in this particular race and",
+      "source": "pass1",
+      "avg_logprob": -0.24611471623790507
+    },
+    {
+      "start": 233.95,
+      "end": 239.55,
+      "text": "We said look it's a 10% chance. I think it's more like a 30 or maybe 35% chance",
+      "source": "pass1",
+      "avg_logprob": -0.24611471623790507
+    },
+    {
+      "start": 240.43,
+      "end": 242.91,
+      "text": "Where that she would win. I think there's value there",
+      "source": "pass1",
+      "avg_logprob": -0.24611471623790507
+    },
+    {
+      "start": 243.63,
+      "end": 249.03,
+      "text": "10% I think it's too low for what we're seeing here and our thesis was basically Donald Trump",
+      "source": "pass1",
+      "avg_logprob": -0.19600382736585673
+    },
+    {
+      "start": 249.67,
+      "end": 253.91,
+      "text": "Has a certain power or especially over primaries when he says he wants something to happen",
+      "source": "pass1",
+      "avg_logprob": -0.19600382736585673
+    },
+    {
+      "start": 254.03,
+      "end": 259.03,
+      "text": "Typically it does and we expected to see massive movement on this particular race",
+      "source": "pass1",
+      "avg_logprob": -0.19600382736585673
+    },
+    {
+      "start": 259.03,
+      "end": 264.27,
+      "text": "Let me show you the polling going into this race. Here are the real clear politics",
+      "source": "pass1",
+      "avg_logprob": -0.19600382736585673
+    },
+    {
+      "start": 264.79,
+      "end": 265.87,
+      "text": "polls",
+      "source": "pass1",
+      "avg_logprob": -0.19600382736585673
+    },
+    {
+      "start": 265.87,
+      "end": 272.19,
+      "text": "Leading into the race 2026 Louisiana Senate Republican primary. We've got four relatively recent ones",
+      "source": "pass1",
+      "avg_logprob": -0.19600382736585673
+    },
+    {
+      "start": 272.87,
+      "end": 277.83,
+      "text": "Fleming leading 28 to 27 with Cassidy in third place with 21",
+      "source": "pass1",
+      "avg_logprob": -0.25889393717972276
+    },
+    {
+      "start": 277.87,
+      "end": 283.07,
+      "text": "That's from Emerson from late April. Also in April from PDBC. We have 33 for let low",
+      "source": "pass1",
+      "avg_logprob": -0.25889393717972276
+    },
+    {
+      "start": 283.39,
+      "end": 289.11,
+      "text": "21 apiece for Fleming and Cassidy for Brizio Lee and associates headed at 32 for let low",
+      "source": "pass1",
+      "avg_logprob": -0.25889393717972276
+    },
+    {
+      "start": 290.63,
+      "end": 293.35,
+      "text": "26 for Cassidy and 21 for Fleming",
+      "source": "pass1",
+      "avg_logprob": -0.25889393717972276
+    },
+    {
+      "start": 293.79,
+      "end": 300.79,
+      "text": "Quantas insights headed at 42 for let low 30 for Fleming and 20 for Cassidy",
+      "source": "pass1",
+      "avg_logprob": -0.25889393717972276
+    },
+    {
+      "start": 301.23,
+      "end": 303.87,
+      "text": "Now you can see at the top of this are averages",
+      "source": "pass1",
+      "avg_logprob": -0.18972228593745474
+    },
+    {
+      "start": 303.87,
+      "end": 308.35,
+      "text": "This is what we were expecting going in or at least what the polling was telling us going into this race",
+      "source": "pass1",
+      "avg_logprob": -0.18972228593745474
+    },
+    {
+      "start": 308.51,
+      "end": 310.99,
+      "text": "Which was let low at about 33 and a half",
+      "source": "pass1",
+      "avg_logprob": -0.18972228593745474
+    },
+    {
+      "start": 311.95,
+      "end": 314.11,
+      "text": "Fleming at 25 and",
+      "source": "pass1",
+      "avg_logprob": -0.18972228593745474
+    },
+    {
+      "start": 315.07,
+      "end": 317.07,
+      "text": "Cassidy at 22",
+      "source": "pass1",
+      "avg_logprob": -0.18972228593745474
+    },
+    {
+      "start": 317.75,
+      "end": 320.79,
+      "text": "That was the polling going in above that on this line",
+      "source": "pass1",
+      "avg_logprob": -0.18972228593745474
+    },
+    {
+      "start": 320.79,
+      "end": 325.51,
+      "text": "And I'm reading this from a chart here for you podcasters audio-only people. We love you very much",
+      "source": "pass1",
+      "avg_logprob": -0.18972228593745474
+    },
+    {
+      "start": 325.87,
+      "end": 329.83,
+      "text": "Current results. This is where basically it wound up let low at 45",
+      "source": "pass1",
+      "avg_logprob": -0.18972228593745474
+    },
+    {
+      "start": 330.67,
+      "end": 332.67,
+      "text": "Fleming at",
+      "source": "pass1",
+      "avg_logprob": -0.2514248671156637
+    },
+    {
+      "start": 333.27,
+      "end": 339.91,
+      "text": "2026 the 26 or 28. I can't read 28. Maybe and Cassidy at 25. Yes, 28. So 45",
+      "source": "pass1",
+      "avg_logprob": -0.2514248671156637
+    },
+    {
+      "start": 340.35,
+      "end": 345.71,
+      "text": "28 25 what you see here looking at the averages and the results just comparing",
+      "source": "pass1",
+      "avg_logprob": -0.2514248671156637
+    },
+    {
+      "start": 346.15,
+      "end": 348.47,
+      "text": "Cassidy went up by about two or three points",
+      "source": "pass1",
+      "avg_logprob": -0.2514248671156637
+    },
+    {
+      "start": 348.99,
+      "end": 353.55,
+      "text": "Fleming went up by about two or three points and let low went up by about",
+      "source": "pass1",
+      "avg_logprob": -0.2514248671156637
+    },
+    {
+      "start": 354.39,
+      "end": 356.39,
+      "text": "11 or 12 points",
+      "source": "pass1",
+      "avg_logprob": -0.2514248671156637
+    },
+    {
+      "start": 356.83,
+      "end": 360.07,
+      "text": "She didn't quite get to 50% our",
+      "source": "pass1",
+      "avg_logprob": -0.19033420265272813
+    },
+    {
+      "start": 361.03,
+      "end": 364.57,
+      "text": "10 to 1 15 to 1 shot did not wind up coming through",
+      "source": "pass1",
+      "avg_logprob": -0.19033420265272813
+    },
+    {
+      "start": 364.59,
+      "end": 369.35,
+      "text": "That's what you expect to happen when you make a 10 or 15 to 1 long shot",
+      "source": "pass1",
+      "avg_logprob": -0.19033420265272813
+    },
+    {
+      "start": 369.35,
+      "end": 372.99,
+      "text": "You expect to lose that position and that's hard for people to deal with frankly",
+      "source": "pass1",
+      "avg_logprob": -0.19033420265272813
+    },
+    {
+      "start": 372.99,
+      "end": 378.07,
+      "text": "It was hard for me to deal with real with a really long time until I started catching enough value over a long period of time",
+      "source": "pass1",
+      "avg_logprob": -0.19033420265272813
+    },
+    {
+      "start": 378.23,
+      "end": 382.77,
+      "text": "Where I became comfortable with small risks for big-time gains",
+      "source": "pass1",
+      "avg_logprob": -0.19033420265272813
+    },
+    {
+      "start": 382.97,
+      "end": 386.33,
+      "text": "It's not for everybody I will say a lot of people will just be like oh gosh",
+      "source": "pass1",
+      "avg_logprob": -0.15130393680125948
+    },
+    {
+      "start": 386.33,
+      "end": 388.93,
+      "text": "I don't want to lose, you know, I put 10 bucks on this",
+      "source": "pass1",
+      "avg_logprob": -0.15130393680125948
+    },
+    {
+      "start": 388.93,
+      "end": 393.13,
+      "text": "I put 20 bucks on this 100 bucks on this and I wanted a thousand and I didn't get it and that's true",
+      "source": "pass1",
+      "avg_logprob": -0.15130393680125948
+    },
+    {
+      "start": 393.13,
+      "end": 396.09,
+      "text": "That's what happened here, but I think it did",
+      "source": "pass1",
+      "avg_logprob": -0.15130393680125948
+    },
+    {
+      "start": 396.85,
+      "end": 403.13,
+      "text": "Connect pretty clearly with what our thesis was on the race the people who had not committed to a camp already",
+      "source": "pass1",
+      "avg_logprob": -0.15130393680125948
+    },
+    {
+      "start": 403.13,
+      "end": 408.13,
+      "text": "We're likely going to fall into the Trump camp the camp that Donald Trump kind of came out and said",
+      "source": "pass1",
+      "avg_logprob": -0.15130393680125948
+    },
+    {
+      "start": 408.13,
+      "end": 409.69,
+      "text": "I want you to be over here",
+      "source": "pass1",
+      "avg_logprob": -0.19008298664011508
+    },
+    {
+      "start": 409.69,
+      "end": 415.33,
+      "text": "Republican primary voters do react to that type of thing and they want to cast it out",
+      "source": "pass1",
+      "avg_logprob": -0.19008298664011508
+    },
+    {
+      "start": 415.33,
+      "end": 418.77,
+      "text": "By the way, we should note a sitting US senator was beaten not by one",
+      "source": "pass1",
+      "avg_logprob": -0.19008298664011508
+    },
+    {
+      "start": 418.77,
+      "end": 425.37,
+      "text": "But by two different candidates in a primary is massively out of the norm. It's very irregular",
+      "source": "pass1",
+      "avg_logprob": -0.19008298664011508
+    },
+    {
+      "start": 425.97,
+      "end": 427.73,
+      "text": "highly abnormal and",
+      "source": "pass1",
+      "avg_logprob": -0.19008298664011508
+    },
+    {
+      "start": 427.73,
+      "end": 432.85,
+      "text": "Yet it happened in this race and let low came pretty close to getting to 50 even though",
+      "source": "pass1",
+      "avg_logprob": -0.19008298664011508
+    },
+    {
+      "start": 432.85,
+      "end": 434.85,
+      "text": "She was only polling in the low 30s",
+      "source": "pass1",
+      "avg_logprob": -0.19008298664011508
+    },
+    {
+      "start": 435.05,
+      "end": 437.93,
+      "text": "That being said we want to win more than we lose",
+      "source": "pass1",
+      "avg_logprob": -0.19008298664011508
+    },
+    {
+      "start": 438.13,
+      "end": 443.13,
+      "text": "And that brings us over to the primaries coming up on Tuesday, May 19th",
+      "source": "pass1",
+      "avg_logprob": -0.18927222865970195
+    },
+    {
+      "start": 443.13,
+      "end": 448.65,
+      "text": "We have Alabama that has a runoff later on Georgia another runoff later on Idaho Kentucky",
+      "source": "pass1",
+      "avg_logprob": -0.18927222865970195
+    },
+    {
+      "start": 448.81,
+      "end": 453.29,
+      "text": "Oregon and Pennsylvania and there's one sort of prime time race",
+      "source": "pass1",
+      "avg_logprob": -0.18927222865970195
+    },
+    {
+      "start": 453.29,
+      "end": 457.73,
+      "text": "I would I would argue out of all of these and that is in Kentucky now",
+      "source": "pass1",
+      "avg_logprob": -0.18927222865970195
+    },
+    {
+      "start": 458.29,
+      "end": 462.21,
+      "text": "Tomorrow we're gonna spend a lot of time on all of the other races and give you",
+      "source": "pass1",
+      "avg_logprob": -0.18927222865970195
+    },
+    {
+      "start": 462.21,
+      "end": 467.65,
+      "text": "You know what we can find as far as value what we think is going to happen and try to direct you in the",
+      "source": "pass1",
+      "avg_logprob": -0.18927222865970195
+    },
+    {
+      "start": 467.65,
+      "end": 472.65,
+      "text": "In the right way would love to hear your comments by the way how you're thinking about this because I think you know",
+      "source": "pass1",
+      "avg_logprob": -0.17643175900928557
+    },
+    {
+      "start": 472.65,
+      "end": 479.05,
+      "text": "It's it's a difficult thing to go through when you're going through an election to find a lot of value in some of these primary races",
+      "source": "pass1",
+      "avg_logprob": -0.17643175900928557
+    },
+    {
+      "start": 479.05,
+      "end": 484.95,
+      "text": "The main reason why it's difficult is a there's usually not a lot of polling in primary races",
+      "source": "pass1",
+      "avg_logprob": -0.17643175900928557
+    },
+    {
+      "start": 485.01,
+      "end": 489.05,
+      "text": "Be the polling is much less reliable than it is in a general election",
+      "source": "pass1",
+      "avg_logprob": -0.17643175900928557
+    },
+    {
+      "start": 489.57,
+      "end": 491.09,
+      "text": "It is always harder",
+      "source": "pass1",
+      "avg_logprob": -0.17643175900928557
+    },
+    {
+      "start": 491.09,
+      "end": 495.65,
+      "text": "You're always reading a little bit when it comes to the tea leaves when it comes to polling and even",
+      "source": "pass1",
+      "avg_logprob": -0.17643175900928557
+    },
+    {
+      "start": 495.73,
+      "end": 499.49,
+      "text": "Demographics as you lead into these situations in primaries because not as many people come out",
+      "source": "pass1",
+      "avg_logprob": -0.1890310283939717
+    },
+    {
+      "start": 499.49,
+      "end": 504.19,
+      "text": "It's a lot about local energy around certain candidates. It's it's difficult to sort of read",
+      "source": "pass1",
+      "avg_logprob": -0.1890310283939717
+    },
+    {
+      "start": 504.85,
+      "end": 510.65,
+      "text": "But I want to bring you over to Kentucky here today tomorrow. We'll talk about the rest of the races today",
+      "source": "pass1",
+      "avg_logprob": -0.1890310283939717
+    },
+    {
+      "start": 510.65,
+      "end": 515.77,
+      "text": "We'll focus on Kentucky and Thomas Massey Trump's GOP purge ousts Cassidy is",
+      "source": "pass1",
+      "avg_logprob": -0.1890310283939717
+    },
+    {
+      "start": 516.53,
+      "end": 518.77,
+      "text": "Massey next I don't know if you know Thomas Massey",
+      "source": "pass1",
+      "avg_logprob": -0.1890310283939717
+    },
+    {
+      "start": 519.41,
+      "end": 521.33,
+      "text": "kind of a",
+      "source": "pass1",
+      "avg_logprob": -0.1890310283939717
+    },
+    {
+      "start": 521.33,
+      "end": 522.93,
+      "text": "Libertarian Republican",
+      "source": "pass1",
+      "avg_logprob": -0.1890310283939717
+    },
+    {
+      "start": 522.93,
+      "end": 525.65,
+      "text": "He has been on my shows several times",
+      "source": "pass1",
+      "avg_logprob": -0.25128351400295895
+    },
+    {
+      "start": 526.21,
+      "end": 529.81,
+      "text": "He went to MIT. He's been in Congress since I went to",
+      "source": "pass1",
+      "avg_logprob": -0.25128351400295895
+    },
+    {
+      "start": 530.89,
+      "end": 534.45,
+      "text": "2012 maybe a little earlier than that. I don't remember you I think of him as a tea party guy",
+      "source": "pass1",
+      "avg_logprob": -0.25128351400295895
+    },
+    {
+      "start": 534.85,
+      "end": 538.13,
+      "text": "But I don't remember if he was 2010 or 2012 anyway, he's been in for a while",
+      "source": "pass1",
+      "avg_logprob": -0.25128351400295895
+    },
+    {
+      "start": 538.61,
+      "end": 544.89,
+      "text": "Very Libertarian very much in the mold of Rand Paul you might argue again the senator from Kentucky",
+      "source": "pass1",
+      "avg_logprob": -0.25128351400295895
+    },
+    {
+      "start": 544.89,
+      "end": 550.33,
+      "text": "There's definitely a conservative streak especially or Libertarian type streak especially in that northern part of",
+      "source": "pass1",
+      "avg_logprob": -0.25128351400295895
+    },
+    {
+      "start": 551.25,
+      "end": 552.41,
+      "text": "Kentucky",
+      "source": "pass1",
+      "avg_logprob": -0.25128351400295895
+    },
+    {
+      "start": 552.41,
+      "end": 557.29,
+      "text": "Massey must be thrown out says Donald Trump. Let me give you you know, I'm not gonna read this entire truth social",
+      "source": "pass1",
+      "avg_logprob": -0.18532476809200824
+    },
+    {
+      "start": 557.29,
+      "end": 559.57,
+      "text": "I gotta be honest with you. It's pretty long. Let me give you a part of it",
+      "source": "pass1",
+      "avg_logprob": -0.18532476809200824
+    },
+    {
+      "start": 559.57,
+      "end": 566.61,
+      "text": "This is the vibe from Donald Trump third-rate congressman Thomas Massey a weak and pathetic rhino from the great Commonwealth of Kentucky",
+      "source": "pass1",
+      "avg_logprob": -0.18532476809200824
+    },
+    {
+      "start": 566.61,
+      "end": 573.97,
+      "text": "a place I won one I love and won big six times including all primaries must be thrown out of office ASAP",
+      "source": "pass1",
+      "avg_logprob": -0.18532476809200824
+    },
+    {
+      "start": 573.97,
+      "end": 577.65,
+      "text": "I mean Donald Trump you can you can argue with whatever he's doing or saying",
+      "source": "pass1",
+      "avg_logprob": -0.18532476809200824
+    },
+    {
+      "start": 577.65,
+      "end": 581.29,
+      "text": "But you can't argue that he's mastered the run-on sentence. That's that's just a thing",
+      "source": "pass1",
+      "avg_logprob": -0.18532476809200824
+    },
+    {
+      "start": 581.29,
+      "end": 582.97,
+      "text": "He's good at that",
+      "source": "pass1",
+      "avg_logprob": -0.15254374889154282
+    },
+    {
+      "start": 582.97,
+      "end": 590.49,
+      "text": "He by the way, I would argue rhino isn't a terrible even if you like Thomas rat Massey rhino is a pretty good",
+      "source": "pass1",
+      "avg_logprob": -0.15254374889154282
+    },
+    {
+      "start": 591.33,
+      "end": 595.61,
+      "text": "Name for Thomas Massey and I don't think he would necessarily like it",
+      "source": "pass1",
+      "avg_logprob": -0.15254374889154282
+    },
+    {
+      "start": 595.61,
+      "end": 601.41,
+      "text": "But I do think that he's a Libertarian in a in a Republican body, right? He is more Libertarian",
+      "source": "pass1",
+      "avg_logprob": -0.15254374889154282
+    },
+    {
+      "start": 601.41,
+      "end": 603.81,
+      "text": "I would argue than he is Republican",
+      "source": "pass1",
+      "avg_logprob": -0.15254374889154282
+    },
+    {
+      "start": 603.81,
+      "end": 609.93,
+      "text": "He's really the only place you can have Libertarian positions these days is in the Republican Party if you're gonna be one of the two major parties",
+      "source": "pass1",
+      "avg_logprob": -0.15254374889154282
+    },
+    {
+      "start": 610.37,
+      "end": 614.77,
+      "text": "But that's kind of where he is. I mean, he's more Libertarian than he is Republican",
+      "source": "pass1",
+      "avg_logprob": -0.18753451217086084
+    },
+    {
+      "start": 614.77,
+      "end": 616.97,
+      "text": "I don't have a problem with that honestly, but that is",
+      "source": "pass1",
+      "avg_logprob": -0.18753451217086084
+    },
+    {
+      "start": 617.81,
+      "end": 622.85,
+      "text": "Republican in name only he isn't a standard Republican. That's at least fair to say goes on",
+      "source": "pass1",
+      "avg_logprob": -0.18753451217086084
+    },
+    {
+      "start": 622.89,
+      "end": 628.13,
+      "text": "He said he's the worst Republican congressman in history. That's a hundred percent not true",
+      "source": "pass1",
+      "avg_logprob": -0.18753451217086084
+    },
+    {
+      "start": 628.29,
+      "end": 633.17,
+      "text": "But a voting against tax cuts the wall law enforcement and in favor of the transgender",
+      "source": "pass1",
+      "avg_logprob": -0.18753451217086084
+    },
+    {
+      "start": 633.77,
+      "end": 639.45,
+      "text": "Mutilization of our children comma men and playing in women's sports comma and so many other horrible things",
+      "source": "pass1",
+      "avg_logprob": -0.18753451217086084
+    },
+    {
+      "start": 639.93,
+      "end": 641.93,
+      "text": "The tax cuts by the way",
+      "source": "pass1",
+      "avg_logprob": -0.2431325644018158
+    },
+    {
+      "start": 641.93,
+      "end": 645.49,
+      "text": "was talking about him voting against the big beautiful bill which he did on the basis of",
+      "source": "pass1",
+      "avg_logprob": -0.2431325644018158
+    },
+    {
+      "start": 646.45,
+      "end": 652.89,
+      "text": "Deficits, which is the very standard for what Thomas Massey has done in Congress the incredible people of Kentucky's fourth congressional district",
+      "source": "pass1",
+      "avg_logprob": -0.2431325644018158
+    },
+    {
+      "start": 653.05,
+      "end": 658.37,
+      "text": "Gave us a mandate to make America great again and that person who will do that as Navy Seal Army Ranger fifth generation Kentucky farmer",
+      "source": "pass1",
+      "avg_logprob": -0.2431325644018158
+    },
+    {
+      "start": 658.57,
+      "end": 660.57,
+      "text": "Captain Ed Galrain",
+      "source": "pass1",
+      "avg_logprob": -0.2431325644018158
+    },
+    {
+      "start": 661.17,
+      "end": 665.69,
+      "text": "True America first Patriot. He goes on to say a lot of good things about Ed Galrain",
+      "source": "pass1",
+      "avg_logprob": -0.2431325644018158
+    },
+    {
+      "start": 666.53,
+      "end": 669.65,
+      "text": "And you know that he supports a lot of his agenda",
+      "source": "pass1",
+      "avg_logprob": -0.2431325644018158
+    },
+    {
+      "start": 669.93,
+      "end": 673.61,
+      "text": "The last one I'll give you here is Massey the last Massey stuff. He says",
+      "source": "pass1",
+      "avg_logprob": -0.20644906723853385
+    },
+    {
+      "start": 674.29,
+      "end": 681.05,
+      "text": "Great people of Kentucky are wise to Massey. He only votes against the Republican Party. That's again not not accurate",
+      "source": "pass1",
+      "avg_logprob": -0.20644906723853385
+    },
+    {
+      "start": 681.05,
+      "end": 684.25,
+      "text": "I mean it statistically votes with Donald Trump probably 90% of the time",
+      "source": "pass1",
+      "avg_logprob": -0.20644906723853385
+    },
+    {
+      "start": 684.25,
+      "end": 688.09,
+      "text": "But but again some big votes he has gone the other way and very publicly",
+      "source": "pass1",
+      "avg_logprob": -0.20644906723853385
+    },
+    {
+      "start": 688.37,
+      "end": 693.33,
+      "text": "He makes me like very easy for the radical left unlike lightweight Massey totally ineffective loser",
+      "source": "pass1",
+      "avg_logprob": -0.20644906723853385
+    },
+    {
+      "start": 693.77,
+      "end": 700.85,
+      "text": "What a weird time we are in who has failed to us so badly Captain Ed Galrain is a winner",
+      "source": "pass1",
+      "avg_logprob": -0.23500871658325195
+    },
+    {
+      "start": 700.85,
+      "end": 707.13,
+      "text": "Who will not let you down election day is Tuesday May 19th vote for Ed Galrain. He has my clean complete in total endorsement make America great again",
+      "source": "pass1",
+      "avg_logprob": -0.23500871658325195
+    },
+    {
+      "start": 708.25,
+      "end": 714.41,
+      "text": "President Donald Trump. Unfortunately, it's hard to do that make America great again or pay attention to any of it because he did not ask us",
+      "source": "pass1",
+      "avg_logprob": -0.23500871658325195
+    },
+    {
+      "start": 714.97,
+      "end": 720.13,
+      "text": "And thank us for paying attention to this matter, which is always how we usually it's ends the tweet",
+      "source": "pass1",
+      "avg_logprob": -0.23500871658325195
+    },
+    {
+      "start": 720.49,
+      "end": 725.69,
+      "text": "Okay, so that's kind of the setup for what we're looking at here for this particular election tomorrow",
+      "source": "pass1",
+      "avg_logprob": -0.1816132015966136
+    },
+    {
+      "start": 726.49,
+      "end": 729.57,
+      "text": "Let me do a quick sidebar your honor here",
+      "source": "pass1",
+      "avg_logprob": -0.1816132015966136
+    },
+    {
+      "start": 730.01,
+      "end": 734.97,
+      "text": "Because we're gonna get into the markets in a second, but I want to do a quick sidebar here to tell you that I",
+      "source": "pass1",
+      "avg_logprob": -0.1816132015966136
+    },
+    {
+      "start": 735.81,
+      "end": 737.81,
+      "text": "Like Thomas Massey. I",
+      "source": "pass1",
+      "avg_logprob": -0.1816132015966136
+    },
+    {
+      "start": 738.05,
+      "end": 743.61,
+      "text": "Have always liked Thomas. I think he's a good guy generally, you know, I don't agree with him on every single issue",
+      "source": "pass1",
+      "avg_logprob": -0.1816132015966136
+    },
+    {
+      "start": 743.61,
+      "end": 747.77,
+      "text": "I consider myself sort of a libertarian libertarian leaning",
+      "source": "pass1",
+      "avg_logprob": -0.1816132015966136
+    },
+    {
+      "start": 748.65,
+      "end": 755.29,
+      "text": "Independent, you know, I definitely agree with Republicans on most issues certainly much more than Democrats",
+      "source": "pass1",
+      "avg_logprob": -0.15330774461229643
+    },
+    {
+      "start": 755.29,
+      "end": 760.89,
+      "text": "But I don't you know consider myself some like, you know lock stock and barrel Republican certainly Massey doesn't I",
+      "source": "pass1",
+      "avg_logprob": -0.15330774461229643
+    },
+    {
+      "start": 761.65,
+      "end": 766.25,
+      "text": "Generally like him and I've liked him for a long time. He is a guy now",
+      "source": "pass1",
+      "avg_logprob": -0.15330774461229643
+    },
+    {
+      "start": 766.25,
+      "end": 768.93,
+      "text": "There's all these allegations that have come out against him last minute",
+      "source": "pass1",
+      "avg_logprob": -0.15330774461229643
+    },
+    {
+      "start": 768.93,
+      "end": 773.77,
+      "text": "I don't know what to make of those to be honest with you like I tend to not believe them. I",
+      "source": "pass1",
+      "avg_logprob": -0.15330774461229643
+    },
+    {
+      "start": 774.57,
+      "end": 779.33,
+      "text": "Don't know any of the people involved. I don't know what has happened. I generally speaking",
+      "source": "pass1",
+      "avg_logprob": -0.16361730656138174
+    },
+    {
+      "start": 779.33,
+      "end": 783.33,
+      "text": "I always start with skepticism when it comes to any",
+      "source": "pass1",
+      "avg_logprob": -0.16361730656138174
+    },
+    {
+      "start": 783.89,
+      "end": 790.13,
+      "text": "Accusation made against any politician in the waning moments of a campaign. It's just a general rule for me",
+      "source": "pass1",
+      "avg_logprob": -0.16361730656138174
+    },
+    {
+      "start": 790.57,
+      "end": 792.57,
+      "text": "It's just hard to to believe",
+      "source": "pass1",
+      "avg_logprob": -0.16361730656138174
+    },
+    {
+      "start": 793.21,
+      "end": 796.73,
+      "text": "Those things, you know, I even would even put that in the we've seen",
+      "source": "pass1",
+      "avg_logprob": -0.16361730656138174
+    },
+    {
+      "start": 797.25,
+      "end": 801.13,
+      "text": "Accusations against a lot of candidates over the years on the Democratic side",
+      "source": "pass1",
+      "avg_logprob": -0.16361730656138174
+    },
+    {
+      "start": 801.13,
+      "end": 803.73,
+      "text": "And when it's the last minute thing that you don't really know",
+      "source": "pass1",
+      "avg_logprob": -0.1964107427170606
+    },
+    {
+      "start": 804.25,
+      "end": 810.01,
+      "text": "It's hard for me to to believe or understand now the one recently that we did see that had evidence to it",
+      "source": "pass1",
+      "avg_logprob": -0.1964107427170606
+    },
+    {
+      "start": 810.01,
+      "end": 812.49,
+      "text": "And that's when I start believing this when I see evidence",
+      "source": "pass1",
+      "avg_logprob": -0.1964107427170606
+    },
+    {
+      "start": 812.65,
+      "end": 816.77,
+      "text": "But the evidence, you know against Eric Swalwell, for example when I first saw the allegations",
+      "source": "pass1",
+      "avg_logprob": -0.1964107427170606
+    },
+    {
+      "start": 816.77,
+      "end": 821.69,
+      "text": "I even then even with Eric Swalwell being one of the five to seven worst people humanity has ever produced",
+      "source": "pass1",
+      "avg_logprob": -0.1964107427170606
+    },
+    {
+      "start": 821.69,
+      "end": 823.69,
+      "text": "it was hard for me to believe that",
+      "source": "pass1",
+      "avg_logprob": -0.1964107427170606
+    },
+    {
+      "start": 824.01,
+      "end": 826.25,
+      "text": "You know a last second one of these",
+      "source": "pass1",
+      "avg_logprob": -0.1964107427170606
+    },
+    {
+      "start": 827.13,
+      "end": 834.37,
+      "text": "Accusations was going to hold we've of course then saw lots and lots of information and lots of people coming out videos and pictures",
+      "source": "pass1",
+      "avg_logprob": -0.2305758628865768
+    },
+    {
+      "start": 834.37,
+      "end": 840.45,
+      "text": "And and all the things so you know over time you can change if I saw a lot of evidence against Thomas Massey. I",
+      "source": "pass1",
+      "avg_logprob": -0.2305758628865768
+    },
+    {
+      "start": 841.65,
+      "end": 844.37,
+      "text": "Be very open to hearing it",
+      "source": "pass1",
+      "avg_logprob": -0.2305758628865768
+    },
+    {
+      "start": 844.85,
+      "end": 848.09,
+      "text": "But I still sort of doubt it just because of the timing of it",
+      "source": "pass1",
+      "avg_logprob": -0.2305758628865768
+    },
+    {
+      "start": 848.09,
+      "end": 850.97,
+      "text": "And you know, it's not what I've ever had experience with Thomas Massey",
+      "source": "pass1",
+      "avg_logprob": -0.2305758628865768
+    },
+    {
+      "start": 851.25,
+      "end": 854.53,
+      "text": "And it's funny because the things that have pissed off Trump",
+      "source": "pass1",
+      "avg_logprob": -0.2305758628865768
+    },
+    {
+      "start": 855.53,
+      "end": 859.89,
+      "text": "Are not like I like Thomas, but it's not necessarily",
+      "source": "pass1",
+      "avg_logprob": -0.165555739402771
+    },
+    {
+      "start": 860.89,
+      "end": 865.89,
+      "text": "For the reasons that he's pissed off Trump. I mean, I think one of the main reasons is the",
+      "source": "pass1",
+      "avg_logprob": -0.165555739402771
+    },
+    {
+      "start": 866.45,
+      "end": 871.25,
+      "text": "The Epstein situation the Epstein situation trying to get Trump to release these Epstein files",
+      "source": "pass1",
+      "avg_logprob": -0.165555739402771
+    },
+    {
+      "start": 871.81,
+      "end": 878.01,
+      "text": "He's been outspoken against Trump there. I don't think Trump had anything has anything to hide in the Epstein files",
+      "source": "pass1",
+      "avg_logprob": -0.165555739402771
+    },
+    {
+      "start": 878.01,
+      "end": 882.53,
+      "text": "I think honestly, he was not friendly with Epstein, you know up",
+      "source": "pass1",
+      "avg_logprob": -0.165555739402771
+    },
+    {
+      "start": 883.25,
+      "end": 891.25,
+      "text": "At any point after the time where we saw these major allegations against and you know, the first prosecutions against",
+      "source": "pass1",
+      "avg_logprob": -0.20110781503760297
+    },
+    {
+      "start": 892.01,
+      "end": 896.77,
+      "text": "Epstein, I don't he was friends with them years and years and years before they had a falling out before any of this stuff came out",
+      "source": "pass1",
+      "avg_logprob": -0.20110781503760297
+    },
+    {
+      "start": 896.77,
+      "end": 901.89,
+      "text": "I honestly don't think there's much there, frankly when it comes to the Epstein files and Donald Trump",
+      "source": "pass1",
+      "avg_logprob": -0.20110781503760297
+    },
+    {
+      "start": 902.45,
+      "end": 908.41,
+      "text": "You know Thomas Massey fought for those to be released. I've expressed on this not not on this show, but other shows",
+      "source": "pass1",
+      "avg_logprob": -0.20110781503760297
+    },
+    {
+      "start": 909.57,
+      "end": 910.93,
+      "text": "skepticism as to",
+      "source": "pass1",
+      "avg_logprob": -0.20110781503760297
+    },
+    {
+      "start": 911.01,
+      "end": 917.45,
+      "text": "I'm nervous about just you know flooding the zone with a lot of accusations that it can't really really have evidence",
+      "source": "pass1",
+      "avg_logprob": -0.2374853859777036
+    },
+    {
+      "start": 917.89,
+      "end": 922.45,
+      "text": "You know, they're kind of a bunch of allegations against people some of which not even for criminal activity",
+      "source": "pass1",
+      "avg_logprob": -0.2374853859777036
+    },
+    {
+      "start": 922.45,
+      "end": 925.33,
+      "text": "I'm a lot of which were just like hey, this guy was a dirtbag",
+      "source": "pass1",
+      "avg_logprob": -0.2374853859777036
+    },
+    {
+      "start": 925.77,
+      "end": 927.29,
+      "text": "making, you know",
+      "source": "pass1",
+      "avg_logprob": -0.2374853859777036
+    },
+    {
+      "start": 927.29,
+      "end": 934.33,
+      "text": "Crass jokes in Jeffrey Epstein's email like that's bad maybe but also I don't know if the government should be involved in",
+      "source": "pass1",
+      "avg_logprob": -0.2374853859777036
+    },
+    {
+      "start": 934.33,
+      "end": 937.25,
+      "text": "Releasing crass jokes with no associated",
+      "source": "pass1",
+      "avg_logprob": -0.2374853859777036
+    },
+    {
+      "start": 937.69,
+      "end": 940.65,
+      "text": "Criminal accusation I got there's a lot of problems I had with that",
+      "source": "pass1",
+      "avg_logprob": -0.15825075543906592
+    },
+    {
+      "start": 940.65,
+      "end": 947.01,
+      "text": "So I don't know that I fully agree. I do agree partially with Thomas on that the other part is Israel. He's kind of an Israel skeptic",
+      "source": "pass1",
+      "avg_logprob": -0.15825075543906592
+    },
+    {
+      "start": 947.01,
+      "end": 953.53,
+      "text": "He's definitely a guy who is much more on the I don't know the the new right side when it comes to Israel",
+      "source": "pass1",
+      "avg_logprob": -0.15825075543906592
+    },
+    {
+      "start": 953.53,
+      "end": 957.49,
+      "text": "I don't think he's some big anti some hidden anti-semite or anything like that",
+      "source": "pass1",
+      "avg_logprob": -0.15825075543906592
+    },
+    {
+      "start": 957.49,
+      "end": 958.69,
+      "text": "But I don't agree with him",
+      "source": "pass1",
+      "avg_logprob": -0.15825075543906592
+    },
+    {
+      "start": 958.69,
+      "end": 962.65,
+      "text": "I think I'm more favorable toward Israel than he is those are kind of the two major things",
+      "source": "pass1",
+      "avg_logprob": -0.15825075543906592
+    },
+    {
+      "start": 962.65,
+      "end": 966.65,
+      "text": "It seems like you know the Iran war being associated with Israel that Thomas",
+      "source": "pass1",
+      "avg_logprob": -0.15825075543906592
+    },
+    {
+      "start": 967.29,
+      "end": 969.45,
+      "text": "Is in the news for against Donald Trump",
+      "source": "pass1",
+      "avg_logprob": -0.2405266779705994
+    },
+    {
+      "start": 970.37,
+      "end": 973.45,
+      "text": "You know, I sort of disagree with him on some of those points",
+      "source": "pass1",
+      "avg_logprob": -0.2405266779705994
+    },
+    {
+      "start": 973.89,
+      "end": 978.85,
+      "text": "But he reminds me what I like about Thomas a lot outside of just me. He seems like a personable guy is",
+      "source": "pass1",
+      "avg_logprob": -0.2405266779705994
+    },
+    {
+      "start": 979.97,
+      "end": 982.81,
+      "text": "He's like one of these guys. Who's the guy back in the",
+      "source": "pass1",
+      "avg_logprob": -0.2405266779705994
+    },
+    {
+      "start": 983.93,
+      "end": 987.13,
+      "text": "the the days of the anti-slavery movement",
+      "source": "pass1",
+      "avg_logprob": -0.2405266779705994
+    },
+    {
+      "start": 988.09,
+      "end": 990.01,
+      "text": "Some spooner. What's his name?",
+      "source": "pass1",
+      "avg_logprob": -0.2405266779705994
+    },
+    {
+      "start": 990.01,
+      "end": 992.93,
+      "text": "Lysander spooner might be I could be I could have screwed that up",
+      "source": "pass1",
+      "avg_logprob": -0.2405266779705994
+    },
+    {
+      "start": 992.93,
+      "end": 996.25,
+      "text": "But anyway, it's been a while, but he was a guy who's like a big",
+      "source": "pass1",
+      "avg_logprob": -0.2405266779705994
+    },
+    {
+      "start": 997.45,
+      "end": 1000.73,
+      "text": "Legal scholar at the time and was super against slavery, right?",
+      "source": "pass1",
+      "avg_logprob": -0.1780790328010311
+    },
+    {
+      "start": 1000.73,
+      "end": 1007.35,
+      "text": "He like very very much against slavery and I think quite obviously so he would talk about how like there's in the Constitution",
+      "source": "pass1",
+      "avg_logprob": -0.1780790328010311
+    },
+    {
+      "start": 1007.35,
+      "end": 1010.49,
+      "text": "There's these all these cutouts for you know freedom and all these things",
+      "source": "pass1",
+      "avg_logprob": -0.1780790328010311
+    },
+    {
+      "start": 1010.49,
+      "end": 1016.57,
+      "text": "How can we possibly be a slave only ownership society? It makes no sense. It's not consistent with the Constitution",
+      "source": "pass1",
+      "avg_logprob": -0.1780790328010311
+    },
+    {
+      "start": 1016.57,
+      "end": 1021.53,
+      "text": "He argued that so hardcore and that was an argument that was different than some of the other abolitionists at the time",
+      "source": "pass1",
+      "avg_logprob": -0.1780790328010311
+    },
+    {
+      "start": 1021.65,
+      "end": 1025.89,
+      "text": "They were they were very much aligned on the idea of",
+      "source": "pass1",
+      "avg_logprob": -0.1780790328010311
+    },
+    {
+      "start": 1026.13,
+      "end": 1030.21,
+      "text": "You know abolishing slavery, but they were they did it for a totally different reason and",
+      "source": "pass1",
+      "avg_logprob": -0.17012532519512488
+    },
+    {
+      "start": 1030.73,
+      "end": 1035.33,
+      "text": "Then you had the the other side when when the war finally started and people finally got on board",
+      "source": "pass1",
+      "avg_logprob": -0.17012532519512488
+    },
+    {
+      "start": 1035.33,
+      "end": 1037.29,
+      "text": "Okay, we need to we need to do something about this",
+      "source": "pass1",
+      "avg_logprob": -0.17012532519512488
+    },
+    {
+      "start": 1037.29,
+      "end": 1040.77,
+      "text": "It was obviously not entirely about slavery at the time, but was a big chunk of it",
+      "source": "pass1",
+      "avg_logprob": -0.17012532519512488
+    },
+    {
+      "start": 1040.77,
+      "end": 1045.13,
+      "text": "He actually opposed the Civil War and opposed the North's actions in the Civil War",
+      "source": "pass1",
+      "avg_logprob": -0.17012532519512488
+    },
+    {
+      "start": 1045.33,
+      "end": 1047.33,
+      "text": "which actually led to slavery and",
+      "source": "pass1",
+      "avg_logprob": -0.17012532519512488
+    },
+    {
+      "start": 1047.45,
+      "end": 1053.01,
+      "text": "It basically was enough to piss everybody off like nobody liked the guy and he you know",
+      "source": "pass1",
+      "avg_logprob": -0.17012532519512488
+    },
+    {
+      "start": 1053.01,
+      "end": 1056.69,
+      "text": "I look back at him and say well certainly was right on the slavery issue",
+      "source": "pass1",
+      "avg_logprob": -0.208998441696167
+    },
+    {
+      "start": 1056.69,
+      "end": 1059.77,
+      "text": "I don't that I would have probably I think I don't even know",
+      "source": "pass1",
+      "avg_logprob": -0.208998441696167
+    },
+    {
+      "start": 1059.77,
+      "end": 1064.69,
+      "text": "I mean there's so many different things, but I certainly was very very much happy with the outcome of",
+      "source": "pass1",
+      "avg_logprob": -0.208998441696167
+    },
+    {
+      "start": 1065.49,
+      "end": 1066.93,
+      "text": "the Civil War",
+      "source": "pass1",
+      "avg_logprob": -0.208998441696167
+    },
+    {
+      "start": 1066.93,
+      "end": 1070.61,
+      "text": "And I you know, I know you in the south. I'm just like wait a minute. Aren't you in Texas? Yeah, I know",
+      "source": "pass1",
+      "avg_logprob": -0.208998441696167
+    },
+    {
+      "start": 1071.01,
+      "end": 1073.01,
+      "text": "but the whole point of this is to say that",
+      "source": "pass1",
+      "avg_logprob": -0.208998441696167
+    },
+    {
+      "start": 1074.05,
+      "end": 1079.61,
+      "text": "He kind of pisses everybody off and it's not because he's pissing people off necessarily because of his viewpoints",
+      "source": "pass1",
+      "avg_logprob": -0.208998441696167
+    },
+    {
+      "start": 1079.61,
+      "end": 1085.11,
+      "text": "It's more. I think more of the he's doing it because of a closely held ideology and",
+      "source": "pass1",
+      "avg_logprob": -0.21956038410945605
+    },
+    {
+      "start": 1085.85,
+      "end": 1090.61,
+      "text": "Ideology I use that word intentionally and it's definitely a vilified word in a vilified term",
+      "source": "pass1",
+      "avg_logprob": -0.21956038410945605
+    },
+    {
+      "start": 1090.73,
+      "end": 1096.49,
+      "text": "But the way I mean it at least is a coherent set of beliefs that actually work together",
+      "source": "pass1",
+      "avg_logprob": -0.21956038410945605
+    },
+    {
+      "start": 1097.17,
+      "end": 1099.29,
+      "text": "Right, you might not like those beliefs",
+      "source": "pass1",
+      "avg_logprob": -0.21956038410945605
+    },
+    {
+      "start": 1099.33,
+      "end": 1103.61,
+      "text": "But like what we see a lot of times are people who are massively for",
+      "source": "pass1",
+      "avg_logprob": -0.21956038410945605
+    },
+    {
+      "start": 1104.05,
+      "end": 1109.33,
+      "text": "Government involvement in in one area of life and then massively opposed to it in the other",
+      "source": "pass1",
+      "avg_logprob": -0.16201077684760093
+    },
+    {
+      "start": 1110.21,
+      "end": 1118.05,
+      "text": "Thomas is just gonna be opposed to massive government involvement pretty much everywhere at least in most cases and I like people like that",
+      "source": "pass1",
+      "avg_logprob": -0.16201077684760093
+    },
+    {
+      "start": 1118.05,
+      "end": 1124.37,
+      "text": "I like people who have a coherent ideology even if you don't necessarily like I don't lend with them on every single point",
+      "source": "pass1",
+      "avg_logprob": -0.16201077684760093
+    },
+    {
+      "start": 1124.37,
+      "end": 1130.45,
+      "text": "I know where they're coming from and I like people who will stand up when it's tough and stick with their ideology",
+      "source": "pass1",
+      "avg_logprob": -0.16201077684760093
+    },
+    {
+      "start": 1130.45,
+      "end": 1133.01,
+      "text": "And I think that's what Thomas Massey has largely done",
+      "source": "pass1",
+      "avg_logprob": -0.18820487004574213
+    },
+    {
+      "start": 1133.01,
+      "end": 1134.89,
+      "text": "I mean I look back at a couple examples",
+      "source": "pass1",
+      "avg_logprob": -0.18820487004574213
+    },
+    {
+      "start": 1134.89,
+      "end": 1140.17,
+      "text": "I was thinking back to a time where there was some sort of shooting. There's another unfortunate mass shooting again today",
+      "source": "pass1",
+      "avg_logprob": -0.18820487004574213
+    },
+    {
+      "start": 1140.17,
+      "end": 1142.67,
+      "text": "these things do happen in our country and",
+      "source": "pass1",
+      "avg_logprob": -0.18820487004574213
+    },
+    {
+      "start": 1143.49,
+      "end": 1147.21,
+      "text": "The day after the mass shooting he came out with a bill",
+      "source": "pass1",
+      "avg_logprob": -0.18820487004574213
+    },
+    {
+      "start": 1147.81,
+      "end": 1155.01,
+      "text": "That was a pro-second amendment bill essentially saying gun ownership should be easier a day after a mass shooting",
+      "source": "pass1",
+      "avg_logprob": -0.18820487004574213
+    },
+    {
+      "start": 1155.01,
+      "end": 1156.37,
+      "text": "It was all over the news",
+      "source": "pass1",
+      "avg_logprob": -0.18820487004574213
+    },
+    {
+      "start": 1156.37,
+      "end": 1162.77,
+      "text": "That's a really difficult position to take and Thomas Massey has done that sort of stuff over and over and over and over again",
+      "source": "pass1",
+      "avg_logprob": -0.20549613661041446
+    },
+    {
+      "start": 1162.77,
+      "end": 1167.61,
+      "text": "In fact, I went back to look for which incident what shooting it was after and he's done it after multiple mass shootings",
+      "source": "pass1",
+      "avg_logprob": -0.20549613661041446
+    },
+    {
+      "start": 1167.61,
+      "end": 1170.39,
+      "text": "so the the softball shooting in in",
+      "source": "pass1",
+      "avg_logprob": -0.20549613661041446
+    },
+    {
+      "start": 1170.93,
+      "end": 1172.93,
+      "text": "in DC the these",
+      "source": "pass1",
+      "avg_logprob": -0.20549613661041446
+    },
+    {
+      "start": 1173.09,
+      "end": 1178.41,
+      "text": "Congressman being shot in DC you had the situation the Pulse nightclub shooting",
+      "source": "pass1",
+      "avg_logprob": -0.20549613661041446
+    },
+    {
+      "start": 1178.41,
+      "end": 1181.29,
+      "text": "You did after that the Nashville shooting I several shootings",
+      "source": "pass1",
+      "avg_logprob": -0.20549613661041446
+    },
+    {
+      "start": 1182.05,
+      "end": 1188.61,
+      "text": "Because he believes in the second amendment enough to make the point even when it's uncomfortable and I like people like that",
+      "source": "pass1",
+      "avg_logprob": -0.18382914126420222
+    },
+    {
+      "start": 1188.61,
+      "end": 1195.25,
+      "text": "I I feel like you know we couldn't use more of them frankly, so I'm not an anti-massy guy at all",
+      "source": "pass1",
+      "avg_logprob": -0.18382914126420222
+    },
+    {
+      "start": 1195.25,
+      "end": 1200.77,
+      "text": "I think that him you know having voices like his like Rand Paul's like a few others",
+      "source": "pass1",
+      "avg_logprob": -0.18382914126420222
+    },
+    {
+      "start": 1200.77,
+      "end": 1203.01,
+      "text": "Even when I don't just don't agree with them on everything",
+      "source": "pass1",
+      "avg_logprob": -0.18382914126420222
+    },
+    {
+      "start": 1203.01,
+      "end": 1207.93,
+      "text": "I want a principled voice and I want somebody in there who's going to stand up against their own party from time to time",
+      "source": "pass1",
+      "avg_logprob": -0.18382914126420222
+    },
+    {
+      "start": 1208.25,
+      "end": 1211.49,
+      "text": "I like that that's a sidebar. It's got nothing to do with the markets",
+      "source": "pass1",
+      "avg_logprob": -0.19905127694501595
+    },
+    {
+      "start": 1211.49,
+      "end": 1213.69,
+      "text": "There's nothing to do with the way this election is going to turn out",
+      "source": "pass1",
+      "avg_logprob": -0.19905127694501595
+    },
+    {
+      "start": 1213.81,
+      "end": 1218.13,
+      "text": "But I did think it was important to hit the way the election is going to turn out is an interesting thing",
+      "source": "pass1",
+      "avg_logprob": -0.19905127694501595
+    },
+    {
+      "start": 1218.13,
+      "end": 1224.25,
+      "text": "And I wanted to make sure I you understood where I came from on the Massey situation before we get into the actual",
+      "source": "pass1",
+      "avg_logprob": -0.19905127694501595
+    },
+    {
+      "start": 1224.29,
+      "end": 1227.53,
+      "text": "Markets, this is these are the latest polls and they're kind of all over the place",
+      "source": "pass1",
+      "avg_logprob": -0.19905127694501595
+    },
+    {
+      "start": 1228.05,
+      "end": 1234.39,
+      "text": "We have Thomas Massey up by 9 in early April and up by 4 in early April as we go to early May",
+      "source": "pass1",
+      "avg_logprob": -0.19905127694501595
+    },
+    {
+      "start": 1235.39,
+      "end": 1236.89,
+      "text": "Gallerain is",
+      "source": "pass1",
+      "avg_logprob": -0.24638661321090616
+    },
+    {
+      "start": 1236.89,
+      "end": 1243.29,
+      "text": "Up by 8 in a poll from Qantas big data poll has Massey plus 2 and tied",
+      "source": "pass1",
+      "avg_logprob": -0.24638661321090616
+    },
+    {
+      "start": 1243.93,
+      "end": 1248.87,
+      "text": "In the last few days and then the SoCal poll is Gallerain plus 7",
+      "source": "pass1",
+      "avg_logprob": -0.24638661321090616
+    },
+    {
+      "start": 1249.07,
+      "end": 1255.55,
+      "text": "What you're seeing here lately is the only pollster who seems to really like Massey's chances is this big data poll",
+      "source": "pass1",
+      "avg_logprob": -0.24638661321090616
+    },
+    {
+      "start": 1255.75,
+      "end": 1260.57,
+      "text": "Big data polls had some good outcomes some not so good, but generally speaking",
+      "source": "pass1",
+      "avg_logprob": -0.24638661321090616
+    },
+    {
+      "start": 1261.13,
+      "end": 1264.19,
+      "text": "You know as it has been sort of vilified by some of the press",
+      "source": "pass1",
+      "avg_logprob": -0.26630838127697215
+    },
+    {
+      "start": 1264.89,
+      "end": 1270.97,
+      "text": "You know some people really really like that poll. It's had some some good results read the Trump thing pretty well at times",
+      "source": "pass1",
+      "avg_logprob": -0.26630838127697215
+    },
+    {
+      "start": 1271.57,
+      "end": 1273.57,
+      "text": "If I remember correctly in the past",
+      "source": "pass1",
+      "avg_logprob": -0.26630838127697215
+    },
+    {
+      "start": 1273.81,
+      "end": 1279.67,
+      "text": "There's another poll that came out after that the lowdown just came out. This is another one had",
+      "source": "pass1",
+      "avg_logprob": -0.26630838127697215
+    },
+    {
+      "start": 1280.61,
+      "end": 1282.61,
+      "text": "Let's see it is Gallerain",
+      "source": "pass1",
+      "avg_logprob": -0.26630838127697215
+    },
+    {
+      "start": 1282.77,
+      "end": 1284.77,
+      "text": "51 Massey 44",
+      "source": "pass1",
+      "avg_logprob": -0.26630838127697215
+    },
+    {
+      "start": 1284.97,
+      "end": 1286.33,
+      "text": "Interesting breakdowns here, too",
+      "source": "pass1",
+      "avg_logprob": -0.26630838127697215
+    },
+    {
+      "start": 1286.33,
+      "end": 1290.93,
+      "text": "If you're a Maga America first type person if you to identify that way you have Gallerain plus",
+      "source": "pass1",
+      "avg_logprob": -0.26827030181884765
+    },
+    {
+      "start": 1291.85,
+      "end": 1293.01,
+      "text": "26",
+      "source": "pass1",
+      "avg_logprob": -0.26827030181884765
+    },
+    {
+      "start": 1293.01,
+      "end": 1295.93,
+      "text": "Right your traditional Republicans is Massey plus 18",
+      "source": "pass1",
+      "avg_logprob": -0.26827030181884765
+    },
+    {
+      "start": 1295.93,
+      "end": 1299.89,
+      "text": "It's kind of interesting that a traditional Republicans would be the ones that are with Thomas Massey",
+      "source": "pass1",
+      "avg_logprob": -0.26827030181884765
+    },
+    {
+      "start": 1300.21,
+      "end": 1303.65,
+      "text": "Considering he's kind of like more like a libertarian. Do you support Trump?",
+      "source": "pass1",
+      "avg_logprob": -0.26827030181884765
+    },
+    {
+      "start": 1303.65,
+      "end": 1306.73,
+      "text": "America first Maga more or the Republican Party generally",
+      "source": "pass1",
+      "avg_logprob": -0.26827030181884765
+    },
+    {
+      "start": 1307.17,
+      "end": 1310.97,
+      "text": "Trump Maga 60% and traditional Republican 36% so",
+      "source": "pass1",
+      "avg_logprob": -0.26827030181884765
+    },
+    {
+      "start": 1311.53,
+      "end": 1314.77,
+      "text": "So if you look at those two numbers together and this is just one poll",
+      "source": "pass1",
+      "avg_logprob": -0.16803486201599355
+    },
+    {
+      "start": 1314.93,
+      "end": 1322.09,
+      "text": "But Gallerain leads by more than Massey does among his selected group and Gallerain's group is larger than Massey's",
+      "source": "pass1",
+      "avg_logprob": -0.16803486201599355
+    },
+    {
+      "start": 1322.29,
+      "end": 1326.97,
+      "text": "That is a big challenge to overcome and these accusations that have come out against him last minute",
+      "source": "pass1",
+      "avg_logprob": -0.16803486201599355
+    },
+    {
+      "start": 1326.97,
+      "end": 1331.01,
+      "text": "I think I've hurt him, but I think the bigger overwhelming and again",
+      "source": "pass1",
+      "avg_logprob": -0.16803486201599355
+    },
+    {
+      "start": 1331.01,
+      "end": 1335.29,
+      "text": "I don't know if anything there's any truth at all with those things to be clear, but the overwhelming",
+      "source": "pass1",
+      "avg_logprob": -0.16803486201599355
+    },
+    {
+      "start": 1336.05,
+      "end": 1340.69,
+      "text": "Pressure against a Massey is it's I'm not I'm not breaking news here to tell you",
+      "source": "pass1",
+      "avg_logprob": -0.16803486201599355
+    },
+    {
+      "start": 1341.01,
+      "end": 1345.85,
+      "text": "It's Donald Trump. He's pissed off Donald Trump a bunch of times. They made up a bunch of times",
+      "source": "pass1",
+      "avg_logprob": -0.14375228586450087
+    },
+    {
+      "start": 1346.49,
+      "end": 1352.05,
+      "text": "This last group they haven't made up Trump really wanted the the Epstein thing in particular to go away",
+      "source": "pass1",
+      "avg_logprob": -0.14375228586450087
+    },
+    {
+      "start": 1352.05,
+      "end": 1358.45,
+      "text": "He did not want to talk about it anymore. I don't think that's because he was secretly molesting 12 year olds",
+      "source": "pass1",
+      "avg_logprob": -0.14375228586450087
+    },
+    {
+      "start": 1358.45,
+      "end": 1363.25,
+      "text": "I think it was because he was trying to do other things and was annoyed by the fact that he had to keep talking about this",
+      "source": "pass1",
+      "avg_logprob": -0.14375228586450087
+    },
+    {
+      "start": 1363.65,
+      "end": 1365.65,
+      "text": "And wanted to push it off",
+      "source": "pass1",
+      "avg_logprob": -0.14375228586450087
+    },
+    {
+      "start": 1365.73,
+      "end": 1371.05,
+      "text": "There was a back-and-forth Thomas Massey won that back-and-forth by the way and got that bill through whether you like it or not",
+      "source": "pass1",
+      "avg_logprob": -0.18993829431779244
+    },
+    {
+      "start": 1371.05,
+      "end": 1375.17,
+      "text": "and the story of course is Trump was pissed off and he wasn't gonna let this thing go and",
+      "source": "pass1",
+      "avg_logprob": -0.18993829431779244
+    },
+    {
+      "start": 1375.77,
+      "end": 1378.57,
+      "text": "That is why these polls are starting to show",
+      "source": "pass1",
+      "avg_logprob": -0.18993829431779244
+    },
+    {
+      "start": 1379.13,
+      "end": 1384.89,
+      "text": "Some strength for Gallerain. Let me show you where these markets are right now. Let's give you a Polymarket one here to start",
+      "source": "pass1",
+      "avg_logprob": -0.18993829431779244
+    },
+    {
+      "start": 1385.41,
+      "end": 1388.49,
+      "text": "This is the winner of the Kentucky 04",
+      "source": "pass1",
+      "avg_logprob": -0.18993829431779244
+    },
+    {
+      "start": 1388.93,
+      "end": 1395.41,
+      "text": "Republican primary a Gallerain if you see the chart here, and I'll describe it for you fine folks on audio",
+      "source": "pass1",
+      "avg_logprob": -0.18993829431779244
+    },
+    {
+      "start": 1395.41,
+      "end": 1399.97,
+      "text": "Only podcast basically you've got a pretty a race where",
+      "source": "pass1",
+      "avg_logprob": -0.2891510585322976
+    },
+    {
+      "start": 1400.61,
+      "end": 1405.85,
+      "text": "Massey leads in the area between 60 and 75 percent for most of this race",
+      "source": "pass1",
+      "avg_logprob": -0.2891510585322976
+    },
+    {
+      "start": 1406.29,
+      "end": 1410.19,
+      "text": "if you go back, you know, you know before the beginning of the year and",
+      "source": "pass1",
+      "avg_logprob": -0.2891510585322976
+    },
+    {
+      "start": 1411.09,
+      "end": 1415.89,
+      "text": "Only it's about May. Do you start seeing that turn around?",
+      "source": "pass1",
+      "avg_logprob": -0.2891510585322976
+    },
+    {
+      "start": 1416.97,
+      "end": 1418.45,
+      "text": "I",
+      "source": "pass1",
+      "avg_logprob": -0.2891510585322976
+    },
+    {
+      "start": 1418.45,
+      "end": 1419.89,
+      "text": "As we got closer to this race",
+      "source": "pass1",
+      "avg_logprob": -0.2891510585322976
+    },
+    {
+      "start": 1419.89,
+      "end": 1422.89,
+      "text": "I started having some skepticism of whether Massey could win it and",
+      "source": "pass1",
+      "avg_logprob": -0.2891510585322976
+    },
+    {
+      "start": 1423.49,
+      "end": 1430.37,
+      "text": "You we started purchasing some shares of Ed Gallerain not necessarily because we I mean Ed Gallerain",
+      "source": "pass1",
+      "avg_logprob": -0.2092648432633587
+    },
+    {
+      "start": 1430.37,
+      "end": 1433.09,
+      "text": "I don't think is a bad guy. I don't think Ed Gallerain's a you know",
+      "source": "pass1",
+      "avg_logprob": -0.2092648432633587
+    },
+    {
+      "start": 1433.09,
+      "end": 1436.65,
+      "text": "I don't he seems to have great service record seems to be well-liked",
+      "source": "pass1",
+      "avg_logprob": -0.2092648432633587
+    },
+    {
+      "start": 1436.85,
+      "end": 1441.49,
+      "text": "There's a lot of things going in his favor here. It's not an anti Gallerain situation",
+      "source": "pass1",
+      "avg_logprob": -0.2092648432633587
+    },
+    {
+      "start": 1442.01,
+      "end": 1444.01,
+      "text": "but he",
+      "source": "pass1",
+      "avg_logprob": -0.2092648432633587
+    },
+    {
+      "start": 1444.01,
+      "end": 1448.97,
+      "text": "He started rising around them about May 1st or so",
+      "source": "pass1",
+      "avg_logprob": -0.2092648432633587
+    },
+    {
+      "start": 1449.33,
+      "end": 1454.29,
+      "text": "I was probably a little bit late on that honestly. I probably started purchasing some Gallerain shares",
+      "source": "pass1",
+      "avg_logprob": -0.20457876940083697
+    },
+    {
+      "start": 1454.97,
+      "end": 1461.61,
+      "text": "When he was more in the 40s rather in the 20s, I would have rather had it in the 20s, but it got it at more in the 40s",
+      "source": "pass1",
+      "avg_logprob": -0.20457876940083697
+    },
+    {
+      "start": 1462.61,
+      "end": 1467.57,
+      "text": "the margin of victory in this race the markets tend to like Thomas Massey at",
+      "source": "pass1",
+      "avg_logprob": -0.20457876940083697
+    },
+    {
+      "start": 1468.37,
+      "end": 1475.33,
+      "text": "29% is a 0 to 5% margin the rest of the Gallerain voters is whether he'll win by 0 to 5 or 5 to 10",
+      "source": "pass1",
+      "avg_logprob": -0.20457876940083697
+    },
+    {
+      "start": 1475.81,
+      "end": 1477.81,
+      "text": "I don't have anything in the margin of victory",
+      "source": "pass1",
+      "avg_logprob": -0.20457876940083697
+    },
+    {
+      "start": 1478.57,
+      "end": 1480.57,
+      "text": "Market one of the reasons why",
+      "source": "pass1",
+      "avg_logprob": -0.16157687392853598
+    },
+    {
+      "start": 1480.81,
+      "end": 1485.33,
+      "text": "And this is you know, what I think is going to happen is like while Massey",
+      "source": "pass1",
+      "avg_logprob": -0.16157687392853598
+    },
+    {
+      "start": 1485.33,
+      "end": 1490.97,
+      "text": "I think has had a good career and I think he survived a lot of these types of challenges and back and forth with the president",
+      "source": "pass1",
+      "avg_logprob": -0.16157687392853598
+    },
+    {
+      "start": 1490.97,
+      "end": 1495.89,
+      "text": "I think there's a really good chance. This is the end of the road for Thomas tomorrow",
+      "source": "pass1",
+      "avg_logprob": -0.16157687392853598
+    },
+    {
+      "start": 1496.21,
+      "end": 1501.73,
+      "text": "And I think you know, I don't think it's a you know a 90% chance or 100% chance. He loses",
+      "source": "pass1",
+      "avg_logprob": -0.16157687392853598
+    },
+    {
+      "start": 1502.33,
+      "end": 1507.47,
+      "text": "But I think it's probably a 75% chance. He loses now right now the markets have it at 63",
+      "source": "pass1",
+      "avg_logprob": -0.16157687392853598
+    },
+    {
+      "start": 1507.51,
+      "end": 1510.07,
+      "text": "I think there's probably a little bit of value there though",
+      "source": "pass1",
+      "avg_logprob": -0.14587096576119812
+    },
+    {
+      "start": 1510.63,
+      "end": 1514.55,
+      "text": "Not enough that I'm like willing to dump a bunch of money in at 63",
+      "source": "pass1",
+      "avg_logprob": -0.14587096576119812
+    },
+    {
+      "start": 1515.23,
+      "end": 1519.79,
+      "text": "percent I think you know back in the 20s and 40s. I think it was very very good value now",
+      "source": "pass1",
+      "avg_logprob": -0.14587096576119812
+    },
+    {
+      "start": 1519.79,
+      "end": 1523.71,
+      "text": "I think there might be slight value here. I think there's a chance that look",
+      "source": "pass1",
+      "avg_logprob": -0.14587096576119812
+    },
+    {
+      "start": 1523.71,
+      "end": 1526.55,
+      "text": "I think there's a good chance, you know again one out of four chance",
+      "source": "pass1",
+      "avg_logprob": -0.14587096576119812
+    },
+    {
+      "start": 1526.55,
+      "end": 1530.95,
+      "text": "Maybe that Massey wins is about where my mindset is. I think there's a chance. He wins",
+      "source": "pass1",
+      "avg_logprob": -0.14587096576119812
+    },
+    {
+      "start": 1530.99,
+      "end": 1536.55,
+      "text": "He does have loyalty in that district. It's really like that as I was explaining before that northern part",
+      "source": "pass1",
+      "avg_logprob": -0.14587096576119812
+    },
+    {
+      "start": 1536.99,
+      "end": 1539.99,
+      "text": "Of his district, which is up, you know towards Cincinnati",
+      "source": "pass1",
+      "avg_logprob": -0.20952099277859643
+    },
+    {
+      "start": 1540.87,
+      "end": 1548.39,
+      "text": "Is really gonna have to come through big and I just don't know that it's going to be enough to hold him and and you know",
+      "source": "pass1",
+      "avg_logprob": -0.20952099277859643
+    },
+    {
+      "start": 1548.95,
+      "end": 1551.39,
+      "text": "and to win one of the things that",
+      "source": "pass1",
+      "avg_logprob": -0.20952099277859643
+    },
+    {
+      "start": 1552.43,
+      "end": 1558.07,
+      "text": "Sort of the central thesis of these primaries and I'm gonna kind of keep sticking this way until I see it",
+      "source": "pass1",
+      "avg_logprob": -0.20952099277859643
+    },
+    {
+      "start": 1558.63,
+      "end": 1564.99,
+      "text": "Defeated is when Donald Trump really wants something. He usually gets it. That's basically where I am",
+      "source": "pass1",
+      "avg_logprob": -0.20952099277859643
+    },
+    {
+      "start": 1564.99,
+      "end": 1568.75,
+      "text": "Now that's not in every single case. It's possible. He'll lose some of these",
+      "source": "pass1",
+      "avg_logprob": -0.18107446774031766
+    },
+    {
+      "start": 1568.75,
+      "end": 1574.71,
+      "text": "He'd you know, again, we were I think totally right directionally and in Louisiana didn't quite get to that 50% barrier",
+      "source": "pass1",
+      "avg_logprob": -0.18107446774031766
+    },
+    {
+      "start": 1574.71,
+      "end": 1578.11,
+      "text": "But having let low separately just to win",
+      "source": "pass1",
+      "avg_logprob": -0.18107446774031766
+    },
+    {
+      "start": 1578.11,
+      "end": 1584.43,
+      "text": "I think we're in a really good position frankly in that Louisiana race and we'll cover all of the small losses",
+      "source": "pass1",
+      "avg_logprob": -0.18107446774031766
+    },
+    {
+      "start": 1584.43,
+      "end": 1589.87,
+      "text": "That we had on the 50% market. I think quite easily. It's just gonna take until that runoff",
+      "source": "pass1",
+      "avg_logprob": -0.18107446774031766
+    },
+    {
+      "start": 1589.87,
+      "end": 1593.31,
+      "text": "We will see on that one of course, but when it comes to Kentucky",
+      "source": "pass1",
+      "avg_logprob": -0.18107446774031766
+    },
+    {
+      "start": 1593.31,
+      "end": 1599.51,
+      "text": "I do think that probably there's a situation here where we're looking at a Thomas Massey loss in Kentucky",
+      "source": "pass1",
+      "avg_logprob": -0.2252342273671943
+    },
+    {
+      "start": 1600.39,
+      "end": 1603.87,
+      "text": "What happens after that interesting market here on Calci?",
+      "source": "pass1",
+      "avg_logprob": -0.2252342273671943
+    },
+    {
+      "start": 1604.51,
+      "end": 1608.67,
+      "text": "Which is who will leave their party this year?",
+      "source": "pass1",
+      "avg_logprob": -0.2252342273671943
+    },
+    {
+      "start": 1608.75,
+      "end": 1616.75,
+      "text": "The most likely they have on this particular market is John Fetterman at 20% Lisa Murkowski at 17 Marjorie Taylor Green at 15",
+      "source": "pass1",
+      "avg_logprob": -0.2252342273671943
+    },
+    {
+      "start": 1617.15,
+      "end": 1623.55,
+      "text": "Henry Cuiar at 14 Don Bacon at 13 and there's Thomas Massey at 13%",
+      "source": "pass1",
+      "avg_logprob": -0.179236901595312
+    },
+    {
+      "start": 1624.19,
+      "end": 1630.27,
+      "text": "Chance to leave the party just to discuss this one for a second because my first thought was I'm gonna go know on that because I don't",
+      "source": "pass1",
+      "avg_logprob": -0.179236901595312
+    },
+    {
+      "start": 1630.27,
+      "end": 1632.67,
+      "text": "Think Thomas Massey is gonna switch to being a Democrat",
+      "source": "pass1",
+      "avg_logprob": -0.179236901595312
+    },
+    {
+      "start": 1632.67,
+      "end": 1637.31,
+      "text": "I don't think there's any chance of that and I don't I still don't think there's any chance of him switching to a Democrat",
+      "source": "pass1",
+      "avg_logprob": -0.179236901595312
+    },
+    {
+      "start": 1637.63,
+      "end": 1641.55,
+      "text": "The other part about this is Kentucky has a sore loser law the way these laws work",
+      "source": "pass1",
+      "avg_logprob": -0.179236901595312
+    },
+    {
+      "start": 1641.55,
+      "end": 1645.27,
+      "text": "If you don't know basically if you run in a primary and you lose the primary",
+      "source": "pass1",
+      "avg_logprob": -0.179236901595312
+    },
+    {
+      "start": 1645.27,
+      "end": 1649.43,
+      "text": "You can't just like drop out and I'm now I'm running as an independent or now I'm running as a libertarian",
+      "source": "pass1",
+      "avg_logprob": -0.12603656334035537
+    },
+    {
+      "start": 1649.75,
+      "end": 1652.31,
+      "text": "So I there's no real chance that Massey could do that",
+      "source": "pass1",
+      "avg_logprob": -0.12603656334035537
+    },
+    {
+      "start": 1652.63,
+      "end": 1656.95,
+      "text": "There are some constitutional questions about those laws and how they actually would pan out",
+      "source": "pass1",
+      "avg_logprob": -0.12603656334035537
+    },
+    {
+      "start": 1657.27,
+      "end": 1663.03,
+      "text": "But long story short. I don't I don't think Massey if he loses is gonna jump back into another party nor I think he could",
+      "source": "pass1",
+      "avg_logprob": -0.12603656334035537
+    },
+    {
+      "start": 1663.59,
+      "end": 1664.71,
+      "text": "um",
+      "source": "pass1",
+      "avg_logprob": -0.12603656334035537
+    },
+    {
+      "start": 1664.71,
+      "end": 1670.79,
+      "text": "But there is a possibility and maybe 13% is pretty well priced that Massey might say you know what",
+      "source": "pass1",
+      "avg_logprob": -0.12603656334035537
+    },
+    {
+      "start": 1671.59,
+      "end": 1675.35,
+      "text": "You know, I'm I'm done here in you know, what is it may",
+      "source": "pass1",
+      "avg_logprob": -0.12069839799314513
+    },
+    {
+      "start": 1676.47,
+      "end": 1677.51,
+      "text": "Seven months",
+      "source": "pass1",
+      "avg_logprob": -0.12069839799314513
+    },
+    {
+      "start": 1677.51,
+      "end": 1682.95,
+      "text": "I'm just gonna become a libertarian or an independent just to make a statement and be the one libertarian congressman out there",
+      "source": "pass1",
+      "avg_logprob": -0.12069839799314513
+    },
+    {
+      "start": 1683.03,
+      "end": 1687.03,
+      "text": "I think that's a possibility if he knows his his life politically is cut short",
+      "source": "pass1",
+      "avg_logprob": -0.12069839799314513
+    },
+    {
+      "start": 1687.59,
+      "end": 1693.11,
+      "text": "So, you know, it depends on what his future is if he believes his future is running again as a republican at some point in the future",
+      "source": "pass1",
+      "avg_logprob": -0.12069839799314513
+    },
+    {
+      "start": 1693.51,
+      "end": 1695.03,
+      "text": "Uh, then he probably won't do that",
+      "source": "pass1",
+      "avg_logprob": -0.12069839799314513
+    },
+    {
+      "start": 1695.03,
+      "end": 1699.03,
+      "text": "But if his his belief is I'm out of politics or I want to do something different",
+      "source": "pass1",
+      "avg_logprob": -0.12069839799314513
+    },
+    {
+      "start": 1699.35,
+      "end": 1702.95,
+      "text": "Or whatever if he loses again, there's certainly not a foregone conclusion",
+      "source": "pass1",
+      "avg_logprob": -0.13673381520467892
+    },
+    {
+      "start": 1702.95,
+      "end": 1708.63,
+      "text": "But if he were to lose I think there is probably a chance that he would switch to becoming a libertarian or an independent",
+      "source": "pass1",
+      "avg_logprob": -0.13673381520467892
+    },
+    {
+      "start": 1708.71,
+      "end": 1710.71,
+      "text": "Anyway, long story short",
+      "source": "pass1",
+      "avg_logprob": -0.13673381520467892
+    },
+    {
+      "start": 1710.95,
+      "end": 1716.87,
+      "text": "My I have a not a huge position, but this is too too risky a position honestly, uh",
+      "source": "pass1",
+      "avg_logprob": -0.13673381520467892
+    },
+    {
+      "start": 1718.31,
+      "end": 1721.67,
+      "text": "Where I wouldn't dub a ton of money into it because I'm not sure of it",
+      "source": "pass1",
+      "avg_logprob": -0.13673381520467892
+    },
+    {
+      "start": 1722.15,
+      "end": 1725.67,
+      "text": "But I have a medium-sized let's say position not a tiny like flyer",
+      "source": "pass1",
+      "avg_logprob": -0.13673381520467892
+    },
+    {
+      "start": 1725.83,
+      "end": 1730.71,
+      "text": "But a medium-sized position here looking at whether Massey will wind up losing that race",
+      "source": "pass1",
+      "avg_logprob": -0.12082312760814544
+    },
+    {
+      "start": 1731.03,
+      "end": 1736.63,
+      "text": "I think Ed Galerain will probably get across the finish line in that particular race. We will see though tomorrow",
+      "source": "pass1",
+      "avg_logprob": -0.12082312760814544
+    },
+    {
+      "start": 1736.87,
+      "end": 1738.87,
+      "text": "Uh, we will have we will have our answer to our question",
+      "source": "pass1",
+      "avg_logprob": -0.12082312760814544
+    },
+    {
+      "start": 1739.11,
+      "end": 1742.07,
+      "text": "Tomorrow we will go through the rest of the primary markets as well",
+      "source": "pass1",
+      "avg_logprob": -0.12082312760814544
+    },
+    {
+      "start": 1742.39,
+      "end": 1745.91,
+      "text": "All these elections for you and I think we'll probably have a live stream as well",
+      "source": "pass1",
+      "avg_logprob": -0.12082312760814544
+    },
+    {
+      "start": 1746.39,
+      "end": 1751.51,
+      "text": "On tuesday night if you happen to be a person who is over on the substack, you'll see that without a problem",
+      "source": "pass1",
+      "avg_logprob": -0.12082312760814544
+    },
+    {
+      "start": 1752.07,
+      "end": 1754.71,
+      "text": "Uh, if you're on the youtube page and you're a subscriber, I think you'll see it there",
+      "source": "pass1",
+      "avg_logprob": -0.12044554480484554
+    },
+    {
+      "start": 1755.11,
+      "end": 1756.63,
+      "text": "Potentially at some point as well",
+      "source": "pass1",
+      "avg_logprob": -0.12044554480484554
+    },
+    {
+      "start": 1756.63,
+      "end": 1757.43,
+      "text": "We will see on that",
+      "source": "pass1",
+      "avg_logprob": -0.12044554480484554
+    },
+    {
+      "start": 1757.43,
+      "end": 1760.87,
+      "text": "But we we want you to get over to the substack so we can kind of have a good conversation",
+      "source": "pass1",
+      "avg_logprob": -0.12044554480484554
+    },
+    {
+      "start": 1761.11,
+      "end": 1764.95,
+      "text": "Get everybody in the same place people who actually are following this stuff understand politics",
+      "source": "pass1",
+      "avg_logprob": -0.12044554480484554
+    },
+    {
+      "start": 1765.19,
+      "end": 1766.95,
+      "text": "And you know because I like learning from you too",
+      "source": "pass1",
+      "avg_logprob": -0.12044554480484554
+    },
+    {
+      "start": 1767.03,
+      "end": 1769.99,
+      "text": "I've had some people who have been like, wait a minute your position here is wrong",
+      "source": "pass1",
+      "avg_logprob": -0.12044554480484554
+    },
+    {
+      "start": 1770.23,
+      "end": 1774.31,
+      "text": "I had some good points also, uh people who are just like, hey, have you seen this market yet?",
+      "source": "pass1",
+      "avg_logprob": -0.12044554480484554
+    },
+    {
+      "start": 1774.63,
+      "end": 1776.79,
+      "text": "You never talked about it. That's because I didn't even know it existed",
+      "source": "pass1",
+      "avg_logprob": -0.12044554480484554
+    },
+    {
+      "start": 1776.79,
+      "end": 1779.35,
+      "text": "I mean, I think Cal, she has something like 10 000 markets right now",
+      "source": "pass1",
+      "avg_logprob": -0.12044554480484554
+    },
+    {
+      "start": 1779.35,
+      "end": 1783.11,
+      "text": "So I don't know about every single one of them if you find a good one and you find a good position",
+      "source": "pass1",
+      "avg_logprob": -0.12386443692224997
+    },
+    {
+      "start": 1783.35,
+      "end": 1787.99,
+      "text": "Please let me know how, uh, you know, what your thought process is and what markets you're in",
+      "source": "pass1",
+      "avg_logprob": -0.12386443692224997
+    },
+    {
+      "start": 1787.99,
+      "end": 1792.63,
+      "text": "I love reading that stuff. It's predictable show.com predictable show.com just go there sign up",
+      "source": "pass1",
+      "avg_logprob": -0.12386443692224997
+    },
+    {
+      "start": 1792.87,
+      "end": 1795.83,
+      "text": "Put your email in it's free and we'd love to keep in contact",
+      "source": "pass1",
+      "avg_logprob": -0.12386443692224997
+    },
+    {
+      "start": 1795.91,
+      "end": 1801.91,
+      "text": "Okay, we're gonna take a break come back on the other side with much much more including a new accusation against prediction markets",
+      "source": "pass1",
+      "avg_logprob": -0.12386443692224997
+    },
+    {
+      "start": 1801.99,
+      "end": 1805.59,
+      "text": "Will they even exist? Who knows? We'll talk about that next",
+      "source": "pass1",
+      "avg_logprob": -0.12386443692224997
+    },
+    {
+      "start": 1805.59,
+      "end": 1810.07,
+      "text": "Welcome back to predictable with stew making the world",
+      "source": "pass1",
+      "avg_logprob": -0.14340379083059668
+    },
+    {
+      "start": 1810.71,
+      "end": 1814.87,
+      "text": "It's a little crazy. We're trying to make it a little bit more predictable for you on a day-to-day basis",
+      "source": "pass1",
+      "avg_logprob": -0.14340379083059668
+    },
+    {
+      "start": 1815.11,
+      "end": 1822.15,
+      "text": "Thanks so much for joining us and join us on social media at predictable show and at predictable show.com new story today from 60 minutes",
+      "source": "pass1",
+      "avg_logprob": -0.14340379083059668
+    },
+    {
+      "start": 1822.39,
+      "end": 1825.51,
+      "text": "Yeah, everyone's fascinated with prediction markets. They all hate them",
+      "source": "pass1",
+      "avg_logprob": -0.14340379083059668
+    },
+    {
+      "start": 1825.59,
+      "end": 1828.15,
+      "text": "It seems like everybody in the media can't stand them",
+      "source": "pass1",
+      "avg_logprob": -0.14340379083059668
+    },
+    {
+      "start": 1828.39,
+      "end": 1834.31,
+      "text": "I suppose it's essentially the reason we like them or at least I do is because it cuts through their nonsense",
+      "source": "pass1",
+      "avg_logprob": -0.14340379083059668
+    },
+    {
+      "start": 1834.39,
+      "end": 1837.75,
+      "text": "So I can understand why they wouldn't like prediction markets, but",
+      "source": "pass1",
+      "avg_logprob": -0.13447687002496983
+    },
+    {
+      "start": 1838.47,
+      "end": 1846.95,
+      "text": "That's a story for another day suspected insider accounts net 2.4 million dollars on Polymarket Iran war bets with a 98% win rate",
+      "source": "pass1",
+      "avg_logprob": -0.13447687002496983
+    },
+    {
+      "start": 1847.51,
+      "end": 1848.63,
+      "text": "firm",
+      "source": "pass1",
+      "avg_logprob": -0.13447687002496983
+    },
+    {
+      "start": 1848.63,
+      "end": 1852.39,
+      "text": "Fines, uh, let me give you a clip of 60 minutes where they kind of explain",
+      "source": "pass1",
+      "avg_logprob": -0.13447687002496983
+    },
+    {
+      "start": 1853.19,
+      "end": 1857.19,
+      "text": "What they found and what the accusation is and then we'll get into some of the details",
+      "source": "pass1",
+      "avg_logprob": -0.13447687002496983
+    },
+    {
+      "start": 1858.31,
+      "end": 1862.55,
+      "text": "This might be the most insane pattern we have found on Polymarket so far",
+      "source": "pass1",
+      "avg_logprob": -0.13447687002496983
+    },
+    {
+      "start": 1863.51,
+      "end": 1868.79,
+      "text": "Based in Paris, Nicholas Weiman's small data analytics firm bubble maps creates",
+      "source": "pass1",
+      "avg_logprob": -0.23010368323461575
+    },
+    {
+      "start": 1869.43,
+      "end": 1874.79,
+      "text": "Visualizations of bets on Polymarket to spot bubbles or clusters of suspect traders",
+      "source": "pass1",
+      "avg_logprob": -0.23010368323461575
+    },
+    {
+      "start": 1875.51,
+      "end": 1877.51,
+      "text": "One paradox of Polymarket",
+      "source": "pass1",
+      "avg_logprob": -0.23010368323461575
+    },
+    {
+      "start": 1877.67,
+      "end": 1880.87,
+      "text": "Everything about the trades is totally transparent and public",
+      "source": "pass1",
+      "avg_logprob": -0.23010368323461575
+    },
+    {
+      "start": 1881.43,
+      "end": 1884.15,
+      "text": "Except the traders themselves remain anonymous",
+      "source": "pass1",
+      "avg_logprob": -0.23010368323461575
+    },
+    {
+      "start": 1884.95,
+      "end": 1891.43,
+      "text": "This big cluster in the middle. No one talked about it. The firm's head of investigations goes by his online handle",
+      "source": "pass1",
+      "avg_logprob": -0.23010368323461575
+    },
+    {
+      "start": 1891.67,
+      "end": 1892.63,
+      "text": "deems",
+      "source": "pass1",
+      "avg_logprob": -0.19832574536925868
+    },
+    {
+      "start": 1892.63,
+      "end": 1897.75,
+      "text": "He asked us to obscure his identity over fears of retaliation for his detective work",
+      "source": "pass1",
+      "avg_logprob": -0.19832574536925868
+    },
+    {
+      "start": 1898.31,
+      "end": 1904.95,
+      "text": "They shared for the first time what they believe is a more egregious insider training case than gannon ken van dyke's",
+      "source": "pass1",
+      "avg_logprob": -0.19832574536925868
+    },
+    {
+      "start": 1905.43,
+      "end": 1907.83,
+      "text": "We spotted nine Polymarket accounts",
+      "source": "pass1",
+      "avg_logprob": -0.19832574536925868
+    },
+    {
+      "start": 1908.79,
+      "end": 1913.27,
+      "text": "All connected who made collectively 2.4 million dollars",
+      "source": "pass1",
+      "avg_logprob": -0.19832574536925868
+    },
+    {
+      "start": 1913.67,
+      "end": 1915.67,
+      "text": "Bending almost exclusively",
+      "source": "pass1",
+      "avg_logprob": -0.19832574536925868
+    },
+    {
+      "start": 1915.83,
+      "end": 1920.39,
+      "text": "On us military operations van dyke made 400 000 here 2.4 million",
+      "source": "pass1",
+      "avg_logprob": -0.19832574536925868
+    },
+    {
+      "start": 1920.79,
+      "end": 1922.79,
+      "text": "And now here's the crazy part",
+      "source": "pass1",
+      "avg_logprob": -0.15124101745020044
+    },
+    {
+      "start": 1923.59,
+      "end": 1925.59,
+      "text": "98 person win rate",
+      "source": "pass1",
+      "avg_logprob": -0.15124101745020044
+    },
+    {
+      "start": 1927.59,
+      "end": 1931.67,
+      "text": "98 98 this is like winning the lottery multiple times, you know",
+      "source": "pass1",
+      "avg_logprob": -0.15124101745020044
+    },
+    {
+      "start": 1932.15,
+      "end": 1938.31,
+      "text": "The linked accounts made dozens of winning bets on the specific dates of pivotal moments in the war with iran",
+      "source": "pass1",
+      "avg_logprob": -0.15124101745020044
+    },
+    {
+      "start": 1938.71,
+      "end": 1940.71,
+      "text": "Even when the odds were low",
+      "source": "pass1",
+      "avg_logprob": -0.15124101745020044
+    },
+    {
+      "start": 1940.71,
+      "end": 1946.47,
+      "text": "The first u.s strikes the removal of iran supreme leader the announcement of a ceasefire",
+      "source": "pass1",
+      "avg_logprob": -0.15124101745020044
+    },
+    {
+      "start": 1946.87,
+      "end": 1949.83,
+      "text": "How do we know this isn't just someone who has really good instincts?",
+      "source": "pass1",
+      "avg_logprob": -0.15124101745020044
+    },
+    {
+      "start": 1950.31,
+      "end": 1953.75,
+      "text": "Luck alone cannot explain those numbers if you know this",
+      "source": "pass1",
+      "avg_logprob": -0.15361491546034814
+    },
+    {
+      "start": 1954.39,
+      "end": 1958.79,
+      "text": "Why don't federal prosecutors well hopefully with your interview they're going to know this",
+      "source": "pass1",
+      "avg_logprob": -0.15361491546034814
+    },
+    {
+      "start": 1959.83,
+      "end": 1965.51,
+      "text": "Yeah, I mean that's uh, that's true now. First of all obviously a 98 wind rate is not the same as winning the lottery multiple times",
+      "source": "pass1",
+      "avg_logprob": -0.15361491546034814
+    },
+    {
+      "start": 1965.75,
+      "end": 1969.11,
+      "text": "But that's separately and not really all that important. I suppose",
+      "source": "pass1",
+      "avg_logprob": -0.15361491546034814
+    },
+    {
+      "start": 1969.67,
+      "end": 1975.75,
+      "text": "It's an interesting project one of the reasons of course you can have a project like this",
+      "source": "pass1",
+      "avg_logprob": -0.15361491546034814
+    },
+    {
+      "start": 1976.31,
+      "end": 1981.91,
+      "text": "Is because all the data on Polymarket global you can see every single trade that happens. It's like a crypto thing",
+      "source": "pass1",
+      "avg_logprob": -0.09943665363467656
+    },
+    {
+      "start": 1981.91,
+      "end": 1984.15,
+      "text": "It's like a you know, bitcoin you can see every transaction",
+      "source": "pass1",
+      "avg_logprob": -0.09943665363467656
+    },
+    {
+      "start": 1984.15,
+      "end": 1986.95,
+      "text": "You don't know who's making the transactions, but you can see every transaction",
+      "source": "pass1",
+      "avg_logprob": -0.09943665363467656
+    },
+    {
+      "start": 1986.95,
+      "end": 1988.47,
+      "text": "It's the same thing with Polymarket",
+      "source": "pass1",
+      "avg_logprob": -0.09943665363467656
+    },
+    {
+      "start": 1988.47,
+      "end": 1992.23,
+      "text": "You can see every single trade who won who lost so you can look at people's accounts and say hey",
+      "source": "pass1",
+      "avg_logprob": -0.09943665363467656
+    },
+    {
+      "start": 1992.23,
+      "end": 1995.11,
+      "text": "Wait, but this person wins all the time. Maybe I should copy their trades",
+      "source": "pass1",
+      "avg_logprob": -0.09943665363467656
+    },
+    {
+      "start": 1995.67,
+      "end": 2001.03,
+      "text": "Uh, it's very possible assuming their information is accurate and I don't know this group and I don't know that",
+      "source": "pass1",
+      "avg_logprob": -0.09943665363467656
+    },
+    {
+      "start": 2002.07,
+      "end": 2005.11,
+      "text": "60 minutes knew who they were until they had a chance to knock down prediction markets",
+      "source": "pass1",
+      "avg_logprob": -0.09943665363467656
+    },
+    {
+      "start": 2005.11,
+      "end": 2011.11,
+      "text": "But whatever if they're if they're this data is accurate and positive it may very well be and I",
+      "source": "pass1",
+      "avg_logprob": -0.12155949271688557
+    },
+    {
+      "start": 2011.91,
+      "end": 2016.23,
+      "text": "Have made this clear multiple times when talking about this particular type of insider trader",
+      "source": "pass1",
+      "avg_logprob": -0.12155949271688557
+    },
+    {
+      "start": 2016.71,
+      "end": 2023.75,
+      "text": "It is massively dangerous and incredibly horrible to be doing this type of activity when it comes to",
+      "source": "pass1",
+      "avg_logprob": -0.12155949271688557
+    },
+    {
+      "start": 2024.15,
+      "end": 2025.19,
+      "text": "especially",
+      "source": "pass1",
+      "avg_logprob": -0.12155949271688557
+    },
+    {
+      "start": 2025.19,
+      "end": 2026.79,
+      "text": "us military",
+      "source": "pass1",
+      "avg_logprob": -0.12155949271688557
+    },
+    {
+      "start": 2026.79,
+      "end": 2030.95,
+      "text": "Events obviously as a person who loves this country and loves america and loves our military members",
+      "source": "pass1",
+      "avg_logprob": -0.12155949271688557
+    },
+    {
+      "start": 2031.11,
+      "end": 2032.79,
+      "text": "I don't want to see him killed",
+      "source": "pass1",
+      "avg_logprob": -0.12155949271688557
+    },
+    {
+      "start": 2032.79,
+      "end": 2036.47,
+      "text": "So the fact that you might be able to profit off of it a little bit of information in advance",
+      "source": "pass1",
+      "avg_logprob": -0.11460202082525939
+    },
+    {
+      "start": 2036.47,
+      "end": 2040.79,
+      "text": "Some of those things may not have had people killed, but what we're talking about the story in venezuela",
+      "source": "pass1",
+      "avg_logprob": -0.11460202082525939
+    },
+    {
+      "start": 2041.35,
+      "end": 2044.39,
+      "text": "You know those markets jumping may have tipped off. I mean venezuelan",
+      "source": "pass1",
+      "avg_logprob": -0.11460202082525939
+    },
+    {
+      "start": 2044.39,
+      "end": 2048.71,
+      "text": "I mean if any military right now if your country is worth anything",
+      "source": "pass1",
+      "avg_logprob": -0.11460202082525939
+    },
+    {
+      "start": 2048.79,
+      "end": 2054.15,
+      "text": "They're looking at Polymarket and looking for trends based around the markets and positions",
+      "source": "pass1",
+      "avg_logprob": -0.11460202082525939
+    },
+    {
+      "start": 2054.87,
+      "end": 2059.91,
+      "text": "Revolving around what is important to them if there's a market about hey, well venezuela's leader stepped down",
+      "source": "pass1",
+      "avg_logprob": -0.11460202082525939
+    },
+    {
+      "start": 2060.55,
+      "end": 2064.95,
+      "text": "Venezuela's were idiots if they weren't looking at that market and all of a sudden they saw a spike",
+      "source": "pass1",
+      "avg_logprob": -0.09423569301989945
+    },
+    {
+      "start": 2065.43,
+      "end": 2068.79,
+      "text": "They could have changed their approach. They could have put the maduro into hiding",
+      "source": "pass1",
+      "avg_logprob": -0.09423569301989945
+    },
+    {
+      "start": 2069.43,
+      "end": 2072.39,
+      "text": "You know it could have been a situation where they were waiting for someone to come",
+      "source": "pass1",
+      "avg_logprob": -0.09423569301989945
+    },
+    {
+      "start": 2072.87,
+      "end": 2078.55,
+      "text": "And and some of our servicemen could have been killed. So this is horrible activity. No qualifiers on it",
+      "source": "pass1",
+      "avg_logprob": -0.09423569301989945
+    },
+    {
+      "start": 2078.55,
+      "end": 2083.03,
+      "text": "It's very very bad. It's also pretty rare. It's not nearly as common as they're trying to make it out to be",
+      "source": "pass1",
+      "avg_logprob": -0.09423569301989945
+    },
+    {
+      "start": 2083.03,
+      "end": 2085.03,
+      "text": "They've been trying to make it out that everybody on these things",
+      "source": "pass1",
+      "avg_logprob": -0.09423569301989945
+    },
+    {
+      "start": 2085.43,
+      "end": 2089.19,
+      "text": "Has all this inside information and you too, I don't know you could trust 60 minutes",
+      "source": "pass1",
+      "avg_logprob": -0.13993630157922632
+    },
+    {
+      "start": 2089.19,
+      "end": 2090.15,
+      "text": "You could not trust 60 minutes",
+      "source": "pass1",
+      "avg_logprob": -0.13993630157922632
+    },
+    {
+      "start": 2090.15,
+      "end": 2092.95,
+      "text": "But let me just give you one piece of information as to how much you should trust 60 minutes",
+      "source": "pass1",
+      "avg_logprob": -0.13993630157922632
+    },
+    {
+      "start": 2093.59,
+      "end": 2096.15,
+      "text": "They asked one of the guys on this video asked",
+      "source": "pass1",
+      "avg_logprob": -0.13993630157922632
+    },
+    {
+      "start": 2096.79,
+      "end": 2101.43,
+      "text": "Do you have his identity hidden? This is how they hid it? I mean",
+      "source": "pass1",
+      "avg_logprob": -0.13993630157922632
+    },
+    {
+      "start": 2102.79,
+      "end": 2105.35,
+      "text": "Look at it. You can see three quarters of the guy's face",
+      "source": "pass1",
+      "avg_logprob": -0.13993630157922632
+    },
+    {
+      "start": 2106.07,
+      "end": 2109.51,
+      "text": "Like well people won't be able to recognize him. It's dimly lit. Well, yeah",
+      "source": "pass1",
+      "avg_logprob": -0.13993630157922632
+    },
+    {
+      "start": 2109.75,
+      "end": 2112.47,
+      "text": "I mean, I guess if you recognize this guy by his hair",
+      "source": "pass1",
+      "avg_logprob": -0.13993630157922632
+    },
+    {
+      "start": 2113.27,
+      "end": 2116.23,
+      "text": "Uh, he's got a hat on and sunglasses. So wow",
+      "source": "pass1",
+      "avg_logprob": -0.14523064531385899
+    },
+    {
+      "start": 2117.43,
+      "end": 2119.43,
+      "text": "Uh, particularly",
+      "source": "pass1",
+      "avg_logprob": -0.14523064531385899
+    },
+    {
+      "start": 2119.43,
+      "end": 2124.15,
+      "text": "Uh, not particularly well hidden. Uh, that's really a side and just made me laugh when I was watching the video",
+      "source": "pass1",
+      "avg_logprob": -0.14523064531385899
+    },
+    {
+      "start": 2124.15,
+      "end": 2129.03,
+      "text": "But the point here is it is a typical thing that the media is going to do",
+      "source": "pass1",
+      "avg_logprob": -0.14523064531385899
+    },
+    {
+      "start": 2129.19,
+      "end": 2133.75,
+      "text": "They're going to come after prediction markets and they're going to try to find these outlier situations that do occasionally exist",
+      "source": "pass1",
+      "avg_logprob": -0.14523064531385899
+    },
+    {
+      "start": 2134.23,
+      "end": 2137.11,
+      "text": "And there should be something being done about them",
+      "source": "pass1",
+      "avg_logprob": -0.14523064531385899
+    },
+    {
+      "start": 2137.35,
+      "end": 2139.91,
+      "text": "I will tell you if you are interested in reading more about this",
+      "source": "pass1",
+      "avg_logprob": -0.14523064531385899
+    },
+    {
+      "start": 2140.39,
+      "end": 2145.51,
+      "text": "Particular topic including the venezuela situation and whether if you have some infight information",
+      "source": "pass1",
+      "avg_logprob": -0.13620177562497243
+    },
+    {
+      "start": 2145.51,
+      "end": 2148.95,
+      "text": "Maybe you should hop on one of these things and look at it. I have an article on the",
+      "source": "pass1",
+      "avg_logprob": -0.13620177562497243
+    },
+    {
+      "start": 2149.67,
+      "end": 2154.87,
+      "text": "Predictable show dot com. It's called how to properly conduct insider training",
+      "source": "pass1",
+      "avg_logprob": -0.13620177562497243
+    },
+    {
+      "start": 2155.83,
+      "end": 2157.59,
+      "text": "And uh, you can go check that out if you want",
+      "source": "pass1",
+      "avg_logprob": -0.13620177562497243
+    },
+    {
+      "start": 2158.55,
+      "end": 2162.23,
+      "text": "Because I go through all the arguments on this and show you how really at the end of the day",
+      "source": "pass1",
+      "avg_logprob": -0.13620177562497243
+    },
+    {
+      "start": 2162.31,
+      "end": 2166.23,
+      "text": "It's not worth trying and you should be very very careful. Take it seriously boys and girls",
+      "source": "pass1",
+      "avg_logprob": -0.13620177562497243
+    },
+    {
+      "start": 2166.23,
+      "end": 2169.59,
+      "text": "Okay. Um, also I want to give you a poly markets response here, which",
+      "source": "pass1",
+      "avg_logprob": -0.13900999833018549
+    },
+    {
+      "start": 2170.23,
+      "end": 2176.07,
+      "text": "Is interesting in fact had a couple pieces of information. I did not know about this story. Here's what it said",
+      "source": "pass1",
+      "avg_logprob": -0.13900999833018549
+    },
+    {
+      "start": 2176.47,
+      "end": 2181.19,
+      "text": "Uh, Polymarket has built the most comprehensive market integrity infrastructure in the prediction market industry",
+      "source": "pass1",
+      "avg_logprob": -0.13900999833018549
+    },
+    {
+      "start": 2181.43,
+      "end": 2187.51,
+      "text": "Combining strict insider trading rules ai powered surveillance and blockchain forensics into a unified system",
+      "source": "pass1",
+      "avg_logprob": -0.13900999833018549
+    },
+    {
+      "start": 2187.99,
+      "end": 2192.47,
+      "text": "It's very possible for people who are skeptical of this industry to not believe this and I understand",
+      "source": "pass1",
+      "avg_logprob": -0.13900999833018549
+    },
+    {
+      "start": 2192.47,
+      "end": 2195.11,
+      "text": "Why because you're thinking well, why would they care people are insider trading?",
+      "source": "pass1",
+      "avg_logprob": -0.13900999833018549
+    },
+    {
+      "start": 2195.11,
+      "end": 2197.11,
+      "text": "They're making money off of it",
+      "source": "pass1",
+      "avg_logprob": -0.1363677978515625
+    },
+    {
+      "start": 2197.91,
+      "end": 2199.27,
+      "text": "Very little",
+      "source": "pass1",
+      "avg_logprob": -0.1363677978515625
+    },
+    {
+      "start": 2199.27,
+      "end": 2205.99,
+      "text": "Okay, very very very little Polymarket in particular in their global one of the criticisms in the industry when it comes to",
+      "source": "pass1",
+      "avg_logprob": -0.1363677978515625
+    },
+    {
+      "start": 2206.95,
+      "end": 2213.43,
+      "text": "Monetizing the Polymarket as a business is there's not a lot of income coming into Polymarket for any of these trades",
+      "source": "pass1",
+      "avg_logprob": -0.1363677978515625
+    },
+    {
+      "start": 2214.07,
+      "end": 2216.55,
+      "text": "I mean it's a it is not that's not how they're doing it",
+      "source": "pass1",
+      "avg_logprob": -0.1363677978515625
+    },
+    {
+      "start": 2217.43,
+      "end": 2220.23,
+      "text": "They built a business overseas kind of through crypto",
+      "source": "pass1",
+      "avg_logprob": -0.1363677978515625
+    },
+    {
+      "start": 2220.55,
+      "end": 2225.11,
+      "text": "It really isn't like you know, Kalshi that is taking a percentage off of each transaction",
+      "source": "pass1",
+      "avg_logprob": -0.13099904326455933
+    },
+    {
+      "start": 2225.11,
+      "end": 2228.95,
+      "text": "That's not really even happening at least most of the history of Polymarket",
+      "source": "pass1",
+      "avg_logprob": -0.13099904326455933
+    },
+    {
+      "start": 2229.11,
+      "end": 2232.07,
+      "text": "So that's not really a good criticism of this",
+      "source": "pass1",
+      "avg_logprob": -0.13099904326455933
+    },
+    {
+      "start": 2232.71,
+      "end": 2237.27,
+      "text": "Secondarily, even if you're talking about Kalshi, which you know, I don't know whatever percentage fees you're paying",
+      "source": "pass1",
+      "avg_logprob": -0.13099904326455933
+    },
+    {
+      "start": 2237.35,
+      "end": 2238.95,
+      "text": "It depends on how you",
+      "source": "pass1",
+      "avg_logprob": -0.13099904326455933
+    },
+    {
+      "start": 2238.95,
+      "end": 2242.79,
+      "text": "Place your positions and at some point we're going to go through the details of that to save you some money",
+      "source": "pass1",
+      "avg_logprob": -0.13099904326455933
+    },
+    {
+      "start": 2242.79,
+      "end": 2244.79,
+      "text": "But at the end of the day",
+      "source": "pass1",
+      "avg_logprob": -0.13099904326455933
+    },
+    {
+      "start": 2244.79,
+      "end": 2248.71,
+      "text": "You know, yeah, is there if if someone buys a few thousand dollars worth of something",
+      "source": "pass1",
+      "avg_logprob": -0.13099904326455933
+    },
+    {
+      "start": 2249.19,
+      "end": 2251.19,
+      "text": "Does Polymarket make",
+      "source": "pass1",
+      "avg_logprob": -0.1520606377407124
+    },
+    {
+      "start": 2251.35,
+      "end": 2254.47,
+      "text": "60 dollars off of that 80 dollars. I mean, yeah",
+      "source": "pass1",
+      "avg_logprob": -0.1520606377407124
+    },
+    {
+      "start": 2255.11,
+      "end": 2256.55,
+      "text": "Do you think it's worth it for them?",
+      "source": "pass1",
+      "avg_logprob": -0.1520606377407124
+    },
+    {
+      "start": 2256.55,
+      "end": 2257.59,
+      "text": "honestly",
+      "source": "pass1",
+      "avg_logprob": -0.1520606377407124
+    },
+    {
+      "start": 2257.59,
+      "end": 2260.39,
+      "text": "These small percentage fees that they're taking off of these",
+      "source": "pass1",
+      "avg_logprob": -0.1520606377407124
+    },
+    {
+      "start": 2260.79,
+      "end": 2264.71,
+      "text": "Potential insider trading to deal with all the nonsense that goes along with it. What's the point?",
+      "source": "pass1",
+      "avg_logprob": -0.1520606377407124
+    },
+    {
+      "start": 2265.11,
+      "end": 2267.51,
+      "text": "It's it's not worth it for them to look the other way",
+      "source": "pass1",
+      "avg_logprob": -0.1520606377407124
+    },
+    {
+      "start": 2267.75,
+      "end": 2274.39,
+      "text": "Polymarket it goes on and listen to this part our enhanced market integrity rules published earlier this year set out explicit pro",
+      "source": "pass1",
+      "avg_logprob": -0.1520606377407124
+    },
+    {
+      "start": 2274.95,
+      "end": 2281.99,
+      "text": "Prohibitions on insider trading market manipulation and disruptive practices of both our d5 platform and our CFTC regulated us exchange",
+      "source": "pass1",
+      "avg_logprob": -0.2243884203375363
+    },
+    {
+      "start": 2282.23,
+      "end": 2285.43,
+      "text": "Backed by partnerships with world-class data analytics, blah, blah, blah, blah, blah, blah, blah",
+      "source": "pass1",
+      "avg_logprob": -0.2243884203375363
+    },
+    {
+      "start": 2285.75,
+      "end": 2288.87,
+      "text": "When our systems identify suspicious activity, we act",
+      "source": "pass1",
+      "avg_logprob": -0.2243884203375363
+    },
+    {
+      "start": 2289.43,
+      "end": 2293.43,
+      "text": "Listen to this the indictment of gan and vend ken van dyke",
+      "source": "pass1",
+      "avg_logprob": -0.2243884203375363
+    },
+    {
+      "start": 2294.07,
+      "end": 2297.99,
+      "text": "Is a demonstration of our commitment in practice. This is the thing they've been beaten up with",
+      "source": "pass1",
+      "avg_logprob": -0.2243884203375363
+    },
+    {
+      "start": 2298.07,
+      "end": 2302.23,
+      "text": "This is the venezuela situation the guy who predicted that made four hundred thousand dollars",
+      "source": "pass1",
+      "avg_logprob": -0.2243884203375363
+    },
+    {
+      "start": 2302.63,
+      "end": 2303.83,
+      "text": "Polymarket",
+      "source": "pass1",
+      "avg_logprob": -0.1291318937789562
+    },
+    {
+      "start": 2303.83,
+      "end": 2306.95,
+      "text": "This is the first I knew about this Polymarket identified",
+      "source": "pass1",
+      "avg_logprob": -0.1291318937789562
+    },
+    {
+      "start": 2307.59,
+      "end": 2313.83,
+      "text": "The activity referred it to authorities and the system worked insider trading is not welcome on product",
+      "source": "pass1",
+      "avg_logprob": -0.1291318937789562
+    },
+    {
+      "start": 2314.23,
+      "end": 2318.71,
+      "text": "On Polymarket and those who attempt it will be identified. Um, I tend to agree with that analysis",
+      "source": "pass1",
+      "avg_logprob": -0.1291318937789562
+    },
+    {
+      "start": 2318.79,
+      "end": 2322.15,
+      "text": "It's public on Polymarket people can find you it might not even be Polymarket",
+      "source": "pass1",
+      "avg_logprob": -0.1291318937789562
+    },
+    {
+      "start": 2322.15,
+      "end": 2324.55,
+      "text": "It might be some one of these groups on the outside. They can see your activity",
+      "source": "pass1",
+      "avg_logprob": -0.1291318937789562
+    },
+    {
+      "start": 2324.79,
+      "end": 2329.67,
+      "text": "Don't do something stupid. Kalshi. They know who you are. They have kyc rules. These are know your customer rules",
+      "source": "pass1",
+      "avg_logprob": -0.1291318937789562
+    },
+    {
+      "start": 2330.07,
+      "end": 2333.11,
+      "text": "They know who you are. They know if you work for mr. Beast or not",
+      "source": "pass1",
+      "avg_logprob": -0.1219473864513499
+    },
+    {
+      "start": 2333.27,
+      "end": 2339.03,
+      "text": "So it's probably pretty important to not you know go in there and invest in your in positions on mr. Beast",
+      "source": "pass1",
+      "avg_logprob": -0.1219473864513499
+    },
+    {
+      "start": 2339.75,
+      "end": 2345.35,
+      "text": "Long story short is Polymarket by their telling and you know, this is as far as I know it's accurate",
+      "source": "pass1",
+      "avg_logprob": -0.1219473864513499
+    },
+    {
+      "start": 2345.91,
+      "end": 2350.79,
+      "text": "They found this. I don't know if they were the first person to find it or if they were woken up by somebody else",
+      "source": "pass1",
+      "avg_logprob": -0.1219473864513499
+    },
+    {
+      "start": 2350.95,
+      "end": 2356.23,
+      "text": "Like one of these groups they found this activity. They referred it to authorities and that led to the prosecution",
+      "source": "pass1",
+      "avg_logprob": -0.1219473864513499
+    },
+    {
+      "start": 2356.63,
+      "end": 2358.63,
+      "text": "That's a pretty big thing",
+      "source": "pass1",
+      "avg_logprob": -0.1219473864513499
+    },
+    {
+      "start": 2358.63,
+      "end": 2361.75,
+      "text": "These companies like just don't have",
+      "source": "pass1",
+      "avg_logprob": -0.13046017802152476
+    },
+    {
+      "start": 2362.39,
+      "end": 2366.79,
+      "text": "A lot of upside in looking the other way to insider trading and market manipulation",
+      "source": "pass1",
+      "avg_logprob": -0.13046017802152476
+    },
+    {
+      "start": 2367.19,
+      "end": 2368.55,
+      "text": "They want to be",
+      "source": "pass1",
+      "avg_logprob": -0.13046017802152476
+    },
+    {
+      "start": 2368.55,
+      "end": 2371.67,
+      "text": "They want to be exchanges that are here for the next hundred years",
+      "source": "pass1",
+      "avg_logprob": -0.13046017802152476
+    },
+    {
+      "start": 2372.07,
+      "end": 2375.27,
+      "text": "They're not they're you're 50 fee your 20 dollar fee",
+      "source": "pass1",
+      "avg_logprob": -0.13046017802152476
+    },
+    {
+      "start": 2375.91,
+      "end": 2381.03,
+      "text": "Is not the main game for them. They're looking much much bigger. These are multi billion dollar companies",
+      "source": "pass1",
+      "avg_logprob": -0.13046017802152476
+    },
+    {
+      "start": 2381.19,
+      "end": 2384.95,
+      "text": "Kalshi was just valued at 22 billion dollars. This is happening fast",
+      "source": "pass1",
+      "avg_logprob": -0.13046017802152476
+    },
+    {
+      "start": 2385.03,
+      "end": 2387.03,
+      "text": "And there's just no reason for them to go down this road. All right",
+      "source": "pass1",
+      "avg_logprob": -0.13046017802152476
+    },
+    {
+      "start": 2387.59,
+      "end": 2391.59,
+      "text": "That's all I have on that right now. I want to come back on the other side and we'll hit one more market before we go",
+      "source": "pass1",
+      "avg_logprob": -0.12553022815062936
+    },
+    {
+      "start": 2392.15,
+      "end": 2395.83,
+      "text": "Thanks so much for tuning in. I appreciate it predictable show dot com",
+      "source": "pass1",
+      "avg_logprob": -0.12553022815062936
+    },
+    {
+      "start": 2396.55,
+      "end": 2403.51,
+      "text": "They say everything happens for a reason, but I suspect everything happens for a reason like this commercial break",
+      "source": "pass1",
+      "avg_logprob": -0.12553022815062936
+    },
+    {
+      "start": 2403.67,
+      "end": 2408.87,
+      "text": "Did you need 15 seconds away from music or 15 seconds to eat a Reese's? Perhaps it's true",
+      "source": "pass1",
+      "avg_logprob": -0.12553022815062936
+    },
+    {
+      "start": 2409.27,
+      "end": 2411.27,
+      "text": "Everything happens for a Reese's",
+      "source": "pass1",
+      "avg_logprob": -0.12553022815062936
+    },
+    {
+      "start": 2412.31,
+      "end": 2416.23,
+      "text": "Welcome back to predictable with stew predictable show dot com",
+      "source": "pass1",
+      "avg_logprob": -0.12553022815062936
+    },
+    {
+      "start": 2417.19,
+      "end": 2423.83,
+      "text": "Kind of a farce honestly in this story. We talked about last week, which was this ronda rousey versus jena carano",
+      "source": "pass1",
+      "avg_logprob": -0.139538463257568
+    },
+    {
+      "start": 2424.79,
+      "end": 2431.43,
+      "text": "Fight ronda rousey submits jena carano by armards 17 seconds. Now. It's funny. We talked about this and said",
+      "source": "pass1",
+      "avg_logprob": -0.139538463257568
+    },
+    {
+      "start": 2432.31,
+      "end": 2435.83,
+      "text": "One of the things I wanted to go with jena carano because I like her and that was I mean I was",
+      "source": "pass1",
+      "avg_logprob": -0.139538463257568
+    },
+    {
+      "start": 2435.91,
+      "end": 2439.75,
+      "text": "Absolutely overt about that. I don't really have a good reason. I don't know anything about mma",
+      "source": "pass1",
+      "avg_logprob": -0.139538463257568
+    },
+    {
+      "start": 2439.99,
+      "end": 2445.11,
+      "text": "The one thing I did learn about mma trying to find out about this was kind of this was the concern for carano",
+      "source": "pass1",
+      "avg_logprob": -0.139538463257568
+    },
+    {
+      "start": 2445.11,
+      "end": 2447.43,
+      "text": "Who's almost closer to a boxer?",
+      "source": "pass1",
+      "avg_logprob": -0.1513022178264915
+    },
+    {
+      "start": 2448.47,
+      "end": 2453.35,
+      "text": "Versus somebody who I mean I should have known this is a story told to me years and years ago",
+      "source": "pass1",
+      "avg_logprob": -0.1513022178264915
+    },
+    {
+      "start": 2454.07,
+      "end": 2456.55,
+      "text": "In the legend of thunder lips the ultimate male",
+      "source": "pass1",
+      "avg_logprob": -0.1513022178264915
+    },
+    {
+      "start": 2457.27,
+      "end": 2462.23,
+      "text": "Where they said when the announcer said well, you know the old thing about a boxer versus a wrestlers once the wrestler gets a",
+      "source": "pass1",
+      "avg_logprob": -0.1513022178264915
+    },
+    {
+      "start": 2462.23,
+      "end": 2465.75,
+      "text": "Whole of that boxer. That's all she wrote that is that's kind of what happened here",
+      "source": "pass1",
+      "avg_logprob": -0.1513022178264915
+    },
+    {
+      "start": 2465.99,
+      "end": 2470.31,
+      "text": "And the the wrestler gets a hold of the boxer. That's all she wrote the wrestler got a hold of the boxer here",
+      "source": "pass1",
+      "avg_logprob": -0.1513022178264915
+    },
+    {
+      "start": 2470.63,
+      "end": 2474.15,
+      "text": "And in 17 seconds that it's a sham the fact that it only lasted that long",
+      "source": "pass1",
+      "avg_logprob": -0.09298471585521853
+    },
+    {
+      "start": 2474.15,
+      "end": 2479.03,
+      "text": "I mean I guess this was the end seconds of the of the match lots of legs and arms bent in weird ways",
+      "source": "pass1",
+      "avg_logprob": -0.09298471585521853
+    },
+    {
+      "start": 2479.27,
+      "end": 2481.51,
+      "text": "Never a good thing never something that you want now",
+      "source": "pass1",
+      "avg_logprob": -0.09298471585521853
+    },
+    {
+      "start": 2481.51,
+      "end": 2485.19,
+      "text": "We talked about what position to take and I didn't have a great take honestly",
+      "source": "pass1",
+      "avg_logprob": -0.09298471585521853
+    },
+    {
+      "start": 2485.51,
+      "end": 2489.43,
+      "text": "My thought initially was you got to go carano because it's four to one odds",
+      "source": "pass1",
+      "avg_logprob": -0.09298471585521853
+    },
+    {
+      "start": 2490.31,
+      "end": 2492.31,
+      "text": "Now that we know that was 17 seconds",
+      "source": "pass1",
+      "avg_logprob": -0.09298471585521853
+    },
+    {
+      "start": 2492.71,
+      "end": 2496.15,
+      "text": "That probably was not a good bet and I but I also did talk about the",
+      "source": "pass1",
+      "avg_logprob": -0.09298471585521853
+    },
+    {
+      "start": 2496.71,
+      "end": 2503.67,
+      "text": "Decision of striker versus grappler and that's that's why I stayed away from any position on the actual fight as we talked about last week",
+      "source": "pass1",
+      "avg_logprob": -0.15197805177706938
+    },
+    {
+      "start": 2503.83,
+      "end": 2505.83,
+      "text": "However, I did get on",
+      "source": "pass1",
+      "avg_logprob": -0.15197805177706938
+    },
+    {
+      "start": 2506.39,
+      "end": 2507.67,
+      "text": "on",
+      "source": "pass1",
+      "avg_logprob": -0.15197805177706938
+    },
+    {
+      "start": 2507.67,
+      "end": 2511.11,
+      "text": "On a substack. I want to show you that in a second. This is the top netflix show of the week",
+      "source": "pass1",
+      "avg_logprob": -0.15197805177706938
+    },
+    {
+      "start": 2511.35,
+      "end": 2515.83,
+      "text": "It was a pretty big hit show, but really I mean I guess when when it dies that quickly",
+      "source": "pass1",
+      "avg_logprob": -0.15197805177706938
+    },
+    {
+      "start": 2516.31,
+      "end": 2519.19,
+      "text": "Not a lot of hours going to be spent watching it was only 17 seconds",
+      "source": "pass1",
+      "avg_logprob": -0.15197805177706938
+    },
+    {
+      "start": 2519.83,
+      "end": 2522.95,
+      "text": "The number one show looks like it's going to be the roast of kevin hart",
+      "source": "pass1",
+      "avg_logprob": -0.15197805177706938
+    },
+    {
+      "start": 2522.95,
+      "end": 2526.55,
+      "text": "Which has a 96 chance of being number one this week on netflix",
+      "source": "pass1",
+      "avg_logprob": -0.09368913872002145
+    },
+    {
+      "start": 2527.03,
+      "end": 2529.67,
+      "text": "That's another type of market you can look for by the way my wife likes those",
+      "source": "pass1",
+      "avg_logprob": -0.09368913872002145
+    },
+    {
+      "start": 2529.91,
+      "end": 2533.11,
+      "text": "She's done very well on the netflix markets because when she watches a movie and likes it",
+      "source": "pass1",
+      "avg_logprob": -0.09368913872002145
+    },
+    {
+      "start": 2533.35,
+      "end": 2537.11,
+      "text": "She goes there and takes a little position on the movie because she's like this was a good movie",
+      "source": "pass1",
+      "avg_logprob": -0.09368913872002145
+    },
+    {
+      "start": 2537.11,
+      "end": 2539.83,
+      "text": "I know it was good and she's done that a couple of times and won both times",
+      "source": "pass1",
+      "avg_logprob": -0.09368913872002145
+    },
+    {
+      "start": 2540.07,
+      "end": 2543.67,
+      "text": "Anyway, this is what I wrote on predictable show dot com again. I invite you to come over here",
+      "source": "pass1",
+      "avg_logprob": -0.09368913872002145
+    },
+    {
+      "start": 2543.67,
+      "end": 2547.43,
+      "text": "You'll get this is where I've been hanging out mostly on social media. So come over here and",
+      "source": "pass1",
+      "avg_logprob": -0.09368913872002145
+    },
+    {
+      "start": 2548.23,
+      "end": 2551.35,
+      "text": "Talk to me give me your comments on these things, but I said since mma isn't my lane",
+      "source": "pass1",
+      "avg_logprob": -0.09368913872002145
+    },
+    {
+      "start": 2551.43,
+      "end": 2558.07,
+      "text": "I'm taking the mandalorian under 65 percent on rotten tomatoes instead mostly just to honor",
+      "source": "pass1",
+      "avg_logprob": -0.14470831047404897
+    },
+    {
+      "start": 2558.39,
+      "end": 2559.35,
+      "text": "Gina carano",
+      "source": "pass1",
+      "avg_logprob": -0.14470831047404897
+    },
+    {
+      "start": 2559.35,
+      "end": 2562.55,
+      "text": "Also, just I feel like it it does not sound like it's going to be very good",
+      "source": "pass1",
+      "avg_logprob": -0.14470831047404897
+    },
+    {
+      "start": 2563.11,
+      "end": 2568.07,
+      "text": "And 65 on rotten tomatoes is a relatively decent scorer",
+      "source": "pass1",
+      "avg_logprob": -0.14470831047404897
+    },
+    {
+      "start": 2568.23,
+      "end": 2571.35,
+      "text": "But not a great one for a star wars movie",
+      "source": "pass1",
+      "avg_logprob": -0.14470831047404897
+    },
+    {
+      "start": 2571.43,
+      "end": 2574.15,
+      "text": "Obviously the all-time greats like empire strike back are way up there",
+      "source": "pass1",
+      "avg_logprob": -0.14470831047404897
+    },
+    {
+      "start": 2574.23,
+      "end": 2578.95,
+      "text": "But I think solo was a little bit lower than this most others have been higher than this",
+      "source": "pass1",
+      "avg_logprob": -0.14470831047404897
+    },
+    {
+      "start": 2579.51,
+      "end": 2586.15,
+      "text": "But right around this vicinity is the mandalorian in grogu. It's coming out on in may again",
+      "source": "pass1",
+      "avg_logprob": -0.18780803487256723
+    },
+    {
+      "start": 2586.87,
+      "end": 2589.27,
+      "text": "I'm not excited about it. I didn't really like the show that much at all",
+      "source": "pass1",
+      "avg_logprob": -0.18780803487256723
+    },
+    {
+      "start": 2589.35,
+      "end": 2592.31,
+      "text": "I thought Gina carano was the only good character honestly out. Yeah, me baby",
+      "source": "pass1",
+      "avg_logprob": -0.18780803487256723
+    },
+    {
+      "start": 2592.31,
+      "end": 2596.39,
+      "text": "You know it was cute for five minutes, but let's get on us. I move on with it. I can't and they're calling them grogu",
+      "source": "pass1",
+      "avg_logprob": -0.18780803487256723
+    },
+    {
+      "start": 2596.47,
+      "end": 2599.35,
+      "text": "Come on. Um, are they I don't even know I didn't watch the show",
+      "source": "pass1",
+      "avg_logprob": -0.18780803487256723
+    },
+    {
+      "start": 2599.51,
+      "end": 2602.95,
+      "text": "Okay, so anyway star wars mandalorian and grogu rotten tomato score. This is the market",
+      "source": "pass1",
+      "avg_logprob": -0.18780803487256723
+    },
+    {
+      "start": 2602.95,
+      "end": 2606.95,
+      "text": "I was talking about right now cal. She is projecting this at a right around 65 or 66",
+      "source": "pass1",
+      "avg_logprob": -0.18780803487256723
+    },
+    {
+      "start": 2607.03,
+      "end": 2610.95,
+      "text": "So it's very very close and to make sense. It's a 50 50 market",
+      "source": "pass1",
+      "avg_logprob": -0.11575334911545118
+    },
+    {
+      "start": 2611.03,
+      "end": 2614.47,
+      "text": "So I don't know if I'm going to win on this one or not. Again. It was very small position just to honor",
+      "source": "pass1",
+      "avg_logprob": -0.11575334911545118
+    },
+    {
+      "start": 2615.35,
+      "end": 2616.23,
+      "text": "Gina carano, though",
+      "source": "pass1",
+      "avg_logprob": -0.11575334911545118
+    },
+    {
+      "start": 2616.23,
+      "end": 2619.19,
+      "text": "I'm a little annoyed with her after only lasting 17 seconds now",
+      "source": "pass1",
+      "avg_logprob": -0.11575334911545118
+    },
+    {
+      "start": 2619.19,
+      "end": 2622.79,
+      "text": "I get I get it if I mean because think about it if I were in the fight",
+      "source": "pass1",
+      "avg_logprob": -0.11575334911545118
+    },
+    {
+      "start": 2623.35,
+      "end": 2626.87,
+      "text": "I would probably also be able to last 17 seconds. I don't know how",
+      "source": "pass1",
+      "avg_logprob": -0.11575334911545118
+    },
+    {
+      "start": 2627.75,
+      "end": 2632.71,
+      "text": "But I think I could at least get 12 seconds or eight seconds or something and I shouldn't be that close to her",
+      "source": "pass1",
+      "avg_logprob": -0.11575334911545118
+    },
+    {
+      "start": 2633.03,
+      "end": 2636.47,
+      "text": "She's like a champion. So anyway, not happy about that",
+      "source": "pass1",
+      "avg_logprob": -0.11575334911545118
+    },
+    {
+      "start": 2637.43,
+      "end": 2643.99,
+      "text": "One other thing I want to point to you on is this particular market mandalorian grogu four day opening weekend box office",
+      "source": "pass1",
+      "avg_logprob": -0.11170139149935157
+    },
+    {
+      "start": 2644.95,
+      "end": 2653.59,
+      "text": "Is set at it looks like the projections around 100 million about 60 chance. It's between 90 and 112 million",
+      "source": "pass1",
+      "avg_logprob": -0.11170139149935157
+    },
+    {
+      "start": 2654.31,
+      "end": 2656.31,
+      "text": "92 and 112 million",
+      "source": "pass1",
+      "avg_logprob": -0.11170139149935157
+    },
+    {
+      "start": 2656.31,
+      "end": 2661.75,
+      "text": "That is where the projections are right now. What's interesting about this is you know, this has to be Polymarket global",
+      "source": "pass1",
+      "avg_logprob": -0.11170139149935157
+    },
+    {
+      "start": 2661.75,
+      "end": 2666.31,
+      "text": "How do you know that just by looking at that market? Well, there is a law in this country",
+      "source": "pass1",
+      "avg_logprob": -0.11170139149935157
+    },
+    {
+      "start": 2667.11,
+      "end": 2672.87,
+      "text": "That was I think this is the one that was part of the dod frank bill somehow again these people that with their favors",
+      "source": "pass1",
+      "avg_logprob": -0.11395344996856431
+    },
+    {
+      "start": 2673.59,
+      "end": 2679.43,
+      "text": "But basically someone was going to start a hollywood exchange to be able to allow you to trade",
+      "source": "pass1",
+      "avg_logprob": -0.11395344996856431
+    },
+    {
+      "start": 2680.31,
+      "end": 2683.43,
+      "text": "The box office totals for these movies years ago",
+      "source": "pass1",
+      "avg_logprob": -0.11395344996856431
+    },
+    {
+      "start": 2683.99,
+      "end": 2687.67,
+      "text": "And hollywood decided they didn't want it. So they called in a favor to dod or frank",
+      "source": "pass1",
+      "avg_logprob": -0.11395344996856431
+    },
+    {
+      "start": 2687.67,
+      "end": 2690.23,
+      "text": "I don't know who and they slipped that in this bill",
+      "source": "pass1",
+      "avg_logprob": -0.11395344996856431
+    },
+    {
+      "start": 2690.95,
+      "end": 2693.35,
+      "text": "It could have been somebody else too. They slipped it in the bill",
+      "source": "pass1",
+      "avg_logprob": -0.11395344996856431
+    },
+    {
+      "start": 2694.15,
+      "end": 2695.11,
+      "text": "that",
+      "source": "pass1",
+      "avg_logprob": -0.11395344996856431
+    },
+    {
+      "start": 2695.19,
+      "end": 2698.07,
+      "text": "US based prediction markets cannot predict",
+      "source": "pass1",
+      "avg_logprob": -0.12543599148398465
+    },
+    {
+      "start": 2698.79,
+      "end": 2701.11,
+      "text": "the box office futures of movies",
+      "source": "pass1",
+      "avg_logprob": -0.12543599148398465
+    },
+    {
+      "start": 2701.83,
+      "end": 2704.63,
+      "text": "There are two main things that you cannot predict",
+      "source": "pass1",
+      "avg_logprob": -0.12543599148398465
+    },
+    {
+      "start": 2705.35,
+      "end": 2707.35,
+      "text": "When it comes to prediction markets here in the US",
+      "source": "pass1",
+      "avg_logprob": -0.12543599148398465
+    },
+    {
+      "start": 2707.83,
+      "end": 2709.83,
+      "text": "box office futures and onions",
+      "source": "pass1",
+      "avg_logprob": -0.12543599148398465
+    },
+    {
+      "start": 2710.63,
+      "end": 2712.63,
+      "text": "Those are the two big ones you cannot",
+      "source": "pass1",
+      "avg_logprob": -0.12543599148398465
+    },
+    {
+      "start": 2712.95,
+      "end": 2715.75,
+      "text": "Someone cornered the the market on onions years and years ago",
+      "source": "pass1",
+      "avg_logprob": -0.12543599148398465
+    },
+    {
+      "start": 2715.75,
+      "end": 2718.31,
+      "text": "So you did a carve out there and then someone also",
+      "source": "pass1",
+      "avg_logprob": -0.12543599148398465
+    },
+    {
+      "start": 2718.87,
+      "end": 2722.55,
+      "text": "Got angry about box office receipts. So now you can't do that here",
+      "source": "pass1",
+      "avg_logprob": -0.12543599148398465
+    },
+    {
+      "start": 2722.55,
+      "end": 2728.71,
+      "text": "You can only do it on box Polymarket global what you need a vpn for a long story. Anyway, bottom line is",
+      "source": "pass1",
+      "avg_logprob": -0.15994934365153313
+    },
+    {
+      "start": 2729.59,
+      "end": 2731.59,
+      "text": "I don't think it's going to be a huge hit",
+      "source": "pass1",
+      "avg_logprob": -0.15994934365153313
+    },
+    {
+      "start": 2731.59,
+      "end": 2734.95,
+      "text": "100 million dollars is way way way under even the crappiest",
+      "source": "pass1",
+      "avg_logprob": -0.15994934365153313
+    },
+    {
+      "start": 2735.43,
+      "end": 2738.95,
+      "text": "Star Wars movies in the seven looks episode eight and nine",
+      "source": "pass1",
+      "avg_logprob": -0.15994934365153313
+    },
+    {
+      "start": 2739.91,
+      "end": 2743.59,
+      "text": "So I don't think it's going to be a huge hit, but it is going to be in theaters",
+      "source": "pass1",
+      "avg_logprob": -0.15994934365153313
+    },
+    {
+      "start": 2744.23,
+      "end": 2746.79,
+      "text": "This weekend, right? Is it coming up this weekend? Adam, do you know?",
+      "source": "pass1",
+      "avg_logprob": -0.15994934365153313
+    },
+    {
+      "start": 2747.67,
+      "end": 2750.55,
+      "text": "He doesn't know he doesn't pay attention to the show. He's a producer",
+      "source": "pass1",
+      "avg_logprob": -0.15994934365153313
+    },
+    {
+      "start": 2750.55,
+      "end": 2753.67,
+      "text": "He sits over there. He doesn't even pay attention to the show doesn't even know what I'm talking about right now",
+      "source": "pass1",
+      "avg_logprob": -0.12971146956962698
+    },
+    {
+      "start": 2754.31,
+      "end": 2758.87,
+      "text": "He's like, what are you are you even speaking English? I will say he does also work on stew and dave do america",
+      "source": "pass1",
+      "avg_logprob": -0.12971146956962698
+    },
+    {
+      "start": 2758.87,
+      "end": 2760.95,
+      "text": "I think he watches that show and that show",
+      "source": "pass1",
+      "avg_logprob": -0.12971146956962698
+    },
+    {
+      "start": 2761.43,
+      "end": 2764.79,
+      "text": "We did some stuff on the Mandalorian and the odyssey these new movies coming out to",
+      "source": "pass1",
+      "avg_logprob": -0.12971146956962698
+    },
+    {
+      "start": 2765.35,
+      "end": 2767.35,
+      "text": "Very very soon. I think you'll enjoy",
+      "source": "pass1",
+      "avg_logprob": -0.12971146956962698
+    },
+    {
+      "start": 2767.83,
+      "end": 2770.15,
+      "text": "That stuff over on stew and dave do america as well",
+      "source": "pass1",
+      "avg_logprob": -0.12971146956962698
+    },
+    {
+      "start": 2770.15,
+      "end": 2774.15,
+      "text": "So check that show out. By the way, blaze tv has that show blaze tv.com slash stew and dave",
+      "source": "pass1",
+      "avg_logprob": -0.12971146956962698
+    },
+    {
+      "start": 2774.31,
+      "end": 2778.39,
+      "text": "He'd save money 20 bucks off right now if the stew and dave have used the code stew and dave",
+      "source": "pass1",
+      "avg_logprob": -0.12971146956962698
+    },
+    {
+      "start": 2778.95,
+      "end": 2783.83,
+      "text": "Plus we're on, you know, youtube and all the socials and all the other things. Okay. That's the show for today",
+      "source": "pass1",
+      "avg_logprob": -0.1662727209428946
+    },
+    {
+      "start": 2783.83,
+      "end": 2789.03,
+      "text": "We ask you to go over to check out stew and dave do america and also predictable show",
+      "source": "pass1",
+      "avg_logprob": -0.1662727209428946
+    },
+    {
+      "start": 2789.27,
+      "end": 2793.59,
+      "text": "Dot com predictable show dot com is a place to go where the sub stack is where i'm putting a lot of these positions",
+      "source": "pass1",
+      "avg_logprob": -0.1662727209428946
+    },
+    {
+      "start": 2793.83,
+      "end": 2796.23,
+      "text": "If i'm not talking about on the show, maybe they're not worth the whole segment",
+      "source": "pass1",
+      "avg_logprob": -0.1662727209428946
+    },
+    {
+      "start": 2796.39,
+      "end": 2799.35,
+      "text": "She's got some opinions i'm throwing out there. You can check those out there",
+      "source": "pass1",
+      "avg_logprob": -0.1662727209428946
+    },
+    {
+      "start": 2799.59,
+      "end": 2805.11,
+      "text": "I know people are doing well. It seems like the returns so far have been really positive when it comes to",
+      "source": "pass1",
+      "avg_logprob": -0.1662727209428946
+    },
+    {
+      "start": 2805.75,
+      "end": 2809.27,
+      "text": "People being able to gain a little bit of a little extra spending cash",
+      "source": "pass1",
+      "avg_logprob": -0.10165840309734146
+    },
+    {
+      "start": 2809.27,
+      "end": 2813.51,
+      "text": "So we always love hearing those things and we'll do our best to direct you to the smart investments",
+      "source": "pass1",
+      "avg_logprob": -0.10165840309734146
+    },
+    {
+      "start": 2813.91,
+      "end": 2817.51,
+      "text": "On these markets as people they become part of your life because this is going to be a thing",
+      "source": "pass1",
+      "avg_logprob": -0.10165840309734146
+    },
+    {
+      "start": 2817.51,
+      "end": 2821.91,
+      "text": "That's going to be around for a long time unless elizabeth warren gets elected. Okay. That's all we have for today",
+      "source": "pass1",
+      "avg_logprob": -0.10165840309734146
+    },
+    {
+      "start": 2821.99,
+      "end": 2825.19,
+      "text": "Predictable show dot com. We will see you there probably today",
+      "source": "pass1",
+      "avg_logprob": -0.10165840309734146
+    },
+    {
+      "start": 2825.43,
+      "end": 2828.95,
+      "text": "Don't forget tomorrow big show on the elections on tuesday",
+      "source": "pass1",
+      "avg_logprob": -0.10165840309734146
+    },
+    {
+      "start": 2829.19,
+      "end": 2833.67,
+      "text": "Of course are coming a night and we'll likely have a live stream at some point going over the results",
+      "source": "pass1",
+      "avg_logprob": -0.10165840309734146
+    },
+    {
+      "start": 2833.67,
+      "end": 2837.03,
+      "text": "On tuesday night as well at predictable show dot com. See you tomorrow",
+      "source": "pass1",
+      "avg_logprob": -0.21403643488883972
+    }
+  ],
+  "full_text": "Ray-Ban Meta glasses take the friction out of travel move through the world with your hands free and your head up Hey meta, where's the nearest metro station closest metro to you is Union Square about three blocks away. Hey meta text mom I'm getting on the train now sending message juggle your itinerary take calls and listen to music with open-ear audio No digging for your phone. No stopping for a map. Just you and your glasses Ray-Ban Meta iconic style meets Meta AI available at Walmart and other authorized retailers Welcome to predictable with stew. I appreciate you tuning in today lot to talk about Want to tell you to go to predictable show comm join us in a great community over at sub-stack. We're talking about these issues each and every day I'm trying to respond to a bunch of comments and doing everything there So predictable show comm is the place to go. It's an interesting time ahead of us right now we have a bunch of primaries that are going on on a week-to-week basis and and That gives us both Opportunity to talk about something new and interesting and impactful to the country and to your life But also opportunity after opportunity after to opportunity to hopefully add a little bit to your bank account Through prediction markets. That's the show that we do here. We talk about prediction markets and what to look forward to in the future Let me set this up first with a bit of a look back to Saturday Bill Cassidy who is the senator is currently the senator from Louisiana is No longer going to be the senator from Louisiana come next year Why because he was defeated in the primary we talked to you about this last week Bill Cassidy's fall is a warning sign for other Trump enemies is the headline from Politico and This is something that I is I Think one of the hardest things to get your arms around when you start dealing with prediction markets on a day-to-day basis because It's difficult to see how a loss could be a good thing How can how can is there such a thing as a good loss? What do they call it in sports a moral victory? Not really a moral victory. There's not really one of those but there is I think a good loss a loss that brings you new information a loss that can help you understand what might be coming right around the corner and We did a segment last week where I talked about a bunch of different things about Louisiana Cassidy would lose we were correct on that that Lutland Lutland would be first and we were correct on that as well We gave you a long shot however as well where we said we think this is a 10 times trade That might be there for you and if you listen to the show or watch the show the other day You heard me explain that basically when you have a I think this particular trade was I want to picking up at six cents The other day, but it was I think nine or ten cents when we were talking about it here at six cents It was more like 16 or 17 times your Profit which is even better obviously, but so ten cents Let's just say call it ten cents for the ease of math You had about a ten times and nine ten times Chance for profit there and the and the the actual position was a position that we took on That Louisiana senatorial campaign and the primary and it was basically would Julia Lettland get to 50% or not would she avoid a runoff in this particular race and We said look it's a 10% chance. I think it's more like a 30 or maybe 35% chance Where that she would win. I think there's value there 10% I think it's too low for what we're seeing here and our thesis was basically Donald Trump Has a certain power or especially over primaries when he says he wants something to happen Typically it does and we expected to see massive movement on this particular race Let me show you the polling going into this race. Here are the real clear politics polls Leading into the race 2026 Louisiana Senate Republican primary. We've got four relatively recent ones Fleming leading 28 to 27 with Cassidy in third place with 21 That's from Emerson from late April. Also in April from PDBC. We have 33 for let low 21 apiece for Fleming and Cassidy for Brizio Lee and associates headed at 32 for let low 26 for Cassidy and 21 for Fleming Quantas insights headed at 42 for let low 30 for Fleming and 20 for Cassidy Now you can see at the top of this are averages This is what we were expecting going in or at least what the polling was telling us going into this race Which was let low at about 33 and a half Fleming at 25 and Cassidy at 22 That was the polling going in above that on this line And I'm reading this from a chart here for you podcasters audio-only people. We love you very much Current results. This is where basically it wound up let low at 45 Fleming at 2026 the 26 or 28. I can't read 28. Maybe and Cassidy at 25. Yes, 28. So 45 28 25 what you see here looking at the averages and the results just comparing Cassidy went up by about two or three points Fleming went up by about two or three points and let low went up by about 11 or 12 points She didn't quite get to 50% our 10 to 1 15 to 1 shot did not wind up coming through That's what you expect to happen when you make a 10 or 15 to 1 long shot You expect to lose that position and that's hard for people to deal with frankly It was hard for me to deal with real with a really long time until I started catching enough value over a long period of time Where I became comfortable with small risks for big-time gains It's not for everybody I will say a lot of people will just be like oh gosh I don't want to lose, you know, I put 10 bucks on this I put 20 bucks on this 100 bucks on this and I wanted a thousand and I didn't get it and that's true That's what happened here, but I think it did Connect pretty clearly with what our thesis was on the race the people who had not committed to a camp already We're likely going to fall into the Trump camp the camp that Donald Trump kind of came out and said I want you to be over here Republican primary voters do react to that type of thing and they want to cast it out By the way, we should note a sitting US senator was beaten not by one But by two different candidates in a primary is massively out of the norm. It's very irregular highly abnormal and Yet it happened in this race and let low came pretty close to getting to 50 even though She was only polling in the low 30s That being said we want to win more than we lose And that brings us over to the primaries coming up on Tuesday, May 19th We have Alabama that has a runoff later on Georgia another runoff later on Idaho Kentucky Oregon and Pennsylvania and there's one sort of prime time race I would I would argue out of all of these and that is in Kentucky now Tomorrow we're gonna spend a lot of time on all of the other races and give you You know what we can find as far as value what we think is going to happen and try to direct you in the In the right way would love to hear your comments by the way how you're thinking about this because I think you know It's it's a difficult thing to go through when you're going through an election to find a lot of value in some of these primary races The main reason why it's difficult is a there's usually not a lot of polling in primary races Be the polling is much less reliable than it is in a general election It is always harder You're always reading a little bit when it comes to the tea leaves when it comes to polling and even Demographics as you lead into these situations in primaries because not as many people come out It's a lot about local energy around certain candidates. It's it's difficult to sort of read But I want to bring you over to Kentucky here today tomorrow. We'll talk about the rest of the races today We'll focus on Kentucky and Thomas Massey Trump's GOP purge ousts Cassidy is Massey next I don't know if you know Thomas Massey kind of a Libertarian Republican He has been on my shows several times He went to MIT. He's been in Congress since I went to 2012 maybe a little earlier than that. I don't remember you I think of him as a tea party guy But I don't remember if he was 2010 or 2012 anyway, he's been in for a while Very Libertarian very much in the mold of Rand Paul you might argue again the senator from Kentucky There's definitely a conservative streak especially or Libertarian type streak especially in that northern part of Kentucky Massey must be thrown out says Donald Trump. Let me give you you know, I'm not gonna read this entire truth social I gotta be honest with you. It's pretty long. Let me give you a part of it This is the vibe from Donald Trump third-rate congressman Thomas Massey a weak and pathetic rhino from the great Commonwealth of Kentucky a place I won one I love and won big six times including all primaries must be thrown out of office ASAP I mean Donald Trump you can you can argue with whatever he's doing or saying But you can't argue that he's mastered the run-on sentence. That's that's just a thing He's good at that He by the way, I would argue rhino isn't a terrible even if you like Thomas rat Massey rhino is a pretty good Name for Thomas Massey and I don't think he would necessarily like it But I do think that he's a Libertarian in a in a Republican body, right? He is more Libertarian I would argue than he is Republican He's really the only place you can have Libertarian positions these days is in the Republican Party if you're gonna be one of the two major parties But that's kind of where he is. I mean, he's more Libertarian than he is Republican I don't have a problem with that honestly, but that is Republican in name only he isn't a standard Republican. That's at least fair to say goes on He said he's the worst Republican congressman in history. That's a hundred percent not true But a voting against tax cuts the wall law enforcement and in favor of the transgender Mutilization of our children comma men and playing in women's sports comma and so many other horrible things The tax cuts by the way was talking about him voting against the big beautiful bill which he did on the basis of Deficits, which is the very standard for what Thomas Massey has done in Congress the incredible people of Kentucky's fourth congressional district Gave us a mandate to make America great again and that person who will do that as Navy Seal Army Ranger fifth generation Kentucky farmer Captain Ed Galrain True America first Patriot. He goes on to say a lot of good things about Ed Galrain And you know that he supports a lot of his agenda The last one I'll give you here is Massey the last Massey stuff. He says Great people of Kentucky are wise to Massey. He only votes against the Republican Party. That's again not not accurate I mean it statistically votes with Donald Trump probably 90% of the time But but again some big votes he has gone the other way and very publicly He makes me like very easy for the radical left unlike lightweight Massey totally ineffective loser What a weird time we are in who has failed to us so badly Captain Ed Galrain is a winner Who will not let you down election day is Tuesday May 19th vote for Ed Galrain. He has my clean complete in total endorsement make America great again President Donald Trump. Unfortunately, it's hard to do that make America great again or pay attention to any of it because he did not ask us And thank us for paying attention to this matter, which is always how we usually it's ends the tweet Okay, so that's kind of the setup for what we're looking at here for this particular election tomorrow Let me do a quick sidebar your honor here Because we're gonna get into the markets in a second, but I want to do a quick sidebar here to tell you that I Like Thomas Massey. I Have always liked Thomas. I think he's a good guy generally, you know, I don't agree with him on every single issue I consider myself sort of a libertarian libertarian leaning Independent, you know, I definitely agree with Republicans on most issues certainly much more than Democrats But I don't you know consider myself some like, you know lock stock and barrel Republican certainly Massey doesn't I Generally like him and I've liked him for a long time. He is a guy now There's all these allegations that have come out against him last minute I don't know what to make of those to be honest with you like I tend to not believe them. I Don't know any of the people involved. I don't know what has happened. I generally speaking I always start with skepticism when it comes to any Accusation made against any politician in the waning moments of a campaign. It's just a general rule for me It's just hard to to believe Those things, you know, I even would even put that in the we've seen Accusations against a lot of candidates over the years on the Democratic side And when it's the last minute thing that you don't really know It's hard for me to to believe or understand now the one recently that we did see that had evidence to it And that's when I start believing this when I see evidence But the evidence, you know against Eric Swalwell, for example when I first saw the allegations I even then even with Eric Swalwell being one of the five to seven worst people humanity has ever produced it was hard for me to believe that You know a last second one of these Accusations was going to hold we've of course then saw lots and lots of information and lots of people coming out videos and pictures And and all the things so you know over time you can change if I saw a lot of evidence against Thomas Massey. I Be very open to hearing it But I still sort of doubt it just because of the timing of it And you know, it's not what I've ever had experience with Thomas Massey And it's funny because the things that have pissed off Trump Are not like I like Thomas, but it's not necessarily For the reasons that he's pissed off Trump. I mean, I think one of the main reasons is the The Epstein situation the Epstein situation trying to get Trump to release these Epstein files He's been outspoken against Trump there. I don't think Trump had anything has anything to hide in the Epstein files I think honestly, he was not friendly with Epstein, you know up At any point after the time where we saw these major allegations against and you know, the first prosecutions against Epstein, I don't he was friends with them years and years and years before they had a falling out before any of this stuff came out I honestly don't think there's much there, frankly when it comes to the Epstein files and Donald Trump You know Thomas Massey fought for those to be released. I've expressed on this not not on this show, but other shows skepticism as to I'm nervous about just you know flooding the zone with a lot of accusations that it can't really really have evidence You know, they're kind of a bunch of allegations against people some of which not even for criminal activity I'm a lot of which were just like hey, this guy was a dirtbag making, you know Crass jokes in Jeffrey Epstein's email like that's bad maybe but also I don't know if the government should be involved in Releasing crass jokes with no associated Criminal accusation I got there's a lot of problems I had with that So I don't know that I fully agree. I do agree partially with Thomas on that the other part is Israel. He's kind of an Israel skeptic He's definitely a guy who is much more on the I don't know the the new right side when it comes to Israel I don't think he's some big anti some hidden anti-semite or anything like that But I don't agree with him I think I'm more favorable toward Israel than he is those are kind of the two major things It seems like you know the Iran war being associated with Israel that Thomas Is in the news for against Donald Trump You know, I sort of disagree with him on some of those points But he reminds me what I like about Thomas a lot outside of just me. He seems like a personable guy is He's like one of these guys. Who's the guy back in the the the days of the anti-slavery movement Some spooner. What's his name? Lysander spooner might be I could be I could have screwed that up But anyway, it's been a while, but he was a guy who's like a big Legal scholar at the time and was super against slavery, right? He like very very much against slavery and I think quite obviously so he would talk about how like there's in the Constitution There's these all these cutouts for you know freedom and all these things How can we possibly be a slave only ownership society? It makes no sense. It's not consistent with the Constitution He argued that so hardcore and that was an argument that was different than some of the other abolitionists at the time They were they were very much aligned on the idea of You know abolishing slavery, but they were they did it for a totally different reason and Then you had the the other side when when the war finally started and people finally got on board Okay, we need to we need to do something about this It was obviously not entirely about slavery at the time, but was a big chunk of it He actually opposed the Civil War and opposed the North's actions in the Civil War which actually led to slavery and It basically was enough to piss everybody off like nobody liked the guy and he you know I look back at him and say well certainly was right on the slavery issue I don't that I would have probably I think I don't even know I mean there's so many different things, but I certainly was very very much happy with the outcome of the Civil War And I you know, I know you in the south. I'm just like wait a minute. Aren't you in Texas? Yeah, I know but the whole point of this is to say that He kind of pisses everybody off and it's not because he's pissing people off necessarily because of his viewpoints It's more. I think more of the he's doing it because of a closely held ideology and Ideology I use that word intentionally and it's definitely a vilified word in a vilified term But the way I mean it at least is a coherent set of beliefs that actually work together Right, you might not like those beliefs But like what we see a lot of times are people who are massively for Government involvement in in one area of life and then massively opposed to it in the other Thomas is just gonna be opposed to massive government involvement pretty much everywhere at least in most cases and I like people like that I like people who have a coherent ideology even if you don't necessarily like I don't lend with them on every single point I know where they're coming from and I like people who will stand up when it's tough and stick with their ideology And I think that's what Thomas Massey has largely done I mean I look back at a couple examples I was thinking back to a time where there was some sort of shooting. There's another unfortunate mass shooting again today these things do happen in our country and The day after the mass shooting he came out with a bill That was a pro-second amendment bill essentially saying gun ownership should be easier a day after a mass shooting It was all over the news That's a really difficult position to take and Thomas Massey has done that sort of stuff over and over and over and over again In fact, I went back to look for which incident what shooting it was after and he's done it after multiple mass shootings so the the softball shooting in in in DC the these Congressman being shot in DC you had the situation the Pulse nightclub shooting You did after that the Nashville shooting I several shootings Because he believes in the second amendment enough to make the point even when it's uncomfortable and I like people like that I I feel like you know we couldn't use more of them frankly, so I'm not an anti-massy guy at all I think that him you know having voices like his like Rand Paul's like a few others Even when I don't just don't agree with them on everything I want a principled voice and I want somebody in there who's going to stand up against their own party from time to time I like that that's a sidebar. It's got nothing to do with the markets There's nothing to do with the way this election is going to turn out But I did think it was important to hit the way the election is going to turn out is an interesting thing And I wanted to make sure I you understood where I came from on the Massey situation before we get into the actual Markets, this is these are the latest polls and they're kind of all over the place We have Thomas Massey up by 9 in early April and up by 4 in early April as we go to early May Gallerain is Up by 8 in a poll from Qantas big data poll has Massey plus 2 and tied In the last few days and then the SoCal poll is Gallerain plus 7 What you're seeing here lately is the only pollster who seems to really like Massey's chances is this big data poll Big data polls had some good outcomes some not so good, but generally speaking You know as it has been sort of vilified by some of the press You know some people really really like that poll. It's had some some good results read the Trump thing pretty well at times If I remember correctly in the past There's another poll that came out after that the lowdown just came out. This is another one had Let's see it is Gallerain 51 Massey 44 Interesting breakdowns here, too If you're a Maga America first type person if you to identify that way you have Gallerain plus 26 Right your traditional Republicans is Massey plus 18 It's kind of interesting that a traditional Republicans would be the ones that are with Thomas Massey Considering he's kind of like more like a libertarian. Do you support Trump? America first Maga more or the Republican Party generally Trump Maga 60% and traditional Republican 36% so So if you look at those two numbers together and this is just one poll But Gallerain leads by more than Massey does among his selected group and Gallerain's group is larger than Massey's That is a big challenge to overcome and these accusations that have come out against him last minute I think I've hurt him, but I think the bigger overwhelming and again I don't know if anything there's any truth at all with those things to be clear, but the overwhelming Pressure against a Massey is it's I'm not I'm not breaking news here to tell you It's Donald Trump. He's pissed off Donald Trump a bunch of times. They made up a bunch of times This last group they haven't made up Trump really wanted the the Epstein thing in particular to go away He did not want to talk about it anymore. I don't think that's because he was secretly molesting 12 year olds I think it was because he was trying to do other things and was annoyed by the fact that he had to keep talking about this And wanted to push it off There was a back-and-forth Thomas Massey won that back-and-forth by the way and got that bill through whether you like it or not and the story of course is Trump was pissed off and he wasn't gonna let this thing go and That is why these polls are starting to show Some strength for Gallerain. Let me show you where these markets are right now. Let's give you a Polymarket one here to start This is the winner of the Kentucky 04 Republican primary a Gallerain if you see the chart here, and I'll describe it for you fine folks on audio Only podcast basically you've got a pretty a race where Massey leads in the area between 60 and 75 percent for most of this race if you go back, you know, you know before the beginning of the year and Only it's about May. Do you start seeing that turn around? I As we got closer to this race I started having some skepticism of whether Massey could win it and You we started purchasing some shares of Ed Gallerain not necessarily because we I mean Ed Gallerain I don't think is a bad guy. I don't think Ed Gallerain's a you know I don't he seems to have great service record seems to be well-liked There's a lot of things going in his favor here. It's not an anti Gallerain situation but he He started rising around them about May 1st or so I was probably a little bit late on that honestly. I probably started purchasing some Gallerain shares When he was more in the 40s rather in the 20s, I would have rather had it in the 20s, but it got it at more in the 40s the margin of victory in this race the markets tend to like Thomas Massey at 29% is a 0 to 5% margin the rest of the Gallerain voters is whether he'll win by 0 to 5 or 5 to 10 I don't have anything in the margin of victory Market one of the reasons why And this is you know, what I think is going to happen is like while Massey I think has had a good career and I think he survived a lot of these types of challenges and back and forth with the president I think there's a really good chance. This is the end of the road for Thomas tomorrow And I think you know, I don't think it's a you know a 90% chance or 100% chance. He loses But I think it's probably a 75% chance. He loses now right now the markets have it at 63 I think there's probably a little bit of value there though Not enough that I'm like willing to dump a bunch of money in at 63 percent I think you know back in the 20s and 40s. I think it was very very good value now I think there might be slight value here. I think there's a chance that look I think there's a good chance, you know again one out of four chance Maybe that Massey wins is about where my mindset is. I think there's a chance. He wins He does have loyalty in that district. It's really like that as I was explaining before that northern part Of his district, which is up, you know towards Cincinnati Is really gonna have to come through big and I just don't know that it's going to be enough to hold him and and you know and to win one of the things that Sort of the central thesis of these primaries and I'm gonna kind of keep sticking this way until I see it Defeated is when Donald Trump really wants something. He usually gets it. That's basically where I am Now that's not in every single case. It's possible. He'll lose some of these He'd you know, again, we were I think totally right directionally and in Louisiana didn't quite get to that 50% barrier But having let low separately just to win I think we're in a really good position frankly in that Louisiana race and we'll cover all of the small losses That we had on the 50% market. I think quite easily. It's just gonna take until that runoff We will see on that one of course, but when it comes to Kentucky I do think that probably there's a situation here where we're looking at a Thomas Massey loss in Kentucky What happens after that interesting market here on Calci? Which is who will leave their party this year? The most likely they have on this particular market is John Fetterman at 20% Lisa Murkowski at 17 Marjorie Taylor Green at 15 Henry Cuiar at 14 Don Bacon at 13 and there's Thomas Massey at 13% Chance to leave the party just to discuss this one for a second because my first thought was I'm gonna go know on that because I don't Think Thomas Massey is gonna switch to being a Democrat I don't think there's any chance of that and I don't I still don't think there's any chance of him switching to a Democrat The other part about this is Kentucky has a sore loser law the way these laws work If you don't know basically if you run in a primary and you lose the primary You can't just like drop out and I'm now I'm running as an independent or now I'm running as a libertarian So I there's no real chance that Massey could do that There are some constitutional questions about those laws and how they actually would pan out But long story short. I don't I don't think Massey if he loses is gonna jump back into another party nor I think he could um But there is a possibility and maybe 13% is pretty well priced that Massey might say you know what You know, I'm I'm done here in you know, what is it may Seven months I'm just gonna become a libertarian or an independent just to make a statement and be the one libertarian congressman out there I think that's a possibility if he knows his his life politically is cut short So, you know, it depends on what his future is if he believes his future is running again as a republican at some point in the future Uh, then he probably won't do that But if his his belief is I'm out of politics or I want to do something different Or whatever if he loses again, there's certainly not a foregone conclusion But if he were to lose I think there is probably a chance that he would switch to becoming a libertarian or an independent Anyway, long story short My I have a not a huge position, but this is too too risky a position honestly, uh Where I wouldn't dub a ton of money into it because I'm not sure of it But I have a medium-sized let's say position not a tiny like flyer But a medium-sized position here looking at whether Massey will wind up losing that race I think Ed Galerain will probably get across the finish line in that particular race. We will see though tomorrow Uh, we will have we will have our answer to our question Tomorrow we will go through the rest of the primary markets as well All these elections for you and I think we'll probably have a live stream as well On tuesday night if you happen to be a person who is over on the substack, you'll see that without a problem Uh, if you're on the youtube page and you're a subscriber, I think you'll see it there Potentially at some point as well We will see on that But we we want you to get over to the substack so we can kind of have a good conversation Get everybody in the same place people who actually are following this stuff understand politics And you know because I like learning from you too I've had some people who have been like, wait a minute your position here is wrong I had some good points also, uh people who are just like, hey, have you seen this market yet? You never talked about it. That's because I didn't even know it existed I mean, I think Cal, she has something like 10 000 markets right now So I don't know about every single one of them if you find a good one and you find a good position Please let me know how, uh, you know, what your thought process is and what markets you're in I love reading that stuff. It's predictable show.com predictable show.com just go there sign up Put your email in it's free and we'd love to keep in contact Okay, we're gonna take a break come back on the other side with much much more including a new accusation against prediction markets Will they even exist? Who knows? We'll talk about that next Welcome back to predictable with stew making the world It's a little crazy. We're trying to make it a little bit more predictable for you on a day-to-day basis Thanks so much for joining us and join us on social media at predictable show and at predictable show.com new story today from 60 minutes Yeah, everyone's fascinated with prediction markets. They all hate them It seems like everybody in the media can't stand them I suppose it's essentially the reason we like them or at least I do is because it cuts through their nonsense So I can understand why they wouldn't like prediction markets, but That's a story for another day suspected insider accounts net 2.4 million dollars on Polymarket Iran war bets with a 98% win rate firm Fines, uh, let me give you a clip of 60 minutes where they kind of explain What they found and what the accusation is and then we'll get into some of the details This might be the most insane pattern we have found on Polymarket so far Based in Paris, Nicholas Weiman's small data analytics firm bubble maps creates Visualizations of bets on Polymarket to spot bubbles or clusters of suspect traders One paradox of Polymarket Everything about the trades is totally transparent and public Except the traders themselves remain anonymous This big cluster in the middle. No one talked about it. The firm's head of investigations goes by his online handle deems He asked us to obscure his identity over fears of retaliation for his detective work They shared for the first time what they believe is a more egregious insider training case than gannon ken van dyke's We spotted nine Polymarket accounts All connected who made collectively 2.4 million dollars Bending almost exclusively On us military operations van dyke made 400 000 here 2.4 million And now here's the crazy part 98 person win rate 98 98 this is like winning the lottery multiple times, you know The linked accounts made dozens of winning bets on the specific dates of pivotal moments in the war with iran Even when the odds were low The first u.s strikes the removal of iran supreme leader the announcement of a ceasefire How do we know this isn't just someone who has really good instincts? Luck alone cannot explain those numbers if you know this Why don't federal prosecutors well hopefully with your interview they're going to know this Yeah, I mean that's uh, that's true now. First of all obviously a 98 wind rate is not the same as winning the lottery multiple times But that's separately and not really all that important. I suppose It's an interesting project one of the reasons of course you can have a project like this Is because all the data on Polymarket global you can see every single trade that happens. It's like a crypto thing It's like a you know, bitcoin you can see every transaction You don't know who's making the transactions, but you can see every transaction It's the same thing with Polymarket You can see every single trade who won who lost so you can look at people's accounts and say hey Wait, but this person wins all the time. Maybe I should copy their trades Uh, it's very possible assuming their information is accurate and I don't know this group and I don't know that 60 minutes knew who they were until they had a chance to knock down prediction markets But whatever if they're if they're this data is accurate and positive it may very well be and I Have made this clear multiple times when talking about this particular type of insider trader It is massively dangerous and incredibly horrible to be doing this type of activity when it comes to especially us military Events obviously as a person who loves this country and loves america and loves our military members I don't want to see him killed So the fact that you might be able to profit off of it a little bit of information in advance Some of those things may not have had people killed, but what we're talking about the story in venezuela You know those markets jumping may have tipped off. I mean venezuelan I mean if any military right now if your country is worth anything They're looking at Polymarket and looking for trends based around the markets and positions Revolving around what is important to them if there's a market about hey, well venezuela's leader stepped down Venezuela's were idiots if they weren't looking at that market and all of a sudden they saw a spike They could have changed their approach. They could have put the maduro into hiding You know it could have been a situation where they were waiting for someone to come And and some of our servicemen could have been killed. So this is horrible activity. No qualifiers on it It's very very bad. It's also pretty rare. It's not nearly as common as they're trying to make it out to be They've been trying to make it out that everybody on these things Has all this inside information and you too, I don't know you could trust 60 minutes You could not trust 60 minutes But let me just give you one piece of information as to how much you should trust 60 minutes They asked one of the guys on this video asked Do you have his identity hidden? This is how they hid it? I mean Look at it. You can see three quarters of the guy's face Like well people won't be able to recognize him. It's dimly lit. Well, yeah I mean, I guess if you recognize this guy by his hair Uh, he's got a hat on and sunglasses. So wow Uh, particularly Uh, not particularly well hidden. Uh, that's really a side and just made me laugh when I was watching the video But the point here is it is a typical thing that the media is going to do They're going to come after prediction markets and they're going to try to find these outlier situations that do occasionally exist And there should be something being done about them I will tell you if you are interested in reading more about this Particular topic including the venezuela situation and whether if you have some infight information Maybe you should hop on one of these things and look at it. I have an article on the Predictable show dot com. It's called how to properly conduct insider training And uh, you can go check that out if you want Because I go through all the arguments on this and show you how really at the end of the day It's not worth trying and you should be very very careful. Take it seriously boys and girls Okay. Um, also I want to give you a poly markets response here, which Is interesting in fact had a couple pieces of information. I did not know about this story. Here's what it said Uh, Polymarket has built the most comprehensive market integrity infrastructure in the prediction market industry Combining strict insider trading rules ai powered surveillance and blockchain forensics into a unified system It's very possible for people who are skeptical of this industry to not believe this and I understand Why because you're thinking well, why would they care people are insider trading? They're making money off of it Very little Okay, very very very little Polymarket in particular in their global one of the criticisms in the industry when it comes to Monetizing the Polymarket as a business is there's not a lot of income coming into Polymarket for any of these trades I mean it's a it is not that's not how they're doing it They built a business overseas kind of through crypto It really isn't like you know, Kalshi that is taking a percentage off of each transaction That's not really even happening at least most of the history of Polymarket So that's not really a good criticism of this Secondarily, even if you're talking about Kalshi, which you know, I don't know whatever percentage fees you're paying It depends on how you Place your positions and at some point we're going to go through the details of that to save you some money But at the end of the day You know, yeah, is there if if someone buys a few thousand dollars worth of something Does Polymarket make 60 dollars off of that 80 dollars. I mean, yeah Do you think it's worth it for them? honestly These small percentage fees that they're taking off of these Potential insider trading to deal with all the nonsense that goes along with it. What's the point? It's it's not worth it for them to look the other way Polymarket it goes on and listen to this part our enhanced market integrity rules published earlier this year set out explicit pro Prohibitions on insider trading market manipulation and disruptive practices of both our d5 platform and our CFTC regulated us exchange Backed by partnerships with world-class data analytics, blah, blah, blah, blah, blah, blah, blah When our systems identify suspicious activity, we act Listen to this the indictment of gan and vend ken van dyke Is a demonstration of our commitment in practice. This is the thing they've been beaten up with This is the venezuela situation the guy who predicted that made four hundred thousand dollars Polymarket This is the first I knew about this Polymarket identified The activity referred it to authorities and the system worked insider trading is not welcome on product On Polymarket and those who attempt it will be identified. Um, I tend to agree with that analysis It's public on Polymarket people can find you it might not even be Polymarket It might be some one of these groups on the outside. They can see your activity Don't do something stupid. Kalshi. They know who you are. They have kyc rules. These are know your customer rules They know who you are. They know if you work for mr. Beast or not So it's probably pretty important to not you know go in there and invest in your in positions on mr. Beast Long story short is Polymarket by their telling and you know, this is as far as I know it's accurate They found this. I don't know if they were the first person to find it or if they were woken up by somebody else Like one of these groups they found this activity. They referred it to authorities and that led to the prosecution That's a pretty big thing These companies like just don't have A lot of upside in looking the other way to insider trading and market manipulation They want to be They want to be exchanges that are here for the next hundred years They're not they're you're 50 fee your 20 dollar fee Is not the main game for them. They're looking much much bigger. These are multi billion dollar companies Kalshi was just valued at 22 billion dollars. This is happening fast And there's just no reason for them to go down this road. All right That's all I have on that right now. I want to come back on the other side and we'll hit one more market before we go Thanks so much for tuning in. I appreciate it predictable show dot com They say everything happens for a reason, but I suspect everything happens for a reason like this commercial break Did you need 15 seconds away from music or 15 seconds to eat a Reese's? Perhaps it's true Everything happens for a Reese's Welcome back to predictable with stew predictable show dot com Kind of a farce honestly in this story. We talked about last week, which was this ronda rousey versus jena carano Fight ronda rousey submits jena carano by armards 17 seconds. Now. It's funny. We talked about this and said One of the things I wanted to go with jena carano because I like her and that was I mean I was Absolutely overt about that. I don't really have a good reason. I don't know anything about mma The one thing I did learn about mma trying to find out about this was kind of this was the concern for carano Who's almost closer to a boxer? Versus somebody who I mean I should have known this is a story told to me years and years ago In the legend of thunder lips the ultimate male Where they said when the announcer said well, you know the old thing about a boxer versus a wrestlers once the wrestler gets a Whole of that boxer. That's all she wrote that is that's kind of what happened here And the the wrestler gets a hold of the boxer. That's all she wrote the wrestler got a hold of the boxer here And in 17 seconds that it's a sham the fact that it only lasted that long I mean I guess this was the end seconds of the of the match lots of legs and arms bent in weird ways Never a good thing never something that you want now We talked about what position to take and I didn't have a great take honestly My thought initially was you got to go carano because it's four to one odds Now that we know that was 17 seconds That probably was not a good bet and I but I also did talk about the Decision of striker versus grappler and that's that's why I stayed away from any position on the actual fight as we talked about last week However, I did get on on On a substack. I want to show you that in a second. This is the top netflix show of the week It was a pretty big hit show, but really I mean I guess when when it dies that quickly Not a lot of hours going to be spent watching it was only 17 seconds The number one show looks like it's going to be the roast of kevin hart Which has a 96 chance of being number one this week on netflix That's another type of market you can look for by the way my wife likes those She's done very well on the netflix markets because when she watches a movie and likes it She goes there and takes a little position on the movie because she's like this was a good movie I know it was good and she's done that a couple of times and won both times Anyway, this is what I wrote on predictable show dot com again. I invite you to come over here You'll get this is where I've been hanging out mostly on social media. So come over here and Talk to me give me your comments on these things, but I said since mma isn't my lane I'm taking the mandalorian under 65 percent on rotten tomatoes instead mostly just to honor Gina carano Also, just I feel like it it does not sound like it's going to be very good And 65 on rotten tomatoes is a relatively decent scorer But not a great one for a star wars movie Obviously the all-time greats like empire strike back are way up there But I think solo was a little bit lower than this most others have been higher than this But right around this vicinity is the mandalorian in grogu. It's coming out on in may again I'm not excited about it. I didn't really like the show that much at all I thought Gina carano was the only good character honestly out. Yeah, me baby You know it was cute for five minutes, but let's get on us. I move on with it. I can't and they're calling them grogu Come on. Um, are they I don't even know I didn't watch the show Okay, so anyway star wars mandalorian and grogu rotten tomato score. This is the market I was talking about right now cal. She is projecting this at a right around 65 or 66 So it's very very close and to make sense. It's a 50 50 market So I don't know if I'm going to win on this one or not. Again. It was very small position just to honor Gina carano, though I'm a little annoyed with her after only lasting 17 seconds now I get I get it if I mean because think about it if I were in the fight I would probably also be able to last 17 seconds. I don't know how But I think I could at least get 12 seconds or eight seconds or something and I shouldn't be that close to her She's like a champion. So anyway, not happy about that One other thing I want to point to you on is this particular market mandalorian grogu four day opening weekend box office Is set at it looks like the projections around 100 million about 60 chance. It's between 90 and 112 million 92 and 112 million That is where the projections are right now. What's interesting about this is you know, this has to be Polymarket global How do you know that just by looking at that market? Well, there is a law in this country That was I think this is the one that was part of the dod frank bill somehow again these people that with their favors But basically someone was going to start a hollywood exchange to be able to allow you to trade The box office totals for these movies years ago And hollywood decided they didn't want it. So they called in a favor to dod or frank I don't know who and they slipped that in this bill It could have been somebody else too. They slipped it in the bill that US based prediction markets cannot predict the box office futures of movies There are two main things that you cannot predict When it comes to prediction markets here in the US box office futures and onions Those are the two big ones you cannot Someone cornered the the market on onions years and years ago So you did a carve out there and then someone also Got angry about box office receipts. So now you can't do that here You can only do it on box Polymarket global what you need a vpn for a long story. Anyway, bottom line is I don't think it's going to be a huge hit 100 million dollars is way way way under even the crappiest Star Wars movies in the seven looks episode eight and nine So I don't think it's going to be a huge hit, but it is going to be in theaters This weekend, right? Is it coming up this weekend? Adam, do you know? He doesn't know he doesn't pay attention to the show. He's a producer He sits over there. He doesn't even pay attention to the show doesn't even know what I'm talking about right now He's like, what are you are you even speaking English? I will say he does also work on stew and dave do america I think he watches that show and that show We did some stuff on the Mandalorian and the odyssey these new movies coming out to Very very soon. I think you'll enjoy That stuff over on stew and dave do america as well So check that show out. By the way, blaze tv has that show blaze tv.com slash stew and dave He'd save money 20 bucks off right now if the stew and dave have used the code stew and dave Plus we're on, you know, youtube and all the socials and all the other things. Okay. That's the show for today We ask you to go over to check out stew and dave do america and also predictable show Dot com predictable show dot com is a place to go where the sub stack is where i'm putting a lot of these positions If i'm not talking about on the show, maybe they're not worth the whole segment She's got some opinions i'm throwing out there. You can check those out there I know people are doing well. It seems like the returns so far have been really positive when it comes to People being able to gain a little bit of a little extra spending cash So we always love hearing those things and we'll do our best to direct you to the smart investments On these markets as people they become part of your life because this is going to be a thing That's going to be around for a long time unless elizabeth warren gets elected. Okay. That's all we have for today Predictable show dot com. We will see you there probably today Don't forget tomorrow big show on the elections on tuesday Of course are coming a night and we'll likely have a live stream at some point going over the results On tuesday night as well at predictable show dot com. See you tomorrow"
+}
