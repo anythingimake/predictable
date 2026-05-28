@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { api } from "../api";
 import type { Comment, EpisodeDetail as EpisodeDetailData } from "../types";
 import { ConvictionBadge } from "../components/ConvictionBadge";
+import { BackLink } from "../components/BackLink";
 import { formatDateSafe, formatSec, substackUrlAt, youtubeUrlAt } from "../lib/format";
 import { ErrorBanner, Loading } from "./Scoreboard";
 
@@ -22,12 +23,7 @@ export function EpisodeDetail() {
 
   return (
     <article className="space-y-6">
-      <Link
-        to="/episodes"
-        className="tap inline-flex items-center text-xs text-[var(--color-text-muted)] hover:text-[var(--color-text)] -mt-1"
-      >
-        ← All episodes
-      </Link>
+      <BackLink to="/episodes" label="All episodes" />
       <header className="flex flex-col sm:flex-row items-start gap-3 sm:gap-4">
         {ep.cover_image_url && (
           <img

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { api } from "../api";
 import type { SagaDetail as SagaDetailT } from "../types";
+import { BackLink } from "../components/BackLink";
 import { ErrorBanner, Loading } from "./Scoreboard";
 
 export function SagaDetail() {
@@ -20,10 +21,8 @@ export function SagaDetail() {
   return (
     <div className="space-y-5">
       <div>
-        <Link to="/sagas" className="text-sm text-[var(--color-text-muted)] hover:text-[var(--color-text)]">
-          ← All sagas
-        </Link>
-        <h1 className="text-xl md:text-2xl font-semibold mt-2 mb-1">{saga.name}</h1>
+        <BackLink to="/sagas" label="All sagas" />
+        <h1 className="text-xl md:text-2xl font-semibold mt-3 mb-1">{saga.name}</h1>
         {saga.market_question && (
           <p className="text-sm text-[var(--color-text-muted)]">
             {saga.market_source && (

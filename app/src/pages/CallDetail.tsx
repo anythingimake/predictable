@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { api } from "../api";
 import type { CallDetail as CallDetailData } from "../types";
 import { ConvictionBadge } from "../components/ConvictionBadge";
+import { BackLink } from "../components/BackLink";
 import { TagChips } from "../components/TagChips";
 import { formatCents, formatDateSafe, formatPct, formatSec, marketUrl, stuSideCents, unrealizedPct } from "../lib/format";
 import { ErrorBanner, Loading } from "./Scoreboard";
@@ -55,12 +56,7 @@ export function CallDetail() {
 
   return (
     <article className="space-y-6">
-      <Link
-        to="/calls"
-        className="tap inline-flex items-center text-xs text-[var(--color-text-muted)] hover:text-[var(--color-text)] -mt-1"
-      >
-        ← All calls
-      </Link>
+      <BackLink to="/calls" label="All calls" />
       <header>
         <div className="flex items-center gap-3 flex-wrap mb-1">
           <ConvictionBadge conviction={data.conviction} />

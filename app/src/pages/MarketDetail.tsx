@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { api } from "../api";
 import type { Call, Market } from "../types";
 import { ConvictionBadge } from "../components/ConvictionBadge";
+import { BackLink } from "../components/BackLink";
 import { formatCents, formatPct, marketUrl, stuSideCents } from "../lib/format";
 import { ErrorBanner, Loading } from "./Scoreboard";
 
@@ -30,12 +31,7 @@ export function MarketDetail() {
 
   return (
     <article className="space-y-5">
-      <Link
-        to="/markets"
-        className="tap inline-flex items-center text-xs text-[var(--color-text-muted)] hover:text-[var(--color-text)] -mt-1"
-      >
-        ← All markets
-      </Link>
+      <BackLink to="/markets" label="All markets" />
 
       <header>
         <div className="text-xs text-[var(--color-text-muted)] uppercase tracking-wide">
