@@ -1,0 +1,106 @@
+{
+  "calls": [
+    {
+      "market_source": "kalshi",
+      "market_hint": "Julia Letlow wins Louisiana GOP Senate primary outright (over 50%, no runoff) 2026",
+      "side": "yes",
+      "conviction": "flyer",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 1487,
+          "event_type": "entry",
+          "price_pct": 9.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "She might be able to squeak over 50 percent that one is kind of interesting me at only nine percent because Yeah, again, I would assume This is something that we talk about often when it comes to value in these markets If you're looking at something that's nine percent you are expecting to lose most of the time If you think maybe there's a 30 chance of that happening That means you're expecting to lose 70 of the time However, there's value there because in that 30 win is a 10 times your money type of victory... So there's some interest there again as a flyer It's a bit of a lottery ticket. It's a bit of a long shot But I do think there might be some value in her getting to 50 percent",
+          "cleaned_quote": "Letlow winning outright is interesting at only 9 percent. If you think there's a 30 percent chance of it happening, there's value — that's 10 times your money. As a flyer, a bit of a lottery ticket, a long shot, but I think there might be some value in her getting to 50 percent. Some Fleming voters might just want it over so they don't have to show up for a runoff."
+        }
+      ],
+      "referenced_media": [
+        {"source_type": "article", "title": "Bill Cassidy sold his soul to the devil and he didn't get anything for it", "outlet": "NYT"}
+      ]
+    },
+    {
+      "market_source": "unknown",
+      "market_hint": "Bill Cassidy wins Louisiana GOP Senate primary 2026 (Stu: NO, but no value left)",
+      "side": "no",
+      "conviction": "pass",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 1311,
+          "event_type": "entry",
+          "price_pct": 2.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "And Bill Cassidy 2 chance to win two So even if you're pretty sure about this Honestly, there's not a lot of value in saying no on cassidy like it's that's already been priced in Cassidy does not look like he's going to be able to win",
+          "cleaned_quote": "Bill Cassidy is at a 2 percent chance to win. Even if you're pretty sure about this, there's not a lot of value in saying no on Cassidy — that's already been priced in. Cassidy does not look like he's going to be able to win. When Trump comes out against someone in a revenge primary, those people generally don't win."
+        }
+      ]
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "Gina Carano beats Ronda Rousey (Netflix fight, Saturday) — Stu leaning Carano",
+      "side": "yes",
+      "conviction": "watch",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 2401,
+          "event_type": "entry",
+          "price_pct": 19.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "rousey an 81 percent on kalshee carano at 19 percent so... my instinct on this one is to go with with karano because While I think there's a lot there that can kind of make me think of this is sort of a toss-up And who really knows what's going to happen... you take the person who's at 19 percent because you're going to be getting four times your money... There's another part of me that likes to hedge my life if I really really cared about the outcome of this fight I'd probably go the other side of it",
+          "cleaned_quote": "Rousey is 81 percent on Kalshi, Carano 19. Two fighters who haven't fought in 10-plus years — who really knows. My instinct is to go with Carano: if it's a toss-up you take the 19 percent and get four times your money. Most of the sportsbook volume is going that way too. Part of me likes to hedge my life and would take the other side. Still a little conflicted — this is entertainment, not my 401k substitute."
+        }
+      ],
+      "referenced_media": []
+    }
+  ],
+  "mentions": [
+    {
+      "market_source": "kalshi",
+      "market_hint": "Julia Letlow wins Louisiana GOP Senate primary (favorite) 2026",
+      "directional": "bullish",
+      "timestamp_sec": 1259,
+      "cleaned_quote": "Louisiana Republican Senate primary winner: Julia Letlow is the favorite at 78 percent — not as high as you might expect given Trump endorsed her and we saw what happened in Indiana. John Fleming second at 22, Bill Cassidy at a 2 percent chance."
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "Louisiana GOP Senate primary goes to a Letlow–Fleming runoff 2026",
+      "directional": "neutral",
+      "timestamp_sec": 1458,
+      "cleaned_quote": "The number one possibility is a runoff between Letlow and Fleming — a 66 percent possibility according to Kalshi. Letlow and Cassidy is second. Julia Letlow winning outright is third. Other possibilities are all under 2 percent."
+    },
+    {
+      "market_source": "polymarket",
+      "market_hint": "Jamie Davis Jr. wins Louisiana Democratic Senate primary 2026 (cross-app value example)",
+      "directional": "bullish",
+      "timestamp_sec": 1553,
+      "cleaned_quote": "Jamie Davis Jr. is the favorite — Polymarket has him at 78 percent, Kalshi almost at 90. Great example of why you get on multiple apps: if you're yes on Davis go to Polymarket for more value, if you're no go to Kalshi. He's outspent everybody."
+    },
+    {
+      "market_source": "unknown",
+      "market_hint": "Republican wins Louisiana US Senate general election 2026",
+      "directional": "bullish",
+      "timestamp_sec": 1631,
+      "cleaned_quote": "It doesn't really matter who wins the primary — in the general it's Republicans at 91 percent, Democrats at 10 percent, basically a flat line. If Cassidy somehow pulled off the primary he'd probably be even higher than 91 percent."
+    },
+    {
+      "market_source": "unknown",
+      "market_hint": "Average oil price stays above $99 (listener lost a small position)",
+      "directional": "explainer",
+      "timestamp_sec": 1792,
+      "cleaned_quote": "John Jacobs: somehow I lost on oil when it dropped below 99 dollars, glad it was only 10 bucks. Great lesson — start slow, ramp up slowly, go slower than you feel like you should. I've lost positions myself, like the Strait of Hormuz one a few weeks ago. Don't have your mortgage in your hand."
+    },
+    {
+      "market_source": "unknown",
+      "market_hint": "Minnesota / states ban prediction markets (Minnesota bill HF4760)",
+      "directional": "explainer",
+      "timestamp_sec": 1887,
+      "cleaned_quote": "A listener flagged Minnesota slipping a ban on all prediction markets into an omnibus bill, HF 4760, with Nevada and others passing similar bans. There's a widespread effort to stop this before it starts, but these markets are overseen by the CFTC and it'll be hard for states to step on federal turf. I hope they fail."
+    }
+  ]
+}

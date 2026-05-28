@@ -1,0 +1,75 @@
+{
+  "calls": [],
+  "mentions": [
+    {
+      "market_source": "kalshi",
+      "market_hint": "AOC wins 2028 US presidential election (markets fade a strong poll)",
+      "directional": "bearish",
+      "timestamp_sec": 1000,
+      "cleaned_quote": "On Kalshi's 2028 presidential winner, AOC is at 5.3 percent and actually down about 0.7 points — odd given a poll just showed her leading. Despite Atlas Intel showing her number one, the market is selling some of her position off. With $36 million in the market and the election years away, one poll doesn't move it like it used to."
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "AOC wins 2028 Democratic presidential nomination (Stu holds a flyer from prior draft)",
+      "directional": "bullish",
+      "timestamp_sec": 261,
+      "cleaned_quote": "On Kalshi's 2028 Democratic nominee, AOC is about 9.9 percent, behind Gavin Newsom at 25 and Kamala at 9.2. In our draft the other day one of my picks was AOC for her value — a lower-ranking candidate with a lot of upside. She'll get media attention and spike if she runs; hopefully I'll have the sense to sell out of that position."
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "Marco Rubio wins 2028 US presidential election (Atlas Intel poll has him #1)",
+      "directional": "neutral",
+      "timestamp_sec": 970,
+      "cleaned_quote": "Atlas Intel has Marco Rubio number one on the Republican side at 45.4 percent, JD Vance 29.6. On Kalshi's 2028 presidential winner, Rubio leads at 19 percent, Vance 18, Newsom 16. A plus-14 Democrat congressional sample can push a moderate like Rubio higher, so I don't think Rubio over Vance is a trend that lasts."
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "2026 generic congressional ballot — Democrats +7 (Democrats win the House)",
+      "directional": "explainer",
+      "timestamp_sec": 1070,
+      "cleaned_quote": "The 2026 generic congressional vote is Democrats 49, Republicans 42 — a seven-point gap, about as wide as it's been this cycle. With redistricting, Republicans can lose by three or four points and still hold the House, but seven is too much. The poll that had AOC and Rubio ahead used a Democrat-plus-14 sample, which isn't reality."
+    },
+    {
+      "market_source": "polymarket",
+      "market_hint": "Democrats win the US House in 2026 (Kalshi 75% vs Polymarket 73% — cross-app price example)",
+      "directional": "explainer",
+      "timestamp_sec": 2066,
+      "cleaned_quote": "The House market: Kalshi about 75 percent, Polymarket 73. A couple percent isn't a big deal to me — I'm not a flash trader. But if Polymarket is cheaper at 73 I'll buy there and take a couple cents extra profit. No reason you can't use both apps and buy where the best price is. Polymarket US just went fully live without wait lists six months after its sports-only test launch."
+    },
+    {
+      "market_source": "polymarket",
+      "market_hint": "Graham Platner wins Maine Democratic Senate primary 2026 (Gov. Mills dropped out)",
+      "directional": "bullish",
+      "timestamp_sec": 1427,
+      "cleaned_quote": "The Maine Senate Democratic primary was supposed to be a big one — former governor versus the Nazi-tattoo guy, Graham Platner. He's going to win that one now; we kind of know that. Janet Mills already bailed and dropped out of the race."
+    },
+    {
+      "market_source": "polymarket",
+      "market_hint": "Spencer Pratt wins LA mayoral race / reaches runoff 2026 (listener won 20%)",
+      "directional": "bullish",
+      "timestamp_sec": 2197,
+      "cleaned_quote": "A listener took Spencer Pratt to win the LA mayoral race after his good commercial, then sold post-commercial for a nice 20 percent profit. On Polymarket it's Karen Bass 53 percent, Spencer Pratt 28, Nithya Raman fell off after her debate (down 40 points). An anti-Pratt ad looks designed to elevate him into the runoff so Bass wins one-on-one — risky, like Democrats boosting Trump."
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "Thomas Massie wins Kentucky KY-04 GOP primary 2026 (listener placed first order; Stu agnostic)",
+      "directional": "neutral",
+      "timestamp_sec": 1546,
+      "cleaned_quote": "A listener placed his first-ever election prediction order on Thomas Massie. Massie has a big primary Tuesday, May 19. I like Thomas and his Second Amendment stands, but he's bumped heads with Trump, which is dangerous for a political career. We'll look at that race closely and be agnostic — primaries are more vulnerable to surprises. There's new polling and I think Thomas is in some trouble."
+    },
+    {
+      "market_source": "polymarket",
+      "market_hint": "Trump imposes no new tariffs this month (listener flipped to yes after court ruling)",
+      "directional": "bullish",
+      "timestamp_sec": 2218,
+      "cleaned_quote": "A listener was on Trump doing no tariffs this month for four-times profit; the court struck down his 10 percent tariff, so the market thought a tariff was less likely. He disagreed — Trump always responds — so he sold for 50 percent profit and put it on yes, that Trump will do a tariff this month. Great way of thinking."
+    },
+    {
+      "market_source": "polymarket",
+      "market_hint": "Donald Trump Jr. enters 2028 race / gets buzz after midterms (replicable bounce pattern)",
+      "directional": "bullish",
+      "timestamp_sec": 2284,
+      "cleaned_quote": "The pattern of a small candidate getting a bounce on big news and cashing out is what I described with Donald Trump Jr. — very low chance to win, but I won't be surprised if there's a bunch of buzz about him running once we get past the midterms. Does he go from 0.5 to 5 percent? Nice big bump if it happens."
+    }
+  ]
+}

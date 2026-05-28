@@ -1,0 +1,40 @@
+{
+  "calls": [],
+  "mentions": [
+    {
+      "market_source": "kalshi",
+      "market_hint": "Marco Rubio wins 2028 US presidential election",
+      "directional": "bearish",
+      "timestamp_sec": 2336,
+      "cleaned_quote": "Kalshi has Marco Rubio number one at 21 percent, Gavin Newsom 18, JD Vance 18. Tim Miller said he'd fade Rubio hard. I agree Rubio probably won't be president in 2028 — I took the no on him in yesterday's draft intentionally. But fading it hard isn't wise: your upside is only 21 percent over three years, about 7 percent APY. Think APY every time."
+    },
+    {
+      "market_source": "polymarket",
+      "market_hint": "Donald Trump Jr. wins 2028 GOP presidential nomination (long-shot value)",
+      "directional": "bullish",
+      "timestamp_sec": 2740,
+      "cleaned_quote": "The only way to get a really good investment in the 2028 market is on real long shots — like a Donald Trump Jr., who I mentioned yesterday. A guy who might pop up if he announces or starts whispering about announcing. There could be some money there potentially."
+    },
+    {
+      "market_source": "unknown",
+      "market_hint": "Average US gas price exceeds $5/$6/$7 (oil/gas hedge strategy)",
+      "directional": "explainer",
+      "timestamp_sec": 1959,
+      "cleaned_quote": "My gas-price hedge: take yes on a market for gas going over $5, $6, or $7. If gas stays low you win at the pump; if it spikes the market pays you and offsets the higher cost. Since I first talked about it, many of you piled in and the futures contracts have run up, making it harder to offset right now. You can also do it with a fund like DBO that tracks oil."
+    },
+    {
+      "market_source": "unknown",
+      "market_hint": "Jesus returns by 2030",
+      "directional": "explainer",
+      "timestamp_sec": 2628,
+      "cleaned_quote": "Will Jesus come back by 2030? People put no because if he comes back they'll be happy — good hedging-your-life situation. But you only get 10 percent, spread over five years. That's not that great. You have to think about the timeframe, not just the amount."
+    },
+    {
+      "market_source": "unknown",
+      "market_hint": "LA mayoral race — Spencer Pratt vs leading candidate after debate",
+      "directional": "explainer",
+      "timestamp_sec": 1365,
+      "cleaned_quote": "In the LA mayoral race, the leading candidate did poorly in the debate. Before any poll or punditry, prediction markets quantified what we saw — Spencer Pratt did well and she sank like 40 points. That's worse than Joe Biden's 15-point drop after his 2024 debate. Part of the job of these markets is to bring information to you faster."
+    }
+  ]
+}

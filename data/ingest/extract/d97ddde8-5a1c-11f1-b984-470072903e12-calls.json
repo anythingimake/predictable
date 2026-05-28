@@ -1,0 +1,416 @@
+{
+  "calls": [
+    {
+      "market_source": "kalshi",
+      "market_hint": "Ken Paxton wins by over 20 points in Texas GOP Senate runoff 2026 (Stu: 1,013% Pantheon-of-Victory win)",
+      "side": "yes",
+      "conviction": "flyer",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 939,
+          "event_type": "entry",
+          "price_pct": 8.82,
+          "size_pct_of_pos": null,
+          "raw_quote": "on my way to Terry Blacks, we went even bigger on this, we went Paxton over a 20-point margin and this was our big pick of the day. I really hope you were with us on this because we did describe this, we did say that it was kind of like, kind of a flyer. I didn't expect to win it necessarily. This was not a sure thing. We were buying this at 8%. An 8% chance for this to happen... over a thousand percent gain on your money",
+          "cleaned_quote": "On my way to Terry Black's we went even bigger — Paxton over a 20-point margin, our big pick of the day. We described it as kind of a flyer; I didn't expect to win it necessarily, it was not a sure thing. We were buying at 8 percent, which means an 8-cent investment pays out a dollar — over a thousand percent gain. My thesis was this would be a blowout."
+        },
+        {
+          "timestamp_sec": 1076,
+          "event_type": "trim",
+          "price_pct": 91.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "I bought it right, basically at 8%, and just, you know, you see the thing, almost immediately after polls closed, this thing was up at 80% and 90%. It happened fast. I did actually sell a little bit around 91, just to lock in those gains, because they were so big, but it helped most of it honestly to the end, because once I started peaking at the actual data, you could tell this was going to hold",
+          "cleaned_quote": "Almost immediately after polls closed it shot to 80, 90 percent — it happened fast. I sold a little bit around 91 just to lock in some of those big gains, but I held most of it to the end because once I peeked at the actual data you could tell it was going to hold."
+        },
+        {
+          "timestamp_sec": 1593,
+          "event_type": "resolve",
+          "price_pct": 100.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "the first inductee into the predictable with Stu Pantheon of victory is yes, Paxton a 20 point margin of victory we bought at 8.82 cents a total gain of 1,013% in just a few hours boys and girls",
+          "cleaned_quote": "The first inductee into the Predictable with Stu Pantheon of Victory: yes on Paxton by a 20-point margin, bought at 8.82 cents — a total gain of 1,013 percent in just a few hours. Paxton finished 63.8 to 36.2, a 27-point win."
+        }
+      ],
+      "referenced_media": [
+        {"source_type": "article", "title": "Cornyn crushed: 7 takeaways from Tuesday's runoff in Texas", "outlet": "Texas Tribune"}
+      ]
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "Ken Paxton wins Texas GOP Senate runoff 2026 (Stu: large position, won)",
+      "side": "yes",
+      "conviction": "solid",
+      "speaker": "stu",
+      "size_disclosed": "large",
+      "events": [
+        {
+          "timestamp_sec": 718,
+          "event_type": "entry",
+          "price_pct": 60.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "before the endorsement, it is basically a 60-40 race. Now I will say in retrospect... I really wish I went harder when it was a 60-40 race. 60% for Paxton had value... I should have been in heavier... But we did have a position on Paxton to win.",
+          "cleaned_quote": "Before the endorsement it was basically a 60-40 race, and 60 percent for Paxton had value. In retrospect I wish I'd gone harder there — I should have been in heavier. But we did have a position on Paxton to win going in."
+        },
+        {
+          "timestamp_sec": 745,
+          "event_type": "add",
+          "price_pct": 88.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "Once the endorsement happens, though, I changed my focus completely and just started dumping money as much as, really, as much as I could get my hands on into Paxton. I thought there was no doubt he was going to win this election. So we had a very large position on Paxton to win. And, you know, a lot of that we caught in the high 80s and 90s. So there weren't massive percentages there, but we did ride that all the way up to about 97%.",
+          "cleaned_quote": "Once Trump endorsed Paxton I changed focus completely and started dumping in as much money as I could get my hands on. There was no doubt he'd win, so we built a very large position, a lot of it caught in the high 80s and 90s. Not massive percentages, but we rode it up to about 97 percent."
+        },
+        {
+          "timestamp_sec": 765,
+          "event_type": "resolve",
+          "price_pct": 100.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "And, of course, he came across the finish line last night. It is now as 100% that's already been paid out.",
+          "cleaned_quote": "Paxton came across the finish line and it's now resolved at 100 percent, already paid out. He took 63.8 percent of the vote to Cornyn's 36.2."
+        }
+      ],
+      "referenced_media": []
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "John Cornyn wins Texas GOP Senate nomination 2026 (Stu: bought ~16c, sold ~91c, then flipped to no)",
+      "side": "yes",
+      "conviction": "solid",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 283,
+          "event_type": "entry",
+          "price_pct": 16.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "I had mentioned earlier that I had actual shares in John Cornyn before the initial election happened. And the reason for that was... we didn't think that Cornyn was actually going to win the election. But what we did think was that... there was a good shot he'd make the runoff. And if he made the runoff, that race, which had Cornyn around, I think maybe 15-18% chance to win at the time, he'd pop up to maybe 40% for a runoff and maybe we'd have an opportunity to maybe double our money. We went into that market around 15-18 cents.",
+          "cleaned_quote": "I had actual shares in John Cornyn before the initial election. We didn't think he'd win, but there was a good shot he'd make the runoff — and if he did, his 15-18 percent could pop to maybe 40, doubling our money. We went into that market around 15-18 cents."
+        },
+        {
+          "timestamp_sec": 349,
+          "event_type": "exit",
+          "price_pct": 91.0,
+          "size_pct_of_pos": 100,
+          "raw_quote": "And as we got closer, I went up selling those shares on Cornyn at about 91 or 85 or something like that. I don't remember the exact number. I think it was 91. So we had a really nice little, it wasn't a huge position, but we got a nice percentage profit there.",
+          "cleaned_quote": "As we got closer I sold those Cornyn shares at about 91 — it wasn't a huge position, but a nice percentage profit. Trump's endorsement announcement got read as likely for Cornyn and the price popped, so I took profit. Trump then went the other way and endorsed Paxton, and in the final nominee market I was no on Cornyn."
+        }
+      ],
+      "referenced_media": []
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "Ken Paxton wins Texas GOP Senate runoff by 0-5 points (Stu: NO, won)",
+      "side": "no",
+      "conviction": "solid",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 857,
+          "event_type": "entry",
+          "price_pct": null,
+          "size_pct_of_pos": null,
+          "raw_quote": "if you kind of fill in from the bottom up, Paxton 0 to 5% victory, I had no. Now I had Paxton to win, but I thought he would win by more than that. So we were no on Paxton 0 to 5% margin.",
+          "cleaned_quote": "On the margin markets, I had no on a Paxton 0-to-5-point victory. I had Paxton to win, but thought he'd win by more than that, so we were no on the 0-5 margin."
+        },
+        {
+          "timestamp_sec": 1529,
+          "event_type": "resolve",
+          "price_pct": 0.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "The margin markets we talked about Paxton winning by 0 to 5 point margin. We had to no. We hit that.",
+          "cleaned_quote": "Paxton winning by 0 to 5 points — we had a no, and we hit it. He won by 27 points, so the 0-5 margin resolved no."
+        }
+      ],
+      "referenced_media": []
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "Ken Paxton wins Texas GOP Senate runoff by 5-10 points (Stu: NO, won)",
+      "side": "no",
+      "conviction": "solid",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 871,
+          "event_type": "entry",
+          "price_pct": null,
+          "size_pct_of_pos": null,
+          "raw_quote": "Then we were also no on Paxton 5 to 10% margin. Now that one was a little riskier, and we had a better return on that one, largely because that's kind of where the market thought the thing might land, between 5 and 15% in that general vicinity. But my thesis was this was actually going to be a blowout.",
+          "cleaned_quote": "We were also no on the Paxton 5-to-10-point margin. That one was riskier with a better return, because that's roughly where the market thought it might land. But my thesis was this would actually be a blowout."
+        },
+        {
+          "timestamp_sec": 1535,
+          "event_type": "resolve",
+          "price_pct": 0.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "5 to 10 a no and we hit that.",
+          "cleaned_quote": "The 5-to-10-point margin — a no, and we hit it. Paxton's 27-point blowout resolved it no."
+        }
+      ],
+      "referenced_media": []
+    },
+    {
+      "market_source": "unknown",
+      "market_hint": "Maureen Galindo wins Texas HD-35 Democratic runoff 2026 (Stu: NO, won — anti-semitism backlash)",
+      "side": "no",
+      "conviction": "solid",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 1359,
+          "event_type": "entry",
+          "price_pct": 85.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "So we went in pretty heavy in the mid-to-upper 80s when it came to Galindo. No. So basically saying this anti-semit would not win the election. The Democrats would go the other way. And that wound up happening yesterday as well in Texas 35.",
+          "cleaned_quote": "We went in pretty heavy in the mid-to-upper 80s on Galindo — no, saying this anti-Semite would not win. A group allegedly backed by Republicans was boosting her so she'd be easy to beat, but the media sussed it out and Democrats wouldn't fall for it. The no wound up hitting."
+        },
+        {
+          "timestamp_sec": 1449,
+          "event_type": "resolve",
+          "price_pct": 0.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "So Texas 35 got Lindo. We went no, and we were correct.",
+          "cleaned_quote": "Texas 35, Galindo — we went no and we were correct. She lost the Democratic runoff."
+        }
+      ],
+      "referenced_media": [
+        {"source_type": "article", "title": "Sex therapist accused of antisemitism loses Democratic runoff for Texas House seat", "outlet": "unknown"}
+      ]
+    },
+    {
+      "market_source": "unknown",
+      "market_hint": "Colin Allred wins Texas HD-33 Democratic primary 2026 (Stu: YES, won)",
+      "side": "yes",
+      "conviction": "solid",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 1453,
+          "event_type": "entry",
+          "price_pct": null,
+          "size_pct_of_pos": null,
+          "raw_quote": "Texas 33 Allred, yes, we got that right as well... It was actually supposed to be relatively close recently, but Colin Allred wound up winning and wound up going. It looks like between 5 and 10 points in that margin market.",
+          "cleaned_quote": "Texas 33, Allred — yes, we got that right. It was supposed to be relatively close recently, but Colin Allred won, looks like by between 5 and 10 points."
+        },
+        {
+          "timestamp_sec": 1455,
+          "event_type": "resolve",
+          "price_pct": 100.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "Texas 33 Allred, yes, we got that right as well.",
+          "cleaned_quote": "Allred won the Texas 33 Democratic primary — the yes resolved correct."
+        }
+      ],
+      "referenced_media": []
+    },
+    {
+      "market_source": "unknown",
+      "market_hint": "Mayes Middleton wins Texas Attorney General GOP runoff 2026 (Stu: YES over Chip Roy, won)",
+      "side": "yes",
+      "conviction": "solid",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 1457,
+          "event_type": "entry",
+          "price_pct": null,
+          "size_pct_of_pos": null,
+          "raw_quote": "Texas AG, this is one I was personally kind of disappointed about. I don't know that much about Maze Middleton... He's the guy that won. We decided Chipp Roy was his opponent. I like Chipp Roy... But we, again, we put our heart to the side. And we went with Middleton and we hit that one as a yes.",
+          "cleaned_quote": "Texas AG — one I was personally disappointed about, because I like Chip Roy, his opponent, and would have preferred he won. But we put our heart to the side, went with Mayes Middleton, and hit that one as a yes."
+        },
+        {
+          "timestamp_sec": 1479,
+          "event_type": "resolve",
+          "price_pct": 100.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "And we went with Middleton and we hit that one as a yes.",
+          "cleaned_quote": "Middleton won the Texas AG runoff — the yes resolved correct."
+        }
+      ],
+      "referenced_media": []
+    },
+    {
+      "market_source": "unknown",
+      "market_hint": "Shepard wins Texas HD-17 Democratic runoff 2026 (Stu: YES, won)",
+      "side": "yes",
+      "conviction": "solid",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 1481,
+          "event_type": "entry",
+          "price_pct": null,
+          "size_pct_of_pos": null,
+          "raw_quote": "Texas 17, Shepard on the Democratic side. Yes, and we got that right.",
+          "cleaned_quote": "Texas 17, Shepard on the Democratic side — yes, and we got that right."
+        },
+        {
+          "timestamp_sec": 1481,
+          "event_type": "resolve",
+          "price_pct": 100.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "Texas 17, Shepard on the Democratic side. Yes, and we got that right.",
+          "cleaned_quote": "Shepard won Texas 17 — the yes resolved correct."
+        }
+      ],
+      "referenced_media": []
+    },
+    {
+      "market_source": "unknown",
+      "market_hint": "Menafee wins Texas HD-18 Democratic runoff 2026 (Stu: YES over Al Green, won)",
+      "side": "yes",
+      "conviction": "solid",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 1485,
+          "event_type": "entry",
+          "price_pct": null,
+          "size_pct_of_pos": null,
+          "raw_quote": "Menafee is an interesting one. Yes, in Texas 18. We got that one right as well. That was against Al Green. And we, you know, as much as we love the Al Green entertainment factor, we went against Al Green and won with Menafee there.",
+          "cleaned_quote": "Menafee is an interesting one — yes in Texas 18, against Al Green. As much as we love the Al Green entertainment factor, we went against him and won with Menafee."
+        },
+        {
+          "timestamp_sec": 1499,
+          "event_type": "resolve",
+          "price_pct": 100.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "we went against Al Green and won with Menafee there.",
+          "cleaned_quote": "Menafee won Texas 18 over Al Green — the yes resolved correct."
+        }
+      ],
+      "referenced_media": []
+    },
+    {
+      "market_source": "unknown",
+      "market_hint": "John Cornyn drops out of the Texas Senate race (Stu: NO — he won't drop out, won)",
+      "side": "no",
+      "conviction": "solid",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 1505,
+          "event_type": "entry",
+          "price_pct": null,
+          "size_pct_of_pos": null,
+          "raw_quote": "Would Cornyn drop out of the race? Honestly, I got a little nervous after the endorsement and Cornyn was like I'm canceling all my events and going to Washington. I thought I was going to lose this one. But he of course did not drop out. We had Cornyn to not drop out.",
+          "cleaned_quote": "A position I'd held for a very long time: would Cornyn drop out of the race. I got nervous after the endorsement when he canceled his events to go to Washington and thought I'd lose this one, but he did not drop out. We had Cornyn to not drop out."
+        },
+        {
+          "timestamp_sec": 1517,
+          "event_type": "resolve",
+          "price_pct": 0.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "But he of course did not drop out.",
+          "cleaned_quote": "Cornyn did not drop out, so the no on him dropping out resolved correct."
+        }
+      ],
+      "referenced_media": []
+    },
+    {
+      "market_source": "unknown",
+      "market_hint": "Ken Paxton beats James Talarico in Texas US Senate general election 2026 (Stu: value, not yet sized)",
+      "side": "yes",
+      "conviction": "watch",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 1168,
+          "event_type": "entry",
+          "price_pct": 57.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "The markets basically think it's a relatively close race. Have it at 57% chance for Ken Paxson to win Tellerico at 43%. I tend to think that that's a little, a little calm, honestly, for Paxson... So I think there could be some value here. I don't think I'm going to take a huge position on it yet. There is a risk, of course, if something else blowing up scandal-wise",
+          "cleaned_quote": "The market has Paxton at 57 percent to win the Texas Senate general, Talarico at 43. I think that's a little calm for Paxton — as the primary wounds heal, voters come back, and they won't go for a guy saying Jesus is non-binary. There could be value here, though I'm not going to take a huge position yet. Paxton's scandals feel priced in, like Trump in 2016."
+        }
+      ],
+      "referenced_media": []
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "Republicans hold the US Senate in 2026 midterms (Stu: small early position)",
+      "side": "yes",
+      "conviction": "solid",
+      "speaker": "stu",
+      "size_disclosed": "small",
+      "events": [
+        {
+          "timestamp_sec": 1140,
+          "event_type": "entry",
+          "price_pct": null,
+          "size_pct_of_pos": null,
+          "raw_quote": "the Supreme Court is in question, you need to hold on to the Senate if you're the Republicans. I, by the way, it's another position I do have. I believe they will. You know, it's, I'm not sure of that one. It's an early position and I'm not locking it in with a huge thing, but I do have a position there.",
+          "cleaned_quote": "You need to hold the Senate if you're the Republicans, especially with the Supreme Court in question. It's another position I have — I believe they will hold it. I'm not sure of that one; it's an early position and I'm not locking it in with a huge thing, but I do have a position there."
+        }
+      ],
+      "referenced_media": []
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "Mandalorian & Grogu Rotten Tomatoes score under 65% (Stu/Adam: resolved, won)",
+      "side": "under",
+      "conviction": "flyer",
+      "speaker": "stu",
+      "size_disclosed": "small",
+      "events": [
+        {
+          "timestamp_sec": 2463,
+          "event_type": "entry",
+          "price_pct": null,
+          "size_pct_of_pos": null,
+          "raw_quote": "by the way the Mandalorian is another good one we did do that under 65% on Rotten Tomatoes I don't know if that's what you wound up hitting but we did wind up hitting that one and did very well on that particular market producer Adam was the one that turned me out of that one a great pick from Adam apparently Mandalorian skeptical and that one paid off",
+          "cleaned_quote": "The Mandalorian is another good one — we did that under 65 percent on Rotten Tomatoes. Producer Adam, a Mandalorian skeptic, turned me onto it. A great pick from Adam."
+        },
+        {
+          "timestamp_sec": 2469,
+          "event_type": "resolve",
+          "price_pct": 100.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "but we did wind up hitting that one and did very well on that particular market... and that one paid off",
+          "cleaned_quote": "We wound up hitting the Mandalorian & Grogu under-65 and did very well — that one paid off."
+        }
+      ],
+      "referenced_media": []
+    }
+  ],
+  "mentions": [
+    {
+      "market_source": "kalshi",
+      "market_hint": "Texas GOP Senate nominee — full race arc Cornyn vs Paxton vs Wesley Hunt 2026",
+      "directional": "bullish",
+      "timestamp_sec": 638,
+      "cleaned_quote": "The Texas Republican Senate nominee chart: Cornyn led until April 2025, Paxton took the lead through August, then it tied and Wesley Hunt made it a three-way race for a spell, then Paxton led again into the election before Cornyn briefly retook it. The Sarah Gonzalez fade — every day Trump didn't endorse Cornyn, his odds faded — and Paxton ended the winner. We also had Hunt no in the nominee market and hit it."
+    },
+    {
+      "market_source": "unknown",
+      "market_hint": "Prediction markets survive state bans / CFTC keeps exclusive authority (Trump pledge)",
+      "directional": "bullish",
+      "timestamp_sec": 2141,
+      "cleaned_quote": "Trump: it's critically important that the CFTC's exclusive authority over prediction markets is maintained and that they thrive — we cannot have scum like Chris Christie, Letitia James, Tim Walz and JB Pritzker setting the rules. Gambling-industry interests are funding fake groups led by Christie, who helped legalize gambling, to call these markets gambling. Kalshi already won its lawsuit; I think these markets survive the challenges easily."
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "2028 US presidential election winner (used as a lock-up-your-money example)",
+      "directional": "explainer",
+      "timestamp_sec": 2601,
+      "cleaned_quote": "The 2028 election winner is one of the most fun markets because you're projecting into the future, but as an investment you're locking your money up for three years. I honestly think we can do a lot better than 5 or 10 percent a year — as we showed last night in a big way, no matter what market you were in on."
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "Thomas Massie wins Kentucky KY-04 GOP primary (listener Stephanie made small profit)",
+      "directional": "explainer",
+      "timestamp_sec": 2419,
+      "cleaned_quote": "Stephanie invested in the Massie race and made a small profit, turning $5 into $5.30 — pennies make dollars. By the time she understood the clear Paxton position it was too late to make anything substantial. Her other good profit was the Mando movie, turning $4 into $9.61. Think in percentage-gain terms, not amounts."
+    }
+  ]
+}

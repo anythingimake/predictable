@@ -1,0 +1,150 @@
+{
+  "calls": [
+    {
+      "market_source": "unknown",
+      "market_hint": "Julia Letlow wins Louisiana GOP Senate primary outright (over 50%, no runoff) 2026 (Stu: lost, didn't reach 50%)",
+      "side": "yes",
+      "conviction": "flyer",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 180,
+          "event_type": "entry",
+          "price_pct": 6.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "We gave you a long shot however as well where we said we think this is a 10 times trade That might be there for you... I want to picking up at six cents The other day, but it was I think nine or ten cents when we were talking about it here at six cents It was more like 16 or 17 times your Profit which is even better obviously, but so ten cents Let's just say call it ten cents for the ease of math You had about a ten times... the actual position was a position that we took on That Louisiana senatorial campaign and the primary... would Julia Lettland get to 50% or not would she avoid a runoff",
+          "cleaned_quote": "Our long-shot 10x trade on Louisiana: would Julia Letlow get to 50 percent and avoid a runoff. It was 9 or 10 cents when we talked about it on the show, but I was picking it up at six cents — more like 16 or 17 times your profit. Our thesis: Trump's power over primaries was underpriced at 10 percent; I had it more like 30-35."
+        },
+        {
+          "timestamp_sec": 356,
+          "event_type": "resolve",
+          "price_pct": null,
+          "size_pct_of_pos": 100,
+          "raw_quote": "She didn't quite get to 50% our 10 to 1 15 to 1 shot did not wind up coming through That's what you expect to happen when you make a 10 or 15 to 1 long shot You expect to lose that position... let low went up by about 11 or 12 points",
+          "cleaned_quote": "Letlow finished at 45, up about 11-12 points from her low-30s polling, but didn't quite get to 50 percent — so our 10-to-1, 15-to-1 shot did not come through. That's what you expect when you make a long shot. The thesis was right directionally; she just missed the 50 percent barrier."
+        }
+      ],
+      "referenced_media": [
+        {"source_type": "article", "title": "Bill Cassidy's fall is a warning sign for other Trump enemies", "outlet": "Politico"}
+      ]
+    },
+    {
+      "market_source": "unknown",
+      "market_hint": "Bill Cassidy loses Louisiana GOP Senate primary / Letlow advances 2026 (Stu: WON, covers the 50% losses)",
+      "side": "no",
+      "conviction": "solid",
+      "speaker": "stu",
+      "size_disclosed": null,
+      "events": [
+        {
+          "timestamp_sec": 1574,
+          "event_type": "resolve",
+          "price_pct": null,
+          "size_pct_of_pos": null,
+          "raw_quote": "we were I think totally right directionally and in Louisiana didn't quite get to that 50% barrier But having let low separately just to win I think we're in a really good position frankly in that Louisiana race and we'll cover all of the small losses That we had on the 50% market. I think quite easily. It's just gonna take until that runoff",
+          "cleaned_quote": "We were totally right directionally in Louisiana. Cassidy lost and Letlow finished first — both calls we made last week. Having Letlow separately just to win, we're in a really good position and will easily cover the small losses on the 50 percent market. It just takes until that runoff resolves."
+        }
+      ]
+    },
+    {
+      "market_source": "polymarket",
+      "market_hint": "Ed Gallrein wins Kentucky KY-04 GOP primary (i.e. Thomas Massie loses) 2026",
+      "side": "yes",
+      "conviction": "solid",
+      "speaker": "stu",
+      "size_disclosed": "medium",
+      "events": [
+        {
+          "timestamp_sec": 1423,
+          "event_type": "entry",
+          "price_pct": 40.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "we started purchasing some shares of Ed Gallerain not necessarily because... He started rising around them about May 1st or so I was probably a little bit late on that honestly. I probably started purchasing some Gallerain shares When he was more in the 40s rather in the 20s, I would have rather had it in the 20s, but it got it at more in the 40s",
+          "cleaned_quote": "As we got closer I started doubting Massie could win, so we started purchasing Ed Gallrein shares. He began rising around May 1st. I was a little late — I'd have rather gotten in at the 20s, but I bought more in the 40s. It's not anti-Gallrein; he has a great service record."
+        },
+        {
+          "timestamp_sec": 1502,
+          "event_type": "add",
+          "price_pct": 63.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "I think it's probably a 75% chance. He loses now right now the markets have it at 63 I think there's probably a little bit of value there though Not enough that I'm like willing to dump a bunch of money in at 63 percent... My I have a not a huge position, but this is too too risky a position honestly... But I have a medium-sized let's say position not a tiny like flyer But a medium-sized position here looking at whether Massey will wind up losing that race I think Ed Galerain will probably get across the finish line",
+          "cleaned_quote": "I think there's about a 75 percent chance Massie loses; the market has it at 63, so there's a little value, though not enough to dump a bunch in at 63. I have a medium-sized position — not a tiny flyer — on Massie losing. I think Ed Gallrein probably gets across the finish line tomorrow."
+        }
+      ],
+      "referenced_media": [
+        {"source_type": "tweet", "title": "Massie must be thrown out — endorsement of Captain Ed Gallrein", "outlet": "Truth Social (Trump)"}
+      ]
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "Mandalorian & Grogu Rotten Tomatoes score under 65%",
+      "side": "under",
+      "conviction": "flyer",
+      "speaker": "stu",
+      "size_disclosed": "small",
+      "events": [
+        {
+          "timestamp_sec": 2551,
+          "event_type": "entry",
+          "price_pct": 50.0,
+          "size_pct_of_pos": null,
+          "raw_quote": "I said since mma isn't my lane I'm taking the mandalorian under 65 percent on rotten tomatoes instead mostly just to honor Gina carano... cal. She is projecting this at a right around 65 or 66 So it's very very close and to make sense. It's a 50 50 market So I don't know if I'm going to win on this one or not. Again. It was very small position just to honor Gina carano",
+          "cleaned_quote": "Since MMA isn't my lane, I'm taking Mandalorian & Grogu under 65 percent on Rotten Tomatoes instead, mostly to honor Gina Carano. Kalshi projects it right around 65 or 66 — essentially a 50-50 market, so I don't know if I'll win. Very small position. 65 is a decent but not great score for a Star Wars movie."
+        }
+      ],
+      "referenced_media": []
+    }
+  ],
+  "mentions": [
+    {
+      "market_source": "polymarket",
+      "market_hint": "Winner of Kentucky KY-04 GOP primary — Gallrein vs Massie (chart) 2026",
+      "directional": "bearish",
+      "timestamp_sec": 1385,
+      "cleaned_quote": "On Polymarket, the winner of the KY-04 Republican primary: Massie led between 60 and 75 percent for most of the race going back before the year, and only around May does it start to turn around as Gallrein rises. Trump's purge and the Epstein-files fight are why the polls began showing strength for Gallrein."
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "Who will leave their party this year — Thomas Massie at 13%",
+      "directional": "neutral",
+      "timestamp_sec": 1604,
+      "cleaned_quote": "Kalshi's who-will-leave-their-party market: Fetterman 20 percent, Murkowski 17, Marjorie Taylor Greene 15, Cuellar 14, Don Bacon 13, Thomas Massie 13. My first thought was to go no — he won't become a Democrat — but Kentucky has a sore-loser law, so he couldn't run as an independent this cycle anyway. 13 percent is probably well priced; if he loses he might switch to libertarian to make a statement."
+    },
+    {
+      "market_source": "polymarket",
+      "market_hint": "Polymarket Iran-war insider trading cluster — $2.4M, 98% win rate (60 Minutes)",
+      "directional": "explainer",
+      "timestamp_sec": 1838,
+      "cleaned_quote": "60 Minutes: nine connected Polymarket accounts made $2.4 million betting almost exclusively on US military operations with a 98 percent win rate — winning bets on the exact dates of the first US strikes, the removal of Iran's supreme leader, and the ceasefire announcement. This insider activity is horrible and dangerous, but it's rare — far less common than the media makes it out to be."
+    },
+    {
+      "market_source": "polymarket",
+      "market_hint": "Polymarket market-integrity response — referred Van Dyke Venezuela case to authorities",
+      "directional": "explainer",
+      "timestamp_sec": 2289,
+      "cleaned_quote": "Polymarket says it identified the activity, referred it to authorities, and the system worked — the Gannon Van Dyke indictment (the $400K Venezuela case) is proof. These exchanges have little upside in looking the other way; they take only tiny fees and want to be around for a hundred years. Kalshi has KYC rules and was just valued at $22 billion."
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "Roast of Kevin Hart is the #1 Netflix show this week",
+      "directional": "bullish",
+      "timestamp_sec": 2519,
+      "cleaned_quote": "Rousey submitted Carano by armbar in 17 seconds, so the show died fast on Netflix. The number one show looks like the Roast of Kevin Hart at a 96 percent chance of being number one this week. My wife does very well on the Netflix markets — when she watches a movie and likes it she takes a position."
+    },
+    {
+      "market_source": "polymarket",
+      "market_hint": "Mandalorian & Grogu four-day opening weekend box office $92M-$112M",
+      "directional": "bearish",
+      "timestamp_sec": 2637,
+      "cleaned_quote": "Mandalorian & Grogu four-day opening weekend box office is set around $100 million, about a 60 percent chance it lands between $92 and $112 million. This has to be Polymarket global — US markets can't predict box office futures (or onions). $100 million is way under even the crappiest recent Star Wars movies, so I don't think it's a huge hit."
+    },
+    {
+      "market_source": "kalshi",
+      "market_hint": "Gina Carano beats Ronda Rousey (RESOLVED — Rousey won by armbar in 17s; Stu held no position)",
+      "directional": "explainer",
+      "timestamp_sec": 2481,
+      "cleaned_quote": "We talked about what position to take on Rousey-Carano and I didn't have a great take, which is why I stayed away from any position on the actual fight. My instinct was Carano at four-to-one odds, but at 17 seconds that clearly would not have been a good bet. The wrestler got hold of the boxer — that's all she wrote."
+    }
+  ]
+}
