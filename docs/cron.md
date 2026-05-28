@@ -73,16 +73,21 @@ one-time setup; this file is what you read when something looks stale or wrong.
 You maintain the Predictable extraction step. The repo is already cloned.
 
 1. Run:  python -m pipeline.extract.run --list-pending
-   It prints, per episode, which extractor outputs are missing (calls,
-   principles, strategies, qa) — checked per TYPE, so a transcript that already
-   has -calls.json but is missing -principles.json still shows as pending.
+   It prints, per episode, which TRANSCRIPT-based outputs are missing (calls,
+   principles, strategies) — checked per TYPE, so a transcript that already has
+   -calls.json but is missing -principles.json still shows as pending. (qa is
+   comment-based and needs the SQLite slug map, which isn't in this clone, so
+   --list-pending won't list it here — handle qa in step 2b.)
 2. For each pending (episode, extractor), produce the JSON yourself via in-thread
    tool-use: read pipeline/prompts/extract_{kind}.md and the transcript at
-   data/transcripts/{guid}.json (for qa, read the episode's Substack comments at
-   data/ingest/substack/comments/{slug}.json instead), then Write
+   data/transcripts/{guid}.json, then Write
    data/ingest/extract/{guid}-{kind}.json matching that extractor's schema.
    Do NOT run the Python extract_* functions — they use API credits; your
    in-thread extraction uses the subscription.
+2b. qa: for any episode with a data/ingest/substack/comments/{slug}.json file but
+   no {guid}-qa.json, run extract_qa in-thread against those comments. Map slug to
+   episode the way pipeline/load.py does (same-date Substack 'podcast' post whose
+   title best matches the Megaphone episode in data/ingest/megaphone/).
 3. git add the file(s) and commit + push AFTER EACH EPISODE (as anythingimake).
    Never batch the commit to the end — a mid-run failure must not lose work.
 4. If any single extraction errors (overload/429/529/etc.), log it and CONTINUE
