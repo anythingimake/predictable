@@ -127,6 +127,13 @@ def load_calls(conn) -> int:
     Idempotent per episode: each *-calls.json file is the source of truth for
     that episode's calls + events + mentions + source_media. Re-running clears
     the episode's prior rows and re-inserts from JSON, so the DB always matches.
+
+    Enrich-owned columns (market_id, status, realized_pct, stu_claimed_pct) are
+    PRESERVED across the reload, keyed by the deterministic stable call id. Those
+    are computed by market_resolver / scoring and must not be reset to NULL/open
+    every cycle — otherwise the resolver has to re-link from scratch each run,
+    only the cleanest (winning) markets re-link, and the scoreboard shows an
+    inflated 100% from survivorship bias.
     """
     extract_dir = INGEST_RAW / "extract"
     if not extract_dir.exists():
@@ -135,6 +142,21 @@ def load_calls(conn) -> int:
     total_calls = 0
     for fp in files:
         guid = fp.stem.replace("-calls", "")
+        # Snapshot enrich-owned columns by stable id before wiping, so links +
+        # scores survive the DELETE+reinsert.
+        preserved = {
+            r["id"]: {
+                "market_id": r["market_id"],
+                "status": r["status"],
+                "realized_pct": r["realized_pct"],
+                "stu_claimed_pct": r["stu_claimed_pct"],
+            }
+            for r in conn.execute(
+                """SELECT id, market_id, status, realized_pct, stu_claimed_pct
+                     FROM calls WHERE episode_id = ?""",
+                (guid,),
+            ).fetchall()
+        }
         # Wipe this episode's existing rows so re-loading from JSON doesn't dup.
         # FK order: call_events + source_media first, then calls, then mentions.
         conn.execute(
@@ -184,9 +206,12 @@ def load_calls(conn) -> int:
                     raw_quote=quote_blob,
                 )
 
+            prev = preserved.get(stable_id)
             row = {
                 "id": stable_id,
-                "market_id": None,  # set later by enrich/market_resolver.py
+                # Preserve the resolver's link + scoring's status across reload;
+                # fall back to fresh defaults for genuinely new calls.
+                "market_id": prev["market_id"] if prev else None,
                 "market_hint": hint,
                 "episode_id": guid,
                 "first_event_ts": first_ts,
@@ -194,10 +219,16 @@ def load_calls(conn) -> int:
                 "conviction": call.get("conviction", "opinion"),
                 "size_disclosed": call.get("size_disclosed"),
                 "speaker": call.get("speaker", "stu"),
-                "status": "open",
+                "status": prev["status"] if prev else "open",
                 "tags": tags,
             }
             call_id = insert_call(conn, row)
+            # Restore scoring outputs (not columns insert_call writes).
+            if prev and (prev["realized_pct"] is not None or prev["stu_claimed_pct"] is not None):
+                conn.execute(
+                    "UPDATE calls SET realized_pct = ?, stu_claimed_pct = ? WHERE id = ?",
+                    (prev["realized_pct"], prev["stu_claimed_pct"], call_id),
+                )
             total_calls += 1
 
             for ev in events:
