@@ -5,7 +5,7 @@ import type { CallDetail as CallDetailData } from "../types";
 import { ConvictionBadge } from "../components/ConvictionBadge";
 import { BackLink } from "../components/BackLink";
 import { TagChips } from "../components/TagChips";
-import { formatCents, formatDateSafe, formatPct, formatSec, marketUrl, stuSideCents, unrealizedPct } from "../lib/format";
+import { formatCents, formatDateSafe, formatPct, marketUrl, stuSideCents, unrealizedPct } from "../lib/format";
 import { ErrorBanner, Loading } from "./Scoreboard";
 
 // Recharts is ~120 KB gzipped — defer it past first paint of CallDetail.
@@ -198,9 +198,6 @@ export function CallDetail() {
                   )}
                 </div>
                 <div className="flex items-center gap-3 text-xs w-full sm:w-auto">
-                  <span className="text-[var(--color-text-faint)] tabular-nums">
-                    {formatSec(e.timestamp_sec)}
-                  </span>
                   {data.youtube_id ? (
                     <a
                       href={`https://www.youtube.com/watch?v=${data.youtube_id}`}
