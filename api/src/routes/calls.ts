@@ -9,14 +9,19 @@ const DEFAULT_CALLS_LIMIT = 500;
 const MAX_CALLS_LIMIT = 2000;
 
 router.get("/", (req, res) => {
-  const { conviction, status, market, category, market_source } = req.query as Record<string, string | undefined>;
+  const { conviction, status, market, category, market_source, tag } = req.query as Record<string, string | undefined>;
   const clauses: string[] = [];
-  const params: any[] = [];
+  const params: (string | number)[] = [];
   if (conviction)    { clauses.push("c.conviction = ?");    params.push(conviction); }
   if (status)        { clauses.push("c.status = ?");        params.push(status); }
   if (market)        { clauses.push("c.market_id = ?");     params.push(market); }
   if (category)      { clauses.push("m.category = ?");      params.push(category); }
   if (market_source) { clauses.push("m.source = ?");        params.push(market_source); }
+  // Single-value tag pass-through. The frontend does multi-tag filtering
+  // client-side (same as status/source/side/tier) once it has the full
+  // list, so this is mostly a convenience for ad-hoc /api/calls?tag=…
+  // links shared in chat or for an external dashboard.
+  if (tag)           { clauses.push("EXISTS (SELECT 1 FROM json_each(c.tags) WHERE value = ?)"); params.push(tag); }
   const where = clauses.length ? `WHERE ${clauses.join(" AND ")}` : "";
 
   const rawLimit = Number(req.query.limit);
@@ -27,7 +32,7 @@ router.get("/", (req, res) => {
   const rows = db().prepare(`
     SELECT c.id, c.market_id, c.market_hint, c.episode_id, c.side, c.conviction,
            c.size_disclosed, c.speaker, c.status, c.realized_pct, c.stu_claimed_pct,
-           c.first_event_ts,
+           c.first_event_ts, c.tags,
            e.publish_date, e.megaphone_title AS episode_title,
            m.source AS market_source, m.ticker AS market_ticker, m.question AS market_question
     FROM calls c
@@ -49,7 +54,7 @@ router.get("/:id", (req, res) => {
     JOIN episodes e ON e.id = c.episode_id
     LEFT JOIN markets m ON m.id = c.market_id
     WHERE c.id = ?
-  `).get(req.params.id) as any;
+  `).get(req.params.id) as Record<string, unknown> | undefined;
   if (!call) return res.status(404).json({ error: "not_found" });
 
   const events = db().prepare(`

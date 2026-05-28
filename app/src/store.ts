@@ -11,6 +11,8 @@ interface UIState {
     status?: string[];
     market_source?: string[];
     side?: string[];
+    // Tag multi-select (broad + specific tags mixed together — match-any).
+    tags?: string[];
     // Single-value, range-style.
     category?: string;
     date_from?: string;

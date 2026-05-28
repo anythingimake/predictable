@@ -66,6 +66,7 @@ CREATE TABLE IF NOT EXISTS calls (
   realized_pct    REAL,
   stu_claimed_pct REAL,
   notes           TEXT,
+  tags            TEXT NOT NULL DEFAULT '[]',  -- JSON array of broad + specific tag strings
   created_at      DATETIME DEFAULT CURRENT_TIMESTAMP,
   FOREIGN KEY (market_id) REFERENCES markets(id),
   FOREIGN KEY (episode_id) REFERENCES episodes(id)

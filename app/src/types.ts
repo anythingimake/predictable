@@ -38,6 +38,8 @@ export interface Call {
   stu_claimed_pct: number | null;
   publish_date: string;
   episode_title: string;
+  /** Parsed from the API's `tags` field (JSON-stringified array). */
+  tags?: string[];
   market_source?: string | null;
   market_ticker?: string | null;
   market_question?: string | null;
@@ -85,6 +87,8 @@ export interface CallDetail extends Call {
   substack_slug?: string | null;
   audio_url?: string | null;
   duration_sec?: number | null;
+  /** Inherited from Call.tags but the detail endpoint also includes it. */
+  tags?: string[];
 }
 
 export interface Market {

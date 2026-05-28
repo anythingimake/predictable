@@ -24,13 +24,35 @@ async function get<T>(path: string, params?: Record<string, string | undefined>)
   return (await r.json()) as T;
 }
 
+/**
+ * SQLite stores `calls.tags` as a JSON-encoded string. Parse on ingest so
+ * the rest of the app can treat `tags` as `string[]`. Tolerate the legacy
+ * shape (no field, malformed JSON) — empty array is a safe default since
+ * the loader guarantees a non-empty array going forward.
+ */
+function parseTags(raw: unknown): string[] {
+  if (Array.isArray(raw)) return raw.filter((t): t is string => typeof t === "string");
+  if (typeof raw !== "string" || raw.length === 0) return [];
+  try {
+    const parsed: unknown = JSON.parse(raw);
+    if (Array.isArray(parsed)) return parsed.filter((t): t is string => typeof t === "string");
+  } catch {
+    /* fall through */
+  }
+  return [];
+}
+
+function withParsedTags<T extends { tags?: unknown }>(row: T): T & { tags: string[] } {
+  return { ...row, tags: parseTags(row.tags) };
+}
+
 export const api = {
   episodes: () => get<Episode[]>("/episodes"),
   episode: (id: string) => get<EpisodeDetail>(`/episodes/${id}`),
 
-  calls: (filters?: { conviction?: string; status?: string; market?: string; category?: string; market_source?: string }) =>
-    get<Call[]>("/calls", filters),
-  call: (id: number | string) => get<CallDetail>(`/calls/${id}`),
+  calls: (filters?: { conviction?: string; status?: string; market?: string; category?: string; market_source?: string; tag?: string }) =>
+    get<Call[]>("/calls", filters).then((rows) => rows.map(withParsedTags)),
+  call: (id: number | string) => get<CallDetail>(`/calls/${id}`).then(withParsedTags),
 
   markets: (filters?: { source?: string; category?: string; resolved?: string }) =>
     get<Market[]>("/markets", filters),

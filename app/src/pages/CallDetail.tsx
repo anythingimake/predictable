@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { api } from "../api";
 import type { CallDetail as CallDetailData } from "../types";
 import { ConvictionBadge } from "../components/ConvictionBadge";
+import { TagChips } from "../components/TagChips";
 import { formatDateSafe, formatPct, formatSec, substackUrlAt, youtubeUrlAt } from "../lib/format";
 import { ErrorBanner, Loading } from "./Scoreboard";
 
@@ -79,6 +80,7 @@ export function CallDetail() {
             </>
           )}
         </p>
+        {data.tags && data.tags.length > 0 && <TagChips tags={data.tags} className="mt-2" />}
       </header>
 
       <section className="grid grid-cols-2 md:grid-cols-4 gap-3">

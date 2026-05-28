@@ -101,11 +101,21 @@ def upsert_market(conn: sqlite3.Connection, m: dict) -> str:
 
 
 def insert_call(conn: sqlite3.Connection, call: dict) -> int:
-    """Insert a Call (no upsert — extraction creates fresh; manual edits via /admin)."""
+    """Insert a Call (no upsert — extraction creates fresh; manual edits via /admin).
+
+    `tags` is a JSON-encoded array of strings. If the caller passes a list,
+    we json.dumps it; if a string, we trust it's already JSON; if missing,
+    default to '[]' (the loader is expected to fill this via tag_call).
+    """
+    raw_tags = call.get("tags", "[]")
+    if isinstance(raw_tags, (list, tuple)):
+        tags_json = json.dumps(list(raw_tags))
+    else:
+        tags_json = raw_tags or "[]"
     cur = conn.execute(
         """INSERT INTO calls (market_id, market_hint, episode_id, first_event_ts,
-                              side, conviction, size_disclosed, speaker, status, notes)
-           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+                              side, conviction, size_disclosed, speaker, status, notes, tags)
+           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
         (
             call.get("market_id"),
             call["market_hint"],
@@ -117,6 +127,7 @@ def insert_call(conn: sqlite3.Connection, call: dict) -> int:
             call.get("speaker", "stu"),
             call.get("status", "open"),
             call.get("notes"),
+            tags_json,
         ),
     )
     return cur.lastrowid

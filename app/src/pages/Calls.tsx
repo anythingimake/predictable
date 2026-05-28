@@ -4,6 +4,7 @@ import { api } from "../api";
 import type { Call, Conviction } from "../types";
 import { ConvictionBadge } from "../components/ConvictionBadge";
 import { MultiSelect } from "../components/MultiSelect";
+import { TagChips } from "../components/TagChips";
 import { useStore } from "../store";
 import { formatPct } from "../lib/format";
 import { ErrorBanner, Loading } from "./Scoreboard";
@@ -39,6 +40,19 @@ const SIDES = [
   { value: "under", label: "Under" },
 ];
 
+// Broad tags appear at the top of the Tag dropdown in this exact order
+// (matches BROAD_TAGS in pipeline/extract/tag_taxonomy.py). Specific tags
+// follow, alphabetized, separated by an em-dash hairline.
+const BROAD_TAG_ORDER = ["political", "event", "sports", "social", "fun"] as const;
+const BROAD_TAG_LABEL: Record<string, string> = {
+  political: "Political",
+  event: "Event",
+  sports: "Sports",
+  social: "Social",
+  fun: "Fun",
+};
+const BROAD_TAG_SET = new Set<string>(BROAD_TAG_ORDER);
+
 export function Calls() {
   const filter = useStore((s) => s.callsFilter);
   const setFilter = useStore((s) => s.setCallsFilter);
@@ -62,12 +76,20 @@ export function Calls() {
     const sources = filter.market_source ?? [];
     const sides = filter.side ?? [];
     const tiers = filter.conviction ?? [];
+    const tagsFilter = filter.tags ?? [];
 
     return calls.filter((c) => {
       if (statuses.length > 0 && !statuses.includes(c.status)) return false;
       if (sources.length > 0 && !sources.includes(c.market_source ?? "")) return false;
       if (sides.length > 0 && !sides.includes(c.side)) return false;
       if (tiers.length > 0 && !tiers.includes(c.conviction)) return false;
+      // Tag filter is match-any: a call passes if at least one of its tags
+      // is in the selected set. Matches the existing multi-select semantics
+      // for status/source/side/tier.
+      if (tagsFilter.length > 0) {
+        const ct = c.tags ?? [];
+        if (!ct.some((t) => tagsFilter.includes(t))) return false;
+      }
       if (q) {
         const blob = `${c.market_hint ?? ""} ${c.episode_title ?? ""} ${c.market_ticker ?? ""}`.toLowerCase();
         if (!blob.includes(q)) return false;
@@ -82,6 +104,27 @@ export function Calls() {
       return true;
     });
   }, [calls, query, filter]);
+
+  // Build the tag-dropdown option list from the union of tags on currently
+  // loaded calls — this way new specific tags surface automatically as the
+  // pipeline writes them. Broad tags first (fixed order), then alphabetized
+  // specific tags. A "separator" sentinel splits them so the dropdown can
+  // render a visual divider.
+  const tagOptions = useMemo(() => {
+    const present = new Set<string>();
+    for (const c of calls ?? []) {
+      for (const t of c.tags ?? []) present.add(t);
+    }
+    const broad = BROAD_TAG_ORDER.filter((t) => present.has(t)).map((t) => ({
+      value: t,
+      label: BROAD_TAG_LABEL[t] ?? t,
+    }));
+    const specific = Array.from(present)
+      .filter((t) => !BROAD_TAG_SET.has(t))
+      .sort((a, b) => a.localeCompare(b))
+      .map((t) => ({ value: t, label: t }));
+    return [...broad, ...specific];
+  }, [calls]);
 
   const grouped = useMemo(() => {
     if (!filtered) return [];
@@ -99,6 +142,7 @@ export function Calls() {
     (filter.market_source?.length ?? 0) +
     (filter.side?.length ?? 0) +
     (filter.conviction?.length ?? 0) +
+    (filter.tags?.length ?? 0) +
     (filter.date_from ? 1 : 0) +
     (filter.date_to ? 1 : 0) +
     (query.trim() ? 1 : 0);
@@ -161,6 +205,12 @@ export function Calls() {
             selected={filter.conviction ?? []}
             onChange={(v) => setFilter({ ...filter, conviction: v.length ? v : undefined })}
           />
+          <MultiSelect
+            label="Tag"
+            options={tagOptions}
+            selected={filter.tags ?? []}
+            onChange={(v) => setFilter({ ...filter, tags: v.length ? v : undefined })}
+          />
         </div>
 
         <div className="flex flex-wrap gap-2 items-center">
@@ -206,6 +256,9 @@ export function Calls() {
                     {c.market_source && <span className="hidden sm:inline"> · {c.market_source}</span>}
                     {c.market_ticker && <span className="hidden sm:inline"> · {c.market_ticker}</span>}
                   </div>
+                  {c.tags && c.tags.length > 0 && (
+                    <TagChips tags={c.tags} className="mt-1.5" />
+                  )}
                 </div>
                 <div className="text-right text-sm whitespace-nowrap ml-3 flex-shrink-0">
                   {c.realized_pct != null ? (

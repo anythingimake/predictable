@@ -36,6 +36,7 @@ from pipeline.db import (
     upsert_episode,
     upsert_principle,
 )
+from pipeline.extract.tagger import tag_call
 from pipeline.paths import INGEST_RAW, TRANSCRIPTS
 
 
@@ -134,10 +135,31 @@ def load_calls(conn) -> int:
         conn.execute("DELETE FROM calls WHERE episode_id = ?", (guid,))
         conn.execute("DELETE FROM mentions WHERE episode_id = ?", (guid,))
         data = json.loads(fp.read_text(encoding="utf-8"))
+        # Episode title is used as extra context for the deterministic tagger.
+        ep_row = conn.execute(
+            "SELECT megaphone_title FROM episodes WHERE id = ?", (guid,)
+        ).fetchone()
+        ep_title = (ep_row["megaphone_title"] if ep_row else "") or ""
         for call in data.get("calls", []):
             # Find earliest event timestamp
             events = sorted(call.get("events", []), key=lambda e: e.get("timestamp_sec", 0))
             first_ts = events[0].get("timestamp_sec") if events else None
+
+            # If the source JSON already declared tags, honor it; else derive.
+            existing_tags = call.get("tags")
+            if isinstance(existing_tags, list) and existing_tags:
+                tags = list(existing_tags)
+            else:
+                # Grab a representative quote for context (entry preferred).
+                quote_blob = " ".join(
+                    (e.get("raw_quote") or e.get("cleaned_quote") or "")
+                    for e in events[:3]
+                )
+                tags = tag_call(
+                    market_hint=call.get("market_hint", ""),
+                    episode_title=ep_title,
+                    raw_quote=quote_blob,
+                )
 
             row = {
                 "market_id": None,  # set later by enrich/market_resolver.py
@@ -149,6 +171,7 @@ def load_calls(conn) -> int:
                 "size_disclosed": call.get("size_disclosed"),
                 "speaker": call.get("speaker", "stu"),
                 "status": "open",
+                "tags": tags,
             }
             call_id = insert_call(conn, row)
             total_calls += 1
