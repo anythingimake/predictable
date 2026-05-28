@@ -88,6 +88,10 @@ router.get("/calendar", (_req, res) => {
            m.resolved, m.resolution,
            (SELECT COUNT(*) FROM calls WHERE market_id = m.id AND status = 'open') AS open_call_count,
            (SELECT COUNT(*) FROM calls WHERE market_id = m.id) AS call_count,
+           -- Representative call so the calendar can deep-link: a single-call
+           -- market goes straight to that call; multi-call goes to the market.
+           (SELECT id FROM calls WHERE market_id = m.id
+              ORDER BY first_event_ts DESC, id DESC LIMIT 1) AS call_id,
            CASE
              WHEN m.resolved = 1 THEN 'resolved'
              WHEN m.resolution_date < date('now') THEN 'aged_out'

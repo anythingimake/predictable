@@ -13,6 +13,7 @@ import {
   startOfWeek,
   subMonths,
 } from "date-fns";
+import { Link } from "react-router-dom";
 import { api } from "../api";
 import type { CalendarEntry } from "../types";
 import { ErrorBanner, Loading } from "./Scoreboard";
@@ -281,10 +282,16 @@ function PanelList({ entries }: { entries: CalendarEntry[] }) {
         const days = differenceInCalendarDays(parseISO(e.resolution_date), today);
         const dayLabel = days > 0 ? `in ${days}d` : days === 0 ? "today" : `${-days}d ago`;
         const count = e.call_count ?? e.open_call_count;
+        // Single-call market → straight to the call; multi-call → market page.
+        const href =
+          count === 1 && e.call_id != null
+            ? `/calls/${e.call_id}`
+            : `/markets/${encodeURIComponent(e.market_id)}`;
         return (
-          <div
+          <Link
             key={e.market_id}
-            className="rounded border border-[var(--color-border)] bg-[var(--color-bg)] p-3"
+            to={href}
+            className="tap block rounded border border-[var(--color-border)] bg-[var(--color-bg)] p-3 hover:border-[var(--color-accent)] transition-colors"
           >
             <div className="flex items-start gap-2">
               <span
@@ -314,7 +321,7 @@ function PanelList({ entries }: { entries: CalendarEntry[] }) {
                 </div>
               </div>
             </div>
-          </div>
+          </Link>
         );
       })}
     </div>

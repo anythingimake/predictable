@@ -186,6 +186,7 @@ export interface CalendarEntry {
   source: string;
   open_call_count: number;
   call_count?: number;
+  call_id?: number | null;
   resolved?: number;
   resolution?: string | null;
   status?: "upcoming" | "aged_out" | "resolved";
