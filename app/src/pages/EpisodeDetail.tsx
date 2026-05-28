@@ -100,11 +100,7 @@ export function EpisodeDetail() {
                   <span className="font-medium truncate">{c.market_hint}</span>
                   <span className="text-xs text-[var(--color-text-faint)]">{c.side.toUpperCase()}</span>
                 </div>
-                {c.first_event_ts != null && (
-                  <span className="text-xs text-[var(--color-text-muted)] whitespace-nowrap ml-3 flex-shrink-0">
-                    @ {formatSec(c.first_event_ts)}
-                  </span>
-                )}
+                <span className="text-[var(--color-text-faint)] ml-3 flex-shrink-0" aria-hidden>›</span>
               </Link>
             ))}
           </div>
@@ -136,7 +132,6 @@ export function EpisodeDetail() {
           <ul className="space-y-1 text-sm">
             {ep.mentions.map((m) => (
               <li key={m.id} className="text-[var(--color-text-muted)]">
-                <span className="font-mono text-xs">[{formatSec(m.timestamp_sec)}]</span>{" "}
                 <span className="text-[var(--color-text)]">{m.market_hint}</span>
                 {m.directional && (
                   <span className="ml-2 text-xs uppercase text-[var(--color-text-faint)]">
