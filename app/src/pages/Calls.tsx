@@ -191,6 +191,11 @@ export function Calls() {
     (filter.date_to ? 1 : 0) +
     (query.trim() ? 1 : 0);
 
+  // Counts shown on the toggle so its effect is unmistakable (the top of the
+  // list is the same in both views — the difference is the non-bet entries).
+  const allCount = calls?.length ?? 0;
+  const positionsCount = calls?.filter((c) => c.speaker === "stu" && ACTIONABLE_TIERS.has(c.conviction)).length ?? 0;
+
   if (err) return <ErrorBanner message={err} />;
 
   return (
@@ -209,8 +214,8 @@ export function Calls() {
         <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5">
           <div className="inline-flex rounded-md border border-[var(--color-border)] bg-[var(--color-bg)] p-0.5 text-xs">
             {([
-              ["all", "All discussed"],
-              ["positions", "Stu's positions"],
+              ["all", `All discussed (${allCount})`],
+              ["positions", `Stu's positions (${positionsCount})`],
             ] as const).map(([m, label]) => (
               <button
                 key={m}
