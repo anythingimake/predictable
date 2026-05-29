@@ -323,6 +323,19 @@ _MAGNITUDE_PATTERNS = [
 ]
 
 
+_RESIDUAL_MARKET = re.compile(
+    r"\b(?:another outcome|any other (?:candidate|outcome|option|party|team)|"
+    r"none of (?:the|these)|other candidate|some other)\b"
+)
+
+
+def _is_residual_market(title: str) -> bool:
+    """Polymarket negRisk events carry a residual 'Another outcome' / 'Any other
+    candidate' market = none of the named options. A hint that names a specific
+    person/party must never match it — it's the catch-all, not a real match."""
+    return bool(_RESIDUAL_MARKET.search((title or "").lower()))
+
+
 def _is_magnitude_question(s: str) -> bool:
     """True if the text asks about a numeric MAGNITUDE (margin of victory, a
     percentage / points threshold, a seat count, an A-B bracket) rather than a
@@ -340,7 +353,7 @@ def _margin_range(s: str) -> tuple[float, float] | None:
     if m:
         lo, hi = float(m.group(1)), float(m.group(2))
         return (min(lo, hi), max(lo, hi))
-    m = re.search(r"(?:over|more than|greater than|at least|no fewer than)\s+(\d{1,3})", s)
+    m = re.search(r"(?:over|more than|greater than|at least|no fewer than|clears|exceeds|tops|surpasses|above)\s+(\d{1,3})", s)
     if m:
         return (float(m.group(1)), 100.0)
     m = re.search(r"\b(\d{1,3})\s*\+", s)
@@ -395,6 +408,11 @@ def _conflict(hint: str, title: str) -> str | None:
     """
     h_tokens = _tokens(hint)
     t_tokens = _tokens(title)
+
+    # Residual / catch-all market ("another outcome", "any other candidate") —
+    # never the right match for a hint that names a specific person/party.
+    if _is_residual_market(title):
+        return "residual/catch-all market (not a specific match)"
 
     # Foreign-country conflict — Thailand PM ≠ U.S. House. If one side
     # mentions a non-US country and the other doesn't, reject.
@@ -796,7 +814,7 @@ def resolve_all() -> dict:
                       AND (c.notes IS NULL OR c.notes NOT LIKE 'pin:no-auto-link%')"""
             )
         ):
-            if _type_conflict(r["market_hint"] or "", r["question"] or ""):
+            if _type_conflict(r["market_hint"] or "", r["question"] or "") or _is_residual_market(r["question"] or ""):
                 conn.execute("UPDATE calls SET market_id = NULL WHERE id = ?", (r["id"],))
                 unlinked_n += 1
         if unlinked_n:
