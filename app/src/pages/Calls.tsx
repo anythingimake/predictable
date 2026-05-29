@@ -249,14 +249,13 @@ export function Calls() {
             placeholder="Search market or episode…"
             className="tap flex-1 bg-[var(--color-bg)] border border-[var(--color-border)] rounded px-3 py-2 text-sm placeholder:text-[var(--color-text-faint)] focus:outline-none focus:border-[var(--color-accent)]"
           />
-          {activeFilterCount > 0 && (
-            <button
-              onClick={() => { setFilter({}); setQuery(""); }}
-              className="tap inline-flex items-center text-xs text-[var(--color-text-muted)] hover:text-[var(--color-text)] px-2"
-            >
-              Clear {activeFilterCount}
-            </button>
-          )}
+          <button
+            onClick={() => { setFilter({}); setQuery(""); setViewMode("all"); }}
+            disabled={activeFilterCount === 0}
+            className="tap inline-flex items-center text-xs text-[var(--color-text-muted)] hover:text-[var(--color-text)] px-2 disabled:opacity-40 disabled:cursor-default"
+          >
+            Clear all{activeFilterCount > 0 ? ` (${activeFilterCount})` : ""}
+          </button>
         </div>
 
         <div className="flex flex-wrap gap-2 items-center">
