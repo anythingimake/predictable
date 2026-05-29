@@ -301,6 +301,88 @@ def _foreign_countries_in(s: str) -> set[str]:
     return _tokens(s) & _FOREIGN_COUNTRIES
 
 
+# ----- Question-TYPE gate: plain win/lose vs margin / threshold / bracket -----
+#
+# A plain "X wins" call and a "margin of victory / by N% / by between A and B"
+# market are DIFFERENT questions even when they share every name token. Without
+# this, "Cassidy wins Louisiana" latches onto "Cassidy margin between 6% and 9%"
+# and "Cornyn wins the nomination" latches onto "Cornyn by 9 or more". And two
+# margin markets whose numeric ranges don't line up ("by over 20" vs the narrow
+# "by between 20% and 25%" bracket) are also different bets.
+
+_MAGNITUDE_PATTERNS = [
+    re.compile(r"margin of victory"),
+    re.compile(r"\bby between\b"),
+    re.compile(r"\bbetween\s+\d{1,3}\s*%?\s+and\s+\d{1,3}"),
+    re.compile(r"\bby\s+(?:over|under|at least|more than|fewer than|less than|nearly|about|around|roughly)?\s*\d{1,3}\b"),
+    re.compile(r"\b\d{1,3}\s*%"),  # NB: no trailing \b — "%" is non-word, so "\b" after it never matches
+    re.compile(r"\b\d{1,3}\s*(?:percent|points?|pts)\b"),
+    re.compile(r"\b\d{1,3}\s*\+"),
+    re.compile(r"\b\d{1,3}\s+or\s+(?:more|fewer|less|greater|higher|lower)\b"),
+    re.compile(r"\b(?:at least|more than|over|under|fewer than|less than|no more than|no fewer than)\s+\d{1,3}\b"),
+]
+
+
+def _is_magnitude_question(s: str) -> bool:
+    """True if the text asks about a numeric MAGNITUDE (margin of victory, a
+    percentage / points threshold, a seat count, an A-B bracket) rather than a
+    plain binary win/lose outcome. Years (4 digits) deliberately don't count."""
+    s = (s or "").lower()
+    return any(p.search(s) for p in _MAGNITUDE_PATTERNS)
+
+
+def _margin_range(s: str) -> tuple[float, float] | None:
+    """Best-effort (low, high) the margin/threshold phrase refers to, on a 0-100
+    scale. Open-ended phrasings fill the missing bound with 0 or 100. Returns
+    None when nothing parses (caller then leans on the coarser type gate)."""
+    s = (s or "").lower()
+    m = re.search(r"between\s+(\d{1,3})\s*%?\s+and\s+(\d{1,3})", s)
+    if m:
+        lo, hi = float(m.group(1)), float(m.group(2))
+        return (min(lo, hi), max(lo, hi))
+    m = re.search(r"(?:over|more than|greater than|at least|no fewer than)\s+(\d{1,3})", s)
+    if m:
+        return (float(m.group(1)), 100.0)
+    m = re.search(r"\b(\d{1,3})\s*\+", s)
+    if m:
+        return (float(m.group(1)), 100.0)
+    m = re.search(r"\b(\d{1,3})\s+or\s+(?:more|greater|higher)\b", s)
+    if m:
+        return (float(m.group(1)), 100.0)
+    m = re.search(r"(?:under|less than|fewer than|below|no more than)\s+(\d{1,3})", s)
+    if m:
+        return (0.0, float(m.group(1)))
+    m = re.search(r"\b(\d{1,3})\s+or\s+(?:fewer|less|lower)\b", s)
+    if m:
+        return (0.0, float(m.group(1)))
+    return None
+
+
+def _ranges_match(a: tuple[float, float], b: tuple[float, float], tol: float = 2.0) -> bool:
+    """Two margin ranges describe the same bet when both bounds line up within
+    `tol` points: (20,100) vs (20,100) -> True; (20,100) vs (20,25) -> False."""
+    return abs(a[0] - b[0]) <= tol and abs(a[1] - b[1]) <= tol
+
+
+def _type_conflict(hint: str, title: str) -> str | None:
+    """Just the question-TYPE / margin-range gate, isolated so the repair pass
+    can unlink ONLY these mismatches (not pre-existing state/foreign/etc. gates,
+    which governed links that were acceptable under the old logic).
+
+    - plain win/lose vs margin/threshold/bracket → different questions, reject.
+    - two margin markets with non-overlapping numeric ranges → different bets.
+    """
+    h_mag = _is_magnitude_question(hint)
+    t_mag = _is_magnitude_question(title)
+    if h_mag != t_mag:
+        return "question-type mismatch (win/lose vs margin/threshold)"
+    if h_mag and t_mag:
+        hr, tr = _margin_range(hint), _margin_range(title)
+        if hr and tr and not _ranges_match(hr, tr):
+            return f"margin-range mismatch ({hr} vs {tr})"
+    return None
+
+
 def _conflict(hint: str, title: str) -> str | None:
     """Return a short conflict reason if hint and title both mention competing
     tokens in the same bucket (different state, different office, different
@@ -356,6 +438,13 @@ def _conflict(hint: str, title: str) -> str | None:
     t_years = _years_in(title)
     if h_years and t_years and not (h_years & t_years):
         return f"year mismatch ({sorted(h_years)} vs {sorted(t_years)})"
+
+    # Question-TYPE / margin-range conflict (see _type_conflict): a plain
+    # win/lose call vs a margin/threshold/bracket market are different questions,
+    # and two margin markets with non-overlapping ranges are different bets.
+    tc = _type_conflict(hint, title)
+    if tc:
+        return tc
 
     # Bucket conflict (canonicalized)
     for bucket in _CONFLICT_BUCKETS:
@@ -689,7 +778,34 @@ def resolve_all() -> dict:
     skipped_n = 0
     seen_hints: dict[str, dict | None] = {}
 
+    unlinked_n = 0
     with connect() as conn:
+        # ── Repair pass: unlink EXISTING links that violate the question-TYPE /
+        # margin-range gate (a plain win/lose call mislinked to a margin/bracket
+        # market, or a margin call on the wrong bracket). Scoped to
+        # `_type_conflict` ONLY, so we don't disturb links that merely trip older
+        # gates (state/foreign/etc.) — those governed links that were acceptable
+        # under the logic that created them. Human-pinned links are left alone.
+        # NULLed calls fall through to the re-resolution loop below (re-linked to
+        # a correct-type market, or left in the unresolved log for human review).
+        for r in list(
+            conn.execute(
+                """SELECT c.id, c.market_hint, m.question
+                     FROM calls c JOIN markets m ON m.id = c.market_id
+                    WHERE c.market_id IS NOT NULL
+                      AND (c.notes IS NULL OR c.notes NOT LIKE 'pin:no-auto-link%')"""
+            )
+        ):
+            if _type_conflict(r["market_hint"] or "", r["question"] or ""):
+                conn.execute("UPDATE calls SET market_id = NULL WHERE id = ?", (r["id"],))
+                unlinked_n += 1
+        if unlinked_n:
+            print(
+                f"[resolver] repair: unlinked {unlinked_n} type/range-mismatched "
+                f"call(s) for re-resolution",
+                flush=True,
+            )
+
         # Skip human-pinned calls (notes 'pin:no-auto-link') — these are
         # verified false-match corrections (e.g. Letlow "wins outright" must
         # NOT relink to the "finish first" market; Talarico general-election
@@ -790,7 +906,7 @@ def resolve_all() -> dict:
             json.dumps(existing, indent=2, ensure_ascii=False), encoding="utf-8"
         )
 
-    return {"resolved": resolved_n, "unresolved": len(unresolved), "skipped": skipped_n}
+    return {"resolved": resolved_n, "unlinked": unlinked_n, "unresolved": len(unresolved), "skipped": skipped_n}
 
 
 if __name__ == "__main__":
