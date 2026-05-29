@@ -359,13 +359,13 @@ def _margin_range(s: str) -> tuple[float, float] | None:
     m = re.search(r"\b(\d{1,3})\s*\+", s)
     if m:
         return (float(m.group(1)), 100.0)
-    m = re.search(r"\b(\d{1,3})\s+or\s+(?:more|greater|higher)\b", s)
+    m = re.search(r"\b(\d{1,3})\s*%?\s+or\s+(?:more|greater|higher)\b", s)
     if m:
         return (float(m.group(1)), 100.0)
     m = re.search(r"(?:under|less than|fewer than|below|no more than)\s+(\d{1,3})", s)
     if m:
         return (0.0, float(m.group(1)))
-    m = re.search(r"\b(\d{1,3})\s+or\s+(?:fewer|less|lower)\b", s)
+    m = re.search(r"\b(\d{1,3})\s*%?\s+or\s+(?:fewer|less|lower)\b", s)
     if m:
         return (0.0, float(m.group(1)))
     return None
