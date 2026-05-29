@@ -22,7 +22,11 @@ async function get<T>(path: string, params?: Record<string, string | undefined>)
         Object.fromEntries(Object.entries(params).filter(([_, v]) => v !== undefined)) as Record<string, string>
       ).toString()
     : "";
-  const r = await fetch(`${BASE}${path}${qs}`);
+  // `no-store`: this data is admin-moderated (calls can be hidden/edited/added),
+  // so never read a stale copy from the browser's HTTP cache — always hit the
+  // network. The origin sends `Cache-Control: no-store` too; this is the belt to
+  // that suspenders, and also defeats iOS standalone web-app caching quirks.
+  const r = await fetch(`${BASE}${path}${qs}`, { cache: "no-store" });
   if (!r.ok) throw new Error(`${r.status} ${path}`);
   return (await r.json()) as T;
 }

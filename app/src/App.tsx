@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { NavLink, Route, Routes } from "react-router-dom";
 import { Scoreboard } from "./pages/Scoreboard";
 import { Calls } from "./pages/Calls";
@@ -29,6 +30,27 @@ const NAV = [
 ];
 
 export default function App() {
+  // Refetch-on-resume. Pages fetch their data only on mount, and the API is
+  // admin-moderated (calls get hidden/edited/added), so a phone "home-screen"
+  // web app that's been backgrounded would keep showing its pre-background
+  // snapshot when reopened. When the tab comes back visible after a real idle
+  // gap, reload so every view pulls a fresh copy. (Quick app-switches < 30s are
+  // ignored so we don't reload out from under an active user.)
+  useEffect(() => {
+    let hiddenAt = 0;
+    const onVis = () => {
+      if (document.visibilityState === "hidden") {
+        hiddenAt = Date.now();
+      } else if (document.visibilityState === "visible" && hiddenAt) {
+        const away = Date.now() - hiddenAt;
+        hiddenAt = 0;
+        if (away > 30_000) window.location.reload();
+      }
+    };
+    document.addEventListener("visibilitychange", onVis);
+    return () => document.removeEventListener("visibilitychange", onVis);
+  }, []);
+
   return (
     <div className="min-h-screen flex flex-col">
       {/* Top ribbon — prominent link to the official show */}
