@@ -33,25 +33,29 @@ export function Admin() {
   const [body, setBody] = useState("");
   const [scopeType, setScopeType] = useState("general");
   const [scopeId, setScopeId] = useState("");
+  // "checking" until we know if this visitor is authorized — by the Google SSO
+  // gate (cookie, no token needed) OR a pasted bearer token. Only "denied"
+  // (neither) shows the token form.
+  const [access, setAccess] = useState<"checking" | "ok" | "denied">("checking");
 
   useEffect(() => {
-    if (!token) return;
-    fetch("/api/admin/notes", { headers: { authorization: `Bearer ${token}` } })
+    // Probe authorization: the SSO gate's cookie authorizes us with NO token; a
+    // pasted bearer token also works. 401 = neither → show the token form.
+    const headers: Record<string, string> = token ? { authorization: `Bearer ${token}` } : {};
+    fetch("/api/admin/notes", { headers })
       .then((r) => {
-        if (!r.ok) throw new Error(r.status === 401 ? "Bad token" : `HTTP ${r.status}`);
+        if (r.status === 401) { setAccess("denied"); return null; }
+        if (!r.ok) throw new Error(`HTTP ${r.status}`);
         return r.json();
       })
-      .then(setNotes)
-      .catch((e) => {
-        setErr(String(e));
-        if (String(e).includes("Bad token")) clearToken();
-      });
+      .then((data) => { if (data) { setNotes(data); setAccess("ok"); } })
+      .catch((e) => setErr(String(e)));
     // Unresolved markets — non-fatal if it 404s on older deploys.
-    fetch("/api/admin/unresolved-markets", { headers: { authorization: `Bearer ${token}` } })
+    fetch("/api/admin/unresolved-markets", { headers })
       .then((r) => (r.ok ? r.json() : []))
       .then(setUnresolved)
       .catch(() => setUnresolved([]));
-  }, [token, clearToken]);
+  }, [token]);
 
   async function saveNote() {
     if (!body.trim()) return;
@@ -80,12 +84,15 @@ export function Admin() {
     setNotes((cur) => cur?.filter((n) => n.id !== id) ?? null);
   }
 
-  if (!token) {
+  if (access === "checking") {
+    return <div className="max-w-md mx-auto mt-12 text-sm text-[var(--color-text-muted)]">Checking access…</div>;
+  }
+  if (access === "denied") {
     return (
       <div className="max-w-md mx-auto space-y-4 mt-12">
         <h1 className="text-2xl font-semibold">Admin</h1>
         <p className="text-sm text-[var(--color-text-muted)]">
-          Paste your bearer token. It stays in browser storage only.
+          Sign in with Google at the gate — or paste a bearer token (break-glass; stays in browser storage only).
         </p>
         <input
           type="password"

@@ -109,13 +109,19 @@ function applyCallAdmin(wdb: Database.Database, callId: number): void {
 }
 
 function requireAdmin(req: Request, res: Response, next: NextFunction): void {
-  const auth = req.header("authorization") ?? "";
-  const token = auth.replace(/^Bearer\s+/i, "");
-  if (!ADMIN_TOKEN || token !== ADMIN_TOKEN) {
-    res.status(401).json({ error: "unauthorized" });
+  // Primary gate: the SSO proxy (oauth2-proxy + nginx) signs the visitor in with
+  // Google and vouches the email via X-Auth-Request-Email — set ONLY by nginx on
+  // the gated /api/admin/ location after a successful auth (nginx overwrites any
+  // client value, and this API listens on 127.0.0.1 so it's unreachable except
+  // through nginx). A non-empty value is proof of an allow-listed admin.
+  const gateEmail = (req.header("x-auth-request-email") ?? "").trim();
+  // Fallback: the shared bearer token (break-glass / non-gated access).
+  const token = (req.header("authorization") ?? "").replace(/^Bearer\s+/i, "");
+  if (gateEmail || (ADMIN_TOKEN && token === ADMIN_TOKEN)) {
+    next();
     return;
   }
-  next();
+  res.status(401).json({ error: "unauthorized" });
 }
 
 router.post("/reload", requireAdmin, (_req, res) => {
