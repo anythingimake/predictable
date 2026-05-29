@@ -49,7 +49,11 @@ export function formatCents(n: number | null | undefined, digits = 0): string {
 /**
  * Public URL for a market on its source exchange so users can go place/inspect
  * the bet themselves.
- *   - Polymarket: ticker IS the event slug → polymarket.com/event/{slug}
+ *   - Polymarket: link to the EVENT page → polymarket.com/event/{event_slug}.
+ *     The market `ticker` is the per-candidate MARKET slug, which 404s for
+ *     multi-candidate events (e.g. a primary with one market per candidate), so
+ *     we must use the event slug from meta_json. Fall back to ticker only if
+ *     no event slug was captured (single-market events, where they're equal).
  *   - Kalshi: deep per-market URLs are unstable; link to the series page
  *     (first dash-delimited segment of the ticker, e.g. KXTXRSENRUNOFFMOV).
  *   - PredictIt: no clean per-market slug we capture → null.
@@ -57,10 +61,11 @@ export function formatCents(n: number | null | undefined, digits = 0): string {
 export function marketUrl(
   source: string | null | undefined,
   ticker: string | null | undefined,
+  eventSlug?: string | null,
 ): string | null {
   if (!source || !ticker) return null;
   const s = source.trim().toLowerCase();
-  if (s === "polymarket") return `https://polymarket.com/event/${ticker}`;
+  if (s === "polymarket") return `https://polymarket.com/event/${eventSlug || ticker}`;
   if (s === "kalshi") {
     const series = ticker.split("-")[0].toLowerCase();
     return series ? `https://kalshi.com/markets/${series}` : null;

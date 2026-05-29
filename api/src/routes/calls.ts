@@ -52,6 +52,7 @@ router.get("/:id", (req, res) => {
            e.youtube_id, e.substack_slug, e.audio_url, e.duration_sec,
            m.source AS market_source, m.ticker AS market_ticker, m.question AS market_question,
            m.current_price AS market_current_price,
+           json_extract(m.meta_json, '$.event_slug') AS market_event_slug,
            (SELECT body FROM admin_notes
               WHERE scope_type = 'call' AND scope_id = CAST(c.id AS TEXT)
               ORDER BY updated_at DESC LIMIT 1) AS admin_note

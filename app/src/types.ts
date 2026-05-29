@@ -42,6 +42,8 @@ export interface Call {
   tags?: string[];
   market_source?: string | null;
   market_ticker?: string | null;
+  /** Polymarket EVENT slug (from meta_json) — the correct slug for the public event URL. */
+  market_event_slug?: string | null;
   market_question?: string | null;
   /** YES-side market price in cents (0-100) from latest price snapshot. */
   market_current_price?: number | null;
@@ -107,6 +109,8 @@ export interface Market {
   resolved: 0 | 1;
   resolution: string | null;
   current_price: number | null;
+  /** Polymarket EVENT slug (from meta_json) for the public event URL. */
+  event_slug?: string | null;
 }
 
 export interface Comment {

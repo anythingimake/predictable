@@ -38,9 +38,9 @@ export function MarketDetail() {
           {data.source} · <code className="font-mono">{data.ticker}</code>
         </div>
         <h1 className="text-xl md:text-2xl font-semibold mt-1">{data.question}</h1>
-        {marketUrl(data.source, data.ticker) && (
+        {marketUrl(data.source, data.ticker, data.event_slug) && (
           <a
-            href={marketUrl(data.source, data.ticker)!}
+            href={marketUrl(data.source, data.ticker, data.event_slug)!}
             target="_blank"
             rel="noreferrer"
             className="tap mt-2 inline-flex items-center gap-1 text-sm text-[var(--color-accent)]"

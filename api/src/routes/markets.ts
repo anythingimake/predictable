@@ -24,7 +24,7 @@ router.get("/", (req, res) => {
 });
 
 router.get("/:id", (req, res) => {
-  const market = db().prepare(`SELECT * FROM markets WHERE id = ?`).get(req.params.id) as any;
+  const market = db().prepare(`SELECT *, json_extract(meta_json, '$.event_slug') AS event_slug FROM markets WHERE id = ?`).get(req.params.id) as any;
   if (!market) return res.status(404).json({ error: "not_found" });
   const calls = db().prepare(`
     SELECT c.id, c.episode_id, c.side, c.conviction, c.status, c.realized_pct,

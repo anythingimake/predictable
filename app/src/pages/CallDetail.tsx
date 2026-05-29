@@ -88,9 +88,9 @@ export function CallDetail() {
             </>
           )}
         </p>
-        {marketUrl(data.market_source, data.market_ticker) && (
+        {marketUrl(data.market_source, data.market_ticker, data.market_event_slug) && (
           <a
-            href={marketUrl(data.market_source, data.market_ticker)!}
+            href={marketUrl(data.market_source, data.market_ticker, data.market_event_slug)!}
             target="_blank"
             rel="noreferrer"
             className="tap mt-2 inline-flex items-center gap-1 text-sm text-[var(--color-accent)]"
