@@ -18,7 +18,7 @@ router.get("/", (_req, res) => {
       SUM(CASE WHEN ${SETTLED} THEN 1 ELSE 0 END) AS resolved_calls,
       SUM(CASE WHEN ${SETTLED} AND realized_pct > 0 THEN 1 ELSE 0 END) AS hit_count
     FROM calls
-    WHERE ${ACTIONABLE}
+    WHERE ${ACTIONABLE} AND COALESCE(hidden, 0) = 0
   `).get() as any;
   const hit_rate = totals.resolved_calls > 0 ? totals.hit_count / totals.resolved_calls : 0;
 
@@ -31,6 +31,7 @@ router.get("/", (_req, res) => {
            SUM(CASE WHEN ${SETTLED} AND realized_pct > 0 THEN 1 ELSE 0 END) AS hits,
            AVG(CASE WHEN ${SETTLED} THEN realized_pct END) AS avg_return_pct
     FROM calls
+    WHERE COALESCE(hidden, 0) = 0
     GROUP BY conviction
     ORDER BY CASE conviction
       WHEN 'play' THEN 1
@@ -53,7 +54,7 @@ router.get("/", (_req, res) => {
            SUM(CASE WHEN c.${SETTLED} AND c.realized_pct > 0 THEN 1 ELSE 0 END) AS hits
     FROM calls c
     LEFT JOIN markets m ON m.id = c.market_id
-    WHERE c.${ACTIONABLE}
+    WHERE c.${ACTIONABLE} AND COALESCE(c.hidden, 0) = 0
     GROUP BY COALESCE(m.category, 'unknown')
   `).all();
 
@@ -66,6 +67,7 @@ router.get("/", (_req, res) => {
     FROM calls c
     JOIN episodes e ON e.id = c.episode_id
     WHERE c.${ACTIONABLE} AND ${SETTLED} AND c.realized_pct IS NOT NULL AND c.realized_pct > 0
+      AND COALESCE(c.hidden, 0) = 0
     ORDER BY c.realized_pct DESC
     LIMIT 10
   `).all();
@@ -77,6 +79,7 @@ router.get("/", (_req, res) => {
     FROM calls c
     JOIN episodes e ON e.id = c.episode_id
     WHERE c.${ACTIONABLE} AND ${SETTLED} AND c.realized_pct IS NOT NULL AND c.realized_pct < 0
+      AND COALESCE(c.hidden, 0) = 0
     ORDER BY c.realized_pct
     LIMIT 5
   `).all();

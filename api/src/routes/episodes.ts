@@ -25,7 +25,7 @@ router.get("/:id", (req, res) => {
   if (!ep) return res.status(404).json({ error: "not_found" });
   const calls = db().prepare(`
     SELECT id, market_hint, side, conviction, speaker, status, realized_pct, first_event_ts
-    FROM calls WHERE episode_id = ? ORDER BY first_event_ts NULLS LAST
+    FROM calls WHERE episode_id = ? AND COALESCE(hidden, 0) = 0 ORDER BY first_event_ts NULLS LAST
   `).all(req.params.id);
   const mentions = db().prepare(`
     SELECT id, market_hint, timestamp_sec, directional, quote

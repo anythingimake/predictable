@@ -16,11 +16,13 @@
 #   6. probe_resolutions — refresh market resolution + current price
 #   7. price_snapshot   — daily price candles for live + resolved markets
 #   8. scoring          — hard+soft score, refresh scoreboard_snapshot
-#   9. pm2 restart      — bounce API so better-sqlite3 reopens the DB
+#   9. apply_admin      — stamp admin overrides/hides/manual calls (call_admin → calls)
+#  10. pm2 restart      — bounce API so better-sqlite3 reopens the DB
 #
 # Steps 2 + 4 + 5 are SAFE TO SKIP between runs (idempotent), so missing-data
 # fixes happen on the next tick. Per-step `|| echo "X failed"` ensures one
-# bad source (e.g., YouTube IP-banned) doesn't kill the chain.
+# bad source (e.g., YouTube IP-banned) doesn't kill the chain. apply_admin MUST
+# stay after scoring (scoring resets status/realized_pct every run).
 
 set -e
 
@@ -77,6 +79,10 @@ PREDICTABLE_DB="$DB" python3 -m pipeline.enrich.price_snapshot 2>&1 || echo "pri
 
 # Hard+soft score, refresh today's scoreboard_snapshot.
 PREDICTABLE_DB="$DB" python3 -m pipeline.enrich.scoring 2>&1 || echo "scoring failed"
+
+# Apply admin overrides/hides/manual calls (call_admin -> calls). MUST run after
+# scoring, which resets status/realized_pct for every call; admin wins last.
+PREDICTABLE_DB="$DB" python3 -m pipeline.enrich.apply_admin 2>&1 || echo "apply_admin failed"
 
 # Bounce the API so better-sqlite3 reopens the file
 $PM2 restart predictable-api --update-env >/dev/null 2>&1 || $PM2 restart predictable-api >/dev/null 2>&1 || echo "pm2 restart failed"

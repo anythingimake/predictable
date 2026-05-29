@@ -13,7 +13,7 @@ import sys
 import time
 import traceback
 
-from pipeline.enrich import market_resolver, price_snapshot, scoring
+from pipeline.enrich import apply_admin, market_resolver, price_snapshot, scoring
 from pipeline.paths import SQLITE
 
 
@@ -25,6 +25,9 @@ def main() -> int:
         ("market_resolver", market_resolver.resolve_all),
         ("price_snapshot", price_snapshot.snapshot_all),
         ("scoring", scoring.score_all),
+        # MUST run after scoring (scoring resets status/realized_pct each run);
+        # admin is the source of truth that wins last.
+        ("apply_admin", apply_admin.apply_all),
     ):
         t0 = time.monotonic()
         print(f"[enrich] --- {name} ---")

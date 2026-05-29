@@ -257,6 +257,7 @@ def load_calls(conn) -> int:
     extract_dir = INGEST_RAW / "extract"
     if not extract_dir.exists():
         return 0
+    _ensure_calls_columns(conn)  # admin `hidden` column (re-stamped by apply_admin)
     files = sorted(extract_dir.glob("*-calls.json"))
     total_calls = 0
     for fp in files:
@@ -427,6 +428,18 @@ def _ensure_effective_columns(conn) -> None:
     for col, typ in _EFFECTIVE_COLS.items():
         if col not in existing:
             conn.execute(f"ALTER TABLE markets ADD COLUMN {col} {typ}")
+
+
+def _ensure_calls_columns(conn) -> None:
+    """Self-migrate the admin `calls.hidden` column onto pre-existing DBs (same
+    reason as _ensure_effective_columns — CREATE TABLE IF NOT EXISTS won't alter
+    an existing table). `hidden` is owned by enrich/apply_admin, NOT preserved
+    across reload: load_calls reinserts with the default 0 and apply_admin
+    re-stamps it later in the same refresh. Idempotent."""
+    existing = {r["name"] for r in conn.execute("PRAGMA table_info(calls)")}
+    if "hidden" not in existing:
+        conn.execute("ALTER TABLE calls ADD COLUMN hidden INTEGER NOT NULL DEFAULT 0")
+    conn.execute("CREATE INDEX IF NOT EXISTS idx_calls_hidden ON calls(hidden)")
 
 
 def load_resolutions(conn) -> int:
@@ -755,6 +768,7 @@ def main() -> int:
 
     init_db()
     with connect() as conn:
+        _ensure_calls_columns(conn)  # admin `hidden` column on pre-existing DBs
         n_eps = load_episodes(conn)
         print(f"[load] episodes upserted: {n_eps}")
         if not args.episodes_only:

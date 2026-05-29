@@ -77,6 +77,7 @@ CREATE TABLE IF NOT EXISTS calls (
   stu_claimed_pct REAL,
   notes           TEXT,
   tags            TEXT NOT NULL DEFAULT '[]',  -- JSON array of broad + specific tag strings
+  hidden          INTEGER NOT NULL DEFAULT 0,  -- admin-hidden from public views; stamped by enrich/apply_admin
   created_at      DATETIME DEFAULT CURRENT_TIMESTAMP,
   FOREIGN KEY (market_id) REFERENCES markets(id),
   FOREIGN KEY (episode_id) REFERENCES episodes(id)
@@ -224,6 +225,35 @@ CREATE TABLE IF NOT EXISTS admin_notes (
   updated_at      DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
+-- Admin call overrides + manual calls. DB-only side table (NOT in git, like
+-- admin_notes); pipeline.enrich.apply_admin stamps these onto `calls` AFTER the
+-- pipeline runs (load wipes+reinserts, scoring resets), so admin always wins.
+-- One row per calls.id it governs. OVERRIDE row: call_id = an existing pipeline
+-- call; non-NULL columns override that call's fields. MANUAL row (is_manual=1):
+-- call_id is a deterministic id minted by the API and the row carries the full
+-- authored call. The free-text admin note is NOT here — it reuses admin_notes
+-- (scope_type='call'), keeping calls.notes free for the resolver 'pin:' channel.
+CREATE TABLE IF NOT EXISTS call_admin (
+  call_id         INTEGER PRIMARY KEY,         -- governs calls.id (pipeline id OR minted manual id)
+  is_manual       INTEGER NOT NULL DEFAULT 0,  -- 1 = admin-created call
+  hidden          INTEGER NOT NULL DEFAULT 0,
+  -- call-level OVERRIDES (NULL = leave pipeline value alone); also the authored
+  -- values for a manual call:
+  market_hint     TEXT,
+  side            TEXT,                         -- yes|no|over|under
+  conviction      TEXT,                         -- play|solid|flyer|watch|opinion|pass
+  status          TEXT,                         -- open|closed|resolved
+  realized_pct    REAL,
+  market_id       TEXT,                         -- admin-forced link
+  tags            TEXT,                         -- JSON array string
+  -- manual-only fields (ignored for override rows):
+  episode_id      TEXT,                         -- REQUIRED for manual (must exist in episodes)
+  entry_price     REAL,                         -- cents; drives hybrid outcome + synthesized entry event
+  first_event_ts  INTEGER,
+  created_at      DATETIME DEFAULT CURRENT_TIMESTAMP,
+  updated_at      DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
 CREATE TABLE IF NOT EXISTS scoreboard_snapshots (
   snapshot_date   DATE PRIMARY KEY,
   total_calls     INTEGER,
@@ -250,6 +280,10 @@ CREATE INDEX IF NOT EXISTS idx_calls_episode ON calls(episode_id);
 CREATE INDEX IF NOT EXISTS idx_calls_market ON calls(market_id);
 CREATE INDEX IF NOT EXISTS idx_calls_status ON calls(status);
 CREATE INDEX IF NOT EXISTS idx_calls_conviction ON calls(conviction);
+-- NB: idx_calls_hidden is created by load._ensure_calls_columns AFTER the column
+-- is self-migrated onto pre-existing DBs (can't index `hidden` here — init_db
+-- runs this whole script, and CREATE TABLE IF NOT EXISTS won't add the column
+-- to an already-existing calls table, so indexing it here would fail).
 CREATE INDEX IF NOT EXISTS idx_events_call ON call_events(call_id);
 CREATE INDEX IF NOT EXISTS idx_events_episode ON call_events(episode_id);
 CREATE INDEX IF NOT EXISTS idx_snapshots_market_date ON market_price_snapshots(market_id, snapshot_date);

@@ -95,11 +95,11 @@ router.get("/calendar", (_req, res) => {
                   WHEN m.resolution_date < date('now') AND m.current_price <= 1  THEN 'no'
                   ELSE NULL END) AS resolution,
            m.effective_confidence, m.effective_source,
-           (SELECT COUNT(*) FROM calls WHERE market_id = m.id AND status = 'open') AS open_call_count,
-           (SELECT COUNT(*) FROM calls WHERE market_id = m.id) AS call_count,
+           (SELECT COUNT(*) FROM calls WHERE market_id = m.id AND status = 'open' AND COALESCE(hidden,0)=0) AS open_call_count,
+           (SELECT COUNT(*) FROM calls WHERE market_id = m.id AND COALESCE(hidden,0)=0) AS call_count,
            -- Representative call so the calendar can deep-link: a single-call
            -- market goes straight to that call; multi-call goes to the market.
-           (SELECT id FROM calls WHERE market_id = m.id
+           (SELECT id FROM calls WHERE market_id = m.id AND COALESCE(hidden,0)=0
               ORDER BY first_event_ts DESC, id DESC LIMIT 1) AS call_id,
            CASE
              -- Exchange has formally settled.
@@ -116,7 +116,7 @@ router.get("/calendar", (_req, res) => {
            END AS status
     FROM markets m
     WHERE COALESCE(m.effective_event_date, m.resolution_date) IS NOT NULL
-      AND EXISTS (SELECT 1 FROM calls WHERE market_id = m.id AND market_id IS NOT NULL)
+      AND EXISTS (SELECT 1 FROM calls WHERE market_id = m.id AND market_id IS NOT NULL AND COALESCE(hidden,0)=0)
     ORDER BY COALESCE(m.effective_event_date, m.resolution_date)
   `).all();
   res.json(rows);
@@ -154,7 +154,7 @@ router.get("/search", (req, res) => {
     SELECT c.id, c.market_hint, c.episode_id,
            COALESCE(e.substack_title, e.megaphone_title) AS episode_title
     FROM calls c JOIN episodes e ON e.id = c.episode_id
-    WHERE c.market_hint LIKE ? OR c.notes LIKE ?
+    WHERE (c.market_hint LIKE ? OR c.notes LIKE ?) AND COALESCE(c.hidden,0)=0
     LIMIT 20
   `).all(pat, pat);
   res.json({ episodes, calls });

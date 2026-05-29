@@ -45,6 +45,8 @@ export interface Call {
   market_question?: string | null;
   /** YES-side market price in cents (0-100) from latest price snapshot. */
   market_current_price?: number | null;
+  /** Admin-hidden from public views (only ever set on admin endpoints). */
+  hidden?: number;
 }
 
 export interface CallEvent {
@@ -91,6 +93,8 @@ export interface CallDetail extends Call {
   duration_sec?: number | null;
   /** Inherited from Call.tags but the detail endpoint also includes it. */
   tags?: string[];
+  /** Latest admin note for this call (scope_type='call'), surfaced publicly. */
+  admin_note?: string | null;
 }
 
 export interface Market {

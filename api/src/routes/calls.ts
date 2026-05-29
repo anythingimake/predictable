@@ -10,7 +10,7 @@ const MAX_CALLS_LIMIT = 2000;
 
 router.get("/", (req, res) => {
   const { conviction, status, market, category, market_source, tag } = req.query as Record<string, string | undefined>;
-  const clauses: string[] = [];
+  const clauses: string[] = ["COALESCE(c.hidden, 0) = 0"]; // admin-hidden calls never shown publicly
   const params: (string | number)[] = [];
   if (conviction)    { clauses.push("c.conviction = ?");    params.push(conviction); }
   if (status)        { clauses.push("c.status = ?");        params.push(status); }
@@ -51,11 +51,14 @@ router.get("/:id", (req, res) => {
     SELECT c.*, e.publish_date, e.megaphone_title AS episode_title,
            e.youtube_id, e.substack_slug, e.audio_url, e.duration_sec,
            m.source AS market_source, m.ticker AS market_ticker, m.question AS market_question,
-           m.current_price AS market_current_price
+           m.current_price AS market_current_price,
+           (SELECT body FROM admin_notes
+              WHERE scope_type = 'call' AND scope_id = CAST(c.id AS TEXT)
+              ORDER BY updated_at DESC LIMIT 1) AS admin_note
     FROM calls c
     JOIN episodes e ON e.id = c.episode_id
     LEFT JOIN markets m ON m.id = c.market_id
-    WHERE c.id = ?
+    WHERE c.id = ? AND COALESCE(c.hidden, 0) = 0
   `).get(req.params.id) as Record<string, unknown> | undefined;
   if (!call) return res.status(404).json({ error: "not_found" });
 

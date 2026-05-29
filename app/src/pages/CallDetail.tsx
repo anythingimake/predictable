@@ -101,6 +101,13 @@ export function CallDetail() {
         {data.tags && data.tags.length > 0 && <TagChips tags={data.tags} className="mt-2" />}
       </header>
 
+      {data.admin_note && (
+        <div className="rounded border border-[var(--color-border)] bg-[var(--color-bg-elev)] px-3 py-2 text-sm">
+          <span className="text-xs uppercase tracking-wide text-[var(--color-text-faint)] mr-2">Editor's note</span>
+          <span className="text-[var(--color-text-muted)] whitespace-pre-wrap">{data.admin_note}</span>
+        </div>
+      )}
+
       {(() => {
         // Stu's exit cents = latest full `exit` event's price on his side.
         // `trim` is excluded — a partial trim isn't leaving the position (the

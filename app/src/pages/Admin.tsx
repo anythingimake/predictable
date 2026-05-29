@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useStore } from "../store";
 import { formatDateTimeSafe } from "../lib/format";
+import { AdminCalls } from "./AdminCalls";
 
 interface Note {
   id: number;
@@ -113,6 +114,9 @@ export function Admin() {
       </div>
       {err && <p className="text-sm text-red-400">{err}</p>}
 
+      <AdminCalls token={token} />
+
+      <h2 className="text-base font-medium pt-2">Notes</h2>
       <div className="rounded border border-[var(--color-border)] bg-[var(--color-bg-elev)] p-4 space-y-3">
         <div className="grid grid-cols-2 gap-2">
           <select

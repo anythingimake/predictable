@@ -32,7 +32,7 @@ router.get("/:id", (req, res) => {
            COALESCE(e.substack_title, e.megaphone_title) AS episode_title
     FROM calls c
     JOIN episodes e ON e.id = c.episode_id
-    WHERE c.market_id = ? ORDER BY e.publish_date
+    WHERE c.market_id = ? AND COALESCE(c.hidden, 0) = 0 ORDER BY e.publish_date
   `).all(req.params.id);
   const mentions = db().prepare(`
     SELECT m.id, m.episode_id, m.timestamp_sec, m.directional, m.quote,
