@@ -11,6 +11,9 @@ interface UIState {
     status?: string[];
     market_source?: string[];
     side?: string[];
+    // Who made the call — "stu" or "guest:<Name>". Match-any. Lets you isolate
+    // Stu's own bets vs a recurring guest's (e.g. Dan Andros).
+    speaker?: string[];
     // Result = derived win/loss among resolved/closed calls (realized_pct sign).
     // Values: 'win' | 'loss'. Match-any.
     result?: string[];

@@ -3,10 +3,12 @@ import { Link } from "react-router-dom";
 import { api } from "../api";
 import type { Call, Conviction } from "../types";
 import { ConvictionBadge } from "../components/ConvictionBadge";
+import { SpeakerBadge } from "../components/SpeakerBadge";
 import { MultiSelect } from "../components/MultiSelect";
 import { TagChips } from "../components/TagChips";
 import { useStore } from "../store";
 import { formatPct } from "../lib/format";
+import { parseSpeaker } from "../lib/speaker";
 import { ErrorBanner, Loading } from "./Scoreboard";
 
 const TIERS: Array<{ value: Conviction; label: string }> = [
@@ -96,6 +98,7 @@ export function Calls() {
     const statuses = filter.status ?? [];
     const sources = filter.market_source ?? [];
     const sides = filter.side ?? [];
+    const speakers = filter.speaker ?? [];
     const tiers = filter.conviction ?? [];
     const results = filter.result ?? [];
     const tagsFilter = filter.tags ?? [];
@@ -110,6 +113,7 @@ export function Calls() {
       if (statuses.length > 0 && !statuses.includes(c.status)) return false;
       if (sources.length > 0 && !sources.includes(c.market_source ?? "")) return false;
       if (sides.length > 0 && !sides.includes(c.side)) return false;
+      if (speakers.length > 0 && !speakers.includes(c.speaker)) return false;
       if (tiers.length > 0 && !tiers.includes(c.conviction)) return false;
       // Win/loss is only meaningful once realized; an unrealized call passes
       // neither 'win' nor 'loss', so it's filtered out when a result is selected.
@@ -169,6 +173,22 @@ export function Calls() {
   const sideOptions = SIDES.filter((o) => presentValues.sides.has(o.value));
   const sourceOptions = SOURCES.filter((o) => presentValues.sources.has(o.value));
 
+  // Speakers present in the data, Stu first then guests A→Z. The Speaker filter
+  // only renders when there's more than one voice (i.e. a guest call exists), so
+  // the control stays hidden on a Stu-only dataset.
+  const speakerOptions = useMemo(() => {
+    const present = new Set<string>();
+    for (const c of calls ?? []) if (c.speaker) present.add(c.speaker);
+    return Array.from(present)
+      .sort((a, b) => {
+        const pa = parseSpeaker(a), pb = parseSpeaker(b);
+        const aStu = pa.type === "stu", bStu = pb.type === "stu";
+        if (aStu !== bStu) return aStu ? -1 : 1;
+        return pa.label.localeCompare(pb.label);
+      })
+      .map((s) => ({ value: s, label: parseSpeaker(s).label }));
+  }, [calls]);
+
   const grouped = useMemo(() => {
     if (!filtered) return [];
     const map = new Map<string, Call[]>();
@@ -184,6 +204,7 @@ export function Calls() {
     (filter.status?.length ?? 0) +
     (filter.market_source?.length ?? 0) +
     (filter.side?.length ?? 0) +
+    (filter.speaker?.length ?? 0) +
     (filter.conviction?.length ?? 0) +
     (filter.result?.length ?? 0) +
     (filter.tags?.length ?? 0) +
@@ -273,6 +294,14 @@ export function Calls() {
               onChange={(v) => setFilter({ ...filter, market_source: v.length ? v : undefined })}
             />
           )}
+          {speakerOptions.length > 1 && (
+            <MultiSelect
+              label="Speaker"
+              options={speakerOptions}
+              selected={filter.speaker ?? []}
+              onChange={(v) => setFilter({ ...filter, speaker: v.length ? v : undefined })}
+            />
+          )}
           {sideOptions.length > 0 && (
             <MultiSelect
               label="Side"
@@ -340,6 +369,7 @@ export function Calls() {
                     <ConvictionBadge conviction={c.conviction} showLabel={false} />
                     <span className="font-medium truncate">{c.market_hint}</span>
                     <span className="text-xs text-[var(--color-text-faint)]">{c.side.toUpperCase()}</span>
+                    <SpeakerBadge speaker={c.speaker} />
                   </div>
                   <div className="text-xs text-[var(--color-text-muted)] mt-1 truncate">
                     {c.episode_title}

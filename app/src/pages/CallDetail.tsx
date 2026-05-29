@@ -6,6 +6,7 @@ import { ConvictionBadge } from "../components/ConvictionBadge";
 import { BackLink } from "../components/BackLink";
 import { TagChips } from "../components/TagChips";
 import { formatCents, formatDateSafe, formatPct, marketUrl, stuSideCents, unrealizedPct } from "../lib/format";
+import { parseSpeaker } from "../lib/speaker";
 import { ErrorBanner, Loading } from "./Scoreboard";
 
 // Recharts is ~120 KB gzipped — defer it past first paint of CallDetail.
@@ -64,7 +65,10 @@ export function CallDetail() {
           {data.size_disclosed && (
             <span className="text-xs text-[var(--color-text-muted)]">size: {data.size_disclosed}</span>
           )}
-          <span className="text-xs text-[var(--color-text-faint)]">· {data.speaker}</span>
+          <span className="text-xs text-[var(--color-text-faint)]">
+            · {parseSpeaker(data.speaker).label}
+            {parseSpeaker(data.speaker).type === "guest" && " (guest)"}
+          </span>
         </div>
         <h1 className="text-xl md:text-2xl font-semibold">{data.market_hint}</h1>
         <p className="text-sm text-[var(--color-text-muted)] mt-1">
