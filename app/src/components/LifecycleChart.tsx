@@ -26,6 +26,9 @@ function useIsMobile(): boolean {
   return isMobile;
 }
 
+const YES_COLOR = "var(--color-accent)"; // blue
+const NO_COLOR = "#f59e0b";              // amber — opposing line
+
 const EVENT_COLOR: Record<CallEvent["event_type"], string> = {
   entry: "var(--color-tier-play)",
   add: "var(--color-tier-solid)",
@@ -40,11 +43,20 @@ export function LifecycleChart({ priceHistory, events, height }: Props) {
   const chartHeight = height ?? (isMobile ? 180 : 240);
   // Snapshots are stored in cents (0..100). Some legacy rows may still be in
   // dollars (0..1); normalize defensively so the Y-axis can't blow up to 9999¢.
-  const series = priceHistory.map((p) => ({
-    date: p.snapshot_date,
-    ts: new Date(p.snapshot_date).getTime(),
-    cents: p.price <= 1.5 ? p.price * 100 : p.price,
-  }));
+  // Every market is a binary contract, so plot YES and its NO mirror (100−YES)
+  // as two opposing lines (Polymarket-style).
+  const series = priceHistory.map((p) => {
+    const cents = p.price <= 1.5 ? p.price * 100 : p.price;
+    return {
+      date: p.snapshot_date,
+      ts: new Date(p.snapshot_date).getTime(),
+      cents,                 // YES
+      no: 100 - cents,       // NO (mirror)
+    };
+  });
+  const last = series[series.length - 1];
+  const yesNow = last ? Math.round(last.cents) : null;
+  const noNow = last ? Math.round(last.no) : null;
 
   // Events carry no wall-clock date (timestamp_sec is seconds-into-episode),
   // so place markers by type across the price domain rather than guessing an
@@ -70,8 +82,23 @@ export function LifecycleChart({ priceHistory, events, height }: Props) {
   }
 
   return (
-    <ResponsiveContainer width="100%" height={chartHeight}>
-      <LineChart data={series} margin={{ top: 10, right: 10, left: 10, bottom: 10 }}>
+    <div>
+      {yesNow != null && (
+        <div className="flex items-center gap-4 mb-2 text-xs">
+          <span className="inline-flex items-center gap-1.5">
+            <span className="inline-block w-2 h-2 rounded-full" style={{ background: YES_COLOR }} />
+            <span className="text-[var(--color-text-muted)]">YES</span>
+            <span className="font-semibold tabular-nums">{yesNow}¢</span>
+          </span>
+          <span className="inline-flex items-center gap-1.5">
+            <span className="inline-block w-2 h-2 rounded-full" style={{ background: NO_COLOR }} />
+            <span className="text-[var(--color-text-muted)]">NO</span>
+            <span className="font-semibold tabular-nums">{noNow}¢</span>
+          </span>
+        </div>
+      )}
+      <ResponsiveContainer width="100%" height={chartHeight}>
+        <LineChart data={series} margin={{ top: 10, right: 10, left: 10, bottom: 10 }}>
         <XAxis
           dataKey="ts"
           type="number"
@@ -91,17 +118,13 @@ export function LifecycleChart({ priceHistory, events, height }: Props) {
         />
         <Tooltip
           contentStyle={{ background: "var(--color-surface)", border: "1px solid var(--color-border)" }}
-          formatter={(value: number) => [`${value.toFixed(1)}¢`, "Price"]}
+          formatter={(value: number, name: string) => [`${value.toFixed(1)}¢`, name]}
           labelFormatter={(ts: number) => new Date(ts).toLocaleDateString()}
         />
-        <Line
-          type="monotone"
-          dataKey="cents"
-          stroke="var(--color-accent)"
-          strokeWidth={2}
-          dot={false}
-          isAnimationActive={false}
-        />
+        <Line type="monotone" dataKey="cents" name="YES" stroke={YES_COLOR} strokeWidth={2} dot={false} isAnimationActive={false} />
+        <Line type="monotone" dataKey="no" name="NO" stroke={NO_COLOR} strokeWidth={2} dot={false} isAnimationActive={false} />
+        {last && <ReferenceDot x={last.ts} y={last.cents} r={4} fill={YES_COLOR} stroke="var(--color-bg)" strokeWidth={1.5} />}
+        {last && <ReferenceDot x={last.ts} y={last.no} r={4} fill={NO_COLOR} stroke="var(--color-bg)" strokeWidth={1.5} />}
         {eventDots.map((e, i) => (
           <ReferenceDot
             key={i}
@@ -114,7 +137,8 @@ export function LifecycleChart({ priceHistory, events, height }: Props) {
           />
         ))}
       </LineChart>
-    </ResponsiveContainer>
+      </ResponsiveContainer>
+    </div>
   );
 }
 
