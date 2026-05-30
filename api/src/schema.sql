@@ -73,7 +73,12 @@ CREATE TABLE IF NOT EXISTS calls (
   size_disclosed  TEXT,
   speaker         TEXT DEFAULT 'stu',
   status          TEXT NOT NULL DEFAULT 'open',-- open | closed | resolved
-  realized_pct    REAL,
+  realized_pct    REAL,                        -- % return; NULL when not computable (no entry price)
+  won             INTEGER,                     -- outcome: 1=win, 0=loss, NULL=undetermined/open.
+                                               --   Set by scoring even when realized_pct is NULL (a
+                                               --   settled market tells us win/loss without an entry
+                                               --   price). Display-only — the scoreboard rates by
+                                               --   realized_pct, so no-return calls don't move the headline.
   stu_claimed_pct REAL,
   notes           TEXT,
   tags            TEXT NOT NULL DEFAULT '[]',  -- JSON array of broad + specific tag strings

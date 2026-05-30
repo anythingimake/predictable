@@ -41,6 +41,8 @@ def _ensure_calls_columns(conn) -> None:
     existing = {r["name"] for r in conn.execute("PRAGMA table_info(calls)")}
     if "hidden" not in existing:
         conn.execute("ALTER TABLE calls ADD COLUMN hidden INTEGER NOT NULL DEFAULT 0")
+    if "won" not in existing:
+        conn.execute("ALTER TABLE calls ADD COLUMN won INTEGER")
     conn.execute("CREATE INDEX IF NOT EXISTS idx_calls_hidden ON calls(hidden)")
 
 
@@ -166,6 +168,16 @@ def apply_call_admin(conn, call_id: int, stats: dict | None = None) -> None:
             "UPDATE calls SET market_id = ?, notes = ? WHERE id = ?",
             (row["market_id"], f"pin:no-auto-link (admin-forced {row['market_id']})", call_id),
         )
+
+    # --- C3. Keep `won` consistent with the FINAL realized_pct (a manual call or
+    # an admin realized_pct override may have changed it). A resolved-without-a-
+    # return call keeps realized_pct NULL → leave scoring's outcome-derived `won`.
+    conn.execute(
+        "UPDATE calls SET won = CASE "
+        "WHEN realized_pct IS NULL THEN won "
+        "WHEN realized_pct > 0 THEN 1 ELSE 0 END WHERE id = ?",
+        (call_id,),
+    )
 
     # --- D. Hidden ---
     conn.execute("UPDATE calls SET hidden = ? WHERE id = ?", (1 if row["hidden"] else 0, call_id))

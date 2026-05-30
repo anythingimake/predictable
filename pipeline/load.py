@@ -431,14 +431,18 @@ def _ensure_effective_columns(conn) -> None:
 
 
 def _ensure_calls_columns(conn) -> None:
-    """Self-migrate the admin `calls.hidden` column onto pre-existing DBs (same
-    reason as _ensure_effective_columns — CREATE TABLE IF NOT EXISTS won't alter
-    an existing table). `hidden` is owned by enrich/apply_admin, NOT preserved
-    across reload: load_calls reinserts with the default 0 and apply_admin
-    re-stamps it later in the same refresh. Idempotent."""
+    """Self-migrate the admin `calls.hidden` and `calls.won` columns onto
+    pre-existing DBs (same reason as _ensure_effective_columns — CREATE TABLE IF
+    NOT EXISTS won't alter an existing table). `hidden` is owned by
+    enrich/apply_admin and `won` by enrich/scoring; neither is preserved across
+    reload (load_calls reinserts with defaults and the enrich steps re-stamp them
+    later in the same refresh). Idempotent."""
     existing = {r["name"] for r in conn.execute("PRAGMA table_info(calls)")}
     if "hidden" not in existing:
         conn.execute("ALTER TABLE calls ADD COLUMN hidden INTEGER NOT NULL DEFAULT 0")
+    if "won" not in existing:
+        # Nullable, no default: NULL = undetermined/open. Scoring sets 1/0.
+        conn.execute("ALTER TABLE calls ADD COLUMN won INTEGER")
     conn.execute("CREATE INDEX IF NOT EXISTS idx_calls_hidden ON calls(hidden)")
 
 

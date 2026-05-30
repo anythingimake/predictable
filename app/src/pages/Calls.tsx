@@ -394,6 +394,16 @@ export function Calls() {
                       {c.realized_pct > 0 ? "+" : ""}
                       {formatPct(c.realized_pct, 0)}
                     </span>
+                  ) : c.won != null ? (
+                    // Settled, but no entry price was stated → we know win/loss,
+                    // not the % return. Show the outcome instead of "open".
+                    <span
+                      className="font-semibold"
+                      style={{ color: c.won ? "var(--color-status-resolved-win)" : "var(--color-status-resolved-loss)" }}
+                      title="Resolved — return unknown (no entry price stated)"
+                    >
+                      {c.won ? "Won" : "Lost"}
+                    </span>
                   ) : (
                     <span className="text-[var(--color-text-faint)]">{c.status}</span>
                   )}

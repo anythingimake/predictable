@@ -187,9 +187,35 @@ export function CallDetail() {
             />
             <Stat
               label="Realized"
-              value={realized != null ? formatPct(realized, 1) : "—"}
-              accent={realized != null && realized > 0 ? "var(--color-tier-play)" : realized != null && realized < 0 ? "var(--color-tier-pass)" : undefined}
-              sublabel={stuClaimed != null ? `Stu: ${formatPct(stuClaimed, 0)}` : undefined}
+              value={
+                realized != null
+                  ? formatPct(realized, 1)
+                  : data.won != null
+                  ? data.won
+                    ? "Won"
+                    : "Lost"
+                  : "—"
+              }
+              accent={
+                realized != null
+                  ? realized > 0
+                    ? "var(--color-tier-play)"
+                    : realized < 0
+                    ? "var(--color-tier-pass)"
+                    : undefined
+                  : data.won != null
+                  ? data.won
+                    ? "var(--color-tier-play)"
+                    : "var(--color-tier-pass)"
+                  : undefined
+              }
+              sublabel={
+                realized == null && data.won != null
+                  ? "no entry price stated"
+                  : stuClaimed != null
+                  ? `Stu: ${formatPct(stuClaimed, 0)}`
+                  : undefined
+              }
             />
             <Stat label="Status" value={STATUS_LABEL[data.status] ?? data.status} />
           </section>

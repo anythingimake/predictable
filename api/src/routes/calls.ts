@@ -31,7 +31,7 @@ router.get("/", (req, res) => {
 
   const rows = db().prepare(`
     SELECT c.id, c.market_id, c.market_hint, c.episode_id, c.side, c.conviction,
-           c.size_disclosed, c.speaker, c.status, c.realized_pct, c.stu_claimed_pct,
+           c.size_disclosed, c.speaker, c.status, c.realized_pct, c.won, c.stu_claimed_pct,
            c.first_event_ts, c.tags,
            e.publish_date, e.megaphone_title AS episode_title,
            m.source AS market_source, m.ticker AS market_ticker, m.question AS market_question,

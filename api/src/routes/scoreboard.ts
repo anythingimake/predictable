@@ -6,6 +6,12 @@ const router = Router();
 // "Settled" = either market-resolved (hard) or Stu-closed (soft).
 const SETTLED = `status IN ('resolved','closed')`;
 
+// "Rated" = settled AND carrying a computable return. A call on a settled market
+// where Stu never stated an entry price is shown Won/Lost on its card but has
+// realized_pct NULL — it must NOT move the headline hit-rate, so every scoreboard
+// rate/count is gated on RATED, not SETTLED.
+const RATED = `${SETTLED} AND realized_pct IS NOT NULL`;
+
 // "Actionable" tiers — the ones that represent real positions and feed the headline
 // numbers. `opinion`/`watch`/`pass` are directional commentary; they're broken out
 // in `by_tier` but never roll up into totals or recent_wins/losses.
@@ -15,8 +21,8 @@ router.get("/", (_req, res) => {
   const totals = db().prepare(`
     SELECT
       COUNT(*) AS total_calls,
-      SUM(CASE WHEN ${SETTLED} THEN 1 ELSE 0 END) AS resolved_calls,
-      SUM(CASE WHEN ${SETTLED} AND realized_pct > 0 THEN 1 ELSE 0 END) AS hit_count
+      SUM(CASE WHEN ${RATED} THEN 1 ELSE 0 END) AS resolved_calls,
+      SUM(CASE WHEN ${RATED} AND realized_pct > 0 THEN 1 ELSE 0 END) AS hit_count
     FROM calls
     WHERE ${ACTIONABLE} AND COALESCE(hidden, 0) = 0
   `).get() as any;
@@ -27,9 +33,9 @@ router.get("/", (_req, res) => {
   const by_tier = (db().prepare(`
     SELECT conviction,
            COUNT(*) AS n,
-           SUM(CASE WHEN ${SETTLED} THEN 1 ELSE 0 END) AS resolved,
-           SUM(CASE WHEN ${SETTLED} AND realized_pct > 0 THEN 1 ELSE 0 END) AS hits,
-           AVG(CASE WHEN ${SETTLED} THEN realized_pct END) AS avg_return_pct
+           SUM(CASE WHEN ${RATED} THEN 1 ELSE 0 END) AS resolved,
+           SUM(CASE WHEN ${RATED} AND realized_pct > 0 THEN 1 ELSE 0 END) AS hits,
+           AVG(CASE WHEN ${RATED} THEN realized_pct END) AS avg_return_pct
     FROM calls
     WHERE COALESCE(hidden, 0) = 0
     GROUP BY conviction
@@ -50,7 +56,7 @@ router.get("/", (_req, res) => {
   const by_category = db().prepare(`
     SELECT COALESCE(m.category, 'unknown') AS category,
            COUNT(*) AS n,
-           SUM(CASE WHEN c.${SETTLED} THEN 1 ELSE 0 END) AS resolved,
+           SUM(CASE WHEN c.${SETTLED} AND c.realized_pct IS NOT NULL THEN 1 ELSE 0 END) AS resolved,
            SUM(CASE WHEN c.${SETTLED} AND c.realized_pct > 0 THEN 1 ELSE 0 END) AS hits
     FROM calls c
     LEFT JOIN markets m ON m.id = c.market_id

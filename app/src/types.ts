@@ -35,6 +35,9 @@ export interface Call {
   speaker: string;
   status: CallStatus;
   realized_pct: number | null;
+  /** Outcome: 1=win, 0=loss, null=undetermined/open. Set even when realized_pct
+   *  is null (a settled market gives win/loss without an entry price). */
+  won?: number | null;
   stu_claimed_pct: number | null;
   publish_date: string;
   episode_title: string;

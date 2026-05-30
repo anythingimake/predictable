@@ -108,24 +108,31 @@ def _hard_close_cents(side: str, resolution: str) -> float:
 
 
 def _score_calls(conn) -> dict:
-    """Walk every call and assign realized_pct.
+    """Walk every call and assign status / realized_pct / won.
+
+    Two separate questions:
+      • OUTCOME (won 1/0): did Stu's side win? Determinable from a settled market
+        or a `resolve` event WITHOUT knowing his entry price.
+      • RETURN (realized_pct): his % gain/loss. Needs the entry price — left NULL
+        when he never stated one. The scoreboard rates by realized_pct, so a
+        no-entry-price call counts as resolved-and-won/lost on its card but does
+        NOT move the headline hit-rate.
 
     Precedence (Stu's own words beat the market data):
-      1. SOFT — Stu's `exit`/`resolve` event with a price. This is what he
-         actually did/saw; his realized return. Highest authority.
-      2. HARD — the market settled with a clean `resolution` in (yes, no).
-         Only trust an explicit yes/no, never a guess from current_price:
-         a price of "1.0" is ambiguously dollars-or-cents and flipped known
-         wins (Vrabel, Cooper Flagg) into fake -100% losses.
-      3. Otherwise leave the call OPEN — an honest "not yet scorable" beats a
-         fabricated win or loss.
+      1. SOFT exit — Stu's own `exit` price. Needs an entry price (profit depends
+         on what he paid), so it's skipped without one.
+      2. HARD — the market settled (explicit yes/no resolution, else inferred from
+         the settled current_price). Outcome needs no entry price.
+      3. RESOLVE event — Stu narrated the settlement. Outcome needs no entry price.
+      4. EFFECTIVE — researched outcome, or a passed date + terminal price.
+      Otherwise leave the call OPEN. Never guess a winner from a live mid-price.
     Idempotent — recomputes on every run."""
     stats = {"hard": 0, "soft": 0, "effective": 0, "skipped_no_entry": 0, "skipped_other": 0}
     # Reset first so a call that no longer scores (e.g. a market that stopped
     # reporting a clean yes/no) drops back to open instead of keeping a stale
-    # realized_pct from a prior run. Scoring is the sole authority on
-    # status/realized_pct; market_id (the link) is owned by the resolver.
-    conn.execute("UPDATE calls SET status = 'open', realized_pct = NULL")
+    # realized_pct/won from a prior run. Scoring is the sole authority on
+    # status/realized_pct/won; market_id (the link) is owned by the resolver.
+    conn.execute("UPDATE calls SET status = 'open', realized_pct = NULL, won = NULL")
     # Defensive: scoring may run against a DB created before the effective_*
     # columns existed (load.py self-migrates, but scoring can run standalone).
     have_eff = "effective_resolution" in {
@@ -141,51 +148,56 @@ def _score_calls(conn) -> dict:
     today_iso = date.today().isoformat()
     for c in calls:
         cid = c["id"]
+        side = c["side"]
         entry_cents = _entry_price_cents(conn, cid)
-        if entry_cents is None or entry_cents <= 0:
-            stats["skipped_no_entry"] += 1
-            continue
+        have_entry = entry_cents is not None and entry_cents > 0
+        # Return % needs the entry price; the win/loss OUTCOME does not. When Stu
+        # never stated an entry, realized stays NULL but `won` is still set from
+        # the settlement so the call shows resolved (Won/Lost), not open.
+        def _ret(close_cents: float) -> float | None:
+            return _realized_pct(side, entry_cents, close_cents) if have_entry else None
 
-        # 1. Stu fully exited it himself — his actual realized return wins.
-        #    `trim` is excluded: a partial trim doesn't close the position, so
-        #    the call stays open (e.g. Dems-House where Stu trimmed but holds).
-        ev = _event_of_types(conn, cid, ("exit",))
-        if ev is not None:
-            close_cents, et = ev
-            close_cents = _close_cents_for_event(c["side"], et, close_cents)
-            realized = _realized_pct(c["side"], entry_cents, close_cents)
-            conn.execute(
-                "UPDATE calls SET status = 'closed', realized_pct = ? WHERE id = ?",
-                (realized, cid),
-            )
-            stats["soft"] += 1
-            continue
+        # 1. Stu fully exited it himself — his actual realized return wins. Needs
+        #    an entry price (profit depends on what he paid). `trim` is excluded:
+        #    a partial trim doesn't close the position (e.g. Dems-House).
+        if have_entry:
+            ev = _event_of_types(conn, cid, ("exit",))
+            if ev is not None:
+                close_cents, et = ev
+                close_cents = _close_cents_for_event(side, et, close_cents)
+                realized = _realized_pct(side, entry_cents, close_cents)
+                conn.execute(
+                    "UPDATE calls SET status = 'closed', realized_pct = ?, won = ? WHERE id = ?",
+                    (realized, 1 if realized > 0 else 0, cid),
+                )
+                stats["soft"] += 1
+                continue
 
         # 2. Market settled. Trust an explicit yes/no resolution; otherwise infer
         #    the winner from the (settled) current_price with unit-normalization.
+        #    Outcome stands without an entry price.
         if c["resolved"] == 1:
             res = (c["resolution"] or "").strip().lower()
             if res not in ("yes", "no"):
                 res = _infer_winner(c["current_price"])
             if res in ("yes", "no"):
-                close_cents = _hard_close_cents(c["side"], res)
-                realized = _realized_pct(c["side"], entry_cents, close_cents)
+                close_cents = _hard_close_cents(side, res)
                 conn.execute(
-                    "UPDATE calls SET status = 'resolved', realized_pct = ? WHERE id = ?",
-                    (realized, cid),
+                    "UPDATE calls SET status = 'resolved', realized_pct = ?, won = ? WHERE id = ?",
+                    (_ret(close_cents), 1 if close_cents >= 50 else 0, cid),
                 )
                 stats["hard"] += 1
                 continue
 
         # 3. Stu narrated the resolution (a `resolve` event) without a market link.
+        #    Outcome from the event; no entry price required.
         ev = _event_of_types(conn, cid, ("resolve",))
         if ev is not None:
             close_cents, et = ev
-            close_cents = _close_cents_for_event(c["side"], et, close_cents)
-            realized = _realized_pct(c["side"], entry_cents, close_cents)
+            close_cents = _close_cents_for_event(side, et, close_cents)
             conn.execute(
-                "UPDATE calls SET status = 'closed', realized_pct = ? WHERE id = ?",
-                (realized, cid),
+                "UPDATE calls SET status = 'closed', realized_pct = ?, won = ? WHERE id = ?",
+                (_ret(close_cents), 1 if close_cents >= 50 else 0, cid),
             )
             stats["soft"] += 1
             continue
@@ -199,11 +211,10 @@ def _score_calls(conn) -> dict:
         #     exchange settlement.
         eff_res = (c["effective_resolution"] or "").strip().lower()
         if eff_res in ("yes", "no"):
-            close_cents = _hard_close_cents(c["side"], eff_res)
-            realized = _realized_pct(c["side"], entry_cents, close_cents)
+            close_cents = _hard_close_cents(side, eff_res)
             conn.execute(
-                "UPDATE calls SET status = 'closed', realized_pct = ? WHERE id = ?",
-                (realized, cid),
+                "UPDATE calls SET status = 'closed', realized_pct = ?, won = ? WHERE id = ?",
+                (_ret(close_cents), 1 if close_cents >= 50 else 0, cid),
             )
             stats["effective"] += 1
             continue
@@ -225,27 +236,33 @@ def _score_calls(conn) -> dict:
         if rd and rd < today_iso and cp is not None:
             eff = "yes" if cp >= 99.0 else ("no" if cp <= 1.0 else None)
             if eff is not None:
-                close_cents = _hard_close_cents(c["side"], eff)
-                realized = _realized_pct(c["side"], entry_cents, close_cents)
+                close_cents = _hard_close_cents(side, eff)
                 conn.execute(
-                    "UPDATE calls SET status = 'closed', realized_pct = ? WHERE id = ?",
-                    (realized, cid),
+                    "UPDATE calls SET status = 'closed', realized_pct = ?, won = ? WHERE id = ?",
+                    (_ret(close_cents), 1 if close_cents >= 50 else 0, cid),
                 )
                 stats["effective"] += 1
                 continue
 
-        stats["skipped_other"] += 1
+        # Nothing scored it. A missing entry price is the usual reason an
+        # otherwise-fine call stays open; count it separately for diagnostics.
+        if not have_entry:
+            stats["skipped_no_entry"] += 1
+        else:
+            stats["skipped_other"] += 1
     return stats
 
 
 def _snapshot_scoreboard(conn) -> dict:
-    """Both 'resolved' (hard) and 'closed' (soft) count toward the scoreboard.
-    Totals are restricted to ACTIONABLE tiers (play/solid/flyer) to match the
-    live /api/scoreboard endpoint — opinion/watch/pass are commentary, not bets."""
+    """Both 'resolved' (hard) and 'closed' (soft) count toward the scoreboard,
+    but only when they carry a computable return (realized_pct IS NOT NULL) — a
+    settled call with no stated entry price is shown Won/Lost on its card yet is
+    NOT rated, so it must not move the headline. Restricted to ACTIONABLE tiers
+    (play/solid/flyer) to match the live /api/scoreboard endpoint."""
     totals = conn.execute(
         """SELECT
               COUNT(*) AS total,
-              SUM(CASE WHEN status IN ('resolved','closed') THEN 1 ELSE 0 END) AS resolved,
+              SUM(CASE WHEN status IN ('resolved','closed') AND realized_pct IS NOT NULL THEN 1 ELSE 0 END) AS resolved,
               SUM(CASE WHEN status IN ('resolved','closed') AND realized_pct > 0 THEN 1 ELSE 0 END) AS hits
              FROM calls
             WHERE conviction IN ('play','solid','flyer')"""
@@ -258,7 +275,7 @@ def _snapshot_scoreboard(conn) -> dict:
     by_tier: dict[str, dict] = {}
     for row in conn.execute(
         """SELECT conviction, COUNT(*) AS total,
-                  SUM(CASE WHEN status IN ('resolved','closed') THEN 1 ELSE 0 END) AS resolved,
+                  SUM(CASE WHEN status IN ('resolved','closed') AND realized_pct IS NOT NULL THEN 1 ELSE 0 END) AS resolved,
                   SUM(CASE WHEN status IN ('resolved','closed') AND realized_pct>0 THEN 1 ELSE 0 END) AS hits,
                   AVG(CASE WHEN status IN ('resolved','closed') THEN realized_pct END) AS avg_return_pct
              FROM calls GROUP BY conviction"""
@@ -274,7 +291,7 @@ def _snapshot_scoreboard(conn) -> dict:
     by_category: dict[str, dict] = {}
     for row in conn.execute(
         """SELECT m.category AS category, COUNT(*) AS total,
-                  SUM(CASE WHEN c.status IN ('resolved','closed') THEN 1 ELSE 0 END) AS resolved,
+                  SUM(CASE WHEN c.status IN ('resolved','closed') AND c.realized_pct IS NOT NULL THEN 1 ELSE 0 END) AS resolved,
                   SUM(CASE WHEN c.status IN ('resolved','closed') AND c.realized_pct>0 THEN 1 ELSE 0 END) AS hits
              FROM calls c
         LEFT JOIN markets m ON m.id = c.market_id
@@ -321,9 +338,18 @@ def _snapshot_scoreboard(conn) -> dict:
     }
 
 
+def _ensure_won_column(conn) -> None:
+    """Defensive: scoring writes `calls.won`. load.py normally adds it first, but
+    scoring can run standalone against an un-migrated DB — don't crash. Idempotent."""
+    cols = {r["name"] for r in conn.execute("PRAGMA table_info(calls)")}
+    if "won" not in cols:
+        conn.execute("ALTER TABLE calls ADD COLUMN won INTEGER")
+
+
 def score_all() -> dict:
     from pipeline.db import connect
     with connect() as conn:
+        _ensure_won_column(conn)
         stats = _score_calls(conn)
         snap = _snapshot_scoreboard(conn)
     return {"scoring": stats, "scoreboard": snap}
