@@ -23,7 +23,12 @@ from __future__ import annotations
 
 import json
 
-from pipeline.enrich.scoring import _hard_close_cents, _infer_winner, _realized_pct
+from pipeline.enrich.scoring import (
+    _entry_price_cents,
+    _hard_close_cents,
+    _infer_winner,
+    _realized_pct,
+)
 
 _SIDES = {"yes", "no", "over", "under"}
 _CONVICTIONS = {"play", "solid", "flyer", "watch", "opinion", "pass"}
@@ -168,6 +173,28 @@ def apply_call_admin(conn, call_id: int, stats: dict | None = None) -> None:
             "UPDATE calls SET market_id = ?, notes = ? WHERE id = ?",
             (row["market_id"], f"pin:no-auto-link (admin-forced {row['market_id']})", call_id),
         )
+        # For a PIPELINE call, a forced market also drives the OUTCOME. The
+        # resolver deliberately refused to auto-link it (e.g. an over/under whose
+        # market is framed as the affirmative — "score AT LEAST 65%" — so a NO
+        # settlement means Stu's UNDER won), which means scoring never saw the
+        # settlement and left it mis-scored. Recompute inline here; apply_admin
+        # runs after scoring, so this is the last word. Mirrors scoring's hard
+        # path. (Manual calls already settled their outcome in section B.)
+        if not is_manual:
+            res = _market_resolution(conn, row["market_id"])
+            if res in ("yes", "no"):
+                side = (conn.execute(
+                    "SELECT side FROM calls WHERE id = ?", (call_id,)
+                ).fetchone()["side"] or "").strip().lower()
+                close = _hard_close_cents(side, res)
+                entry = _entry_price_cents(conn, call_id)
+                realized = _realized_pct(side, entry, close) if entry else None
+                status = "resolved" if _market_is_settled(conn, row["market_id"]) else "closed"
+                conn.execute(
+                    "UPDATE calls SET status = ?, realized_pct = ?, won = ? WHERE id = ?",
+                    (status, realized, 1 if close >= 50 else 0, call_id),
+                )
+                s["forced_market_scored"] = s.get("forced_market_scored", 0) + 1
 
     # --- C3. Keep `won` consistent with the FINAL realized_pct (a manual call or
     # an admin realized_pct override may have changed it). A resolved-without-a-
