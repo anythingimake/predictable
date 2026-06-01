@@ -11,6 +11,7 @@ from __future__ import annotations
 import json
 import re
 import sqlite3
+from collections import Counter
 from pathlib import Path
 
 from pipeline.db import connect
@@ -33,37 +34,58 @@ def _normalize_hint(hint: str) -> str:
     return h
 
 
+# NB: hidden calls are intentionally INCLUDED. A saga groups a recurring market
+# across episodes; hiding one call (often a near-dup) shouldn't silently delete
+# the whole saga. Dedup here is about collapsing wording variants, not pruning by
+# visibility.
+_SQL = (
+    "SELECT market_hint, episode_id, market_id FROM calls "
+    "WHERE market_hint IS NOT NULL AND market_hint != ''"
+)
+
+
 def detect_sagas(conn: sqlite3.Connection | None = None) -> list[dict]:
-    """Return saga candidates: {name, market_hint, episode_ids} for hints in >= 2 episodes."""
-    rows: list[sqlite3.Row]
+    """Return saga candidates: {name, market_hint, key, market_id, episode_ids}
+    for hints appearing in >= 2 distinct episodes.
+
+    `key` is the normalized hint (a stable identity that survives trivial wording
+    changes); `name` is the SHORTEST raw hint in the bucket — deterministic, and
+    in practice the clean variant without the parenthetical annotation. Picking
+    the first-seen raw hint (the old behaviour) drifted with row order and let
+    the loader accumulate duplicate saga rows."""
     if conn is None:
         with connect() as c:
-            rows = c.execute(
-                "SELECT market_hint, episode_id FROM calls WHERE market_hint IS NOT NULL AND market_hint != ''"
-            ).fetchall()
+            rows = c.execute(_SQL).fetchall()
     else:
-        rows = conn.execute(
-            "SELECT market_hint, episode_id FROM calls WHERE market_hint IS NOT NULL AND market_hint != ''"
-        ).fetchall()
+        rows = conn.execute(_SQL).fetchall()
 
-    # Group: normalized hint -> {"display": <first raw hint>, "episodes": set}
+    # Group: normalized hint -> raw hints seen, episodes, linked market_ids.
     buckets: dict[str, dict] = {}
     for r in rows:
         raw = r["market_hint"]
         norm = _normalize_hint(raw)
         if not norm:
             continue
-        b = buckets.setdefault(norm, {"display": raw, "episodes": set()})
+        b = buckets.setdefault(norm, {"raws": set(), "episodes": set(), "market_ids": []})
+        b["raws"].add(raw)
         b["episodes"].add(r["episode_id"])
+        if r["market_id"]:
+            b["market_ids"].append(r["market_id"])
 
     sagas: list[dict] = []
     for norm, data in sorted(buckets.items()):
         eps = sorted(data["episodes"])
         if len(eps) < 2:
             continue
+        # Shortest, then lexical — fully deterministic, no dependence on row order.
+        display = min(data["raws"], key=lambda h: (len(h), h))
+        # Most-common linked market among the bucket's calls (None if unresolved).
+        market_id = Counter(data["market_ids"]).most_common(1)[0][0] if data["market_ids"] else None
         sagas.append({
-            "name": data["display"],
-            "market_hint": data["display"],
+            "name": display,
+            "market_hint": display,
+            "key": norm,
+            "market_id": market_id,
             "episode_ids": eps,
         })
     return sagas

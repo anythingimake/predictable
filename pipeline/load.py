@@ -66,6 +66,14 @@ def _stable_call_id(episode_id: str, market_hint: str, side: str, ordinal: int) 
     return int(hashlib.sha1(key.encode("utf-8")).hexdigest()[:13], 16)
 
 
+def _stable_saga_id(norm_key: str) -> int:
+    """Deterministic saga id from the normalized hint, so /sagas/{id} URLs are
+    stable and the same recurring market can never produce two saga rows. Salted
+    with 'saga|' to stay disjoint from call ids; 52-bit truncation keeps it inside
+    JS Number.MAX_SAFE_INTEGER."""
+    return int(hashlib.sha1(f"saga|{norm_key}".encode("utf-8")).hexdigest()[:13], 16)
+
+
 def _transcript_for(guid: str) -> dict | None:
     p = TRANSCRIPTS / f"{_safe_guid(guid)}.json"
     if not p.exists():
@@ -690,35 +698,53 @@ def load_strategies(conn) -> int:
 
 
 def load_sagas(conn) -> int:
-    """Load data/ingest/extract/_sagas.json into sagas + saga_episodes."""
-    extract_dir = INGEST_RAW / "extract"
-    fp = extract_dir / "_sagas.json"
-    if not fp.exists():
-        return 0
-    data = json.loads(fp.read_text(encoding="utf-8"))
-    total = 0
-    for s in data.get("sagas", []):
+    """Rebuild the saga set from the current `calls` (recurring markets across >= 2
+    episodes), deterministically and idempotently.
+
+    Detect inline from the DB rather than a committed _sagas.json so it's always
+    in sync with the freshly-loaded calls. Each saga gets a stable id derived from
+    its normalized hint, so the same recurring market is one row forever and
+    /sagas/{id} URLs hold. Sagas no longer detected are PRUNED — the old
+    append-only, dedup-by-raw-name path silently accumulated duplicate rows when a
+    hint's wording drifted (e.g. the '(updated post-SCOTUS …)' annotation)."""
+    from pipeline.extract.sagas import detect_sagas
+
+    sagas = detect_sagas(conn)
+    seen: set[int] = set()
+    for s in sagas:
         name = (s.get("name") or "").strip()
         if not name:
             continue
-        # Avoid duplicate sagas by name (idempotent re-runs)
-        row = conn.execute("SELECT id FROM sagas WHERE name = ?", (name,)).fetchone()
-        if row:
-            saga_id = row["id"]
-        else:
-            cur = conn.execute(
-                "INSERT INTO sagas (name, market_id, status) VALUES (?, ?, ?)",
-                (name, None, "live"),
-            )
-            saga_id = cur.lastrowid
-            total += 1
+        key = s.get("key") or _normalize_hint(name)
+        saga_id = _stable_saga_id(key)
+        seen.add(saga_id)
+        # Validate the detected market link against the FK before stamping it.
+        market_id = s.get("market_id")
+        if market_id and not conn.execute(
+            "SELECT 1 FROM markets WHERE id = ?", (market_id,)
+        ).fetchone():
+            market_id = None
+        conn.execute(
+            """INSERT INTO sagas (id, name, market_id, status) VALUES (?, ?, ?, 'live')
+               ON CONFLICT(id) DO UPDATE SET name = excluded.name, market_id = excluded.market_id""",
+            (saga_id, name, market_id),
+        )
+        # Rebuild this saga's episode list (drop-then-add keeps it exact).
+        conn.execute("DELETE FROM saga_episodes WHERE saga_id = ?", (saga_id,))
         for ep_id in s.get("episode_ids", []) or []:
             conn.execute(
-                """INSERT OR IGNORE INTO saga_episodes (saga_id, episode_id)
-                   VALUES (?, ?)""",
+                "INSERT OR IGNORE INTO saga_episodes (saga_id, episode_id) VALUES (?, ?)",
                 (saga_id, ep_id),
             )
-    return total
+    # Prune sagas (and their episode links) that no longer exist — incl. stale dups.
+    if seen:
+        ph = ",".join("?" * len(seen))
+        conn.execute(f"DELETE FROM saga_episodes WHERE saga_id NOT IN ({ph})", tuple(seen))
+        conn.execute(f"DELETE FROM sagas WHERE id NOT IN ({ph})", tuple(seen))
+    else:
+        conn.execute("DELETE FROM saga_episodes")
+        conn.execute("DELETE FROM sagas")
+    return len(seen)
 
 
 def load_qa(conn) -> int:
@@ -787,8 +813,8 @@ def main() -> int:
             print(f"[load] principles upserted: {n_principles}")
             n_strategies = load_strategies(conn)
             print(f"[load] strategies inserted: {n_strategies}")
-            n_sagas = load_sagas(conn)
-            print(f"[load] sagas inserted: {n_sagas}")
+            # Sagas are rebuilt in the enrich phase (pipeline.enrich.build_sagas),
+            # AFTER market_resolver, so each saga can inherit its market link.
             n_qa = load_qa(conn)
             print(f"[load] call_clarifications inserted: {n_qa}")
             n_first_ts = recompute_first_event_ts(conn)

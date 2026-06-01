@@ -13,7 +13,7 @@ import sys
 import time
 import traceback
 
-from pipeline.enrich import apply_admin, market_resolver, price_snapshot, scoring
+from pipeline.enrich import apply_admin, build_sagas, market_resolver, price_snapshot, scoring
 from pipeline.paths import SQLITE
 
 
@@ -23,6 +23,8 @@ def main() -> int:
 
     for name, fn in (
         ("market_resolver", market_resolver.resolve_all),
+        # After the resolver so each saga inherits its calls' market link.
+        ("build_sagas", build_sagas.build_all),
         ("price_snapshot", price_snapshot.snapshot_all),
         ("scoring", scoring.score_all),
         # MUST run after scoring (scoring resets status/realized_pct each run);

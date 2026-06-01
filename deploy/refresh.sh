@@ -65,6 +65,11 @@ PREDICTABLE_DB="$DB" python3 -m pipeline.load 2>&1
 # unmatched calls land in data/logs/unresolved_markets-{date}.json.
 PREDICTABLE_DB="$DB" python3 -m pipeline.enrich.market_resolver 2>&1 || echo "market_resolver failed"
 
+# Rebuild sagas (recurring markets across episodes) AFTER the resolver so each
+# saga inherits its calls' market link. Dedupes wording variants to one stable
+# row and prunes stale rows. Idempotent.
+PREDICTABLE_DB="$DB" python3 -m pipeline.enrich.build_sagas 2>&1 || echo "build_sagas failed"
+
 # Link new Megaphone episodes to YouTube videos by date + duration. Refreshes
 # view/like counts for already-linked episodes when --refresh-meta is passed
 # (skipped here on hourly tick to keep things cheap).
