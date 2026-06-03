@@ -57,7 +57,11 @@ export function CallDetail() {
 
   return (
     <article className="space-y-6">
-      <BackLink to="/calls" label="All calls" />
+      {data.tags?.some((t) => t.startsWith("election-night-")) ? (
+        <BackLink to="/election-night" label="Election Night" />
+      ) : (
+        <BackLink to="/calls" label="All calls" />
+      )}
       <header>
         <div className="flex items-center gap-3 flex-wrap mb-1">
           <ConvictionBadge conviction={data.conviction} />
