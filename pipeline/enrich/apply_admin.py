@@ -51,6 +51,17 @@ def _ensure_calls_columns(conn) -> None:
     conn.execute("CREATE INDEX IF NOT EXISTS idx_calls_hidden ON calls(hidden)")
 
 
+def _ensure_call_admin_columns(conn) -> None:
+    """Self-migrate the `call_admin.quote` column (some live DBs predate it).
+    Guarded so a standalone run won't crash on an un-migrated DB."""
+    try:
+        existing = {r["name"] for r in conn.execute("PRAGMA table_info(call_admin)")}
+    except Exception:
+        return  # call_admin not present yet (fresh/old DB) — nothing to migrate
+    if existing and "quote" not in existing:
+        conn.execute("ALTER TABLE call_admin ADD COLUMN quote TEXT")
+
+
 def _market_resolution(conn, market_id: str) -> str | None:
     """'yes'/'no' for a market using scoring's precedence (resolution ->
     effective_resolution -> infer from current_price only when resolved), else None."""
@@ -126,19 +137,27 @@ def apply_call_admin(conn, call_id: int, stats: dict | None = None) -> None:
             status = "open"
         realized = row["realized_pct"]
         entry = row["entry_price"]
+        # Stu's spoken words for this call, stamped onto the entry event so the
+        # call-detail lifecycle renders it (the app shows call_events.quote as a
+        # blockquote). Column may be absent on an un-migrated Row.
+        quote = row["quote"] if "quote" in row.keys() else None
         mid = row["market_id"]
         # Synthesized entry event (manual calls only own 'entry' events) so
         # CallDetail/chart have data + a future scoring run computes the same number.
+        # Created when EITHER an entry price OR a quote is present.
         conn.execute("DELETE FROM call_events WHERE call_id = ? AND event_type = 'entry'", (call_id,))
-        if entry is not None:
+        if entry is not None or quote:
             conn.execute(
                 """INSERT INTO call_events
                      (call_id, episode_id, timestamp_sec, event_type, price_pct,
                       size_pct_of_pos, quote, raw_quote)
-                   VALUES (?, ?, ?, 'entry', ?, NULL, NULL, NULL)""",
-                (call_id, episode_id, (row["first_event_ts"] or 0), float(entry)),
+                   VALUES (?, ?, ?, 'entry', ?, NULL, ?, ?)""",
+                (
+                    call_id, episode_id, (row["first_event_ts"] or 0),
+                    (float(entry) if entry is not None else None), quote, quote,
+                ),
             )
-            if mid:
+            if entry is not None and mid:
                 res = _market_resolution(conn, mid)
                 if res in ("yes", "no"):
                     close = _hard_close_cents(side, res)
@@ -221,6 +240,7 @@ def apply_all() -> dict:
     }
     with connect() as conn:
         _ensure_calls_columns(conn)
+        _ensure_call_admin_columns(conn)
         try:
             rows = conn.execute("SELECT call_id FROM call_admin").fetchall()
         except Exception:

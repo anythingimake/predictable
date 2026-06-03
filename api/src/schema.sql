@@ -254,6 +254,7 @@ CREATE TABLE IF NOT EXISTS call_admin (
   -- manual-only fields (ignored for override rows):
   episode_id      TEXT,                         -- REQUIRED for manual (must exist in episodes)
   entry_price     REAL,                         -- cents; drives hybrid outcome + synthesized entry event
+  quote           TEXT,                         -- Stu's spoken words for this call (stamped onto the entry event)
   first_event_ts  INTEGER,
   created_at      DATETIME DEFAULT CURRENT_TIMESTAMP,
   updated_at      DATETIME DEFAULT CURRENT_TIMESTAMP

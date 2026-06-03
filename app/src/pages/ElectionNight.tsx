@@ -32,6 +32,8 @@ const RACES: Array<{ tag: string; label: string; blurb: string }> = [
   { tag: "race:texas-senate", label: "Texas Senate", blurb: "November value buy" },
 ];
 
+const EXCHANGE: Record<string, string> = { kalshi: "Kalshi", polymarket: "Polymarket", predictit: "PredictIt" };
+
 // Parse the admin endpoint's JSON-stringified `tags` into a string[] so admin-only
 // (hidden) rows can be placed into race groups just like public rows.
 function parseAdminTags(raw: unknown): string[] {
@@ -234,6 +236,9 @@ function ElectionCallCard({ call: c }: { call: Call }) {
         {c.tags && c.tags.length > 0 && (
           <TagChips tags={c.tags.filter((t) => t !== ELECTION_TAG && !t.startsWith("race:"))} className="mt-1.5" />
         )}
+        {c.quote && (
+          <p className="mt-1.5 text-xs italic leading-snug text-[var(--color-text-muted)]">“{c.quote}”</p>
+        )}
       </div>
       <div className="flex flex-shrink-0 flex-col items-end gap-0.5 text-right">
         {/* Outcome if settled, else the live price on Stu's side */}
@@ -255,7 +260,17 @@ function ElectionCallCard({ call: c }: { call: Call }) {
         ) : liveCents != null ? (
           <>
             <span className="text-sm font-semibold tabular-nums">{formatCents(liveCents)}</span>
-            <span className="text-[10px] uppercase text-[var(--color-text-faint)]">live · his side</span>
+            <span className="text-[10px] uppercase text-[var(--color-text-faint)]">
+              {EXCHANGE[c.market_source ?? ""] ?? "live"} · his side
+            </span>
+            {(() => {
+              const sib = c.sibling_price != null ? stuSideCents(c.side, c.sibling_price) : null;
+              return sib != null ? (
+                <span className="text-[10px] text-[var(--color-text-faint)]">
+                  {EXCHANGE[c.sibling_source ?? ""] ?? "alt"} {formatCents(sib)}
+                </span>
+              ) : null;
+            })()}
           </>
         ) : (
           <span className="text-xs text-[var(--color-text-faint)]">{c.status}</span>

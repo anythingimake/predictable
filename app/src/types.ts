@@ -50,6 +50,14 @@ export interface Call {
   market_question?: string | null;
   /** YES-side market price in cents (0-100) from latest price snapshot. */
   market_current_price?: number | null;
+  /** First spoken quote for this call (earliest call_event with a quote). */
+  quote?: string | null;
+  /** Cross-exchange sibling market's current price (other exchange, via meta_json.sibling_market_id). */
+  sibling_price?: number | null;
+  /** Cross-exchange sibling market's source (e.g. "kalshi" / "polymarket"). */
+  sibling_source?: string | null;
+  /** Cross-exchange sibling market's ticker. */
+  sibling_ticker?: string | null;
   /** Admin-hidden from public views (only ever set on admin endpoints). */
   hidden?: number;
 }
