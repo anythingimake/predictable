@@ -217,6 +217,27 @@ export function ElectionNight() {
   );
 }
 
+// The side Stu took, as a loud color-coded pill so you can tell at a glance which
+// way he's betting. YES/OVER = green, NO/UNDER = red. This is meant to dominate
+// the row (after the candidate name) — no more easy-to-miss faint grey text.
+function SideBadge({ side }: { side: string }) {
+  const s = side.toLowerCase();
+  const positive = s === "yes" || s === "over";
+  // #22c55e (win/play green) vs #ef4444 (loss red) — matches the site's status colors.
+  const color = positive ? "var(--color-status-resolved-win)" : "var(--color-status-resolved-loss)";
+  const bg = positive ? "rgba(34,197,94,0.18)" : "rgba(239,68,68,0.18)";
+  const border = positive ? "rgba(34,197,94,0.55)" : "rgba(239,68,68,0.55)";
+  return (
+    <span
+      className="inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs font-bold uppercase leading-none tracking-wide"
+      style={{ backgroundColor: bg, color, border: `1px solid ${border}` }}
+    >
+      <span className="text-[9px] font-semibold tracking-wider opacity-60">STU</span>
+      {side.toUpperCase()}
+    </span>
+  );
+}
+
 // Compact call card with the live market price on Stu's side. Mirrors the Calls
 // page card so it feels native, but trimmed for the election context.
 function ElectionCallCard({ call: c }: { call: Call }) {
@@ -231,7 +252,7 @@ function ElectionCallCard({ call: c }: { call: Call }) {
         <div className="flex flex-wrap items-center gap-2">
           <ConvictionBadge conviction={c.conviction} showLabel={false} />
           <span className="truncate font-medium">{c.market_hint}</span>
-          <span className="text-xs uppercase text-[var(--color-text-faint)]">{c.side}</span>
+          <SideBadge side={c.side} />
         </div>
         {c.tags && c.tags.length > 0 && (
           <TagChips tags={c.tags.filter((t) => t !== ELECTION_TAG && !t.startsWith("race:"))} className="mt-1.5" />
