@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { NavLink, Route, Routes } from "react-router-dom";
 import { Scoreboard } from "./pages/Scoreboard";
+import { ElectionNight } from "./pages/ElectionNight";
 import { Calls } from "./pages/Calls";
 import { CallDetail } from "./pages/CallDetail";
 import { Episodes } from "./pages/Episodes";
@@ -20,6 +21,7 @@ import { BottomTabBar } from "./components/BottomTabBar";
 
 const NAV = [
   { to: "/", label: "Scoreboard", end: true },
+  { to: "/election-night", label: "🗳️ Election Night" },
   { to: "/calls", label: "Calls" },
   { to: "/episodes", label: "Episodes" },
   { to: "/sagas", label: "Sagas" },
@@ -126,6 +128,7 @@ export default function App() {
       <main className="flex-1 max-w-6xl w-full mx-auto px-4 py-6 pb-24 lg:pb-6">
         <Routes>
           <Route path="/" element={<Scoreboard />} />
+          <Route path="/election-night" element={<ElectionNight />} />
           <Route path="/calls" element={<Calls />} />
           <Route path="/calls/:id" element={<CallDetail />} />
           <Route path="/episodes" element={<Episodes />} />

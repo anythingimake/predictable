@@ -9,12 +9,13 @@ interface NavItem {
 
 const PRIMARY: NavItem[] = [
   { to: "/", label: "Scoreboard", end: true },
+  { to: "/election-night", label: "Tonight" },
   { to: "/calls", label: "Calls" },
   { to: "/episodes", label: "Episodes" },
-  { to: "/calendar", label: "Calendar" },
 ];
 
 const MORE: NavItem[] = [
+  { to: "/calendar", label: "Calendar" },
   { to: "/sagas", label: "Sagas" },
   { to: "/calculator", label: "Calculator" },
   { to: "/guide", label: "Guide" },
@@ -41,6 +42,13 @@ function Icon({ name, className }: { name: string; className?: string }) {
         <svg {...common}>
           <path d="M3 3v18h18" />
           <path d="M7 14l3-3 3 3 4-5" />
+        </svg>
+      );
+    case "Tonight":
+      return (
+        <svg {...common}>
+          <rect x="4" y="4" width="16" height="16" rx="2" />
+          <path d="M8 12l3 3 5-6" />
         </svg>
       );
     case "Calls":
