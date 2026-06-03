@@ -1,10 +1,12 @@
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { api } from "../api";
+import { useStore } from "../store";
 import type { Call } from "../types";
 import { ConvictionBadge } from "../components/ConvictionBadge";
 import { TagChips } from "../components/TagChips";
 import { formatPct, stuSideCents, formatCents } from "../lib/format";
+import { AddElectionCall, ElectionCallAdminControls } from "../components/ElectionAdmin";
 import { ErrorBanner, Loading } from "./Scoreboard";
 
 // ─── One-off page: June 2, 2026 primary election night ──────────────────────
@@ -30,13 +32,84 @@ const RACES: Array<{ tag: string; label: string; blurb: string }> = [
   { tag: "race:texas-senate", label: "Texas Senate", blurb: "November value buy" },
 ];
 
+// Parse the admin endpoint's JSON-stringified `tags` into a string[] so admin-only
+// (hidden) rows can be placed into race groups just like public rows.
+function parseAdminTags(raw: unknown): string[] {
+  if (Array.isArray(raw)) return raw.filter((t): t is string => typeof t === "string");
+  if (typeof raw !== "string" || raw.length === 0) return [];
+  try {
+    const parsed: unknown = JSON.parse(raw);
+    if (Array.isArray(parsed)) return parsed.filter((t): t is string => typeof t === "string");
+  } catch {
+    /* ignore */
+  }
+  return [];
+}
+
 export function ElectionNight() {
+  const adminToken = useStore((s) => s.adminToken);
   const [calls, setCalls] = useState<Call[] | null>(null);
   const [err, setErr] = useState<string | null>(null);
 
+  // Loads tonight's calls. Public path = /api/calls (hides hidden calls, carries
+  // live prices). In admin mode we ALSO pull /api/admin/calls for this cohort so
+  // hidden calls stay visible (greyed, with an "unhide" control) and every card
+  // gets its `hidden` flag — merging admin-only rows on top of the public set.
+  const load = useCallback(async () => {
+    try {
+      const pub = await api.calls({ tag: ELECTION_TAG });
+      if (!adminToken) {
+        setCalls(pub);
+        return;
+      }
+      const r = await fetch("/api/admin/calls", { headers: { authorization: `Bearer ${adminToken}` } });
+      if (!r.ok) {
+        // Token rejected / endpoint down: fall back to the public view.
+        setCalls(pub);
+        return;
+      }
+      const adminRows: Array<Record<string, unknown>> = await r.json();
+      const byId = new Map<number, Call>();
+      for (const c of pub) byId.set(c.id, c);
+      for (const a of adminRows) {
+        const tags = parseAdminTags(a.tags);
+        if (!tags.includes(ELECTION_TAG)) continue; // only tonight's cohort
+        const id = a.id as number;
+        const existing = byId.get(id);
+        if (existing) {
+          // Keep the rich public row (live price etc.), just stamp the hidden flag.
+          byId.set(id, { ...existing, hidden: a.hidden ? 1 : 0, tags });
+        } else {
+          // Admin-only (typically hidden) row: synthesize a minimal Call so it renders.
+          byId.set(id, {
+            id,
+            market_id: (a.market_id as string | null) ?? null,
+            market_hint: (a.market_hint as string) ?? "",
+            episode_id: (a.episode_id as string) ?? "",
+            first_event_ts: null,
+            side: ((a.side as string) ?? "yes") as Call["side"],
+            conviction: ((a.conviction as string) ?? "solid") as Call["conviction"],
+            size_disclosed: null,
+            speaker: "",
+            status: ((a.status as string) ?? "open") as Call["status"],
+            realized_pct: (a.realized_pct as number | null) ?? null,
+            stu_claimed_pct: null,
+            publish_date: (a.publish_date as string) ?? "",
+            episode_title: (a.episode_title as string) ?? "",
+            tags,
+            hidden: a.hidden ? 1 : 0,
+          });
+        }
+      }
+      setCalls(Array.from(byId.values()));
+    } catch (e) {
+      setErr(String(e));
+    }
+  }, [adminToken]);
+
   useEffect(() => {
-    api.calls({ tag: ELECTION_TAG }).then(setCalls).catch((e) => setErr(String(e)));
-  }, []);
+    load();
+  }, [load]);
 
   const groups = useMemo(() => {
     if (!calls) return [];
@@ -94,6 +167,15 @@ export function ElectionNight() {
         </div>
       </header>
 
+      {/* Admin-only: add tonight's calls inline. Hidden for normal visitors. */}
+      {adminToken && (
+        <AddElectionCall
+          token={adminToken}
+          races={RACES.map((r) => ({ tag: r.tag, label: r.label }))}
+          onCreated={load}
+        />
+      )}
+
       {!calls && <Loading />}
 
       {calls && calls.length === 0 && (
@@ -113,7 +195,12 @@ export function ElectionNight() {
           </div>
           <div className="space-y-2">
             {g.items.map((c) => (
-              <ElectionCallCard key={c.id} call={c} />
+              <div key={c.id} className={c.hidden ? "opacity-60" : undefined}>
+                <ElectionCallCard call={c} />
+                {adminToken && (
+                  <ElectionCallAdminControls token={adminToken} call={c} onChanged={load} />
+                )}
+              </div>
             ))}
           </div>
         </section>

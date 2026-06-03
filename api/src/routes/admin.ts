@@ -241,6 +241,28 @@ router.get("/unresolved-markets", requireAdmin, (_req, res) => {
   res.json(rows);
 });
 
+// GET /api/admin/markets/search — typeahead for the admin "link a market" UI.
+// Matches `question` OR `id` case-insensitively; unresolved markets first.
+// Readonly connection.
+router.get("/markets/search", requireAdmin, (req, res) => {
+  const q = String((req.query as Record<string, string | undefined>).q ?? "").trim();
+  if (!q) {
+    res.json([]);
+    return;
+  }
+  const rawLimit = Number((req.query as Record<string, string | undefined>).limit);
+  const limit = Number.isFinite(rawLimit) ? Math.min(Math.max(Math.trunc(rawLimit), 1), 25) : 12;
+  const needle = `%${q.toLowerCase()}%`;
+  const rows = db().prepare(`
+    SELECT id, question, current_price, source, resolved
+    FROM markets
+    WHERE lower(question) LIKE ? OR lower(id) LIKE ?
+    ORDER BY resolved ASC, question ASC
+    LIMIT ?
+  `).all(needle, needle, limit);
+  res.json(rows);
+});
+
 // GET /api/admin/calls — base call + admin overlay (the ONLY calls-read that
 // shows hidden calls). Readonly connection.
 router.get("/calls", requireAdmin, (_req, res) => {
@@ -279,7 +301,7 @@ router.post("/calls", requireAdmin, (req, res) => {
     wdb.prepare(
       `INSERT INTO call_admin (call_id,is_manual,market_hint,side,conviction,status,realized_pct,market_id,tags,episode_id,entry_price,first_event_ts)
        VALUES (?,1,?,?,?,?,?,?,?,?,?,?)`
-    ).run(id, market_hint, side, conviction, b.status ?? null, b.realized_pct ?? null, b.market_id ?? null, b.tags ?? null, episode_id, b.entry_price ?? null, b.first_event_ts ?? null);
+    ).run(id, market_hint, side, conviction, b.status ?? null, b.realized_pct ?? null, b.market_id ?? null, Array.isArray(b.tags) ? JSON.stringify(b.tags) : (b.tags ?? null), episode_id, b.entry_price ?? null, b.first_event_ts ?? null);
     applyCallAdmin(wdb, id);
     res.json({ id });
   } finally { wdb.close(); }
@@ -302,7 +324,7 @@ router.patch("/calls/:id", requireAdmin, (req, res) => {
     for (const col of cols) {
       if (!(col in b)) continue;
       const raw = b[col];
-      const val = raw === null ? null : typeof raw === "boolean" ? (raw ? 1 : 0) : raw;
+      const val = raw === null ? null : Array.isArray(raw) ? JSON.stringify(raw) : typeof raw === "boolean" ? (raw ? 1 : 0) : raw;
       wdb.prepare(`UPDATE call_admin SET ${col}=?, updated_at=CURRENT_TIMESTAMP WHERE call_id=?`).run(val as any, id);
     }
     const ca = wdb.prepare("SELECT market_id FROM call_admin WHERE call_id=?").get(id) as any;
