@@ -187,8 +187,12 @@ def _snapshot_polymarket(conn, market_id: str, slug_or_id: str, since_iso: str |
         if ts is None or p is None:
             continue
         day = _ts_to_iso(ts)
-        if since_iso and day < since_iso:
-            continue
+        # Do NOT clamp to the linked episode's publish_date here. interval='max'
+        # already bounds to the market's own lifetime; clamping threw away months
+        # of real history whenever a market was first mentioned on a same-day
+        # livestream (election markets showed a flat 2-3 day stub instead of a
+        # full lifecycle chart). Mirrors the Kalshi path, which floors at the
+        # market's open_time, not the episode date.
         if day in seen_days:
             continue
         seen_days.add(day)
