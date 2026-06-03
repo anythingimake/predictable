@@ -14,6 +14,9 @@ const LifecycleChart = lazy(() =>
   import("../components/LifecycleChart").then((m) => ({ default: m.LifecycleChart })),
 );
 
+const exLabel = (s: string | null | undefined): string =>
+  s === "polymarket" ? "Polymarket" : s === "kalshi" ? "Kalshi" : s === "predictit" ? "PredictIt" : s ?? "";
+
 const EVENT_GLYPH: Record<string, string> = {
   entry: "📥",
   add: "➕",
@@ -96,16 +99,44 @@ export function CallDetail() {
             </>
           )}
         </p>
-        {marketUrl(data.market_source, data.market_ticker, data.market_event_slug) && (
-          <a
-            href={marketUrl(data.market_source, data.market_ticker, data.market_event_slug)!}
-            target="_blank"
-            rel="noreferrer"
-            className="tap mt-2 inline-flex items-center gap-1 text-sm text-[var(--color-accent)]"
-          >
-            View on {data.market_source === "polymarket" ? "Polymarket" : data.market_source === "kalshi" ? "Kalshi" : data.market_source} ↗
-          </a>
+        {(marketUrl(data.market_source, data.market_ticker, data.market_event_slug) ||
+          (data.sibling_source && marketUrl(data.sibling_source, data.sibling_ticker))) && (
+          <div className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm">
+            {marketUrl(data.market_source, data.market_ticker, data.market_event_slug) && (
+              <a
+                href={marketUrl(data.market_source, data.market_ticker, data.market_event_slug)!}
+                target="_blank"
+                rel="noreferrer"
+                className="tap inline-flex items-center gap-1 text-[var(--color-accent)]"
+              >
+                View on {exLabel(data.market_source)} ↗
+              </a>
+            )}
+            {data.sibling_source && marketUrl(data.sibling_source, data.sibling_ticker) && (
+              <a
+                href={marketUrl(data.sibling_source, data.sibling_ticker)!}
+                target="_blank"
+                rel="noreferrer"
+                className="tap inline-flex items-center gap-1 text-[var(--color-accent)]"
+              >
+                View on {exLabel(data.sibling_source)} ↗
+              </a>
+            )}
+          </div>
         )}
+        {data.sibling_price != null && (() => {
+          const pm = stuSideCents(data.side, data.market_current_price ?? null);
+          const sib = stuSideCents(data.side, data.sibling_price);
+          if (pm == null && sib == null) return null;
+          return (
+            <p className="mt-1.5 text-xs text-[var(--color-text-muted)]">
+              <span className="text-[var(--color-text-faint)]">His side · </span>
+              {pm != null && <>{exLabel(data.market_source)} <span className="font-semibold tabular-nums">{formatCents(pm)}</span></>}
+              {pm != null && sib != null && <span className="text-[var(--color-text-faint)]"> · </span>}
+              {sib != null && <>{exLabel(data.sibling_source)} <span className="font-semibold tabular-nums">{formatCents(sib)}</span></>}
+            </p>
+          );
+        })()}
         {data.tags && data.tags.length > 0 && <TagChips tags={data.tags} className="mt-2" />}
       </header>
 
