@@ -258,14 +258,17 @@ def _snapshot_scoreboard(conn) -> dict:
     but only when they carry a computable return (realized_pct IS NOT NULL) — a
     settled call with no stated entry price is shown Won/Lost on its card yet is
     NOT rated, so it must not move the headline. Restricted to ACTIONABLE tiers
-    (play/solid/flyer) to match the live /api/scoreboard endpoint."""
+    (play/solid/flyer) AND non-hidden calls to match the live /api/scoreboard
+    endpoint (pre-fix, hidden calls' performance leaked into the public trend
+    and the history total contradicted the live headline, 64 vs 57)."""
     totals = conn.execute(
         """SELECT
               COUNT(*) AS total,
               SUM(CASE WHEN status IN ('resolved','closed') AND realized_pct IS NOT NULL THEN 1 ELSE 0 END) AS resolved,
               SUM(CASE WHEN status IN ('resolved','closed') AND realized_pct > 0 THEN 1 ELSE 0 END) AS hits
              FROM calls
-            WHERE conviction IN ('play','solid','flyer')"""
+            WHERE conviction IN ('play','solid','flyer')
+              AND COALESCE(hidden, 0) = 0"""
     ).fetchone()
     total = totals["total"] or 0
     resolved = totals["resolved"] or 0
@@ -278,7 +281,7 @@ def _snapshot_scoreboard(conn) -> dict:
                   SUM(CASE WHEN status IN ('resolved','closed') AND realized_pct IS NOT NULL THEN 1 ELSE 0 END) AS resolved,
                   SUM(CASE WHEN status IN ('resolved','closed') AND realized_pct>0 THEN 1 ELSE 0 END) AS hits,
                   AVG(CASE WHEN status IN ('resolved','closed') THEN realized_pct END) AS avg_return_pct
-             FROM calls GROUP BY conviction"""
+             FROM calls WHERE COALESCE(hidden, 0) = 0 GROUP BY conviction"""
     ):
         by_tier[row["conviction"] or "unknown"] = {
             "total": row["total"],
@@ -295,6 +298,7 @@ def _snapshot_scoreboard(conn) -> dict:
                   SUM(CASE WHEN c.status IN ('resolved','closed') AND c.realized_pct>0 THEN 1 ELSE 0 END) AS hits
              FROM calls c
         LEFT JOIN markets m ON m.id = c.market_id
+            WHERE COALESCE(c.hidden, 0) = 0
             GROUP BY m.category"""
     ):
         by_category[row["category"] or "uncategorized"] = {
@@ -347,12 +351,16 @@ def _ensure_won_column(conn) -> None:
 
 
 def score_all() -> dict:
+    """Score every call. Does NOT write the scoreboard snapshot anymore —
+    that moved to pipeline.enrich.snapshot_scoreboard, which runs LAST in the
+    refresh (after apply_admin re-stamps hides + manual calls). Taken here,
+    mid-pipeline, the snapshot recorded a basis without hides or manual calls
+    and the public trend contradicted the live headline."""
     from pipeline.db import connect
     with connect() as conn:
         _ensure_won_column(conn)
         stats = _score_calls(conn)
-        snap = _snapshot_scoreboard(conn)
-    return {"scoring": stats, "scoreboard": snap}
+    return {"scoring": stats}
 
 
 if __name__ == "__main__":

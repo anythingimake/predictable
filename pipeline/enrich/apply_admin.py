@@ -163,6 +163,19 @@ def apply_call_admin(conn, call_id: int, stats: dict | None = None) -> None:
                     close = _hard_close_cents(side, res)
                     realized = _realized_pct(side, float(entry), close)
                     status = "resolved" if _market_is_settled(conn, mid) else "closed"
+        # Entry-less manual calls (positions logged without a stated price)
+        # still graduate off 'open' once the exchange settles: status flips and
+        # `won` records the direction, but realized_pct stays NULL — the
+        # "Resolved, not rated" bucket, same as entry-less pipeline calls.
+        if mid and status == "open":
+            res = _market_resolution(conn, mid)
+            if res in ("yes", "no"):
+                close = _hard_close_cents(side, res)
+                status = "resolved" if _market_is_settled(conn, mid) else "closed"
+                conn.execute(
+                    "UPDATE calls SET won = ? WHERE id = ?",
+                    (1 if close >= 50 else 0, call_id),
+                )
         conn.execute(
             "UPDATE calls SET status = ?, realized_pct = ? WHERE id = ?",
             (status, realized, call_id),

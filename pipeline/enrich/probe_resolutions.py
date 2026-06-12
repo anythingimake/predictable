@@ -22,17 +22,24 @@ UA = {"User-Agent": "predictable-pipeline/1.0"}
 
 
 def _probe_polymarket(slug: str) -> dict | None:
-    """Polymarket: GET /markets?slug=… returns the canonical record."""
-    r = requests.get(
-        "https://gamma-api.polymarket.com/markets",
-        params={"slug": slug, "limit": 1},
-        headers=UA,
-        timeout=15,
-    )
-    if not r.ok:
-        return None
-    items = r.json() if isinstance(r.json(), list) else r.json().get("markets") or []
-    return items[0] if items else None
+    """Polymarket: GET /markets?slug=… returns the canonical record. Gamma
+    drops delisted markets from the default query once they settle (the June 2
+    primary markets vanished post-settlement and sat resolved=0, erroring every
+    price poll), so retry with closed=true before giving up — same fallback as
+    ingest.polymarket.get_market_by_slug."""
+    for params in ({"slug": slug, "limit": 1}, {"slug": slug, "closed": "true", "limit": 1}):
+        r = requests.get(
+            "https://gamma-api.polymarket.com/markets",
+            params=params,
+            headers=UA,
+            timeout=15,
+        )
+        if not r.ok:
+            continue
+        items = r.json() if isinstance(r.json(), list) else r.json().get("markets") or []
+        if items:
+            return items[0]
+    return None
 
 
 def _probe_kalshi(ticker: str) -> dict | None:

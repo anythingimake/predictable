@@ -13,7 +13,7 @@ import sys
 import time
 import traceback
 
-from pipeline.enrich import apply_admin, build_sagas, market_resolver, price_snapshot, scoring
+from pipeline.enrich import apply_admin, build_sagas, market_resolver, price_snapshot, scoring, snapshot_scoreboard
 from pipeline.paths import SQLITE
 
 
@@ -30,6 +30,10 @@ def main() -> int:
         # MUST run after scoring (scoring resets status/realized_pct each run);
         # admin is the source of truth that wins last.
         ("apply_admin", apply_admin.apply_all),
+        # LAST: the public-trend snapshot must see the post-admin state
+        # (hides re-stamped, manual calls re-created) or it contradicts the
+        # live /api/scoreboard.
+        ("snapshot_scoreboard", snapshot_scoreboard.snapshot),
     ):
         t0 = time.monotonic()
         print(f"[enrich] --- {name} ---")

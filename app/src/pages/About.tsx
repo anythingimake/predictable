@@ -80,7 +80,7 @@ function ConservanerdsBanner() {
             "radial-gradient(ellipse 60% 100% at 50% 0%, rgba(34,197,94,0.18), transparent 70%)",
         }}
       />
-      <h2
+      <h1
         className="relative font-black uppercase leading-none tracking-tight"
         style={{
           fontFamily: '"Space Grotesk", "Inter", system-ui, sans-serif',
@@ -98,7 +98,7 @@ function ConservanerdsBanner() {
         >
           Unite!
         </span>
-      </h2>
+      </h1>
       <p
         className="relative mt-2 text-[10px] md:text-xs uppercase tracking-[0.3em] font-medium"
         style={{ color: "rgba(238,241,255,0.5)" }}

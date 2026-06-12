@@ -144,6 +144,7 @@ export default function App() {
           <Route path="/guide" element={<Guide />} />
           <Route path="/admin" element={<Admin />} />
           <Route path="/about" element={<About />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
 
@@ -167,6 +168,22 @@ export default function App() {
       </footer>
 
       <BottomTabBar />
+    </div>
+  );
+}
+
+function NotFound() {
+  return (
+    <div className="py-16 text-center space-y-3">
+      <h1 className="text-2xl font-bold">Page not found</h1>
+      <p className="text-sm text-[var(--color-text-muted)]">
+        That URL doesn't match anything we track.
+      </p>
+      <p className="text-sm">
+        <NavLink to="/" className="tap text-[var(--color-accent)] hover:underline">
+          ← Back to the Scoreboard
+        </NavLink>
+      </p>
     </div>
   );
 }
