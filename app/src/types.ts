@@ -58,6 +58,8 @@ export interface Call {
   sibling_source?: string | null;
   /** Cross-exchange sibling market's ticker. */
   sibling_ticker?: string | null;
+  /** Cross-exchange sibling market's Polymarket EVENT slug (null for kalshi siblings). */
+  sibling_event_slug?: string | null;
   /** Admin-hidden from public views (only ever set on admin endpoints). */
   hidden?: number;
 }

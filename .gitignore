@@ -46,3 +46,4 @@ data/audio/
 # Transcripts and ingest snapshots: tracked, so scheduled routines can read them
 # data/transcripts/ — INTENTIONALLY TRACKED
 # data/ingest/    — INTENTIONALLY TRACKED
+.gstack/

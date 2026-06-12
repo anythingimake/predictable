@@ -100,7 +100,7 @@ export function CallDetail() {
           )}
         </p>
         {(marketUrl(data.market_source, data.market_ticker, data.market_event_slug) ||
-          (data.sibling_source && marketUrl(data.sibling_source, data.sibling_ticker))) && (
+          (data.sibling_source && marketUrl(data.sibling_source, data.sibling_ticker, data.sibling_event_slug))) && (
           <div className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm">
             {marketUrl(data.market_source, data.market_ticker, data.market_event_slug) && (
               <a
@@ -112,9 +112,9 @@ export function CallDetail() {
                 View on {exLabel(data.market_source)} ↗
               </a>
             )}
-            {data.sibling_source && marketUrl(data.sibling_source, data.sibling_ticker) && (
+            {data.sibling_source && marketUrl(data.sibling_source, data.sibling_ticker, data.sibling_event_slug) && (
               <a
-                href={marketUrl(data.sibling_source, data.sibling_ticker)!}
+                href={marketUrl(data.sibling_source, data.sibling_ticker, data.sibling_event_slug)!}
                 target="_blank"
                 rel="noreferrer"
                 className="tap inline-flex items-center gap-1 text-[var(--color-accent)]"

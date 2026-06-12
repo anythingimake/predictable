@@ -39,7 +39,8 @@ router.get("/", (req, res) => {
            (SELECT ce.quote FROM call_events ce WHERE ce.call_id = c.id AND ce.quote IS NOT NULL ORDER BY ce.timestamp_sec, ce.id LIMIT 1) AS quote,
            (SELECT sib.current_price FROM markets sib WHERE sib.id = json_extract(m.meta_json,'$.sibling_market_id')) AS sibling_price,
            (SELECT sib.source        FROM markets sib WHERE sib.id = json_extract(m.meta_json,'$.sibling_market_id')) AS sibling_source,
-           (SELECT sib.ticker        FROM markets sib WHERE sib.id = json_extract(m.meta_json,'$.sibling_market_id')) AS sibling_ticker
+           (SELECT sib.ticker        FROM markets sib WHERE sib.id = json_extract(m.meta_json,'$.sibling_market_id')) AS sibling_ticker,
+           (SELECT json_extract(sib.meta_json,'$.event_slug') FROM markets sib WHERE sib.id = json_extract(m.meta_json,'$.sibling_market_id')) AS sibling_event_slug
     FROM calls c
     JOIN episodes e ON e.id = c.episode_id
     LEFT JOIN markets m ON m.id = c.market_id
@@ -61,6 +62,7 @@ router.get("/:id", (req, res) => {
            (SELECT sib.current_price FROM markets sib WHERE sib.id = json_extract(m.meta_json,'$.sibling_market_id')) AS sibling_price,
            (SELECT sib.source        FROM markets sib WHERE sib.id = json_extract(m.meta_json,'$.sibling_market_id')) AS sibling_source,
            (SELECT sib.ticker        FROM markets sib WHERE sib.id = json_extract(m.meta_json,'$.sibling_market_id')) AS sibling_ticker,
+           (SELECT json_extract(sib.meta_json,'$.event_slug') FROM markets sib WHERE sib.id = json_extract(m.meta_json,'$.sibling_market_id')) AS sibling_event_slug,
            (SELECT body FROM admin_notes
               WHERE scope_type = 'call' AND scope_id = CAST(c.id AS TEXT)
               ORDER BY updated_at DESC LIMIT 1) AS admin_note
