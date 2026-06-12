@@ -6,6 +6,7 @@ import type { Call } from "../types";
 import { ConvictionBadge } from "../components/ConvictionBadge";
 import { TagChips } from "../components/TagChips";
 import { formatPct, stuSideCents, formatCents } from "../lib/format";
+import { EVENT_NIGHT_NAV } from "../lib/flags";
 import { AddElectionCall, ElectionCallAdminControls } from "../components/ElectionAdmin";
 import { ErrorBanner, Loading } from "./Scoreboard";
 
@@ -143,18 +144,33 @@ export function ElectionNight() {
       >
         <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[var(--color-accent)]">
           <span>🗳️ Election Night</span>
-          <span className="inline-flex items-center gap-1 rounded-full bg-[rgba(239,68,68,0.15)] px-2 py-0.5 text-[10px] text-[#f87171]">
-            <span className="inline-block h-1.5 w-1.5 animate-pulse rounded-full bg-[#f87171]" />
-            LIVE
-          </span>
+          {EVENT_NIGHT_NAV ? (
+            <span className="inline-flex items-center gap-1 rounded-full bg-[rgba(239,68,68,0.15)] px-2 py-0.5 text-[10px] text-[#f87171]">
+              <span className="inline-block h-1.5 w-1.5 animate-pulse rounded-full bg-[#f87171]" />
+              LIVE
+            </span>
+          ) : (
+            <span className="inline-flex items-center gap-1 rounded-full bg-[rgba(34,197,94,0.12)] px-2 py-0.5 text-[10px] text-[#4ade80]">
+              FINAL
+            </span>
+          )}
         </div>
         <h1 className="mt-1 text-2xl font-bold sm:text-3xl">{ELECTION_TITLE}</h1>
         <p className="mt-1.5 max-w-2xl text-sm text-[var(--color-text-muted)]">
-          Every position Stu called <strong className="text-[var(--color-text)]">live on tonight's stream</strong> —
-          and nothing else. Prices refresh every 2 minutes as the returns come in.
+          {EVENT_NIGHT_NAV ? (
+            <>
+              Every position Stu called <strong className="text-[var(--color-text)]">live on tonight's stream</strong> —
+              and nothing else. Prices refresh every 2 minutes as the returns come in.
+            </>
+          ) : (
+            <>
+              Every position Stu called <strong className="text-[var(--color-text)]">live on the stream</strong> —
+              and nothing else, as it happened.
+            </>
+          )}
         </p>
         <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs">
-          <span className="text-[var(--color-text-faint)]">Tonight's livestreams:</span>
+          <span className="text-[var(--color-text-faint)]">{EVENT_NIGHT_NAV ? "Tonight's livestreams:" : "The livestreams:"}</span>
           {STREAMS.map((s) => (
             <a
               key={s.url}

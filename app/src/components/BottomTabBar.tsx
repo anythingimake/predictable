@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+import { EVENT_NIGHT_NAV } from "../lib/flags";
 
 interface NavItem {
   to: string;
@@ -9,7 +10,7 @@ interface NavItem {
 
 const PRIMARY: NavItem[] = [
   { to: "/", label: "Scoreboard", end: true },
-  { to: "/election-night", label: "Tonight" },
+  ...(EVENT_NIGHT_NAV ? [{ to: "/election-night", label: "Tonight" }] : []),
   { to: "/calls", label: "Calls" },
   { to: "/episodes", label: "Episodes" },
 ];

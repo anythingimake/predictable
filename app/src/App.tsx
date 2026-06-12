@@ -18,10 +18,11 @@ import { Admin } from "./pages/Admin";
 import { About } from "./pages/About";
 import { Wordmark } from "./components/Wordmark";
 import { BottomTabBar } from "./components/BottomTabBar";
+import { EVENT_NIGHT_NAV } from "./lib/flags";
 
 const NAV = [
   { to: "/", label: "Scoreboard", end: true },
-  { to: "/election-night", label: "🗳️ Election Night" },
+  ...(EVENT_NIGHT_NAV ? [{ to: "/election-night", label: "🗳️ Election Night" }] : []),
   { to: "/calls", label: "Calls" },
   { to: "/episodes", label: "Episodes" },
   { to: "/sagas", label: "Sagas" },
